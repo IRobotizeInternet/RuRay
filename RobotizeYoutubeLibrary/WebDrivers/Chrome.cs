@@ -5,7 +5,9 @@ namespace RobotizeYoutubeLibrary.WebDrivers
 {
     public class Chrome : WebDriver
     {
-        public static RemoteWebDriver Driver()
+        public Chrome(string baseUrl):base(baseUrl) { }
+
+        public override RemoteWebDriver Driver()
         {
             if (string.IsNullOrEmpty(BaseURL))
             {

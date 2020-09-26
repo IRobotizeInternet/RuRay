@@ -6,7 +6,9 @@ namespace RobotizeYoutubeLibrary.WebDrivers
 {
     public class InternetExplorer: WebDriver
     {
-        public static RemoteWebDriver Driver()
+        public InternetExplorer(string baseUrl) : base(baseUrl) { }
+        
+        public override RemoteWebDriver Driver()
         {
             if (string.IsNullOrEmpty(BaseURL))
             {

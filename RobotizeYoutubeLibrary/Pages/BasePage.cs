@@ -1,6 +1,7 @@
 ﻿using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using RobotizeYoutubeLibrary.Utilities;
+using RobotizeYoutubeLibrary.WebDrivers;
 using System;
 
 namespace RobotizeYoutubeLibrary.Pages
@@ -31,9 +32,8 @@ namespace RobotizeYoutubeLibrary.Pages
             get
             {
                 if (_driver != null) return _driver;
-                Type t = Type.GetType(WebBrowser ?? "Chrome");
-                _driver = (RemoteWebDriver)Activator.CreateInstance(t);
-                return _driver;
+                var webDriver = (WebDriver)Activator.CreateInstance(Type.GetType(WebBrowser), BaseURL);
+                return _driver = webDriver.Driver();
             }
         }
 

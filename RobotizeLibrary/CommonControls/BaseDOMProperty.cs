@@ -33,7 +33,7 @@ namespace RobotizeToolbox.CommonControls
             var wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
 
             var isElementClicked = false;
-            while (isElementClicked)
+            while (!isElementClicked)
             {
                 if (numberOfTries == 0) throw new Exception($"Unable to click element {ByForElement}");
 

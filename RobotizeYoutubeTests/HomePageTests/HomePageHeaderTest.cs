@@ -11,6 +11,7 @@ namespace RobotizeYoutube.HomePageTests
         {
             var page = new HomePage();
             page.ButtonSignIn.Click();
+            page.ButtonCreateVideo.Click();
         }
     }
 }
