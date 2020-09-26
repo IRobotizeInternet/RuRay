@@ -4,9 +4,9 @@ using System;
 
 namespace RobotizeYoutubeLibrary.WebDrivers
 {
-    public class InternetExplorer: WebDriver
+    public class EdgeBrowser: WebDriver
     {
-        public InternetExplorer(string baseUrl) : base(baseUrl) { }
+        public EdgeBrowser(string baseUrl) : base(baseUrl) { }
         
         public override RemoteWebDriver Driver()
         {

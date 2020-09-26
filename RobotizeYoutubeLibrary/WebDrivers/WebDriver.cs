@@ -6,7 +6,7 @@ namespace RobotizeYoutubeLibrary.WebDrivers
     public class WebDriver
     {
         public static string BaseURL { get; set; }
-        protected static string DriverLocation { get; set; } = @"D:\Dev\RobotizeYoutube\RobotizeYoutubeLibrary\bin\DEV\";
+        protected static string DriverLocation { get; set; } = @"D:\Dev\RobotizeYoutube\RobotizeYoutubeLibrary\bin\Debug";
         protected static int WebDriverTimeoutInSeconds { get; set; } = 200;
 
         public WebDriver(string baseUrl)

@@ -92,7 +92,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\AppSettings.cs" />
     <Compile Include="WebDrivers\Chrome.cs" />
-    <Compile Include="WebDrivers\InternetExplorer.cs" />
+    <Compile Include="WebDrivers\EdgeBrowser.cs" />
     <Compile Include="WebDrivers\WebDriver.cs" />
   </ItemGroup>
   <ItemGroup>
