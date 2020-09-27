@@ -100,11 +100,7 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Containers\" />
-    <Folder Include="Dialogs\" />
-    <Folder Include="MenusAndToolbars\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <ProjectReference Include="..\RobotizeLibrary\RobotizeToolbox.csproj">
       <Project>{EFFD0879-83C5-488F-840A-E8CCFD3CD103}</Project>

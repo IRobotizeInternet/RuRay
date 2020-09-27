@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Remote;
 using System;
-namespace RobotizeYoutubeLibrary.WebDrivers
+namespace RobotizeFacebookLibrary.WebDrivers
 {
     public class Chrome : WebDriver
     {

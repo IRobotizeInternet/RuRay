@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EFFD0879-83C5-488F-840A-E8CCFD3CD103}</ProjectGuid>
+    <ProjectGuid>{5D8EAA6D-F5F1-4F10-9FB1-1A87A2461319}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RobotizeLibrary</RootNamespace>
-    <AssemblyName>RobotizeLibrary</AssemblyName>
+    <RootNamespace>RobotizeFacebook</RootNamespace>
+    <AssemblyName>RobotizeFacebook</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -46,6 +46,7 @@
       <HintPath>..\packages\MSTest.TestFramework.2.1.0\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="WebDriver, Version=3.141.0.0, Culture=neutral, processorArchitecture=MSIL">
@@ -53,26 +54,31 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CommonControls\BaseDOMProperty.cs" />
-    <Compile Include="CommonControls\Button.cs" />
-    <Compile Include="CommonControls\EventTriggerButton.cs" />
-    <Compile Include="CommonControls\EventTriggerHyperlink.cs" />
-    <Compile Include="CommonControls\Label.cs" />
-    <Compile Include="CommonControls\TextBox.cs" />
-    <Compile Include="Dialogs\Dialog.cs" />
-    <Compile Include="Extensions\Actions.cs" />
-    <Compile Include="Extensions\RemoteWebDriverExts.cs" />
-    <Compile Include="Extensions\WebElements.cs" />
+    <Compile Include="CryptoServices\Crypto.cs" />
+    <Compile Include="CryptoServices\CryptoServiceForString.cs" />
+    <Compile Include="Pages\BasePage.cs" />
+    <Compile Include="Pages\LoggedIn\HomePageHeaderSection.cs" />
+    <Compile Include="Pages\NotLoggedIn\Home\HomePage.cs" />
+    <Compile Include="Pages\LoggedIn\HomePage.cs" />
+    <Compile Include="Pages\NotLoggedIn\Login\LoginPage.cs" />
+    <Compile Include="Pages\NotLoggedIn\PasswordRecovery\PasswordRecoveryPage.cs" />
+    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Utilities\AppSettings.cs" />
+    <Compile Include="WebDrivers\Chrome.cs" />
+    <Compile Include="WebDrivers\EdgeBrowser.cs" />
+    <Compile Include="WebDrivers\WebDriver.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\RobotizeYoutubeLibrary\App.config">
-      <Link>App.config</Link>
-    </None>
+    <None Include="App.config" />
+    <None Include="App.Dev.config" />
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="MenusAndToolbars\" />
+    <ProjectReference Include="..\RobotizeLibrary\RobotizeToolbox.csproj">
+      <Project>{EFFD0879-83C5-488F-840A-E8CCFD3CD103}</Project>
+      <Name>RobotizeToolbox</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
