@@ -58,9 +58,10 @@
     <Compile Include="CryptoServices\CryptoServiceForString.cs" />
     <Compile Include="Pages\BasePage.cs" />
     <Compile Include="Pages\LoggedIn\HomePageHeaderSection.cs" />
-    <Compile Include="Pages\NotLoggedIn\Home\HomePage.cs" />
-    <Compile Include="Pages\LoggedIn\HomePage.cs" />
-    <Compile Include="Pages\NotLoggedIn\Login\LoginPage.cs" />
+    <Compile Include="Pages\NotLoggedIn\Home\PageHome.cs" />
+    <Compile Include="Pages\LoggedIn\PageHome.cs" />
+    <Compile Include="Pages\NotLoggedIn\Login\DialogCreateNewAccount.cs" />
+    <Compile Include="Pages\NotLoggedIn\Login\PageLogin.cs" />
     <Compile Include="Pages\NotLoggedIn\PasswordRecovery\PasswordRecoveryPage.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

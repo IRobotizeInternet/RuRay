@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using RobotizeLibrary.Extensions;
@@ -145,6 +146,13 @@ namespace RobotizeToolbox.CommonControls
             }
 
             return elementText;
+        }
+
+        public void ScrollToElement(IWebElement webelement)
+        {
+            var actions = new Actions(Driver);
+            actions.MoveToElement(webelement);
+            actions.Perform();
         }
     }
 }

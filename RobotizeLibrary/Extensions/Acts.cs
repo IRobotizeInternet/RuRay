@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using System;
@@ -7,7 +8,7 @@ using System.Threading;
 
 namespace RobotizeLibrary.Extensions
 {
-    public static class Actions
+    public static class Acts
     {
         public static void WaitForObjectToLoad(RemoteWebDriver driver, int waitThreshold = 300)
         {
@@ -57,6 +58,5 @@ namespace RobotizeLibrary.Extensions
                   }
               });
         }
-
     }
 }

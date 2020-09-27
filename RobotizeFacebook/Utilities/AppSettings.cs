@@ -1,5 +1,4 @@
-﻿using RobotizeFacebookLibrary.Security;
-using System.Configuration;
+﻿using System.Configuration;
 
 namespace RobotizeFacebookLibrary.Utilities
 {
@@ -18,19 +17,6 @@ namespace RobotizeFacebookLibrary.Utilities
             Password = ConfigurationManager.AppSettings[nameof(Password)];
             CryptoKey = ConfigurationManager.AppSettings[nameof(CryptoKey)];
             WebBrowser = ConfigurationManager.AppSettings[nameof(WebBrowser)];
-        }
-
-        /// <summary>
-        /// Encrypt user and password name.
-        /// </summary>
-        private static void EncryptUserAndPassword()
-        {
-            UserName = ConfigurationManager.AppSettings[nameof(UserName)];
-            Password = ConfigurationManager.AppSettings[nameof(Password)];
-            var key = CryptoServiceForString.GetAesKey;
-            ConfigurationManager.AppSettings.Set(nameof(CryptoKey), key);
-            ConfigurationManager.AppSettings.Set(nameof(UserName), key);
-            ConfigurationManager.AppSettings.Set(nameof(Password), key);
         }
     }
 }

@@ -4,7 +4,7 @@ using RobotizeLibrary.CommonControls;
 
 namespace RobotizeFacebook.Pages.PasswordRecovery
 {
-    public class PasswordRecoveryPage : BasePage
+    public class PasswordRecoveryPage : PageBase
     {
         public override string PageUrl => "login/identify/?ctx=recover&ars=facebook_login";
 

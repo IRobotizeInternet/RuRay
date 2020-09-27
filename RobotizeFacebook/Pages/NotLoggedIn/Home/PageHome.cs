@@ -1,9 +1,9 @@
 ﻿using OpenQA.Selenium;
 using RobotizeLibrary.CommonControls;
 
-namespace RobotizeFacebookLibrary.Pages.NoLoginPages
+namespace RobotizeFacebookLibrary.Pages.NotLoginPages
 {
-    public class HomePage : BasePage
+    public class PageHome : PageBase
     {
         public override string PageUrl => "/";
 

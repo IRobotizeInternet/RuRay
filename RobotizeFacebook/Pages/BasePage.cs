@@ -6,7 +6,7 @@ using System;
 
 namespace RobotizeFacebookLibrary.Pages
 {
-    public abstract class BasePage
+    public abstract class PageBase
     {
         // Private 
         private string BaseURL { get; }
@@ -19,7 +19,7 @@ namespace RobotizeFacebookLibrary.Pages
         // public 
         public abstract string PageUrl { get; }
 
-        protected BasePage()
+        protected PageBase()
         {
             BaseURL = AppSettings.BaseURL;
             WebBrowser = AppSettings.WebBrowser;

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RobotizeLibrary.Dialogs
+namespace RobotizeFacebook.Pages.LoggedUser
 {
-    public class Dialog 
+    public class PageHome
     {
 
     }
