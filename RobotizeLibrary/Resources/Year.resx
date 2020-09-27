@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<!-- 
+		Microsoft ResX Schema
+
+		Version 1.3
+
+		The primary goals of this format is to allow a simple XML format 
+		that is mostly human readable. The generation and parsing of the 
+		various data types are done through the TypeConverter classes 
+		associated with the data types.
+
+		Example:
+
+		... ado.net/XML headers & schema ...
+		<resheader name="resmimetype">text/microsoft-resx</resheader>
+		<resheader name="version">1.3</resheader>
+		<resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+		<resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+		<data name="Name1">this is my long string</data>
+		<data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+		<data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+			[base64 mime encoded serialized .NET Framework object]
+		</data>
+		<data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+			[base64 mime encoded string representing a byte array form of the .NET Framework object]
+		</data>
+
+		There are any number of "resheader" rows that contain simple 
+		name/value pairs.
+
+		Each data row contains a name, and value. The row also contains a 
+		type or mimetype. Type corresponds to a .NET class that support 
+		text/value conversion through the TypeConverter architecture. 
+		Classes that don't support this are serialized and stored with the 
+		mimetype set.
+
+		The mimetype is used for serialized objects, and tells the 
+		ResXResourceReader how to depersist the object. This is currently not 
+		extensible. For a given mimetype the value must be set accordingly:
+
+		Note - application/x-microsoft.net.object.binary.base64 is the format 
+		that the ResXResourceWriter will generate, however the reader can 
+		read any of the formats listed below.
+
+		mimetype: application/x-microsoft.net.object.binary.base64
+		value   : The object must be serialized with 
+			: System.Serialization.Formatters.Binary.BinaryFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.soap.base64
+		value   : The object must be serialized with 
+			: System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+			: and then encoded with base64 encoding.
+
+		mimetype: application/x-microsoft.net.object.bytearray.base64
+		value   : The object must be serialized into a byte array 
+			: using a System.ComponentModel.TypeConverter
+			: and then encoded with base64 encoding.
+	-->
+	
+	<xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+		<xsd:element name="root" msdata:IsDataSet="true">
+			<xsd:complexType>
+				<xsd:choice maxOccurs="unbounded">
+					<xsd:element name="data">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+								<xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" msdata:Ordinal="1" />
+							<xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+							<xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+						</xsd:complexType>
+					</xsd:element>
+					<xsd:element name="resheader">
+						<xsd:complexType>
+							<xsd:sequence>
+								<xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+							</xsd:sequence>
+							<xsd:attribute name="name" type="xsd:string" use="required" />
+						</xsd:complexType>
+					</xsd:element>
+				</xsd:choice>
+			</xsd:complexType>
+		</xsd:element>
+	</xsd:schema>
+	<resheader name="resmimetype">
+		<value>text/microsoft-resx</value>
+	</resheader>
+	<resheader name="version">
+		<value>1.3</value>
+	</resheader>
+	<resheader name="reader">
+		<value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+	<resheader name="writer">
+		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+	</resheader>
+  <data name="2022" xml:space="preserve">
+    <value>2022</value>
+  </data>
+  <data name="2021" xml:space="preserve">
+    <value>2021</value>
+  </data>
+  <data name="2020" xml:space="preserve">
+    <value>2020</value>
+  </data>
+  <data name="2019" xml:space="preserve">
+    <value>2019</value>
+  </data>
+  <data name="2018" xml:space="preserve">
+    <value>2018</value>
+  </data>
+  <data name="2017" xml:space="preserve">
+    <value>2017</value>
+  </data>
+  <data name="2016" xml:space="preserve">
+    <value>2016</value>
+  </data>
+  <data name="2015" xml:space="preserve">
+    <value>2015</value>
+  </data>
+  <data name="2014" xml:space="preserve">
+    <value>2014</value>
+  </data>
+  <data name="2013" xml:space="preserve">
+    <value>2013</value>
+  </data>
+  <data name="2012" xml:space="preserve">
+    <value>2012</value>
+  </data>
+  <data name="2011" xml:space="preserve">
+    <value>2011</value>
+  </data>
+  <data name="2010" xml:space="preserve">
+    <value>2010</value>
+  </data>
+  <data name="2009" xml:space="preserve">
+    <value>2009</value>
+  </data>
+  <data name="2008" xml:space="preserve">
+    <value>2008</value>
+  </data>
+  <data name="2007" xml:space="preserve">
+    <value>2007</value>
+  </data>
+  <data name="2006" xml:space="preserve">
+    <value>2006</value>
+  </data>
+  <data name="2005" xml:space="preserve">
+    <value>2005</value>
+  </data>
+  <data name="2004" xml:space="preserve">
+    <value>2004</value>
+  </data>
+  <data name="2003" xml:space="preserve">
+    <value>2003</value>
+  </data>
+  <data name="2002" xml:space="preserve">
+    <value>2002</value>
+  </data>
+  <data name="2001" xml:space="preserve">
+    <value>2001</value>
+  </data>
+  <data name="2000" xml:space="preserve">
+    <value>2000</value>
+  </data>
+  <data name="1999" xml:space="preserve">
+    <value>1999</value>
+  </data>
+  <data name="1998" xml:space="preserve">
+    <value>1998</value>
+  </data>
+  <data name="1997" xml:space="preserve">
+    <value>1997</value>
+  </data>
+  <data name="1996" xml:space="preserve">
+    <value>1996</value>
+  </data>
+  <data name="1995" xml:space="preserve">
+    <value>1995</value>
+  </data>
+  <data name="1994" xml:space="preserve">
+    <value>1994</value>
+  </data>
+  <data name="1993" xml:space="preserve">
+    <value>1993</value>
+  </data>
+  <data name="1992" xml:space="preserve">
+    <value>1992</value>
+  </data>
+  <data name="1991" xml:space="preserve">
+    <value>1991</value>
+  </data>
+  <data name="1990" xml:space="preserve">
+    <value>1990</value>
+  </data>
+  <data name="1989" xml:space="preserve">
+    <value>1989</value>
+  </data>
+  <data name="1988" xml:space="preserve">
+    <value>1988</value>
+  </data>
+  <data name="1987" xml:space="preserve">
+    <value>1987</value>
+  </data>
+  <data name="1986" xml:space="preserve">
+    <value>1986</value>
+  </data>
+  <data name="1985" xml:space="preserve">
+    <value>1985</value>
+  </data>
+  <data name="1984" xml:space="preserve">
+    <value>1984</value>
+  </data>
+  <data name="1983" xml:space="preserve">
+    <value>1983</value>
+  </data>
+  <data name="1982" xml:space="preserve">
+    <value>1982</value>
+  </data>
+  <data name="1981" xml:space="preserve">
+    <value>1981</value>
+  </data>
+  <data name="1980" xml:space="preserve">
+    <value>1980</value>
+  </data>
+  <data name="1979" xml:space="preserve">
+    <value>1979</value>
+  </data>
+  <data name="1978" xml:space="preserve">
+    <value>1978</value>
+  </data>
+  <data name="1977" xml:space="preserve">
+    <value>1977</value>
+  </data>
+  <data name="1976" xml:space="preserve">
+    <value>1976</value>
+  </data>
+  <data name="1975" xml:space="preserve">
+    <value>1975</value>
+  </data>
+  <data name="1974" xml:space="preserve">
+    <value>1974</value>
+  </data>
+  <data name="1973" xml:space="preserve">
+    <value>1973</value>
+  </data>
+  <data name="1972" xml:space="preserve">
+    <value>1972</value>
+  </data>
+  <data name="1971" xml:space="preserve">
+    <value>1971</value>
+  </data>
+  <data name="1970" xml:space="preserve">
+    <value>1970</value>
+  </data>
+  <data name="1969" xml:space="preserve">
+    <value>1969</value>
+  </data>
+  <data name="1968" xml:space="preserve">
+    <value>1968</value>
+  </data>
+  <data name="1967" xml:space="preserve">
+    <value>1967</value>
+  </data>
+  <data name="1966" xml:space="preserve">
+    <value>1966</value>
+  </data>
+  <data name="1965" xml:space="preserve">
+    <value>1965</value>
+  </data>
+  <data name="1964" xml:space="preserve">
+    <value>1964</value>
+  </data>
+  <data name="1963" xml:space="preserve">
+    <value>1963</value>
+  </data>
+  <data name="1962" xml:space="preserve">
+    <value>1962</value>
+  </data>
+  <data name="1961" xml:space="preserve">
+    <value>1961</value>
+  </data>
+  <data name="1960" xml:space="preserve">
+    <value>1960</value>
+  </data>
+  <data name="1959" xml:space="preserve">
+    <value>1959</value>
+  </data>
+  <data name="1958" xml:space="preserve">
+    <value>1958</value>
+  </data>
+  <data name="1957" xml:space="preserve">
+    <value>1957</value>
+  </data>
+  <data name="1956" xml:space="preserve">
+    <value>1956</value>
+  </data>
+  <data name="1955" xml:space="preserve">
+    <value>1955</value>
+  </data>
+  <data name="1954" xml:space="preserve">
+    <value>1954</value>
+  </data>
+  <data name="1953" xml:space="preserve">
+    <value>1953</value>
+  </data>
+  <data name="1952" xml:space="preserve">
+    <value>1952</value>
+  </data>
+  <data name="1951" xml:space="preserve">
+    <value>1951</value>
+  </data>
+  <data name="1950" xml:space="preserve">
+    <value>1950</value>
+  </data>
+  <data name="1949" xml:space="preserve">
+    <value>1949</value>
+  </data>
+  <data name="1948" xml:space="preserve">
+    <value>1948</value>
+  </data>
+  <data name="1947" xml:space="preserve">
+    <value>1947</value>
+  </data>
+  <data name="1946" xml:space="preserve">
+    <value>1946</value>
+  </data>
+  <data name="1945" xml:space="preserve">
+    <value>1945</value>
+  </data>
+  <data name="1944" xml:space="preserve">
+    <value>1944</value>
+  </data>
+  <data name="1943" xml:space="preserve">
+    <value>1943</value>
+  </data>
+  <data name="1942" xml:space="preserve">
+    <value>1942</value>
+  </data>
+  <data name="1941" xml:space="preserve">
+    <value>1941</value>
+  </data>
+  <data name="1940" xml:space="preserve">
+    <value>1940</value>
+  </data>
+  <data name="1939" xml:space="preserve">
+    <value>1939</value>
+  </data>
+  <data name="1938" xml:space="preserve">
+    <value>1938</value>
+  </data>
+  <data name="1937" xml:space="preserve">
+    <value>1937</value>
+  </data>
+  <data name="1936" xml:space="preserve">
+    <value>1936</value>
+  </data>
+  <data name="1935" xml:space="preserve">
+    <value>1935</value>
+  </data>
+  <data name="1934" xml:space="preserve">
+    <value>1934</value>
+  </data>
+  <data name="1933" xml:space="preserve">
+    <value>1933</value>
+  </data>
+  <data name="1932" xml:space="preserve">
+    <value>1932</value>
+  </data>
+  <data name="1931" xml:space="preserve">
+    <value>1931</value>
+  </data>
+  <data name="1930" xml:space="preserve">
+    <value>1930</value>
+  </data>
+  <data name="1929" xml:space="preserve">
+    <value>1929</value>
+  </data>
+  <data name="1928" xml:space="preserve">
+    <value>1928</value>
+  </data>
+  <data name="1927" xml:space="preserve">
+    <value>1927</value>
+  </data>
+  <data name="1926" xml:space="preserve">
+    <value>1926</value>
+  </data>
+  <data name="1925" xml:space="preserve">
+    <value>1925</value>
+  </data>
+  <data name="1924" xml:space="preserve">
+    <value>1924</value>
+  </data>
+  <data name="1923" xml:space="preserve">
+    <value>1923</value>
+  </data>
+  <data name="1922" xml:space="preserve">
+    <value>1922</value>
+  </data>
+  <data name="1921" xml:space="preserve">
+    <value>1921</value>
+  </data>
+  <data name="1920" xml:space="preserve">
+    <value>1920</value>
+  </data>
+  <data name="1919" xml:space="preserve">
+    <value>1919</value>
+  </data>
+  <data name="1918" xml:space="preserve">
+    <value>1918</value>
+  </data>
+  <data name="1917" xml:space="preserve">
+    <value>1917</value>
+  </data>
+  <data name="1916" xml:space="preserve">
+    <value>1916</value>
+  </data>
+  <data name="1915" xml:space="preserve">
+    <value>1915</value>
+  </data>
+  <data name="1914" xml:space="preserve">
+    <value>1914</value>
+  </data>
+  <data name="1913" xml:space="preserve">
+    <value>1913</value>
+  </data>
+  <data name="1912" xml:space="preserve">
+    <value>1912</value>
+  </data>
+  <data name="1911" xml:space="preserve">
+    <value>1911</value>
+  </data>
+  <data name="1910" xml:space="preserve">
+    <value>1910</value>
+  </data>
+  <data name="1909" xml:space="preserve">
+    <value>1909</value>
+  </data>
+  <data name="1908" xml:space="preserve">
+    <value>1908</value>
+  </data>
+  <data name="1907" xml:space="preserve">
+    <value>1907</value>
+  </data>
+  <data name="1906" xml:space="preserve">
+    <value>1906</value>
+  </data>
+  <data name="1905" xml:space="preserve">
+    <value>1905</value>
+  </data>
+</root>
