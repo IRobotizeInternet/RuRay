@@ -7,10 +7,10 @@ namespace RobotizeLibrary.Dialogs
     {
         public RemoteWebDriver Driver;
         public WebDriverWait Wait;
-        public DialogBase(RemoteWebDriver remoteWebDriver, WebDriverWait webDriverWait)
+        public DialogBase(RemoteWebDriver driver, WebDriverWait wait)
         {
-            Driver = remoteWebDriver;
-            Wait = webDriverWait;
+            Driver = driver;
+            Wait = wait;
         }
     }
 }

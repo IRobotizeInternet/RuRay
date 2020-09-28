@@ -8,7 +8,7 @@ namespace RobotizeLibrary.CommonControls
 {
     public class Dropdown : BaseDOMProperty
     {
-        public Dropdown(RemoteWebDriver driver, By byForDropdown) : base(driver, byForDropdown) { }
+        public Dropdown(RemoteWebDriver driver, By by) : base(driver, by) { }
 
         private SelectElement Elements
         {

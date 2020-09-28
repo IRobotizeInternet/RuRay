@@ -60,10 +60,15 @@
     <Compile Include="Pages\LoggedIn\HomePageHeaderSection.cs" />
     <Compile Include="Pages\NotLoggedIn\Home\PageHome.cs" />
     <Compile Include="Pages\LoggedIn\PageHome.cs" />
-    <Compile Include="Pages\NotLoggedIn\Login\DialogCreateNewAccount.cs" />
+    <Compile Include="Pages\NotLoggedIn\Registration\Dialog\DialogChangeEmail.cs" />
+    <Compile Include="Pages\NotLoggedIn\Registration\Dialog\DialogCreateNewAccount.cs" />
+    <Compile Include="Pages\NotLoggedIn\Registration\Dialog\DialogSendEamilAgain.cs" />
+    <Compile Include="Pages\NotLoggedIn\Registration\PageConfirmation.cs" />
     <Compile Include="Pages\NotLoggedIn\Login\PageLogin.cs" />
+    <Compile Include="Pages\NotLoggedIn\PageCookies.cs" />
+    <Compile Include="Pages\NotLoggedIn\PagePrivacy.cs" />
+    <Compile Include="Pages\NotLoggedIn\PageTerms.cs" />
     <Compile Include="Pages\NotLoggedIn\PasswordRecovery\PasswordRecoveryPage.cs" />
-    <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utilities\AppSettings.cs" />
     <Compile Include="WebDrivers\Chrome.cs" />
@@ -79,6 +84,10 @@
     <ProjectReference Include="..\RobotizeLibrary\RobotizeToolbox.csproj">
       <Project>{EFFD0879-83C5-488F-840A-E8CCFD3CD103}</Project>
       <Name>RobotizeToolbox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RobotizeYoutubeLibrary\RobotizeYoutubeLibrary.csproj">
+      <Project>{147115CB-783A-457F-83A2-86A1896DD2D7}</Project>
+      <Name>RobotizeYoutubeLibrary</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

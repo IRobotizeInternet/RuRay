@@ -1,6 +1,7 @@
 ﻿using OpenQA.Selenium;
 using RobotizeFacebookLibrary.Pages;
 using RobotizeLibrary.CommonControls;
+using RobotizeYoutubeLibrary.Pages;
 
 namespace RobotizeFacebook.Pages.PasswordRecovery
 {

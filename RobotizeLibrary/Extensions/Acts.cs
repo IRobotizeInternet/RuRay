@@ -10,6 +10,19 @@ namespace RobotizeLibrary.Extensions
 {
     public static class Acts
     {
+
+        // TODO:
+        public static void ClickAndHold()
+        {
+
+        }
+
+        // TODO:
+        public static  void DrapAndDrop()
+        {
+
+        }
+
         public static void WaitForObjectToLoad(RemoteWebDriver driver, int waitThreshold = 300)
         {
             var startTime = DateTime.Now;

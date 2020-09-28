@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{EFFD0879-83C5-488F-840A-E8CCFD3CD103}</ProjectGuid>
+    <ProjectGuid>{8BF64D4A-72BD-4841-894B-82ADD8873EA5}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>RobotizeLibrary</RootNamespace>
-    <AssemblyName>RobotizeLibrary</AssemblyName>
+    <RootNamespace>RobotizeFacebookTests</RootNamespace>
+    <AssemblyName>RobotizeFacebookTests</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -47,72 +47,23 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
-    <Reference Include="WebDriver, Version=3.141.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Selenium.WebDriver.3.141.0\lib\net45\WebDriver.dll</HintPath>
-    </Reference>
-    <Reference Include="WebDriver.Support, Version=3.141.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Selenium.Support.3.141.0\lib\net45\WebDriver.Support.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Controls\BaseDOMProperty.cs" />
-    <Compile Include="Controls\Button.cs" />
-    <Compile Include="Controls\Checkbox.cs" />
-    <Compile Include="Controls\Dropdown.cs" />
-    <Compile Include="Controls\RadioButton.cs" />
-    <Compile Include="Controls\TriggerControls\EventTriggerButton.cs" />
-    <Compile Include="Controls\TriggerControls\EventTriggerHyperlink.cs" />
-    <Compile Include="Controls\Label.cs" />
-    <Compile Include="Controls\TextBox.cs" />
-    <Compile Include="Dialogs\BaseDialog.cs" />
-    <Compile Include="Extensions\Acts.cs" />
-    <Compile Include="Extensions\JscriptExecutor.cs" />
-    <Compile Include="Extensions\RemoteWebDriverExts.cs" />
-    <Compile Include="Extensions\WebElements.cs" />
+    <Compile Include="HomePage\LoginTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Resources\Date.Designer.cs">
-      <DependentUpon>Date.resx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="Resources\Month.Designer.cs">
-      <DependentUpon>Month.resx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="Resources\Year.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>Year.resx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\RobotizeYoutubeLibrary\App.config">
-      <Link>App.config</Link>
-    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="MenusAndToolbars\" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\Date.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Date.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Resources\Month.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Month.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Resources\Year.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Year.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="ReadMe.txt" />
+    <ProjectReference Include="..\RobotizeFacebook\RobotizeFacebook.csproj">
+      <Project>{5D8EAA6D-F5F1-4F10-9FB1-1A87A2461319}</Project>
+      <Name>RobotizeFacebook</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RobotizeLibrary\RobotizeToolbox.csproj">
+      <Project>{EFFD0879-83C5-488F-840A-E8CCFD3CD103}</Project>
+      <Name>RobotizeToolbox</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
