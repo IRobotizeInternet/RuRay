@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 using RobotizeFacebookLibrary.Pages;
+using RobotizeFacebookLibrary.Pages.NotLoginPages;
 using RobotizeLibrary.CommonControls;
-using RobotizeYoutubeLibrary.Pages;
 
 namespace RobotizeFacebook.Pages.PasswordRecovery
 {
@@ -17,6 +17,6 @@ namespace RobotizeFacebook.Pages.PasswordRecovery
 
         public Label LabelButtonSubmit => new Label(Driver, By.XPath("//label[@id='did_submit']"));
 
-        public EventTriggerHyperlink<HomePage> LinkCancel => new EventTriggerHyperlink<HomePage>(Driver, Wait, By.XPath("//div[@class='rfloat _ohf']//a[@role='button']"));
+        public EventTriggerHyperlink<PageHome> LinkCancel => new EventTriggerHyperlink<PageHome>(Driver, Wait, By.XPath("//div[@class='rfloat _ohf']//a[@role='button']"));
     }
 }
