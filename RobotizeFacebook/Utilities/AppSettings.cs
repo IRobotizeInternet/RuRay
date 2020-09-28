@@ -1,6 +1,6 @@
 ﻿using System.Configuration;
 
-namespace RobotizeFacebookLibrary.Utilities
+namespace RobotizeFacebook.Utilities
 {
     public static class AppSettings
     {

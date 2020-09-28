@@ -1,6 +1,6 @@
 ﻿using OpenQA.Selenium;
-using RobotizeFacebookLibrary.Pages;
-using RobotizeFacebookLibrary.Pages.NotLoginPages;
+using RobotizeFacebook.Pages;
+using RobotizeFacebook.Pages.NotLoginPages;
 using RobotizeLibrary.CommonControls;
 
 namespace RobotizeFacebook.Pages.PasswordRecovery

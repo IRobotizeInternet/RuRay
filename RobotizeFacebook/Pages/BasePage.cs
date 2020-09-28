@@ -1,10 +1,10 @@
 ﻿using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
-using RobotizeFacebookLibrary.Utilities;
-using RobotizeFacebookLibrary.WebDrivers;
+using RobotizeFacebook.Utilities;
+using RobotizeFacebook.WebDrivers;
 using System;
 
-namespace RobotizeFacebookLibrary.Pages
+namespace RobotizeFacebook.Pages
 {
     public abstract class PageBase
     {

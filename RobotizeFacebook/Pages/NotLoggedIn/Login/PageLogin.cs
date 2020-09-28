@@ -4,7 +4,7 @@ using RobotizeFacebook.Pages.NotLoggedIn;
 using RobotizeFacebook.Pages.PasswordRecovery;
 using RobotizeLibrary.CommonControls;
 
-namespace RobotizeFacebookLibrary.Pages
+namespace RobotizeFacebook.Pages
 {
     public class PageLogin : PageBase
     {

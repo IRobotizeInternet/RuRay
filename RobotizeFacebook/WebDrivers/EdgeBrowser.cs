@@ -2,7 +2,7 @@
 using OpenQA.Selenium.Remote;
 using System;
 
-namespace RobotizeFacebookLibrary.WebDrivers
+namespace RobotizeFacebook.WebDrivers
 {
     public class EdgeBrowser: WebDriver
     {
