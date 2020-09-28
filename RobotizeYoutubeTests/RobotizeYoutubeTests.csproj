@@ -66,10 +66,6 @@
       <Project>{EFFD0879-83C5-488F-840A-E8CCFD3CD103}</Project>
       <Name>RobotizeToolbox</Name>
     </ProjectReference>
-    <ProjectReference Include="..\RobotizeYoutubeLibrary\RobotizeYoutubeLibrary.csproj">
-      <Project>{147115CB-783A-457F-83A2-86A1896DD2D7}</Project>
-      <Name>RobotizeYoutubeLibrary</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
