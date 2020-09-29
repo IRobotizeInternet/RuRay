@@ -7,6 +7,7 @@ namespace RobotizeFacebookTests.HomePage
     public class LoginTest
     {
         [TestMethod]
+        [Ignore]
         public void TestLogInTotheHomePage()
         {
             var page = new PageLogin();
