@@ -2,12 +2,13 @@
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using System;
+using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 
 namespace RobotizeLibrary.Extensions
 {
-    public static class RemoteWebDriverExts
+    public static class RemoteWebDriverExtension
     {
         /// <summary>
         /// Return the web element matching the selector.
@@ -55,5 +56,24 @@ namespace RobotizeLibrary.Extensions
             return elements.First();
         }
 
+        /// <summary>
+        /// Return the visible web elements matching the selector.
+        /// </summary>
+        public static IEnumerable<IWebElement> FindVisibleElementsWait(
+            this RemoteWebDriver driver, 
+            By byForElement, 
+            int timeoutSeconds)
+        {
+            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeoutSeconds));
+            IEnumerable<IWebElement> elements = null;
+
+            _ = wait.Until(d =>
+            {
+                elements = driver.FindElements(byForElement).Where(x => x.Displayed);
+                return elements.Any();
+            });
+
+            return elements;
+        }
     }
 }

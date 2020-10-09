@@ -55,6 +55,9 @@
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\MSTest.TestFramework.2.1.0\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="SeleniumExtras.WaitHelpers, Version=3.11.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetSeleniumExtras.WaitHelpers.3.11.0\lib\net45\SeleniumExtras.WaitHelpers.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
@@ -72,19 +75,25 @@
     <Compile Include="Controls\Dropdown.cs" />
     <Compile Include="Controls\RadioButton.cs" />
     <Compile Include="Controls\TriggerControls\EventTriggerButton.cs" />
+    <Compile Include="Controls\TriggerControls\EventTriggerDiv.cs" />
     <Compile Include="Controls\TriggerControls\EventTriggerHyperlink.cs" />
     <Compile Include="Controls\Label.cs" />
     <Compile Include="Controls\TextBox.cs" />
     <Compile Include="Dialogs\BaseDialog.cs" />
     <Compile Include="Extensions\Acts.cs" />
     <Compile Include="Extensions\JscriptExecutor.cs" />
-    <Compile Include="Extensions\RemoteWebDriverExts.cs" />
+    <Compile Include="Extensions\RemoteWebDriverExtension.cs" />
     <Compile Include="Extensions\WebElements.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Resources\Date.Designer.cs">
       <DependentUpon>Date.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\DialogPopUpCreate.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DialogPopUpCreate.resx</DependentUpon>
     </Compile>
     <Compile Include="Resources\Month.Designer.cs">
       <DependentUpon>Month.resx</DependentUpon>
@@ -98,6 +107,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\.editorconfig">
+      <Link>.editorconfig</Link>
+    </None>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
@@ -107,6 +119,10 @@
     <EmbeddedResource Include="Resources\Date.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Date.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\DialogPopUpCreate.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>DialogPopUpCreate.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\Month.resx">
       <Generator>ResXFileCodeGenerator</Generator>

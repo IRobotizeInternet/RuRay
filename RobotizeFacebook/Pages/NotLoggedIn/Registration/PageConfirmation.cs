@@ -2,6 +2,7 @@
 using RobotizeFacebook.Pages.NotLoggedIn.Login.Dialog;
 using RobotizeFacebook.Pages;
 using RobotizeLibrary.CommonControls;
+using RobotizeLibrary.Controls.TriggerControls;
 
 namespace RobotizeFacebook.Pages.NotLoggedIn.Login
 {

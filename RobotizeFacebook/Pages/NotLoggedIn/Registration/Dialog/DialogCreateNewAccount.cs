@@ -4,12 +4,15 @@ using OpenQA.Selenium.Support.UI;
 using RobotizeFacebook.Pages.LoggedUser;
 using RobotizeLibrary.CommonControls;
 using RobotizeLibrary.Controls;
+using RobotizeLibrary.Controls.TriggerControls;
 using RobotizeLibrary.Dialogs;
 
 namespace RobotizeFacebook.Pages.NotLoggedIn
 {
     public class DialogCreateNewAccount : DialogBase
     {
+        protected override By ByForDialog => throw new System.NotImplementedException();
+
         public DialogCreateNewAccount(RemoteWebDriver driver, WebDriverWait wait):base(driver, wait) { }
 
         public TextBox TextBoxFirstName => new TextBox(Driver, By.XPath("//input[@name='firstname']"));
@@ -34,6 +37,7 @@ namespace RobotizeFacebook.Pages.NotLoggedIn
         public EventTriggerHyperlink<PagePrivacy> HyperlinkDataPolicy => new EventTriggerHyperlink<PagePrivacy>(Driver, Wait, By.XPath("//a[@id='privacy-link']"));
         public EventTriggerHyperlink<PageCookies> HyperlinkCookiePolicy => new EventTriggerHyperlink<PageCookies>(Driver, Wait, By.XPath("//a[@id='cookie-use-link']"));
 
-        public EventTriggerButton<PageHome> ButtonSignUp => new EventTriggerButton<PageHome>(Driver, Wait, By.XPath("//button[@name='websubmit')]")); 
+        public EventTriggerButton<PageHome> ButtonSignUp => new EventTriggerButton<PageHome>(Driver, Wait, By.XPath("//button[@name='websubmit')]"));
+
     }
 }

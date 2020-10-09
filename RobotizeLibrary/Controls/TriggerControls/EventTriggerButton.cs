@@ -4,7 +4,7 @@ using OpenQA.Selenium.Support.UI;
 using RobotizeToolbox.CommonControls;
 using System;
 
-namespace RobotizeLibrary.CommonControls
+namespace RobotizeLibrary.Controls.TriggerControls
 {
     public class EventTriggerButton <EventResult>  where EventResult: class
     {
@@ -12,11 +12,14 @@ namespace RobotizeLibrary.CommonControls
         private readonly RemoteWebDriver _driver;
         private readonly WebDriverWait _wait;
 
-        public EventTriggerButton(RemoteWebDriver driver, WebDriverWait wait, By by)
+        public EventTriggerButton(
+            RemoteWebDriver driver, 
+            WebDriverWait wait, 
+            By byForElement)
         {
             _driver = driver;
             _wait = wait;
-            _element = new BaseDOMProperty(driver, by);
+            _element = new BaseDOMProperty(driver, byForElement);
         }
 
         public EventResult Click()

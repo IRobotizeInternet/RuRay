@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using RobotizeFacebook.Pages;
+using System;
 
 namespace RobotizeFacebookTests.HomePage
 {
@@ -9,7 +10,14 @@ namespace RobotizeFacebookTests.HomePage
         [TestMethod]
         public void TestLogInTotheHomePage()
         {
-            Assert.AreEqual("a", "a");
+            Assert.AreEqual("a", "b");
+        }
+
+        // Mark that this is a unit test method. (Required)
+        [TestMethod]
+        public void YouTestMethod()
+        {
+            throw new NotImplementedException();
         }
     }
 }

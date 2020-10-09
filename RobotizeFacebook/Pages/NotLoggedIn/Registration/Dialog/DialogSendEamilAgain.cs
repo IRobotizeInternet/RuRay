@@ -2,15 +2,19 @@
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using RobotizeLibrary.CommonControls;
+using RobotizeLibrary.Controls.TriggerControls;
 using RobotizeLibrary.Dialogs;
 
 namespace RobotizeFacebook.Pages.NotLoggedIn.Login.Dialog
 {
     public class DialogSendEamilAgain : DialogBase
     {
+        protected override By ByForDialog => throw new System.NotImplementedException();
+
         public DialogSendEamilAgain(RemoteWebDriver driver, WebDriverWait wait) 
             : base(driver, wait)
         {
+
         }
 
         public EventTriggerButton<DialogChangeEmail> ButtonChangeEmail =>

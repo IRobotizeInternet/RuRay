@@ -3,6 +3,7 @@ using RobotizeFacebook.Pages.LoggedUser;
 using RobotizeFacebook.Pages.NotLoggedIn;
 using RobotizeFacebook.Pages.PasswordRecovery;
 using RobotizeLibrary.CommonControls;
+using RobotizeLibrary.Controls.TriggerControls;
 
 namespace RobotizeFacebook.Pages
 {
@@ -13,6 +14,7 @@ namespace RobotizeFacebook.Pages
         public TextBox TextBoxUserName => new TextBox(Driver, By.XPath("//input[@name='email']"));
         public TextBox TextBoxPassword => new TextBox(Driver, By.XPath("//input[@name='pass']"));
         public EventTriggerButton<PageHome> ButtonLogin => new EventTriggerButton<PageHome>(Driver, Wait, By.XPath("//button[@name='login']"));
+        
         public EventTriggerHyperlink<PasswordRecoveryPage> ButtonForgotPassword 
                  => new EventTriggerHyperlink<PasswordRecoveryPage>(Driver, Wait, By.XPath("//div[@class='_6ltj']//a")); 
 
