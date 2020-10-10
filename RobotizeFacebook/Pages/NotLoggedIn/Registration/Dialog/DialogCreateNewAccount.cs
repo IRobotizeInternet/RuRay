@@ -33,9 +33,9 @@ namespace RobotizeFacebook.Pages.NotLoggedIn
         public Dropdown DropdownSelectYourPronoun => new Dropdown(Driver, By.XPath("//select[name='preferred_pronoun']"));
         public TextBox TextBoxGenderOptional => new TextBox(Driver, By.XPath("//input[@name='custom_gender']"));
 
-        public EventTriggerHyperlink<PageTerms> HyperlinkTerms => new EventTriggerHyperlink<PageTerms>(Driver, Wait, By.XPath("//a[@id='terms-link']"));
-        public EventTriggerHyperlink<PagePrivacy> HyperlinkDataPolicy => new EventTriggerHyperlink<PagePrivacy>(Driver, Wait, By.XPath("//a[@id='privacy-link']"));
-        public EventTriggerHyperlink<PageCookies> HyperlinkCookiePolicy => new EventTriggerHyperlink<PageCookies>(Driver, Wait, By.XPath("//a[@id='cookie-use-link']"));
+        public Hyperlink<PageTerms> HyperlinkTerms => new Hyperlink<PageTerms>(Driver, Wait, By.XPath("//a[@id='terms-link']"));
+        public Hyperlink<PagePrivacy> HyperlinkDataPolicy => new Hyperlink<PagePrivacy>(Driver, Wait, By.XPath("//a[@id='privacy-link']"));
+        public Hyperlink<PageCookies> HyperlinkCookiePolicy => new Hyperlink<PageCookies>(Driver, Wait, By.XPath("//a[@id='cookie-use-link']"));
 
         public EventTriggerButton<PageHome> ButtonSignUp => new EventTriggerButton<PageHome>(Driver, Wait, By.XPath("//button[@name='websubmit')]"));
 

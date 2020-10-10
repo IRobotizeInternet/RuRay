@@ -18,7 +18,7 @@ namespace RobotizeFacebook.Pages.PasswordRecovery
 
         public Label LabelButtonSubmit => new Label(Driver, By.XPath("//label[@id='did_submit']"));
 
-        public EventTriggerHyperlink<PageHome> LinkCancel => 
-            new EventTriggerHyperlink<PageHome>(Driver, Wait, By.XPath("//div[@class='rfloat _ohf']//a[@role='button']"));
+        public Hyperlink<PageHome> LinkCancel => 
+            new Hyperlink<PageHome>(Driver, Wait, By.XPath("//div[@class='rfloat _ohf']//a[@role='button']"));
     }
 }

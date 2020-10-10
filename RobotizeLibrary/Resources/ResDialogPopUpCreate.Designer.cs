@@ -22,24 +22,24 @@ namespace RobotizeLibrary.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class DialogPopUpCreate {
+    public class ResDialogPopUpCreate {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal DialogPopUpCreate() {
+        internal ResDialogPopUpCreate() {
         }
         
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("RobotizeLibrary.Resources.DialogPopUpCreate", typeof(DialogPopUpCreate).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("RobotizeLibrary.Resources.ResDialogPopUpCreate", typeof(ResDialogPopUpCreate).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -51,7 +51,7 @@ namespace RobotizeLibrary.Resources {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Event.
         /// </summary>
-        internal static string Event {
+        public static string Event {
             get {
                 return ResourceManager.GetString("Event", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Fundraiser.
         /// </summary>
-        internal static string Fundraiser {
+        public static string Fundraiser {
             get {
                 return ResourceManager.GetString("Fundraiser", resourceCulture);
             }
@@ -81,7 +81,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Group.
         /// </summary>
-        internal static string Group {
+        public static string Group {
             get {
                 return ResourceManager.GetString("Group", resourceCulture);
             }
@@ -90,7 +90,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Life Event.
         /// </summary>
-        internal static string LifeEvent {
+        public static string LifeEvent {
             get {
                 return ResourceManager.GetString("LifeEvent", resourceCulture);
             }
@@ -99,7 +99,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Marketplace Listing.
         /// </summary>
-        internal static string MarketplaceListing {
+        public static string MarketplaceListing {
             get {
                 return ResourceManager.GetString("MarketplaceListing", resourceCulture);
             }
@@ -108,7 +108,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Page.
         /// </summary>
-        internal static string Page {
+        public static string Page {
             get {
                 return ResourceManager.GetString("Page", resourceCulture);
             }
@@ -117,7 +117,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Post.
         /// </summary>
-        internal static string Post {
+        public static string Post {
             get {
                 return ResourceManager.GetString("Post", resourceCulture);
             }
@@ -126,7 +126,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Story.
         /// </summary>
-        internal static string Story {
+        public static string Story {
             get {
                 return ResourceManager.GetString("Story", resourceCulture);
             }

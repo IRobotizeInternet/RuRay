@@ -81,7 +81,7 @@ namespace RobotizeToolbox.CommonControls
         {
             var startTime = DateTime.Now;
             var timeSpanInSeconds = 30;
-            var finishedSettingValue = false;
+            var finishedSettingValue = true;
             while (finishedSettingValue)
             {
                 try

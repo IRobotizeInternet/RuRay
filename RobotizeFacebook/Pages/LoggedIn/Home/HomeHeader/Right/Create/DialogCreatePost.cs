@@ -3,7 +3,7 @@ using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using RobotizeLibrary.Dialogs;
 
-namespace RobotizeFacebook.Pages.LoggedIn.HomeHeader
+namespace RobotizeFacebook.Pages.LoggedIn.Home.HomeHeader
 {
     public class DialogCreatePost : DialogBase
     {

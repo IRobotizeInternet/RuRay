@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RobotizeFacebook.Pages.LoggedIn.GroupFeed
+namespace RobotizeFacebook.Pages.LoggedIn.Home.HomeHeader
 {
     public class PageGroupFeed : PageBase
     {

@@ -22,24 +22,24 @@ namespace RobotizeLibrary.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Month {
+    public class ResMonth {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Month() {
+        internal ResMonth() {
         }
         
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("RobotizeLibrary.Resources.Month", typeof(Month).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("RobotizeLibrary.Resources.ResMonth", typeof(ResMonth).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -51,7 +51,7 @@ namespace RobotizeLibrary.Resources {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Month.
         /// </summary>
-        internal static string _0 {
+        public static string _0 {
             get {
                 return ResourceManager.GetString("0", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Jan.
         /// </summary>
-        internal static string _1 {
+        public static string _1 {
             get {
                 return ResourceManager.GetString("1", resourceCulture);
             }
@@ -81,7 +81,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Oct.
         /// </summary>
-        internal static string _10 {
+        public static string _10 {
             get {
                 return ResourceManager.GetString("10", resourceCulture);
             }
@@ -90,7 +90,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Nov.
         /// </summary>
-        internal static string _11 {
+        public static string _11 {
             get {
                 return ResourceManager.GetString("11", resourceCulture);
             }
@@ -99,7 +99,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Dec.
         /// </summary>
-        internal static string _12 {
+        public static string _12 {
             get {
                 return ResourceManager.GetString("12", resourceCulture);
             }
@@ -108,7 +108,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Feb.
         /// </summary>
-        internal static string _2 {
+        public static string _2 {
             get {
                 return ResourceManager.GetString("2", resourceCulture);
             }
@@ -117,7 +117,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Mar.
         /// </summary>
-        internal static string _3 {
+        public static string _3 {
             get {
                 return ResourceManager.GetString("3", resourceCulture);
             }
@@ -126,7 +126,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Apr.
         /// </summary>
-        internal static string _4 {
+        public static string _4 {
             get {
                 return ResourceManager.GetString("4", resourceCulture);
             }
@@ -135,7 +135,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to May.
         /// </summary>
-        internal static string _5 {
+        public static string _5 {
             get {
                 return ResourceManager.GetString("5", resourceCulture);
             }
@@ -144,7 +144,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Jun.
         /// </summary>
-        internal static string _6 {
+        public static string _6 {
             get {
                 return ResourceManager.GetString("6", resourceCulture);
             }
@@ -153,7 +153,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Jul.
         /// </summary>
-        internal static string _7 {
+        public static string _7 {
             get {
                 return ResourceManager.GetString("7", resourceCulture);
             }
@@ -162,7 +162,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Aug.
         /// </summary>
-        internal static string _8 {
+        public static string _8 {
             get {
                 return ResourceManager.GetString("8", resourceCulture);
             }
@@ -171,7 +171,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Sep.
         /// </summary>
-        internal static string _9 {
+        public static string _9 {
             get {
                 return ResourceManager.GetString("9", resourceCulture);
             }

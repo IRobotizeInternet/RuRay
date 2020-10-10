@@ -76,7 +76,7 @@
     <Compile Include="Controls\RadioButton.cs" />
     <Compile Include="Controls\TriggerControls\EventTriggerButton.cs" />
     <Compile Include="Controls\TriggerControls\EventTriggerDiv.cs" />
-    <Compile Include="Controls\TriggerControls\EventTriggerHyperlink.cs" />
+    <Compile Include="Controls\TriggerControls\Hyperlink.cs" />
     <Compile Include="Controls\Label.cs" />
     <Compile Include="Controls\TextBox.cs" />
     <Compile Include="Dialogs\BaseDialog.cs" />
@@ -85,25 +85,35 @@
     <Compile Include="Extensions\RemoteWebDriverExtension.cs" />
     <Compile Include="Extensions\WebElements.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Resources\Date.Designer.cs">
-      <DependentUpon>Date.resx</DependentUpon>
+    <Compile Include="Resources\ResDate.Designer.cs">
+      <DependentUpon>ResDate.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="Resources\DialogPopUpCreate.Designer.cs">
+    <Compile Include="Resources\ResDialogPopUpCreate.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>DialogPopUpCreate.resx</DependentUpon>
+      <DependentUpon>ResDialogPopUpCreate.resx</DependentUpon>
     </Compile>
-    <Compile Include="Resources\Month.Designer.cs">
-      <DependentUpon>Month.resx</DependentUpon>
+    <Compile Include="Resources\ResHomePageHeader.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResHomePageHeader.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ResLoginPage.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResLoginPage.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ResMonth.Designer.cs">
+      <DependentUpon>ResMonth.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
-    <Compile Include="Resources\Year.Designer.cs">
+    <Compile Include="Resources\ResYear.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>Year.resx</DependentUpon>
+      <DependentUpon>ResYear.resx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -116,22 +126,30 @@
     <Folder Include="MenusAndToolbars\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Resources\Date.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Date.Designer.cs</LastGenOutput>
+    <EmbeddedResource Include="Resources\ResDate.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResDate.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\DialogPopUpCreate.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>DialogPopUpCreate.Designer.cs</LastGenOutput>
+    <EmbeddedResource Include="Resources\ResDialogPopUpCreate.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResDialogPopUpCreate.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\Month.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Month.Designer.cs</LastGenOutput>
+    <EmbeddedResource Include="Resources\ResHomePageHeader.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResHomePageHeader.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ResLoginPage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResLoginPage.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ResMonth.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResMonth.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
-    <EmbeddedResource Include="Resources\Year.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Year.Designer.cs</LastGenOutput>
+    <EmbeddedResource Include="Resources\ResYear.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResYear.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

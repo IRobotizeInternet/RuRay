@@ -1,5 +1,5 @@
 ﻿
-namespace RobotizeFacebook.Pages.LoggedIn.Friends
+namespace RobotizeFacebook.Pages.LoggedIn.Home.HomeHeader
 {
     public class PageFriends : PageBase
     {

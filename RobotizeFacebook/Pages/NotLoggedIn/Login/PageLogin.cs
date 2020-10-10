@@ -2,8 +2,10 @@
 using RobotizeFacebook.Pages.LoggedUser;
 using RobotizeFacebook.Pages.NotLoggedIn;
 using RobotizeFacebook.Pages.PasswordRecovery;
+using RobotizeFacebook.Utilities;
 using RobotizeLibrary.CommonControls;
 using RobotizeLibrary.Controls.TriggerControls;
+using RobotizeLibrary.Resources;
 
 namespace RobotizeFacebook.Pages
 {
@@ -14,11 +16,18 @@ namespace RobotizeFacebook.Pages
         public TextBox TextBoxUserName => new TextBox(Driver, By.XPath("//input[@name='email']"));
         public TextBox TextBoxPassword => new TextBox(Driver, By.XPath("//input[@name='pass']"));
         public EventTriggerButton<PageHome> ButtonLogin => new EventTriggerButton<PageHome>(Driver, Wait, By.XPath("//button[@name='login']"));
-        
-        public EventTriggerHyperlink<PasswordRecoveryPage> ButtonForgotPassword 
-                 => new EventTriggerHyperlink<PasswordRecoveryPage>(Driver, Wait, By.XPath("//div[@class='_6ltj']//a")); 
 
-        public EventTriggerHyperlink<DialogCreateNewAccount> HyperlinkCreateNewAccount
-                => new EventTriggerHyperlink<DialogCreateNewAccount>(Driver, Wait, By.XPath("//a[@class='_42ft _4jy0 _6lti _4jy6 _4jy2 selected _51sy']"));
+        public Hyperlink<PasswordRecoveryPage> ButtonForgotPassword
+                 => new Hyperlink<PasswordRecoveryPage>(Driver, Wait, By.LinkText(ResLoginPage.ForgotPassword));
+
+        public Hyperlink<DialogCreateNewAccount> HyperlinkCreateNewAccount
+                => new Hyperlink<DialogCreateNewAccount>(Driver, Wait, By.XPath("//a[@data-testid='open-registration-form-button']"));
+
+        public PageHome Login()
+        {
+            TextBoxUserName.SetData(AppSettings.UserName);
+            TextBoxPassword.SetData(AppSettings.Password);
+            return ButtonLogin.Click();
+        }
     }
 }

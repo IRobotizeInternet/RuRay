@@ -12,6 +12,7 @@ namespace RobotizeFacebook.Pages
         private string BaseURL { get; }
         private string WebBrowser { get; }
         private const int _defaultTimeoutInSec = 60;
+        [ThreadStatic] private static RemoteWebDriver _remoteDriver = null;
 
         [ThreadStatic] private static WebDriverWait _wait = null;
         protected WebDriverWait Wait => _wait;
@@ -26,7 +27,7 @@ namespace RobotizeFacebook.Pages
             InitializeDriverAndWait();
         }
 
-        private RemoteWebDriver _driver;
+        private static RemoteWebDriver _driver;
         public RemoteWebDriver Driver
         {
             get
@@ -36,9 +37,6 @@ namespace RobotizeFacebook.Pages
                 return _driver = webDriver.Driver();
             }
         }
-
-        // RemoteWebDriver is not thread safe setting it thread static.
-        [ThreadStatic] private static RemoteWebDriver _remoteDriver = null;
 
         public void GoToPage()
         {

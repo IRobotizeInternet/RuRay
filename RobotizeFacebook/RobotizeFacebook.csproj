@@ -69,13 +69,17 @@
     <Compile Include="Pages\BasePage.cs" />
     <Compile Include="Pages\LoggedIn\Home\HomeHeader\Middle\Friends\PageFriends.cs" />
     <Compile Include="Pages\LoggedIn\Home\HomeHeader\Middle\GroupFeed\PageGroupFeed.cs" />
-    <Compile Include="Pages\LoggedIn\Home\HomeHeader\Right\DialogCreatePost.cs" />
-    <Compile Include="Pages\LoggedIn\Home\HomeHeader\Right\DialogPopUpCreate.cs" />
+    <Compile Include="Pages\LoggedIn\Home\HomeHeader\Right\Account\PopupAccount.cs" />
+    <Compile Include="Pages\LoggedIn\Home\HomeHeader\Right\Create\DialogCreatePost.cs" />
+    <Compile Include="Pages\LoggedIn\Home\HomeHeader\Right\Create\DialogLifeEvents.cs" />
+    <Compile Include="Pages\LoggedIn\Home\HomeHeader\Right\Create\PopupCreate.cs" />
     <Compile Include="Pages\LoggedIn\Home\HomeHeader\HomePageHeaderSection.cs" />
+    <Compile Include="Pages\LoggedIn\Home\HomeHeader\Right\Messanger\PopupMessanger.cs" />
+    <Compile Include="Pages\LoggedIn\Home\HomeHeader\Right\Notifications\PopupNotifications.cs" />
     <Compile Include="Pages\LoggedIn\Home\HomePageLeftSection.cs" />
     <Compile Include="Pages\LoggedIn\Home\HomeHeader\Middle\MarketPlace\PageMarketPlace.cs" />
-    <Compile Include="Pages\LoggedIn\Home\HomeHeader\Right\Stories\Create\DialogStoryPrivacy.cs" />
-    <Compile Include="Pages\LoggedIn\Home\HomeHeader\Right\Stories\Create\PageCreate.cs" />
+    <Compile Include="Pages\LoggedIn\Stories\DialogStoryPrivacy.cs" />
+    <Compile Include="Pages\LoggedIn\Stories\PageCreateStory.cs" />
     <Compile Include="Pages\LoggedIn\UserHomePage\PageUserHome.cs" />
     <Compile Include="Pages\LoggedIn\Home\HomeHeader\Middle\Watch\PageWatch.cs" />
     <Compile Include="Pages\NotLoggedIn\Home\PageHome.cs" />
@@ -96,7 +100,10 @@
     <Compile Include="WebDrivers\WebDriver.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="packages.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="RobotizeFacebook.targets" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\RobotizeLibrary\RobotizeToolbox.csproj">
@@ -105,8 +112,19 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="..\packages\Selenium.WebDriver.ChromeDriver.85.0.4183.8700\driver\win32\chromedriver.exe">
+      <Link>chromedriver.exe</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Pages\LoggedIn\Home\HomeHeader\Left\empty.txt" />
   </ItemGroup>
+  <ItemGroup Label="FilesToCopy">
+    <Content Include="RobotizeFacebook.targets" PackagePath="build/RobotizeFacebook.targets" />
+    <Content Include="LogFiles\*.config" Pack="true" PackagePath="contentFiles\LogFiles">
+      <PackageCopyToOutput>true</PackageCopyToOutput>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

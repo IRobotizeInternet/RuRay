@@ -22,24 +22,24 @@ namespace RobotizeLibrary.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Year {
+    public class ResYear {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Year() {
+        internal ResYear() {
         }
         
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("RobotizeLibrary.Resources.Year", typeof(Year).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("RobotizeLibrary.Resources.ResYear", typeof(ResYear).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -51,7 +51,7 @@ namespace RobotizeLibrary.Resources {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1905.
         /// </summary>
-        internal static string _1905 {
+        public static string _1905 {
             get {
                 return ResourceManager.GetString("1905", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1906.
         /// </summary>
-        internal static string _1906 {
+        public static string _1906 {
             get {
                 return ResourceManager.GetString("1906", resourceCulture);
             }
@@ -81,7 +81,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1907.
         /// </summary>
-        internal static string _1907 {
+        public static string _1907 {
             get {
                 return ResourceManager.GetString("1907", resourceCulture);
             }
@@ -90,7 +90,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1908.
         /// </summary>
-        internal static string _1908 {
+        public static string _1908 {
             get {
                 return ResourceManager.GetString("1908", resourceCulture);
             }
@@ -99,7 +99,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1909.
         /// </summary>
-        internal static string _1909 {
+        public static string _1909 {
             get {
                 return ResourceManager.GetString("1909", resourceCulture);
             }
@@ -108,7 +108,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1910.
         /// </summary>
-        internal static string _1910 {
+        public static string _1910 {
             get {
                 return ResourceManager.GetString("1910", resourceCulture);
             }
@@ -117,7 +117,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1911.
         /// </summary>
-        internal static string _1911 {
+        public static string _1911 {
             get {
                 return ResourceManager.GetString("1911", resourceCulture);
             }
@@ -126,7 +126,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1912.
         /// </summary>
-        internal static string _1912 {
+        public static string _1912 {
             get {
                 return ResourceManager.GetString("1912", resourceCulture);
             }
@@ -135,7 +135,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1913.
         /// </summary>
-        internal static string _1913 {
+        public static string _1913 {
             get {
                 return ResourceManager.GetString("1913", resourceCulture);
             }
@@ -144,7 +144,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1914.
         /// </summary>
-        internal static string _1914 {
+        public static string _1914 {
             get {
                 return ResourceManager.GetString("1914", resourceCulture);
             }
@@ -153,7 +153,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1915.
         /// </summary>
-        internal static string _1915 {
+        public static string _1915 {
             get {
                 return ResourceManager.GetString("1915", resourceCulture);
             }
@@ -162,7 +162,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1916.
         /// </summary>
-        internal static string _1916 {
+        public static string _1916 {
             get {
                 return ResourceManager.GetString("1916", resourceCulture);
             }
@@ -171,7 +171,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1917.
         /// </summary>
-        internal static string _1917 {
+        public static string _1917 {
             get {
                 return ResourceManager.GetString("1917", resourceCulture);
             }
@@ -180,7 +180,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1918.
         /// </summary>
-        internal static string _1918 {
+        public static string _1918 {
             get {
                 return ResourceManager.GetString("1918", resourceCulture);
             }
@@ -189,7 +189,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1919.
         /// </summary>
-        internal static string _1919 {
+        public static string _1919 {
             get {
                 return ResourceManager.GetString("1919", resourceCulture);
             }
@@ -198,7 +198,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1920.
         /// </summary>
-        internal static string _1920 {
+        public static string _1920 {
             get {
                 return ResourceManager.GetString("1920", resourceCulture);
             }
@@ -207,7 +207,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1921.
         /// </summary>
-        internal static string _1921 {
+        public static string _1921 {
             get {
                 return ResourceManager.GetString("1921", resourceCulture);
             }
@@ -216,7 +216,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1922.
         /// </summary>
-        internal static string _1922 {
+        public static string _1922 {
             get {
                 return ResourceManager.GetString("1922", resourceCulture);
             }
@@ -225,7 +225,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1923.
         /// </summary>
-        internal static string _1923 {
+        public static string _1923 {
             get {
                 return ResourceManager.GetString("1923", resourceCulture);
             }
@@ -234,7 +234,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1924.
         /// </summary>
-        internal static string _1924 {
+        public static string _1924 {
             get {
                 return ResourceManager.GetString("1924", resourceCulture);
             }
@@ -243,7 +243,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1925.
         /// </summary>
-        internal static string _1925 {
+        public static string _1925 {
             get {
                 return ResourceManager.GetString("1925", resourceCulture);
             }
@@ -252,7 +252,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1926.
         /// </summary>
-        internal static string _1926 {
+        public static string _1926 {
             get {
                 return ResourceManager.GetString("1926", resourceCulture);
             }
@@ -261,7 +261,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1927.
         /// </summary>
-        internal static string _1927 {
+        public static string _1927 {
             get {
                 return ResourceManager.GetString("1927", resourceCulture);
             }
@@ -270,7 +270,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1928.
         /// </summary>
-        internal static string _1928 {
+        public static string _1928 {
             get {
                 return ResourceManager.GetString("1928", resourceCulture);
             }
@@ -279,7 +279,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1929.
         /// </summary>
-        internal static string _1929 {
+        public static string _1929 {
             get {
                 return ResourceManager.GetString("1929", resourceCulture);
             }
@@ -288,7 +288,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1930.
         /// </summary>
-        internal static string _1930 {
+        public static string _1930 {
             get {
                 return ResourceManager.GetString("1930", resourceCulture);
             }
@@ -297,7 +297,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1931.
         /// </summary>
-        internal static string _1931 {
+        public static string _1931 {
             get {
                 return ResourceManager.GetString("1931", resourceCulture);
             }
@@ -306,7 +306,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1932.
         /// </summary>
-        internal static string _1932 {
+        public static string _1932 {
             get {
                 return ResourceManager.GetString("1932", resourceCulture);
             }
@@ -315,7 +315,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1933.
         /// </summary>
-        internal static string _1933 {
+        public static string _1933 {
             get {
                 return ResourceManager.GetString("1933", resourceCulture);
             }
@@ -324,7 +324,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1934.
         /// </summary>
-        internal static string _1934 {
+        public static string _1934 {
             get {
                 return ResourceManager.GetString("1934", resourceCulture);
             }
@@ -333,7 +333,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1935.
         /// </summary>
-        internal static string _1935 {
+        public static string _1935 {
             get {
                 return ResourceManager.GetString("1935", resourceCulture);
             }
@@ -342,7 +342,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1936.
         /// </summary>
-        internal static string _1936 {
+        public static string _1936 {
             get {
                 return ResourceManager.GetString("1936", resourceCulture);
             }
@@ -351,7 +351,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1937.
         /// </summary>
-        internal static string _1937 {
+        public static string _1937 {
             get {
                 return ResourceManager.GetString("1937", resourceCulture);
             }
@@ -360,7 +360,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1938.
         /// </summary>
-        internal static string _1938 {
+        public static string _1938 {
             get {
                 return ResourceManager.GetString("1938", resourceCulture);
             }
@@ -369,7 +369,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1939.
         /// </summary>
-        internal static string _1939 {
+        public static string _1939 {
             get {
                 return ResourceManager.GetString("1939", resourceCulture);
             }
@@ -378,7 +378,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1940.
         /// </summary>
-        internal static string _1940 {
+        public static string _1940 {
             get {
                 return ResourceManager.GetString("1940", resourceCulture);
             }
@@ -387,7 +387,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1941.
         /// </summary>
-        internal static string _1941 {
+        public static string _1941 {
             get {
                 return ResourceManager.GetString("1941", resourceCulture);
             }
@@ -396,7 +396,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1942.
         /// </summary>
-        internal static string _1942 {
+        public static string _1942 {
             get {
                 return ResourceManager.GetString("1942", resourceCulture);
             }
@@ -405,7 +405,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1943.
         /// </summary>
-        internal static string _1943 {
+        public static string _1943 {
             get {
                 return ResourceManager.GetString("1943", resourceCulture);
             }
@@ -414,7 +414,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1944.
         /// </summary>
-        internal static string _1944 {
+        public static string _1944 {
             get {
                 return ResourceManager.GetString("1944", resourceCulture);
             }
@@ -423,7 +423,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1945.
         /// </summary>
-        internal static string _1945 {
+        public static string _1945 {
             get {
                 return ResourceManager.GetString("1945", resourceCulture);
             }
@@ -432,7 +432,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1946.
         /// </summary>
-        internal static string _1946 {
+        public static string _1946 {
             get {
                 return ResourceManager.GetString("1946", resourceCulture);
             }
@@ -441,7 +441,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1947.
         /// </summary>
-        internal static string _1947 {
+        public static string _1947 {
             get {
                 return ResourceManager.GetString("1947", resourceCulture);
             }
@@ -450,7 +450,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1948.
         /// </summary>
-        internal static string _1948 {
+        public static string _1948 {
             get {
                 return ResourceManager.GetString("1948", resourceCulture);
             }
@@ -459,7 +459,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1949.
         /// </summary>
-        internal static string _1949 {
+        public static string _1949 {
             get {
                 return ResourceManager.GetString("1949", resourceCulture);
             }
@@ -468,7 +468,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1950.
         /// </summary>
-        internal static string _1950 {
+        public static string _1950 {
             get {
                 return ResourceManager.GetString("1950", resourceCulture);
             }
@@ -477,7 +477,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1951.
         /// </summary>
-        internal static string _1951 {
+        public static string _1951 {
             get {
                 return ResourceManager.GetString("1951", resourceCulture);
             }
@@ -486,7 +486,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1952.
         /// </summary>
-        internal static string _1952 {
+        public static string _1952 {
             get {
                 return ResourceManager.GetString("1952", resourceCulture);
             }
@@ -495,7 +495,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1953.
         /// </summary>
-        internal static string _1953 {
+        public static string _1953 {
             get {
                 return ResourceManager.GetString("1953", resourceCulture);
             }
@@ -504,7 +504,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1954.
         /// </summary>
-        internal static string _1954 {
+        public static string _1954 {
             get {
                 return ResourceManager.GetString("1954", resourceCulture);
             }
@@ -513,7 +513,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1955.
         /// </summary>
-        internal static string _1955 {
+        public static string _1955 {
             get {
                 return ResourceManager.GetString("1955", resourceCulture);
             }
@@ -522,7 +522,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1956.
         /// </summary>
-        internal static string _1956 {
+        public static string _1956 {
             get {
                 return ResourceManager.GetString("1956", resourceCulture);
             }
@@ -531,7 +531,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1957.
         /// </summary>
-        internal static string _1957 {
+        public static string _1957 {
             get {
                 return ResourceManager.GetString("1957", resourceCulture);
             }
@@ -540,7 +540,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1958.
         /// </summary>
-        internal static string _1958 {
+        public static string _1958 {
             get {
                 return ResourceManager.GetString("1958", resourceCulture);
             }
@@ -549,7 +549,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1959.
         /// </summary>
-        internal static string _1959 {
+        public static string _1959 {
             get {
                 return ResourceManager.GetString("1959", resourceCulture);
             }
@@ -558,7 +558,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1960.
         /// </summary>
-        internal static string _1960 {
+        public static string _1960 {
             get {
                 return ResourceManager.GetString("1960", resourceCulture);
             }
@@ -567,7 +567,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1961.
         /// </summary>
-        internal static string _1961 {
+        public static string _1961 {
             get {
                 return ResourceManager.GetString("1961", resourceCulture);
             }
@@ -576,7 +576,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1962.
         /// </summary>
-        internal static string _1962 {
+        public static string _1962 {
             get {
                 return ResourceManager.GetString("1962", resourceCulture);
             }
@@ -585,7 +585,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1963.
         /// </summary>
-        internal static string _1963 {
+        public static string _1963 {
             get {
                 return ResourceManager.GetString("1963", resourceCulture);
             }
@@ -594,7 +594,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1964.
         /// </summary>
-        internal static string _1964 {
+        public static string _1964 {
             get {
                 return ResourceManager.GetString("1964", resourceCulture);
             }
@@ -603,7 +603,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1965.
         /// </summary>
-        internal static string _1965 {
+        public static string _1965 {
             get {
                 return ResourceManager.GetString("1965", resourceCulture);
             }
@@ -612,7 +612,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1966.
         /// </summary>
-        internal static string _1966 {
+        public static string _1966 {
             get {
                 return ResourceManager.GetString("1966", resourceCulture);
             }
@@ -621,7 +621,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1967.
         /// </summary>
-        internal static string _1967 {
+        public static string _1967 {
             get {
                 return ResourceManager.GetString("1967", resourceCulture);
             }
@@ -630,7 +630,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1968.
         /// </summary>
-        internal static string _1968 {
+        public static string _1968 {
             get {
                 return ResourceManager.GetString("1968", resourceCulture);
             }
@@ -639,7 +639,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1969.
         /// </summary>
-        internal static string _1969 {
+        public static string _1969 {
             get {
                 return ResourceManager.GetString("1969", resourceCulture);
             }
@@ -648,7 +648,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1970.
         /// </summary>
-        internal static string _1970 {
+        public static string _1970 {
             get {
                 return ResourceManager.GetString("1970", resourceCulture);
             }
@@ -657,7 +657,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1971.
         /// </summary>
-        internal static string _1971 {
+        public static string _1971 {
             get {
                 return ResourceManager.GetString("1971", resourceCulture);
             }
@@ -666,7 +666,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1972.
         /// </summary>
-        internal static string _1972 {
+        public static string _1972 {
             get {
                 return ResourceManager.GetString("1972", resourceCulture);
             }
@@ -675,7 +675,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1973.
         /// </summary>
-        internal static string _1973 {
+        public static string _1973 {
             get {
                 return ResourceManager.GetString("1973", resourceCulture);
             }
@@ -684,7 +684,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1974.
         /// </summary>
-        internal static string _1974 {
+        public static string _1974 {
             get {
                 return ResourceManager.GetString("1974", resourceCulture);
             }
@@ -693,7 +693,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1975.
         /// </summary>
-        internal static string _1975 {
+        public static string _1975 {
             get {
                 return ResourceManager.GetString("1975", resourceCulture);
             }
@@ -702,7 +702,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1976.
         /// </summary>
-        internal static string _1976 {
+        public static string _1976 {
             get {
                 return ResourceManager.GetString("1976", resourceCulture);
             }
@@ -711,7 +711,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1977.
         /// </summary>
-        internal static string _1977 {
+        public static string _1977 {
             get {
                 return ResourceManager.GetString("1977", resourceCulture);
             }
@@ -720,7 +720,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1978.
         /// </summary>
-        internal static string _1978 {
+        public static string _1978 {
             get {
                 return ResourceManager.GetString("1978", resourceCulture);
             }
@@ -729,7 +729,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1979.
         /// </summary>
-        internal static string _1979 {
+        public static string _1979 {
             get {
                 return ResourceManager.GetString("1979", resourceCulture);
             }
@@ -738,7 +738,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1980.
         /// </summary>
-        internal static string _1980 {
+        public static string _1980 {
             get {
                 return ResourceManager.GetString("1980", resourceCulture);
             }
@@ -747,7 +747,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1981.
         /// </summary>
-        internal static string _1981 {
+        public static string _1981 {
             get {
                 return ResourceManager.GetString("1981", resourceCulture);
             }
@@ -756,7 +756,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1982.
         /// </summary>
-        internal static string _1982 {
+        public static string _1982 {
             get {
                 return ResourceManager.GetString("1982", resourceCulture);
             }
@@ -765,7 +765,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1983.
         /// </summary>
-        internal static string _1983 {
+        public static string _1983 {
             get {
                 return ResourceManager.GetString("1983", resourceCulture);
             }
@@ -774,7 +774,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1984.
         /// </summary>
-        internal static string _1984 {
+        public static string _1984 {
             get {
                 return ResourceManager.GetString("1984", resourceCulture);
             }
@@ -783,7 +783,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1985.
         /// </summary>
-        internal static string _1985 {
+        public static string _1985 {
             get {
                 return ResourceManager.GetString("1985", resourceCulture);
             }
@@ -792,7 +792,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1986.
         /// </summary>
-        internal static string _1986 {
+        public static string _1986 {
             get {
                 return ResourceManager.GetString("1986", resourceCulture);
             }
@@ -801,7 +801,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1987.
         /// </summary>
-        internal static string _1987 {
+        public static string _1987 {
             get {
                 return ResourceManager.GetString("1987", resourceCulture);
             }
@@ -810,7 +810,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1988.
         /// </summary>
-        internal static string _1988 {
+        public static string _1988 {
             get {
                 return ResourceManager.GetString("1988", resourceCulture);
             }
@@ -819,7 +819,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1989.
         /// </summary>
-        internal static string _1989 {
+        public static string _1989 {
             get {
                 return ResourceManager.GetString("1989", resourceCulture);
             }
@@ -828,7 +828,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1990.
         /// </summary>
-        internal static string _1990 {
+        public static string _1990 {
             get {
                 return ResourceManager.GetString("1990", resourceCulture);
             }
@@ -837,7 +837,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1991.
         /// </summary>
-        internal static string _1991 {
+        public static string _1991 {
             get {
                 return ResourceManager.GetString("1991", resourceCulture);
             }
@@ -846,7 +846,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1992.
         /// </summary>
-        internal static string _1992 {
+        public static string _1992 {
             get {
                 return ResourceManager.GetString("1992", resourceCulture);
             }
@@ -855,7 +855,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1993.
         /// </summary>
-        internal static string _1993 {
+        public static string _1993 {
             get {
                 return ResourceManager.GetString("1993", resourceCulture);
             }
@@ -864,7 +864,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1994.
         /// </summary>
-        internal static string _1994 {
+        public static string _1994 {
             get {
                 return ResourceManager.GetString("1994", resourceCulture);
             }
@@ -873,7 +873,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1995.
         /// </summary>
-        internal static string _1995 {
+        public static string _1995 {
             get {
                 return ResourceManager.GetString("1995", resourceCulture);
             }
@@ -882,7 +882,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1996.
         /// </summary>
-        internal static string _1996 {
+        public static string _1996 {
             get {
                 return ResourceManager.GetString("1996", resourceCulture);
             }
@@ -891,7 +891,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1997.
         /// </summary>
-        internal static string _1997 {
+        public static string _1997 {
             get {
                 return ResourceManager.GetString("1997", resourceCulture);
             }
@@ -900,7 +900,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1998.
         /// </summary>
-        internal static string _1998 {
+        public static string _1998 {
             get {
                 return ResourceManager.GetString("1998", resourceCulture);
             }
@@ -909,7 +909,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 1999.
         /// </summary>
-        internal static string _1999 {
+        public static string _1999 {
             get {
                 return ResourceManager.GetString("1999", resourceCulture);
             }
@@ -918,7 +918,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 2000.
         /// </summary>
-        internal static string _2000 {
+        public static string _2000 {
             get {
                 return ResourceManager.GetString("2000", resourceCulture);
             }
@@ -927,7 +927,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 2001.
         /// </summary>
-        internal static string _2001 {
+        public static string _2001 {
             get {
                 return ResourceManager.GetString("2001", resourceCulture);
             }
@@ -936,7 +936,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 2002.
         /// </summary>
-        internal static string _2002 {
+        public static string _2002 {
             get {
                 return ResourceManager.GetString("2002", resourceCulture);
             }
@@ -945,7 +945,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 2003.
         /// </summary>
-        internal static string _2003 {
+        public static string _2003 {
             get {
                 return ResourceManager.GetString("2003", resourceCulture);
             }
@@ -954,7 +954,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 2004.
         /// </summary>
-        internal static string _2004 {
+        public static string _2004 {
             get {
                 return ResourceManager.GetString("2004", resourceCulture);
             }
@@ -963,7 +963,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 2005.
         /// </summary>
-        internal static string _2005 {
+        public static string _2005 {
             get {
                 return ResourceManager.GetString("2005", resourceCulture);
             }
@@ -972,7 +972,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 2006.
         /// </summary>
-        internal static string _2006 {
+        public static string _2006 {
             get {
                 return ResourceManager.GetString("2006", resourceCulture);
             }
@@ -981,7 +981,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 2007.
         /// </summary>
-        internal static string _2007 {
+        public static string _2007 {
             get {
                 return ResourceManager.GetString("2007", resourceCulture);
             }
@@ -990,7 +990,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 2008.
         /// </summary>
-        internal static string _2008 {
+        public static string _2008 {
             get {
                 return ResourceManager.GetString("2008", resourceCulture);
             }
@@ -999,7 +999,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 2009.
         /// </summary>
-        internal static string _2009 {
+        public static string _2009 {
             get {
                 return ResourceManager.GetString("2009", resourceCulture);
             }
@@ -1008,7 +1008,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 2010.
         /// </summary>
-        internal static string _2010 {
+        public static string _2010 {
             get {
                 return ResourceManager.GetString("2010", resourceCulture);
             }
@@ -1017,7 +1017,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 2011.
         /// </summary>
-        internal static string _2011 {
+        public static string _2011 {
             get {
                 return ResourceManager.GetString("2011", resourceCulture);
             }
@@ -1026,7 +1026,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 2012.
         /// </summary>
-        internal static string _2012 {
+        public static string _2012 {
             get {
                 return ResourceManager.GetString("2012", resourceCulture);
             }
@@ -1035,7 +1035,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 2013.
         /// </summary>
-        internal static string _2013 {
+        public static string _2013 {
             get {
                 return ResourceManager.GetString("2013", resourceCulture);
             }
@@ -1044,7 +1044,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 2014.
         /// </summary>
-        internal static string _2014 {
+        public static string _2014 {
             get {
                 return ResourceManager.GetString("2014", resourceCulture);
             }
@@ -1053,7 +1053,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 2015.
         /// </summary>
-        internal static string _2015 {
+        public static string _2015 {
             get {
                 return ResourceManager.GetString("2015", resourceCulture);
             }
@@ -1062,7 +1062,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 2016.
         /// </summary>
-        internal static string _2016 {
+        public static string _2016 {
             get {
                 return ResourceManager.GetString("2016", resourceCulture);
             }
@@ -1071,7 +1071,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 2017.
         /// </summary>
-        internal static string _2017 {
+        public static string _2017 {
             get {
                 return ResourceManager.GetString("2017", resourceCulture);
             }
@@ -1080,7 +1080,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 2018.
         /// </summary>
-        internal static string _2018 {
+        public static string _2018 {
             get {
                 return ResourceManager.GetString("2018", resourceCulture);
             }
@@ -1089,7 +1089,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 2019.
         /// </summary>
-        internal static string _2019 {
+        public static string _2019 {
             get {
                 return ResourceManager.GetString("2019", resourceCulture);
             }
@@ -1098,7 +1098,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 2020.
         /// </summary>
-        internal static string _2020 {
+        public static string _2020 {
             get {
                 return ResourceManager.GetString("2020", resourceCulture);
             }
@@ -1107,7 +1107,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 2021.
         /// </summary>
-        internal static string _2021 {
+        public static string _2021 {
             get {
                 return ResourceManager.GetString("2021", resourceCulture);
             }
@@ -1116,7 +1116,7 @@ namespace RobotizeLibrary.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 2022.
         /// </summary>
-        internal static string _2022 {
+        public static string _2022 {
             get {
                 return ResourceManager.GetString("2022", resourceCulture);
             }

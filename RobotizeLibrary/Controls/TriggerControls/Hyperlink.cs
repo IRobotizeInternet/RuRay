@@ -6,11 +6,11 @@ using System;
 
 namespace RobotizeLibrary.Controls.TriggerControls
 {
-    public class EventTriggerHyperlink <EventResult> where EventResult : class
+    public class Hyperlink <EventResult> where EventResult : class
     {
         private readonly BaseDOMProperty _element;
 
-        public EventTriggerHyperlink(
+        public Hyperlink(
             RemoteWebDriver driver,
             WebDriverWait wait, 
             By byForElement)
