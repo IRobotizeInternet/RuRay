@@ -9,6 +9,7 @@ using RobotizeLibrary.Controls.TriggerControls;
 using RobotizeLibrary.Resources;
 using System;
 using System.Linq;
+using System.Threading;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
@@ -29,10 +30,10 @@ namespace RobotizeFacebook.Pages.LoggedIn
 
         // Items in the middle.
         public Hyperlink<PageHome> HyperLinkHome => new Hyperlink<PageHome>(_driver, _wait, By.XPath($"//a[@aria-label='{ResHomePageHeader.Home}']"));
-        public Hyperlink<PageFriends> HyperLinkFriends => new Hyperlink<PageFriends>(_driver, _wait, By.XPath($"//a[@aria-label='{ResHomePageHeader.Friends}']"));
-        public Hyperlink<PageHome> HyperLinkWatch => new Hyperlink<PageHome>(_driver, _wait, By.XPath($"//a[@aria-label='{ResHomePageHeader.Watch}']"));
-        public Hyperlink<PageHome> HyperLinkMarketPlace => new Hyperlink<PageHome>(_driver, _wait, By.XPath($"//a[@aria-label='{ResHomePageHeader.Marketplace}']"));
-        public Hyperlink<PageHome> HyperLinkGroups => new Hyperlink<PageHome>(_driver, _wait, By.XPath($"//a[@aria-label='{ResHomePageHeader.Groups}']"));
+        public Hyperlink<PageFriends> HyperLinkFriends => new Hyperlink<PageFriends>(_driver, _wait, By.XPath($"//a[@href='/friends/']"));
+        public Hyperlink<PageHome> HyperLinkWatch => new Hyperlink<PageHome>(_driver, _wait, By.XPath($"//a[@href='/watch/']"));
+        public Hyperlink<PageHome> HyperLinkMarketPlace => new Hyperlink<PageHome>(_driver, _wait, By.XPath($"//a[@href='/marketplace/?ref=app_tab']"));
+        public Hyperlink<PageHome> HyperLinkGroups => new Hyperlink<PageHome>(_driver, _wait, By.XPath("//a[@href='/groups/']"));
 
         // Items in the right.
         public Hyperlink<PageUserHome> HyperLinkUserProfile => new Hyperlink<PageUserHome>(_driver, _wait, By.XPath("//a[@href='/me/']/parent::div"));
@@ -42,9 +43,17 @@ namespace RobotizeFacebook.Pages.LoggedIn
 
         public void RunConformance()
         {
-            foreach(var property in GetType().GetProperties().Where(x=>x.PropertyType.Name == "Hyperling"))
-            {
-            }
+            HyperLinkWatch.Click();
+            HyperLinkGroups.Click();
+            HyperLinkWatch.Click();
+            HyperLinkMarketPlace.Click();
+            HyperLinkGroups.Click();
+            HyperLinkFacebookTitleIcon.Click();
+            HyperLinkUserProfile.Click();
+            DialogButtonToCreate.Click();
+            DialogButtonMessanger.Click();
+            DialogButtonNotifications.Click();
+            HyperLinkFriends.Click();
         }
 
     }

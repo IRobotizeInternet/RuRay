@@ -41,7 +41,7 @@ namespace RobotizeToolbox.CommonControls
                 try
                 {
                     // find the element
-                    var element = Driver.FindElementWithTimeSpan(ByForElement, timeSpanInSeconds: 20);
+                    var element = Driver.FindElementWithTimeSpan(ByForElement, timeSpanInSeconds: 120);
                     element.Click();
                     isElementClicked = !isElementClicked;
                 }

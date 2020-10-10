@@ -1,6 +1,7 @@
 ﻿using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Remote;
 using System;
+
 namespace RobotizeFacebook.WebDrivers
 {
     public class Chrome : WebDriver
@@ -19,6 +20,8 @@ namespace RobotizeFacebook.WebDrivers
             options.AddUserProfilePreference("credentials_enable_service", false);
             options.AddUserProfilePreference("password_manager_enabled", false);
             options.AddUserProfilePreference("allow-running-insecure-content", true);
+            options.AddArguments("start-maximized");
+
             var driver = new ChromeDriver(DriverLocation, options, TimeSpan.FromSeconds(WebDriverTimeoutInSeconds))
             {
                 Url = BaseURL

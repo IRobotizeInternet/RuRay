@@ -3,25 +3,30 @@ using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using RobotizeToolbox.CommonControls;
 using System;
+using System.Threading;
 
 namespace RobotizeLibrary.Controls.TriggerControls
 {
     public class Hyperlink <EventResult> where EventResult : class
     {
         private readonly BaseDOMProperty _element;
-
+        private readonly RemoteWebDriver _driver;
+        private readonly WebDriverWait _wait;
         public Hyperlink(
             RemoteWebDriver driver,
             WebDriverWait wait, 
             By byForElement)
         {
+            _driver = driver;
+            _wait = wait;
             _element = new BaseDOMProperty(driver, byForElement);
         }
 
         public EventResult Click()
         {
             _element.Click();
-            return (EventResult)Activator.CreateInstance(typeof(EventResult));
+            Thread.Sleep(1000);
+            return (EventResult)Activator.CreateInstance(typeof(EventResult), _driver, _wait);
         }
     }
 }

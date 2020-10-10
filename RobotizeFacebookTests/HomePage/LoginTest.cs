@@ -17,7 +17,7 @@ namespace RobotizeFacebookTests.HomePage
         [TestMethod]
         public void YouTestMethod()
         {
-            throw new NotImplementedException();
+            // throw new NotImplementedException();
         }
     }
 }
