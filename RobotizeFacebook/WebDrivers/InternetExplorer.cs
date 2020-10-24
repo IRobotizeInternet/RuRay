@@ -8,7 +8,7 @@ namespace RobotizeFacebook.WebDrivers
     {
         public InternetExplorer(string baseUrl) : base(baseUrl) { }
 
-        public override RemoteWebDriver Driver()
+        public override RemoteWebDriver Driver(bool useExistingBrowser= true)
         {
             if (string.IsNullOrEmpty(BaseURL))
             {

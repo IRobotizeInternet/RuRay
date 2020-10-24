@@ -1,5 +1,8 @@
-﻿using OpenQA.Selenium.Chrome;
+﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Remote;
+using Polly;
+using RobotizeFacebook.Utilities;
 using System;
 
 namespace RobotizeFacebook.WebDrivers
@@ -8,24 +11,39 @@ namespace RobotizeFacebook.WebDrivers
     {
         public Chrome(string baseUrl):base(baseUrl) { }
 
-        public override RemoteWebDriver Driver()
+        public override RemoteWebDriver Driver(bool useExistingBrowser = true)
         {
+            // when useExistingBrowser is set open chrome
+            if (useExistingBrowser) OpenBrowserAndGetAddress();
+
             if (string.IsNullOrEmpty(BaseURL))
             {
                 throw new Exception($"{nameof(BaseURL)} is not set.");
             }
 
-            //set an option to disable 'Save Password' prompt in the browser
             var options = new ChromeOptions();
-            options.AddUserProfilePreference("credentials_enable_service", false);
-            options.AddUserProfilePreference("password_manager_enabled", false);
-            options.AddUserProfilePreference("allow-running-insecure-content", true);
-            options.AddArguments("start-maximized");
+            options.DebuggerAddress = $"{AppSettings.DebuggerBrowserUrl}:{ AppSettings.DebuggerBrowserPort}";
 
-            var driver = new ChromeDriver(DriverLocation, options, TimeSpan.FromSeconds(WebDriverTimeoutInSeconds))
+            if (!useExistingBrowser)
             {
-                Url = BaseURL
-            };
+                options.AddUserProfilePreference("credentials_enable_service", false);
+                options.AddUserProfilePreference("password_manager_enabled", false);
+                options.AddUserProfilePreference("allow-running-insecure-content", true);
+                options.AddArguments("start-maximized");
+            }
+            
+
+            ChromeDriver driver = null;
+
+            // Using Polly library: https://github.com/App-vNext/Polly
+            var policy = Policy
+              .Handle<InvalidOperationException>()
+              .WaitAndRetry(10, t => TimeSpan.FromSeconds(1));
+
+            policy.Execute(() =>
+            {
+                driver = new ChromeDriver(DriverLocation, options, TimeSpan.FromSeconds(WebDriverTimeoutInSeconds));
+            });
 
             return driver;
         }
