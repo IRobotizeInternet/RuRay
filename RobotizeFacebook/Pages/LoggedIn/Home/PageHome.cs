@@ -16,5 +16,6 @@ namespace RobotizeFacebook.Pages.LoggedUser
 
         public override string PageUrl => "";
         public HomePageHeaderSection HeaderSection => new HomePageHeaderSection(Driver, Wait);
+        public MainSection MainSection => new MainSection(Driver, Wait);
     }
 }

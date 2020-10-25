@@ -88,6 +88,11 @@
     <Compile Include="Extensions\RemoteWebDriverExtension.cs" />
     <Compile Include="Extensions\WebElements.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\ResCreatePost.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResCreatePost.resx</DependentUpon>
+    </Compile>
     <Compile Include="Resources\ResDate.Designer.cs">
       <DependentUpon>ResDate.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -107,6 +112,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ResLoginPage.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ResMiscellaneous.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResMiscellaneous.resx</DependentUpon>
     </Compile>
     <Compile Include="Resources\ResMonth.Designer.cs">
       <DependentUpon>ResMonth.resx</DependentUpon>
@@ -129,6 +139,10 @@
     <Folder Include="MenusAndToolbars\" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Resources\ResCreatePost.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResCreatePost.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\ResDate.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ResDate.Designer.cs</LastGenOutput>
@@ -144,6 +158,10 @@
     <EmbeddedResource Include="Resources\ResLoginPage.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ResLoginPage.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ResMiscellaneous.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResMiscellaneous.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\ResMonth.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

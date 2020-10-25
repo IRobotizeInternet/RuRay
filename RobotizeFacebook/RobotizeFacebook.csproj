@@ -145,6 +145,12 @@
     <Compile Include="Pages\LoggedIn\Home\HomeHeader\Right\Notifications\PopupNotifications.cs" />
     <Compile Include="Pages\LoggedIn\Home\HomePageLeftSection.cs" />
     <Compile Include="Pages\LoggedIn\Home\HomeHeader\Middle\MarketPlace\PageMarketPlace.cs" />
+    <Compile Include="Pages\LoggedIn\Home\MainSection\MainSection.cs" />
+    <Compile Include="Pages\LoggedIn\Home\MainSection\SubSections\CreatePost.cs" />
+    <Compile Include="Pages\LoggedIn\Home\MainSection\SubSections\CreateRoom.cs" />
+    <Compile Include="Pages\LoggedIn\Home\MainSection\SubSections\DialogCreateYourRoom.cs" />
+    <Compile Include="Pages\LoggedIn\Home\MainSection\SubSections\DialogLearnCreateRoom.cs" />
+    <Compile Include="Pages\LoggedIn\Home\PageTimeline.cs" />
     <Compile Include="Pages\LoggedIn\Stories\DialogStoryPrivacy.cs" />
     <Compile Include="Pages\LoggedIn\Stories\PageCreateStory.cs" />
     <Compile Include="Pages\LoggedIn\UserHomePage\PageUserHome.cs" />
@@ -205,7 +211,9 @@
       <PackageCopyToOutput>true</PackageCopyToOutput>
     </Content>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Pages\LoggedIn\Home\NavigationSection\" />
+  </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
