@@ -1,5 +1,4 @@
-﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Chrome;
+﻿using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Remote;
 using Polly;
 using RobotizeFacebook.Utilities;
@@ -29,10 +28,8 @@ namespace RobotizeFacebook.WebDrivers
                 options.AddUserProfilePreference("credentials_enable_service", false);
                 options.AddUserProfilePreference("password_manager_enabled", false);
                 options.AddUserProfilePreference("allow-running-insecure-content", true);
-                options.AddArguments("start-maximized");
             }
             
-
             ChromeDriver driver = null;
 
             // Using Polly library: https://github.com/App-vNext/Polly
@@ -44,6 +41,8 @@ namespace RobotizeFacebook.WebDrivers
             {
                 driver = new ChromeDriver(DriverLocation, options, TimeSpan.FromSeconds(WebDriverTimeoutInSeconds));
             });
+
+            driver.Manage().Window.Maximize();
 
             return driver;
         }

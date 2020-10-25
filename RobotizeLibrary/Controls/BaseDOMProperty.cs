@@ -1,7 +1,11 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Html5;
 using OpenQA.Selenium.Interactions;
+using OpenQA.Selenium.Interactions.Internal;
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
+using Polly;
+using RobotizeLibrary.Controls;
 using RobotizeLibrary.Extensions;
 using System;
 using System.Collections.Generic;
@@ -33,31 +37,33 @@ namespace RobotizeToolbox.CommonControls
             // It will try to five seconds to click on an element.
             var wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
 
-            var isElementClicked = false;
-            while (!isElementClicked)
+            try
             {
-                if (numberOfTries == 0) throw new Exception($"Unable to click element {ByForElement}");
+                // find the element
+                var element = Driver.FindElementWithTimeSpan(ByForElement, timeSpanInSeconds: 10);
 
-                try
+                // Using Polly library: https://github.com/App-vNext/Polly
+                var policy = Policy
+                  .Handle<InvalidOperationException>()
+                  .WaitAndRetry(30, t => TimeSpan.FromSeconds(1));
+
+                policy.Execute(() =>
                 {
-                    // find the element
-                    var element = Driver.FindElementWithTimeSpan(ByForElement, timeSpanInSeconds: 10);
                     element.Click();
-                    isElementClicked = !isElementClicked;
-                }
-                catch (WebDriverException ex)
-                {
-                    // If any of the following execptions occured try again.
-                    var knowErrorMessages = new List<string> 
+                });
+            }
+            catch (WebDriverException ex)
+            {
+                // If any of the following execptions occured try again.
+                var knowErrorMessages = new List<string>
                     {
                         "not clickable at point",
                         "element is not attached",
                         "Timed out"
                     };
 
-                    if (knowErrorMessages.Any(x => x.Contains(ex.Message))) numberOfTries--;
-                    else throw new Exception($"Unexpected WebDriverException was encountered: {ex.Message} {ex.StackTrace}");
-                }
+                if (knowErrorMessages.Any(x => x.Contains(ex.Message))) numberOfTries--;
+                else throw new Exception($"Unexpected WebDriverException was encountered: {ex.Message} {ex.StackTrace}");
             }
         }
 

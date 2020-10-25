@@ -43,7 +43,7 @@ namespace RobotizeFacebook.WebDrivers
                 }
             proc.StartInfo.FileName = AppSettings.ChromeBrowserLocation;
             proc.StartInfo.UseShellExecute = false;
-            proc.StartInfo.Arguments = $"{AppSettings.BaseURL} --new-window --remote-debugging-port={AppSettings.DebuggerBrowserPort} --user-data-dir=C:\\Temp";
+            proc.StartInfo.Arguments = $"{AppSettings.BaseURL} --remote-debugging-port={AppSettings.DebuggerBrowserPort} --user-data-dir=C:\\Temp";
             proc.Start();
             AppSettings.AddAppSettings(proc.Id);
         }

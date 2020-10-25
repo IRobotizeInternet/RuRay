@@ -10,10 +10,7 @@ namespace RobotizeFacebookTests.LoggedIn
         [TestMethod]
         public void PageConformance()
         {
-            //var logInPage = new PageLogin();
-            //var loggedInHomePage = logInPage.Login();
-            var page = new PageLogin();
-            page.Login();
+            //var page = new PageLogin();
             PageHome d = new PageHome();
             d.HeaderSection.RunConformance();
         }
