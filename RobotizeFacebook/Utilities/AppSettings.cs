@@ -13,6 +13,7 @@ namespace RobotizeFacebook.Utilities
         public static string DebuggerBrowserUrl { get; set; }
         public static string DebuggerBrowserPort { get; set; }
         public static string BrowserProcessId { get; set; }
+        public static string DefaultCulture { get; set; }
 
         static AppSettings()
         {
@@ -25,6 +26,7 @@ namespace RobotizeFacebook.Utilities
             DebuggerBrowserUrl = ConfigurationManager.AppSettings[nameof(DebuggerBrowserUrl)];
             DebuggerBrowserPort = ConfigurationManager.AppSettings[nameof(DebuggerBrowserPort)];
             BrowserProcessId = ConfigurationManager.AppSettings[nameof(BrowserProcessId)];
+            DefaultCulture = ConfigurationManager.AppSettings[nameof(DefaultCulture)];
         }
 
         public static void AddAppSettings(int processId)

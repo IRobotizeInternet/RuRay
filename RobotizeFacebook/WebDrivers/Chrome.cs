@@ -1,6 +1,7 @@
 ﻿using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Remote;
 using Polly;
+using RobotizeFacebook.Services;
 using RobotizeFacebook.Utilities;
 using System;
 
@@ -13,15 +14,17 @@ namespace RobotizeFacebook.WebDrivers
         public override RemoteWebDriver Driver(bool useExistingBrowser = true)
         {
             // when useExistingBrowser is set open chrome
-            if (useExistingBrowser) OpenBrowserAndGetAddress();
+            if (useExistingBrowser) new ServiceBrowser().OpenBrowser();
 
             if (string.IsNullOrEmpty(BaseURL))
             {
                 throw new Exception($"{nameof(BaseURL)} is not set.");
             }
 
-            var options = new ChromeOptions();
-            options.DebuggerAddress = $"{AppSettings.DebuggerBrowserUrl}:{ AppSettings.DebuggerBrowserPort}";
+            var options = new ChromeOptions
+            {
+                DebuggerAddress = $"{AppSettings.DebuggerBrowserUrl}:{ AppSettings.DebuggerBrowserPort}"
+            };
 
             if (!useExistingBrowser)
             {
@@ -43,6 +46,9 @@ namespace RobotizeFacebook.WebDrivers
             });
 
             driver.Manage().Window.Maximize();
+
+            // set default culture 
+            ServiceCulture.SetDefaultCulture(AppSettings.DefaultCulture);
 
             return driver;
         }

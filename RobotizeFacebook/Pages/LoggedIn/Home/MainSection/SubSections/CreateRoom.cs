@@ -20,7 +20,7 @@ namespace RobotizeFacebook.Pages.LoggedIn.Home.MainSection.SubSections
         public EventTriggerButton<DialogCreateYourRoom> DialogCreateRoom =>
             new EventTriggerButton<DialogCreateYourRoom>(_driver, _wait, By.XPath($"//div[@data-pagelet='VideoChatHomeUnit']//span[text()='{ResMiscellaneous.CreateRoom}']"));
 
-        public EventTriggerButton<DialogLearnCreateRoom> LinkLearnHowRoomWorks 
-            => new EventTriggerButton<DialogLearnCreateRoom>(_driver, _wait, By.XPath("//div[@data-pagelet='VideoChatHomeUnit']//div[@aria-label='Learn More']"));
+        public EventTriggerButton<DialogLearnCreateRoom> LinkLearnHowRoomWorks => 
+            new EventTriggerButton<DialogLearnCreateRoom>(_driver, _wait, By.XPath("//div[@data-pagelet='VideoChatHomeUnit']//div[@aria-label='Learn More']"));
     }
 }
