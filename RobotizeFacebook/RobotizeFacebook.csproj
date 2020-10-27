@@ -49,6 +49,12 @@
     <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Appium.Net, Version=4.2.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Appium.WebDriver.4.2.1\lib\net45\Appium.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="Castle.Core, Version=4.0.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <HintPath>..\packages\Castle.Core.4.3.1\lib\net45\Castle.Core.dll</HintPath>
+    </Reference>
     <Reference Include="log4net, Version=2.0.11.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">
       <HintPath>..\packages\log4net.2.0.11\lib\net45\log4net.dll</HintPath>
     </Reference>
@@ -91,6 +97,9 @@
     <Reference Include="Polly, Version=7.0.0.0, Culture=neutral, PublicKeyToken=c8a3ffc3f8f825cc, processorArchitecture=MSIL">
       <HintPath>..\packages\Polly.7.2.1\lib\net472\Polly.dll</HintPath>
     </Reference>
+    <Reference Include="SeleniumExtras.PageObjects, Version=3.11.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\DotNetSeleniumExtras.PageObjects.3.11.0\lib\net45\SeleniumExtras.PageObjects.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
       <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
@@ -129,6 +138,9 @@
     <Reference Include="WebDriver, Version=3.141.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Selenium.WebDriver.3.141.0\lib\net45\WebDriver.dll</HintPath>
     </Reference>
+    <Reference Include="WebDriver.Support, Version=3.141.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.3.141.0\lib\net45\WebDriver.Support.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CryptoServices\Crypto.cs" />
@@ -152,6 +164,35 @@
     <Compile Include="Pages\LoggedIn\Home\MainSection\SubSections\DialogLearnCreateRoom.cs" />
     <Compile Include="Pages\LoggedIn\Home\MainSection\SubSections\Feed.cs" />
     <Compile Include="Pages\LoggedIn\Home\PageTimeline.cs" />
+    <Compile Include="Pages\LoggedIn\Settings\BaseSettings.cs" />
+    <Compile Include="Pages\LoggedIn\Settings\Tabs\BaseEditor.cs" />
+    <Compile Include="Pages\LoggedIn\Settings\Tabs\Seperator1\Editors\AdAccount.cs" />
+    <Compile Include="Pages\LoggedIn\Settings\Tabs\Seperator1\Editors\AddAnotherEmailDialog.cs" />
+    <Compile Include="Pages\LoggedIn\Settings\Tabs\Seperator1\Editors\Contact.cs" />
+    <Compile Include="Pages\LoggedIn\Settings\Tabs\Seperator1\Editors\Memorialization.cs" />
+    <Compile Include="Pages\LoggedIn\Settings\Tabs\Seperator1\Editors\Name.cs" />
+    <Compile Include="Pages\LoggedIn\Settings\Tabs\Seperator1\Editors\UserName.cs" />
+    <Compile Include="Pages\LoggedIn\Settings\Tabs\Seperator4\Ads.cs" />
+    <Compile Include="Pages\LoggedIn\Settings\Tabs\Seperator4\AppsAndWebsites.cs" />
+    <Compile Include="Pages\LoggedIn\Settings\Tabs\Seperator4\BusinessIntegrations.cs" />
+    <Compile Include="Pages\LoggedIn\Settings\Tabs\Seperator4\AdsPayments .cs" />
+    <Compile Include="Pages\LoggedIn\Settings\Tabs\Seperator4\FacebookPay.cs" />
+    <Compile Include="Pages\LoggedIn\Settings\Tabs\Seperator2\FaceRecognition.cs" />
+    <Compile Include="Pages\LoggedIn\Settings\Tabs\Seperator1\General.cs" />
+    <Compile Include="Pages\LoggedIn\Settings\Tabs\Seperator4\InstantGames.cs" />
+    <Compile Include="Pages\LoggedIn\Settings\Tabs\Seperator2\LanguageAndRegion.cs" />
+    <Compile Include="Pages\LoggedIn\Settings\Tabs\Seperator2\Location.cs" />
+    <Compile Include="Pages\LoggedIn\Settings\Tabs\Seperator2\Blocking.cs" />
+    <Compile Include="Pages\LoggedIn\Settings\Tabs\Seperator3\Mobile.cs" />
+    <Compile Include="Pages\LoggedIn\Settings\Tabs\Seperator3\Notifications.cs" />
+    <Compile Include="Pages\LoggedIn\Settings\Tabs\Seperator2\Privacy.cs" />
+    <Compile Include="Pages\LoggedIn\Settings\Tabs\Seperator2\PublicPost.cs" />
+    <Compile Include="Pages\LoggedIn\Settings\Tabs\Seperator1\SecurityLogin.cs" />
+    <Compile Include="Pages\LoggedIn\Settings\Tabs\Seperator2\Stories.cs" />
+    <Compile Include="Pages\LoggedIn\Settings\Tabs\Seperator4\SupportInbox.cs" />
+    <Compile Include="Pages\LoggedIn\Settings\Tabs\Seperator2\TimelineAndTagging.cs" />
+    <Compile Include="Pages\LoggedIn\Settings\Tabs\Seperator4\Videos.cs" />
+    <Compile Include="Pages\LoggedIn\Settings\Tabs\Seperator1\YourFacebookInformation.cs" />
     <Compile Include="Pages\LoggedIn\Stories\DialogStoryPrivacy.cs" />
     <Compile Include="Pages\LoggedIn\Stories\PageCreateStory.cs" />
     <Compile Include="Pages\LoggedIn\UserHomePage\PageUserHome.cs" />

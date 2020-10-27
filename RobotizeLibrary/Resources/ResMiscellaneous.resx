@@ -117,11 +117,26 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AddOrChangeOtherNames" xml:space="preserve">
+    <value>Add or change other names</value>
+  </data>
+  <data name="AddYourPhoneNumber" xml:space="preserve">
+    <value>Add your phone number?</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Continue</value>
+  </data>
   <data name="CreateRoom" xml:space="preserve">
     <value>Create Room</value>
   </data>
   <data name="CreateYourRoom" xml:space="preserve">
     <value>Create Your Room</value>
+  </data>
+  <data name="EnterNewEmail" xml:space="preserve">
+    <value>Enter new email</value>
   </data>
   <data name="LearnHowRoomsWork" xml:space="preserve">
     <value>Learn How Rooms Work</value>
