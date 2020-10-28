@@ -75,6 +75,7 @@
     <Compile Include="Controls\BaseDOMProperty.cs" />
     <Compile Include="Controls\Button.cs" />
     <Compile Include="Controls\Checkbox.cs" />
+    <Compile Include="Controls\Combobox.cs" />
     <Compile Include="Controls\Dropdown.cs" />
     <Compile Include="Controls\RadioButton.cs" />
     <Compile Include="Controls\TriggerControls\EventTriggerButton.cs" />

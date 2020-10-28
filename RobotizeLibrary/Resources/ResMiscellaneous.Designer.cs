@@ -61,6 +61,24 @@ namespace RobotizeLibrary.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add.
+        /// </summary>
+        public static string Add {
+            get {
+                return ResourceManager.GetString("Add", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to + Add another email or mobile number.
+        /// </summary>
+        public static string AddAnotherEmailOrMobileNumber {
+            get {
+                return ResourceManager.GetString("AddAnotherEmailOrMobileNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add or change other names.
         /// </summary>
         public static string AddOrChangeOtherNames {
@@ -84,6 +102,42 @@ namespace RobotizeLibrary.Resources {
         public static string Cancel {
             get {
                 return ResourceManager.GetString("Cancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Change Ad Account Contact.
+        /// </summary>
+        public static string ChangeAdAccountContact {
+            get {
+                return ResourceManager.GetString("ChangeAdAccountContact", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Change Email.
+        /// </summary>
+        public static string ChangeEmail {
+            get {
+                return ResourceManager.GetString("ChangeEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Choose a friend.
+        /// </summary>
+        public static string ChooseAFriend {
+            get {
+                return ResourceManager.GetString("ChooseAFriend", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Close.
+        /// </summary>
+        public static string Close {
+            get {
+                return ResourceManager.GetString("Close", resourceCulture);
             }
         }
         
@@ -115,6 +169,15 @@ namespace RobotizeLibrary.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Delete Your Account in the Future?.
+        /// </summary>
+        public static string DeleteYourAccountInTheFuture {
+            get {
+                return ResourceManager.GetString("DeleteYourAccountInTheFuture", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Enter new email.
         /// </summary>
         public static string EnterNewEmail {
@@ -129,6 +192,15 @@ namespace RobotizeLibrary.Resources {
         public static string LearnHowRoomsWork {
             get {
                 return ResourceManager.GetString("LearnHowRoomsWork", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Request that your account be deleted after you pass away..
+        /// </summary>
+        public static string RequestThatYourAccountBeDeletedAfterYouPassAway {
+            get {
+                return ResourceManager.GetString("RequestThatYourAccountBeDeletedAfterYouPassAway", resourceCulture);
             }
         }
     }

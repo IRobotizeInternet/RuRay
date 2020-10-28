@@ -117,6 +117,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="AddAnotherEmailOrMobileNumber" xml:space="preserve">
+    <value>+ Add another email or mobile number</value>
+  </data>
   <data name="AddOrChangeOtherNames" xml:space="preserve">
     <value>Add or change other names</value>
   </data>
@@ -125,6 +131,18 @@
   </data>
   <data name="Cancel" xml:space="preserve">
     <value>Cancel</value>
+  </data>
+  <data name="ChangeAdAccountContact" xml:space="preserve">
+    <value>Change Ad Account Contact</value>
+  </data>
+  <data name="ChangeEmail" xml:space="preserve">
+    <value>Change Email</value>
+  </data>
+  <data name="ChooseAFriend" xml:space="preserve">
+    <value>Choose a friend</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Close</value>
   </data>
   <data name="Continue" xml:space="preserve">
     <value>Continue</value>
@@ -135,10 +153,16 @@
   <data name="CreateYourRoom" xml:space="preserve">
     <value>Create Your Room</value>
   </data>
+  <data name="DeleteYourAccountInTheFuture" xml:space="preserve">
+    <value>Delete Your Account in the Future?</value>
+  </data>
   <data name="EnterNewEmail" xml:space="preserve">
     <value>Enter new email</value>
   </data>
   <data name="LearnHowRoomsWork" xml:space="preserve">
     <value>Learn How Rooms Work</value>
+  </data>
+  <data name="RequestThatYourAccountBeDeletedAfterYouPassAway" xml:space="preserve">
+    <value>Request that your account be deleted after you pass away.</value>
   </data>
 </root>

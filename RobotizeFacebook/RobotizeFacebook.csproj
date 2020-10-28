@@ -164,6 +164,7 @@
     <Compile Include="Pages\LoggedIn\Home\MainSection\SubSections\DialogLearnCreateRoom.cs" />
     <Compile Include="Pages\LoggedIn\Home\MainSection\SubSections\Feed.cs" />
     <Compile Include="Pages\LoggedIn\Home\PageTimeline.cs" />
+    <Compile Include="Pages\LoggedIn\Settings\AccountSettings\PageAccount.cs" />
     <Compile Include="Pages\LoggedIn\Settings\BaseSettings.cs" />
     <Compile Include="Pages\LoggedIn\Settings\Tabs\BaseEditor.cs" />
     <Compile Include="Pages\LoggedIn\Settings\Tabs\Seperator1\Editors\AdAccount.cs" />
@@ -197,6 +198,7 @@
     <Compile Include="Pages\LoggedIn\Stories\PageCreateStory.cs" />
     <Compile Include="Pages\LoggedIn\UserHomePage\PageUserHome.cs" />
     <Compile Include="Pages\LoggedIn\Home\HomeHeader\Middle\Watch\PageWatch.cs" />
+    <Compile Include="Pages\NotLoggedIn\Help\PageHelpChooseALegacyContact.cs" />
     <Compile Include="Pages\NotLoggedIn\Home\PageHome.cs" />
     <Compile Include="Pages\LoggedIn\Home\PageHome.cs" />
     <Compile Include="Pages\NotLoggedIn\Registration\Dialog\DialogChangeEmail.cs" />
