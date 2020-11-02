@@ -123,6 +123,9 @@
   <data name="AddAnotherEmailOrMobileNumber" xml:space="preserve">
     <value>+ Add another email or mobile number</value>
   </data>
+  <data name="AddEmailAddress" xml:space="preserve">
+    <value>Add Email Address</value>
+  </data>
   <data name="AddOrChangeOtherNames" xml:space="preserve">
     <value>Add or change other names</value>
   </data>
@@ -144,6 +147,9 @@
   <data name="Close" xml:space="preserve">
     <value>Close</value>
   </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
   <data name="Continue" xml:space="preserve">
     <value>Continue</value>
   </data>
@@ -162,7 +168,13 @@
   <data name="LearnHowRoomsWork" xml:space="preserve">
     <value>Learn How Rooms Work</value>
   </data>
+  <data name="LogOutOfAllSessions" xml:space="preserve">
+    <value>Log Out Of All Sessions</value>
+  </data>
   <data name="RequestThatYourAccountBeDeletedAfterYouPassAway" xml:space="preserve">
     <value>Request that your account be deleted after you pass away.</value>
+  </data>
+  <data name="SeeMore" xml:space="preserve">
+    <value>See More</value>
   </data>
 </root>

@@ -79,6 +79,15 @@ namespace RobotizeLibrary.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add Email Address.
+        /// </summary>
+        public static string AddEmailAddress {
+            get {
+                return ResourceManager.GetString("AddEmailAddress", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add or change other names.
         /// </summary>
         public static string AddOrChangeOtherNames {
@@ -142,6 +151,15 @@ namespace RobotizeLibrary.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Confirm.
+        /// </summary>
+        public static string Confirm {
+            get {
+                return ResourceManager.GetString("Confirm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Continue.
         /// </summary>
         public static string Continue {
@@ -196,11 +214,29 @@ namespace RobotizeLibrary.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Log Out Of All Sessions.
+        /// </summary>
+        public static string LogOutOfAllSessions {
+            get {
+                return ResourceManager.GetString("LogOutOfAllSessions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Request that your account be deleted after you pass away..
         /// </summary>
         public static string RequestThatYourAccountBeDeletedAfterYouPassAway {
             get {
                 return ResourceManager.GetString("RequestThatYourAccountBeDeletedAfterYouPassAway", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to See More.
+        /// </summary>
+        public static string SeeMore {
+            get {
+                return ResourceManager.GetString("SeeMore", resourceCulture);
             }
         }
     }
