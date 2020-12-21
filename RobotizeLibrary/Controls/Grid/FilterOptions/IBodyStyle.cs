@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RobotizeLibrary.Controls.Grid
 {
-    public interface IBodyStyle<TBodyStyle> where TBodyStyle: struct, IConvertible
+    public interface IBodyStyle<TBodyStyle> where TBodyStyle: BaseOptionItems
     {
         IApplyFilter BodyStyle(TBodyStyle bodyStyle);        
     }

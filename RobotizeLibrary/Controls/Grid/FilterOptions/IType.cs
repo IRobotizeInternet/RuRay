@@ -8,6 +8,6 @@ namespace RobotizeLibrary.Controls.Grid
 {
     public interface IType<TType> where TType : struct, IConvertible
     {
-        IVehicleFilterOptions VehicleType(TType vehicleType);
+        IFilterOptions VehicleType(TType vehicleType);
     }
 }

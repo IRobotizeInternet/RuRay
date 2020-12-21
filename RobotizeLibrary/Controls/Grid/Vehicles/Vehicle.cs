@@ -17,12 +17,12 @@ namespace RobotizeLibrary.Controls.Grid
             throw new NotImplementedException();
         }
 
-        public IApplyFilter ExteriorColor(VehicleExteriorColor exteriorColor)
+        public IApplyFilter ExteriorColor(VehicleInteriorExteriorColor exteriorColor)
         {
             throw new NotImplementedException();
         }
 
-        public IFilterOptions InteriorColor(VehicleInteriorColor interiorColor)
+        public IFilterOptions InteriorColor(VehicleInteriorExteriorColor interiorColor)
         {
             throw new NotImplementedException();
         }
@@ -52,12 +52,12 @@ namespace RobotizeLibrary.Controls.Grid
             throw new NotImplementedException();
         }
 
-        public IVehicleFilterOptions VehicleType(VehicleType vehicleType)
+        public IFilterOptions VehicleType(VehicleType vehicleType)
         {
             throw new NotImplementedException();
         }
 
-        public IVehicleFilterOptions VehicleType(VehicleTransmissionType vehicleType)
+        public IFilterOptions VehicleType(VehicleTransmissionType vehicleType)
         {
             throw new NotImplementedException();
         }

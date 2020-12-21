@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RobotizeLibrary.Controls.Grid
 {
-    public enum VehicleMake
+    public class VehicleMake : BaseOptionItems
     {
     }
 }

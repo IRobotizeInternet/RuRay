@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RobotizeLibrary.Controls.Grid
 {
-    public interface IInteriorColor<TInteriorColor> where TInteriorColor: struct, IConvertible
+    public interface IInteriorColor<TInteriorColor> where TInteriorColor: BaseOptionItems
     {
         IFilterOptions InteriorColor(TInteriorColor interiorColor);
     }

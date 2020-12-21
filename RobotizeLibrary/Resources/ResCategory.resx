@@ -195,4 +195,93 @@
   <data name="Truck" xml:space="preserve">
     <value>Truck</value>
   </data>
+  <data name="Convertible" xml:space="preserve">
+    <value>Convertible</value>
+  </data>
+  <data name="Coupe" xml:space="preserve">
+    <value>Coupe</value>
+  </data>
+  <data name="Hatchback" xml:space="preserve">
+    <value>Hatchback</value>
+  </data>
+  <data name="Minivan" xml:space="preserve">
+    <value>Minivan</value>
+  </data>
+  <data name="Sedan" xml:space="preserve">
+    <value>Sedan</value>
+  </data>
+  <data name="StationWagon" xml:space="preserve">
+    <value>Station wagon</value>
+  </data>
+  <data name="SUV" xml:space="preserve">
+    <value>SUV</value>
+  </data>
+  <data name="SmallCar" xml:space="preserve">
+    <value>Small Car</value>
+  </data>
+  <data name="Other" xml:space="preserve">
+    <value>Other</value>
+  </data>
+
+
+  <data name="Black" xml:space="preserve">
+    <value>Black</value>
+  </data>
+  <data name="Charcoal" xml:space="preserve">
+    <value>Charcoal</value>
+  </data>
+  <data name="Grey" xml:space="preserve">
+    <value>Grey</value>
+  </data>
+  <data name="Silver" xml:space="preserve">
+    <value>Silver</value>
+  </data>
+  <data name="White" xml:space="preserve">
+    <value>White</value>
+  </data>
+  <data name="OffWhite" xml:space="preserve">
+    <value>Off white</value>
+  </data>
+  <data name="Tan" xml:space="preserve">
+    <value>Tan</value>
+  </data>
+  <data name="Beige" xml:space="preserve">
+    <value>Beige</value>
+  </data>
+  <data name="Yellow" xml:space="preserve">
+    <value>Yellow</value>
+  </data>
+  <data name="Gold" xml:space="preserve">
+    <value>Gold</value>
+  </data>
+  <data name="Brown" xml:space="preserve">
+    <value>Brown</value>
+  </data>
+  <data name="Orange" xml:space="preserve">
+    <value>Orange</value>
+  </data>
+  <data name="Red" xml:space="preserve">
+    <value>Red</value>
+  </data>
+  <data name="Burgundy" xml:space="preserve">
+    <value>Burgundy</value>
+  </data>
+  <data name="Pink" xml:space="preserve">
+    <value>Pink</value>
+  </data>
+  <data name="Purple" xml:space="preserve">
+    <value>Purple</value>
+  </data>
+  <data name="Blue" xml:space="preserve">
+    <value>Blue</value>
+  </data>
+  <data name="Turquoise" xml:space="preserve">
+    <value>Turquoise</value>
+  </data>
+  <data name="Green" xml:space="preserve">
+    <value>Green</value>
+  </data>
+  <data name="Other" xml:space="preserve">
+    <value>Other</value>
+  </data>
 </root>

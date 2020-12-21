@@ -90,6 +90,7 @@
     <Compile Include="Controls\Grid\FilterOptions\IMake.cs" />
     <Compile Include="Controls\Grid\FilterOptions\IMileage.cs" />
     <Compile Include="Controls\Grid\FilterOptions\IModel.cs" />
+    <Compile Include="Controls\Grid\FilterOptions\BaseOptionItems.cs" />
     <Compile Include="Controls\Grid\FilterOptions\IPrice.cs" />
     <Compile Include="Controls\Grid\FilterOptions\ISortBy.cs" />
     <Compile Include="Controls\Grid\FilterOptions\ITransmissionType.cs" />
@@ -117,8 +118,7 @@
     <Compile Include="Controls\Grid\Vehicles\Enum\VehicleSortOption.cs" />
     <Compile Include="Controls\Grid\Vehicles\Enum\VehicleType.cs" />
     <Compile Include="Controls\Grid\Vehicles\Enum\VehicleBodyStyle.cs" />
-    <Compile Include="Controls\Grid\Vehicles\Enum\VehicleExteriorColor.cs" />
-    <Compile Include="Controls\Grid\Vehicles\Enum\VehicleInteriorColor.cs" />
+    <Compile Include="Controls\Grid\Vehicles\Enum\VehicleInteriorExteriorColor.cs" />
     <Compile Include="Controls\Grid\Vehicles\Enum\VehicleTransmissionType.cs" />
     <Compile Include="Controls\RadioButton.cs" />
     <Compile Include="Controls\TriggerControls\EventTriggerButton.cs" />

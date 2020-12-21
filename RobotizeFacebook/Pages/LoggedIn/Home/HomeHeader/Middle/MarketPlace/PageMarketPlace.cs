@@ -15,12 +15,7 @@ namespace RobotizeFacebook.Pages.LoggedIn.Home.HomeHeader
         public void FilterItem()
         {
             var grid = new FacebookGrid(Driver, Wait);
-            grid.ExpandCollapseFilter<IVehicleFilter>("")
-               .FilterBy.
-                .Price(21)
-                .SortBy()
-                
-
+            grid.ExpandCollapseFilter<IVehicleFilter>("");
         }
     }
 }

@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace RobotizeLibrary.Controls.Grid
 {
-    public interface IExteriorColor<TExteriorColor> where TExteriorColor: BaseOptionItems
+    public abstract class BaseOptionItems
     {
-        IApplyFilter ExteriorColor(TExteriorColor exteriorColor);
+
     }
 }

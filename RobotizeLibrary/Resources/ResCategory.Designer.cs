@@ -70,11 +70,56 @@ namespace RobotizeLibrary.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Beige.
+        /// </summary>
+        internal static string Beige {
+            get {
+                return ResourceManager.GetString("Beige", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Black.
+        /// </summary>
+        internal static string Black {
+            get {
+                return ResourceManager.GetString("Black", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Blue.
+        /// </summary>
+        internal static string Blue {
+            get {
+                return ResourceManager.GetString("Blue", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Boat.
         /// </summary>
         internal static string Boat {
             get {
                 return ResourceManager.GetString("Boat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Brown.
+        /// </summary>
+        internal static string Brown {
+            get {
+                return ResourceManager.GetString("Brown", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Burgundy.
+        /// </summary>
+        internal static string Burgundy {
+            get {
+                return ResourceManager.GetString("Burgundy", resourceCulture);
             }
         }
         
@@ -88,11 +133,38 @@ namespace RobotizeLibrary.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Charcoal.
+        /// </summary>
+        internal static string Charcoal {
+            get {
+                return ResourceManager.GetString("Charcoal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Classifieds.
         /// </summary>
         internal static string Classifieds {
             get {
                 return ResourceManager.GetString("Classifieds", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Convertible.
+        /// </summary>
+        internal static string Convertible {
+            get {
+                return ResourceManager.GetString("Convertible", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Coupe.
+        /// </summary>
+        internal static string Coupe {
+            get {
+                return ResourceManager.GetString("Coupe", resourceCulture);
             }
         }
         
@@ -142,11 +214,47 @@ namespace RobotizeLibrary.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Gold.
+        /// </summary>
+        internal static string Gold {
+            get {
+                return ResourceManager.GetString("Gold", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Green.
+        /// </summary>
+        internal static string Green {
+            get {
+                return ResourceManager.GetString("Green", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Grey.
+        /// </summary>
+        internal static string Grey {
+            get {
+                return ResourceManager.GetString("Grey", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Groups.
         /// </summary>
         internal static string Groups {
             get {
                 return ResourceManager.GetString("Groups", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hatchback.
+        /// </summary>
+        internal static string Hatchback {
+            get {
+                return ResourceManager.GetString("Hatchback", resourceCulture);
             }
         }
         
@@ -187,6 +295,15 @@ namespace RobotizeLibrary.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Minivan.
+        /// </summary>
+        internal static string Minivan {
+            get {
+                return ResourceManager.GetString("Minivan", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Motercycles.
         /// </summary>
         internal static string Motercycles {
@@ -205,11 +322,47 @@ namespace RobotizeLibrary.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Off white.
+        /// </summary>
+        internal static string OffWhite {
+            get {
+                return ResourceManager.GetString("OffWhite", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Orange.
+        /// </summary>
+        internal static string Orange {
+            get {
+                return ResourceManager.GetString("Orange", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Other.
+        /// </summary>
+        internal static string Other {
+            get {
+                return ResourceManager.GetString("Other", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Pet Supplies.
         /// </summary>
         internal static string PetSupplies {
             get {
                 return ResourceManager.GetString("PetSupplies", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pink.
+        /// </summary>
+        internal static string Pink {
+            get {
+                return ResourceManager.GetString("Pink", resourceCulture);
             }
         }
         
@@ -232,6 +385,24 @@ namespace RobotizeLibrary.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Purple.
+        /// </summary>
+        internal static string Purple {
+            get {
+                return ResourceManager.GetString("Purple", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Red.
+        /// </summary>
+        internal static string Red {
+            get {
+                return ResourceManager.GetString("Red", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to RV / Campers.
         /// </summary>
         internal static string RVCampers {
@@ -241,11 +412,65 @@ namespace RobotizeLibrary.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Sedan.
+        /// </summary>
+        internal static string Sedan {
+            get {
+                return ResourceManager.GetString("Sedan", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Silver.
+        /// </summary>
+        internal static string Silver {
+            get {
+                return ResourceManager.GetString("Silver", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Small Car.
+        /// </summary>
+        internal static string SmallCar {
+            get {
+                return ResourceManager.GetString("SmallCar", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Sporting Goods.
         /// </summary>
         internal static string SportingGoods {
             get {
                 return ResourceManager.GetString("SportingGoods", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Station wagon.
+        /// </summary>
+        internal static string StationWagon {
+            get {
+                return ResourceManager.GetString("StationWagon", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SUV.
+        /// </summary>
+        internal static string SUV {
+            get {
+                return ResourceManager.GetString("SUV", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tan.
+        /// </summary>
+        internal static string Tan {
+            get {
+                return ResourceManager.GetString("Tan", resourceCulture);
             }
         }
         
@@ -277,11 +502,38 @@ namespace RobotizeLibrary.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Turquoise.
+        /// </summary>
+        internal static string Turquoise {
+            get {
+                return ResourceManager.GetString("Turquoise", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Vehicles.
         /// </summary>
         internal static string Vehicles {
             get {
                 return ResourceManager.GetString("Vehicles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to White.
+        /// </summary>
+        internal static string White {
+            get {
+                return ResourceManager.GetString("White", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yellow.
+        /// </summary>
+        internal static string Yellow {
+            get {
+                return ResourceManager.GetString("Yellow", resourceCulture);
             }
         }
     }

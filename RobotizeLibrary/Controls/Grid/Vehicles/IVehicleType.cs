@@ -8,5 +8,6 @@ namespace RobotizeLibrary.Controls.Grid
 {
     public interface IVehicleType: IType<VehicleType>, IFilterOptions
     {
+
     }
 }
