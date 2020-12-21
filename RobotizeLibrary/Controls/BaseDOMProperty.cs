@@ -154,11 +154,23 @@ namespace RobotizeToolbox.CommonControls
             return elementText;
         }
 
-        public void ScrollToElement(IWebElement webelement)
+        public void ScrollToElement()
         {
-            var actions = new Actions(Driver);
-            actions.MoveToElement(webelement);
-            actions.Perform();
+            var javaScript = "arguments[0].scrollIntoView(false);" +
+            "var evObj = document.createEvent('MouseEvents');" +
+            "evObj.initMouseEvent(\"mouseover\",true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);" +
+            "arguments[0].dispatchEvent(evObj);";
+
+            var element = Driver.FindElementWithTimeSpan(ByForElement);
+            var elementToScrollTo = LocateScrollableElement(Driver, element);
+            Driver.ExecuteScript(javaScript, elementToScrollTo);
+        }
+
+        private static IWebElement LocateScrollableElement(RemoteWebDriver driver, IWebElement startingElement)
+        {
+            var ancestors = startingElement.FindElements(By.XPath("./ancestor-or-self::*")).Reverse();
+            var scrollableElement = ancestors.FirstOrDefault(element => !element.Location.IsEmpty);
+            return scrollableElement;
         }
     }
 }

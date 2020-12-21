@@ -24,8 +24,10 @@ namespace RobotizeFacebook.WebDrivers
             var options = new ChromeOptions
             {
                 DebuggerAddress = $"{AppSettings.DebuggerBrowserUrl}:{ AppSettings.DebuggerBrowserPort}"
+
             };
 
+            options.AddArgument("no-sandbox");
             if (!useExistingBrowser)
             {
                 options.AddUserProfilePreference("credentials_enable_service", false);

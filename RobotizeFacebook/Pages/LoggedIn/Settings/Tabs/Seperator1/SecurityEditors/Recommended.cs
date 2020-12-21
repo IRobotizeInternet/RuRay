@@ -16,6 +16,7 @@ namespace RobotizeFacebook.Pages.LoggedIn.Settings.Tabs.Seperator1
         {
         }
 
+        public Button ButtonEdit => new Button(Driver, By.XPath("//span[text()='Recommended']/../..//table"));
         public Button ButtonClose => new Button(Driver, By.XPath("//button[text()='Close']"));
         public RadioButton ButtonFacebookGetNotification => new RadioButton(Driver, By.XPath("//input[@id='u_e_1']"));
         public RadioButton ButtonFacebookDontGetNotifications => new RadioButton(Driver, By.XPath("//input[@id='u_e_2']"));

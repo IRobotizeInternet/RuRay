@@ -133,6 +133,15 @@ namespace RobotizeLibrary.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Change password.
+        /// </summary>
+        public static string ChangePassword {
+            get {
+                return ResourceManager.GetString("ChangePassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Choose a friend.
         /// </summary>
         public static string ChooseAFriend {
@@ -205,6 +214,15 @@ namespace RobotizeLibrary.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Forgot your password?.
+        /// </summary>
+        public static string ForgotYourPassword {
+            get {
+                return ResourceManager.GetString("ForgotYourPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Learn How Rooms Work.
         /// </summary>
         public static string LearnHowRoomsWork {
@@ -223,11 +241,38 @@ namespace RobotizeLibrary.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Remove account.
+        /// </summary>
+        public static string RemoveAccount {
+            get {
+                return ResourceManager.GetString("RemoveAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Request that your account be deleted after you pass away..
         /// </summary>
         public static string RequestThatYourAccountBeDeletedAfterYouPassAway {
             get {
                 return ResourceManager.GetString("RequestThatYourAccountBeDeletedAfterYouPassAway", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save Changes.
+        /// </summary>
+        public static string SaveChanges {
+            get {
+                return ResourceManager.GetString("SaveChanges", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save your login info.
+        /// </summary>
+        public static string SaveYourLoginInfo {
+            get {
+                return ResourceManager.GetString("SaveYourLoginInfo", resourceCulture);
             }
         }
         

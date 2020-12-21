@@ -62,7 +62,7 @@ namespace RobotizeLibrary.Extensions
         public static IEnumerable<IWebElement> FindVisibleElementsWait(
             this RemoteWebDriver driver, 
             By byForElement, 
-            int timeoutSeconds)
+            int timeoutSeconds = 60)
         {
             var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeoutSeconds));
             IEnumerable<IWebElement> elements = null;
