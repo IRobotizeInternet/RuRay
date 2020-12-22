@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace RobotizeLibrary.Controls.Grid
 {
-    interface IInteriorColorOptions : IFilterOptions, ICheckboxOption
+    public interface ICheckboxOption: IFilterOptions, IFilter<ICheckboxFilterOptions>
     {
-
+        IApplyFilter FilterItemList(IEnumerable<string> itemsToFilter);
     }
 }

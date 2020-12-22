@@ -8,6 +8,6 @@ namespace RobotizeLibrary.Controls.Grid
 {
     public interface IPrice
     {
-        IApplyFilter Price(double price);
+        IApplyFilter Price(double? min = null, double? max = null);
     }
 }

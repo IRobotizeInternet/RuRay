@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace RobotizeLibrary.Controls.Grid
 {
-    public interface IMake<TMake> where TMake : BaseOptionItems
+    public interface IMake<TMake> where TMake : struct, IConvertible
     {
-        
+        IApplyFilter SortBy(TMake criteria);
     }
 }

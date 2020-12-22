@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RobotizeLibrary.Enum
+namespace RobotizeLibrary.Enums
 {
     
     public static class Category

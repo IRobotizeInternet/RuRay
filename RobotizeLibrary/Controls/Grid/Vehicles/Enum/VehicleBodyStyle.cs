@@ -1,18 +1,29 @@
-﻿using RobotizeLibrary.Resources;
+﻿using RobotizeLibrary.CustomAttributes;
+using RobotizeLibrary.Resources;
 
 namespace RobotizeLibrary.Controls.Grid
 {
-    public class VehicleBodyStyle: BaseOptionItems
+    public enum VehicleBodyStyle
     {
-        public static string Convertibles = ResCategory.Convertible;
-        public static string Coupe = ResCategory.Coupe;
-        public static string Hatchback = ResCategory.Hatchback;
-        public static string Minivan = ResCategory.Minivan;
-        public static string Sedan = ResCategory.Sedan;
-        public static string StationWagon = ResCategory.StationWagon;
-        public static string SUV = ResCategory.SUV;
-        public static string Truck = ResCategory.Truck;
-        public static string SmallCar = ResCategory.SmallCar;
-        public static string Other = ResCategory.Other;
+        [LocalizedDescription(nameof(ResCategory.Convertible), typeof(ResCategory))]
+        Convertibles = 1,
+        [LocalizedDescription(nameof(ResCategory.Coupe), typeof(ResCategory))]
+        Coupe = 2,
+        [LocalizedDescription(nameof(ResCategory.Hatchback), typeof(ResCategory))]
+        Hatchback = 3,
+        [LocalizedDescription(nameof(ResCategory.Minivan), typeof(ResCategory))]
+        Minivan = 4,
+        [LocalizedDescription(nameof(ResCategory.Sedan), typeof(ResCategory))]
+        Sedan = 5,
+        [LocalizedDescription(nameof(ResCategory.StationWagon), typeof(ResCategory))]
+        StationWagon = 6,
+        [LocalizedDescription(nameof(ResCategory.SUV), typeof(ResCategory))]
+        SUV = 7,
+        [LocalizedDescription(nameof(ResCategory.Truck), typeof(ResCategory))]
+        Truck = 8,
+        [LocalizedDescription(nameof(ResCategory.SmallCar), typeof(ResCategory))]
+        SmallCar = 9,
+        [LocalizedDescription(nameof(ResCategory.Other), typeof(ResCategory))]
+        Other = 10
     }
 }

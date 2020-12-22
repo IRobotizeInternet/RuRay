@@ -1,12 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using RobotizeLibrary.CustomAttributes;
+using RobotizeLibrary.Resources;
 
 namespace RobotizeLibrary.Controls.Grid
 {
     public enum VehicleModel
     {
+        [LocalizedDescription(nameof(ResCategory.All), typeof(ResCategory))]
+        All = 1
     }
 }

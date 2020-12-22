@@ -4,9 +4,9 @@ using System;
 
 namespace RobotizeLibrary.Controls.Grid
 {
-    public class Vehicle : BaseFilter, IVehicleFilter, IVehicleFilterOptions
+    public class VehicleFilter : BaseFilter, IVehicleFilter, IVehicleFilterOptions
     {
-        public Vehicle(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public VehicleFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
         {
         }
 
@@ -22,17 +22,7 @@ namespace RobotizeLibrary.Controls.Grid
             throw new NotImplementedException();
         }
 
-        public IFilterOptions InteriorColor(VehicleInteriorExteriorColor interiorColor)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IApplyFilter Maker(VehicleMake criteria)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IApplyFilter Milage(double milage)
+        public IApplyFilter Milage(double? min = null, double? max = null)
         {
             throw new NotImplementedException();
         }
@@ -42,12 +32,17 @@ namespace RobotizeLibrary.Controls.Grid
             throw new NotImplementedException();
         }
 
-        public IApplyFilter Price(double price)
+        public IApplyFilter Price(double? min = null, double? max = null)
         {
             throw new NotImplementedException();
         }
 
         public IApplyFilter SortBy(VehicleSortOption criteria)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IApplyFilter SortBy(VehicleMake criteria)
         {
             throw new NotImplementedException();
         }
@@ -62,7 +57,7 @@ namespace RobotizeLibrary.Controls.Grid
             throw new NotImplementedException();
         }
 
-        public IApplyFilter Year(string year)
+        public IApplyFilter Year(int? min, int? max)
         {
             throw new NotImplementedException();
         }

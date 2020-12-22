@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RobotizeLibrary.Controls.Grid
 {
-    interface ICheckboxFilterOptions: IFilterOptions, ICheckboxOption
+    public interface ICheckboxFilterOptions: IFilterOptions, ICheckboxOption
     {
 
     }

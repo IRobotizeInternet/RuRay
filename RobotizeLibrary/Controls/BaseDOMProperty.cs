@@ -154,7 +154,7 @@ namespace RobotizeToolbox.CommonControls
             return elementText;
         }
 
-        public void ScrollToElement()
+        public void ScrollToElement(IWebElement webElement)
         {
             var javaScript = "arguments[0].scrollIntoView(false);" +
             "var evObj = document.createEvent('MouseEvents');" +

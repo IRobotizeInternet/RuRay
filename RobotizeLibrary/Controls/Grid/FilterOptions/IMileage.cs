@@ -8,6 +8,6 @@ namespace RobotizeLibrary.Controls.Grid
 {
     public interface IMileage: IFilterOptions
     {
-        IApplyFilter Milage(string milage);
+        IApplyFilter Milage(double? min = null, double? max = null);
     }
 }

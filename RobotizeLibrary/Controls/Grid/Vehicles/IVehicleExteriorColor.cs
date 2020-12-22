@@ -1,6 +1,6 @@
 ﻿namespace RobotizeLibrary.Controls.Grid
 {
-    public interface IVehicleExteriorColor: IExteriorColor<VehicleInteriorExteriorColor>, IFilterOptions
+    public interface IVehicleExteriorColor: IColor<VehicleInteriorExteriorColor>, IFilterOptions
     {
     }
 }

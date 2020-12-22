@@ -23,6 +23,8 @@ namespace RobotizeLibrary.Controls.Grid
 
         public IEnumerable<string> FilterCriteriaList { get; private set; }
 
+        public ICheckboxFilterOptions FilterBy => throw new NotImplementedException();
+
         public IApplyFilter FilterItemList(IEnumerable<string> itemsToFilter)
         {
             FilterCriteriaList = itemsToFilter;
@@ -88,6 +90,5 @@ namespace RobotizeLibrary.Controls.Grid
             throw new NotImplementedException();
         }
 
-        public ICheckboxFilterOptions FilterBy => throw new NotImplementedException();
     }
 }

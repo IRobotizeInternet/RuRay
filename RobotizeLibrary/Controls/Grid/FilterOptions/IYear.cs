@@ -8,6 +8,6 @@ namespace RobotizeLibrary.Controls.Grid
 {
     public interface IYear: IFilterOptions
     {
-        IApplyFilter Year(string year);
+        IApplyFilter Year(int? min, int? max);
     }
 }

@@ -15,11 +15,11 @@ namespace RobotizeLibrary.Controls.Grid
         private static readonly Dictionary<Type, Type> _concreteClassMap =
             new Dictionary<Type, Type>()
         {
-            { typeof(ICheckboxFilter), typeof(CheckboxFilter) },
-            { typeof(IInteriorColor), typeof(InteriorColor) },
-            { typeof(INumericTextboxFilterPopup), typeof(NumericTextboxFilterPopup) },
-            { typeof(IRadiobuttonFilterPopup), typeof(RadiobuttonFilterPopup) },
-            { typeof(ITextboxFilterPopup), typeof(TextboxFilterPopup) }
+            { typeof(IVehicleFilter), typeof(VehicleFilter) },
+            //{ typeof(IInteriorColor), typeof(InteriorColor) },
+            //{ typeof(INumericTextboxFilterPopup), typeof(NumericTextboxFilterPopup) },
+            //{ typeof(IRadiobuttonFilterPopup), typeof(RadiobuttonFilterPopup) },
+            //{ typeof(ITextboxFilterPopup), typeof(TextboxFilterPopup) }
         };
     }
 }

@@ -222,8 +222,6 @@
   <data name="Other" xml:space="preserve">
     <value>Other</value>
   </data>
-
-
   <data name="Black" xml:space="preserve">
     <value>Black</value>
   </data>
@@ -283,5 +281,261 @@
   </data>
   <data name="Other" xml:space="preserve">
     <value>Other</value>
+  </data>
+  <data name="All" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="Acura" xml:space="preserve">
+    <value>Acura</value>
+  </data>
+  <data name="AlfaRomeo" xml:space="preserve">
+    <value>Alfa Romeo</value>
+  </data>
+  <data name="AstonMartin" xml:space="preserve">
+    <value>Aston Martin</value>
+  </data>
+  <data name="Audi" xml:space="preserve">
+    <value>Audi</value>
+  </data>
+  <data name="BMW" xml:space="preserve">
+    <value>BMW</value>
+  </data>
+  <data name="Bently" xml:space="preserve">
+    <value>Bently</value>
+  </data>
+  <data name="Buick" xml:space="preserve">
+    <value>Buick</value>
+  </data>
+  <data name="CODA" xml:space="preserve">
+    <value>CODA</value>
+  </data>
+  <data name="Cadillac" xml:space="preserve">
+    <value>Cadillac</value>
+  </data>
+  <data name="Chevrolet" xml:space="preserve">
+    <value>Chevrolet</value>
+  </data>
+  <data name="Chrysler" xml:space="preserve">
+    <value>Chrysler</value>
+  </data>
+  <data name="Daewoo" xml:space="preserve">
+    <value>Daewoo</value>
+  </data>
+  <data name="Daihatsu" xml:space="preserve">
+    <value>Daihatsu</value>
+  </data>
+  <data name="Doge" xml:space="preserve">
+    <value>Doge</value>
+  </data>
+  <data name="Eagle" xml:space="preserve">
+    <value>Eagle</value>
+  </data>
+  <data name="Ferrari" xml:space="preserve">
+    <value>Ferrari</value>
+  </data>
+  <data name="Fiat" xml:space="preserve">
+    <value>Fiat</value>
+  </data>
+  <data name="Fisker" xml:space="preserve">
+    <value>Fisker</value>
+  </data>
+  <data name="Ford" xml:space="preserve">
+    <value>Ford</value>
+  </data>
+  <data name="Freightliner" xml:space="preserve">
+    <value>Freightliner</value>
+  </data>
+  <data name="GMC" xml:space="preserve">
+    <value>GMC</value>
+  </data>
+  <data name="Genesis" xml:space="preserve">
+    <value>Genesis</value>
+  </data>
+  <data name="Geo" xml:space="preserve">
+    <value>Geo</value>
+  </data>
+  <data name="Honda" xml:space="preserve">
+    <value>Honda</value>
+  </data>
+  <data name="Hummer" xml:space="preserve">
+    <value>Hummer</value>
+  </data>
+  <data name="Hyundai" xml:space="preserve">
+    <value>Hyundai</value>
+  </data>
+  <data name="Infiniti" xml:space="preserve">
+    <value>Infiniti</value>
+  </data>
+  <data name="Isuzu" xml:space="preserve">
+    <value>Isuzu</value>
+  </data>
+  <data name="Jaguar" xml:space="preserve">
+    <value>Jaguar</value>
+  </data>
+  <data name="Jeep" xml:space="preserve">
+    <value>Jeep</value>
+  </data>
+  <data name="Kia" xml:space="preserve">
+    <value>Kia</value>
+  </data>
+  <data name="Lamborghini" xml:space="preserve">
+    <value>Lamborghini</value>
+  </data>
+  <data name="LandRover" xml:space="preserve">
+    <value>Lang Rover</value>
+  </data>
+  <data name="Lexus" xml:space="preserve">
+    <value>Lexus</value>
+  </data>
+  <data name="Lincoln" xml:space="preserve">
+    <value>Lincoln</value>
+  </data>
+  <data name="Lotus" xml:space="preserve">
+    <value>Lotus</value>
+  </data>
+  <data name="Maserati" xml:space="preserve">
+    <value>Maserati</value>
+  </data>
+  <data name="Maybach" xml:space="preserve">
+    <value>Maybach</value>
+  </data>
+  <data name="Mazda" xml:space="preserve">
+    <value>Mazda</value>
+  </data>
+  <data name="Mclaren" xml:space="preserve">
+    <value>Mclaren</value>
+  </data>
+  <data name="MercedesBenz" xml:space="preserve">
+    <value>Mercedes-Benz</value>
+  </data>
+  <data name="Mercury" xml:space="preserve">
+    <value>Mercury</value>
+  </data>
+  <data name="Mini" xml:space="preserve">
+    <value>Mini</value>
+  </data>
+  <data name="Fisker" xml:space="preserve">
+    <value>Fisker</value>
+  </data>
+  <data name="Mitsubishi" xml:space="preserve">
+    <value>Mitsubishi</value>
+  </data>
+  <data name="Nissan" xml:space="preserve">
+    <value>Nissan</value>
+  </data>
+  <data name="Oldsmobile" xml:space="preserve">
+    <value>Oldsmobile</value>
+  </data>
+  <data name="Panoz" xml:space="preserve">
+    <value>Panoz</value>
+  </data>
+  <data name="Plymouth" xml:space="preserve">
+    <value>Plymouth</value>
+  </data>
+  <data name="Pontiac" xml:space="preserve">
+    <value>Pontiac</value>
+  </data>
+  <data name="Porsche" xml:space="preserve">
+    <value>Porsche</value>
+  </data>
+  <data name="Ram" xml:space="preserve">
+    <value>Ram</value>
+  </data>
+  <data name="Rivian" xml:space="preserve">
+    <value>Rivian</value>
+  </data>
+  <data name="RollsRoyce" xml:space="preserve">
+    <value>Rolls-Royce</value>
+  </data>
+  <data name="Saturn" xml:space="preserve">
+    <value>Saturn</value>
+  </data>
+  <data name="Scion" xml:space="preserve">
+    <value>Scion</value>
+  </data>
+  <data name="Smart" xml:space="preserve">
+    <value>smart</value>
+  </data>
+  <data name="Srt" xml:space="preserve">
+    <value>Srt</value>
+  </data>
+  <data name="Subaru" xml:space="preserve">
+    <value>Subaru</value>
+  </data>
+  <data name="Suzuki" xml:space="preserve">
+    <value>Suzuki</value>
+  </data>
+  <data name="Tesla" xml:space="preserve">
+    <value>Tesla</value>
+  </data>
+  <data name="Toyota" xml:space="preserve">
+    <value>Toyota</value>
+  </data>
+  <data name="Volkswagen" xml:space="preserve">
+    <value>Volkswagen</value>
+  </data>
+  <data name="Volvo" xml:space="preserve">
+    <value>Volvo</value>
+  </data>
+  <data name="Recommended" xml:space="preserve">
+    <value>Recommended</value>
+  </data>
+  <data name="PriceLowestFirst" xml:space="preserve">
+    <value>Price: Lowest first</value>
+  </data>
+  <data name="PriceHighestFirst" xml:space="preserve">
+    <value>Price: Highest first</value>
+  </data>
+  <data name="DateListedNewestFirst" xml:space="preserve">
+    <value>Date listed: Newest first</value>
+  </data>
+  <data name="DateListedOldestFirst" xml:space="preserve">
+    <value>Date listed: Oldest first</value>
+  </data>
+  <data name="DistanceNearestFirst" xml:space="preserve">
+    <value>Distance: Nearest first</value>
+  </data>
+  <data name="DistanceFarthestFirst" xml:space="preserve">
+    <value>Distance: Farthest first</value>
+  </data>
+  <data name="MilageLowestFirst" xml:space="preserve">
+    <value>Milage: Lowest first</value>
+  </data>
+  <data name="MilageHigestFirst" xml:space="preserve">
+    <value>Milage: Higest first</value>
+  </data>
+  <data name="YearNewestFirst" xml:space="preserve">
+    <value>Year: Newest first</value>
+  </data>
+  <data name="YearOldestFirst" xml:space="preserve">
+    <value>Year: Oldest first</value>
+  </data>
+
+  <data name="CarsAndTrucks" xml:space="preserve">
+    <value>Cars &amp; trucks</value>
+  </data>
+  <data name="Motorcycles" xml:space="preserve">
+    <value>Motorcycles</value>
+  </data>
+  <data name="Powersports" xml:space="preserve">
+    <value>Powersports</value>
+  </data>
+  <data name="RVSAndCampers" xml:space="preserve">
+    <value>RVs &amp; Campers</value>
+  </data>
+  <data name="Boats" xml:space="preserve">
+    <value>Boats</value>
+  </data>
+  <data name="CommercialAndIndustrial" xml:space="preserve">
+    <value>Commercial &amp; Industrial</value>
+  </data>
+  <data name="Trailers" xml:space="preserve">
+    <value>Trailers</value>
+  </data>
+  <data name="Automatic" xml:space="preserve">
+    <value>Automatic</value>
+  </data>
+  <data name="Manual" xml:space="preserve">
+    <value>Manual</value>
   </data>
 </root>
