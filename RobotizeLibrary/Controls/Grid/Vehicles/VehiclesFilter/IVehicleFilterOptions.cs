@@ -2,7 +2,7 @@
 namespace RobotizeLibrary.Controls.Grid
 {
     public interface IVehicleFilterOptions : 
-        IVehicleOptions, 
+        IFilterOptions,
         IVehicleSort,
         IPrice,
         IVehicleType,

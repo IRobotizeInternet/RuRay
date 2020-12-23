@@ -538,4 +538,10 @@
   <data name="Manual" xml:space="preserve">
     <value>Manual</value>
   </data>
+  <data name="New" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="Used" xml:space="preserve">
+    <value>Used</value>
+  </data>
 </root>

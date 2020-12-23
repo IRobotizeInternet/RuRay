@@ -835,6 +835,15 @@ namespace RobotizeLibrary.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to New.
+        /// </summary>
+        internal static string New {
+            get {
+                return ResourceManager.GetString("New", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Nissan.
         /// </summary>
         internal static string Nissan {
@@ -1209,6 +1218,15 @@ namespace RobotizeLibrary.Resources {
         internal static string Turquoise {
             get {
                 return ResourceManager.GetString("Turquoise", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Used.
+        /// </summary>
+        internal static string Used {
+            get {
+                return ResourceManager.GetString("Used", resourceCulture);
             }
         }
         
