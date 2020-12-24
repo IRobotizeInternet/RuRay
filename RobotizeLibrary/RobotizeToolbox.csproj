@@ -97,6 +97,17 @@
     <Compile Include="Controls\Grid\IApplyFilter.cs" />
     <Compile Include="Controls\Grid\IFilter.cs" />
     <Compile Include="Controls\Grid\IFilterOptions.cs" />
+    <Compile Include="Controls\Grid\PropertyRentals\Enum\BathroomCount.cs" />
+    <Compile Include="Controls\Grid\PropertyRentals\Enum\BedroomCount.cs" />
+    <Compile Include="Controls\Grid\PropertyRentals\Enum\RentalType.cs" />
+    <Compile Include="Controls\Grid\PropertyRentals\IBathroomsCount.cs" />
+    <Compile Include="Controls\Grid\PropertyRentals\IRentalType.cs" />
+    <Compile Include="Controls\Grid\PropertyRentals\IBedroomsCount.cs" />
+    <Compile Include="Controls\Grid\PropertyRentals\ISquareMeters.cs" />
+    <Compile Include="Controls\Grid\PropertyRentals\PropertyRentalsFilter\IPropertyRentalsFilter.cs" />
+    <Compile Include="Controls\Grid\PropertyRentals\PropertyRentalsFilter\IPropertyRentalsFilterOptions.cs" />
+    <Compile Include="Controls\Grid\PropertyRentals\PropertyRentalsFilter\IPropertyRentalsOptions.cs" />
+    <Compile Include="Controls\Grid\PropertyRentals\PropertyRentalsFilter\PropertyRentalsFilter.cs" />
     <Compile Include="Controls\Grid\Vehicles\BoatsFilter\BoatFilter.cs" />
     <Compile Include="Controls\Grid\Vehicles\BoatsFilter\IBoatFilter.cs" />
     <Compile Include="Controls\Grid\Vehicles\BoatsFilter\IBoatsFilterOptions.cs" />

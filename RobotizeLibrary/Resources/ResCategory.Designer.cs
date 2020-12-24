@@ -61,6 +61,69 @@ namespace RobotizeLibrary.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 1.
+        /// </summary>
+        internal static string _1 {
+            get {
+                return ResourceManager.GetString("+1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1.5.
+        /// </summary>
+        internal static string _1_5 {
+            get {
+                return ResourceManager.GetString("1.5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2.
+        /// </summary>
+        internal static string _2 {
+            get {
+                return ResourceManager.GetString("2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 3.
+        /// </summary>
+        internal static string _3 {
+            get {
+                return ResourceManager.GetString("3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 4.
+        /// </summary>
+        internal static string _4 {
+            get {
+                return ResourceManager.GetString("4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 5.
+        /// </summary>
+        internal static string _5 {
+            get {
+                return ResourceManager.GetString("5", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 6.
+        /// </summary>
+        internal static string _6 {
+            get {
+                return ResourceManager.GetString("6", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Acura.
         /// </summary>
         internal static string Acura {
@@ -84,6 +147,15 @@ namespace RobotizeLibrary.Resources {
         internal static string All {
             get {
                 return ResourceManager.GetString("All", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Apartment/Condo.
+        /// </summary>
+        internal static string Apartment_Condo {
+            get {
+                return ResourceManager.GetString("Apartment/Condo", resourceCulture);
             }
         }
         
@@ -592,6 +664,15 @@ namespace RobotizeLibrary.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to House.
+        /// </summary>
+        internal static string House {
+            get {
+                return ResourceManager.GetString("House", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Hummer.
         /// </summary>
         internal static string Hummer {
@@ -1033,6 +1114,15 @@ namespace RobotizeLibrary.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Room Only.
+        /// </summary>
+        internal static string RoomOnly {
+            get {
+                return ResourceManager.GetString("RoomOnly", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to RV / Campers.
         /// </summary>
         internal static string RVCampers {
@@ -1114,6 +1204,15 @@ namespace RobotizeLibrary.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Square meters.
+        /// </summary>
+        internal static string SquareMeters {
+            get {
+                return ResourceManager.GetString("SquareMeters", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Srt.
         /// </summary>
         internal static string Srt {
@@ -1173,6 +1272,15 @@ namespace RobotizeLibrary.Resources {
         internal static string Tesla {
             get {
                 return ResourceManager.GetString("Tesla", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Townhouse.
+        /// </summary>
+        internal static string Townhouse {
+            get {
+                return ResourceManager.GetString("Townhouse", resourceCulture);
             }
         }
         
