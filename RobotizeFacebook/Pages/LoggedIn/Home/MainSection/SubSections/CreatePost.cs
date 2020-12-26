@@ -37,7 +37,6 @@ namespace RobotizeFacebook.Pages.LoggedIn.Home.MainSection.SubSections
         public void RunConformance()
         {
             var dialog = ButtonCreatePost.Click();
-            dialog.
             ButtonLiveVideo.Click();
             ButtonPhotoOrVideo.Click();
             ButtonFeelingOrActivity.Click();

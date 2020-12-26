@@ -7,9 +7,6 @@ using RobotizeFacebook.Pages.LoggedUser;
 using RobotizeLibrary.CommonControls;
 using RobotizeLibrary.Controls.TriggerControls;
 using RobotizeLibrary.Resources;
-using System;
-using System.Linq;
-using System.Threading;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
@@ -45,9 +42,7 @@ namespace RobotizeFacebook.Pages.LoggedIn
         {
             HyperLinkWatch.Click();
             HyperLinkGroups.Click();
-            HyperLinkWatch.Click();
             HyperLinkMarketPlace.Click();
-            HyperLinkGroups.Click();
             HyperLinkFacebookTitleIcon.Click();
             HyperLinkUserProfile.Click();
             DialogButtonToCreate.Click();

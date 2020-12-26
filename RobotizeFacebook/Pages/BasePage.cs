@@ -48,7 +48,9 @@ namespace RobotizeFacebook.Pages
             if (_remoteDriver == null)
             {
                 _remoteDriver = Driver;
-                _remoteDriver.Manage().Cookies.DeleteAllCookies();
+                
+                // Enable this if you wish to delete the cookies 
+                // _remoteDriver.Manage().Cookies.DeleteAllCookies();
                 _wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(_defaultTimeoutInSec));
             }
         }

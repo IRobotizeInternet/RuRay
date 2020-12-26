@@ -12,7 +12,7 @@ namespace RobotizeFacebookTests.LoggedIn
         {
             var page = new PageLogin();
             PageHome d = new PageHome();
-            d.MainSection.SectionCreatePost.RunConformance();
+            d.HeaderSection.RunConformance();
         }
     }
 }

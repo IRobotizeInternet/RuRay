@@ -25,7 +25,7 @@ namespace RobotizeLibrary.Controls.TriggerControls
         public EventResult Click()
         {
             _element.Click();
-            Thread.Sleep(2000);
+            Thread.Sleep(5000);
             return (EventResult)Activator.CreateInstance(typeof(EventResult), _driver, _wait);
         }
     }
