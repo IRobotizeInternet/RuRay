@@ -9,7 +9,7 @@ using RobotizeLibrary.Resources;
 
 namespace RobotizeFacebook.Pages.LoggedIn.Settings.Tabs.Seperator1
 {
-    public class AddAnotherEmailDialog : DialogBase
+    public class AddAnotherEmailDialog : BaseDialog
     {
         public AddAnotherEmailDialog(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
         {
@@ -24,7 +24,7 @@ namespace RobotizeFacebook.Pages.LoggedIn.Settings.Tabs.Seperator1
             new Hyperlink<AddPhoneNumberDialog>(Driver, Wait, By.XPath($"//a[text()={ResMiscellaneous.AddYourPhoneNumber}]"));
     }
 
-    public class AddPhoneNumberDialog : DialogBase
+    public class AddPhoneNumberDialog : BaseDialog
     {
         public AddPhoneNumberDialog(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
         {

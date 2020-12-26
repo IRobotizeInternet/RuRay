@@ -22,14 +22,14 @@ namespace RobotizeLibrary.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class ResCreatePost {
+    public class ResSelectPrivacy {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal ResCreatePost() {
+        internal ResSelectPrivacy() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace RobotizeLibrary.Resources {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("RobotizeLibrary.Resources.ResCreatePost", typeof(ResCreatePost).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("RobotizeLibrary.Resources.ResSelectPrivacy", typeof(ResSelectPrivacy).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,119 +61,110 @@ namespace RobotizeLibrary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add to Your Post.
+        ///   Looks up a localized string similar to canada.
         /// </summary>
-        public static string AddToYourPost {
+        public static string Canada {
             get {
-                return ResourceManager.GetString("AddToYourPost", resourceCulture);
+                return ResourceManager.GetString("Canada", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Check In.
+        ///   Looks up a localized string similar to Cancel.
         /// </summary>
-        public static string CheckIn {
+        public static string Cancel {
             get {
-                return ResourceManager.GetString("CheckIn", resourceCulture);
+                return ResourceManager.GetString("Cancel", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Create Post.
+        ///   Looks up a localized string similar to Close Friends.
         /// </summary>
-        public static string CreatePost {
+        public static string CloseFriends {
             get {
-                return ResourceManager.GetString("CreatePost", resourceCulture);
+                return ResourceManager.GetString("CloseFriends", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Feeling/Activity.
+        ///   Looks up a localized string similar to Custom.
         /// </summary>
-        public static string FeelingOrActivity {
+        public static string Custom {
             get {
-                return ResourceManager.GetString("FeelingOrActivity", resourceCulture);
+                return ResourceManager.GetString("Custom", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GIF.
+        ///   Looks up a localized string similar to Custom Privacy.
         /// </summary>
-        public static string GIF {
+        public static string CustomPrivacy {
             get {
-                return ResourceManager.GetString("GIF", resourceCulture);
+                return ResourceManager.GetString("CustomPrivacy", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Live Video.
+        ///   Looks up a localized string similar to Friends.
         /// </summary>
-        public static string LiveVideo {
+        public static string Friends {
             get {
-                return ResourceManager.GetString("LiveVideo", resourceCulture);
+                return ResourceManager.GetString("Friends", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to More.
+        ///   Looks up a localized string similar to Friends except....
         /// </summary>
-        public static string More {
+        public static string FriendsExcept {
             get {
-                return ResourceManager.GetString("More", resourceCulture);
+                return ResourceManager.GetString("FriendsExcept", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Photo/Video.
+        ///   Looks up a localized string similar to Only me.
         /// </summary>
-        public static string PhotoOrVideo {
+        public static string OnlyMe {
             get {
-                return ResourceManager.GetString("PhotoOrVideo", resourceCulture);
+                return ResourceManager.GetString("OnlyMe", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Post.
+        ///   Looks up a localized string similar to Public.
         /// </summary>
-        public static string Post {
+        public static string Public {
             get {
-                return ResourceManager.GetString("Post", resourceCulture);
+                return ResourceManager.GetString("Public", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RaiseMoney.
+        ///   Looks up a localized string similar to Save.
         /// </summary>
-        public static string RaiseMoney {
+        public static string SaveChanges {
             get {
-                return ResourceManager.GetString("RaiseMoney", resourceCulture);
+                return ResourceManager.GetString("SaveChanges", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Tag Friends.
+        ///   Looks up a localized string similar to Select Privacy.
         /// </summary>
-        public static string TagFriends {
+        public static string SelectPrivacy {
             get {
-                return ResourceManager.GetString("TagFriends", resourceCulture);
+                return ResourceManager.GetString("SelectPrivacy", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Watch Party.
+        ///   Looks up a localized string similar to Specific friends.
         /// </summary>
-        public static string WatchParty {
+        public static string SpecificFriends {
             get {
-                return ResourceManager.GetString("WatchParty", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to on your mind.
-        /// </summary>
-        public static string WhatsOnYourMind {
-            get {
-                return ResourceManager.GetString("WhatsOnYourMind", resourceCulture);
+                return ResourceManager.GetString("SpecificFriends", resourceCulture);
             }
         }
     }

@@ -11,7 +11,7 @@ namespace RobotizeFacebookTests.LoggedIn
         public void PageConformance()
         {
             var page = new PageLogin();
-            PageHome d = page.Login();
+            PageHome d = new PageHome();
             d.MainSection.SectionCreatePost.RunConformance();
         }
     }

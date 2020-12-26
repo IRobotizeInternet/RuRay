@@ -9,6 +9,37 @@ namespace RobotizeLibrary.Controls.Grid
         public TrailersFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
         {
         }
-       
+
+        public ITrailersFilterOptions FilterBy => throw new NotImplementedException();
+
+        public IApplyFilter ExteriorColor(VehicleInteriorExteriorColor exteriorColor)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IApplyFilter Price(double? min = null, double? max = null)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IApplyFilter SortBy(VehicleSortOption criteria)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IApplyFilter Year(int? min, int? max)
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override void ClickFilterButton()
+        {
+            throw new NotImplementedException();
+        }
+
+        protected override void SetFilterCriteria()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

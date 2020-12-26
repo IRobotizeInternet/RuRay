@@ -9,13 +9,13 @@ using ExpectedConditions = SeleniumExtras.WaitHelpers.ExpectedConditions;
 
 namespace RobotizeLibrary.Dialogs
 {
-    public abstract class DialogBase
+    public abstract class BaseDialog
     {
         protected RemoteWebDriver Driver;
         protected WebDriverWait Wait;
         protected abstract By ByForDialog { get; }
 
-        protected DialogBase(RemoteWebDriver driver, WebDriverWait wait)
+        protected BaseDialog(RemoteWebDriver driver, WebDriverWait wait)
         {
             Driver = driver;
             Wait = wait;

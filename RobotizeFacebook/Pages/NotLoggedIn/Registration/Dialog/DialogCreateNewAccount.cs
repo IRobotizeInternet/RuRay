@@ -9,7 +9,7 @@ using RobotizeLibrary.Dialogs;
 
 namespace RobotizeFacebook.Pages.NotLoggedIn
 {
-    public class DialogCreateNewAccount : DialogBase
+    public class DialogCreateNewAccount : BaseDialog
     {
         protected override By ByForDialog => throw new System.NotImplementedException();
 

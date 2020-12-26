@@ -6,7 +6,7 @@ using RobotizeLibrary.Resources;
 
 namespace RobotizeFacebook.Pages.LoggedIn.Home.HomeHeader
 {
-    public class PopupNotifications : DialogBase
+    public class PopupNotifications : BaseDialog
     {
         public PopupNotifications(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
         {

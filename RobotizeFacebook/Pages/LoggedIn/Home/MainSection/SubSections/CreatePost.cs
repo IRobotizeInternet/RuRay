@@ -20,23 +20,24 @@ namespace RobotizeFacebook.Pages.LoggedIn.Home.MainSection.SubSections
         }
 
         public EventTriggerButton<DialogCreatePost> ButtonCreatePost => 
-            new EventTriggerButton<DialogCreatePost>(Driver, Wait, By.XPath($"//span[contains(text(),{ResCreatePost.WhatsOnYourMind})]"));
+            new EventTriggerButton<DialogCreatePost>(Driver, Wait, By.XPath($"//span[contains(text(),'{ResCreatePost.WhatsOnYourMind}')]"));
 
         public EventTriggerButton<PageTimeline> ButtonTimeline =>
            new EventTriggerButton<PageTimeline>(Driver, Wait, By.XPath("//a[contains(@href, 'facebook') and contains(@aria-label,'Timeline')]"));
 
         public EventTriggerButton<DialogCreatePost> ButtonLiveVideo =>
-            new EventTriggerButton<DialogCreatePost>(Driver, Wait, By.XPath($"//span[text()={ResCreatePost.LiveVideo}]/../../.."));
+            new EventTriggerButton<DialogCreatePost>(Driver, Wait, By.XPath($"//span[text()='{ResCreatePost.LiveVideo}']/../../.."));
 
         public EventTriggerButton<DialogCreatePost> ButtonPhotoOrVideo =>
-            new EventTriggerButton<DialogCreatePost>(Driver, Wait, By.XPath($"//span[text()={ResCreatePost.PhotoOrVideo}]/../../.."));
+            new EventTriggerButton<DialogCreatePost>(Driver, Wait, By.XPath($"//span[text()='{ResCreatePost.PhotoOrVideo}']/../../.."));
 
         public EventTriggerButton<DialogCreatePost> ButtonFeelingOrActivity =>
-            new EventTriggerButton<DialogCreatePost>(Driver, Wait, By.XPath($"//span[text()={ResCreatePost.FeelingOrActivity}]/../../.."));
+            new EventTriggerButton<DialogCreatePost>(Driver, Wait, By.XPath($"//span[text()='{ResCreatePost.FeelingOrActivity}']/../../.."));
 
         public void RunConformance()
         {
-            ButtonCreatePost.Click();
+            var dialog = ButtonCreatePost.Click();
+            dialog.
             ButtonLiveVideo.Click();
             ButtonPhotoOrVideo.Click();
             ButtonFeelingOrActivity.Click();

@@ -5,7 +5,7 @@ using RobotizeLibrary.Dialogs;
 
 namespace RobotizeFacebook.Pages.LoggedIn.Stories.Create
 {
-    public class DialogStoryPrivacy : DialogBase
+    public class DialogStoryPrivacy : BaseDialog
     {
         public DialogStoryPrivacy(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
         {

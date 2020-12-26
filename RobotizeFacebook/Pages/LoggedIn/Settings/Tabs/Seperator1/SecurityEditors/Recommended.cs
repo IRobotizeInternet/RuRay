@@ -44,7 +44,7 @@ namespace RobotizeFacebook.Pages.LoggedIn.Settings.Tabs.Seperator1
 
     }
 
-    public class DialogAddEmailAddress : DialogBase
+    public class DialogAddEmailAddress : BaseDialog
     {
         public DialogAddEmailAddress(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
         {
@@ -58,7 +58,7 @@ namespace RobotizeFacebook.Pages.LoggedIn.Settings.Tabs.Seperator1
         public Button ButtonAdd => new Button(Driver, By.XPath($"//form[@id='u_y_1']//button[text()={ResMiscellaneous.Add}]"));
     }
 
-    public class DialogConfirmYourEmail : DialogBase
+    public class DialogConfirmYourEmail : BaseDialog
     {
         public DialogConfirmYourEmail(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
         {

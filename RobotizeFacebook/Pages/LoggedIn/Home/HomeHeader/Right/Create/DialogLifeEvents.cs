@@ -5,7 +5,7 @@ using RobotizeLibrary.Dialogs;
 
 namespace RobotizeFacebook.Pages.LoggedIn.Home.HomeHeader
 {
-    public class DialogLifeEvents : DialogBase
+    public class DialogLifeEvents : BaseDialog
     {
         public DialogLifeEvents(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
         {

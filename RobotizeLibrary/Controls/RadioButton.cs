@@ -6,6 +6,8 @@ namespace RobotizeLibrary.Controls
 {
     public class RadioButton : BaseDOMProperty
     {
-        public RadioButton(RemoteWebDriver driver, By by) : base(driver, by) { }
+        public RadioButton(RemoteWebDriver driver, By byForElement) : base(driver, byForElement) 
+        {
+        }
     }
 }

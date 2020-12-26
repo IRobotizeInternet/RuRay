@@ -129,4 +129,37 @@
   <data name="WhatsOnYourMind" xml:space="preserve">
     <value>on your mind</value>
   </data>
+  <data name="TagFriends" xml:space="preserve">
+    <value>Tag Friends</value>
+  </data>
+  <data name="CheckIn" xml:space="preserve">
+    <value>Check In</value>
+  </data>
+  <data name="PhotoOrVideo" xml:space="preserve">
+    <value>Photo/Video</value>
+  </data>
+  <data name="GIF" xml:space="preserve">
+    <value>GIF</value>
+  </data>
+  <data name="WatchParty" xml:space="preserve">
+    <value>Watch Party</value>
+  </data>
+  <data name="PhotoOrVideo" xml:space="preserve">
+    <value>Photo/Video</value>
+  </data>
+  <data name="RaiseMoney" xml:space="preserve">
+    <value>RaiseMoney</value>
+  </data>
+  <data name="CreatePost" xml:space="preserve">
+    <value>Create Post</value>
+  </data>
+  <data name="AddToYourPost" xml:space="preserve">
+    <value>Add to Your Post</value>
+  </data>
+  <data name="More" xml:space="preserve">
+    <value>More</value>
+  </data>
+  <data name="Post" xml:space="preserve">
+    <value>Post</value>
+  </data>
 </root>

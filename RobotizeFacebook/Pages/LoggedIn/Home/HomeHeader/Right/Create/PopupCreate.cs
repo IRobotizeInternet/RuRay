@@ -7,7 +7,7 @@ using RobotizeLibrary.Dialogs;
 
 namespace RobotizeFacebook.Pages.LoggedIn.Home.HomeHeader
 {
-    public class PopupCreate : DialogBase
+    public class PopupCreate : BaseDialog
     {
         public PopupCreate(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
         {

@@ -21,7 +21,7 @@ namespace RobotizeFacebook.Pages.LoggedIn.Settings.Tabs.Seperator1.SecurityEdito
         public Label LabelLogOutOfAllSessions => new Label(Driver, By.XPath($"//span[text()={ResMiscellaneous.LogOutOfAllSessions}]"));
     }
 
-    public class DialogSeeMore : DialogBase
+    public class DialogSeeMore : BaseDialog
     {
         public DialogSeeMore(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
         {

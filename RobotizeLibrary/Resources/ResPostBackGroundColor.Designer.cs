@@ -22,14 +22,14 @@ namespace RobotizeLibrary.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public class ResCreatePost {
+    public class ResPostBackGroundColor {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
         private static global::System.Globalization.CultureInfo resourceCulture;
         
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal ResCreatePost() {
+        internal ResPostBackGroundColor() {
         }
         
         /// <summary>
@@ -39,7 +39,7 @@ namespace RobotizeLibrary.Resources {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("RobotizeLibrary.Resources.ResCreatePost", typeof(ResCreatePost).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("RobotizeLibrary.Resources.ResPostBackGroundColor", typeof(ResPostBackGroundColor).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -61,119 +61,92 @@ namespace RobotizeLibrary.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add to Your Post.
+        ///   Looks up a localized string similar to Blue mountains.
         /// </summary>
-        public static string AddToYourPost {
+        public static string BlueMountains {
             get {
-                return ResourceManager.GetString("AddToYourPost", resourceCulture);
+                return ResourceManager.GetString("BlueMountains", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Check In.
+        ///   Looks up a localized string similar to Choose Background.
         /// </summary>
-        public static string CheckIn {
+        public static string ChooseBackground {
             get {
-                return ResourceManager.GetString("CheckIn", resourceCulture);
+                return ResourceManager.GetString("ChooseBackground", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Create Post.
+        ///   Looks up a localized string similar to Close up chevron knit.
         /// </summary>
-        public static string CreatePost {
+        public static string CloseupChevronKnit {
             get {
-                return ResourceManager.GetString("CreatePost", resourceCulture);
+                return ResourceManager.GetString("CloseupChevronKnit", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Feeling/Activity.
+        ///   Looks up a localized string similar to Close up knit fabric.
         /// </summary>
-        public static string FeelingOrActivity {
+        public static string CloseupKnitFabric {
             get {
-                return ResourceManager.GetString("FeelingOrActivity", resourceCulture);
+                return ResourceManager.GetString("CloseupKnitFabric", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to GIF.
+        ///   Looks up a localized string similar to Family wearing skis sitting.
         /// </summary>
-        public static string GIF {
+        public static string FamilyWearingSkisSitting {
             get {
-                return ResourceManager.GetString("GIF", resourceCulture);
+                return ResourceManager.GetString("FamilyWearingSkisSitting", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Live Video.
+        ///   Looks up a localized string similar to No background.
         /// </summary>
-        public static string LiveVideo {
+        public static string Nobackground {
             get {
-                return ResourceManager.GetString("LiveVideo", resourceCulture);
+                return ResourceManager.GetString("Nobackground", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to More.
+        ///   Looks up a localized string similar to People playing and skiing.
         /// </summary>
-        public static string More {
+        public static string PeoplePlayingAndSkiing {
             get {
-                return ResourceManager.GetString("More", resourceCulture);
+                return ResourceManager.GetString("PeoplePlayingAndSkiing", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Photo/Video.
+        ///   Looks up a localized string similar to Snow-capped mountains.
         /// </summary>
-        public static string PhotoOrVideo {
+        public static string SnowCappedMountains {
             get {
-                return ResourceManager.GetString("PhotoOrVideo", resourceCulture);
+                return ResourceManager.GetString("SnowCappedMountains", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Post.
+        ///   Looks up a localized string similar to rgb(255, 99, 35).
         /// </summary>
-        public static string Post {
+        public static string SolidOrange {
             get {
-                return ResourceManager.GetString("Post", resourceCulture);
+                return ResourceManager.GetString("SolidOrange", resourceCulture);
             }
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to RaiseMoney.
+        ///   Looks up a localized string similar to rgb(243, 83, 105).
         /// </summary>
-        public static string RaiseMoney {
+        public static string SolidRed {
             get {
-                return ResourceManager.GetString("RaiseMoney", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Tag Friends.
-        /// </summary>
-        public static string TagFriends {
-            get {
-                return ResourceManager.GetString("TagFriends", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Watch Party.
-        /// </summary>
-        public static string WatchParty {
-            get {
-                return ResourceManager.GetString("WatchParty", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to on your mind.
-        /// </summary>
-        public static string WhatsOnYourMind {
-            get {
-                return ResourceManager.GetString("WhatsOnYourMind", resourceCulture);
+                return ResourceManager.GetString("SolidRed", resourceCulture);
             }
         }
     }

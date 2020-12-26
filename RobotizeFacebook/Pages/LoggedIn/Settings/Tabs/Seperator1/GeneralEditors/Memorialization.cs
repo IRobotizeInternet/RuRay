@@ -18,7 +18,7 @@ namespace RobotizeFacebook.Pages.LoggedIn.Settings.Tabs.Seperator1
             new Hyperlink<DialogDeleteYourAccountInFuture>(Driver, Wait, By.XPath($"//input[@value={ResMiscellaneous.RequestThatYourAccountBeDeletedAfterYouPassAway}]"));
     }
 
-    public class DialogDeleteYourAccountInFuture : DialogBase
+    public class DialogDeleteYourAccountInFuture : BaseDialog
     {
         public DialogDeleteYourAccountInFuture(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
         {

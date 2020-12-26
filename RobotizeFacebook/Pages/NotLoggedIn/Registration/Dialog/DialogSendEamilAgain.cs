@@ -7,7 +7,7 @@ using RobotizeLibrary.Dialogs;
 
 namespace RobotizeFacebook.Pages.NotLoggedIn.Login.Dialog
 {
-    public class DialogSendEamilAgain : DialogBase
+    public class DialogSendEamilAgain : BaseDialog
     {
         protected override By ByForDialog => throw new System.NotImplementedException();
 

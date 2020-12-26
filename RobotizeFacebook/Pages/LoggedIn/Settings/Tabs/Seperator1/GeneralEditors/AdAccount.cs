@@ -17,7 +17,7 @@ namespace RobotizeFacebook.Pages.LoggedIn.Settings.Tabs.Seperator1
         public Button ButtonClose => new Button(Driver, By.XPath($"//input[@value={ResMiscellaneous.Close}]"));
     }
 
-    public class AdAccountDialog : DialogBase
+    public class AdAccountDialog : BaseDialog
     {
         public AdAccountDialog(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
         {

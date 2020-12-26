@@ -6,7 +6,7 @@ using RobotizeLibrary.Resources;
 
 namespace RobotizeFacebook.Pages.LoggedIn.Home.MainSection.SubSections
 {
-    public class DialogLearnCreateRoom : DialogBase
+    public class DialogLearnCreateRoom : BaseDialog
     {
         protected override By ByForDialog => By.XPath($"//div[@aria-label='{ResMiscellaneous.LearnHowRoomsWork}']");
 

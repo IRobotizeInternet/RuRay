@@ -4,22 +4,17 @@ using System;
 
 namespace RobotizeLibrary.Controls.Grid
 {
-    public class PropertyRentalsFilter : BaseFilter, IPropertyRentalsFilter, IPropertyRentalsFilterOptions
+    public class HousesForRentFilter : BaseFilter, IHousesForRentFilter, IHousesForRentFilterOptions
     {
-        public PropertyRentalsFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public HousesForRentFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
         {
         }
 
-        public IPropertyRentalsFilterOptions FilterBy => throw new NotImplementedException();
+        public IHousesForRentFilterOptions FilterBy => throw new NotImplementedException();
 
         public IApplyFilter Bedrooms(BathroomCount numberOfBedrooms)
         {
             throw new NotImplementedException();
-        }
-
-        public void ListingsFromIndividualsOnly(bool listingsFromIndividualsOnly)
-        {
-
         }
 
         public IApplyFilter Price(double? min = null, double? max = null)

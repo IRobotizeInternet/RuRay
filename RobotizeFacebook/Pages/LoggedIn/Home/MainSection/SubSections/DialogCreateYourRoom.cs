@@ -6,7 +6,7 @@ using RobotizeLibrary.Resources;
 
 namespace RobotizeFacebook.Pages.LoggedIn.Home.MainSection.SubSections
 {
-    public class DialogCreateYourRoom : DialogBase
+    public class DialogCreateYourRoom : BaseDialog
     {
         // This is the ugliest way to making the xpath, feel free to chage to for better.
         protected override By ByForDialog => By.XPath($"*//span[text()='{ResMiscellaneous.CreateYourRoom}']//..//..//..//..//..//..//..//..//parent::div[@role='dialog']");

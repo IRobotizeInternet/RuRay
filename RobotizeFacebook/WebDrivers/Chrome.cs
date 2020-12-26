@@ -40,7 +40,7 @@ namespace RobotizeFacebook.WebDrivers
             // Using Polly library: https://github.com/App-vNext/Polly
             var policy = Policy
               .Handle<InvalidOperationException>()
-              .WaitAndRetry(10, t => TimeSpan.FromSeconds(1));
+              .WaitAndRetry(10, t => TimeSpan.FromSeconds(10));
 
             policy.Execute(() =>
             {

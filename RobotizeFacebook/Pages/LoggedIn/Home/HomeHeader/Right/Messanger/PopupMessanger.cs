@@ -6,7 +6,7 @@ using RobotizeLibrary.Resources;
 
 namespace RobotizeFacebook.Pages.LoggedIn.Home.HomeHeader
 {
-    public class PopupMessanger : DialogBase
+    public class PopupMessanger : BaseDialog
     {
         protected override By ByForDialog => By.XPath($"//div[@aria-label='{ResHomePageHeader.Messenger}'][@role='dialog']");
 
