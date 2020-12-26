@@ -23,7 +23,7 @@ namespace RobotizeFacebook.Pages.LoggedIn
 
         // Items on left.
         public Hyperlink<PageHome> HyperLinkFacebookTitleIcon => new Hyperlink<PageHome>(_driver, _wait, By.XPath("//a[@aria-label='Facebook']"));
-        public TextBox TextBoxSearchFacebook => new TextBox(_driver, By.XPath("//div[@data-testid='Keycommand_wrapper']//input"));
+        public TextBox TextBoxSearchFacebook => new TextBox(_driver, By.XPath($"//input[@placeholder='{ResHomePageHeader.SearchFacebook}']"));
 
         // Items in the middle.
         public Hyperlink<PageHome> HyperLinkHome => new Hyperlink<PageHome>(_driver, _wait, By.XPath($"//a[@aria-label='{ResHomePageHeader.Home}']"));
@@ -33,23 +33,51 @@ namespace RobotizeFacebook.Pages.LoggedIn
         public Hyperlink<PageHome> HyperLinkGroups => new Hyperlink<PageHome>(_driver, _wait, By.XPath("//a[@href='/groups/']"));
 
         // Items in the right.
+        private readonly string BaseRigthXPath = "//div[@role='navigation']";
         public Hyperlink<PageUserHome> HyperLinkUserProfile => new Hyperlink<PageUserHome>(_driver, _wait, By.XPath("//a[@href='/me/']/parent::div"));
-        public Hyperlink<PopupCreate> DialogButtonToCreate => new Hyperlink<PopupCreate>(_driver, _wait, By.XPath($"//div[@aria-label='{ResHomePageHeader.Create}']"));
-        public Hyperlink<PopupMessanger> DialogButtonMessanger => new Hyperlink<PopupMessanger>(_driver, _wait, By.XPath($"//div[@aria-label='{ResHomePageHeader.Messenger}'][@tabindex='0']"));
-        public Hyperlink<PopupAccount> DialogButtonNotifications => new Hyperlink<PopupAccount>(_driver, _wait, By.XPath($"//div[@aria-label='{ResHomePageHeader.Account}']"));
+        public Hyperlink<PopupCreate> DialogButtonToCreate => 
+            new Hyperlink<PopupCreate>(_driver, _wait, By.XPath($"{BaseRigthXPath}//div[@aria-label='{ResHomePageHeader.Create}']"));
+        
+        public Hyperlink<PopupMessanger> DialogButtonMessanger => 
+            new Hyperlink<PopupMessanger>(_driver, _wait, By.XPath($"{BaseRigthXPath}//div[@aria-label='{ResHomePageHeader.Messenger}'][1]"));
 
+        public Hyperlink<PopupMessanger> DialogButtonNotifications => 
+            new Hyperlink<PopupMessanger>(_driver, _wait, By.XPath($"{BaseRigthXPath}//div[contains(@aria-label,'{ResHomePageHeader.Notifications})'][1]"));
+
+        public Label LabelMessangerCount => 
+            new Label(_driver, By.XPath($"{BaseRigthXPath}//div[contains(@aria-label,'{ResHomePageHeader.Messenger})'][2]//span//span"));
+
+        public Label LabelNotificationsCount => 
+            new Label(_driver, By.XPath($"{BaseRigthXPath}//div[contains(@aria-label,'{ResHomePageHeader.Notifications})'][2]//span//span"));
+        
+        public Hyperlink<PopupAccount> DialogAccount => 
+            new Hyperlink<PopupAccount>(_driver, _wait, By.XPath($"{BaseRigthXPath}//div[contains(@aria-label,'{ResHomePageHeader.Account})'][1]"));
+        
         public void RunConformance()
+        {
+            RunConformanceLeftHeader();
+            RunConformanceMiddleHeader();
+            TextBoxSearchFacebook.Click();
+            TextBoxSearchFacebook.SetData("Ali");
+            HyperLinkFacebookTitleIcon.Click();
+        }
+
+        public void RunConformanceMiddleHeader()
         {
             HyperLinkWatch.Click();
             HyperLinkGroups.Click();
             HyperLinkMarketPlace.Click();
-            HyperLinkFacebookTitleIcon.Click();
+            HyperLinkFriends.Click();
+            HyperLinkHome.Click();
+        }
+
+        public void RunConformanceLeftHeader()
+        {
             HyperLinkUserProfile.Click();
             DialogButtonToCreate.Click();
             DialogButtonMessanger.Click();
             DialogButtonNotifications.Click();
-            HyperLinkFriends.Click();
+            DialogAccount.Click();
         }
-
     }
 }

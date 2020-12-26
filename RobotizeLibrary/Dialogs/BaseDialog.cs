@@ -4,7 +4,9 @@ using System.Linq;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
+using RobotizeLibrary.CommonControls;
 using RobotizeLibrary.Extensions;
+using RobotizeLibrary.Resources;
 using ExpectedConditions = SeleniumExtras.WaitHelpers.ExpectedConditions;
 
 namespace RobotizeLibrary.Dialogs
@@ -49,5 +51,8 @@ namespace RobotizeLibrary.Dialogs
                 return false;
             }
         }
+
+        // TODO: Set base path to uniquely idetify Close.
+        public Button ButtonClose => new Button(Driver, By.XPath($"//div[@aria-label='{ResHomePageHeader.Close}']"));
     }
 }

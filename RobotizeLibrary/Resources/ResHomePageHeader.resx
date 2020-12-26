@@ -144,4 +144,40 @@
   <data name="Account" xml:space="preserve">
     <value>Account</value>
   </data>
+  <data name="AccountControlsAndSettings" xml:space="preserve">
+    <value>Account Controls and Settings</value>
+  </data>
+  <data name="SearchFacebook" xml:space="preserve">
+    <value>Search Facebook</value>
+  </data>
+  <data name="Post" xml:space="preserve">
+    <value>Post</value>
+  </data>
+  <data name="Story" xml:space="preserve">
+    <value>Story</value>
+  </data>
+  <data name="Room" xml:space="preserve">
+    <value>Room</value>
+  </data>
+  <data name="Page" xml:space="preserve">
+    <value>Page</value>
+  </data>
+  <data name="Ad" xml:space="preserve">
+    <value>Ad</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="Event" xml:space="preserve">
+    <value>Event</value>
+  </data>
+  <data name="MarketPlaceListing" xml:space="preserve">
+    <value>Marketplace Listing</value>
+  </data>
+  <data name="Fundraiser" xml:space="preserve">
+    <value>Fundraiser</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
 </root>
