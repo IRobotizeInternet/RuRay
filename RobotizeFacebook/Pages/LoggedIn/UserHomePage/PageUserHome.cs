@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 
-namespace RobotizeFacebook.Pages.LoggedIn.UserHomePage
+namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class PageUserHome : PageBase
     {

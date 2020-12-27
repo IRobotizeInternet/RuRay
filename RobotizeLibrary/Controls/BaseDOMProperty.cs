@@ -10,6 +10,7 @@ using RobotizeLibrary.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 
 namespace RobotizeToolbox.CommonControls
 {
@@ -34,6 +35,9 @@ namespace RobotizeToolbox.CommonControls
         /// </summary>
         public virtual void Click(int numberOfTries = 5)
         {
+            // Adding delay to avoid rapid action avoid account being disabled. 
+            Thread.Sleep(2000);
+            
             // It will try to five seconds to click on an element.
             var wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
 

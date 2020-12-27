@@ -79,6 +79,15 @@ namespace RobotizeLibrary.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add a Screenshot or Video (recommended).
+        /// </summary>
+        public static string AddAScreenshotOrVideoRecommended {
+            get {
+                return ResourceManager.GetString("AddAScreenshotOrVideoRecommended", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add Email Address.
         /// </summary>
         public static string AddEmailAddress {
@@ -102,6 +111,15 @@ namespace RobotizeLibrary.Resources {
         public static string AddYourPhoneNumber {
             get {
                 return ResourceManager.GetString("AddYourPhoneNumber", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Back.
+        /// </summary>
+        public static string Back {
+            get {
+                return ResourceManager.GetString("Back", resourceCulture);
             }
         }
         
@@ -147,6 +165,15 @@ namespace RobotizeLibrary.Resources {
         public static string ChooseAFriend {
             get {
                 return ResourceManager.GetString("ChooseAFriend", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Choose an Area.
+        /// </summary>
+        public static string ChooseAnArea {
+            get {
+                return ResourceManager.GetString("ChooseAnArea", resourceCulture);
             }
         }
         
@@ -223,6 +250,24 @@ namespace RobotizeLibrary.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Give Feedback to Facebook.
+        /// </summary>
+        public static string GiveFeedbackToFacebook {
+            get {
+                return ResourceManager.GetString("GiveFeedbackToFacebook", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Help us improve the new Facebook.
+        /// </summary>
+        public static string HelpUsImproveTheNewFacebook {
+            get {
+                return ResourceManager.GetString("HelpUsImproveTheNewFacebook", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Learn How Rooms Work.
         /// </summary>
         public static string LearnHowRoomsWork {
@@ -237,6 +282,24 @@ namespace RobotizeLibrary.Resources {
         public static string LogOutOfAllSessions {
             get {
                 return ResourceManager.GetString("LogOutOfAllSessions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to News Feed Preferences.
+        /// </summary>
+        public static string NewsFeedPreferences {
+            get {
+                return ResourceManager.GetString("NewsFeedPreferences", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please include as much info as possible....
+        /// </summary>
+        public static string PleaseIncludeAsMuchInfoAsPossible {
+            get {
+                return ResourceManager.GetString("PleaseIncludeAsMuchInfoAsPossible", resourceCulture);
             }
         }
         
@@ -282,6 +345,24 @@ namespace RobotizeLibrary.Resources {
         public static string SeeMore {
             get {
                 return ResourceManager.GetString("SeeMore", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Something went wrong.
+        /// </summary>
+        public static string SomethingWentWrong {
+            get {
+                return ResourceManager.GetString("SomethingWentWrong", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Submit.
+        /// </summary>
+        public static string Submit {
+            get {
+                return ResourceManager.GetString("Submit", resourceCulture);
             }
         }
     }

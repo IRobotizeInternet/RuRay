@@ -182,6 +182,7 @@
     <Compile Include="CustomAttributes\LocalizedDescriptionAttribute.cs" />
     <Compile Include="Dialogs\BaseDialog.cs" />
     <Compile Include="Controls\Grid\Category.cs" />
+    <Compile Include="Dialogs\BasePopup.cs" />
     <Compile Include="Dialogs\BaseSaveCancelDialog.cs" />
     <Compile Include="Enum\EnumExt.cs" />
     <Compile Include="Extensions\Acts.cs" />
@@ -189,6 +190,11 @@
     <Compile Include="Extensions\RemoteWebDriverExtension.cs" />
     <Compile Include="Extensions\WebElements.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources\ResAccount.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResAccount.resx</DependentUpon>
+    </Compile>
     <Compile Include="Resources\ResCategory.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -260,6 +266,10 @@
     <Folder Include="MenusAndToolbars\" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Resources\ResAccount.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResAccount.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\ResCategory.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>

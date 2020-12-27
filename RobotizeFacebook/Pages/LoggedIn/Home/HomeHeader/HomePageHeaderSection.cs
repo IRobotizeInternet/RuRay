@@ -55,11 +55,12 @@ namespace RobotizeFacebook.Pages.LoggedIn
         
         public void RunConformance()
         {
-            RunConformanceLeftHeader();
-            RunConformanceMiddleHeader();
-            TextBoxSearchFacebook.Click();
-            TextBoxSearchFacebook.SetData("Ali");
-            HyperLinkFacebookTitleIcon.Click();
+            //RunConformanceLeftHeader();
+            //RunConformanceMiddleHeader();
+            //TextBoxSearchFacebook.Click();
+            //TextBoxSearchFacebook.SetData("Ali");
+            //HyperLinkFacebookTitleIcon.Click();
+            RunConformanceAccountPopUp();
         }
 
         public void RunConformanceMiddleHeader()
@@ -78,6 +79,17 @@ namespace RobotizeFacebook.Pages.LoggedIn
             DialogButtonMessanger.Click();
             DialogButtonNotifications.Click();
             DialogAccount.Click();
+        }
+
+        public void RunConformanceAccountPopUp()
+        {
+            var accountPopUp = DialogAccount.Click();
+            var displayAndAccessibilityDialog = accountPopUp.TriggerDisplayAndAccessibilityDialog.Click();
+            displayAndAccessibilityDialog.RButtonDarkModeOn.Click();
+            displayAndAccessibilityDialog.RButtonDarkModeOff.Click();
+            displayAndAccessibilityDialog.RButtonCompactModeOn.Click();
+            displayAndAccessibilityDialog.RButtonCompactModeOff.Click();
+
         }
     }
 }

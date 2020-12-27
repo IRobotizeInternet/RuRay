@@ -146,8 +146,18 @@
     <Compile Include="CryptoServices\Crypto.cs" />
     <Compile Include="CryptoServices\CryptoServiceForString.cs" />
     <Compile Include="Pages\BasePage.cs" />
+    <Compile Include="Pages\LoggedIn\ActivityLog\PageActivityLog.cs" />
+    <Compile Include="Pages\LoggedIn\Dialogs\DialogAllKeyboardShortcuts.cs" />
+    <Compile Include="Pages\LoggedIn\Dialogs\Account\PopupDisplayAndAccessibility.cs" />
+    <Compile Include="Pages\LoggedIn\Dialogs\Account\DialogGiveFeedbackToFacebook.cs" />
+    <Compile Include="Pages\LoggedIn\Dialogs\DialogHelpUsImproveNewFacebook.cs" />
+    <Compile Include="Pages\LoggedIn\Dialogs\PopupKeyBoard.cs" />
+    <Compile Include="Pages\LoggedIn\Dialogs\DialogNewsFeedPreferences.cs" />
+    <Compile Include="Pages\LoggedIn\Help\PageHelp.cs" />
     <Compile Include="Pages\LoggedIn\Home\HomeHeader\Middle\Friends\PageFriends.cs" />
     <Compile Include="Pages\LoggedIn\Home\HomeHeader\Middle\GroupFeed\PageGroupFeed.cs" />
+    <Compile Include="Pages\LoggedIn\Dialogs\Account\PopupHelpAndSupport.cs" />
+    <Compile Include="Pages\LoggedIn\Dialogs\Account\PopupSettingAndPrivacy.cs" />
     <Compile Include="Pages\LoggedIn\Home\HomeHeader\Right\Account\PopupAccount.cs" />
     <Compile Include="Pages\LoggedIn\Home\HomeHeader\Right\Create\DialogCreatePost.cs" />
     <Compile Include="Pages\LoggedIn\Home\HomeHeader\Right\Create\DialogLifeEvents.cs" />
@@ -165,8 +175,9 @@
     <Compile Include="Pages\LoggedIn\Home\MainSection\SubSections\DialogLearnCreateRoom.cs" />
     <Compile Include="Pages\LoggedIn\Home\MainSection\SubSections\Feed.cs" />
     <Compile Include="Pages\LoggedIn\Home\PageTimeline.cs" />
+    <Compile Include="Pages\LoggedIn\PrivacyCheckup\PagePrivacyCheckup.cs" />
     <Compile Include="Pages\LoggedIn\Settings\AccountSettings\PageAccount.cs" />
-    <Compile Include="Pages\LoggedIn\Settings\BaseSettings.cs" />
+    <Compile Include="Pages\LoggedIn\Settings\PageSettings.cs" />
     <Compile Include="Pages\LoggedIn\Settings\Tabs\BaseEditor.cs" />
     <Compile Include="Pages\LoggedIn\Settings\Tabs\Seperator1\GeneralEditors\AdAccount.cs" />
     <Compile Include="Pages\LoggedIn\Settings\Tabs\Seperator1\GeneralEditors\AddAnotherEmailDialog.cs" />
@@ -201,6 +212,7 @@
     <Compile Include="Pages\LoggedIn\Settings\Tabs\Seperator1\YourFacebookInformation.cs" />
     <Compile Include="Pages\LoggedIn\Stories\DialogStoryPrivacy.cs" />
     <Compile Include="Pages\LoggedIn\Stories\PageCreateStory.cs" />
+    <Compile Include="Pages\LoggedIn\SupportInbox\PageSupportInbox.cs" />
     <Compile Include="Pages\LoggedIn\UserHomePage\PageUserHome.cs" />
     <Compile Include="Pages\LoggedIn\Home\HomeHeader\Middle\Watch\PageWatch.cs" />
     <Compile Include="Pages\NotLoggedIn\Help\PageHelpChooseALegacyContact.cs" />
@@ -215,6 +227,7 @@
     <Compile Include="Pages\NotLoggedIn\PagePrivacy.cs" />
     <Compile Include="Pages\NotLoggedIn\PageTerms.cs" />
     <Compile Include="Pages\NotLoggedIn\PasswordRecovery\PasswordRecoveryPage.cs" />
+    <Compile Include="Pages\PagePrivacy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ServiceBrowser.cs" />
     <Compile Include="Services\ServiceCulture.cs" />

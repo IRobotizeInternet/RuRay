@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 
 namespace RobotizeFacebook.Pages.LoggedIn.Settings.Tabs
 {
-    public class General : BaseSettings
+    public class General : PageSettings
     {
 
         public General(RemoteWebDriver driver, WebDriverWait wait)
