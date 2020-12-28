@@ -1,10 +1,10 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
+using RobotizeFacebook.Resources;
 using RobotizeLibrary.CommonControls;
 using RobotizeLibrary.Controls.TriggerControls;
 using RobotizeLibrary.Dialogs;
-using RobotizeLibrary.Resources;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
@@ -29,8 +29,8 @@ namespace RobotizeFacebook.Pages.LoggedIn
         
         public EventTriggerButton<DialogShowBackgroundOptions> ButtonBackGroundOptions =>
            new EventTriggerButton<DialogShowBackgroundOptions>(Driver, Wait, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.ShowBackgroundOptions}']"));
-        public EventTriggerButton<> PopupEmoji => 
-            new EventTriggerButton<EventResult>(Driver, Wait, By.XPath($"//div[@aria-label='{ResCreatePost.Emoji}']"));
+        public EventTriggerButton<PopupEmoji> PopupEmojiCollection => 
+            new EventTriggerButton<PopupEmoji>(Driver, Wait, By.XPath($"//div[@aria-label='{ResCreatePost.Emoji}']"));
         public TextBox TextBoxWhatsOnYourMind => new TextBox(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.WhatsOnYourMind}']"));
         public Button ButtonPost => new Button(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.Post}']"));
         

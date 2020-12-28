@@ -3,9 +3,9 @@ using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using RobotizeFacebook.Pages.LoggedIn.Home.HomeHeader;
 using RobotizeFacebook.Pages.LoggedUser;
+using RobotizeFacebook.Resources;
 using RobotizeLibrary.CommonControls;
 using RobotizeLibrary.Controls.TriggerControls;
-using RobotizeLibrary.Resources;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {

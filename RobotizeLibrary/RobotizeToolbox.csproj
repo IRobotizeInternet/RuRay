@@ -90,89 +90,6 @@
     <Compile Include="Controls\Checkbox.cs" />
     <Compile Include="Controls\Combobox.cs" />
     <Compile Include="Controls\Dropdown.cs" />
-    <Compile Include="Controls\Grid\BaseFilter.cs" />
-    <Compile Include="Controls\Grid\Checkbox\CheckboxFilter.cs" />
-    <Compile Include="Controls\Grid\Checkbox\ICheckboxFilter.cs" />
-    <Compile Include="Controls\Grid\Checkbox\ICheckboxFilterOptions.cs" />
-    <Compile Include="Controls\Grid\FilterFactory.cs" />
-    <Compile Include="Controls\Grid\FilterOptions\IBodyStyle.cs" />
-    <Compile Include="Controls\Grid\Checkbox\ICheckboxOptions.cs" />
-    <Compile Include="Controls\Grid\FilterOptions\IColor.cs" />
-    <Compile Include="Controls\Grid\FilterOptions\IItemCondition.cs" />
-    <Compile Include="Controls\Grid\FilterOptions\IMake.cs" />
-    <Compile Include="Controls\Grid\FilterOptions\IMileage.cs" />
-    <Compile Include="Controls\Grid\FilterOptions\IModel.cs" />
-    <Compile Include="Controls\Grid\FilterOptions\IPrice.cs" />
-    <Compile Include="Controls\Grid\FilterOptions\ISortBy.cs" />
-    <Compile Include="Controls\Grid\FilterOptions\IType.cs" />
-    <Compile Include="Controls\Grid\FilterOptions\IYear.cs" />
-    <Compile Include="Controls\Grid\FacebookGrid.cs" />
-    <Compile Include="Controls\Grid\IApplyFilter.cs" />
-    <Compile Include="Controls\Grid\IFilter.cs" />
-    <Compile Include="Controls\Grid\IFilterOptions.cs" />
-    <Compile Include="Controls\Grid\PropertyRentals\Enum\BathroomCount.cs" />
-    <Compile Include="Controls\Grid\PropertyRentals\Enum\BedroomCount.cs" />
-    <Compile Include="Controls\Grid\PropertyRentals\Enum\RentalType.cs" />
-    <Compile Include="Controls\Grid\PropertyRentals\HousesForRent\IHousesForRentFilter.cs" />
-    <Compile Include="Controls\Grid\PropertyRentals\HousesForRent\IHousesForRentFilterOptions.cs" />
-    <Compile Include="Controls\Grid\PropertyRentals\HousesForRent\IHousesForRentOptions.cs" />
-    <Compile Include="Controls\Grid\PropertyRentals\HousesForRent\HousesForRentFilter.cs" />
-    <Compile Include="Controls\Grid\PropertyRentals\IBathroomsCount.cs" />
-    <Compile Include="Controls\Grid\PropertyRentals\IRentalType.cs" />
-    <Compile Include="Controls\Grid\PropertyRentals\IBedroomsCount.cs" />
-    <Compile Include="Controls\Grid\PropertyRentals\ISquareMeters.cs" />
-    <Compile Include="Controls\Grid\PropertyRentals\PropertyRentalsFilter\IPropertyRentalsFilter.cs" />
-    <Compile Include="Controls\Grid\PropertyRentals\PropertyRentalsFilter\IPropertyRentalsFilterOptions.cs" />
-    <Compile Include="Controls\Grid\PropertyRentals\PropertyRentalsFilter\IPropertyRentalsOptions.cs" />
-    <Compile Include="Controls\Grid\PropertyRentals\PropertyRentalsFilter\PropertyRentalsFilter.cs" />
-    <Compile Include="Controls\Grid\Vehicles\BoatsFilter\BoatFilter.cs" />
-    <Compile Include="Controls\Grid\Vehicles\BoatsFilter\IBoatFilter.cs" />
-    <Compile Include="Controls\Grid\Vehicles\BoatsFilter\IBoatsFilterOptions.cs" />
-    <Compile Include="Controls\Grid\Vehicles\BoatsFilter\IBoatsOptions.cs" />
-    <Compile Include="Controls\Grid\Vehicles\CarsFilter\CarsFilter.cs" />
-    <Compile Include="Controls\Grid\Vehicles\CarsFilter\ICarsFilter.cs" />
-    <Compile Include="Controls\Grid\Vehicles\CarsFilter\ICarsFilterOptions.cs" />
-    <Compile Include="Controls\Grid\Vehicles\CarsFilter\ICarsOptions.cs" />
-    <Compile Include="Controls\Grid\Vehicles\Enum\ItemCondition.cs" />
-    <Compile Include="Controls\Grid\Vehicles\Enum\VehicleMake.cs" />
-    <Compile Include="Controls\Grid\Vehicles\Enum\VehicleModel.cs" />
-    <Compile Include="Controls\Grid\Vehicles\IVehicleBodyStyle.cs" />
-    <Compile Include="Controls\Grid\Vehicles\IVehicleExteriorColor.cs" />
-    <Compile Include="Controls\Grid\Vehicles\MotorcyclesFilter\MotorcyclesFilter.cs" />
-    <Compile Include="Controls\Grid\Vehicles\MotorcyclesFilter\IMotorcyclesFilter.cs" />
-    <Compile Include="Controls\Grid\Vehicles\MotorcyclesFilter\IMotorcyclesFilterOptions.cs" />
-    <Compile Include="Controls\Grid\Vehicles\MotorcyclesFilter\IMotorcyclesOptions.cs" />
-    <Compile Include="Controls\Grid\Vehicles\Powersports\IPowersportsFilter.cs" />
-    <Compile Include="Controls\Grid\Vehicles\Powersports\IPowersportsFilterOptions.cs" />
-    <Compile Include="Controls\Grid\Vehicles\Powersports\IPowersportsOptions.cs" />
-    <Compile Include="Controls\Grid\Vehicles\Powersports\PowersportsFilter.cs" />
-    <Compile Include="Controls\Grid\Vehicles\RVCampersFilter\IRVCampersFilter.cs" />
-    <Compile Include="Controls\Grid\Vehicles\RVCampersFilter\IRVCampersFilterOptions.cs" />
-    <Compile Include="Controls\Grid\Vehicles\RVCampersFilter\IRVCampersOptions.cs" />
-    <Compile Include="Controls\Grid\Vehicles\RVCampersFilter\RVCampersFilter.cs" />
-    <Compile Include="Controls\Grid\Vehicles\Trailers\ITrailersFilter.cs" />
-    <Compile Include="Controls\Grid\Vehicles\Trailers\ITrailersFilterOptions.cs" />
-    <Compile Include="Controls\Grid\Vehicles\Trailers\ITrailersOptions.cs" />
-    <Compile Include="Controls\Grid\Vehicles\Trailers\TrailersFilter.cs" />
-    <Compile Include="Controls\Grid\Vehicles\Trucks\ITrucksFilter.cs" />
-    <Compile Include="Controls\Grid\Vehicles\Trucks\ITrucksFilterOptions.cs" />
-    <Compile Include="Controls\Grid\Vehicles\Trucks\ITrucksOptions.cs" />
-    <Compile Include="Controls\Grid\Vehicles\Trucks\TrucksFilter.cs" />
-    <Compile Include="Controls\Grid\Vehicles\VehiclesFilter\IVehicleFilter.cs" />
-    <Compile Include="Controls\Grid\Vehicles\IVehicleInteriorColor.cs" />
-    <Compile Include="Controls\Grid\Vehicles\IVehicleMake.cs" />
-    <Compile Include="Controls\Grid\Vehicles\IVehicleModel.cs" />
-    <Compile Include="Controls\Grid\Vehicles\VehiclesFilter\IVehicleOptions.cs" />
-    <Compile Include="Controls\Grid\Vehicles\VehiclesFilter\IVehicleFilterOptions.cs" />
-    <Compile Include="Controls\Grid\Vehicles\IVehicleTransmissionType.cs" />
-    <Compile Include="Controls\Grid\Vehicles\IVehicleType.cs" />
-    <Compile Include="Controls\Grid\Vehicles\VehiclesFilter\VehicleFilter.cs" />
-    <Compile Include="Controls\Grid\Vehicles\IVehicleSort.cs" />
-    <Compile Include="Controls\Grid\Vehicles\Enum\VehicleSortOption.cs" />
-    <Compile Include="Controls\Grid\Vehicles\Enum\VehicleType.cs" />
-    <Compile Include="Controls\Grid\Vehicles\Enum\VehicleBodyStyle.cs" />
-    <Compile Include="Controls\Grid\Vehicles\Enum\VehicleInteriorExteriorColor.cs" />
-    <Compile Include="Controls\Grid\Vehicles\Enum\VehicleTransmissionType.cs" />
     <Compile Include="Controls\RadioButton.cs" />
     <Compile Include="Controls\TriggerControls\EventTriggerButton.cs" />
     <Compile Include="Controls\TriggerControls\EventTriggerDiv.cs" />
@@ -181,7 +98,6 @@
     <Compile Include="Controls\TextBox.cs" />
     <Compile Include="CustomAttributes\LocalizedDescriptionAttribute.cs" />
     <Compile Include="Dialogs\BaseDialog.cs" />
-    <Compile Include="Controls\Grid\Category.cs" />
     <Compile Include="Dialogs\BasePopup.cs" />
     <Compile Include="Dialogs\BaseSaveCancelDialog.cs" />
     <Compile Include="Enum\EnumExt.cs" />
@@ -190,81 +106,6 @@
     <Compile Include="Extensions\RemoteWebDriverExtension.cs" />
     <Compile Include="Extensions\WebElements.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Resources\ResAccount.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ResAccount.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Resources\ResCategory.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ResCategory.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Resources\ResCreatePost.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ResCreatePost.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Resources\ResDate.Designer.cs">
-      <DependentUpon>ResDate.resx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="Resources\ResDialogPopUpCreate.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ResDialogPopUpCreate.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Resources\ResEmoji.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ResEmoji.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Resources\ResHomePage1.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ResHomePage.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Resources\ResHomePageHeader.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ResHomePageHeader.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Resources\ResLoginPage.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ResLoginPage.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Resources\ResMiscellaneous.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ResMiscellaneous.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Resources\ResMonth.Designer.cs">
-      <DependentUpon>ResMonth.resx</DependentUpon>
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-    </Compile>
-    <Compile Include="Resources\ResPostBackground.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ResPostBackground.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Resources\ResPostBackGroundColor.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ResPostBackGroundColor.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Resources\ResSelectPrivacy.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ResSelectPrivacy.resx</DependentUpon>
-    </Compile>
-    <Compile Include="Resources\ResYear.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ResYear.resx</DependentUpon>
-    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\.editorconfig">
@@ -273,76 +114,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Controls\Grid\PropertyRentals\ApartmentsForRent\" />
-    <Folder Include="Controls\Grid\PropertyRentals\CondosForRent\" />
-    <Folder Include="Controls\Grid\PropertyRentals\TownhousesForRent\" />
-    <Folder Include="Controls\Grid\RadioButton\" />
-    <Folder Include="Controls\Grid\Textbox\" />
     <Folder Include="MenusAndToolbars\" />
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\ResAccount.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>ResAccount.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Resources\ResCategory.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <SubType>Designer</SubType>
-      <LastGenOutput>ResCategory.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Resources\ResCreatePost.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>ResCreatePost.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Resources\ResDate.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>ResDate.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Resources\ResDialogPopUpCreate.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>ResDialogPopUpCreate.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Resources\ResEmoji.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>ResEmoji.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Resources\ResHomePage.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>ResHomePage1.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Resources\ResHomePageHeader.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>ResHomePageHeader.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Resources\ResLoginPage.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>ResLoginPage.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Resources\ResMiscellaneous.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>ResMiscellaneous.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Resources\ResMonth.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>ResMonth.Designer.cs</LastGenOutput>
-      <SubType>Designer</SubType>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Resources\ResPostBackground.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>ResPostBackground.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Resources\ResPostBackGroundColor.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>ResPostBackGroundColor.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Resources\ResSelectPrivacy.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>ResSelectPrivacy.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Resources\ResYear.resx">
-      <Generator>PublicResXFileCodeGenerator</Generator>
-      <LastGenOutput>ResYear.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Content Include="ReadMe.txt" />

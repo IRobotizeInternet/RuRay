@@ -3,7 +3,7 @@ using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using RobotizeLibrary.Controls.TriggerControls;
 using RobotizeLibrary.Dialogs;
-using RobotizeLibrary.Resources;
+using RobotizeFacebook.Resources;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {

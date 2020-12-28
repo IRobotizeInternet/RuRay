@@ -5,7 +5,7 @@ using OpenQA.Selenium.Support.UI;
 using RobotizeLibrary.CommonControls;
 using RobotizeLibrary.Controls.TriggerControls;
 using RobotizeLibrary.Dialogs;
-using RobotizeLibrary.Resources;
+using RobotizeFacebook.Resources;
 using System;
 
 namespace RobotizeFacebook.Pages.LoggedIn.Settings.Tabs.Seperator1.SecurityEditors

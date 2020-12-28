@@ -3,7 +3,7 @@ using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using RobotizeLibrary.Controls;
 using RobotizeLibrary.Dialogs;
-using RobotizeLibrary.Resources;
+using RobotizeFacebook.Resources;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
@@ -11,7 +11,6 @@ namespace RobotizeFacebook.Pages.LoggedIn
     {
         public DialogCustomPrivacy(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
         {
-            😒
         }
 
         private readonly string Basepath = $"//span[text()='{ResSelectPrivacy.CustomPrivacy}']/../../../../..";

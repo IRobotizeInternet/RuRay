@@ -3,7 +3,6 @@ using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using RobotizeLibrary.CommonControls;
 using RobotizeLibrary.Extensions;
-using RobotizeLibrary.Resources;
 using System;
 using System.Diagnostics;
 using System.Linq;
@@ -52,7 +51,5 @@ namespace RobotizeLibrary.Dialogs
                 return false;
             }
         }
-
-        public Button ButtonBack => new Button(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResMiscellaneous.Back}']"));
     }
 }

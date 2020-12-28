@@ -2,7 +2,6 @@
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using RobotizeLibrary.CommonControls;
-using RobotizeLibrary.Resources;
 using System;
 
 namespace RobotizeLibrary.Dialogs
@@ -15,7 +14,7 @@ namespace RobotizeLibrary.Dialogs
 
         protected override By ByForDialog => throw new NotImplementedException();
         
-        public Button ButtonCancel => new Button(Driver, By.XPath($"//span[contains(text(),'{ResSelectPrivacy.Cancel}')]/../../../../.."));
-        public Button ButtonSaveChanges => new Button(Driver, By.XPath($"//span[contains(text(),'{ResSelectPrivacy.SaveChanges}')]/../../../../.."));
+        //public Button ButtonCancel => new Button(Driver, By.XPath($"//span[contains(text(),'{ResSelectPrivacy.Cancel}')]/../../../../.."));
+        //public Button ButtonSaveChanges => new Button(Driver, By.XPath($"//span[contains(text(),'{ResSelectPrivacy.SaveChanges}')]/../../../../.."));
     }
 }

@@ -1,6 +1,6 @@
 ﻿using OpenQA.Selenium;
 using RobotizeLibrary.CommonControls;
-using RobotizeLibrary.Resources;
+using RobotizeFacebook.Resources;
 using System;
 using System.Collections.Generic;
 using System.Linq;

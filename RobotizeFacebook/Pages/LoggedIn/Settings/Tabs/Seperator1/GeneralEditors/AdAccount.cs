@@ -5,7 +5,7 @@ using RobotizeFacebook.Pages.LoggedIn.Settings.AccountSettings;
 using RobotizeLibrary.CommonControls;
 using RobotizeLibrary.Controls.TriggerControls;
 using RobotizeLibrary.Dialogs;
-using RobotizeLibrary.Resources;
+using RobotizeFacebook.Resources;
 
 namespace RobotizeFacebook.Pages.LoggedIn.Settings.Tabs.Seperator1
 {

@@ -1,8 +1,9 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
+using RobotizeFacebook.Resources;
 using RobotizeLibrary.Dialogs;
-using RobotizeLibrary.Resources;
+using RobotizeFacebook.Resources;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
@@ -10,7 +11,7 @@ namespace RobotizeFacebook.Pages.LoggedIn
     {
         public PopupEmoji(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
         {
-           ResEmoji.Shrimp
+            
         }
 
         protected override By ByForDialog => By.XPath($"//div[@role='dialog']//h3[text()='{ResCreatePost.RecentlyUsed}']");

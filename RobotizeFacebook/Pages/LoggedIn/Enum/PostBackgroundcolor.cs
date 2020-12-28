@@ -1,5 +1,5 @@
-﻿using RobotizeLibrary.CustomAttributes;
-using RobotizeLibrary.Resources;
+﻿using RobotizeFacebook.Resources;
+using RobotizeLibrary.CustomAttributes;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {

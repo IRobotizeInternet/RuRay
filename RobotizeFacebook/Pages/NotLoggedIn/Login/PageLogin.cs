@@ -5,7 +5,7 @@ using RobotizeFacebook.Pages.PasswordRecovery;
 using RobotizeFacebook.Utilities;
 using RobotizeLibrary.CommonControls;
 using RobotizeLibrary.Controls.TriggerControls;
-using RobotizeLibrary.Resources;
+using RobotizeFacebook.Resources;
 
 namespace RobotizeFacebook.Pages
 {
