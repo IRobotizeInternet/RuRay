@@ -1,0 +1,2481 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Alien" xml:space="preserve">
+    <value>👽-Alien    </value>
+  </data>
+  <data name="AlienMonster" xml:space="preserve">
+    <value>👾-Alien Monster   </value>
+  </data>
+  <data name="AnatomicalHeart" xml:space="preserve">
+    <value>🫀-Anatomical Heart   </value>
+  </data>
+  <data name="AngryFace" xml:space="preserve">
+    <value>😠-Angry Face   </value>
+  </data>
+  <data name="AngryFacewithHorns" xml:space="preserve">
+    <value>👿-Angry Face with Horns </value>
+  </data>
+  <data name="AnguishedFace" xml:space="preserve">
+    <value>😧-Anguished Face   </value>
+  </data>
+  <data name="Ant" xml:space="preserve">
+    <value>🐜-Ant    </value>
+  </data>
+  <data name="AnxiousFacewithSweat" xml:space="preserve">
+    <value>😰-Anxious Face with Sweat </value>
+  </data>
+  <data name="Artist" xml:space="preserve">
+    <value>🧑‍🎨-Artist    </value>
+  </data>
+  <data name="AstonishedFace" xml:space="preserve">
+    <value>😲-Astonished Face   </value>
+  </data>
+  <data name="Astronaut" xml:space="preserve">
+    <value>🧑‍🚀-Astronaut    </value>
+  </data>
+  <data name="Avocado" xml:space="preserve">
+    <value>🥑-Avocado    </value>
+  </data>
+  <data name="Baby" xml:space="preserve">
+    <value>👶-Baby    </value>
+  </data>
+  <data name="BabyAngel" xml:space="preserve">
+    <value>👼-Baby Angel   </value>
+  </data>
+  <data name="BabyBottle" xml:space="preserve">
+    <value>🍼-Baby Bottle   </value>
+  </data>
+  <data name="BabyChick" xml:space="preserve">
+    <value>🐤-Baby Chick   </value>
+  </data>
+  <data name="BackhandIndexPointingDown" xml:space="preserve">
+    <value>👇-Backhand Index Pointing Down </value>
+  </data>
+  <data name="BackhandIndexPointingLeft" xml:space="preserve">
+    <value>👈-Backhand Index Pointing Left </value>
+  </data>
+  <data name="BackhandIndexPointingRight" xml:space="preserve">
+    <value>👉-Backhand Index Pointing Right </value>
+  </data>
+  <data name="BackhandIndexPointingUp" xml:space="preserve">
+    <value>👆-Backhand Index Pointing Up </value>
+  </data>
+  <data name="Backpack" xml:space="preserve">
+    <value>🎒-Backpack    </value>
+  </data>
+  <data name="Bacon" xml:space="preserve">
+    <value>🥓-Bacon    </value>
+  </data>
+  <data name="Badger" xml:space="preserve">
+    <value>🦡-Badger    </value>
+  </data>
+  <data name="Bagel" xml:space="preserve">
+    <value>🥯-Bagel    </value>
+  </data>
+  <data name="BaguetteBread" xml:space="preserve">
+    <value>🥖-Baguette Bread   </value>
+  </data>
+  <data name="BalletShoes" xml:space="preserve">
+    <value>🩰-Ballet Shoes   </value>
+  </data>
+  <data name="Banana" xml:space="preserve">
+    <value>🍌-Banana    </value>
+  </data>
+  <data name="Bat" xml:space="preserve">
+    <value>🦇-Bat    </value>
+  </data>
+  <data name="BeamingFacewithSmilingEyes" xml:space="preserve">
+    <value>😁-Beaming Face with Smiling Eyes</value>
+  </data>
+  <data name="Bear" xml:space="preserve">
+    <value>🐻-Bear    </value>
+  </data>
+  <data name="Beaver" xml:space="preserve">
+    <value>🦫-Beaver    </value>
+  </data>
+  <data name="BeerMug" xml:space="preserve">
+    <value>🍺-Beer Mug   </value>
+  </data>
+  <data name="Beetle" xml:space="preserve">
+    <value>🪲-Beetle    </value>
+  </data>
+  <data name="BellPepper" xml:space="preserve">
+    <value>🫑-Bell Pepper   </value>
+  </data>
+  <data name="BentoBox" xml:space="preserve">
+    <value>🍱-Bento Box   </value>
+  </data>
+  <data name="BeverageBox" xml:space="preserve">
+    <value>🧃-Beverage Box   </value>
+  </data>
+  <data name="Bikini" xml:space="preserve">
+    <value>👙-Bikini    </value>
+  </data>
+  <data name="BilledCap" xml:space="preserve">
+    <value>🧢-Billed Cap   </value>
+  </data>
+  <data name="Bird" xml:space="preserve">
+    <value>🐦-Bird    </value>
+  </data>
+  <data name="BirthdayCake" xml:space="preserve">
+    <value>🎂-Birthday Cake   </value>
+  </data>
+  <data name="Bison" xml:space="preserve">
+    <value>🦬-Bison    </value>
+  </data>
+  <data name="BlackCat" xml:space="preserve">
+    <value>🐈‍⬛-Black Cat   </value>
+  </data>
+  <data name="Blossom" xml:space="preserve">
+    <value>🌼-Blossom    </value>
+  </data>
+  <data name="Blowfish" xml:space="preserve">
+    <value>🐡-Blowfish    </value>
+  </data>
+  <data name="Blueberries" xml:space="preserve">
+    <value>🫐-Blueberries    </value>
+  </data>
+  <data name="Boar" xml:space="preserve">
+    <value>🐗-Boar    </value>
+  </data>
+  <data name="Bone" xml:space="preserve">
+    <value>🦴-Bone    </value>
+  </data>
+  <data name="BottlewithPoppingCork" xml:space="preserve">
+    <value>🍾-Bottle with Popping Cork </value>
+  </data>
+  <data name="Bouquet" xml:space="preserve">
+    <value>💐-Bouquet    </value>
+  </data>
+  <data name="BowlwithSpoon" xml:space="preserve">
+    <value>🥣-Bowl with Spoon  </value>
+  </data>
+  <data name="Boy" xml:space="preserve">
+    <value>👦-Boy    </value>
+  </data>
+  <data name="Brain" xml:space="preserve">
+    <value>🧠-Brain    </value>
+  </data>
+  <data name="Bread" xml:space="preserve">
+    <value>🍞-Bread    </value>
+  </data>
+  <data name="BreastFeeding" xml:space="preserve">
+    <value>🤱-Breast Feeding   </value>
+  </data>
+  <data name="Briefcase" xml:space="preserve">
+    <value>💼-Briefcase    </value>
+  </data>
+  <data name="Briefs" xml:space="preserve">
+    <value>🩲-Briefs    </value>
+  </data>
+  <data name="Broccoli" xml:space="preserve">
+    <value>🥦-Broccoli    </value>
+  </data>
+  <data name="BubbleTea" xml:space="preserve">
+    <value>🧋-Bubble Tea   </value>
+  </data>
+  <data name="Bug" xml:space="preserve">
+    <value>🐛-Bug    </value>
+  </data>
+  <data name="Burrito" xml:space="preserve">
+    <value>🌯-Burrito    </value>
+  </data>
+  <data name="BustinSilhouette" xml:space="preserve">
+    <value>👤-Bust in Silhouette  </value>
+  </data>
+  <data name="BustsinSilhouette" xml:space="preserve">
+    <value>👥-Busts in Silhouette  </value>
+  </data>
+  <data name="Butter" xml:space="preserve">
+    <value>🧈-Butter    </value>
+  </data>
+  <data name="Butterfly" xml:space="preserve">
+    <value>🦋-Butterfly    </value>
+  </data>
+  <data name="Cactus" xml:space="preserve">
+    <value>🌵-Cactus    </value>
+  </data>
+  <data name="CallMeHand" xml:space="preserve">
+    <value>🤙-Call Me Hand  </value>
+  </data>
+  <data name="Camel" xml:space="preserve">
+    <value>🐪-Camel    </value>
+  </data>
+  <data name="Candy" xml:space="preserve">
+    <value>🍬-Candy    </value>
+  </data>
+  <data name="CannedFood" xml:space="preserve">
+    <value>🥫-Canned Food   </value>
+  </data>
+  <data name="Carrot" xml:space="preserve">
+    <value>🥕-Carrot    </value>
+  </data>
+  <data name="Cat" xml:space="preserve">
+    <value>🐈-Cat    </value>
+  </data>
+  <data name="CatFace" xml:space="preserve">
+    <value>🐱-Cat Face   </value>
+  </data>
+  <data name="CatwithTearsofJoy" xml:space="preserve">
+    <value>😹-Cat with Tears of Joy</value>
+  </data>
+  <data name="CatwithWrySmile" xml:space="preserve">
+    <value>😼-Cat with Wry Smile </value>
+  </data>
+  <data name="CheeseWedge" xml:space="preserve">
+    <value>🧀-Cheese Wedge   </value>
+  </data>
+  <data name="Cherries" xml:space="preserve">
+    <value>🍒-Cherries    </value>
+  </data>
+  <data name="CherryBlossom" xml:space="preserve">
+    <value>🌸-Cherry Blossom   </value>
+  </data>
+  <data name="Chestnut" xml:space="preserve">
+    <value>🌰-Chestnut    </value>
+  </data>
+  <data name="Chestnut1" xml:space="preserve">
+    <value>🌰-Chestnut    </value>
+  </data>
+  <data name="Chicken" xml:space="preserve">
+    <value>🐔-Chicken    </value>
+  </data>
+  <data name="Child" xml:space="preserve">
+    <value>🧒-Child    </value>
+  </data>
+  <data name="Chipmunk" xml:space="preserve">
+    <value>🐿️-Chipmunk    </value>
+  </data>
+  <data name="ChocolateBar" xml:space="preserve">
+    <value>🍫-Chocolate Bar   </value>
+  </data>
+  <data name="Chopsticks" xml:space="preserve">
+    <value>🥢-Chopsticks    </value>
+  </data>
+  <data name="ChristmasTree" xml:space="preserve">
+    <value>🎄-Christmas Tree   </value>
+  </data>
+  <data name="ClappingHands" xml:space="preserve">
+    <value>👏-Clapping Hands   </value>
+  </data>
+  <data name="ClinkingBeerMugs" xml:space="preserve">
+    <value>🍻-Clinking Beer Mugs  </value>
+  </data>
+  <data name="ClinkingGlasses" xml:space="preserve">
+    <value>🥂-Clinking Glasses   </value>
+  </data>
+  <data name="ClosedUmbrella" xml:space="preserve">
+    <value>🌂-Closed Umbrella   </value>
+  </data>
+  <data name="Cloud" xml:space="preserve">
+    <value>☁️-Cloud    </value>
+  </data>
+  <data name="CloudwithLightning" xml:space="preserve">
+    <value>🌩️-Cloud with Lightning  </value>
+  </data>
+  <data name="CloudwithLightningandRain" xml:space="preserve">
+    <value>⛈️-Cloud with Lightning and Rain</value>
+  </data>
+  <data name="CloudwithRain" xml:space="preserve">
+    <value>🌧️-Cloud with Rain  </value>
+  </data>
+  <data name="CloudwithSnow" xml:space="preserve">
+    <value>🌨️-Cloud with Snow  </value>
+  </data>
+  <data name="ClownFace" xml:space="preserve">
+    <value>🤡-Clown Face   </value>
+  </data>
+  <data name="ClutchBag" xml:space="preserve">
+    <value>👝-Clutch Bag   </value>
+  </data>
+  <data name="Coat" xml:space="preserve">
+    <value>🧥-Coat    </value>
+  </data>
+  <data name="Cockroach" xml:space="preserve">
+    <value>🪳-Cockroach    </value>
+  </data>
+  <data name="CocktailGlass" xml:space="preserve">
+    <value>🍸-Cocktail Glass   </value>
+  </data>
+  <data name="Coconut" xml:space="preserve">
+    <value>🥥-Coconut    </value>
+  </data>
+  <data name="ColdFace" xml:space="preserve">
+    <value>🥶-Cold Face   </value>
+  </data>
+  <data name="Collision" xml:space="preserve">
+    <value>💥-Collision    </value>
+  </data>
+  <data name="Comet" xml:space="preserve">
+    <value>☄️-Comet    </value>
+  </data>
+  <data name="ConfoundedFace" xml:space="preserve">
+    <value>😖-Confounded Face   </value>
+  </data>
+  <data name="ConfusedFace" xml:space="preserve">
+    <value>😕-Confused Face   </value>
+  </data>
+  <data name="ConstructionWorker" xml:space="preserve">
+    <value>👷-Construction Worker   </value>
+  </data>
+  <data name="Cook" xml:space="preserve">
+    <value>🧑‍🍳-Cook    </value>
+  </data>
+  <data name="CookedRice" xml:space="preserve">
+    <value>🍚-Cooked Rice   </value>
+  </data>
+  <data name="Cookie" xml:space="preserve">
+    <value>🍪-Cookie    </value>
+  </data>
+  <data name="Cooking" xml:space="preserve">
+    <value>🍳-Cooking    </value>
+  </data>
+  <data name="CouplewithHeart" xml:space="preserve">
+    <value>💑-Couple with Heart  </value>
+  </data>
+  <data name="CouplewithHeart:Man,Man" xml:space="preserve">
+    <value>👨‍❤️‍👨-Couple with Heart: Man, Man</value>
+  </data>
+  <data name="CouplewithHeart:Woman,Man" xml:space="preserve">
+    <value>👩‍❤️‍👨-Couple with Heart: Woman, Man</value>
+  </data>
+  <data name="CouplewithHeart:Woman,Woman" xml:space="preserve">
+    <value>👩‍❤️‍👩-Couple with Heart: Woman, Woman</value>
+  </data>
+  <data name="Cow" xml:space="preserve">
+    <value>🐄-Cow    </value>
+  </data>
+  <data name="CowboyHatFace" xml:space="preserve">
+    <value>🤠-Cowboy Hat Face  </value>
+  </data>
+  <data name="CowFace" xml:space="preserve">
+    <value>🐮-Cow Face   </value>
+  </data>
+  <data name="Crab" xml:space="preserve">
+    <value>🦀-Crab    </value>
+  </data>
+  <data name="CrescentMoon" xml:space="preserve">
+    <value>🌙-Crescent Moon   </value>
+  </data>
+  <data name="Cricket" xml:space="preserve">
+    <value>🦗-Cricket    </value>
+  </data>
+  <data name="Crocodile" xml:space="preserve">
+    <value>🐊-Crocodile    </value>
+  </data>
+  <data name="Croissant" xml:space="preserve">
+    <value>🥐-Croissant    </value>
+  </data>
+  <data name="CrossedFingers" xml:space="preserve">
+    <value>🤞-Crossed Fingers   </value>
+  </data>
+  <data name="Crown" xml:space="preserve">
+    <value>👑-Crown    </value>
+  </data>
+  <data name="CryingCat" xml:space="preserve">
+    <value>😿-Crying Cat   </value>
+  </data>
+  <data name="CryingFace" xml:space="preserve">
+    <value>😢-Crying Face   </value>
+  </data>
+  <data name="Cucumber" xml:space="preserve">
+    <value>🥒-Cucumber    </value>
+  </data>
+  <data name="Cupcake" xml:space="preserve">
+    <value>🧁-Cupcake    </value>
+  </data>
+  <data name="CupwithStraw" xml:space="preserve">
+    <value>🥤-Cup with Straw  </value>
+  </data>
+  <data name="CurryRice" xml:space="preserve">
+    <value>🍛-Curry Rice   </value>
+  </data>
+  <data name="Custard" xml:space="preserve">
+    <value>🍮-Custard    </value>
+  </data>
+  <data name="CutofMeat" xml:space="preserve">
+    <value>🥩-Cut of Meat  </value>
+  </data>
+  <data name="Dango" xml:space="preserve">
+    <value>🍡-Dango    </value>
+  </data>
+  <data name="DashingAway" xml:space="preserve">
+    <value>💨-Dashing Away   </value>
+  </data>
+  <data name="DeafMan" xml:space="preserve">
+    <value>🧏‍♂️-Deaf Man   </value>
+  </data>
+  <data name="DeafPerson" xml:space="preserve">
+    <value>🧏-Deaf Person   </value>
+  </data>
+  <data name="DeafWoman" xml:space="preserve">
+    <value>🧏‍♀️-Deaf Woman   </value>
+  </data>
+  <data name="DeciduousTree" xml:space="preserve">
+    <value>🌳-Deciduous Tree   </value>
+  </data>
+  <data name="Deer" xml:space="preserve">
+    <value>🦌-Deer    </value>
+  </data>
+  <data name="Detective" xml:space="preserve">
+    <value>🕵️-Detective    </value>
+  </data>
+  <data name="DisappointedFace" xml:space="preserve">
+    <value>😞-Disappointed Face   </value>
+  </data>
+  <data name="DisguisedFace" xml:space="preserve">
+    <value>🥸-Disguised Face   </value>
+  </data>
+  <data name="Dizzy" xml:space="preserve">
+    <value>💫-Dizzy    </value>
+  </data>
+  <data name="DizzyFace" xml:space="preserve">
+    <value>😵-Dizzy Face   </value>
+  </data>
+  <data name="Dodo" xml:space="preserve">
+    <value>🦤-Dodo    </value>
+  </data>
+  <data name="Dog" xml:space="preserve">
+    <value>🐕-Dog    </value>
+  </data>
+  <data name="DogFace" xml:space="preserve">
+    <value>🐶-Dog Face   </value>
+  </data>
+  <data name="Dolphin" xml:space="preserve">
+    <value>🐬-Dolphin    </value>
+  </data>
+  <data name="Doughnut" xml:space="preserve">
+    <value>🍩-Doughnut    </value>
+  </data>
+  <data name="Dove" xml:space="preserve">
+    <value>🕊️-Dove    </value>
+  </data>
+  <data name="DowncastFacewithSweat" xml:space="preserve">
+    <value>😓-Downcast Face with Sweat </value>
+  </data>
+  <data name="Dragon" xml:space="preserve">
+    <value>🐉-Dragon    </value>
+  </data>
+  <data name="DragonFace" xml:space="preserve">
+    <value>🐲-Dragon Face   </value>
+  </data>
+  <data name="Dress" xml:space="preserve">
+    <value>👗-Dress    </value>
+  </data>
+  <data name="DroolingFace" xml:space="preserve">
+    <value>🤤-Drooling Face   </value>
+  </data>
+  <data name="Droplet" xml:space="preserve">
+    <value>💧-Droplet    </value>
+  </data>
+  <data name="DropofBlood" xml:space="preserve">
+    <value>🩸-Drop of Blood  </value>
+  </data>
+  <data name="Duck" xml:space="preserve">
+    <value>🦆-Duck    </value>
+  </data>
+  <data name="Dumpling" xml:space="preserve">
+    <value>🥟-Dumpling    </value>
+  </data>
+  <data name="Eagle" xml:space="preserve">
+    <value>🦅-Eagle    </value>
+  </data>
+  <data name="Ear" xml:space="preserve">
+    <value>👂-Ear    </value>
+  </data>
+  <data name="EarofCorn" xml:space="preserve">
+    <value>🌽-Ear of Corn  </value>
+  </data>
+  <data name="EarwithHearingAid" xml:space="preserve">
+    <value>🦻-Ear with Hearing Aid </value>
+  </data>
+  <data name="Egg" xml:space="preserve">
+    <value>🥚-Egg    </value>
+  </data>
+  <data name="Eggplant" xml:space="preserve">
+    <value>🍆-Eggplant    </value>
+  </data>
+  <data name="Elephant" xml:space="preserve">
+    <value>🐘-Elephant    </value>
+  </data>
+  <data name="Elf" xml:space="preserve">
+    <value>🧝-Elf    </value>
+  </data>
+  <data name="EvergreenTree" xml:space="preserve">
+    <value>🌲-Evergreen Tree   </value>
+  </data>
+  <data name="Ewe" xml:space="preserve">
+    <value>🐑-Ewe    </value>
+  </data>
+  <data name="ExplodingHead" xml:space="preserve">
+    <value>🤯-Exploding Head   </value>
+  </data>
+  <data name="ExpressionlessFace" xml:space="preserve">
+    <value>😑-Expressionless Face   </value>
+  </data>
+  <data name="Eye" xml:space="preserve">
+    <value>👁️-Eye    </value>
+  </data>
+  <data name="Eyes" xml:space="preserve">
+    <value>👀-Eyes    </value>
+  </data>
+  <data name="FaceBlowingaKiss" xml:space="preserve">
+    <value>😘-Face Blowing a Kiss </value>
+  </data>
+  <data name="FaceSavoringFood" xml:space="preserve">
+    <value>😋-Face Savoring Food  </value>
+  </data>
+  <data name="FaceScreaminginFear" xml:space="preserve">
+    <value>😱-Face Screaming in Fear </value>
+  </data>
+  <data name="FaceVomiting" xml:space="preserve">
+    <value>🤮-Face Vomiting   </value>
+  </data>
+  <data name="FacewithHandOverMouth" xml:space="preserve">
+    <value>🤭-Face with Hand Over Mouth</value>
+  </data>
+  <data name="FacewithHeadBandage" xml:space="preserve">
+    <value>🤕-Face with Head Bandage </value>
+  </data>
+  <data name="FacewithMedicalMask" xml:space="preserve">
+    <value>😷-Face with Medical Mask </value>
+  </data>
+  <data name="FacewithMonocle" xml:space="preserve">
+    <value>🧐-Face with Monocle  </value>
+  </data>
+  <data name="FacewithOpenMouth" xml:space="preserve">
+    <value>😮-Face with Open Mouth </value>
+  </data>
+  <data name="FaceWithoutMouth" xml:space="preserve">
+    <value>😶-Face Without Mouth  </value>
+  </data>
+  <data name="FacewithRaisedEyebrow" xml:space="preserve">
+    <value>🤨-Face with Raised Eyebrow </value>
+  </data>
+  <data name="FacewithRollingEyes" xml:space="preserve">
+    <value>🙄-Face with Rolling Eyes </value>
+  </data>
+  <data name="FacewithSteamFromNose" xml:space="preserve">
+    <value>😤-Face with Steam From Nose</value>
+  </data>
+  <data name="FacewithSymbolsonMouth" xml:space="preserve">
+    <value>🤬-Face with Symbols on Mouth</value>
+  </data>
+  <data name="FacewithTearsofJoy" xml:space="preserve">
+    <value>😂-Face with Tears of Joy</value>
+  </data>
+  <data name="FacewithThermometer" xml:space="preserve">
+    <value>🤒-Face with Thermometer  </value>
+  </data>
+  <data name="FacewithTongue" xml:space="preserve">
+    <value>😛-Face with Tongue  </value>
+  </data>
+  <data name="FactoryWorker" xml:space="preserve">
+    <value>🧑‍🏭-Factory Worker   </value>
+  </data>
+  <data name="Fairy" xml:space="preserve">
+    <value>🧚-Fairy    </value>
+  </data>
+  <data name="Falafel" xml:space="preserve">
+    <value>🧆-Falafel    </value>
+  </data>
+  <data name="FallenLeaf" xml:space="preserve">
+    <value>🍂-Fallen Leaf   </value>
+  </data>
+  <data name="Family" xml:space="preserve">
+    <value>👪-Family    </value>
+  </data>
+  <data name="Family:Man,Boy" xml:space="preserve">
+    <value>👨‍👦-Family: Man, Boy  </value>
+  </data>
+  <data name="Family:Man,Boy,Boy" xml:space="preserve">
+    <value>👨‍👦‍👦-Family: Man, Boy, Boy </value>
+  </data>
+  <data name="Family:Man,Girl" xml:space="preserve">
+    <value>👨‍👧-Family: Man, Girl  </value>
+  </data>
+  <data name="Family:Man,Girl,Boy" xml:space="preserve">
+    <value>👨‍👧‍👦-Family: Man, Girl, Boy </value>
+  </data>
+  <data name="Family:Man,Girl,Girl" xml:space="preserve">
+    <value>👨‍👧‍👧-Family: Man, Girl, Girl </value>
+  </data>
+  <data name="Family:Man,Man,Boy" xml:space="preserve">
+    <value>👨‍👨‍👦-Family: Man, Man, Boy </value>
+  </data>
+  <data name="Family:Man,Man,Boy,Boy" xml:space="preserve">
+    <value>👨‍👨‍👦‍👦-Family: Man, Man, Boy, Boy</value>
+  </data>
+  <data name="Family:Man,Man,Girl" xml:space="preserve">
+    <value>👨‍👨‍👧-Family: Man, Man, Girl </value>
+  </data>
+  <data name="Family:Man,Man,Girl,Boy" xml:space="preserve">
+    <value>👨‍👨‍👧‍👦-Family: Man, Man, Girl, Boy</value>
+  </data>
+  <data name="Family:Man,Man,Girl,Girl" xml:space="preserve">
+    <value>👨‍👨‍👧‍👧-Family: Man, Man, Girl, Girl</value>
+  </data>
+  <data name="Family:Man,Woman,Boy" xml:space="preserve">
+    <value>👨‍👩‍👦-Family: Man, Woman, Boy </value>
+  </data>
+  <data name="Family:Man,Woman,Boy,Boy" xml:space="preserve">
+    <value>👨‍👩‍👦‍👦-Family: Man, Woman, Boy, Boy</value>
+  </data>
+  <data name="Family:Man,Woman,Girl" xml:space="preserve">
+    <value>👨‍👩‍👧-Family: Man, Woman, Girl </value>
+  </data>
+  <data name="Family:Man,Woman,Girl,Boy" xml:space="preserve">
+    <value>👨‍👩‍👧‍👦-Family: Man, Woman, Girl, Boy</value>
+  </data>
+  <data name="Family:Man,Woman,Girl,Girl" xml:space="preserve">
+    <value>👨‍👩‍👧‍👧-Family: Man, Woman, Girl, Girl</value>
+  </data>
+  <data name="Family:Woman,Boy" xml:space="preserve">
+    <value>👩‍👦-Family: Woman, Boy  </value>
+  </data>
+  <data name="Family:Woman,Boy,Boy" xml:space="preserve">
+    <value>👩‍👦‍👦-Family: Woman, Boy, Boy </value>
+  </data>
+  <data name="Family:Woman,Girl" xml:space="preserve">
+    <value>👩‍👧-Family: Woman, Girl  </value>
+  </data>
+  <data name="Family:Woman,Girl,Boy" xml:space="preserve">
+    <value>👩‍👧‍👦-Family: Woman, Girl, Boy </value>
+  </data>
+  <data name="Family:Woman,Girl,Girl" xml:space="preserve">
+    <value>👩‍👧‍👧-Family: Woman, Girl, Girl </value>
+  </data>
+  <data name="Family:Woman,Woman,Boy" xml:space="preserve">
+    <value>👩‍👩‍👦-Family: Woman, Woman, Boy </value>
+  </data>
+  <data name="Family:Woman,Woman,Boy,Boy" xml:space="preserve">
+    <value>👩‍👩‍👦‍👦-Family: Woman, Woman, Boy, Boy</value>
+  </data>
+  <data name="Family:Woman,Woman,Girl" xml:space="preserve">
+    <value>👩‍👩‍👧-Family: Woman, Woman, Girl </value>
+  </data>
+  <data name="Family:Woman,Woman,Girl,Boy" xml:space="preserve">
+    <value>👩‍👩‍👧‍👦-Family: Woman, Woman, Girl, Boy</value>
+  </data>
+  <data name="Family:Woman,Woman,Girl,Girl" xml:space="preserve">
+    <value>👩‍👩‍👧‍👧-Family: Woman, Woman, Girl, Girl</value>
+  </data>
+  <data name="Farmer" xml:space="preserve">
+    <value>🧑‍🌾-Farmer    </value>
+  </data>
+  <data name="FearfulFace" xml:space="preserve">
+    <value>😨-Fearful Face   </value>
+  </data>
+  <data name="Feather" xml:space="preserve">
+    <value>🪶-Feather    </value>
+  </data>
+  <data name="Fire" xml:space="preserve">
+    <value>🔥-Fire    </value>
+  </data>
+  <data name="Firefighter" xml:space="preserve">
+    <value>🧑‍🚒-Firefighter    </value>
+  </data>
+  <data name="FirstQuarterMoon" xml:space="preserve">
+    <value>🌓-First Quarter Moon  </value>
+  </data>
+  <data name="FirstQuarterMoonFace" xml:space="preserve">
+    <value>🌛-First Quarter Moon Face </value>
+  </data>
+  <data name="Fish" xml:space="preserve">
+    <value>🐟-Fish    </value>
+  </data>
+  <data name="FishCakewithSwirl" xml:space="preserve">
+    <value>🍥-Fish Cake with Swirl </value>
+  </data>
+  <data name="Flamingo" xml:space="preserve">
+    <value>🦩-Flamingo    </value>
+  </data>
+  <data name="Flatbread" xml:space="preserve">
+    <value>🫓-Flatbread    </value>
+  </data>
+  <data name="FlatShoe" xml:space="preserve">
+    <value>🥿-Flat Shoe   </value>
+  </data>
+  <data name="FlexedBiceps" xml:space="preserve">
+    <value>💪-Flexed Biceps   </value>
+  </data>
+  <data name="FlushedFace" xml:space="preserve">
+    <value>😳-Flushed Face   </value>
+  </data>
+  <data name="Fly" xml:space="preserve">
+    <value>🪰-Fly    </value>
+  </data>
+  <data name="Fog" xml:space="preserve">
+    <value>🌫️-Fog    </value>
+  </data>
+  <data name="FoldedHands" xml:space="preserve">
+    <value>🙏-Folded Hands   </value>
+  </data>
+  <data name="Fondue" xml:space="preserve">
+    <value>🫕-Fondue    </value>
+  </data>
+  <data name="Foot" xml:space="preserve">
+    <value>🦶-Foot    </value>
+  </data>
+  <data name="Footprints" xml:space="preserve">
+    <value>👣-Footprints    </value>
+  </data>
+  <data name="ForkandKnife" xml:space="preserve">
+    <value>🍴-Fork and Knife  </value>
+  </data>
+  <data name="ForkandKnifewithPlate" xml:space="preserve">
+    <value>🍽️-Fork and Knife with Plate</value>
+  </data>
+  <data name="FortuneCookie" xml:space="preserve">
+    <value>🥠-Fortune Cookie   </value>
+  </data>
+  <data name="FourLeafClover" xml:space="preserve">
+    <value>🍀-Four Leaf Clover  </value>
+  </data>
+  <data name="Fox" xml:space="preserve">
+    <value>🦊-Fox    </value>
+  </data>
+  <data name="FrenchFries" xml:space="preserve">
+    <value>🍟-French Fries   </value>
+  </data>
+  <data name="FriedShrimp" xml:space="preserve">
+    <value>🍤-Fried Shrimp   </value>
+  </data>
+  <data name="Frog" xml:space="preserve">
+    <value>🐸-Frog    </value>
+  </data>
+  <data name="FrontFacingBabyChick" xml:space="preserve">
+    <value>🐥-Front Facing Baby Chick </value>
+  </data>
+  <data name="FrowningFace" xml:space="preserve">
+    <value>☹️-Frowning Face   </value>
+  </data>
+  <data name="FrowningFacewithOpenMouth" xml:space="preserve">
+    <value>😦-Frowning Face with Open Mouth</value>
+  </data>
+  <data name="FullMoon" xml:space="preserve">
+    <value>🌕-Full Moon   </value>
+  </data>
+  <data name="FullMoonFace" xml:space="preserve">
+    <value>🌝-Full Moon Face  </value>
+  </data>
+  <data name="Garlic" xml:space="preserve">
+    <value>🧄-Garlic    </value>
+  </data>
+  <data name="Genie" xml:space="preserve">
+    <value>🧞-Genie    </value>
+  </data>
+  <data name="Ghost" xml:space="preserve">
+    <value>👻-Ghost    </value>
+  </data>
+  <data name="Giraffe" xml:space="preserve">
+    <value>🦒-Giraffe    </value>
+  </data>
+  <data name="Girl" xml:space="preserve">
+    <value>👧-Girl    </value>
+  </data>
+  <data name="Glasses" xml:space="preserve">
+    <value>👓-Glasses    </value>
+  </data>
+  <data name="GlassofMilk" xml:space="preserve">
+    <value>🥛-Glass of Milk  </value>
+  </data>
+  <data name="GlobeShowingAmericas" xml:space="preserve">
+    <value>🌎-Globe Showing Americas  </value>
+  </data>
+  <data name="GlobeShowingAsiaAustralia" xml:space="preserve">
+    <value>🌏-Globe Showing Asia Australia </value>
+  </data>
+  <data name="GlobeShowingEuropeAfrica" xml:space="preserve">
+    <value>🌍-Globe Showing Europe Africa </value>
+  </data>
+  <data name="GlobewithMeridians" xml:space="preserve">
+    <value>🌐-Globe with Meridians  </value>
+  </data>
+  <data name="Gloves" xml:space="preserve">
+    <value>🧤-Gloves    </value>
+  </data>
+  <data name="GlowingStar" xml:space="preserve">
+    <value>🌟-Glowing Star   </value>
+  </data>
+  <data name="Goat" xml:space="preserve">
+    <value>🐐-Goat    </value>
+  </data>
+  <data name="Goblin" xml:space="preserve">
+    <value>👺-Goblin    </value>
+  </data>
+  <data name="Goggles" xml:space="preserve">
+    <value>🥽-Goggles    </value>
+  </data>
+  <data name="Gorilla" xml:space="preserve">
+    <value>🦍-Gorilla    </value>
+  </data>
+  <data name="GraduationCap" xml:space="preserve">
+    <value>🎓-Graduation Cap   </value>
+  </data>
+  <data name="Grapes" xml:space="preserve">
+    <value>🍇-Grapes    </value>
+  </data>
+  <data name="GreenApple" xml:space="preserve">
+    <value>🍏-Green Apple   </value>
+  </data>
+  <data name="GreenSalad" xml:space="preserve">
+    <value>🥗-Green Salad   </value>
+  </data>
+  <data name="GrimacingFace" xml:space="preserve">
+    <value>😬-Grimacing Face   </value>
+  </data>
+  <data name="GrinningCat" xml:space="preserve">
+    <value>😺-Grinning Cat   </value>
+  </data>
+  <data name="GrinningCatwithSmilingEyes" xml:space="preserve">
+    <value>😸-Grinning Cat with Smiling Eyes</value>
+  </data>
+  <data name="GrinningFace" xml:space="preserve">
+    <value>😀-Grinning Face   </value>
+  </data>
+  <data name="GrinningFacewithBigEyes" xml:space="preserve">
+    <value>😃-Grinning Face with Big Eyes</value>
+  </data>
+  <data name="GrinningFacewithSmilingEyes" xml:space="preserve">
+    <value>😄-Grinning Face with Smiling Eyes</value>
+  </data>
+  <data name="GrinningFacewithSweat" xml:space="preserve">
+    <value>😅-Grinning Face with Sweat </value>
+  </data>
+  <data name="GrinningSquintingFace" xml:space="preserve">
+    <value>😆-Grinning Squinting Face  </value>
+  </data>
+  <data name="Guard" xml:space="preserve">
+    <value>💂-Guard    </value>
+  </data>
+  <data name="GuideDog" xml:space="preserve">
+    <value>🦮-Guide Dog   </value>
+  </data>
+  <data name="Hamburger" xml:space="preserve">
+    <value>🍔-Hamburger    </value>
+  </data>
+  <data name="Hamster" xml:space="preserve">
+    <value>🐹-Hamster    </value>
+  </data>
+  <data name="Handbag" xml:space="preserve">
+    <value>👜-Handbag    </value>
+  </data>
+  <data name="Handshake" xml:space="preserve">
+    <value>🤝-Handshake    </value>
+  </data>
+  <data name="HandwithFingersSplayed" xml:space="preserve">
+    <value>🖐️-Hand with Fingers Splayed </value>
+  </data>
+  <data name="HatchingChick" xml:space="preserve">
+    <value>🐣-Hatching Chick   </value>
+  </data>
+  <data name="HealthWorker" xml:space="preserve">
+    <value>🧑‍⚕️-Health Worker   </value>
+  </data>
+  <data name="HearNoEvilMonkey" xml:space="preserve">
+    <value>🙉-Hear No Evil Monkey </value>
+  </data>
+  <data name="Hedgehog" xml:space="preserve">
+    <value>🦔-Hedgehog    </value>
+  </data>
+  <data name="Herb" xml:space="preserve">
+    <value>🌿-Herb    </value>
+  </data>
+  <data name="Hibiscus" xml:space="preserve">
+    <value>🌺-Hibiscus    </value>
+  </data>
+  <data name="HighHeeledShoe" xml:space="preserve">
+    <value>👠-High Heeled Shoe  </value>
+  </data>
+  <data name="HighVoltage" xml:space="preserve">
+    <value>⚡-High Voltage   </value>
+  </data>
+  <data name="HikingBoot" xml:space="preserve">
+    <value>🥾-Hiking Boot   </value>
+  </data>
+  <data name="Hippopotamus" xml:space="preserve">
+    <value>🦛-Hippopotamus    </value>
+  </data>
+  <data name="Honeybee" xml:space="preserve">
+    <value>🐝-Honeybee    </value>
+  </data>
+  <data name="HoneyPot" xml:space="preserve">
+    <value>🍯-Honey Pot   </value>
+  </data>
+  <data name="Horse" xml:space="preserve">
+    <value>🐎-Horse    </value>
+  </data>
+  <data name="HorseFace" xml:space="preserve">
+    <value>🐴-Horse Face   </value>
+  </data>
+  <data name="HotBeverage" xml:space="preserve">
+    <value>☕-Hot Beverage   </value>
+  </data>
+  <data name="HotDog" xml:space="preserve">
+    <value>🌭-Hot Dog   </value>
+  </data>
+  <data name="HotFace" xml:space="preserve">
+    <value>🥵-Hot Face   </value>
+  </data>
+  <data name="HotPepper" xml:space="preserve">
+    <value>🌶️-Hot Pepper   </value>
+  </data>
+  <data name="HuggingFace" xml:space="preserve">
+    <value>🤗-Hugging Face   </value>
+  </data>
+  <data name="HushedFace" xml:space="preserve">
+    <value>😯-Hushed Face   </value>
+  </data>
+  <data name="Ice" xml:space="preserve">
+    <value>🧊-Ice    </value>
+  </data>
+  <data name="IceCream" xml:space="preserve">
+    <value>🍨-Ice Cream   </value>
+  </data>
+  <data name="IndexPointingUp" xml:space="preserve">
+    <value>☝️-Index Pointing Up  </value>
+  </data>
+  <data name="JackOLantern" xml:space="preserve">
+    <value>🎃-Jack O Lantern  </value>
+  </data>
+  <data name="Jeans" xml:space="preserve">
+    <value>👖-Jeans    </value>
+  </data>
+  <data name="Judge" xml:space="preserve">
+    <value>🧑‍⚖️-Judge    </value>
+  </data>
+  <data name="Kangaroo" xml:space="preserve">
+    <value>🦘-Kangaroo    </value>
+  </data>
+  <data name="Kimono" xml:space="preserve">
+    <value>👘-Kimono    </value>
+  </data>
+  <data name="Kiss" xml:space="preserve">
+    <value>💏-Kiss    </value>
+  </data>
+  <data name="Kiss:Man,Man" xml:space="preserve">
+    <value>👨‍❤️‍💋‍👨-Kiss: Man, Man  </value>
+  </data>
+  <data name="Kiss:Woman,Man" xml:space="preserve">
+    <value>👩‍❤️‍💋‍👨-Kiss: Woman, Man  </value>
+  </data>
+  <data name="Kiss:Woman,Woman" xml:space="preserve">
+    <value>👩‍❤️‍💋‍👩-Kiss: Woman, Woman  </value>
+  </data>
+  <data name="KissingCat" xml:space="preserve">
+    <value>😽-Kissing Cat   </value>
+  </data>
+  <data name="KissingFace" xml:space="preserve">
+    <value>😗-Kissing Face   </value>
+  </data>
+  <data name="KissingFacewithClosedEyes" xml:space="preserve">
+    <value>😚-Kissing Face with Closed Eyes</value>
+  </data>
+  <data name="KissingFacewithSmilingEyes" xml:space="preserve">
+    <value>😙-Kissing Face with Smiling Eyes</value>
+  </data>
+  <data name="KissMark" xml:space="preserve">
+    <value>💋-Kiss Mark   </value>
+  </data>
+  <data name="KiwiFruit" xml:space="preserve">
+    <value>🥝-Kiwi Fruit   </value>
+  </data>
+  <data name="Koala" xml:space="preserve">
+    <value>🐨-Koala    </value>
+  </data>
+  <data name="LabCoat" xml:space="preserve">
+    <value>🥼-Lab Coat   </value>
+  </data>
+  <data name="LadyBeetle" xml:space="preserve">
+    <value>🐞-Lady Beetle   </value>
+  </data>
+  <data name="LastQuarterMoon" xml:space="preserve">
+    <value>🌗-Last Quarter Moon  </value>
+  </data>
+  <data name="LastQuarterMoonFace" xml:space="preserve">
+    <value>🌜-Last Quarter Moon Face </value>
+  </data>
+  <data name="LeafFlutteringinWind" xml:space="preserve">
+    <value>🍃-Leaf Fluttering in Wind </value>
+  </data>
+  <data name="LeafyGreen" xml:space="preserve">
+    <value>🥬-Leafy Green   </value>
+  </data>
+  <data name="LeftFacingFist" xml:space="preserve">
+    <value>🤛-Left Facing Fist  </value>
+  </data>
+  <data name="Leg" xml:space="preserve">
+    <value>🦵-Leg    </value>
+  </data>
+  <data name="Lemon" xml:space="preserve">
+    <value>🍋-Lemon    </value>
+  </data>
+  <data name="Leopard" xml:space="preserve">
+    <value>🐆-Leopard    </value>
+  </data>
+  <data name="Lion" xml:space="preserve">
+    <value>🦁-Lion    </value>
+  </data>
+  <data name="Lipstick" xml:space="preserve">
+    <value>💄-Lipstick    </value>
+  </data>
+  <data name="Lizard" xml:space="preserve">
+    <value>🦎-Lizard    </value>
+  </data>
+  <data name="Llama" xml:space="preserve">
+    <value>🦙-Llama    </value>
+  </data>
+  <data name="Lobster" xml:space="preserve">
+    <value>🦞-Lobster    </value>
+  </data>
+  <data name="Lollipop" xml:space="preserve">
+    <value>🍭-Lollipop    </value>
+  </data>
+  <data name="LoudlyCryingFace" xml:space="preserve">
+    <value>😭-Loudly Crying Face  </value>
+  </data>
+  <data name="LoveYouGesture" xml:space="preserve">
+    <value>🤟-Love You Gesture  </value>
+  </data>
+  <data name="Luggage" xml:space="preserve">
+    <value>🧳-Luggage    </value>
+  </data>
+  <data name="Lungs" xml:space="preserve">
+    <value>🫁-Lungs    </value>
+  </data>
+  <data name="LyingFace" xml:space="preserve">
+    <value>🤥-Lying Face   </value>
+  </data>
+  <data name="Mage" xml:space="preserve">
+    <value>🧙-Mage    </value>
+  </data>
+  <data name="Mammoth" xml:space="preserve">
+    <value>🦣-Mammoth    </value>
+  </data>
+  <data name="Man" xml:space="preserve">
+    <value>👨-Man    </value>
+  </data>
+  <data name="Man:Bald" xml:space="preserve">
+    <value>👨‍🦲-Man: Bald   </value>
+  </data>
+  <data name="Man:BlondHair" xml:space="preserve">
+    <value>👱‍♂️-Man: Blond Hair  </value>
+  </data>
+  <data name="Man:CurlyHair" xml:space="preserve">
+    <value>👨‍🦱-Man: Curly Hair  </value>
+  </data>
+  <data name="Man:RedHair" xml:space="preserve">
+    <value>👨‍🦰-Man: Red Hair  </value>
+  </data>
+  <data name="Man:WhiteHair" xml:space="preserve">
+    <value>👨‍🦳-Man: White Hair  </value>
+  </data>
+  <data name="ManArtist" xml:space="preserve">
+    <value>👨‍🎨-Man Artist   </value>
+  </data>
+  <data name="ManAstronaut" xml:space="preserve">
+    <value>👨‍🚀-Man Astronaut   </value>
+  </data>
+  <data name="ManBowing" xml:space="preserve">
+    <value>🙇‍♂️-Man Bowing   </value>
+  </data>
+  <data name="ManConstructionWorker" xml:space="preserve">
+    <value>👷‍♂️-Man Construction Worker  </value>
+  </data>
+  <data name="ManCook" xml:space="preserve">
+    <value>👨‍🍳-Man Cook   </value>
+  </data>
+  <data name="ManDancing" xml:space="preserve">
+    <value>🕺-Man Dancing   </value>
+  </data>
+  <data name="ManDetective" xml:space="preserve">
+    <value>🕵️‍♂️-Man Detective   </value>
+  </data>
+  <data name="ManElf" xml:space="preserve">
+    <value>🧝‍♂️-Man Elf   </value>
+  </data>
+  <data name="ManFacepalming" xml:space="preserve">
+    <value>🤦‍♂️-Man Facepalming   </value>
+  </data>
+  <data name="ManFactoryWorker" xml:space="preserve">
+    <value>👨‍🏭-Man Factory Worker  </value>
+  </data>
+  <data name="ManFairy" xml:space="preserve">
+    <value>🧚‍♂️-Man Fairy   </value>
+  </data>
+  <data name="ManFarmer" xml:space="preserve">
+    <value>👨‍🌾-Man Farmer   </value>
+  </data>
+  <data name="ManFeedingBaby" xml:space="preserve">
+    <value>👨‍🍼-Man Feeding Baby  </value>
+  </data>
+  <data name="ManFirefighter" xml:space="preserve">
+    <value>👨‍🚒-Man Firefighter   </value>
+  </data>
+  <data name="ManFrowning" xml:space="preserve">
+    <value>🙍‍♂️-Man Frowning   </value>
+  </data>
+  <data name="ManGenie" xml:space="preserve">
+    <value>🧞‍♂️-Man Genie   </value>
+  </data>
+  <data name="ManGesturingNo" xml:space="preserve">
+    <value>🙅‍♂️-Man Gesturing No  </value>
+  </data>
+  <data name="ManGesturingOK" xml:space="preserve">
+    <value>🙆‍♂️-Man Gesturing OK  </value>
+  </data>
+  <data name="ManGettingHaircut" xml:space="preserve">
+    <value>💇‍♂️-Man Getting Haircut  </value>
+  </data>
+  <data name="ManGettingMassage" xml:space="preserve">
+    <value>💆‍♂️-Man Getting Massage  </value>
+  </data>
+  <data name="Mango" xml:space="preserve">
+    <value>🥭-Mango    </value>
+  </data>
+  <data name="ManGuard" xml:space="preserve">
+    <value>💂‍♂️-Man Guard   </value>
+  </data>
+  <data name="ManHealthWorker" xml:space="preserve">
+    <value>👨‍⚕️-Man Health Worker  </value>
+  </data>
+  <data name="ManinManualWheelchair" xml:space="preserve">
+    <value>👨‍🦽-Man in Manual Wheelchair </value>
+  </data>
+  <data name="ManinMotorizedWheelchair" xml:space="preserve">
+    <value>👨‍🦼-Man in Motorized Wheelchair </value>
+  </data>
+  <data name="ManinSteamyRoom" xml:space="preserve">
+    <value>🧖‍♂️-Man in Steamy Room </value>
+  </data>
+  <data name="ManinTuxedo" xml:space="preserve">
+    <value>🤵‍♂️-Man in Tuxedo  </value>
+  </data>
+  <data name="ManJudge" xml:space="preserve">
+    <value>👨‍⚖️-Man Judge   </value>
+  </data>
+  <data name="ManKneeling" xml:space="preserve">
+    <value>🧎‍♂️-Man Kneeling   </value>
+  </data>
+  <data name="ManMage" xml:space="preserve">
+    <value>🧙‍♂️-Man Mage   </value>
+  </data>
+  <data name="ManMechanic" xml:space="preserve">
+    <value>👨‍🔧-Man Mechanic   </value>
+  </data>
+  <data name="ManOfficeWorker" xml:space="preserve">
+    <value>👨‍💼-Man Office Worker  </value>
+  </data>
+  <data name="ManPilot" xml:space="preserve">
+    <value>👨‍✈️-Man Pilot   </value>
+  </data>
+  <data name="ManPoliceOfficer" xml:space="preserve">
+    <value>👮‍♂️-Man Police Officer  </value>
+  </data>
+  <data name="ManPouting" xml:space="preserve">
+    <value>🙎‍♂️-Man Pouting   </value>
+  </data>
+  <data name="ManRaisingHand" xml:space="preserve">
+    <value>🙋‍♂️-Man Raising Hand  </value>
+  </data>
+  <data name="ManRunning" xml:space="preserve">
+    <value>🏃‍♂️-Man Running   </value>
+  </data>
+  <data name="ManScientist" xml:space="preserve">
+    <value>👨‍🔬-Man Scientist   </value>
+  </data>
+  <data name="ManShrugging" xml:space="preserve">
+    <value>🤷‍♂️-Man Shrugging   </value>
+  </data>
+  <data name="ManSinger" xml:space="preserve">
+    <value>👨‍🎤-Man Singer   </value>
+  </data>
+  <data name="MansShoe" xml:space="preserve">
+    <value>👞-Mans Shoe   </value>
+  </data>
+  <data name="ManStanding" xml:space="preserve">
+    <value>🧍‍♂️-Man Standing   </value>
+  </data>
+  <data name="ManStudent" xml:space="preserve">
+    <value>👨‍🎓-Man Student   </value>
+  </data>
+  <data name="ManSuperhero" xml:space="preserve">
+    <value>🦸‍♂️-Man Superhero   </value>
+  </data>
+  <data name="ManSupervillain" xml:space="preserve">
+    <value>🦹‍♂️-Man Supervillain   </value>
+  </data>
+  <data name="ManTeacher" xml:space="preserve">
+    <value>👨‍🏫-Man Teacher   </value>
+  </data>
+  <data name="ManTechnologist" xml:space="preserve">
+    <value>👨‍💻-Man Technologist   </value>
+  </data>
+  <data name="ManTippingHand" xml:space="preserve">
+    <value>💁‍♂️-Man Tipping Hand  </value>
+  </data>
+  <data name="ManVampire" xml:space="preserve">
+    <value>🧛‍♂️-Man Vampire   </value>
+  </data>
+  <data name="ManWalking" xml:space="preserve">
+    <value>🚶‍♂️-Man Walking   </value>
+  </data>
+  <data name="ManWearingTurban" xml:space="preserve">
+    <value>👳‍♂️-Man Wearing Turban  </value>
+  </data>
+  <data name="ManwithVeil" xml:space="preserve">
+    <value>👰‍♂️-Man with Veil  </value>
+  </data>
+  <data name="ManwithWhiteCane" xml:space="preserve">
+    <value>👨‍🦯-Man with White Cane </value>
+  </data>
+  <data name="ManZombie" xml:space="preserve">
+    <value>🧟‍♂️-Man Zombie   </value>
+  </data>
+  <data name="MapleLeaf" xml:space="preserve">
+    <value>🍁-Maple Leaf   </value>
+  </data>
+  <data name="Mate" xml:space="preserve">
+    <value>🧉-Mate    </value>
+  </data>
+  <data name="MeatonBone" xml:space="preserve">
+    <value>🍖-Meat on Bone  </value>
+  </data>
+  <data name="Mechanic" xml:space="preserve">
+    <value>🧑‍🔧-Mechanic    </value>
+  </data>
+  <data name="MechanicalArm" xml:space="preserve">
+    <value>🦾-Mechanical Arm   </value>
+  </data>
+  <data name="MechanicalLeg" xml:space="preserve">
+    <value>🦿-Mechanical Leg   </value>
+  </data>
+  <data name="Melon" xml:space="preserve">
+    <value>🍈-Melon    </value>
+  </data>
+  <data name="MenHoldingHands" xml:space="preserve">
+    <value>👬-Men Holding Hands  </value>
+  </data>
+  <data name="MenwithBunnyEars" xml:space="preserve">
+    <value>👯‍♂️-Men with Bunny Ears </value>
+  </data>
+  <data name="Mermaid" xml:space="preserve">
+    <value>🧜‍♀️-Mermaid    </value>
+  </data>
+  <data name="Merman" xml:space="preserve">
+    <value>🧜‍♂️-Merman    </value>
+  </data>
+  <data name="Merperson" xml:space="preserve">
+    <value>🧜-Merperson    </value>
+  </data>
+  <data name="Microbe" xml:space="preserve">
+    <value>🦠-Microbe    </value>
+  </data>
+  <data name="MiddleFinger" xml:space="preserve">
+    <value>🖕-Middle Finger   </value>
+  </data>
+  <data name="MilitaryHelmet" xml:space="preserve">
+    <value>🪖-Military Helmet   </value>
+  </data>
+  <data name="MoneyMouthFace" xml:space="preserve">
+    <value>🤑-Money Mouth Face  </value>
+  </data>
+  <data name="Monkey" xml:space="preserve">
+    <value>🐒-Monkey    </value>
+  </data>
+  <data name="MonkeyFace" xml:space="preserve">
+    <value>🐵-Monkey Face   </value>
+  </data>
+  <data name="MoonCake" xml:space="preserve">
+    <value>🥮-Moon Cake   </value>
+  </data>
+  <data name="Mosquito" xml:space="preserve">
+    <value>🦟-Mosquito    </value>
+  </data>
+  <data name="Mouse" xml:space="preserve">
+    <value>🐁-Mouse    </value>
+  </data>
+  <data name="MouseFace" xml:space="preserve">
+    <value>🐭-Mouse Face   </value>
+  </data>
+  <data name="Mouth" xml:space="preserve">
+    <value>👄-Mouth    </value>
+  </data>
+  <data name="Mrs.Claus" xml:space="preserve">
+    <value>🤶-Mrs. Claus   </value>
+  </data>
+  <data name="Mushroom" xml:space="preserve">
+    <value>🍄-Mushroom    </value>
+  </data>
+  <data name="Mushroom1" xml:space="preserve">
+    <value>🍄-Mushroom    </value>
+  </data>
+  <data name="MxClaus" xml:space="preserve">
+    <value>🧑‍🎄-Mx Claus   </value>
+  </data>
+  <data name="NailPolish" xml:space="preserve">
+    <value>💅-Nail Polish   </value>
+  </data>
+  <data name="NauseatedFace" xml:space="preserve">
+    <value>🤢-Nauseated Face   </value>
+  </data>
+  <data name="Necktie" xml:space="preserve">
+    <value>👔-Necktie    </value>
+  </data>
+  <data name="NerdFace" xml:space="preserve">
+    <value>🤓-Nerd Face   </value>
+  </data>
+  <data name="NeutralFace" xml:space="preserve">
+    <value>😐-Neutral Face   </value>
+  </data>
+  <data name="NewMoon" xml:space="preserve">
+    <value>🌑-New Moon   </value>
+  </data>
+  <data name="NewMoonFace" xml:space="preserve">
+    <value>🌚-New Moon Face  </value>
+  </data>
+  <data name="Ninja" xml:space="preserve">
+    <value>🥷-Ninja    </value>
+  </data>
+  <data name="Nose" xml:space="preserve">
+    <value>👃-Nose    </value>
+  </data>
+  <data name="Octopus" xml:space="preserve">
+    <value>🐙-Octopus    </value>
+  </data>
+  <data name="Oden" xml:space="preserve">
+    <value>🍢-Oden    </value>
+  </data>
+  <data name="OfficeWorker" xml:space="preserve">
+    <value>🧑‍💼-Office Worker   </value>
+  </data>
+  <data name="Ogre" xml:space="preserve">
+    <value>👹-Ogre    </value>
+  </data>
+  <data name="OKHand" xml:space="preserve">
+    <value>👌-OK Hand   </value>
+  </data>
+  <data name="OlderPerson" xml:space="preserve">
+    <value>🧓-Older Person   </value>
+  </data>
+  <data name="OldMan" xml:space="preserve">
+    <value>👴-Old Man   </value>
+  </data>
+  <data name="OldWoman" xml:space="preserve">
+    <value>👵-Old Woman   </value>
+  </data>
+  <data name="Olive" xml:space="preserve">
+    <value>🫒-Olive    </value>
+  </data>
+  <data name="OncomingFist" xml:space="preserve">
+    <value>👊-Oncoming Fist   </value>
+  </data>
+  <data name="OnePieceSwimsuit" xml:space="preserve">
+    <value>🩱-One Piece Swimsuit  </value>
+  </data>
+  <data name="Onion" xml:space="preserve">
+    <value>🧅-Onion    </value>
+  </data>
+  <data name="OpenHands" xml:space="preserve">
+    <value>👐-Open Hands   </value>
+  </data>
+  <data name="Orangutan" xml:space="preserve">
+    <value>🦧-Orangutan    </value>
+  </data>
+  <data name="Otter" xml:space="preserve">
+    <value>🦦-Otter    </value>
+  </data>
+  <data name="Owl" xml:space="preserve">
+    <value>🦉-Owl    </value>
+  </data>
+  <data name="Ox" xml:space="preserve">
+    <value>🐂-Ox    </value>
+  </data>
+  <data name="Oyster" xml:space="preserve">
+    <value>🦪-Oyster    </value>
+  </data>
+  <data name="PalmsUpTogether" xml:space="preserve">
+    <value>🤲-Palms Up Together  </value>
+  </data>
+  <data name="PalmTree" xml:space="preserve">
+    <value>🌴-Palm Tree   </value>
+  </data>
+  <data name="Pancakes" xml:space="preserve">
+    <value>🥞-Pancakes    </value>
+  </data>
+  <data name="Panda" xml:space="preserve">
+    <value>🐼-Panda    </value>
+  </data>
+  <data name="Parrot" xml:space="preserve">
+    <value>🦜-Parrot    </value>
+  </data>
+  <data name="PartyingFace" xml:space="preserve">
+    <value>🥳-Partying Face   </value>
+  </data>
+  <data name="PawPrints" xml:space="preserve">
+    <value>🐾-Paw Prints   </value>
+  </data>
+  <data name="Peach" xml:space="preserve">
+    <value>🍑-Peach    </value>
+  </data>
+  <data name="Peacock" xml:space="preserve">
+    <value>🦚-Peacock    </value>
+  </data>
+  <data name="Peanuts" xml:space="preserve">
+    <value>🥜-Peanuts    </value>
+  </data>
+  <data name="Pear" xml:space="preserve">
+    <value>🍐-Pear    </value>
+  </data>
+  <data name="Penguin" xml:space="preserve">
+    <value>🐧-Penguin    </value>
+  </data>
+  <data name="PensiveFace" xml:space="preserve">
+    <value>😔-Pensive Face   </value>
+  </data>
+  <data name="PeopleHoldingHands" xml:space="preserve">
+    <value>🧑‍🤝‍🧑-People Holding Hands  </value>
+  </data>
+  <data name="PeopleHugging" xml:space="preserve">
+    <value>🫂-People Hugging   </value>
+  </data>
+  <data name="PeoplewithBunnyEars" xml:space="preserve">
+    <value>👯-People with Bunny Ears </value>
+  </data>
+  <data name="PerseveringFace" xml:space="preserve">
+    <value>😣-Persevering Face   </value>
+  </data>
+  <data name="Person" xml:space="preserve">
+    <value>🧑-Person    </value>
+  </data>
+  <data name="Person:Bald" xml:space="preserve">
+    <value>🧑‍🦲-Person: Bald   </value>
+  </data>
+  <data name="Person:Beard" xml:space="preserve">
+    <value>🧔-Person: Beard   </value>
+  </data>
+  <data name="Person:BlondHair" xml:space="preserve">
+    <value>👱-Person: Blond Hair  </value>
+  </data>
+  <data name="Person:CurlyHair" xml:space="preserve">
+    <value>🧑‍🦱-Person: Curly Hair  </value>
+  </data>
+  <data name="Person:RedHair" xml:space="preserve">
+    <value>🧑‍🦰-Person: Red Hair  </value>
+  </data>
+  <data name="Person:WhiteHair" xml:space="preserve">
+    <value>🧑‍🦳-Person: White Hair  </value>
+  </data>
+  <data name="PersonBowing" xml:space="preserve">
+    <value>🙇-Person Bowing   </value>
+  </data>
+  <data name="PersonFacepalming" xml:space="preserve">
+    <value>🤦-Person Facepalming   </value>
+  </data>
+  <data name="PersonFeedingBaby" xml:space="preserve">
+    <value>🧑‍🍼-Person Feeding Baby  </value>
+  </data>
+  <data name="PersonFrowning" xml:space="preserve">
+    <value>🙍-Person Frowning   </value>
+  </data>
+  <data name="PersonGesturingNo" xml:space="preserve">
+    <value>🙅-Person Gesturing No  </value>
+  </data>
+  <data name="PersonGesturingOK" xml:space="preserve">
+    <value>🙆-Person Gesturing OK  </value>
+  </data>
+  <data name="PersonGettingHaircut" xml:space="preserve">
+    <value>💇-Person Getting Haircut  </value>
+  </data>
+  <data name="PersonGettingMassage" xml:space="preserve">
+    <value>💆-Person Getting Massage  </value>
+  </data>
+  <data name="PersoninLotusPosition" xml:space="preserve">
+    <value>🧘-Person in Lotus Position </value>
+  </data>
+  <data name="PersoninManualWheelchair" xml:space="preserve">
+    <value>🧑‍🦽-Person in Manual Wheelchair </value>
+  </data>
+  <data name="PersoninMotorizedWheelchair" xml:space="preserve">
+    <value>🧑‍🦼-Person in Motorized Wheelchair </value>
+  </data>
+  <data name="PersoninSteamyRoom" xml:space="preserve">
+    <value>🧖-Person in Steamy Room </value>
+  </data>
+  <data name="PersoninSuitLevitating" xml:space="preserve">
+    <value>🕴️-Person in Suit Levitating </value>
+  </data>
+  <data name="PersoninTuxedo" xml:space="preserve">
+    <value>🤵-Person in Tuxedo  </value>
+  </data>
+  <data name="PersonKneeling" xml:space="preserve">
+    <value>🧎-Person Kneeling   </value>
+  </data>
+  <data name="PersonPouting" xml:space="preserve">
+    <value>🙎-Person Pouting   </value>
+  </data>
+  <data name="PersonRaisingHand" xml:space="preserve">
+    <value>🙋-Person Raising Hand  </value>
+  </data>
+  <data name="PersonRunning" xml:space="preserve">
+    <value>🏃-Person Running   </value>
+  </data>
+  <data name="PersonShrugging" xml:space="preserve">
+    <value>🤷-Person Shrugging   </value>
+  </data>
+  <data name="PersonStanding" xml:space="preserve">
+    <value>🧍-Person Standing   </value>
+  </data>
+  <data name="PersonTippingHand" xml:space="preserve">
+    <value>💁-Person Tipping Hand  </value>
+  </data>
+  <data name="PersonWalking" xml:space="preserve">
+    <value>🚶-Person Walking   </value>
+  </data>
+  <data name="PersonWearingTurban" xml:space="preserve">
+    <value>👳-Person Wearing Turban  </value>
+  </data>
+  <data name="PersonWithSkullcap" xml:space="preserve">
+    <value>👲-Person With Skullcap  </value>
+  </data>
+  <data name="PersonWithVeil" xml:space="preserve">
+    <value>👰-Person With Veil  </value>
+  </data>
+  <data name="PersonwithWhiteCane" xml:space="preserve">
+    <value>🧑‍🦯-Person with White Cane </value>
+  </data>
+  <data name="Pie" xml:space="preserve">
+    <value>🥧-Pie    </value>
+  </data>
+  <data name="Pig" xml:space="preserve">
+    <value>🐖-Pig    </value>
+  </data>
+  <data name="PigFace" xml:space="preserve">
+    <value>🐷-Pig Face   </value>
+  </data>
+  <data name="PigNose" xml:space="preserve">
+    <value>🐽-Pig Nose   </value>
+  </data>
+  <data name="PileofPoo" xml:space="preserve">
+    <value>💩-Pile of Poo  </value>
+  </data>
+  <data name="Pilot" xml:space="preserve">
+    <value>🧑‍✈️-Pilot    </value>
+  </data>
+  <data name="PinchedFingers" xml:space="preserve">
+    <value>🤌-Pinched Fingers   </value>
+  </data>
+  <data name="PinchingHand" xml:space="preserve">
+    <value>🤏-Pinching Hand   </value>
+  </data>
+  <data name="Pineapple" xml:space="preserve">
+    <value>🍍-Pineapple    </value>
+  </data>
+  <data name="PineDecoration" xml:space="preserve">
+    <value>🎍-Pine Decoration   </value>
+  </data>
+  <data name="Pizza" xml:space="preserve">
+    <value>🍕-Pizza    </value>
+  </data>
+  <data name="PleadingFace" xml:space="preserve">
+    <value>🥺-Pleading Face   </value>
+  </data>
+  <data name="PolarBear" xml:space="preserve">
+    <value>🐻‍❄️-Polar Bear   </value>
+  </data>
+  <data name="PoliceOfficer" xml:space="preserve">
+    <value>👮-Police Officer   </value>
+  </data>
+  <data name="Poodle" xml:space="preserve">
+    <value>🐩-Poodle    </value>
+  </data>
+  <data name="Popcorn" xml:space="preserve">
+    <value>🍿-Popcorn    </value>
+  </data>
+  <data name="Potato" xml:space="preserve">
+    <value>🥔-Potato    </value>
+  </data>
+  <data name="PotofFood" xml:space="preserve">
+    <value>🍲-Pot of Food  </value>
+  </data>
+  <data name="PottedPlant" xml:space="preserve">
+    <value>🪴-Potted Plant   </value>
+  </data>
+  <data name="PoultryLeg" xml:space="preserve">
+    <value>🍗-Poultry Leg   </value>
+  </data>
+  <data name="PoutingCat" xml:space="preserve">
+    <value>😾-Pouting Cat   </value>
+  </data>
+  <data name="PoutingFace" xml:space="preserve">
+    <value>😡-Pouting Face   </value>
+  </data>
+  <data name="PregnantWoman" xml:space="preserve">
+    <value>🤰-Pregnant Woman   </value>
+  </data>
+  <data name="Pretzel" xml:space="preserve">
+    <value>🥨-Pretzel    </value>
+  </data>
+  <data name="Prince" xml:space="preserve">
+    <value>🤴-Prince    </value>
+  </data>
+  <data name="Princess" xml:space="preserve">
+    <value>👸-Princess    </value>
+  </data>
+  <data name="Purse" xml:space="preserve">
+    <value>👛-Purse    </value>
+  </data>
+  <data name="Rabbit" xml:space="preserve">
+    <value>🐇-Rabbit    </value>
+  </data>
+  <data name="RabbitFace" xml:space="preserve">
+    <value>🐰-Rabbit Face   </value>
+  </data>
+  <data name="Raccoon" xml:space="preserve">
+    <value>🦝-Raccoon    </value>
+  </data>
+  <data name="Rainbow" xml:space="preserve">
+    <value>🌈-Rainbow    </value>
+  </data>
+  <data name="RaisedBackofHand" xml:space="preserve">
+    <value>🤚-Raised Back of Hand </value>
+  </data>
+  <data name="RaisedFist" xml:space="preserve">
+    <value>✊-Raised Fist   </value>
+  </data>
+  <data name="RaisedHand" xml:space="preserve">
+    <value>✋-Raised Hand   </value>
+  </data>
+  <data name="RaisingHands" xml:space="preserve">
+    <value>🙌-Raising Hands   </value>
+  </data>
+  <data name="Ram" xml:space="preserve">
+    <value>🐏-Ram    </value>
+  </data>
+  <data name="Rat" xml:space="preserve">
+    <value>🐀-Rat    </value>
+  </data>
+  <data name="RedApple" xml:space="preserve">
+    <value>🍎-Red Apple   </value>
+  </data>
+  <data name="RelievedFace" xml:space="preserve">
+    <value>😌-Relieved Face   </value>
+  </data>
+  <data name="RescueWorkersHelmet" xml:space="preserve">
+    <value>⛑️-Rescue Workers Helmet  </value>
+  </data>
+  <data name="Rhinoceros" xml:space="preserve">
+    <value>🦏-Rhinoceros    </value>
+  </data>
+  <data name="RiceBall" xml:space="preserve">
+    <value>🍙-Rice Ball   </value>
+  </data>
+  <data name="RiceCracker" xml:space="preserve">
+    <value>🍘-Rice Cracker   </value>
+  </data>
+  <data name="RightFacingFist" xml:space="preserve">
+    <value>🤜-Right Facing Fist  </value>
+  </data>
+  <data name="Ring" xml:space="preserve">
+    <value>💍-Ring    </value>
+  </data>
+  <data name="RoastedSweetPotato" xml:space="preserve">
+    <value>🍠-Roasted Sweet Potato  </value>
+  </data>
+  <data name="Robot" xml:space="preserve">
+    <value>🤖-Robot    </value>
+  </data>
+  <data name="Rock" xml:space="preserve">
+    <value>🪨-Rock    </value>
+  </data>
+  <data name="RollingontheFloorLaughing" xml:space="preserve">
+    <value>🤣-Rolling on the Floor Laughing</value>
+  </data>
+  <data name="Rooster" xml:space="preserve">
+    <value>🐓-Rooster    </value>
+  </data>
+  <data name="Rose" xml:space="preserve">
+    <value>🌹-Rose    </value>
+  </data>
+  <data name="Rosette" xml:space="preserve">
+    <value>🏵️-Rosette    </value>
+  </data>
+  <data name="RunningShoe" xml:space="preserve">
+    <value>👟-Running Shoe   </value>
+  </data>
+  <data name="SadbutRelievedFace" xml:space="preserve">
+    <value>😥-Sad but Relieved Face </value>
+  </data>
+  <data name="SafetyVest" xml:space="preserve">
+    <value>🦺-Safety Vest   </value>
+  </data>
+  <data name="Sake" xml:space="preserve">
+    <value>🍶-Sake    </value>
+  </data>
+  <data name="Salt" xml:space="preserve">
+    <value>🧂-Salt    </value>
+  </data>
+  <data name="Sandwich" xml:space="preserve">
+    <value>🥪-Sandwich    </value>
+  </data>
+  <data name="SantaClaus" xml:space="preserve">
+    <value>🎅-Santa Claus   </value>
+  </data>
+  <data name="Sari" xml:space="preserve">
+    <value>🥻-Sari    </value>
+  </data>
+  <data name="Sauropod" xml:space="preserve">
+    <value>🦕-Sauropod    </value>
+  </data>
+  <data name="Scarf" xml:space="preserve">
+    <value>🧣-Scarf    </value>
+  </data>
+  <data name="Scientist" xml:space="preserve">
+    <value>🧑‍🔬-Scientist    </value>
+  </data>
+  <data name="Scorpion" xml:space="preserve">
+    <value>🦂-Scorpion    </value>
+  </data>
+  <data name="Seal" xml:space="preserve">
+    <value>🦭-Seal    </value>
+  </data>
+  <data name="Seedling" xml:space="preserve">
+    <value>🌱-Seedling    </value>
+  </data>
+  <data name="SeeNoEvilMonkey" xml:space="preserve">
+    <value>🙈-See No Evil Monkey </value>
+  </data>
+  <data name="Selfie" xml:space="preserve">
+    <value>🤳-Selfie    </value>
+  </data>
+  <data name="ServiceDog" xml:space="preserve">
+    <value>🐕‍🦺-Service Dog   </value>
+  </data>
+  <data name="ShallowPanofFood" xml:space="preserve">
+    <value>🥘-Shallow Pan of Food </value>
+  </data>
+  <data name="Shamrock" xml:space="preserve">
+    <value>☘️-Shamrock    </value>
+  </data>
+  <data name="Shark" xml:space="preserve">
+    <value>🦈-Shark    </value>
+  </data>
+  <data name="ShavedIce" xml:space="preserve">
+    <value>🍧-Shaved Ice   </value>
+  </data>
+  <data name="SheafofRice" xml:space="preserve">
+    <value>🌾-Sheaf of Rice  </value>
+  </data>
+  <data name="ShootingStar" xml:space="preserve">
+    <value>🌠-Shooting Star   </value>
+  </data>
+  <data name="Shortcake" xml:space="preserve">
+    <value>🍰-Shortcake    </value>
+  </data>
+  <data name="Shorts" xml:space="preserve">
+    <value>🩳-Shorts    </value>
+  </data>
+  <data name="Shrimp" xml:space="preserve">
+    <value>🦐-Shrimp    </value>
+  </data>
+  <data name="ShushingFace" xml:space="preserve">
+    <value>🤫-Shushing Face   </value>
+  </data>
+  <data name="SignoftheHorns" xml:space="preserve">
+    <value>🤘-Sign of the Horns </value>
+  </data>
+  <data name="Singer" xml:space="preserve">
+    <value>🧑‍🎤-Singer    </value>
+  </data>
+  <data name="Skull" xml:space="preserve">
+    <value>💀-Skull    </value>
+  </data>
+  <data name="SkullandCrossbones" xml:space="preserve">
+    <value>☠️-Skull and Crossbones  </value>
+  </data>
+  <data name="Skunk" xml:space="preserve">
+    <value>🦨-Skunk    </value>
+  </data>
+  <data name="SleepingFace" xml:space="preserve">
+    <value>😴-Sleeping Face   </value>
+  </data>
+  <data name="SleepyFace" xml:space="preserve">
+    <value>😪-Sleepy Face   </value>
+  </data>
+  <data name="SlightlyFrowningFace" xml:space="preserve">
+    <value>🙁-Slightly Frowning Face  </value>
+  </data>
+  <data name="SlightlySmilingFace" xml:space="preserve">
+    <value>🙂-Slightly Smiling Face  </value>
+  </data>
+  <data name="Sloth" xml:space="preserve">
+    <value>🦥-Sloth    </value>
+  </data>
+  <data name="SmilingCatwithHeartEyes" xml:space="preserve">
+    <value>😻-Smiling Cat with Heart Eyes</value>
+  </data>
+  <data name="SmilingFace" xml:space="preserve">
+    <value>☺️-Smiling Face   </value>
+  </data>
+  <data name="SmilingFacewithHalo" xml:space="preserve">
+    <value>😇-Smiling Face with Halo </value>
+  </data>
+  <data name="SmilingFacewithHeartEyes" xml:space="preserve">
+    <value>😍-Smiling Face with Heart Eyes</value>
+  </data>
+  <data name="SmilingFacewithHearts" xml:space="preserve">
+    <value>🥰-Smiling Face with Hearts </value>
+  </data>
+  <data name="SmilingFacewithHorns" xml:space="preserve">
+    <value>😈-Smiling Face with Horns </value>
+  </data>
+  <data name="SmilingFacewithSmilingEyes" xml:space="preserve">
+    <value>😊-Smiling Face with Smiling Eyes</value>
+  </data>
+  <data name="SmilingFacewithSunglasses" xml:space="preserve">
+    <value>😎-Smiling Face with Sunglasses </value>
+  </data>
+  <data name="SmilingFacewithTear" xml:space="preserve">
+    <value>🥲-Smiling Face with Tear </value>
+  </data>
+  <data name="SmirkingFace" xml:space="preserve">
+    <value>😏-Smirking Face   </value>
+  </data>
+  <data name="Snail" xml:space="preserve">
+    <value>🐌-Snail    </value>
+  </data>
+  <data name="Snake" xml:space="preserve">
+    <value>🐍-Snake    </value>
+  </data>
+  <data name="SneezingFace" xml:space="preserve">
+    <value>🤧-Sneezing Face   </value>
+  </data>
+  <data name="Snowflake" xml:space="preserve">
+    <value>❄️-Snowflake    </value>
+  </data>
+  <data name="Snowman" xml:space="preserve">
+    <value>☃️-Snowman    </value>
+  </data>
+  <data name="SnowmanWithoutSnow" xml:space="preserve">
+    <value>⛄-Snowman Without Snow  </value>
+  </data>
+  <data name="Socks" xml:space="preserve">
+    <value>🧦-Socks    </value>
+  </data>
+  <data name="SoftIceCream" xml:space="preserve">
+    <value>🍦-Soft Ice Cream  </value>
+  </data>
+  <data name="Spaghetti" xml:space="preserve">
+    <value>🍝-Spaghetti    </value>
+  </data>
+  <data name="Sparkles" xml:space="preserve">
+    <value>✨-Sparkles    </value>
+  </data>
+  <data name="SpeakingHead" xml:space="preserve">
+    <value>🗣️-Speaking Head   </value>
+  </data>
+  <data name="SpeakNoEvilMonkey" xml:space="preserve">
+    <value>🙊-Speak No Evil Monkey </value>
+  </data>
+  <data name="Spider" xml:space="preserve">
+    <value>🕷️-Spider    </value>
+  </data>
+  <data name="SpiderWeb" xml:space="preserve">
+    <value>🕸️-Spider Web   </value>
+  </data>
+  <data name="SpiralShell" xml:space="preserve">
+    <value>🐚-Spiral Shell   </value>
+  </data>
+  <data name="Spoon" xml:space="preserve">
+    <value>🥄-Spoon    </value>
+  </data>
+  <data name="SpoutingWhale" xml:space="preserve">
+    <value>🐳-Spouting Whale   </value>
+  </data>
+  <data name="Squid" xml:space="preserve">
+    <value>🦑-Squid    </value>
+  </data>
+  <data name="SquintingFacewithTongue" xml:space="preserve">
+    <value>😝-Squinting Face with Tongue </value>
+  </data>
+  <data name="Star" xml:space="preserve">
+    <value>⭐-Star    </value>
+  </data>
+  <data name="StarStruck" xml:space="preserve">
+    <value>🤩-Star Struck   </value>
+  </data>
+  <data name="SteamingBowl" xml:space="preserve">
+    <value>🍜-Steaming Bowl   </value>
+  </data>
+  <data name="Strawberry" xml:space="preserve">
+    <value>🍓-Strawberry    </value>
+  </data>
+  <data name="Student" xml:space="preserve">
+    <value>🧑‍🎓-Student    </value>
+  </data>
+  <data name="StuffedFlatbread" xml:space="preserve">
+    <value>🥙-Stuffed Flatbread   </value>
+  </data>
+  <data name="Sun" xml:space="preserve">
+    <value>☀️-Sun    </value>
+  </data>
+  <data name="SunBehindCloud" xml:space="preserve">
+    <value>⛅-Sun Behind Cloud  </value>
+  </data>
+  <data name="SunBehindLargeCloud" xml:space="preserve">
+    <value>🌥️-Sun Behind Large Cloud </value>
+  </data>
+  <data name="SunBehindRainCloud" xml:space="preserve">
+    <value>🌦️-Sun Behind Rain Cloud </value>
+  </data>
+  <data name="SunBehindSmallCloud" xml:space="preserve">
+    <value>🌤️-Sun Behind Small Cloud </value>
+  </data>
+  <data name="Sunflower" xml:space="preserve">
+    <value>🌻-Sunflower    </value>
+  </data>
+  <data name="Sunglasses" xml:space="preserve">
+    <value>🕶️-Sunglasses    </value>
+  </data>
+  <data name="SunwithFace" xml:space="preserve">
+    <value>🌞-Sun with Face  </value>
+  </data>
+  <data name="Superhero" xml:space="preserve">
+    <value>🦸-Superhero    </value>
+  </data>
+  <data name="Supervillain" xml:space="preserve">
+    <value>🦹-Supervillain    </value>
+  </data>
+  <data name="Sushi" xml:space="preserve">
+    <value>🍣-Sushi    </value>
+  </data>
+  <data name="Swan" xml:space="preserve">
+    <value>🦢-Swan    </value>
+  </data>
+  <data name="SweatDroplets" xml:space="preserve">
+    <value>💦-Sweat Droplets   </value>
+  </data>
+  <data name="Taco" xml:space="preserve">
+    <value>🌮-Taco    </value>
+  </data>
+  <data name="TakeoutBox" xml:space="preserve">
+    <value>🥡-Takeout Box   </value>
+  </data>
+  <data name="Tamale" xml:space="preserve">
+    <value>🫔-Tamale    </value>
+  </data>
+  <data name="TanabataTree" xml:space="preserve">
+    <value>🎋-Tanabata Tree   </value>
+  </data>
+  <data name="Tangerine" xml:space="preserve">
+    <value>🍊-Tangerine    </value>
+  </data>
+  <data name="Teacher" xml:space="preserve">
+    <value>🧑‍🏫-Teacher    </value>
+  </data>
+  <data name="TeacupWithoutHandle" xml:space="preserve">
+    <value>🍵-Teacup Without Handle  </value>
+  </data>
+  <data name="Teapot" xml:space="preserve">
+    <value>🫖-Teapot    </value>
+  </data>
+  <data name="Technologist" xml:space="preserve">
+    <value>🧑‍💻-Technologist    </value>
+  </data>
+  <data name="ThinkingFace" xml:space="preserve">
+    <value>🤔-Thinking Face   </value>
+  </data>
+  <data name="ThongSandal" xml:space="preserve">
+    <value>🩴-Thong Sandal   </value>
+  </data>
+  <data name="Thread" xml:space="preserve">
+    <value>🧵-Thread    </value>
+  </data>
+  <data name="ThumbsDown" xml:space="preserve">
+    <value>👎-Thumbs Down   </value>
+  </data>
+  <data name="ThumbsUp" xml:space="preserve">
+    <value>👍-Thumbs Up   </value>
+  </data>
+  <data name="Tiger" xml:space="preserve">
+    <value>🐅-Tiger    </value>
+  </data>
+  <data name="TigerFace" xml:space="preserve">
+    <value>🐯-Tiger Face   </value>
+  </data>
+  <data name="TiredFace" xml:space="preserve">
+    <value>😫-Tired Face   </value>
+  </data>
+  <data name="Tomato" xml:space="preserve">
+    <value>🍅-Tomato    </value>
+  </data>
+  <data name="Tongue" xml:space="preserve">
+    <value>👅-Tongue    </value>
+  </data>
+  <data name="Tooth" xml:space="preserve">
+    <value>🦷-Tooth    </value>
+  </data>
+  <data name="TopHat" xml:space="preserve">
+    <value>🎩-Top Hat   </value>
+  </data>
+  <data name="Tornado" xml:space="preserve">
+    <value>🌪️-Tornado    </value>
+  </data>
+  <data name="TRex" xml:space="preserve">
+    <value>🦖-T Rex   </value>
+  </data>
+  <data name="TropicalDrink" xml:space="preserve">
+    <value>🍹-Tropical Drink   </value>
+  </data>
+  <data name="TropicalFish" xml:space="preserve">
+    <value>🐠-Tropical Fish   </value>
+  </data>
+  <data name="TShirt" xml:space="preserve">
+    <value>👕-T Shirt   </value>
+  </data>
+  <data name="Tulip" xml:space="preserve">
+    <value>🌷-Tulip    </value>
+  </data>
+  <data name="TumblerGlass" xml:space="preserve">
+    <value>🥃-Tumbler Glass   </value>
+  </data>
+  <data name="Turkey" xml:space="preserve">
+    <value>🦃-Turkey    </value>
+  </data>
+  <data name="Turtle" xml:space="preserve">
+    <value>🐢-Turtle    </value>
+  </data>
+  <data name="TwoHumpCamel" xml:space="preserve">
+    <value>🐫-Two Hump Camel  </value>
+  </data>
+  <data name="Umbrella" xml:space="preserve">
+    <value>☂️-Umbrella    </value>
+  </data>
+  <data name="Umbrella1" xml:space="preserve">
+    <value>☂️-Umbrella    </value>
+  </data>
+  <data name="UmbrellawithRainDrops" xml:space="preserve">
+    <value>☔-Umbrella with Rain Drops </value>
+  </data>
+  <data name="UnamusedFace" xml:space="preserve">
+    <value>😒-Unamused Face   </value>
+  </data>
+  <data name="Unicorn" xml:space="preserve">
+    <value>🦄-Unicorn    </value>
+  </data>
+  <data name="UpsideDownFace" xml:space="preserve">
+    <value>🙃-Upside Down Face  </value>
+  </data>
+  <data name="Vampire" xml:space="preserve">
+    <value>🧛-Vampire    </value>
+  </data>
+  <data name="VictoryHand" xml:space="preserve">
+    <value>✌️-Victory Hand   </value>
+  </data>
+  <data name="VulcanSalute" xml:space="preserve">
+    <value>🖖-Vulcan Salute   </value>
+  </data>
+  <data name="Waffle" xml:space="preserve">
+    <value>🧇-Waffle    </value>
+  </data>
+  <data name="WaningCrescentMoon" xml:space="preserve">
+    <value>🌘-Waning Crescent Moon  </value>
+  </data>
+  <data name="WaningGibbousMoon" xml:space="preserve">
+    <value>🌖-Waning Gibbous Moon  </value>
+  </data>
+  <data name="WaterBuffalo" xml:space="preserve">
+    <value>🐃-Water Buffalo   </value>
+  </data>
+  <data name="Watermelon" xml:space="preserve">
+    <value>🍉-Watermelon    </value>
+  </data>
+  <data name="WaterWave" xml:space="preserve">
+    <value>🌊-Water Wave   </value>
+  </data>
+  <data name="WavingHand" xml:space="preserve">
+    <value>👋-Waving Hand   </value>
+  </data>
+  <data name="WaxingCrescentMoon" xml:space="preserve">
+    <value>🌒-Waxing Crescent Moon  </value>
+  </data>
+  <data name="WaxingGibbousMoon" xml:space="preserve">
+    <value>🌔-Waxing Gibbous Moon  </value>
+  </data>
+  <data name="WearyCat" xml:space="preserve">
+    <value>🙀-Weary Cat   </value>
+  </data>
+  <data name="WearyFace" xml:space="preserve">
+    <value>😩-Weary Face   </value>
+  </data>
+  <data name="Whale" xml:space="preserve">
+    <value>🐋-Whale    </value>
+  </data>
+  <data name="WhiteFlower" xml:space="preserve">
+    <value>💮-White Flower   </value>
+  </data>
+  <data name="WiltedFlower" xml:space="preserve">
+    <value>🥀-Wilted Flower   </value>
+  </data>
+  <data name="WindFace" xml:space="preserve">
+    <value>🌬️-Wind Face   </value>
+  </data>
+  <data name="WineGlass" xml:space="preserve">
+    <value>🍷-Wine Glass   </value>
+  </data>
+  <data name="WinkingFace" xml:space="preserve">
+    <value>😉-Winking Face   </value>
+  </data>
+  <data name="WinkingFacewithTongue" xml:space="preserve">
+    <value>😜-Winking Face with Tongue </value>
+  </data>
+  <data name="Wolf" xml:space="preserve">
+    <value>🐺-Wolf    </value>
+  </data>
+  <data name="Woman" xml:space="preserve">
+    <value>👩-Woman    </value>
+  </data>
+  <data name="Woman:Bald" xml:space="preserve">
+    <value>👩‍🦲-Woman: Bald   </value>
+  </data>
+  <data name="Woman:BlondHair" xml:space="preserve">
+    <value>👱‍♀️-Woman: Blond Hair  </value>
+  </data>
+  <data name="Woman:CurlyHair" xml:space="preserve">
+    <value>👩‍🦱-Woman: Curly Hair  </value>
+  </data>
+  <data name="Woman:RedHair" xml:space="preserve">
+    <value>👩‍🦰-Woman: Red Hair  </value>
+  </data>
+  <data name="Woman:WhiteHair" xml:space="preserve">
+    <value>👩‍🦳-Woman: White Hair  </value>
+  </data>
+  <data name="WomanandManHoldingHands" xml:space="preserve">
+    <value>👫-Woman and Man Holding Hands</value>
+  </data>
+  <data name="WomanArtist" xml:space="preserve">
+    <value>👩‍🎨-Woman Artist   </value>
+  </data>
+  <data name="WomanAstronaut" xml:space="preserve">
+    <value>👩‍🚀-Woman Astronaut   </value>
+  </data>
+  <data name="WomanBowing" xml:space="preserve">
+    <value>🙇‍♀️-Woman Bowing   </value>
+  </data>
+  <data name="WomanConstructionWorker" xml:space="preserve">
+    <value>👷‍♀️-Woman Construction Worker  </value>
+  </data>
+  <data name="WomanCook" xml:space="preserve">
+    <value>👩‍🍳-Woman Cook   </value>
+  </data>
+  <data name="WomanDancing" xml:space="preserve">
+    <value>💃-Woman Dancing   </value>
+  </data>
+  <data name="WomanDetective" xml:space="preserve">
+    <value>🕵️‍♀️-Woman Detective   </value>
+  </data>
+  <data name="WomanElf" xml:space="preserve">
+    <value>🧝‍♀️-Woman Elf   </value>
+  </data>
+  <data name="WomanFacepalming" xml:space="preserve">
+    <value>🤦‍♀️-Woman Facepalming   </value>
+  </data>
+  <data name="WomanFactoryWorker" xml:space="preserve">
+    <value>👩‍🏭-Woman Factory Worker  </value>
+  </data>
+  <data name="WomanFairy" xml:space="preserve">
+    <value>🧚‍♀️-Woman Fairy   </value>
+  </data>
+  <data name="WomanFarmer" xml:space="preserve">
+    <value>👩‍🌾-Woman Farmer   </value>
+  </data>
+  <data name="WomanFeedingBaby" xml:space="preserve">
+    <value>👩‍🍼-Woman Feeding Baby  </value>
+  </data>
+  <data name="WomanFirefighter" xml:space="preserve">
+    <value>👩‍🚒-Woman Firefighter   </value>
+  </data>
+  <data name="WomanFrowning" xml:space="preserve">
+    <value>🙍‍♀️-Woman Frowning   </value>
+  </data>
+  <data name="WomanGenie" xml:space="preserve">
+    <value>🧞‍♀️-Woman Genie   </value>
+  </data>
+  <data name="WomanGesturingNo" xml:space="preserve">
+    <value>🙅‍♀️-Woman Gesturing No  </value>
+  </data>
+  <data name="WomanGesturingOK" xml:space="preserve">
+    <value>🙆‍♀️-Woman Gesturing OK  </value>
+  </data>
+  <data name="WomanGettingHaircut" xml:space="preserve">
+    <value>💇‍♀️-Woman Getting Haircut  </value>
+  </data>
+  <data name="WomanGettingMassage" xml:space="preserve">
+    <value>💆‍♀️-Woman Getting Massage  </value>
+  </data>
+  <data name="WomanGuard" xml:space="preserve">
+    <value>💂‍♀️-Woman Guard   </value>
+  </data>
+  <data name="WomanHealthWorker" xml:space="preserve">
+    <value>👩‍⚕️-Woman Health Worker  </value>
+  </data>
+  <data name="WomaninManualWheelchair" xml:space="preserve">
+    <value>👩‍🦽-Woman in Manual Wheelchair </value>
+  </data>
+  <data name="WomaninMotorizedWheelchair" xml:space="preserve">
+    <value>👩‍🦼-Woman in Motorized Wheelchair </value>
+  </data>
+  <data name="WomaninSteamyRoom" xml:space="preserve">
+    <value>🧖‍♀️-Woman in Steamy Room </value>
+  </data>
+  <data name="WomaninTuxedo" xml:space="preserve">
+    <value>🤵‍♀️-Woman in Tuxedo  </value>
+  </data>
+  <data name="WomanJudge" xml:space="preserve">
+    <value>👩‍⚖️-Woman Judge   </value>
+  </data>
+  <data name="WomanKneeling" xml:space="preserve">
+    <value>🧎‍♀️-Woman Kneeling   </value>
+  </data>
+  <data name="WomanMage" xml:space="preserve">
+    <value>🧙‍♀️-Woman Mage   </value>
+  </data>
+  <data name="WomanMechanic" xml:space="preserve">
+    <value>👩‍🔧-Woman Mechanic   </value>
+  </data>
+  <data name="WomanOfficeWorker" xml:space="preserve">
+    <value>👩‍💼-Woman Office Worker  </value>
+  </data>
+  <data name="WomanPilot" xml:space="preserve">
+    <value>👩‍✈️-Woman Pilot   </value>
+  </data>
+  <data name="WomanPoliceOfficer" xml:space="preserve">
+    <value>👮‍♀️-Woman Police Officer  </value>
+  </data>
+  <data name="WomanPouting" xml:space="preserve">
+    <value>🙎‍♀️-Woman Pouting   </value>
+  </data>
+  <data name="WomanRaisingHand" xml:space="preserve">
+    <value>🙋‍♀️-Woman Raising Hand  </value>
+  </data>
+  <data name="WomanRunning" xml:space="preserve">
+    <value>🏃‍♀️-Woman Running   </value>
+  </data>
+  <data name="WomansBoot" xml:space="preserve">
+    <value>👢-Womans Boot   </value>
+  </data>
+  <data name="WomanScientist" xml:space="preserve">
+    <value>👩‍🔬-Woman Scientist   </value>
+  </data>
+  <data name="WomansClothes" xml:space="preserve">
+    <value>👚-Womans Clothes   </value>
+  </data>
+  <data name="WomansHat" xml:space="preserve">
+    <value>👒-Womans Hat   </value>
+  </data>
+  <data name="WomanShrugging" xml:space="preserve">
+    <value>🤷‍♀️-Woman Shrugging   </value>
+  </data>
+  <data name="WomanSinger" xml:space="preserve">
+    <value>👩‍🎤-Woman Singer   </value>
+  </data>
+  <data name="WomansSandal" xml:space="preserve">
+    <value>👡-Womans Sandal   </value>
+  </data>
+  <data name="WomanStanding" xml:space="preserve">
+    <value>🧍‍♀️-Woman Standing   </value>
+  </data>
+  <data name="WomanStudent" xml:space="preserve">
+    <value>👩‍🎓-Woman Student   </value>
+  </data>
+  <data name="WomanSuperhero" xml:space="preserve">
+    <value>🦸‍♀️-Woman Superhero   </value>
+  </data>
+  <data name="WomanSupervillain" xml:space="preserve">
+    <value>🦹‍♀️-Woman Supervillain   </value>
+  </data>
+  <data name="WomanTeacher" xml:space="preserve">
+    <value>👩‍🏫-Woman Teacher   </value>
+  </data>
+  <data name="WomanTechnologist" xml:space="preserve">
+    <value>👩‍💻-Woman Technologist   </value>
+  </data>
+  <data name="WomanTippingHand" xml:space="preserve">
+    <value>💁‍♀️-Woman Tipping Hand  </value>
+  </data>
+  <data name="WomanVampire" xml:space="preserve">
+    <value>🧛‍♀️-Woman Vampire   </value>
+  </data>
+  <data name="WomanWalking" xml:space="preserve">
+    <value>🚶‍♀️-Woman Walking   </value>
+  </data>
+  <data name="WomanWearingTurban" xml:space="preserve">
+    <value>👳‍♀️-Woman Wearing Turban  </value>
+  </data>
+  <data name="WomanwithHeadscarf" xml:space="preserve">
+    <value>🧕-Woman with Headscarf  </value>
+  </data>
+  <data name="WomanwithVeil" xml:space="preserve">
+    <value>👰‍♀️-Woman with Veil  </value>
+  </data>
+  <data name="WomanwithWhiteCane" xml:space="preserve">
+    <value>👩‍🦯-Woman with White Cane </value>
+  </data>
+  <data name="WomanZombie" xml:space="preserve">
+    <value>🧟‍♀️-Woman Zombie   </value>
+  </data>
+  <data name="WomenHoldingHands" xml:space="preserve">
+    <value>👭-Women Holding Hands  </value>
+  </data>
+  <data name="WomenwithBunnyEars" xml:space="preserve">
+    <value>👯‍♀️-Women with Bunny Ears </value>
+  </data>
+  <data name="WoozyFace" xml:space="preserve">
+    <value>🥴-Woozy Face   </value>
+  </data>
+  <data name="Worm" xml:space="preserve">
+    <value>🪱-Worm    </value>
+  </data>
+  <data name="WorriedFace" xml:space="preserve">
+    <value>😟-Worried Face   </value>
+  </data>
+  <data name="WritingHand" xml:space="preserve">
+    <value>✍️-Writing Hand   </value>
+  </data>
+  <data name="Yarn" xml:space="preserve">
+    <value>🧶-Yarn    </value>
+  </data>
+  <data name="YawningFace" xml:space="preserve">
+    <value>🥱-Yawning Face   </value>
+  </data>
+  <data name="ZanyFace" xml:space="preserve">
+    <value>🤪-Zany Face   </value>
+  </data>
+  <data name="Zebra" xml:space="preserve">
+    <value>🦓-Zebra    </value>
+  </data>
+  <data name="ZipperMouthFace" xml:space="preserve">
+    <value>🤐-Zipper Mouth Face  </value>
+  </data>
+  <data name="Zombie" xml:space="preserve">
+    <value>🧟-Zombie    </value>
+  </data>
+</root>

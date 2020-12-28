@@ -16,6 +16,7 @@ namespace RobotizeLibrary.Dialogs
         protected RemoteWebDriver Driver;
         protected WebDriverWait Wait;
         protected abstract By ByForDialog { get; }
+        protected string BaseXPath;
 
         protected BaseDialog(RemoteWebDriver driver, WebDriverWait wait)
         {

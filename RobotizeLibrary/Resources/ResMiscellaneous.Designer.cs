@@ -358,6 +358,15 @@ namespace RobotizeLibrary.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Story Privacy.
+        /// </summary>
+        public static string StoryPrivacy {
+            get {
+                return ResourceManager.GetString("StoryPrivacy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Submit.
         /// </summary>
         public static string Submit {

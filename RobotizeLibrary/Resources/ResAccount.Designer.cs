@@ -257,5 +257,14 @@ namespace RobotizeLibrary.Resources {
                 return ResourceManager.GetString("SupportInbox", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Use Single-Character Keyboard Shortcuts.
+        /// </summary>
+        public static string UseSingleCharacterKeyboardShortcuts {
+            get {
+                return ResourceManager.GetString("UseSingleCharacterKeyboardShortcuts", resourceCulture);
+            }
+        }
     }
 }

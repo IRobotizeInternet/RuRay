@@ -147,6 +147,12 @@
     <Compile Include="CryptoServices\CryptoServiceForString.cs" />
     <Compile Include="Pages\BasePage.cs" />
     <Compile Include="Pages\LoggedIn\ActivityLog\PageActivityLog.cs" />
+    <Compile Include="Pages\LoggedIn\Dialogs\CreatePost\DialogAddToYourPost.cs" />
+    <Compile Include="Pages\LoggedIn\Dialogs\CreatePost\DialogCustomPrivacy.cs" />
+    <Compile Include="Pages\LoggedIn\Dialogs\CreatePost\DialogMoreBackgroundOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Dialogs\CreatePost\DialogSelectFriends.cs" />
+    <Compile Include="Pages\LoggedIn\Dialogs\CreatePost\DialogSelectPrivacy.cs" />
+    <Compile Include="Pages\LoggedIn\Dialogs\CreatePost\PopupEmoji.cs" />
     <Compile Include="Pages\LoggedIn\Dialogs\DialogAllKeyboardShortcuts.cs" />
     <Compile Include="Pages\LoggedIn\Dialogs\Account\PopupDisplayAndAccessibility.cs" />
     <Compile Include="Pages\LoggedIn\Dialogs\Account\DialogGiveFeedbackToFacebook.cs" />
@@ -159,11 +165,11 @@
     <Compile Include="Pages\LoggedIn\Dialogs\Account\PopupHelpAndSupport.cs" />
     <Compile Include="Pages\LoggedIn\Dialogs\Account\PopupSettingAndPrivacy.cs" />
     <Compile Include="Pages\LoggedIn\Home\HomeHeader\Right\Account\PopupAccount.cs" />
-    <Compile Include="Pages\LoggedIn\Home\HomeHeader\Right\Create\DialogCreatePost.cs" />
-    <Compile Include="Pages\LoggedIn\Home\HomeHeader\Right\Create\DialogLifeEvents.cs" />
-    <Compile Include="Pages\LoggedIn\Home\HomeHeader\Right\Create\PopupCreate.cs" />
+    <Compile Include="Pages\LoggedIn\Dialogs\CreatePost\DialogCreatePost.cs" />
+    <Compile Include="Pages\LoggedIn\Dialogs\CreatePost\DialogLifeEvents.cs" />
+    <Compile Include="Pages\LoggedIn\Dialogs\CreatePost\PopupCreate.cs" />
     <Compile Include="Pages\LoggedIn\Home\HomeHeader\HomePageHeaderSection.cs" />
-    <Compile Include="Pages\LoggedIn\Home\HomeHeader\Right\Create\PostBackgroundcolor.cs" />
+    <Compile Include="Pages\LoggedIn\Enum\PostBackgroundcolor.cs" />
     <Compile Include="Pages\LoggedIn\Home\HomeHeader\Right\Messanger\PopupMessanger.cs" />
     <Compile Include="Pages\LoggedIn\Home\HomeHeader\Right\Notifications\PopupNotifications.cs" />
     <Compile Include="Pages\LoggedIn\Home\HomePageLeftSection.cs" />
@@ -210,7 +216,7 @@
     <Compile Include="Pages\LoggedIn\Settings\Tabs\Seperator2\TimelineAndTagging.cs" />
     <Compile Include="Pages\LoggedIn\Settings\Tabs\Seperator4\Videos.cs" />
     <Compile Include="Pages\LoggedIn\Settings\Tabs\Seperator1\YourFacebookInformation.cs" />
-    <Compile Include="Pages\LoggedIn\Stories\DialogStoryPrivacy.cs" />
+    <Compile Include="Pages\LoggedIn\Dialogs\DialogStoryPrivacy.cs" />
     <Compile Include="Pages\LoggedIn\Stories\PageCreateStory.cs" />
     <Compile Include="Pages\LoggedIn\SupportInbox\PageSupportInbox.cs" />
     <Compile Include="Pages\LoggedIn\UserHomePage\PageUserHome.cs" />
@@ -227,7 +233,7 @@
     <Compile Include="Pages\NotLoggedIn\PagePrivacy.cs" />
     <Compile Include="Pages\NotLoggedIn\PageTerms.cs" />
     <Compile Include="Pages\NotLoggedIn\PasswordRecovery\PasswordRecoveryPage.cs" />
-    <Compile Include="Pages\PagePrivacy.cs" />
+    <Compile Include="Pages\LoggedIn\PagePrivacy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\ServiceBrowser.cs" />
     <Compile Include="Services\ServiceCulture.cs" />
@@ -275,7 +281,9 @@
       <PackageCopyToOutput>true</PackageCopyToOutput>
     </Content>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Pages\LoggedIn\Home\HomeHeader\Right\Create\" />
+  </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

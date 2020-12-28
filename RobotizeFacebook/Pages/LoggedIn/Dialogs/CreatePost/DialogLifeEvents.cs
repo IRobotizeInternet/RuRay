@@ -2,15 +2,17 @@
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using RobotizeLibrary.Dialogs;
+using RobotizeLibrary.Resources;
 
-namespace RobotizeFacebook.Pages.LoggedIn.Home.HomeHeader
+namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class DialogLifeEvents : BaseDialog
     {
         public DialogLifeEvents(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
         {
+            
         }
 
-        protected override By ByForDialog => By.XPath("//div[@class='tr9rh885 sjgh65i0']");
+        protected override By ByForDialog => By.XPath($"//span[text()='{ResHomePage.LifeEvent}']");
     }
 }

@@ -98,79 +98,10 @@
 	<resheader name="writer">
 		<value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.3500.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
 	</resheader>
- <data name="Account" xml:space="preserve">
-    <value>Account</value>
- </data>
- <data name="GiveFeedback" xml:space="preserve">
-    <value>Give Feedback</value>
- </data>
- <data name="SettingsAndPrivacy" xml:space="preserve">
-    <value>Settings &amp; Privacy</value>
- </data>
- <data name="HelpAndSupport" xml:space="preserve">
-    <value>Help &amp; Support</value>
- </data>
- <data name="DisplayAndAccessibility" xml:space="preserve">
-    <value>Display &amp; Accessibility</value>
- </data>
- <data name="LogOut" xml:space="preserve">
-    <value>Log Out</value>
- </data>
- <data name="Settings" xml:space="preserve">
-    <value>Settings</value>
- </data>
- <data name="PrivacyCheckup" xml:space="preserve">
-    <value>Privacy Checkup</value>
- </data>
- <data name="PrivacyShortcuts" xml:space="preserve">
-    <value>Privacy Shortcuts</value>
- </data>
- <data name="ActivityLog" xml:space="preserve">
-    <value>Activity Log</value>
- </data>
- <data name="NewsFeedPreferences" xml:space="preserve">
-    <value>News Feed Preferences</value>
- </data>
- <data name="Settings" xml:space="preserve">
-    <value>Settings</value>
- </data>
- <data name="Language" xml:space="preserve">
-    <value>Language</value>
- </data>
- <data name="HelpCenter" xml:space="preserve">
-    <value>Help Center</value>
- </data>
- <data name="SupportInbox" xml:space="preserve">
-    <value>Support Inbox</value>
- </data>
- <data name="ReportAProblem" xml:space="preserve">
-    <value>Report a Problem</value>
- </data>
- <data name="DarkMode" xml:space="preserve">
-    <value>Dark Mode</value>
- </data>
- <data name="On" xml:space="preserve">
-    <value>On</value>
- </data>
- <data name="Off" xml:space="preserve">
-    <value>Off</value>
- </data>
- <data name="Keyboard" xml:space="preserve">
-    <value>Keyboard</value>
- </data>
- <data name="CompactMode" xml:space="preserve">
-    <value>Compact Mode</value>
- </data>
- <data name="SeeAllKeyboardShortcuts" xml:space="preserve">
-    <value>See All Keyboard Shortcuts</value>
- </data>
- <data name="AllKeyboardShortcuts" xml:space="preserve">
-    <value>All Keyboard Shortcuts</value>
- </data>
- <data name="LogOut" xml:space="preserve">
-    <value>Log Out</value>
- </data>
-  <data name="UseSingleCharacterKeyboardShortcuts" xml:space="preserve">
-    <value>Use Single-Character Keyboard Shortcuts</value>
- </data>
+  <data name="BackgroundOptions" xml:space="preserve">
+    <value>Background Options</value>
+  </data>
+  <data name="LifeEvent" xml:space="preserve">
+    <value>Life Event</value>
+  </data>
 </root>

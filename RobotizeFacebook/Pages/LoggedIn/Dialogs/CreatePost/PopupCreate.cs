@@ -5,16 +5,16 @@ using RobotizeLibrary.Controls.TriggerControls;
 using RobotizeLibrary.Dialogs;
 using RobotizeLibrary.Resources;
 
-namespace RobotizeFacebook.Pages.LoggedIn.Home.HomeHeader
+namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class PopupCreate : BaseDialog
     {
         public PopupCreate(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
         {
+            BaseXPath = $"//div[@aria-label='{ResHomePageHeader.Create}' and @role='dialog']";
         }
 
-        private readonly string BaseXPath = $"//div[@aria-label='{ResHomePageHeader.Create}' and @role='dialog']";
-        protected override By ByForDialog => By.XPath(BaseXPath);
+        protected override By ByForDialog => By.XPath($"//div[@aria-label='{ResHomePageHeader.Create}' and @role='dialog']");
 
         public EventTriggerDiv<DialogCreatePost> TriggerDivCreatePost => 
                     new EventTriggerDiv<DialogCreatePost>(Driver, Wait, By.XPath($"{BaseXPath}//span[text()='{ResHomePageHeader.Post}']"));
@@ -38,7 +38,9 @@ namespace RobotizeFacebook.Pages.LoggedIn.Home.HomeHeader
         public void RunConformance()
         {
             var post = TriggerDivCreatePost.Click();
-            post.ButtonClose.Click();
+            var p = post.ButtonBackGroundOptions.Click();
+            var moreBGImages = p.ButtonMoreBackgroundOptionsDialog.Click();
+            moreBGImages.GetPopularBackground(PostBackgroundcolor.BlueMountains);
             TriggerDivCreateStory.Click();
             TriggerDivCreateRoom.Click();
             TriggerDivCreatePage.Click();

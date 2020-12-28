@@ -117,118 +117,28 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Add" xml:space="preserve">
-    <value>Add</value>
+  <data name="SolidPurple" xml:space="preserve">
+    <value>Solid purple</value>
   </data>
-  <data name="AddAnotherEmailOrMobileNumber" xml:space="preserve">
-    <value>+ Add another email or mobile number</value>
+  <data name="PinkIllustration" xml:space="preserve">
+    <value>Pink illustration</value>
   </data>
-  <data name="AddEmailAddress" xml:space="preserve">
-    <value>Add Email Address</value>
+  <data name="YellowIllustration" xml:space="preserve">
+    <value>Yellow illustration</value>
   </data>
-  <data name="AddOrChangeOtherNames" xml:space="preserve">
-    <value>Add or change other names</value>
+  <data name="LightPurple3DCubePattern" xml:space="preserve">
+    <value>Light purple 3D cube pattern</value>
   </data>
-  <data name="AddYourPhoneNumber" xml:space="preserve">
-    <value>Add your phone number?</value>
+  <data name="PinkTropicalPlants" xml:space="preserve">
+    <value>Pink tropical plants</value>
   </data>
-  <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
+  <data name="TealIllustration" xml:space="preserve">
+    <value>Teal illustration</value>
   </data>
-  <data name="ChangeAdAccountContact" xml:space="preserve">
-    <value>Change Ad Account Contact</value>
+  <data name="SucculentsInPotsPattern" xml:space="preserve">
+    <value>Succulents in pots pattern</value>
   </data>
-  <data name="ChangeEmail" xml:space="preserve">
-    <value>Change Email</value>
-  </data>
-  <data name="ChangePassword" xml:space="preserve">
-    <value>Change password</value>
-  </data>
-  <data name="ChooseAFriend" xml:space="preserve">
-    <value>Choose a friend</value>
-  </data>
-  <data name="Close" xml:space="preserve">
-    <value>Close</value>
-  </data>
-  <data name="Confirm" xml:space="preserve">
-    <value>Confirm</value>
-  </data>
-  <data name="Continue" xml:space="preserve">
-    <value>Continue</value>
-  </data>
-  <data name="CreateRoom" xml:space="preserve">
-    <value>Create Room</value>
-  </data>
-  <data name="CreateYourRoom" xml:space="preserve">
-    <value>Create Your Room</value>
-  </data>
-  <data name="DeleteYourAccountInTheFuture" xml:space="preserve">
-    <value>Delete Your Account in the Future?</value>
-  </data>
-  <data name="EnterNewEmail" xml:space="preserve">
-    <value>Enter new email</value>
-  </data>
-  <data name="ForgotYourPassword" xml:space="preserve">
-    <value>Forgot your password?</value>
-  </data>
-  <data name="LearnHowRoomsWork" xml:space="preserve">
-    <value>Learn How Rooms Work</value>
-  </data>
-  <data name="LogOutOfAllSessions" xml:space="preserve">
-    <value>Log Out Of All Sessions</value>
-  </data>
-  <data name="RemoveAccount" xml:space="preserve">
-    <value>Remove account</value>
-  </data>
-  <data name="RequestThatYourAccountBeDeletedAfterYouPassAway" xml:space="preserve">
-    <value>Request that your account be deleted after you pass away.</value>
-  </data>
-  <data name="SaveChanges" xml:space="preserve">
-    <value>Save Changes</value>
-  </data>
-  <data name="SaveYourLoginInfo" xml:space="preserve">
-    <value>Save your login info</value>
-  </data>
-  <data name="SeeMore" xml:space="preserve">
-    <value>See More</value>
-  </data>
-  <data name="NewsFeedPreferences" xml:space="preserve">
-    <value>News Feed Preferences</value>
-  </data>
-  <data name="NewsFeedPreferences" xml:space="preserve">
-    <value>News Feed Preferences</value>
-  </data>
-  <data name="GiveFeedbackToFacebook" xml:space="preserve">
-    <value>Give Feedback to Facebook</value>
-  </data>
-  <data name="HelpUsImproveTheNewFacebook" xml:space="preserve">
-    <value>Help us improve the new Facebook</value>
-  </data>
-  <data name="ChooseAnArea" xml:space="preserve">
-    <value>Choose an Area</value>
-  </data>
-  <data name="PleaseIncludeAsMuchInfoAsPossible" xml:space="preserve">
-    <value>Please include as much info as possible...</value>
-  </data>
-  <data name="AddAScreenshotOrVideoRecommended" xml:space="preserve">
-    <value>Add a Screenshot or Video (recommended)</value>
-  </data>
-  <data name="HelpUsImproveTheNewFacebook" xml:space="preserve">
-    <value>Help us improve the new Facebook</value>
-  </data>
-  <data name="Submit" xml:space="preserve">
-    <value>Submit</value>
-  </data>
-  <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
-  </data>
-  <data name="SomethingWentWrong" xml:space="preserve">
-    <value>Something went wrong</value>
-  </data>
-  <data name="Back" xml:space="preserve">
-    <value>Back</value>
-  </data>
-  <data name="StoryPrivacy" xml:space="preserve">
-    <value>Story Privacy</value>
+  <data name="PurpleIllustration" xml:space="preserve">
+    <value>Purple illustration</value>
   </data>
 </root>

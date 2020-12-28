@@ -12,21 +12,19 @@ namespace RobotizeFacebook.Pages.LoggedIn
     {
         public PopupDisplayAndAccessibility(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
         {
-            BaseXPath = $"//span[text()='{ResAccount.DarkMode}']/../../../../../../../.."; ;
+            BaseXPath = $"//div[@aria-label = '{ResAccount.Account}']";
         }
 
-        protected override By ByForDialog => By.XPath(BaseXPath);
+        protected override By ByForDialog => By.XPath($"{BaseXPath}//span[text()='{ResAccount.DarkMode}']");
 
-        public RadioButton RButtonDarkModeOn => 
-            new RadioButton(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResAccount.DarkMode}']//span[text()='{ResAccount.On}']/../../../../.././..//input"));
-        public RadioButton RButtonDarkModeOff =>
-            new RadioButton(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResAccount.DarkMode}']//span[text()='{ResAccount.Off}']/../../../../.././..//input"));
-        public RadioButton RButtonCompactModeOn =>
-            new RadioButton(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResAccount.CompactMode}']//span[text()='{ResAccount.On}']/../../../../.././..//input"));
-        public RadioButton RButtonCompactModeOff =>
-            new RadioButton(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResAccount.CompactMode}']//span[text()='{ResAccount.Off}']/../../../../.././..//input"));
+        private string RButtonsXPath = "//div[@role='radiogroup' and contains(@aria-label, '{0}')]//span[text()='{1}']";
 
+        public RadioButton RButtonDarkModeOn => new RadioButton(Driver, By.XPath(string.Format(RButtonsXPath, ResAccount.DarkMode, ResAccount.On)));
+        public RadioButton RButtonDarkModeOff => new RadioButton(Driver, By.XPath(string.Format(RButtonsXPath, ResAccount.DarkMode, ResAccount.Off)));
+        public RadioButton RButtonCompactModeOn => new RadioButton(Driver, By.XPath(string.Format(RButtonsXPath, ResAccount.CompactMode, ResAccount.On)));
+        public RadioButton RButtonCompactModeOff => new RadioButton(Driver, By.XPath(string.Format(RButtonsXPath, ResAccount.CompactMode, ResAccount.Off)));
+        
         public EventTriggerButton<PopupKeyBoard> ButtonKeyboard =>
-            new EventTriggerButton<PopupKeyBoard>(Driver, Wait, By.XPath($"{BaseXPath}//span[text()='{ResAccount.Keyboard}']"));
+            new EventTriggerButton<PopupKeyBoard>(Driver, Wait, By.XPath($"{string.Format(RButtonsXPath, ResAccount.CompactMode, ResAccount.On)}/following::span[text()='{ResAccount.Keyboard}'])"));
     }
 }

@@ -162,4 +162,31 @@
   <data name="Post" xml:space="preserve">
     <value>Post</value>
   </data>
+  <data name="Public" xml:space="preserve">
+    <value>Public</value>
+  </data>
+  <data name="Friends" xml:space="preserve">
+    <value>Friends</value>
+  </data>
+  <data name="Custom" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="Nobackground" xml:space="preserve">
+    <value>No background</value>
+  </data>
+  <data name="BackgroundOptions" xml:space="preserve">
+    <value>Background Options</value>
+  </data>
+  <data name="EditPrivacy" xml:space="preserve">
+    <value>Edit privacy</value>
+  </data>
+  <data name="ShowBackgroundOptions" xml:space="preserve">
+    <value>Show Background Options</value>
+  </data>
+  <data name="Emoji" xml:space="preserve">
+    <value>Emoji</value>
+  </data>
+  <data name="RecentlyUsed" xml:space="preserve">
+    <value>Recently Used</value>
+  </data>
 </root>

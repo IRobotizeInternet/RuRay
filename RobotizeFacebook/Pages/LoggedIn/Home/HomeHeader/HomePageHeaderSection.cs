@@ -2,7 +2,6 @@
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using RobotizeFacebook.Pages.LoggedIn.Home.HomeHeader;
-using RobotizeFacebook.Pages.LoggedIn.UserHomePage;
 using RobotizeFacebook.Pages.LoggedUser;
 using RobotizeLibrary.CommonControls;
 using RobotizeLibrary.Controls.TriggerControls;
@@ -60,7 +59,9 @@ namespace RobotizeFacebook.Pages.LoggedIn
             //TextBoxSearchFacebook.Click();
             //TextBoxSearchFacebook.SetData("Ali");
             //HyperLinkFacebookTitleIcon.Click();
-            RunConformanceAccountPopUp();
+            //RunConformanceAccountPopUp();
+            var a = DialogButtonToCreate.Click();
+            a.RunConformance();
         }
 
         public void RunConformanceMiddleHeader()

@@ -70,6 +70,15 @@ namespace RobotizeLibrary.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Background Options.
+        /// </summary>
+        public static string BackgroundOptions {
+            get {
+                return ResourceManager.GetString("BackgroundOptions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Check In.
         /// </summary>
         public static string CheckIn {
@@ -88,11 +97,47 @@ namespace RobotizeLibrary.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Custom.
+        /// </summary>
+        public static string Custom {
+            get {
+                return ResourceManager.GetString("Custom", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit privacy.
+        /// </summary>
+        public static string EditPrivacy {
+            get {
+                return ResourceManager.GetString("EditPrivacy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Emoji.
+        /// </summary>
+        public static string Emoji {
+            get {
+                return ResourceManager.GetString("Emoji", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Feeling/Activity.
         /// </summary>
         public static string FeelingOrActivity {
             get {
                 return ResourceManager.GetString("FeelingOrActivity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Friends.
+        /// </summary>
+        public static string Friends {
+            get {
+                return ResourceManager.GetString("Friends", resourceCulture);
             }
         }
         
@@ -124,6 +169,15 @@ namespace RobotizeLibrary.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to No background.
+        /// </summary>
+        public static string Nobackground {
+            get {
+                return ResourceManager.GetString("Nobackground", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Photo/Video.
         /// </summary>
         public static string PhotoOrVideo {
@@ -142,11 +196,38 @@ namespace RobotizeLibrary.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Public.
+        /// </summary>
+        public static string Public {
+            get {
+                return ResourceManager.GetString("Public", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to RaiseMoney.
         /// </summary>
         public static string RaiseMoney {
             get {
                 return ResourceManager.GetString("RaiseMoney", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Recently Used.
+        /// </summary>
+        public static string RecentlyUsed {
+            get {
+                return ResourceManager.GetString("RecentlyUsed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show Background Options.
+        /// </summary>
+        public static string ShowBackgroundOptions {
+            get {
+                return ResourceManager.GetString("ShowBackgroundOptions", resourceCulture);
             }
         }
         

@@ -5,7 +5,7 @@ using RobotizeLibrary.Controls;
 using RobotizeLibrary.Dialogs;
 using RobotizeLibrary.Resources;
 
-namespace RobotizeFacebook.Pages.LoggedIn
+namespace RobotizeFacebook.Pages.LoggedIn.Dialogs
 {
     public class DialogAllKeyboardShortcuts : BaseDialog
     {

@@ -7,13 +7,13 @@ using RobotizeLibrary.Resources;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
-    public class PopupAccount : BaseDialog
+    public class PopupAccount : BasePopup
     {
         public PopupAccount(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
         {
+            BaseXPath = $"//div[@aria-label='{ResAccount.Account}'][@role='dialog']";
         }
 
-        private readonly string BaseXPath = $"//div[@aria-label='{ResAccount.Account}'][@role='dialog']";
         protected override By ByForDialog => By.XPath(BaseXPath);
 
         public EventTriggerButton<PageUserHome> TriggerSeeYourProfile => 

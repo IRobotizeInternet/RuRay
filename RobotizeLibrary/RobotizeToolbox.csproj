@@ -215,6 +215,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ResDialogPopUpCreate.resx</DependentUpon>
     </Compile>
+    <Compile Include="Resources\ResEmoji.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResEmoji.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ResHomePage1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResHomePage.resx</DependentUpon>
+    </Compile>
     <Compile Include="Resources\ResHomePageHeader.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -234,6 +244,11 @@
       <DependentUpon>ResMonth.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\ResPostBackground.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResPostBackground.resx</DependentUpon>
     </Compile>
     <Compile Include="Resources\ResPostBackGroundColor.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -287,6 +302,14 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ResDialogPopUpCreate.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ResEmoji.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResEmoji.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ResHomePage.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResHomePage1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\ResHomePageHeader.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ResHomePageHeader.Designer.cs</LastGenOutput>
@@ -303,6 +326,10 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ResMonth.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ResPostBackground.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResPostBackground.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\ResPostBackGroundColor.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
