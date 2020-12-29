@@ -1,4 +1,7 @@
-﻿namespace RobotizeToolbox.Controls
+﻿using OpenQA.Selenium;
+using System.Collections.Generic;
+
+namespace RobotizeToolbox.Controls
 {
     internal interface IDropdownElement
     {

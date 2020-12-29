@@ -21,6 +21,11 @@ namespace RobotizeToolbox.CommonControls
             Driver = driver;
         }
 
+        public BaseDOMProperty(RemoteWebDriver driver)
+        {
+            Driver = driver;
+        }
+
         /// <summary>
         /// Check whether or not the element exists
         /// </summary>

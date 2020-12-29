@@ -21,14 +21,14 @@ namespace RobotizeToolbox.CommonControls
             }
         }
 
-        public void Select(string valueToSelect)
+        public void Select(string itemToSelect)
         {
             Thread.Sleep(1500);
 
             ScrollToElement();
-            var htmlDropdown = Driver.FindSingleVisibleElementWait(ByForElement);
-            var selectElement = new SelectElement(htmlDropdown);
-            selectElement.SelectByText(valueToSelect);
+            //var dropdownElement = Driver.FindSingleVisibleElementWait(ByForElement);
+            //var selectElement = new SelectElement(dropdownElement);
+            //selectElement.SelectByText(itemToSelect);
 
             Thread.Sleep(2000);
         }

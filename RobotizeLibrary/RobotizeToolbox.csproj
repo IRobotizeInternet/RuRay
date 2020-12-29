@@ -102,8 +102,10 @@
     <Compile Include="Dialogs\BaseDialog.cs" />
     <Compile Include="Dialogs\BasePopup.cs" />
     <Compile Include="Dialogs\BaseSaveCancelDialog.cs" />
+    <Compile Include="DTO\DTOFriends.cs" />
     <Compile Include="Enum\EnumExt.cs" />
     <Compile Include="Extensions\Acts.cs" />
+    <Compile Include="Extensions\ExtendBy.cs" />
     <Compile Include="Extensions\JscriptExecutor.cs" />
     <Compile Include="Extensions\RemoteWebDriverExtension.cs" />
     <Compile Include="Extensions\WebElements.cs" />
