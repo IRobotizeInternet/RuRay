@@ -79,6 +79,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        public static string Cancel {
+            get {
+                return ResourceManager.GetString("Cancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Check In.
         /// </summary>
         public static string CheckIn {
@@ -138,6 +147,15 @@ namespace RobotizeFacebook.Resources {
         public static string Friends {
             get {
                 return ResourceManager.GetString("Friends", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Friends Except....
+        /// </summary>
+        public static string FriendsExcept {
+            get {
+                return ResourceManager.GetString("FriendsExcept", resourceCulture);
             }
         }
         
@@ -219,6 +237,15 @@ namespace RobotizeFacebook.Resources {
         public static string RecentlyUsed {
             get {
                 return ResourceManager.GetString("RecentlyUsed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save Changes.
+        /// </summary>
+        public static string SaveChanges {
+            get {
+                return ResourceManager.GetString("SaveChanges", resourceCulture);
             }
         }
         

@@ -5,6 +5,6 @@ namespace RobotizeToolbox.Controls
 {
     internal interface IDropdownElement
     {
-        void Select(string valueToSelect);
+        bool Select(string valueToSelect, out IEnumerable<IWebElement> friends);
     }
 }

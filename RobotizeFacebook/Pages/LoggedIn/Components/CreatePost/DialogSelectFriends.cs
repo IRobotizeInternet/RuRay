@@ -3,6 +3,8 @@ using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using RobotizeToolbox.Dialogs;
 using RobotizeFacebook.Resources;
+using RobotizeToolbox.Controls.TriggerControls;
+using RobotizeToolbox.Controls;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
@@ -10,9 +12,18 @@ namespace RobotizeFacebook.Pages.LoggedIn
     {
         public DialogSelectFriends(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
         {
+            BaseXPath = "//form[@method='POST']";
         }
+        
+        protected override By ByForDialog => By.XPath($"//form[@method='POST']//span[text()='{ResCreatePost.FriendsExcept}']");
 
-        private readonly string Basepath = $"//span[text()='{ResSelectPrivacy.FriendsExcept}']/../../../../..";
-        protected override By ByForDialog => By.XPath(Basepath);
+        public Combobox ComboboxSearchFriends => new Combobox(Driver, ByForDialog);
+
+        public EventTriggerButton<DialogCreatePost> TriggerSaveChangesButton => 
+            new EventTriggerButton<DialogCreatePost>(Driver, Wait, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.SaveChanges}']"));
+
+        public EventTriggerButton<DialogCreatePost> TriggerCancelChangesButton =>
+            new EventTriggerButton<DialogCreatePost>(Driver, Wait, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.Cancel}']"));
     }
+
 }

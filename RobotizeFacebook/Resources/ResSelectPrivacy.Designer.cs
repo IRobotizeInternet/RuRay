@@ -115,6 +115,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Friends;.
+        /// </summary>
+        public static string Friends_ {
+            get {
+                return ResourceManager.GetString("Friends;", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Friends except....
         /// </summary>
         public static string FriendsExcept {

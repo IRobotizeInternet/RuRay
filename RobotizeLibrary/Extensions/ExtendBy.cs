@@ -6,16 +6,14 @@ namespace RobotizeLibrary.Extensions
     {
         public ExtendBy(string xPathForElement)
         {
+            XPathOfElement = xPathForElement;
             XPath(xPathForElement);
         }
 
-        public static By By(string xPathForElement)
+        public static ExtendBy By(string xPathForElement)
         {
             return new ExtendBy(xPathForElement);
         }
-        public string GetDescription() 
-        {
-            return Description;      
-        }
+        public string XPathOfElement { get; set; }
     }
 }

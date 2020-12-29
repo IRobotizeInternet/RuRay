@@ -21,7 +21,10 @@ namespace RobotizeFacebook.Pages.LoggedIn
         public RadioButton RButtonFriends => new RadioButton(Driver, By.XPath($"{BaseXPath}//span[text()='{ResSelectPrivacy.Friends}']"));
         
         public EventTriggerButton<DialogSelectFriends> ButtonFriendsExcept => 
-            new EventTriggerButton<DialogSelectFriends>(Driver, Wait, By.XPath($"{BaseXPath}//span[text()='{ResSelectPrivacy.FriendsExcept}']"));
+            new EventTriggerButton<DialogSelectFriends>(
+                Driver, 
+                Wait, 
+                By.XPath($"{BaseXPath}//span[text()='{ResSelectPrivacy.FriendsExcept}']/following::span[contains(text(), '{ResSelectPrivacy.Friends_}')]"));
         
         public EventTriggerButton<DialogSelectFriends> ButtonSpecificFriends => 
             new EventTriggerButton<DialogSelectFriends>(Driver, Wait, By.XPath($"{BaseXPath}//span[text()='{ResSelectPrivacy.SpecificFriends}']"));

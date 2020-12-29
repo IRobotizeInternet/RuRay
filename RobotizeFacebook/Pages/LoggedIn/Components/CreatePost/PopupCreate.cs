@@ -38,15 +38,20 @@ namespace RobotizeFacebook.Pages.LoggedIn
         public void RunConformance()
         {
             var post = TriggerDivCreatePost.Click();
-            var p = post.ButtonBackGroundOptions.Click();
-            var moreBGImages = p.ButtonMoreBackgroundOptionsDialog.Click();
-            moreBGImages.GetPopularBackground(PostBackgroundcolor.BlueMountains);
-            TriggerDivCreateStory.Click();
-            TriggerDivCreateRoom.Click();
-            TriggerDivCreatePage.Click();
-            TriggerDivCreateAd.Click();
-            TriggerDivCreateGroup.Click();
-            TriggerDivCreateEvent.Click();
+            var privacyDialog = post.TriggerEditPrivacyDialog.Click();
+            var exceptFriends = privacyDialog.ButtonFriendsExcept.Click();
+            exceptFriends.ComboboxSearchFriends.Select("faisal", out _);
+            post = exceptFriends.TriggerSaveChangesButton.Click();
+            
+            //var p = post.ButtonBackGroundOptions.Click();
+            //var moreBGImages = p.ButtonMoreBackgroundOptionsDialog.Click();
+            //moreBGImages.GetPopularBackground(PostBackgroundcolor.BlueMountains);
+            //TriggerDivCreateStory.Click();
+            //TriggerDivCreateRoom.Click();
+            //TriggerDivCreatePage.Click();
+            //TriggerDivCreateAd.Click();
+            //TriggerDivCreateGroup.Click();
+            //TriggerDivCreateEvent.Click();
             TriggerDivCreateMarketPlaceListing.Click();
             TriggerDivCreateFundraiser.Click();
         }

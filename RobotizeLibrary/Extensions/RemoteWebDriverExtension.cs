@@ -75,5 +75,23 @@ namespace RobotizeToolbox.Extensions
 
             return elements;
         }
+
+        /// <summary>
+        /// Wait if the element is visible.
+        /// </summary>
+        public static void WaitUntilElementDisappears(
+            this RemoteWebDriver driver,
+            By byForElement,
+            int timeoutSeconds = 60)
+        {
+            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeoutSeconds));
+            IEnumerable<IWebElement> elements = null;
+
+            _ = wait.Until(d =>
+            {
+                elements = driver.FindElements(byForElement).Where(x => !x.Displayed);
+                return elements.Any();
+            });
+        }
     }
 }

@@ -1,5 +1,5 @@
-﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
+﻿using OpenQA.Selenium.Remote;
+using RobotizeLibrary.Extensions;
 using System;
 
 namespace RobotizeToolbox.Controls
@@ -9,7 +9,7 @@ namespace RobotizeToolbox.Controls
     /// </summary>
     public abstract class DropdownWithEnum<TEnum> : Combobox where TEnum : struct, IConvertible
     {
-        protected DropdownWithEnum(RemoteWebDriver driver, By byForDropdown): base(driver, byForDropdown)
+        protected DropdownWithEnum(RemoteWebDriver driver, ExtendBy byForDropdown): base(driver, byForDropdown)
         {
         }
 

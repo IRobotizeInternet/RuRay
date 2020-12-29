@@ -107,6 +107,9 @@
   <data name="Friends" xml:space="preserve">
     <value>Friends</value>
   </data>
+  <data name="Friends;" xml:space="preserve">
+    <value>Friends;</value>
+  </data>
   <data name="FriendsExcept" xml:space="preserve">
     <value>Friends except...</value>
   </data>

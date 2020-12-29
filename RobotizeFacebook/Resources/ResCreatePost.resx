@@ -189,4 +189,13 @@
   <data name="RecentlyUsed" xml:space="preserve">
     <value>Recently Used</value>
   </data>
+  <data name="FriendsExcept" xml:space="preserve">
+    <value>Friends Except...</value>
+  </data>
+  <data name="SaveChanges" xml:space="preserve">
+    <value>Save Changes</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
 </root>
