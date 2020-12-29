@@ -1,5 +1,5 @@
 ﻿using OpenQA.Selenium;
-using RobotizeLibrary.Controls.TriggerControls;
+using RobotizeToolbox.Controls.TriggerControls;
 
 namespace RobotizeFacebook.Pages.LoggedIn.Stories.Create
 {

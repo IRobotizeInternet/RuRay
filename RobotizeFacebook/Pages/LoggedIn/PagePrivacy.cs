@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
-using System;
 
 namespace RobotizeFacebook.Pages
 {

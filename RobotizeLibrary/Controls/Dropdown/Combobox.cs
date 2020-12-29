@@ -2,12 +2,13 @@
 using OpenQA.Selenium.Remote;
 using RobotizeToolbox.CommonControls;
 
-namespace RobotizeLibrary.Controls
+namespace RobotizeToolbox.Controls
 {
     public class Combobox : BaseDOMProperty
     {
         public Combobox(RemoteWebDriver driver, By byForElement) : base(driver, byForElement)
         {
+
         }
     }
 }

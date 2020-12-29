@@ -1,10 +1,9 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
-using RobotizeLibrary.CommonControls;
 using System;
 
-namespace RobotizeLibrary.Dialogs
+namespace RobotizeToolbox.Dialogs
 {
     public class BaseSaveCancelDialog : BaseDialog
     {

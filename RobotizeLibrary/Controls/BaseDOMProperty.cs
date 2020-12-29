@@ -1,12 +1,8 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Html5;
-using OpenQA.Selenium.Interactions;
-using OpenQA.Selenium.Interactions.Internal;
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using Polly;
-using RobotizeLibrary.Controls;
-using RobotizeLibrary.Extensions;
+using RobotizeToolbox.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -158,21 +154,21 @@ namespace RobotizeToolbox.CommonControls
             return elementText;
         }
 
-        public void ScrollToElement(IWebElement webElement)
+        public void ScrollToElement(IWebElement webElement = null)
         {
-            var javaScript = "arguments[0].scrollIntoView(false);" +
+            var jScript = "arguments[0].scrollIntoView(false);" +
             "var evObj = document.createEvent('MouseEvents');" +
             "evObj.initMouseEvent(\"mouseover\",true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);" +
             "arguments[0].dispatchEvent(evObj);";
 
             var element = Driver.FindElementWithTimeSpan(ByForElement);
-            var elementToScrollTo = LocateScrollableElement(Driver, element);
-            Driver.ExecuteScript(javaScript, elementToScrollTo);
+            var targetElement = LocateScrollableElement(Driver, element);
+            Driver.ExecuteScript(jScript, targetElement);
         }
 
-        private static IWebElement LocateScrollableElement(RemoteWebDriver driver, IWebElement startingElement)
+        private static IWebElement LocateScrollableElement(RemoteWebDriver driver, IWebElement firstElement)
         {
-            var ancestors = startingElement.FindElements(By.XPath("./ancestor-or-self::*")).Reverse();
+            var ancestors = firstElement.FindElements(By.XPath("./ancestor-or-self::*")).Reverse();
             var scrollableElement = ancestors.FirstOrDefault(element => !element.Location.IsEmpty);
             return scrollableElement;
         }

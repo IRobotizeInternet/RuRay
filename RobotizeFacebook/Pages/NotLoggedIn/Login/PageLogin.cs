@@ -3,8 +3,8 @@ using RobotizeFacebook.Pages.LoggedUser;
 using RobotizeFacebook.Pages.NotLoggedIn;
 using RobotizeFacebook.Pages.PasswordRecovery;
 using RobotizeFacebook.Utilities;
-using RobotizeLibrary.CommonControls;
-using RobotizeLibrary.Controls.TriggerControls;
+using RobotizeToolbox.CommonControls;
+using RobotizeToolbox.Controls.TriggerControls;
 using RobotizeFacebook.Resources;
 
 namespace RobotizeFacebook.Pages

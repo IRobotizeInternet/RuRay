@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
-using RobotizeLibrary.CommonControls;
-using RobotizeLibrary.Controls;
-using RobotizeLibrary.Controls.TriggerControls;
+using RobotizeToolbox.CommonControls;
+using RobotizeToolbox.Controls;
+using RobotizeToolbox.Controls.TriggerControls;
 using RobotizeFacebook.Resources;
 
 namespace RobotizeFacebook.Pages.LoggedIn.Settings.Tabs.Seperator1

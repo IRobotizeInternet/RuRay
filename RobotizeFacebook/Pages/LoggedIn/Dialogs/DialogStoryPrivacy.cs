@@ -2,8 +2,8 @@
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using RobotizeFacebook.Resources;
-using RobotizeLibrary.Controls;
-using RobotizeLibrary.Dialogs;
+using RobotizeToolbox.Controls;
+using RobotizeToolbox.Dialogs;
 
 namespace RobotizeFacebook.Pages.LoggedIn.Stories.Create
 {

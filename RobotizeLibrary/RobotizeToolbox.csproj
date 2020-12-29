@@ -88,8 +88,10 @@
     <Compile Include="Controls\BaseDOMProperty.cs" />
     <Compile Include="Controls\Button.cs" />
     <Compile Include="Controls\Checkbox.cs" />
-    <Compile Include="Controls\Combobox.cs" />
-    <Compile Include="Controls\Dropdown.cs" />
+    <Compile Include="Controls\Dropdown\Combobox.cs" />
+    <Compile Include="Controls\Dropdown\Dropdown.cs" />
+    <Compile Include="Controls\Dropdown\DropdownWithEnum.cs" />
+    <Compile Include="Controls\Dropdown\IDropdownElement.cs" />
     <Compile Include="Controls\RadioButton.cs" />
     <Compile Include="Controls\TriggerControls\EventTriggerButton.cs" />
     <Compile Include="Controls\TriggerControls\EventTriggerDiv.cs" />

@@ -2,7 +2,7 @@
 using OpenQA.Selenium.Remote;
 using RobotizeToolbox.CommonControls;
 
-namespace RobotizeLibrary.Controls
+namespace RobotizeToolbox.Controls
 {
     public class Checkbox : BaseDOMProperty
     {

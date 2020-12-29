@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
-using RobotizeLibrary.Dialogs;
+using RobotizeToolbox.Dialogs;
 using RobotizeFacebook.Resources;
 
 namespace RobotizeFacebook.Pages.LoggedIn.Home.HomeHeader

@@ -1,6 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using RobotizeFacebook.Pages;
-using System;
 
 namespace RobotizeFacebookTests.HomePage
 {

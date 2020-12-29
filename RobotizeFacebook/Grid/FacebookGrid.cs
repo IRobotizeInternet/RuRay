@@ -3,7 +3,7 @@ using OpenQA.Selenium.Support.UI;
 using RobotizeFacebook.Grid;
 using System;
 
-namespace RobotizeLibrary.Controls
+namespace RobotizeToolbox.Controls
 {
     public class FacebookGrid
     {

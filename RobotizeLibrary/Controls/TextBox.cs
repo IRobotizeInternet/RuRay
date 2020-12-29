@@ -1,8 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using RobotizeToolbox.CommonControls;
 
-namespace RobotizeLibrary.CommonControls
+namespace RobotizeToolbox.CommonControls
 {
     public class TextBox : BaseDOMProperty
     {

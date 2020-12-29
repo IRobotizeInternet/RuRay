@@ -3,7 +3,7 @@ using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using RobotizeFacebook.Pages.LoggedIn.Settings.Tabs.Seperator1;
 using RobotizeFacebook.Pages.LoggedIn.Settings.Tabs.Seperator1.Bas;
-using RobotizeLibrary.Controls.TriggerControls;
+using RobotizeToolbox.Controls.TriggerControls;
 
 namespace RobotizeFacebook.Pages.LoggedIn.Settings.Tabs
 {

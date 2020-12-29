@@ -5,7 +5,7 @@ using RobotizeToolbox.CommonControls;
 using System;
 using System.Threading;
 
-namespace RobotizeLibrary.Controls.TriggerControls
+namespace RobotizeToolbox.Controls.TriggerControls
 {
     public class Hyperlink <EventResult> where EventResult : class
     {

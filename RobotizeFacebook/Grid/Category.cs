@@ -1,6 +1,6 @@
 ﻿using RobotizeFacebook.Resources;
 
-namespace RobotizeLibrary.Enums
+namespace RobotizeToolbox.Enums
 {
     
     public static class Category

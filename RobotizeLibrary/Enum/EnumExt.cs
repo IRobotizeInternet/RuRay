@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 
-namespace RobotizeLibrary.Enums
+namespace RobotizeToolbox.Enums
 {
     public static class EnumExt
     {

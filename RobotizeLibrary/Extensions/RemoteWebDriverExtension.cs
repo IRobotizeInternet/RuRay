@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 
-namespace RobotizeLibrary.Extensions
+namespace RobotizeToolbox.Extensions
 {
     public static class RemoteWebDriverExtension
     {

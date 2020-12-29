@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 using System.Diagnostics;
 
-namespace RobotizeLibrary.Extensions
+namespace RobotizeToolbox.Extensions
 {
     public static class WebElements
     {

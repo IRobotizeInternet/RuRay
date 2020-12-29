@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 
-namespace RobotizeLibrary.Extensions
+namespace RobotizeToolbox.Extensions
 {
     public class JscriptExecutor
     {

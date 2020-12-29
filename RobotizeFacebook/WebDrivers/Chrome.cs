@@ -4,7 +4,6 @@ using Polly;
 using RobotizeFacebook.Services;
 using RobotizeFacebook.Utilities;
 using System;
-using System.Collections.Generic;
 
 namespace RobotizeFacebook.WebDrivers
 {

@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace RobotizeFacebook.Grid
+﻿namespace RobotizeFacebook.Grid
 {
     interface ISquareMeters
     {

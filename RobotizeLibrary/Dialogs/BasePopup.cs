@@ -1,14 +1,13 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
-using RobotizeLibrary.CommonControls;
-using RobotizeLibrary.Extensions;
+using RobotizeToolbox.Extensions;
 using System;
 using System.Diagnostics;
 using System.Linq;
 using ExpectedConditions = SeleniumExtras.WaitHelpers.ExpectedConditions;
 
-namespace RobotizeLibrary.Dialogs
+namespace RobotizeToolbox.Dialogs
 {
     public abstract class BasePopup
     {

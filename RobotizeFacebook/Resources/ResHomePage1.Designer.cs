@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace RobotizeLibrary.Resources {
+namespace RobotizeToolbox.Resources {
     using System;
     
     

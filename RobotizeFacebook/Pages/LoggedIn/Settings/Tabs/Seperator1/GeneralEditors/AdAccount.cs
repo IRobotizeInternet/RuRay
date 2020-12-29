@@ -2,9 +2,9 @@
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using RobotizeFacebook.Pages.LoggedIn.Settings.AccountSettings;
-using RobotizeLibrary.CommonControls;
-using RobotizeLibrary.Controls.TriggerControls;
-using RobotizeLibrary.Dialogs;
+using RobotizeToolbox.CommonControls;
+using RobotizeToolbox.Controls.TriggerControls;
+using RobotizeToolbox.Dialogs;
 using RobotizeFacebook.Resources;
 
 namespace RobotizeFacebook.Pages.LoggedIn.Settings.Tabs.Seperator1

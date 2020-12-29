@@ -1,9 +1,9 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
-using RobotizeLibrary.CommonControls;
-using RobotizeLibrary.Controls.TriggerControls;
-using RobotizeLibrary.Dialogs;
+using RobotizeToolbox.CommonControls;
+using RobotizeToolbox.Controls.TriggerControls;
+using RobotizeToolbox.Dialogs;
 
 namespace RobotizeFacebook.Pages.NotLoggedIn.Login.Dialog
 {

@@ -4,7 +4,7 @@ using OpenQA.Selenium.Support.UI;
 using RobotizeToolbox.CommonControls;
 using System;
 
-namespace RobotizeLibrary.Controls.TriggerControls
+namespace RobotizeToolbox.Controls.TriggerControls
 {
     public class EventTriggerDiv<EventResult> where EventResult : class
     {

@@ -1,10 +1,8 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
-using RobotizeFacebook.Pages.LoggedIn.Home.HomeHeader;
 using RobotizeFacebook.Resources;
-using RobotizeLibrary.Controls.TriggerControls;
-using RobotizeFacebook.Resources;
+using RobotizeToolbox.Controls.TriggerControls;
 
 
 namespace RobotizeFacebook.Pages.LoggedIn.Home.MainSection.SubSections
