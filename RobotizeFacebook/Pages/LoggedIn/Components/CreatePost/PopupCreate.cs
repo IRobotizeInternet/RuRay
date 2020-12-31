@@ -59,7 +59,7 @@ namespace RobotizeFacebook.Pages.LoggedIn
             specificFriends.ComboboxSearchFriends.Select("Faisal");
             post = specificFriends.TriggerSaveChangesButton.Click();
             privacyDialog = post.TriggerEditPrivacyDialog.Click();
-            specificFriends = privacyDialog.ButtonFriendsExcept.Click();
+            specificFriends = privacyDialog.ButtonSpecificFriends.Click();
             var itemToRemove = specificFriends.FriendsWhoWontSeeYourPost.Where(x => x.GetAttribute("aria-label").Contains("Faisal")).FirstOrDefault();
             itemToRemove.Click();
             specificFriends.TriggerCancelChangesButton.Click();
