@@ -11,12 +11,13 @@ namespace RobotizeFacebook.Pages.LoggedIn
     {
         public DialogCustomPrivacy(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
         {
+            BaseXPath = $"//span[text()='{ResSelectPrivacy.CustomPrivacy}']/../../../../..";
         }
 
-        private readonly string Basepath = $"//span[text()='{ResSelectPrivacy.CustomPrivacy}']/../../../../..";
-        protected override By ByForDialog => By.XPath(Basepath);
+        protected override By ByForDialog => By.XPath($"//span[text()='{ResSelectPrivacy.CustomPrivacy}']/../../../../..");
 
-        public Checkbox CheckboxFriendsOfTagged => new Checkbox(Driver, By.XPath($"{Basepath}//input[@type='checkbox']"));
-        public Combobox ComboboxDontShareWith => new Combobox(Driver, By.XPath($"{Basepath}//input[@type='checkbox']"));
+        public Checkbox CheckboxFriendsOfTagged => new Checkbox(Driver, By.XPath($"{BaseXPath}//input[@type='checkbox']"));
+        public SearchBoxSharingWithYourFriends ComboboxDontShareWith => 
+            new SearchBoxSharingWithYourFriends(Driver, By.XPath($"{BaseXPath}//input[@type='checkbox']"), BaseXPath);
     }
 }

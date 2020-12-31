@@ -12,7 +12,8 @@ namespace RobotizeFacebook.Pages.LoggedIn.Settings.Tabs.Seperator1
 {
     public class Memorialization: BaseEditor
     {
-        public Combobox ComboboxChooseAFriend => new Combobox(Driver, By.XPath($"//input[@placeholder={ResMiscellaneous.ChooseAFriend}]"));
+        public SearchBoxSharingWithYourFriends ComboboxChooseAFriend => 
+            new SearchBoxSharingWithYourFriends(Driver, By.XPath($"//input[@placeholder={ResMiscellaneous.ChooseAFriend}]"), string.Empty);
         public Button ButtonAdd => new Button(Driver, By.XPath($"//button[text()={ResMiscellaneous.Add}]"));
         public Hyperlink<DialogDeleteYourAccountInFuture> Link =>
             new Hyperlink<DialogDeleteYourAccountInFuture>(Driver, Wait, By.XPath($"//input[@value={ResMiscellaneous.RequestThatYourAccountBeDeletedAfterYouPassAway}]"));

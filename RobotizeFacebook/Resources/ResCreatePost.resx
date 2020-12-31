@@ -198,4 +198,13 @@
   <data name="Cancel" xml:space="preserve">
     <value>Cancel</value>
   </data>
+  <data name="FriendsWhoWontSeeYourPost" xml:space="preserve">
+    <value>Friends Who</value>
+  </data>
+  <data name="FriendsWhoWillSeeYourPost" xml:space="preserve">
+    <value>Friends Who Will See Your Post</value>
+  </data>
+  <data name="SpecificFriends" xml:space="preserve">
+    <value>Specific Friends</value>
+  </data>
 </root>

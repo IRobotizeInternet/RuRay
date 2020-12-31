@@ -160,6 +160,24 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Friends Who Will See Your Post.
+        /// </summary>
+        public static string FriendsWhoWillSeeYourPost {
+            get {
+                return ResourceManager.GetString("FriendsWhoWillSeeYourPost", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Friends Who.
+        /// </summary>
+        public static string FriendsWhoWontSeeYourPost {
+            get {
+                return ResourceManager.GetString("FriendsWhoWontSeeYourPost", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to GIF.
         /// </summary>
         public static string GIF {
@@ -255,6 +273,15 @@ namespace RobotizeFacebook.Resources {
         public static string ShowBackgroundOptions {
             get {
                 return ResourceManager.GetString("ShowBackgroundOptions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Specific Friends.
+        /// </summary>
+        public static string SpecificFriends {
+            get {
+                return ResourceManager.GetString("SpecificFriends", resourceCulture);
             }
         }
         

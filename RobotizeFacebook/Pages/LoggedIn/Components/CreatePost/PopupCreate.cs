@@ -4,6 +4,7 @@ using OpenQA.Selenium.Support.UI;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.Controls.TriggerControls;
 using RobotizeToolbox.Dialogs;
+using System.Linq;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
@@ -35,23 +36,49 @@ namespace RobotizeFacebook.Pages.LoggedIn
         public EventTriggerDiv<DialogCreatePost> TriggerDivCreateFundraiser =>
                     new EventTriggerDiv<DialogCreatePost>(Driver, Wait, By.XPath($"{BaseXPath}//span[text()='{ResHomePageHeader.Fundraiser}']"));
 
-        public void RunConformance()
+
+        public void RunConformanceButtonFriendsExcept()
         {
             var post = TriggerDivCreatePost.Click();
             var privacyDialog = post.TriggerEditPrivacyDialog.Click();
             var exceptFriends = privacyDialog.ButtonFriendsExcept.Click();
-            exceptFriends.ComboboxSearchFriends.Select("faisal", out _);
+            exceptFriends.ComboboxSearchFriends.Select("Faisal");
             post = exceptFriends.TriggerSaveChangesButton.Click();
-            
-            //var p = post.ButtonBackGroundOptions.Click();
-            //var moreBGImages = p.ButtonMoreBackgroundOptionsDialog.Click();
-            //moreBGImages.GetPopularBackground(PostBackgroundcolor.BlueMountains);
-            //TriggerDivCreateStory.Click();
-            //TriggerDivCreateRoom.Click();
-            //TriggerDivCreatePage.Click();
-            //TriggerDivCreateAd.Click();
-            //TriggerDivCreateGroup.Click();
-            //TriggerDivCreateEvent.Click();
+            privacyDialog = post.TriggerEditPrivacyDialog.Click();
+            exceptFriends = privacyDialog.ButtonFriendsExcept.Click();
+            var itemToRemove = exceptFriends.FriendsWhoWontSeeYourPost.Where(x => x.GetAttribute("aria-label").Contains("Faisal")).FirstOrDefault();
+            itemToRemove.Click();
+            exceptFriends.TriggerCancelChangesButton.Click();
+        }
+
+        public void RunConformanceButtonSpecificFriends()
+        {
+            var post = TriggerDivCreatePost.Click();
+            var privacyDialog = post.TriggerEditPrivacyDialog.Click();
+            var specificFriends = privacyDialog.ButtonSpecificFriends.Click();
+            specificFriends.ComboboxSearchFriends.Select("Faisal");
+            post = specificFriends.TriggerSaveChangesButton.Click();
+            privacyDialog = post.TriggerEditPrivacyDialog.Click();
+            specificFriends = privacyDialog.ButtonFriendsExcept.Click();
+            var itemToRemove = specificFriends.FriendsWhoWontSeeYourPost.Where(x => x.GetAttribute("aria-label").Contains("Faisal")).FirstOrDefault();
+            itemToRemove.Click();
+            specificFriends.TriggerCancelChangesButton.Click();
+        }
+
+        public void RunConformance()
+        {
+            RunConformanceButtonSpecificFriends();
+            RunConformanceButtonFriendsExcept();
+            var post = TriggerDivCreatePost.Click();
+            var p = post.ButtonBackGroundOptions.Click();
+            var moreBGImages = p.ButtonMoreBackgroundOptionsDialog.Click();
+            moreBGImages.GetPopularBackground(PostBackgroundcolor.BlueMountains);
+            TriggerDivCreateStory.Click();
+            TriggerDivCreateRoom.Click();
+            TriggerDivCreatePage.Click();
+            TriggerDivCreateAd.Click();
+            TriggerDivCreateGroup.Click();
+            TriggerDivCreateEvent.Click();
             TriggerDivCreateMarketPlaceListing.Click();
             TriggerDivCreateFundraiser.Click();
         }

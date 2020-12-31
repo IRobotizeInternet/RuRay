@@ -84,14 +84,23 @@ namespace RobotizeToolbox.Extensions
             By byForElement,
             int timeoutSeconds = 60)
         {
-            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeoutSeconds));
-            IEnumerable<IWebElement> elements = null;
-
-            _ = wait.Until(d =>
+            var wait = new DefaultWait<By>(byForElement)
             {
-                elements = driver.FindElements(byForElement).Where(x => !x.Displayed);
-                return elements.Any();
-            });
+                PollingInterval = TimeSpan.FromMilliseconds(500),
+                Timeout = TimeSpan.FromSeconds(timeoutSeconds)
+            };
+
+            _ = wait.Until(x =>
+             {
+                 try
+                 {
+                     var element = driver.FindElement(x);
+                     return false;
+                 }
+                 catch (NoSuchElementException){ return true; }
+                 catch (ElementNotVisibleException) { return true; }
+                 catch (StaleElementReferenceException) { return true; }
+             });
         }
     }
 }

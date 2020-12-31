@@ -145,6 +145,7 @@
   <ItemGroup>
     <Compile Include="CryptoServices\Crypto.cs" />
     <Compile Include="CryptoServices\CryptoServiceForString.cs" />
+    <Compile Include="Pages\LoggedIn\Components\CreatePost\DialogSpecificFriends.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\BaseFilter.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Category.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Checkbox\CheckboxFilter.cs" />
@@ -234,9 +235,10 @@
     <Compile Include="Pages\LoggedIn\Components\CreatePost\DialogAddToYourPost.cs" />
     <Compile Include="Pages\LoggedIn\Components\CreatePost\DialogCustomPrivacy.cs" />
     <Compile Include="Pages\LoggedIn\Components\CreatePost\DialogMoreBackgroundOptions.cs" />
-    <Compile Include="Pages\LoggedIn\Components\CreatePost\DialogSelectFriends.cs" />
+    <Compile Include="Pages\LoggedIn\Components\CreatePost\DialogFriendsExcepts.cs" />
     <Compile Include="Pages\LoggedIn\Components\CreatePost\DialogSelectPrivacy.cs" />
     <Compile Include="Pages\LoggedIn\Components\CreatePost\PopupEmoji.cs" />
+    <Compile Include="Pages\LoggedIn\Components\SearchBox\SearchBoxSharingWithYourFriends.cs" />
     <Compile Include="Pages\LoggedIn\Dialogs\DialogAllKeyboardShortcuts.cs" />
     <Compile Include="Pages\LoggedIn\Dialogs\Account\PopupDisplayAndAccessibility.cs" />
     <Compile Include="Pages\LoggedIn\Dialogs\Account\DialogGiveFeedbackToFacebook.cs" />
