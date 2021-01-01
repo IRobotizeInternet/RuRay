@@ -11,19 +11,9 @@ namespace RobotizeFacebook.Pages.LoggedIn
         {
         }
 
-        public IVehicleFilterOptions FilterBy => throw new NotImplementedException();
+        public IApparelFilterOptions FilterBy => throw new NotImplementedException();
 
-        public IApplyFilter BodyStyle(VehicleBodyStyle bodyStyle)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Category(VehicleCategory categoryType)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IApplyFilter ExteriorColor(VehicleInteriorExteriorColor exteriorColor)
+        public void Category(ApparelCategory categoryType)
         {
             throw new NotImplementedException();
         }
@@ -33,42 +23,12 @@ namespace RobotizeFacebook.Pages.LoggedIn
             throw new NotImplementedException();
         }
 
-        public IApplyFilter Make(VehicleMake criteria)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IApplyFilter Milage(double? min = null, double? max = null)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IApplyFilter Model(VehicleModel model)
+        public IFilterOptions ItemCondition(ItemCondition vehicleType)
         {
             throw new NotImplementedException();
         }
 
         public IApplyFilter Price(double? min = null, double? max = null)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IApplyFilter SortBy(VehicleSortOption criteria)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IFilterOptions VehicleType(VehicleType vehicleType)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IFilterOptions VehicleType(VehicleTransmissionType vehicleType)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IApplyFilter Year(int? min, int? max)
         {
             throw new NotImplementedException();
         }

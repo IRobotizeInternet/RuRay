@@ -1,7 +1,7 @@
 ﻿
 namespace RobotizeFacebook.Pages.LoggedIn
 {
-    public interface IApparelFilter : IFilter<IApparelFilterOptions>, ICategory<VehicleCategory>
+    public interface IApparelFilter : IFilter<IApparelFilterOptions>, ICategory<ApparelCategory>
     {
 
     }

@@ -1,0 +1,1 @@
+﻿// Customized text message to all the friends {New year, festivals etc.}
