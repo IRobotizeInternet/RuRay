@@ -1,5 +1,4 @@
-﻿using RobotizeFacebook.Grid;
-using RobotizeToolbox.Controls;
+﻿using RobotizeToolbox.Controls;
 
 namespace RobotizeFacebook.Pages.LoggedIn.Home.HomeHeader
 {

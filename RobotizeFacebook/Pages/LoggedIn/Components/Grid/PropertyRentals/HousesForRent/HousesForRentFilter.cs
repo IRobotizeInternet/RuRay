@@ -32,6 +32,11 @@ namespace RobotizeFacebook.Pages.LoggedIn
             throw new NotImplementedException();
         }
 
+        public IApplyFilter SortBy(PropertyRentalsSortOption criteria)
+        {
+            throw new NotImplementedException();
+        }
+
         protected override void ClickFilterButton()
         {
             throw new NotImplementedException();

@@ -18,6 +18,11 @@ namespace RobotizeFacebook.Pages.LoggedIn
             throw new NotImplementedException();
         }
 
+        public void Category(VehicleCategory categoryType)
+        {
+            throw new NotImplementedException();
+        }
+
         public IApplyFilter ExteriorColor(VehicleInteriorExteriorColor exteriorColor)
         {
             throw new NotImplementedException();
@@ -44,11 +49,6 @@ namespace RobotizeFacebook.Pages.LoggedIn
         }
 
         public IApplyFilter Price(double? min = null, double? max = null)
-        {
-            throw new NotImplementedException();
-        }
-
-        public void Category(VehicleCategories categoryType)
         {
             throw new NotImplementedException();
         }

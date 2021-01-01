@@ -1,6 +1,6 @@
 ﻿using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
-using RobotizeFacebook.Grid;
+using RobotizeFacebook.Pages.LoggedIn;
 using System;
 
 namespace RobotizeToolbox.Controls
