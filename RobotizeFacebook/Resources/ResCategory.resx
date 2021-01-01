@@ -183,9 +183,6 @@
   <data name="Powersports" xml:space="preserve">
     <value>Powersports</value>
   </data>
-  <data name="Groups" xml:space="preserve">
-    <value>Groups</value>
-  </data>
   <data name="RVCampers" xml:space="preserve">
     <value>RV / Campers</value>
   </data>
@@ -278,9 +275,6 @@
   </data>
   <data name="Green" xml:space="preserve">
     <value>Green</value>
-  </data>
-  <data name="Other" xml:space="preserve">
-    <value>Other</value>
   </data>
   <data name="All" xml:space="preserve">
     <value>All</value>
@@ -414,9 +408,6 @@
   <data name="Mini" xml:space="preserve">
     <value>Mini</value>
   </data>
-  <data name="Fisker" xml:space="preserve">
-    <value>Fisker</value>
-  </data>
   <data name="Mitsubishi" xml:space="preserve">
     <value>Mitsubishi</value>
   </data>
@@ -510,15 +501,11 @@
   <data name="YearOldestFirst" xml:space="preserve">
     <value>Year: Oldest first</value>
   </data>
-
   <data name="CarsAndTrucks" xml:space="preserve">
     <value>Cars &amp; trucks</value>
   </data>
   <data name="Motorcycles" xml:space="preserve">
     <value>Motorcycles</value>
-  </data>
-  <data name="Powersports" xml:space="preserve">
-    <value>Powersports</value>
   </data>
   <data name="RVSAndCampers" xml:space="preserve">
     <value>RVs &amp; Campers</value>
@@ -528,9 +515,6 @@
   </data>
   <data name="CommercialAndIndustrial" xml:space="preserve">
     <value>Commercial &amp; Industrial</value>
-  </data>
-  <data name="Trailers" xml:space="preserve">
-    <value>Trailers</value>
   </data>
   <data name="Automatic" xml:space="preserve">
     <value>Automatic</value>
@@ -579,5 +563,188 @@
   </data>
   <data name="SquareMeters" xml:space="preserve">
     <value>Square meters</value>
+  </data>
+  <data name="PowersportVehicles" xml:space="preserve">
+    <value>Powersport Vehicles</value>
+  </data>
+  <data name="Trucks" xml:space="preserve">
+    <value>Trucks</value>
+  </data>
+  <data name="Sailboats" xml:space="preserve">
+    <value>Sailboats</value>
+  </data>
+  <data name="Convertibles" xml:space="preserve">
+    <value>Convertibles</value>
+  </data>
+  <data name="Coupes" xml:space="preserve">
+    <value>Coupes</value>
+  </data>
+  <data name="Hatchbacks" xml:space="preserve">
+    <value>Hatchbacks</value>
+  </data>
+  <data name="Minivans" xml:space="preserve">
+    <value>Minivans</value>
+  </data>
+  <data name="SUVs" xml:space="preserve">
+    <value>SUVs</value>
+  </data>
+  <data name="Sedans" xml:space="preserve">
+    <value>Sedans</value>
+  </data>
+  <data name="StationWagons" xml:space="preserve">
+    <value>Station Wagons</value>
+  </data>
+  <data name="HondaCBRMotorcycles" xml:space="preserve">
+    <value>Honda CBR Motorcycles</value>
+  </data>
+  <data name="HondaCRMotorcycles" xml:space="preserve">
+    <value>Honda CR Motorcycles</value>
+  </data>
+  <data name="HondaCRFMotorcycles" xml:space="preserve">
+    <value>Honda CRF Motorcycles</value>
+  </data>
+  <data name="HondaShadowMotorcycles" xml:space="preserve">
+    <value>Honda Shadow Motorcycles</value>
+  </data>
+  <data name="HondaXRMotorcycles" xml:space="preserve">
+    <value>Honda XR Motorcycles</value>
+  </data>
+  <data name="KawasakiKXMotorcycles" xml:space="preserve">
+    <value>Kawasaki KX Motorcycles</value>
+  </data>
+  <data name="KawasakiNinjaMotorcycles" xml:space="preserve">
+    <value>Kawasaki Ninja Motorcycles</value>
+  </data>
+  <data name="MotorScooters" xml:space="preserve">
+    <value>Motor Scooters</value>
+  </data>
+  <data name="SuzukiGSXRMotorcycles" xml:space="preserve">
+    <value>Suzuki GSX-R Motorcycles</value>
+  </data>
+  <data name="YamahaVStarMotorcycles" xml:space="preserve">
+    <value>Yamaha V Star Motorcycles</value>
+  </data>
+  <data name="YamahaYZMotorcycles" xml:space="preserve">
+    <value>Yamaha YZ Motorcycles</value>
+  </data>
+  <data name="YamahaYZ250FMotorcycles" xml:space="preserve">
+    <value>Yamaha YZ250F Motorcycles</value>
+  </data>
+  <data name="YamahaYZFMotorcycles" xml:space="preserve">
+    <value>Yamaha YZF Motorcycles</value>
+  </data>
+  <data name="YamahaYzfr" xml:space="preserve">
+    <value>Yamaha Yzfr</value>
+  </data>
+  <data name="ATVsFourWheelers" xml:space="preserve">
+    <value>ATVs / Four Wheelers</value>
+  </data>
+  <data name="DirtBikes" xml:space="preserve">
+    <value>Dirt Bikes</value>
+  </data>
+  <data name="GoKarts" xml:space="preserve">
+    <value>Go Karts</value>
+  </data>
+  <data name="GolfCarts" xml:space="preserve">
+    <value>Golf Carts</value>
+  </data>
+  <data name="JetSkis" xml:space="preserve">
+    <value>Jet Skis</value>
+  </data>
+  <data name="Snowmobiles" xml:space="preserve">
+    <value>Snowmobiles</value>
+  </data>
+  <data name="ChevroletS10Trucks" xml:space="preserve">
+    <value>Chevrolet S-10 Trucks</value>
+  </data>
+  <data name="ChevroletSilverado1500Trucks" xml:space="preserve">
+    <value>Chevrolet Silverado 1500 Trucks</value>
+  </data>
+  <data name="ChevroletSilverado2500Trucks" xml:space="preserve">
+    <value>Chevrolet Silverado 2500 Trucks</value>
+  </data>
+  <data name="DodgeRam1500Trucks" xml:space="preserve">
+    <value>Dodge Ram 1500 Trucks</value>
+  </data>
+  <data name="DodgePowerWagons" xml:space="preserve">
+    <value>Dodge Power Wagons</value>
+  </data>
+  <data name="FordF150Trucks" xml:space="preserve">
+    <value>Ford F-150 Trucks</value>
+  </data>
+  <data name="FordF250SuperDutyTrucks" xml:space="preserve">
+    <value>Ford F-250 Super Duty Trucks</value>
+  </data>
+  <data name="FordF350Trucks" xml:space="preserve">
+    <value>Ford F-350 Trucks</value>
+  </data>
+  <data name="FordRangerTrucks" xml:space="preserve">
+    <value>Ford Ranger Trucks</value>
+  </data>
+  <data name="GMCSierraTrucks" xml:space="preserve">
+    <value>GMC Sierra Trucks</value>
+  </data>
+  <data name="ToyotaTacomaTrucks" xml:space="preserve">
+    <value>Toyota Tacoma Trucks</value>
+  </data>
+  <data name="ApartmentsForRent" xml:space="preserve">
+    <value>Apartments for Rent</value>
+  </data>
+  <data name="CondosForRent" xml:space="preserve">
+    <value>Condos for Rent</value>
+  </data>
+  <data name="HousesForRent" xml:space="preserve">
+    <value>Houses for Rent</value>
+  </data>
+  <data name="TownhousesForRent" xml:space="preserve">
+    <value>Townhouses for Rent</value>
+  </data>
+  <data name="FourBedroomApartments" xml:space="preserve">
+    <value>4 Bedroom Apartments</value>
+  </data>
+  <data name="FourBedroomCondos" xml:space="preserve">
+    <value>4 Bedroom Condos</value>
+  </data>
+  <data name="FourBedroomHouses" xml:space="preserve">
+    <value>4 Bedroom Houses</value>
+  </data>
+  <data name="FourBedroomTownhouses" xml:space="preserve">
+    <value>4 Bedroom Townhouses</value>
+  </data>
+  <data name="OneBedroomApartments" xml:space="preserve">
+    <value>1 Bedroom Apartments</value>
+  </data>
+  <data name="OneBedroomCondos" xml:space="preserve">
+    <value>1 Bedroom Condos</value>
+  </data>
+  <data name="OneBedroomHouses" xml:space="preserve">
+    <value>1 Bedroom Houses</value>
+  </data>
+  <data name="OneBedroomTownhouses" xml:space="preserve">
+    <value>1 Bedroom Townhouses</value>
+  </data>
+  <data name="ThreeBedroomApartments" xml:space="preserve">
+    <value>3 Bedroom Apartments</value>
+  </data>
+  <data name="ThreeBedroomCondos" xml:space="preserve">
+    <value>3 Bedroom Condos</value>
+  </data>
+  <data name="ThreeBedroomHouses" xml:space="preserve">
+    <value>3 Bedroom Houses</value>
+  </data>
+  <data name="ThreeBedroomTownhouses" xml:space="preserve">
+    <value>3 Bedroom Townhouses</value>
+  </data>
+  <data name="TwoBedroomApartments" xml:space="preserve">
+    <value>2 Bedroom Apartments</value>
+  </data>
+  <data name="TwoBedroomCondos" xml:space="preserve">
+    <value>2 Bedroom Condos</value>
+  </data>
+  <data name="TwoBedroomHouses" xml:space="preserve">
+    <value>2 Bedroom Houses</value>
+  </data>
+  <data name="TwoBedroomTownhouses" xml:space="preserve">
+    <value>2 Bedroom Townhouses</value>
   </data>
 </root>

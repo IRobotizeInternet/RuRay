@@ -160,6 +160,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Apartments for Rent.
+        /// </summary>
+        internal static string ApartmentsForRent {
+            get {
+                return ResourceManager.GetString("ApartmentsForRent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Apparel.
         /// </summary>
         internal static string Apparel {
@@ -174,6 +183,15 @@ namespace RobotizeFacebook.Resources {
         internal static string AstonMartin {
             get {
                 return ResourceManager.GetString("AstonMartin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to ATVs / Four Wheelers.
+        /// </summary>
+        internal static string ATVsFourWheelers {
+            get {
+                return ResourceManager.GetString("ATVsFourWheelers", resourceCulture);
             }
         }
         
@@ -331,6 +349,33 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Chevrolet S-10 Trucks.
+        /// </summary>
+        internal static string ChevroletS10Trucks {
+            get {
+                return ResourceManager.GetString("ChevroletS10Trucks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Chevrolet Silverado 1500 Trucks.
+        /// </summary>
+        internal static string ChevroletSilverado1500Trucks {
+            get {
+                return ResourceManager.GetString("ChevroletSilverado1500Trucks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Chevrolet Silverado 2500 Trucks.
+        /// </summary>
+        internal static string ChevroletSilverado2500Trucks {
+            get {
+                return ResourceManager.GetString("ChevroletSilverado2500Trucks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Chrysler.
         /// </summary>
         internal static string Chrysler {
@@ -367,6 +412,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Condos for Rent.
+        /// </summary>
+        internal static string CondosForRent {
+            get {
+                return ResourceManager.GetString("CondosForRent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Convertible.
         /// </summary>
         internal static string Convertible {
@@ -376,11 +430,29 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Convertibles.
+        /// </summary>
+        internal static string Convertibles {
+            get {
+                return ResourceManager.GetString("Convertibles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Coupe.
         /// </summary>
         internal static string Coupe {
             get {
                 return ResourceManager.GetString("Coupe", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Coupes.
+        /// </summary>
+        internal static string Coupes {
+            get {
+                return ResourceManager.GetString("Coupes", resourceCulture);
             }
         }
         
@@ -421,6 +493,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Dirt Bikes.
+        /// </summary>
+        internal static string DirtBikes {
+            get {
+                return ResourceManager.GetString("DirtBikes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Distance: Farthest first.
         /// </summary>
         internal static string DistanceFarthestFirst {
@@ -435,6 +516,24 @@ namespace RobotizeFacebook.Resources {
         internal static string DistanceNearestFirst {
             get {
                 return ResourceManager.GetString("DistanceNearestFirst", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dodge Power Wagons.
+        /// </summary>
+        internal static string DodgePowerWagons {
+            get {
+                return ResourceManager.GetString("DodgePowerWagons", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Dodge Ram 1500 Trucks.
+        /// </summary>
+        internal static string DodgeRam1500Trucks {
+            get {
+                return ResourceManager.GetString("DodgeRam1500Trucks", resourceCulture);
             }
         }
         
@@ -520,6 +619,78 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Ford F-150 Trucks.
+        /// </summary>
+        internal static string FordF150Trucks {
+            get {
+                return ResourceManager.GetString("FordF150Trucks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ford F-250 Super Duty Trucks.
+        /// </summary>
+        internal static string FordF250SuperDutyTrucks {
+            get {
+                return ResourceManager.GetString("FordF250SuperDutyTrucks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ford F-350 Trucks.
+        /// </summary>
+        internal static string FordF350Trucks {
+            get {
+                return ResourceManager.GetString("FordF350Trucks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ford Ranger Trucks.
+        /// </summary>
+        internal static string FordRangerTrucks {
+            get {
+                return ResourceManager.GetString("FordRangerTrucks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 4 Bedroom Apartments.
+        /// </summary>
+        internal static string FourBedroomApartments {
+            get {
+                return ResourceManager.GetString("FourBedroomApartments", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 4 Bedroom Condos.
+        /// </summary>
+        internal static string FourBedroomCondos {
+            get {
+                return ResourceManager.GetString("FourBedroomCondos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 4 Bedroom Houses.
+        /// </summary>
+        internal static string FourBedroomHouses {
+            get {
+                return ResourceManager.GetString("FourBedroomHouses", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 4 Bedroom Townhouses.
+        /// </summary>
+        internal static string FourBedroomTownhouses {
+            get {
+                return ResourceManager.GetString("FourBedroomTownhouses", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Free Stuff.
         /// </summary>
         internal static string FreeStuff {
@@ -574,11 +745,38 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to GMC Sierra Trucks.
+        /// </summary>
+        internal static string GMCSierraTrucks {
+            get {
+                return ResourceManager.GetString("GMCSierraTrucks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Go Karts.
+        /// </summary>
+        internal static string GoKarts {
+            get {
+                return ResourceManager.GetString("GoKarts", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Gold.
         /// </summary>
         internal static string Gold {
             get {
                 return ResourceManager.GetString("Gold", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Golf Carts.
+        /// </summary>
+        internal static string GolfCarts {
+            get {
+                return ResourceManager.GetString("GolfCarts", resourceCulture);
             }
         }
         
@@ -615,6 +813,15 @@ namespace RobotizeFacebook.Resources {
         internal static string Hatchback {
             get {
                 return ResourceManager.GetString("Hatchback", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hatchbacks.
+        /// </summary>
+        internal static string Hatchbacks {
+            get {
+                return ResourceManager.GetString("Hatchbacks", resourceCulture);
             }
         }
         
@@ -664,11 +871,65 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Honda CBR Motorcycles.
+        /// </summary>
+        internal static string HondaCBRMotorcycles {
+            get {
+                return ResourceManager.GetString("HondaCBRMotorcycles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Honda CRF Motorcycles.
+        /// </summary>
+        internal static string HondaCRFMotorcycles {
+            get {
+                return ResourceManager.GetString("HondaCRFMotorcycles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Honda CR Motorcycles.
+        /// </summary>
+        internal static string HondaCRMotorcycles {
+            get {
+                return ResourceManager.GetString("HondaCRMotorcycles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Honda Shadow Motorcycles.
+        /// </summary>
+        internal static string HondaShadowMotorcycles {
+            get {
+                return ResourceManager.GetString("HondaShadowMotorcycles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Honda XR Motorcycles.
+        /// </summary>
+        internal static string HondaXRMotorcycles {
+            get {
+                return ResourceManager.GetString("HondaXRMotorcycles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to House.
         /// </summary>
         internal static string House {
             get {
                 return ResourceManager.GetString("House", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Houses for Rent.
+        /// </summary>
+        internal static string HousesForRent {
+            get {
+                return ResourceManager.GetString("HousesForRent", resourceCulture);
             }
         }
         
@@ -723,6 +984,33 @@ namespace RobotizeFacebook.Resources {
         internal static string Jeep {
             get {
                 return ResourceManager.GetString("Jeep", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Jet Skis.
+        /// </summary>
+        internal static string JetSkis {
+            get {
+                return ResourceManager.GetString("JetSkis", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Kawasaki KX Motorcycles.
+        /// </summary>
+        internal static string KawasakiKXMotorcycles {
+            get {
+                return ResourceManager.GetString("KawasakiKXMotorcycles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Kawasaki Ninja Motorcycles.
+        /// </summary>
+        internal static string KawasakiNinjaMotorcycles {
+            get {
+                return ResourceManager.GetString("KawasakiNinjaMotorcycles", resourceCulture);
             }
         }
         
@@ -880,6 +1168,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Minivans.
+        /// </summary>
+        internal static string Minivans {
+            get {
+                return ResourceManager.GetString("Minivans", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Mitsubishi.
         /// </summary>
         internal static string Mitsubishi {
@@ -903,6 +1200,15 @@ namespace RobotizeFacebook.Resources {
         internal static string Motorcycles {
             get {
                 return ResourceManager.GetString("Motorcycles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Motor Scooters.
+        /// </summary>
+        internal static string MotorScooters {
+            get {
+                return ResourceManager.GetString("MotorScooters", resourceCulture);
             }
         }
         
@@ -948,6 +1254,42 @@ namespace RobotizeFacebook.Resources {
         internal static string Oldsmobile {
             get {
                 return ResourceManager.GetString("Oldsmobile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1 Bedroom Apartments.
+        /// </summary>
+        internal static string OneBedroomApartments {
+            get {
+                return ResourceManager.GetString("OneBedroomApartments", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1 Bedroom Condos.
+        /// </summary>
+        internal static string OneBedroomCondos {
+            get {
+                return ResourceManager.GetString("OneBedroomCondos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1 Bedroom Houses.
+        /// </summary>
+        internal static string OneBedroomHouses {
+            get {
+                return ResourceManager.GetString("OneBedroomHouses", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 1 Bedroom Townhouses.
+        /// </summary>
+        internal static string OneBedroomTownhouses {
+            get {
+                return ResourceManager.GetString("OneBedroomTownhouses", resourceCulture);
             }
         }
         
@@ -1029,6 +1371,15 @@ namespace RobotizeFacebook.Resources {
         internal static string Powersports {
             get {
                 return ResourceManager.GetString("Powersports", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Powersport Vehicles.
+        /// </summary>
+        internal static string PowersportVehicles {
+            get {
+                return ResourceManager.GetString("PowersportVehicles", resourceCulture);
             }
         }
         
@@ -1141,6 +1492,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Sailboats.
+        /// </summary>
+        internal static string Sailboats {
+            get {
+                return ResourceManager.GetString("Sailboats", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Saturn.
         /// </summary>
         internal static string Saturn {
@@ -1168,6 +1528,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Sedans.
+        /// </summary>
+        internal static string Sedans {
+            get {
+                return ResourceManager.GetString("Sedans", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Silver.
         /// </summary>
         internal static string Silver {
@@ -1191,6 +1560,15 @@ namespace RobotizeFacebook.Resources {
         internal static string Smart {
             get {
                 return ResourceManager.GetString("Smart", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Snowmobiles.
+        /// </summary>
+        internal static string Snowmobiles {
+            get {
+                return ResourceManager.GetString("Snowmobiles", resourceCulture);
             }
         }
         
@@ -1231,6 +1609,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Station Wagons.
+        /// </summary>
+        internal static string StationWagons {
+            get {
+                return ResourceManager.GetString("StationWagons", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Subaru.
         /// </summary>
         internal static string Subaru {
@@ -1249,11 +1636,29 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to SUVs.
+        /// </summary>
+        internal static string SUVs {
+            get {
+                return ResourceManager.GetString("SUVs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Suzuki.
         /// </summary>
         internal static string Suzuki {
             get {
                 return ResourceManager.GetString("Suzuki", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Suzuki GSX-R Motorcycles.
+        /// </summary>
+        internal static string SuzukiGSXRMotorcycles {
+            get {
+                return ResourceManager.GetString("SuzukiGSXRMotorcycles", resourceCulture);
             }
         }
         
@@ -1276,6 +1681,42 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to 3 Bedroom Apartments.
+        /// </summary>
+        internal static string ThreeBedroomApartments {
+            get {
+                return ResourceManager.GetString("ThreeBedroomApartments", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 3 Bedroom Condos.
+        /// </summary>
+        internal static string ThreeBedroomCondos {
+            get {
+                return ResourceManager.GetString("ThreeBedroomCondos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 3 Bedroom Houses.
+        /// </summary>
+        internal static string ThreeBedroomHouses {
+            get {
+                return ResourceManager.GetString("ThreeBedroomHouses", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 3 Bedroom Townhouses.
+        /// </summary>
+        internal static string ThreeBedroomTownhouses {
+            get {
+                return ResourceManager.GetString("ThreeBedroomTownhouses", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Townhouse.
         /// </summary>
         internal static string Townhouse {
@@ -1285,11 +1726,29 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Townhouses for Rent.
+        /// </summary>
+        internal static string TownhousesForRent {
+            get {
+                return ResourceManager.GetString("TownhousesForRent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Toyota.
         /// </summary>
         internal static string Toyota {
             get {
                 return ResourceManager.GetString("Toyota", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Toyota Tacoma Trucks.
+        /// </summary>
+        internal static string ToyotaTacomaTrucks {
+            get {
+                return ResourceManager.GetString("ToyotaTacomaTrucks", resourceCulture);
             }
         }
         
@@ -1321,11 +1780,56 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Trucks.
+        /// </summary>
+        internal static string Trucks {
+            get {
+                return ResourceManager.GetString("Trucks", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Turquoise.
         /// </summary>
         internal static string Turquoise {
             get {
                 return ResourceManager.GetString("Turquoise", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2 Bedroom Apartments.
+        /// </summary>
+        internal static string TwoBedroomApartments {
+            get {
+                return ResourceManager.GetString("TwoBedroomApartments", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2 Bedroom Condos.
+        /// </summary>
+        internal static string TwoBedroomCondos {
+            get {
+                return ResourceManager.GetString("TwoBedroomCondos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2 Bedroom Houses.
+        /// </summary>
+        internal static string TwoBedroomHouses {
+            get {
+                return ResourceManager.GetString("TwoBedroomHouses", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to 2 Bedroom Townhouses.
+        /// </summary>
+        internal static string TwoBedroomTownhouses {
+            get {
+                return ResourceManager.GetString("TwoBedroomTownhouses", resourceCulture);
             }
         }
         
@@ -1371,6 +1875,51 @@ namespace RobotizeFacebook.Resources {
         internal static string White {
             get {
                 return ResourceManager.GetString("White", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yamaha V Star Motorcycles.
+        /// </summary>
+        internal static string YamahaVStarMotorcycles {
+            get {
+                return ResourceManager.GetString("YamahaVStarMotorcycles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yamaha YZ250F Motorcycles.
+        /// </summary>
+        internal static string YamahaYZ250FMotorcycles {
+            get {
+                return ResourceManager.GetString("YamahaYZ250FMotorcycles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yamaha YZF Motorcycles.
+        /// </summary>
+        internal static string YamahaYZFMotorcycles {
+            get {
+                return ResourceManager.GetString("YamahaYZFMotorcycles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yamaha Yzfr.
+        /// </summary>
+        internal static string YamahaYzfr {
+            get {
+                return ResourceManager.GetString("YamahaYzfr", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yamaha YZ Motorcycles.
+        /// </summary>
+        internal static string YamahaYZMotorcycles {
+            get {
+                return ResourceManager.GetString("YamahaYZMotorcycles", resourceCulture);
             }
         }
         

@@ -29,7 +29,7 @@ namespace RobotizeToolbox.Enums
     {
         public static string Boat => ResCategory.Boat;
         public static string Cars => ResCategory.Cars;
-        public static string Motercycles => ResCategory.Motercycles;
+        public static string Motercycles => ResCategory.Motorcycles;
         public static string Powersports => ResCategory.Powersports;
         public static string RVCampers => ResCategory.RVCampers;
         public static string Trailers => ResCategory.Trailers;

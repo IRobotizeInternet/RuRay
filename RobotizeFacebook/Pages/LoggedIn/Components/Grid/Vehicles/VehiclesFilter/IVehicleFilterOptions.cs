@@ -1,8 +1,7 @@
 ﻿
-namespace RobotizeFacebook.Grid
+namespace RobotizeFacebook.Pages.LoggedIn
 {
     public interface IVehicleFilterOptions : 
-        IFilterOptions,
         IVehicleSort,
         IPrice,
         IVehicleType,
@@ -14,7 +13,6 @@ namespace RobotizeFacebook.Grid
         IVehicleExteriorColor,
         IVehicleInteriorColor,
         IVehicleTransmissionType
-
     {
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace RobotizeFacebook.Grid
+namespace RobotizeFacebook.Pages.LoggedIn
 {
     public interface IBodyStyle<TBodyStyle> where TBodyStyle: struct, IConvertible
     {

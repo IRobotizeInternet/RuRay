@@ -3,7 +3,7 @@ using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
 
-namespace RobotizeFacebook.Grid
+namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class FilterFactory
     {

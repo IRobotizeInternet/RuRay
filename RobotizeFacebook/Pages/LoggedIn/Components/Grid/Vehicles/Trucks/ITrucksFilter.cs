@@ -1,6 +1,6 @@
-﻿namespace RobotizeFacebook.Grid
+﻿namespace RobotizeFacebook.Pages.LoggedIn
 {
-    public interface ITrucksFilter : IFilter<ITrucksFilterOptions>
+    public interface ITrucksFilter : IFilter<ITrucksFilterOptions>, ICategory<TruckCategory>
     {
     }
 }

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace RobotizeFacebook.Grid
+namespace RobotizeFacebook.Pages.LoggedIn
 {
     public interface IModel<TModel> where TModel : struct, IConvertible
     {

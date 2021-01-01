@@ -1,8 +1,9 @@
 ﻿using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using System;
+using System.Collections.Generic;
 
-namespace RobotizeFacebook.Grid
+namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class CarsFilter : BaseFilter, ICarsFilter, ICarsFilterOptions
     {
@@ -11,6 +12,16 @@ namespace RobotizeFacebook.Grid
         }
 
         ICarsFilterOptions IFilter<ICarsFilterOptions>.FilterBy => throw new NotImplementedException();
+
+        public void Category(CarCategory categoryType)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<string> GetAllCategories()
+        {
+            throw new NotImplementedException();
+        }
 
         public IFilterOptions ItemCondition(ItemCondition vehicleType)
         {

@@ -165,10 +165,21 @@
     <Compile Include="Pages\LoggedIn\Components\Grid\FilterOptions\IType.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\FilterOptions\IYear.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\IApplyFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ICategory.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\IFilter.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\IFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\ApartmentsForRent\ApartmentsForRentFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\ApartmentsForRent\IApartmentsForRentFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\ApartmentsForRent\IApartmentsForRentFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\ApartmentsForRent\IApartmentsForRentOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\CondosForRent\CondosForRentFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\CondosForRent\ICondosForRentFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\CondosForRent\ICondosForRentFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\CondosForRent\ICondosForRentOptions.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\Enum\BathroomCount.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\Enum\BedroomCount.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\Enum\PropertyRentalCategory.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\Enum\PropertyRentalsSortOptions.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\Enum\RentalType.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\HousesForRent\HousesForRentFilter.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\HousesForRent\IHousesForRentFilter.cs" />
@@ -182,6 +193,10 @@
     <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\PropertyRentalsFilter\IPropertyRentalsFilterOptions.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\PropertyRentalsFilter\IPropertyRentalsOptions.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\PropertyRentalsFilter\PropertyRentalsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\TownhousesForRent\TownhousesForRentFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\TownhousesForRent\ITownhousesForRentFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\TownhousesForRent\ITownhousesForRentFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\TownhousesForRent\ITownhousesForRentOptions.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\BoatsFilter\BoatFilter.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\BoatsFilter\IBoatFilter.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\BoatsFilter\IBoatsFilterOptions.cs" />
@@ -192,20 +207,21 @@
     <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\CarsFilter\ICarsOptions.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\Enum\ItemCondition.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\Enum\VehicleBodyStyle.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\Enum\VehicleCategory.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\Enum\VehicleInteriorExteriorColor.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\Enum\VehicleMake.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\Enum\VehicleModel.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\Enum\VehicleSortOption.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\Enum\VehicleTransmissionType.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\Enum\VehicleType.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\IVehicleBodyStyle.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\IVehicleExteriorColor.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\IVehicleInteriorColor.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\IVehicleMake.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\IVehicleModel.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\IVehicleSort.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\IVehicleTransmissionType.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\IVehicleType.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\Filters\IVehicleBodyStyle.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\Filters\IVehicleExteriorColor.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\Filters\IVehicleInteriorColor.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\Filters\IVehicleMake.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\Filters\IVehicleModel.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\Filters\IVehicleSort.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\Filters\IVehicleTransmissionType.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\Filters\IVehicleType.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\MotorcyclesFilter\IMotorcyclesFilter.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\MotorcyclesFilter\IMotorcyclesFilterOptions.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\MotorcyclesFilter\IMotorcyclesOptions.cs" />
@@ -443,9 +459,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Pages\LoggedIn\Components\Grid\PropertyRentals\ApartmentsForRent\" />
-    <Folder Include="Pages\LoggedIn\Components\Grid\PropertyRentals\CondosForRent\" />
-    <Folder Include="Pages\LoggedIn\Components\Grid\PropertyRentals\TownhousesForRent\" />
     <Folder Include="Pages\LoggedIn\Components\Grid\RadioButton\" />
     <Folder Include="Pages\LoggedIn\Components\Grid\Textbox\" />
     <Folder Include="Pages\LoggedIn\Home\HomeHeader\Right\Create\" />

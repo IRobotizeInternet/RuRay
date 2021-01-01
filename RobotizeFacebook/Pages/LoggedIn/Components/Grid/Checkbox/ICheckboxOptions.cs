@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace RobotizeFacebook.Grid
+namespace RobotizeFacebook.Pages.LoggedIn
 {
     public interface ICheckboxOption: IFilterOptions, IFilter<ICheckboxFilterOptions>
     {

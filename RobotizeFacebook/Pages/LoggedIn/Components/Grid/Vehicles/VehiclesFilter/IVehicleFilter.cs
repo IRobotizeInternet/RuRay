@@ -1,6 +1,7 @@
-﻿namespace RobotizeFacebook.Grid
+﻿
+namespace RobotizeFacebook.Pages.LoggedIn
 {
-    public interface IVehicleFilter: IFilter<IVehicleFilterOptions>
+    public interface IVehicleFilter: IFilter<IVehicleFilterOptions>, ICategory<VehicleCategory>
     {
 
     }

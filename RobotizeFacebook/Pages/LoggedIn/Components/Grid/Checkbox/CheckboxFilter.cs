@@ -7,7 +7,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace RobotizeFacebook.Grid
+namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class CheckboxFilter: BaseFilter, ICheckboxFilterOptions, ICheckboxFilter
     {

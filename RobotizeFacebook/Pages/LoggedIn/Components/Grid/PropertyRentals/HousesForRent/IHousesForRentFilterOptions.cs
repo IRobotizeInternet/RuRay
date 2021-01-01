@@ -1,13 +1,10 @@
 ﻿
-namespace RobotizeFacebook.Grid
+namespace RobotizeFacebook.Pages.LoggedIn
 {
-    public interface IHousesForRentFilterOptions : 
+    public interface IHousesForRentFilterOptions :
         IFilterOptions,
-        ISortBy<VehicleSortOption>,
-        IPrice,
-        IBedroomsCount<BathroomCount>,
-        IBathroomsCount<BathroomCount>,
-        IRentalType<RentalType>
+        ISortBy<PropertyRentalsSortOption>,
+        IPrice
     {
     }
 }

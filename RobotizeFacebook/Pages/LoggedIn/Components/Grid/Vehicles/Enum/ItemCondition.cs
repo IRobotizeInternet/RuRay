@@ -1,6 +1,6 @@
 ﻿using RobotizeToolbox.CustomAttributes;
 using RobotizeFacebook.Resources;
-namespace RobotizeFacebook.Grid
+namespace RobotizeFacebook.Pages.LoggedIn
 {
     public enum ItemCondition
     {

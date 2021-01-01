@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace RobotizeFacebook.Grid
+namespace RobotizeFacebook.Pages.LoggedIn
 {
     public interface IBedroomsCount<TBedroomCount> where TBedroomCount: struct, IConvertible
     {

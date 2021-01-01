@@ -1,9 +1,9 @@
 ﻿using System;
 
-namespace RobotizeFacebook.Grid
+namespace RobotizeFacebook.Pages.LoggedIn
 {
     public interface IMake<TMake> where TMake : struct, IConvertible
     {
-        IApplyFilter SortBy(TMake criteria);
+        IApplyFilter Make(TMake criteria);
     }
 }

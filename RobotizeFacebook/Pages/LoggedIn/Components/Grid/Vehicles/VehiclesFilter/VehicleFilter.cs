@@ -1,8 +1,9 @@
 ﻿using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using System;
+using System.Collections.Generic;
 
-namespace RobotizeFacebook.Grid
+namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class VehicleFilter : BaseFilter, IVehicleFilter, IVehicleFilterOptions
     {
@@ -22,6 +23,16 @@ namespace RobotizeFacebook.Grid
             throw new NotImplementedException();
         }
 
+        public IEnumerable<string> GetAllCategories()
+        {
+            throw new NotImplementedException();
+        }
+
+        public IApplyFilter Make(VehicleMake criteria)
+        {
+            throw new NotImplementedException();
+        }
+
         public IApplyFilter Milage(double? min = null, double? max = null)
         {
             throw new NotImplementedException();
@@ -37,12 +48,12 @@ namespace RobotizeFacebook.Grid
             throw new NotImplementedException();
         }
 
-        public IApplyFilter SortBy(VehicleSortOption criteria)
+        public void Category(VehicleCategories categoryType)
         {
             throw new NotImplementedException();
         }
 
-        public IApplyFilter SortBy(VehicleMake criteria)
+        public IApplyFilter SortBy(VehicleSortOption criteria)
         {
             throw new NotImplementedException();
         }

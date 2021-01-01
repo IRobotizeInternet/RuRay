@@ -1,7 +1,7 @@
 ﻿using RobotizeFacebook.Resources;
 using RobotizeToolbox.CustomAttributes;
 
-namespace RobotizeFacebook.Grid
+namespace RobotizeFacebook.Pages.LoggedIn
 {
     public enum BedroomCount
     {

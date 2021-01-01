@@ -2,7 +2,7 @@
 using OpenQA.Selenium.Support.UI;
 using System;
 
-namespace RobotizeFacebook.Grid
+namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class HousesForRentFilter : BaseFilter, IHousesForRentFilter, IHousesForRentFilterOptions
     {

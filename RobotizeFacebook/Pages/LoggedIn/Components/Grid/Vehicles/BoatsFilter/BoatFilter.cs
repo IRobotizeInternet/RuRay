@@ -1,8 +1,9 @@
 ﻿using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using System;
+using System.Collections.Generic;
 
-namespace RobotizeFacebook.Grid
+namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class BoatsFilter : BaseFilter, IBoatFilter, IBoatsFilterOptions
     {
@@ -12,7 +13,17 @@ namespace RobotizeFacebook.Grid
 
         public IBoatsFilterOptions FilterBy => throw new NotImplementedException();
 
+        public void Category(BoatCategory categoryType)
+        {
+            throw new NotImplementedException();
+        }
+
         public IApplyFilter ExteriorColor(VehicleInteriorExteriorColor exteriorColor)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<string> GetAllCategories()
         {
             throw new NotImplementedException();
         }

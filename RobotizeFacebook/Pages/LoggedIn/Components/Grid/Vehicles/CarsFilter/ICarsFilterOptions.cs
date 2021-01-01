@@ -1,4 +1,4 @@
-﻿namespace RobotizeFacebook.Grid
+﻿namespace RobotizeFacebook.Pages.LoggedIn
 {
     public interface ICarsFilterOptions:
         IFilterOptions,
