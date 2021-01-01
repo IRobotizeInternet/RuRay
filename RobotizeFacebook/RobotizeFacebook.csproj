@@ -146,6 +146,12 @@
     <Compile Include="CryptoServices\Crypto.cs" />
     <Compile Include="CryptoServices\CryptoServiceForString.cs" />
     <Compile Include="Pages\LoggedIn\Components\CreatePost\DialogSpecificFriends.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\ApparelFilter\IApparelFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\ApparelFilter\IApparelFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\ApparelFilter\IApparelOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\ApparelFilter\ApparelFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\Enum\ApparelCategory.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\Enum\ItemCondition.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\BaseFilter.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Category.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Checkbox\CheckboxFilter.cs" />
