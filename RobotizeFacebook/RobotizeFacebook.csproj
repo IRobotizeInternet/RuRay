@@ -394,6 +394,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ResBabyAndToddlerSize.resx</DependentUpon>
     </Compile>
+    <Compile Include="Resources\ResBodyStyle.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResBodyStyle.resx</DependentUpon>
+    </Compile>
     <Compile Include="Resources\ResBrand.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -539,6 +544,10 @@
     <EmbeddedResource Include="Resources\ResBabyAndToddlerSize.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ResBabyAndToddlerSize.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ResBodyStyle.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResBodyStyle.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\ResBrand.resx">
       <Generator>ResXFileCodeGenerator</Generator>

@@ -189,33 +189,6 @@
   <data name="Trailers" xml:space="preserve">
     <value>Trailers</value>
   </data>
-  <data name="Truck" xml:space="preserve">
-    <value>Truck</value>
-  </data>
-  <data name="Convertible" xml:space="preserve">
-    <value>Convertible</value>
-  </data>
-  <data name="Coupe" xml:space="preserve">
-    <value>Coupe</value>
-  </data>
-  <data name="Hatchback" xml:space="preserve">
-    <value>Hatchback</value>
-  </data>
-  <data name="Minivan" xml:space="preserve">
-    <value>Minivan</value>
-  </data>
-  <data name="Sedan" xml:space="preserve">
-    <value>Sedan</value>
-  </data>
-  <data name="StationWagon" xml:space="preserve">
-    <value>Station wagon</value>
-  </data>
-  <data name="SUV" xml:space="preserve">
-    <value>SUV</value>
-  </data>
-  <data name="SmallCar" xml:space="preserve">
-    <value>Small Car</value>
-  </data>
   <data name="All" xml:space="preserve">
     <value>All</value>
   </data>

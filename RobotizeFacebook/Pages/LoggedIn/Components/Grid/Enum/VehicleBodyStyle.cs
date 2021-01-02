@@ -5,25 +5,25 @@ namespace RobotizeFacebook.Pages.LoggedIn
 {
     public enum VehicleBodyStyle
     {
-        [LocalizedDescription(nameof(ResCategory.Convertible), typeof(ResCategory))]
+        [LocalizedDescription(nameof(ResBodyStyle.Convertible), typeof(ResBodyStyle))]
         Convertibles = 1,
-        [LocalizedDescription(nameof(ResCategory.Coupe), typeof(ResCategory))]
+        [LocalizedDescription(nameof(ResBodyStyle.Coupe), typeof(ResBodyStyle))]
         Coupe = 2,
-        [LocalizedDescription(nameof(ResCategory.Hatchback), typeof(ResCategory))]
+        [LocalizedDescription(nameof(ResBodyStyle.Hatchback), typeof(ResBodyStyle))]
         Hatchback = 3,
-        [LocalizedDescription(nameof(ResCategory.Minivan), typeof(ResCategory))]
+        [LocalizedDescription(nameof(ResBodyStyle.Minivan), typeof(ResBodyStyle))]
         Minivan = 4,
-        [LocalizedDescription(nameof(ResCategory.Sedan), typeof(ResCategory))]
+        [LocalizedDescription(nameof(ResBodyStyle.Sedan), typeof(ResBodyStyle))]
         Sedan = 5,
-        [LocalizedDescription(nameof(ResCategory.StationWagon), typeof(ResCategory))]
+        [LocalizedDescription(nameof(ResBodyStyle.StationWagon), typeof(ResBodyStyle))]
         StationWagon = 6,
-        [LocalizedDescription(nameof(ResCategory.SUV), typeof(ResCategory))]
+        [LocalizedDescription(nameof(ResBodyStyle.SUV), typeof(ResBodyStyle))]
         SUV = 7,
-        [LocalizedDescription(nameof(ResCategory.Truck), typeof(ResCategory))]
+        [LocalizedDescription(nameof(ResBodyStyle.Truck), typeof(ResBodyStyle))]
         Truck = 8,
-        [LocalizedDescription(nameof(ResCategory.SmallCar), typeof(ResCategory))]
+        [LocalizedDescription(nameof(ResBodyStyle.SmallCar), typeof(ResBodyStyle))]
         SmallCar = 9,
-        [LocalizedDescription(nameof(ResCategory.Other), typeof(ResCategory))]
+        [LocalizedDescription(nameof(ResBodyStyle.Other), typeof(ResBodyStyle))]
         Other = 10
     }
 }

@@ -1042,29 +1042,11 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Convertible.
-        /// </summary>
-        internal static string Convertible {
-            get {
-                return ResourceManager.GetString("Convertible", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Convertibles.
         /// </summary>
         internal static string Convertibles {
             get {
                 return ResourceManager.GetString("Convertibles", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Coupe.
-        /// </summary>
-        internal static string Coupe {
-            get {
-                return ResourceManager.GetString("Coupe", resourceCulture);
             }
         }
         
@@ -1726,15 +1708,6 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Hatchback.
-        /// </summary>
-        internal static string Hatchback {
-            get {
-                return ResourceManager.GetString("Hatchback", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Hatchbacks.
         /// </summary>
         internal static string Hatchbacks {
@@ -2374,15 +2347,6 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Minivan.
-        /// </summary>
-        internal static string Minivan {
-            get {
-                return ResourceManager.GetString("Minivan", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Minivans.
         /// </summary>
         internal static string Minivans {
@@ -2977,15 +2941,6 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Sedan.
-        /// </summary>
-        internal static string Sedan {
-            get {
-                return ResourceManager.GetString("Sedan", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Sedans.
         /// </summary>
         internal static string Sedans {
@@ -3009,15 +2964,6 @@ namespace RobotizeFacebook.Resources {
         internal static string SkateboardingGear {
             get {
                 return ResourceManager.GetString("SkateboardingGear", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Small Car.
-        /// </summary>
-        internal static string SmallCar {
-            get {
-                return ResourceManager.GetString("SmallCar", resourceCulture);
             }
         }
         
@@ -3103,15 +3049,6 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Station wagon.
-        /// </summary>
-        internal static string StationWagon {
-            get {
-                return ResourceManager.GetString("StationWagon", resourceCulture);
-            }
-        }
-        
-        /// <summary>
         ///   Looks up a localized string similar to Station Wagons.
         /// </summary>
         internal static string StationWagons {
@@ -3153,15 +3090,6 @@ namespace RobotizeFacebook.Resources {
         internal static string Sunglasses {
             get {
                 return ResourceManager.GetString("Sunglasses", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to SUV.
-        /// </summary>
-        internal static string SUV {
-            get {
-                return ResourceManager.GetString("SUV", resourceCulture);
             }
         }
         
@@ -3387,15 +3315,6 @@ namespace RobotizeFacebook.Resources {
         internal static string Tripods {
             get {
                 return ResourceManager.GetString("Tripods", resourceCulture);
-            }
-        }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to Truck.
-        /// </summary>
-        internal static string Truck {
-            get {
-                return ResourceManager.GetString("Truck", resourceCulture);
             }
         }
         
