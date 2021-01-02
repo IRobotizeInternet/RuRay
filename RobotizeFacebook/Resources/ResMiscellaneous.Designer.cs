@@ -277,6 +277,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Lenovo Yoga.
+        /// </summary>
+        public static string LenovoYoga {
+            get {
+                return ResourceManager.GetString("LenovoYoga", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Log Out Of All Sessions.
         /// </summary>
         public static string LogOutOfAllSessions {

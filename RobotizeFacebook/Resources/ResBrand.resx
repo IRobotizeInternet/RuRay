@@ -123,11 +123,20 @@
   <data name="DavidYurman" xml:space="preserve">
     <value>David Yurman</value>
   </data>
+  <data name="Fujifilm" xml:space="preserve">
+    <value>Fujifilm</value>
+  </data>
+  <data name="GoPro" xml:space="preserve">
+    <value>GoPro</value>
+  </data>
   <data name="Gucci" xml:space="preserve">
     <value>Gucci</value>
   </data>
   <data name="KendraScott" xml:space="preserve">
     <value>Kendra Scott</value>
+  </data>
+  <data name="Kodak" xml:space="preserve">
+    <value>Kodak</value>
   </data>
   <data name="Loungefly" xml:space="preserve">
     <value>Loungefly</value>
@@ -138,8 +147,17 @@
   <data name="Nike" xml:space="preserve">
     <value>Nike</value>
   </data>
+  <data name="Nikon" xml:space="preserve">
+    <value>Nikon</value>
+  </data>
   <data name="Pandora" xml:space="preserve">
     <value>Pandora</value>
+  </data>
+  <data name="Polaroid" xml:space="preserve">
+    <value>Polaroid</value>
+  </data>
+  <data name="Samsung" xml:space="preserve">
+    <value>Samsung</value>
   </data>
   <data name="SterlingSilver" xml:space="preserve">
     <value>Sterling Silver</value>
@@ -149,5 +167,86 @@
   </data>
   <data name="Versace" xml:space="preserve">
     <value>Versace</value>
+  </data>
+  <data name="MichaelKors" xml:space="preserve">
+    <value>Michael Kors</value>
+  </data>
+  <data name="Apple" xml:space="preserve">
+    <value>Apple</value>
+  </data>
+  <data name="Google" xml:space="preserve">
+    <value>Google</value>
+  </data>
+  <data name="HTC" xml:space="preserve">
+    <value>HTC</value>
+  </data>
+  <data name="Huawei" xml:space="preserve">
+    <value>Huawei</value>
+  </data>
+  <data name="LG" xml:space="preserve">
+    <value>LG</value>
+  </data>
+  <data name="Motorola" xml:space="preserve">
+    <value>Motorola</value>
+  </data>
+  <data name="OPPO" xml:space="preserve">
+    <value>OPPO</value>
+  </data>
+  <data name="Xiaomi" xml:space="preserve">
+    <value>Xiaomi</value>
+  </data>
+  <data name="BeatsByDrDre" xml:space="preserve">
+    <value>Beats by Dr. Dre</value>
+  </data>
+  <data name="Bose" xml:space="preserve">
+    <value>Bose</value>
+  </data>
+  <data name="JBLByHarman" xml:space="preserve">
+    <value>JBL by Harman</value>
+  </data>
+  <data name="SamsungGalaxy" xml:space="preserve">
+    <value>Samsung Galaxy</value>
+  </data>
+  <data name="Sony" xml:space="preserve">
+    <value>Sony</value>
+  </data>
+  <data name="Element" xml:space="preserve">
+    <value>Element</value>
+  </data>
+  <data name="Haier" xml:space="preserve">
+    <value>Haier</value>
+  </data>
+  <data name="Hisense" xml:space="preserve">
+    <value>Hisense</value>
+  </data>
+  <data name="Hitachi" xml:space="preserve">
+    <value>Hitachi</value>
+  </data>
+  <data name="Insignia" xml:space="preserve">
+    <value>Insignia</value>
+  </data>
+  <data name="Panasonic" xml:space="preserve">
+    <value>Panasonic</value>
+  </data>
+  <data name="Philips" xml:space="preserve">
+    <value>Philips</value>
+  </data>
+  <data name="RCA" xml:space="preserve">
+    <value>RCA</value>
+  </data>
+  <data name="Roku" xml:space="preserve">
+    <value>Roku</value>
+  </data>
+  <data name="Sharp" xml:space="preserve">
+    <value>Sharp</value>
+  </data>
+  <data name="TCL" xml:space="preserve">
+    <value>TCL</value>
+  </data>
+  <data name="Toshiba" xml:space="preserve">
+    <value>Toshiba</value>
+  </data>
+  <data name="VIZIO" xml:space="preserve">
+    <value>VIZIO</value>
   </data>
 </root>

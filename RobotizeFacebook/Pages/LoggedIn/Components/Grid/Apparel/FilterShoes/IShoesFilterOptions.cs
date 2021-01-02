@@ -5,7 +5,7 @@ namespace RobotizeFacebook.Pages.LoggedIn
         IFilterOptions,
         IPrice,
         IItemCondition<ItemCondition>,
-        IBrand<BrandShoes>
+        IBrand<BrandShoe>
     {
     }
 }

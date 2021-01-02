@@ -231,4 +231,7 @@
   <data name="StoryPrivacy" xml:space="preserve">
     <value>Story Privacy</value>
   </data>
+  <data name="LenovoYoga" xml:space="preserve">
+    <value>Lenovo Yoga</value>
+  </data>
 </root>

@@ -33,7 +33,7 @@ namespace RobotizeFacebook.Pages.LoggedIn
         MatildaJane = 1
     }
 
-    public enum BrandShoes
+    public enum BrandShoe
     {
         [LocalizedDescription(nameof(ResBrand.Adidas), typeof(ResBrand))]
         Adidas = 0,
@@ -42,4 +42,103 @@ namespace RobotizeFacebook.Pages.LoggedIn
         [LocalizedDescription(nameof(ResBrand.Nike), typeof(ResBrand))]
         Nike = 2
     }
+
+    public enum BrandCamera
+    {
+        [LocalizedDescription(nameof(ResBrand.Fujifilm), typeof(ResBrand))]
+        Fujifilm = 0,
+        [LocalizedDescription(nameof(ResBrand.GoPro), typeof(ResBrand))]
+        GoPro = 1,
+        [LocalizedDescription(nameof(ResBrand.Kodak), typeof(ResBrand))]
+        Kodak = 2,
+        [LocalizedDescription(nameof(ResBrand.Nikon), typeof(ResBrand))]
+        Nikon = 3,
+        [LocalizedDescription(nameof(ResBrand.Polaroid), typeof(ResBrand))]
+        Polaroid = 4,
+        [LocalizedDescription(nameof(ResBrand.Samsung), typeof(ResBrand))]
+        Samsung = 5
+    }
+
+    public enum BrandCellPhoneAccesories
+    {
+        [LocalizedDescription(nameof(ResBrand.MichaelKors), typeof(ResBrand))]
+        MichaelKors = 0
+    }
+
+    public enum BrandCellPhone
+    {
+        [LocalizedDescription(nameof(ResBrand.Apple), typeof(ResBrand))]
+        Apple = 0,
+        [LocalizedDescription(nameof(ResBrand.Google), typeof(ResBrand))]
+        Google = 1,
+        [LocalizedDescription(nameof(ResBrand.HTC), typeof(ResBrand))]
+        HTC = 2,
+        [LocalizedDescription(nameof(ResBrand.Huawei), typeof(ResBrand))]
+        Huawei = 3,
+        [LocalizedDescription(nameof(ResBrand.LG), typeof(ResBrand))]
+        LG = 4,
+        [LocalizedDescription(nameof(ResBrand.Motorola), typeof(ResBrand))]
+        Motorola = 5,
+        [LocalizedDescription(nameof(ResBrand.OPPO), typeof(ResBrand))]
+        OPPO = 6,
+        [LocalizedDescription(nameof(ResBrand.Samsung), typeof(ResBrand))]
+        Samsung = 7,
+        [LocalizedDescription(nameof(ResBrand.Xiaomi), typeof(ResBrand))]
+        Xiaomi = 8
+    }
+
+    public enum BrandHomeAudioAndVideoSystems
+    {
+        [LocalizedDescription(nameof(ResBrand.Apple), typeof(ResBrand))]
+        Apple = 0,
+        [LocalizedDescription(nameof(ResBrand.BeatsByDrDre), typeof(ResBrand))]
+        BeatsByDrDre = 1,
+        [LocalizedDescription(nameof(ResBrand.Bose), typeof(ResBrand))]
+        Bose = 2,
+        [LocalizedDescription(nameof(ResBrand.JBLByHarman), typeof(ResBrand))]
+        JBLByHarman = 3,
+        [LocalizedDescription(nameof(ResBrand.Samsung), typeof(ResBrand))]
+        Samsung = 4,
+        [LocalizedDescription(nameof(ResBrand.SamsungGalaxy), typeof(ResBrand))]
+        SamsungGalaxy = 5,
+        [LocalizedDescription(nameof(ResBrand.Sony), typeof(ResBrand))]
+        Sony = 6
+    }
+
+    public enum BrandTVs
+    {
+        [LocalizedDescription(nameof(ResBrand.Element), typeof(ResBrand))]
+        Element = 0,
+        [LocalizedDescription(nameof(ResBrand.Haier), typeof(ResBrand))]
+        Haier = 1,
+        [LocalizedDescription(nameof(ResBrand.Hisense), typeof(ResBrand))]
+        Hisense = 2,
+        [LocalizedDescription(nameof(ResBrand.Hitachi), typeof(ResBrand))]
+        Hitachi = 3,
+        [LocalizedDescription(nameof(ResBrand.Insignia), typeof(ResBrand))]
+        Insignia = 4,
+        [LocalizedDescription(nameof(ResBrand.LG), typeof(ResBrand))]
+        LG = 5,
+        [LocalizedDescription(nameof(ResBrand.Panasonic), typeof(ResBrand))]
+        Panasonic = 6,
+        [LocalizedDescription(nameof(ResBrand.Philips), typeof(ResBrand))]
+        Philips = 7,
+        [LocalizedDescription(nameof(ResBrand.RCA), typeof(ResBrand))]
+        RCA = 8,
+        [LocalizedDescription(nameof(ResBrand.Roku), typeof(ResBrand))]
+        Roku = 9,
+        [LocalizedDescription(nameof(ResBrand.Samsung), typeof(ResBrand))]
+        Samsung = 10,
+        [LocalizedDescription(nameof(ResBrand.Sharp), typeof(ResBrand))]
+        Sharp = 11,
+        [LocalizedDescription(nameof(ResBrand.Sony), typeof(ResBrand))]
+        Sony = 12,
+        [LocalizedDescription(nameof(ResBrand.TCL), typeof(ResBrand))]
+        TCL = 13,
+        [LocalizedDescription(nameof(ResBrand.Toshiba), typeof(ResBrand))]
+        Toshiba = 14,
+        [LocalizedDescription(nameof(ResBrand.VIZIO), typeof(ResBrand))]
+        VIZIO = 15
+    }
+    
 }

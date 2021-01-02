@@ -13,7 +13,7 @@ namespace RobotizeFacebook.Pages.LoggedIn
 
         public IShoesFilterOptions FilterBy => throw new NotImplementedException();
 
-        public IApplyFilter Brand(BrandShoes bodyStyle)
+        public IApplyFilter Brand(BrandShoe bodyStyle)
         {
             throw new NotImplementedException();
         }
@@ -28,7 +28,7 @@ namespace RobotizeFacebook.Pages.LoggedIn
             throw new NotImplementedException();
         }
 
-        public IFilterOptions ItemCondition(ItemCondition vehicleType)
+        public IFilterOptions ItemCondition(ItemCondition condition)
         {
             throw new NotImplementedException();
         }

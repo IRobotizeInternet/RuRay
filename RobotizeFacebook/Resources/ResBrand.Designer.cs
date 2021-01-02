@@ -70,11 +70,74 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Apple.
+        /// </summary>
+        internal static string Apple {
+            get {
+                return ResourceManager.GetString("Apple", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Beats by Dr. Dre.
+        /// </summary>
+        internal static string BeatsByDrDre {
+            get {
+                return ResourceManager.GetString("BeatsByDrDre", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Bose.
+        /// </summary>
+        internal static string Bose {
+            get {
+                return ResourceManager.GetString("Bose", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to David Yurman.
         /// </summary>
         internal static string DavidYurman {
             get {
                 return ResourceManager.GetString("DavidYurman", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Element.
+        /// </summary>
+        internal static string Element {
+            get {
+                return ResourceManager.GetString("Element", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fujifilm.
+        /// </summary>
+        internal static string Fujifilm {
+            get {
+                return ResourceManager.GetString("Fujifilm", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Google.
+        /// </summary>
+        internal static string Google {
+            get {
+                return ResourceManager.GetString("Google", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to GoPro.
+        /// </summary>
+        internal static string GoPro {
+            get {
+                return ResourceManager.GetString("GoPro", resourceCulture);
             }
         }
         
@@ -88,11 +151,92 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Haier.
+        /// </summary>
+        internal static string Haier {
+            get {
+                return ResourceManager.GetString("Haier", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hisense.
+        /// </summary>
+        internal static string Hisense {
+            get {
+                return ResourceManager.GetString("Hisense", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hitachi.
+        /// </summary>
+        internal static string Hitachi {
+            get {
+                return ResourceManager.GetString("Hitachi", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to HTC.
+        /// </summary>
+        internal static string HTC {
+            get {
+                return ResourceManager.GetString("HTC", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Huawei.
+        /// </summary>
+        internal static string Huawei {
+            get {
+                return ResourceManager.GetString("Huawei", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Insignia.
+        /// </summary>
+        internal static string Insignia {
+            get {
+                return ResourceManager.GetString("Insignia", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to JBL by Harman.
+        /// </summary>
+        internal static string JBLByHarman {
+            get {
+                return ResourceManager.GetString("JBLByHarman", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Kendra Scott.
         /// </summary>
         internal static string KendraScott {
             get {
                 return ResourceManager.GetString("KendraScott", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Kodak.
+        /// </summary>
+        internal static string Kodak {
+            get {
+                return ResourceManager.GetString("Kodak", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to LG.
+        /// </summary>
+        internal static string LG {
+            get {
+                return ResourceManager.GetString("LG", resourceCulture);
             }
         }
         
@@ -115,6 +259,24 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Michael Kors.
+        /// </summary>
+        internal static string MichaelKors {
+            get {
+                return ResourceManager.GetString("MichaelKors", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Motorola.
+        /// </summary>
+        internal static string Motorola {
+            get {
+                return ResourceManager.GetString("Motorola", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Nike.
         /// </summary>
         internal static string Nike {
@@ -124,11 +286,110 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Nikon.
+        /// </summary>
+        internal static string Nikon {
+            get {
+                return ResourceManager.GetString("Nikon", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OPPO.
+        /// </summary>
+        internal static string OPPO {
+            get {
+                return ResourceManager.GetString("OPPO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Panasonic.
+        /// </summary>
+        internal static string Panasonic {
+            get {
+                return ResourceManager.GetString("Panasonic", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Pandora.
         /// </summary>
         internal static string Pandora {
             get {
                 return ResourceManager.GetString("Pandora", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Philips.
+        /// </summary>
+        internal static string Philips {
+            get {
+                return ResourceManager.GetString("Philips", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Polaroid.
+        /// </summary>
+        internal static string Polaroid {
+            get {
+                return ResourceManager.GetString("Polaroid", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to RCA.
+        /// </summary>
+        internal static string RCA {
+            get {
+                return ResourceManager.GetString("RCA", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Roku.
+        /// </summary>
+        internal static string Roku {
+            get {
+                return ResourceManager.GetString("Roku", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Samsung.
+        /// </summary>
+        internal static string Samsung {
+            get {
+                return ResourceManager.GetString("Samsung", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Samsung Galaxy.
+        /// </summary>
+        internal static string SamsungGalaxy {
+            get {
+                return ResourceManager.GetString("SamsungGalaxy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sharp.
+        /// </summary>
+        internal static string Sharp {
+            get {
+                return ResourceManager.GetString("Sharp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sony.
+        /// </summary>
+        internal static string Sony {
+            get {
+                return ResourceManager.GetString("Sony", resourceCulture);
             }
         }
         
@@ -151,11 +412,47 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to TCL.
+        /// </summary>
+        internal static string TCL {
+            get {
+                return ResourceManager.GetString("TCL", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Toshiba.
+        /// </summary>
+        internal static string Toshiba {
+            get {
+                return ResourceManager.GetString("Toshiba", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Versace.
         /// </summary>
         internal static string Versace {
             get {
                 return ResourceManager.GetString("Versace", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to VIZIO.
+        /// </summary>
+        internal static string VIZIO {
+            get {
+                return ResourceManager.GetString("VIZIO", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Xiaomi.
+        /// </summary>
+        internal static string Xiaomi {
+            get {
+                return ResourceManager.GetString("Xiaomi", resourceCulture);
             }
         }
     }

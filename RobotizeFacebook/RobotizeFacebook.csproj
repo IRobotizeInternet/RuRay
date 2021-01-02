@@ -150,8 +150,84 @@
     <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterWomens\IWomensFilterOptions.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterWomens\IWomensOptions.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterWomens\WomensFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Classifieds\FilterMiscellaneous\MiscellaneousFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Classifieds\FilterMiscellaneous\IMiscellaneousFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Classifieds\FilterMiscellaneous\IMiscellaneousFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Classifieds\FilterMiscellaneous\IMiscellaneousOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Classifieds\FilterGarageSale\GarageSaleFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Classifieds\FilterGarageSale\IGarageSaleFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Classifieds\FilterGarageSale\IGarageSaleFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Classifieds\FilterGarageSale\IGarageSaleOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Classifieds\FilterClassifieds\IClassifiedsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Classifieds\FilterClassifieds\IClassifiedsFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Classifieds\FilterClassifieds\IClassifiedsOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Classifieds\FilterClassifieds\ClassifiedsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterCellPhoneAccessories\CellPhoneAccessoriesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterCellPhoneAccessories\ICellPhoneAccessoriesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterCellPhoneAccessories\ICellPhoneAccessoriesFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterCellPhoneAccessories\ICellPhoneAccessoriesOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterCellPhones\CellPhonesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterCellPhones\ICellPhonesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterCellPhones\ICellPhonesFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterCellPhones\ICellPhonesOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterCellPhones\INetwork.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterCellPhones\IProductLine.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterComputers\ComputersFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterComputers\IComputersFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterComputers\IComputersFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterComputers\IComputersOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterHeadphones\HeadphonesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterHeadphones\IHeadphonesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterHeadphones\IHeadphonesFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterHeadphones\IHeadphonesOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterHomeAudioAndVideoSystems\HomeAudioAndVideoSystemsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterHomeAudioAndVideoSystems\IHomeAudioAndVideoSystemsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterHomeAudioAndVideoSystems\IHomeAudioAndVideoSystemsFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterHomeAudioAndVideoSystems\IHomeAudioAndVideoSystemsOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterHomeAutomationSystems\HomeAutomationSystemsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterHomeAutomationSystems\IHomeAutomationSystemsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterHomeAutomationSystems\IHomeAutomationSystemsFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterHomeAutomationSystems\IHomeAutomationSystemsOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterPortableAudioAndVideo\PortableAudioAndVideoFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterPortableAudioAndVideo\IPortableAudioAndVideoFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterPortableAudioAndVideo\IPortableAudioAndVideoFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterPortableAudioAndVideo\IPortableAudioAndVideoOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterPrinters\PrintersFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterPrinters\IPrintersFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterPrinters\IPrintersFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterPrinters\IPrintersOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterSecurityCameras\SecurityCamerasFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterSecurityCameras\ISecurityCamerasFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterSecurityCameras\ISecurityCamerasFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterSecurityCameras\ISecurityCamerasOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterTVs\IDisplayTechnology.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterTVs\IFeature.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterTVs\IScreenSize.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterTVs\TVsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterTVs\ITVsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterTVs\ITVsFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterTVs\ITVsOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterVideoGamesAndConsoles\IPlatform.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterVideoGamesAndConsoles\VideoGamesAndConsolesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterVideoGamesAndConsoles\IVideoGamesAndConsolesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterVideoGamesAndConsoles\IVideoGamesAndConsolesFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterVideoGamesAndConsoles\IVideoGamesAndConsolesOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterCarElectronics\CarElectronicsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterCarElectronics\ICarElectronicsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterCarElectronics\ICarElectronicsFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterCarElectronics\ICarElectronicsOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterCameras\CamerasFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterCameras\ICamerasFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterCameras\ICamerasFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterCameras\ICamerasOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterElectronics\ElectronicsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterElectronics\IElectronicsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterElectronics\IElectronicsFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Electronics\FilterElectronics\IElectronicsOptions.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Enum\BabyAndToddlerSize.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Enum\Brand.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\DisplayTechnology.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\Feature.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Enum\Material.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterApparel\IApparelFilter.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterApparel\IApparelFilterOptions.cs" />
@@ -191,11 +267,14 @@
     <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterBagsAndLuggage\IBagsAndLuggageFilterOptions.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterBagsAndLuggage\IBagsAndLuggageOptions.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\BaseFilter.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Category.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Checkbox\CheckboxFilter.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Checkbox\ICheckboxFilter.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Checkbox\ICheckboxFilterOptions.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Checkbox\ICheckboxOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\Network.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\Platform.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\ProductLine.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\ScreenSize.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\FacebookGrid.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\FilterFactory.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\FilterOptions\IBrand.cs" />
@@ -429,6 +508,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="Resources\ResDisplayTechnology.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResDisplayTechnology.resx</DependentUpon>
+    </Compile>
     <Compile Include="Resources\ResEmoji.Designer.cs">
       <DependentUpon>ResEmoji.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -464,6 +548,16 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="Resources\ResNetwork.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResNetwork.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ResPlatform.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResPlatform.resx</DependentUpon>
+    </Compile>
     <Compile Include="Resources\ResPostBackground.Designer.cs">
       <DependentUpon>ResPostBackground.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -474,10 +568,20 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="Resources\ResScreenSize.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResScreenSize.resx</DependentUpon>
+    </Compile>
     <Compile Include="Resources\ResSelectPrivacy.Designer.cs">
       <DependentUpon>ResSelectPrivacy.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\ResFeature.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResFeature.resx</DependentUpon>
     </Compile>
     <Compile Include="Resources\ResYear.Designer.cs">
       <DependentUpon>ResYear.resx</DependentUpon>
@@ -574,6 +678,10 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ResDialogPopUpCreate.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ResDisplayTechnology.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResDisplayTechnology.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\ResEmoji.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ResEmoji.Designer.cs</LastGenOutput>
@@ -603,6 +711,14 @@
       <LastGenOutput>ResMonth.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ResNetwork.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResNetwork.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ResPlatform.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResPlatform.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\ResPostBackground.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ResPostBackground.Designer.cs</LastGenOutput>
@@ -611,9 +727,17 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ResPostBackGroundColor.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ResScreenSize.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResScreenSize.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\ResSelectPrivacy.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ResSelectPrivacy.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ResFeature.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResFeature.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\ResYear.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

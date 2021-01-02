@@ -12,7 +12,7 @@ namespace RobotizeFacebook.Pages.LoggedIn
 
         public IUniformsAndWorkClothingFilterOptions FilterBy => throw new NotImplementedException();
 
-        public IFilterOptions ItemCondition(ItemCondition vehicleType)
+        public IFilterOptions ItemCondition(ItemCondition condition)
         {
             throw new NotImplementedException();
         }

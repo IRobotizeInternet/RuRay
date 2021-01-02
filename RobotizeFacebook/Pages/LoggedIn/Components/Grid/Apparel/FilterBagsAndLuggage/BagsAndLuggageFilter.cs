@@ -28,7 +28,7 @@ namespace RobotizeFacebook.Pages.LoggedIn
             throw new NotImplementedException();
         }
 
-        public IFilterOptions ItemCondition(ItemCondition vehicleType)
+        public IFilterOptions ItemCondition(ItemCondition condition)
         {
             throw new NotImplementedException();
         }
