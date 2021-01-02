@@ -4,20 +4,15 @@ using System;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
-    public class TVsFilter : BaseFilter, ITVsFilter, ITVsFilterOptions
+    public class BooksMoviesAndMusicFilter : BaseFilter, IBooksMoviesAndMusicFilter, IBooksMoviesAndMusicFilterOptions
     {
-        public TVsFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public BooksMoviesAndMusicFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
         {
         }
 
-        public ITVsFilterOptions FilterBy => throw new NotImplementedException();
+        public IBooksMoviesAndMusicFilterOptions FilterBy => throw new NotImplementedException();
 
-        public IApplyFilter Brand(BrandTVs bodyStyle)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IApplyFilter DisplayTechnology(DisplayTechnology displayTechnology)
+        public IApplyFilter Brand(BrandCamera bodyStyle)
         {
             throw new NotImplementedException();
         }
@@ -28,11 +23,6 @@ namespace RobotizeFacebook.Pages.LoggedIn
         }
 
         public IApplyFilter Price(double? min = null, double? max = null)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IApplyFilter ScreenSize(ScreenSize screenSize)
         {
             throw new NotImplementedException();
         }

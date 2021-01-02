@@ -493,6 +493,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Bird &amp;amp; Wildlife Accessories.
+        /// </summary>
+        internal static string BirdAndWildlifeAccessories {
+            get {
+                return ResourceManager.GetString("BirdAndWildlifeAccessories", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Bird Cages.
         /// </summary>
         internal static string BirdCages {
@@ -1384,6 +1393,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Fencing Supplies.
+        /// </summary>
+        internal static string FencingSupplies {
+            get {
+                return ResourceManager.GetString("FencingSupplies", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Ferrari.
         /// </summary>
         internal static string Ferrari {
@@ -1587,6 +1605,33 @@ namespace RobotizeFacebook.Resources {
         internal static string GardenAndOutdoor {
             get {
                 return ResourceManager.GetString("GardenAndOutdoor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Garden Decor.
+        /// </summary>
+        internal static string GardenDecor {
+            get {
+                return ResourceManager.GetString("GardenDecor", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Gardening Supplies.
+        /// </summary>
+        internal static string GardeningSupplies {
+            get {
+                return ResourceManager.GetString("GardeningSupplies", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Garden Structures.
+        /// </summary>
+        internal static string GardenStructures {
+            get {
+                return ResourceManager.GetString("GardenStructures", resourceCulture);
             }
         }
         
@@ -2158,6 +2203,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Lawn Mowers.
+        /// </summary>
+        internal static string LawnMowers {
+            get {
+                return ResourceManager.GetString("LawnMowers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Lexus.
         /// </summary>
         internal static string Lexus {
@@ -2509,11 +2563,38 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Outdoor Cooking.
+        /// </summary>
+        internal static string OutdoorCooking {
+            get {
+                return ResourceManager.GetString("OutdoorCooking", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Outdoor Games.
         /// </summary>
         internal static string OutdoorGames {
             get {
                 return ResourceManager.GetString("OutdoorGames", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Outdoor Lighting.
+        /// </summary>
+        internal static string OutdoorLighting {
+            get {
+                return ResourceManager.GetString("OutdoorLighting", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Outdoor Power Equipment.
+        /// </summary>
+        internal static string OutdoorPowerEquipment {
+            get {
+                return ResourceManager.GetString("OutdoorPowerEquipment", resourceCulture);
             }
         }
         
@@ -2541,6 +2622,15 @@ namespace RobotizeFacebook.Resources {
         internal static string Panoz {
             get {
                 return ResourceManager.GetString("Panoz", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Patio Furniture.
+        /// </summary>
+        internal static string PatioFurniture {
+            get {
+                return ResourceManager.GetString("PatioFurniture", resourceCulture);
             }
         }
         
@@ -2653,6 +2743,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Pools &amp; Spas.
+        /// </summary>
+        internal static string PoolsAndSpas {
+            get {
+                return ResourceManager.GetString("PoolsAndSpas", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Pool Tables.
         /// </summary>
         internal static string PoolTables {
@@ -2703,6 +2802,15 @@ namespace RobotizeFacebook.Resources {
         internal static string PowersportVehicles {
             get {
                 return ResourceManager.GetString("PowersportVehicles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Power Tools.
+        /// </summary>
+        internal static string PowerTools {
+            get {
+                return ResourceManager.GetString("PowerTools", resourceCulture);
             }
         }
         

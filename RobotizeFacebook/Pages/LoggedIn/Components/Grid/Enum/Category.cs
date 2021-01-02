@@ -613,6 +613,22 @@ namespace RobotizeFacebook.Pages.LoggedIn
         Trampolines = 10
     }
 
+    public enum GardenAndOutdoorCategory
+    {
+        [LocalizedDescription(nameof(ResCategory.BirdAndWildlifeAccessories), typeof(ResCategory))] BirdAndWildlifeAccessories = 0,
+        [LocalizedDescription(nameof(ResCategory.FencingSupplies), typeof(ResCategory))] FencingSupplies = 1,
+        [LocalizedDescription(nameof(ResCategory.GardenDecor), typeof(ResCategory))] GardenDecor = 2,
+        [LocalizedDescription(nameof(ResCategory.GardenStructures), typeof(ResCategory))] GardenStructures = 3,
+        [LocalizedDescription(nameof(ResCategory.GardeningSupplies), typeof(ResCategory))] GardeningSupplies = 4,
+        [LocalizedDescription(nameof(ResCategory.LawnMowers), typeof(ResCategory))] LawnMowers = 5,
+        [LocalizedDescription(nameof(ResCategory.OutdoorCooking), typeof(ResCategory))] OutdoorCooking = 6,
+        [LocalizedDescription(nameof(ResCategory.OutdoorLighting), typeof(ResCategory))] OutdoorLighting = 7,
+        [LocalizedDescription(nameof(ResCategory.OutdoorPowerEquipment), typeof(ResCategory))] OutdoorPowerEquipment = 8,
+        [LocalizedDescription(nameof(ResCategory.PatioFurniture), typeof(ResCategory))] PatioFurniture = 9,
+        [LocalizedDescription(nameof(ResCategory.PoolsAndSpas), typeof(ResCategory))] PoolsAndSpas = 10,
+        [LocalizedDescription(nameof(ResCategory.PowerTools), typeof(ResCategory))] PowerTools = 11,
+    }
+
     public enum RemoteControlToysCategory
     {
         [LocalizedDescription(nameof(ResCategory.RemoteToyCarsAndTrucks), typeof(ResCategory))]

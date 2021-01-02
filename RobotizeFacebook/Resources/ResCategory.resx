@@ -1317,4 +1317,40 @@
   <data name="YogaMats" xml:space="preserve">
     <value>Yoga Mats</value>
   </data>
+  <data name="BirdAndWildlifeAccessories" xml:space="preserve">
+    <value>Bird &amp;amp; Wildlife Accessories</value>
+  </data>
+  <data name="FencingSupplies" xml:space="preserve">
+    <value>Fencing Supplies</value>
+  </data>
+  <data name="GardenDecor" xml:space="preserve">
+    <value>Garden Decor</value>
+  </data>
+  <data name="GardeningSupplies" xml:space="preserve">
+    <value>Gardening Supplies</value>
+  </data>
+  <data name="GardenStructures" xml:space="preserve">
+    <value>Garden Structures</value>
+  </data>
+  <data name="LawnMowers" xml:space="preserve">
+    <value>Lawn Mowers</value>
+  </data>
+  <data name="OutdoorCooking" xml:space="preserve">
+    <value>Outdoor Cooking</value>
+  </data>
+  <data name="OutdoorLighting" xml:space="preserve">
+    <value>Outdoor Lighting</value>
+  </data>
+  <data name="OutdoorPowerEquipment" xml:space="preserve">
+    <value>Outdoor Power Equipment</value>
+  </data>
+  <data name="PatioFurniture" xml:space="preserve">
+    <value>Patio Furniture</value>
+  </data>
+  <data name="PoolsAndSpas" xml:space="preserve">
+    <value>Pools &amp; Spas</value>
+  </data>
+  <data name="PowerTools" xml:space="preserve">
+    <value>Power Tools</value>
+  </data>
 </root>
