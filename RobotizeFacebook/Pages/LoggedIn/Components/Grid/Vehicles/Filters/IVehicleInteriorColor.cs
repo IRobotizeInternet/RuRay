@@ -1,6 +1,6 @@
 ﻿namespace RobotizeFacebook.Pages.LoggedIn
 {
-    public interface IVehicleInteriorColor: IColor<VehicleInteriorExteriorColor>, IFilterOptions
+    public interface IVehicleInteriorColor: IColor<ColorVehicleInteriorExterior>, IFilterOptions
     {
     }
 }

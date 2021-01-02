@@ -146,12 +146,50 @@
     <Compile Include="CryptoServices\Crypto.cs" />
     <Compile Include="CryptoServices\CryptoServiceForString.cs" />
     <Compile Include="Pages\LoggedIn\Components\CreatePost\DialogSpecificFriends.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterWomens\IWomensFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterWomens\IWomensFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterWomens\IWomensOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterWomens\WomensFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\BabyAndToddlerSize.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\Brand.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\Material.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterApparel\IApparelFilter.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterApparel\IApparelFilterOptions.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterApparel\IApparelOptions.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterApparel\ApparelFilter.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\Enum\Category.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\Enum\ItemCondition.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\Category.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterBabyClothing\BabyClothingFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterBabyClothing\IBabyClothingFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterBabyClothing\IBabyClothingFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterBabyClothing\IBabyClothingOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterUniformsAndWorkClothing\IUniformsAndWorkClothingFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterUniformsAndWorkClothing\IUniformsAndWorkClothingFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterUniformsAndWorkClothing\IUniformsAndWorkClothingOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterUniformsAndWorkClothing\UniformsAndWorkClothingFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterShoes\ShoesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterShoes\IShoesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterShoes\IShoesFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterShoes\IShoesOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterMens\IMensFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterMens\IMensFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterMens\IMensOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterMens\MensFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterKidsClothing\IKidsClothingFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterKidsClothing\IKidsClothingFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterKidsClothing\IKidsClothingOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterKidsClothing\KidsClothingFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterJewelryAndAccessories\JewelryAndAccessoriesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterJewelryAndAccessories\IJewelryAndAccessoriesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterJewelryAndAccessories\IJewelryAndAccessoriesFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterJewelryAndAccessories\IJewelryAndAccessoriesOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterHalloweenAndKidsCostumes\HalloweenAndKidsCostumesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterHalloweenAndKidsCostumes\IHalloweenAndKidsCostumesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterHalloweenAndKidsCostumes\IHalloweenAndKidsCostumesFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterHalloweenAndKidsCostumes\IHalloweenAndKidsCostumesOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterBagsAndLuggage\BagsAndLuggageFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterBagsAndLuggage\IBagsAndLuggageFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterBagsAndLuggage\IBagsAndLuggageFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterBagsAndLuggage\IBagsAndLuggageOptions.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\BaseFilter.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Category.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Checkbox\CheckboxFilter.cs" />
@@ -160,10 +198,13 @@
     <Compile Include="Pages\LoggedIn\Components\Grid\Checkbox\ICheckboxOptions.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\FacebookGrid.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\FilterFactory.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\FilterOptions\IBrand.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\FilterOptions\IBabyAndToddlerSize.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\FilterOptions\IBodyStyle.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\FilterOptions\IColor.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\FilterOptions\IItemCondition.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\FilterOptions\IMake.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\FilterOptions\Imaterial.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\FilterOptions\IMileage.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\FilterOptions\IModel.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\FilterOptions\IPrice.cs" />
@@ -182,11 +223,11 @@
     <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\FilterCondosForRent\ICondosForRentFilter.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\FilterCondosForRent\ICondosForRentFilterOptions.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\FilterCondosForRent\ICondosForRentOptions.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\Enum\BathroomCount.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\Enum\BedroomCount.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\Enum\PropertyRentalCategory.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\Enum\PropertyRentalsSortOptions.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\Enum\RentalType.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\BathroomCount.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\BedroomCount.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\PropertyRentalCategory.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\PropertyRentalsSortOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\RentalType.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\FilterHousesForRent\HousesForRentFilter.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\FilterHousesForRent\IHousesForRentFilter.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\FilterHousesForRent\IHousesForRentFilterOptions.cs" />
@@ -211,15 +252,15 @@
     <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\FilterCars\ICarsFilter.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\FilterCars\ICarsFilterOptions.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\FilterCars\ICarsOptions.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\Enum\ItemCondition.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\Enum\VehicleBodyStyle.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\Enum\VehicleCategory.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\Enum\VehicleInteriorExteriorColor.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\Enum\VehicleMake.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\Enum\VehicleModel.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\Enum\VehicleSortOption.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\Enum\VehicleTransmissionType.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\Enum\VehicleType.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\ItemCondition.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\VehicleBodyStyle.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\VehicleCategory.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\Color.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\VehicleMake.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\VehicleModel.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\VehicleSortOption.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\VehicleTransmissionType.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\VehicleType.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\Filters\IVehicleBodyStyle.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\Filters\IVehicleExteriorColor.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\Filters\IVehicleInteriorColor.cs" />
@@ -348,10 +389,25 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="Resources\ResBabyAndToddlerSize.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResBabyAndToddlerSize.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ResBrand.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResBrand.resx</DependentUpon>
+    </Compile>
     <Compile Include="Resources\ResCategory.Designer.cs">
       <DependentUpon>ResCategory.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\ResColor.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResColor.resx</DependentUpon>
     </Compile>
     <Compile Include="Resources\ResCreatePost.Designer.cs">
       <DependentUpon>ResCreatePost.resx</DependentUpon>
@@ -382,6 +438,11 @@
       <DependentUpon>ResHomePageHeader.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\ResItemCondition.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResItemCondition.resx</DependentUpon>
     </Compile>
     <Compile Include="Resources\ResLoginPage.Designer.cs">
       <DependentUpon>ResLoginPage.resx</DependentUpon>
@@ -466,7 +527,6 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Pages\LoggedIn\Components\Grid\Apparel\FilterBabyClothing\" />
     <Folder Include="Pages\LoggedIn\Components\Grid\RadioButton\" />
     <Folder Include="Pages\LoggedIn\Components\Grid\Textbox\" />
     <Folder Include="Pages\LoggedIn\Home\HomeHeader\Right\Create\" />
@@ -476,10 +536,22 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ResAccount.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ResBabyAndToddlerSize.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResBabyAndToddlerSize.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ResBrand.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResBrand.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\ResCategory.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ResCategory.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ResColor.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResColor.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\ResCreatePost.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -504,6 +576,10 @@
     <EmbeddedResource Include="Resources\ResHomePageHeader.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ResHomePageHeader.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ResItemCondition.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResItemCondition.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\ResLoginPage.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

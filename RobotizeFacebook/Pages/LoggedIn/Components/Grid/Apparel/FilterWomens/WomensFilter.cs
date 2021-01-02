@@ -5,20 +5,20 @@ using System.Collections.Generic;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
-    public class BoatsFilter : BaseFilter, IBoatFilter, IBoatsFilterOptions
+    public class WomensFilter : BaseFilter, IWomensFilter, IWomensFilterOptions
     {
-        public BoatsFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public WomensFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
         {
         }
 
-        public IBoatsFilterOptions FilterBy => throw new NotImplementedException();
+        public IWomensFilterOptions FilterBy => throw new NotImplementedException();
 
-        public void Category(BoatCategory categoryType)
+        public void Category(WomensCategory categoryType)
         {
             throw new NotImplementedException();
         }
 
-        public IApplyFilter ExteriorColor(ColorVehicleInteriorExterior exteriorColor)
+        public IApplyFilter ExteriorColor(ColorWomenApparel exteriorColor)
         {
             throw new NotImplementedException();
         }
@@ -28,17 +28,12 @@ namespace RobotizeFacebook.Pages.LoggedIn
             throw new NotImplementedException();
         }
 
+        public IFilterOptions ItemCondition(ItemCondition vehicleType)
+        {
+            throw new NotImplementedException();
+        }
+
         public IApplyFilter Price(double? min = null, double? max = null)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IApplyFilter SortBy(VehicleSortOption criteria)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IApplyFilter Year(int? min, int? max)
         {
             throw new NotImplementedException();
         }

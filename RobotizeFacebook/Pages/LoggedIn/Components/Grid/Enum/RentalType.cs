@@ -5,7 +5,7 @@ namespace RobotizeFacebook.Pages.LoggedIn
 {
     public enum RentalType
     {
-        [LocalizedDescription(nameof(ResCategory.Apartment_Condo), typeof(ResCategory))]
+        [LocalizedDescription(nameof(ResCategory.ApartmentCondo), typeof(ResCategory))]
         Apartment_Condo = 0,
         [LocalizedDescription(nameof(ResCategory.House), typeof(ResCategory))]
         House = 1,

@@ -23,7 +23,7 @@ namespace RobotizeFacebook.Pages.LoggedIn
             throw new NotImplementedException();
         }
 
-        public IApplyFilter ExteriorColor(VehicleInteriorExteriorColor exteriorColor)
+        public IApplyFilter ExteriorColor(ColorVehicleInteriorExterior exteriorColor)
         {
             throw new NotImplementedException();
         }

@@ -5,20 +5,20 @@ using System.Collections.Generic;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
-    public class BoatsFilter : BaseFilter, IBoatFilter, IBoatsFilterOptions
+    public class JewelryAndAccessoriesFilter : BaseFilter, IJewelryAndAccessoriesFilter, IJewelryAndAccessoriesFilterOptions
     {
-        public BoatsFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public JewelryAndAccessoriesFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
         {
         }
 
-        public IBoatsFilterOptions FilterBy => throw new NotImplementedException();
+        public IJewelryAndAccessoriesFilterOptions FilterBy => throw new NotImplementedException();
 
-        public void Category(BoatCategory categoryType)
+        public IApplyFilter Brand(BrandJewelryAndAccessories bodyStyle)
         {
             throw new NotImplementedException();
         }
 
-        public IApplyFilter ExteriorColor(ColorVehicleInteriorExterior exteriorColor)
+        public void Category(JewelryAndAccessoriesCategory categoryType)
         {
             throw new NotImplementedException();
         }
@@ -28,17 +28,17 @@ namespace RobotizeFacebook.Pages.LoggedIn
             throw new NotImplementedException();
         }
 
+        public IFilterOptions ItemCondition(ItemCondition vehicleType)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IFilterOptions Material(Material material)
+        {
+            throw new NotImplementedException();
+        }
+
         public IApplyFilter Price(double? min = null, double? max = null)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IApplyFilter SortBy(VehicleSortOption criteria)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IApplyFilter Year(int? min, int? max)
         {
             throw new NotImplementedException();
         }

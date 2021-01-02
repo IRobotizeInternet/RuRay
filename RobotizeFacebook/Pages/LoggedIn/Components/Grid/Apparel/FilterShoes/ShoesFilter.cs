@@ -1,33 +1,39 @@
 ﻿using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using System;
+using System.Collections.Generic;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
-    public class RVCampersFilter : BaseFilter, IRVCampersFilter, IRVCampersFilterOptions
+    public class ShoesFilter : BaseFilter, IShoesFilter, IShoesFilterOptions
     {
-        public RVCampersFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public ShoesFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
         {
         }
 
-        public IRVCampersFilterOptions FilterBy => throw new NotImplementedException();
+        public IShoesFilterOptions FilterBy => throw new NotImplementedException();
 
-        public IApplyFilter ExteriorColor(ColorVehicleInteriorExterior exteriorColor)
+        public IApplyFilter Brand(BrandShoes bodyStyle)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Category(ShoesCategory categoryType)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<string> GetAllCategories()
+        {
+            throw new NotImplementedException();
+        }
+
+        public IFilterOptions ItemCondition(ItemCondition vehicleType)
         {
             throw new NotImplementedException();
         }
 
         public IApplyFilter Price(double? min = null, double? max = null)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IApplyFilter SortBy(VehicleSortOption criteria)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IApplyFilter Year(int? min, int? max)
         {
             throw new NotImplementedException();
         }

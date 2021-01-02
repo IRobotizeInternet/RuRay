@@ -4,30 +4,25 @@ using System;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
-    public class TrailersFilter : BaseFilter, ITrailersFilter, ITrailersFilterOptions
+    public class KidsClothingFilter : BaseFilter, IKidsClothingFilter, IKidsClothingFilterOptions
     {
-        public TrailersFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public KidsClothingFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
         {
         }
 
-        public ITrailersFilterOptions FilterBy => throw new NotImplementedException();
+        public IKidsClothingFilterOptions FilterBy => throw new NotImplementedException();
 
-        public IApplyFilter ExteriorColor(ColorVehicleInteriorExterior exteriorColor)
+        public IApplyFilter Brand(BrandKidsClothing bodyStyle)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IFilterOptions ItemCondition(ItemCondition vehicleType)
         {
             throw new NotImplementedException();
         }
 
         public IApplyFilter Price(double? min = null, double? max = null)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IApplyFilter SortBy(VehicleSortOption criteria)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IApplyFilter Year(int? min, int? max)
         {
             throw new NotImplementedException();
         }
