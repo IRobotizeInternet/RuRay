@@ -249,4 +249,52 @@
   <data name="VIZIO" xml:space="preserve">
     <value>VIZIO</value>
   </data>
+  <data name="Chaco" xml:space="preserve">
+    <value>Chaco</value>
+  </data>
+  <data name="Craftsman" xml:space="preserve">
+    <value>Craftsman</value>
+  </data>
+  <data name="Honda" xml:space="preserve">
+    <value>Honda</value>
+  </data>
+  <data name="JohnDeere" xml:space="preserve">
+    <value>John Deere</value>
+  </data>
+  <data name="Snapper" xml:space="preserve">
+    <value>Snapper</value>
+  </data>
+  <data name="Toro" xml:space="preserve">
+    <value>Toro</value>
+  </data>
+  <data name="Weber" xml:space="preserve">
+    <value>Weber</value>
+  </data>
+  <data name="Bosch" xml:space="preserve">
+    <value>Bosch</value>
+  </data>
+  <data name="DEWALT" xml:space="preserve">
+    <value>DEWALT</value>
+  </data>
+  <data name="Lincoln" xml:space="preserve">
+    <value>Lincoln</value>
+  </data>
+  <data name="Makita" xml:space="preserve">
+    <value>Makita</value>
+  </data>
+  <data name="Miller" xml:space="preserve">
+    <value>Miller</value>
+  </data>
+  <data name="Milwaukee" xml:space="preserve">
+    <value>Milwaukee</value>
+  </data>
+  <data name="PORTERCABLE" xml:space="preserve">
+    <value>PORTER-CABLE</value>
+  </data>
+  <data name="EthanAllen" xml:space="preserve">
+    <value>Ethan Allen</value>
+  </data>
+  <data name="ZGallerie" xml:space="preserve">
+    <value>Z Gallerie</value>
+  </data>
 </root>

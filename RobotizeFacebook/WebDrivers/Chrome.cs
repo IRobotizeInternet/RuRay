@@ -14,7 +14,7 @@ namespace RobotizeFacebook.WebDrivers
         public override RemoteWebDriver Driver(bool useExistingBrowser = true)
         {
             // when useExistingBrowser is set open chrome
-            if (useExistingBrowser) new ServiceBrowser().OpenBrowser();
+            //if (useExistingBrowser) new ServiceBrowser().OpenBrowser();
 
             if (string.IsNullOrEmpty(BaseURL))
             {
@@ -49,7 +49,8 @@ namespace RobotizeFacebook.WebDrivers
                 driver = new ChromeDriver(DriverLocation, options, TimeSpan.FromSeconds(WebDriverTimeoutInSeconds));
             });
 
-            driver.Manage().Window.Maximize();
+            // If using existing window then you may not need to maximize it here.
+            //driver.Manage().Window.Maximize();
 
             // set default culture 
             ServiceCulture.SetDefaultCulture(AppSettings.DefaultCulture);

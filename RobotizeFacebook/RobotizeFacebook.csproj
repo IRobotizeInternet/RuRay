@@ -232,16 +232,19 @@
     <Compile Include="Pages\LoggedIn\Components\Grid\Entertainment\FilterEntertainment\IEntertainmentFilter.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Entertainment\FilterEntertainment\IEntertainmentFilterOptions.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Entertainment\FilterEntertainment\IEntertainmentOptions.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\BabyAndToddlerSize.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\Brand.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\DisplayTechnology.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\Feature.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\Material.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterPatioFurniture\IDecorStyle.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterPatioFurniture\IFinish.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GridHelper\Enum\BabyAndToddlerSize.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GridHelper\Enum\BedSize.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GridHelper\Enum\Brand.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GridHelper\Enum\DisplayTechnology.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GridHelper\Enum\Feature.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GridHelper\Enum\Material.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterApparel\IApparelFilter.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterApparel\IApparelFilterOptions.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterApparel\IApparelOptions.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterApparel\ApparelFilter.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\Category.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GridHelper\Enum\Category.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterBabyClothing\BabyClothingFilter.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterBabyClothing\IBabyClothingFilter.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterBabyClothing\IBabyClothingFilterOptions.cs" />
@@ -275,14 +278,15 @@
     <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterBagsAndLuggage\IBagsAndLuggageFilterOptions.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterBagsAndLuggage\IBagsAndLuggageOptions.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\BaseFilter.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Checkbox\CheckboxFilter.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Checkbox\ICheckboxFilter.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Checkbox\ICheckboxFilterOptions.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Checkbox\ICheckboxOptions.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\Network.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\Platform.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\ProductLine.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\ScreenSize.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GridHelper\Checkbox\CheckboxFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GridHelper\Checkbox\ICheckboxFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GridHelper\Checkbox\ICheckboxFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GridHelper\Checkbox\ICheckboxOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GridHelper\Enum\Network.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GridHelper\Enum\Platform.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GridHelper\Enum\ProductLine.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GridHelper\Enum\Finish.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GridHelper\Enum\ScreenSize.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\FacebookGrid.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Family\BabyAndKidsItems\BabyAndKidsItemsFilter.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Family\BabyAndKidsItems\IBabyAndKidsItemsFilter.cs" />
@@ -311,17 +315,291 @@
     <Compile Include="Pages\LoggedIn\Components\Grid\FilterOptions\IColor.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\FilterOptions\IItemCondition.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\FilterOptions\IMake.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\FilterOptions\Imaterial.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\FilterOptions\IMaterial.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\FilterOptions\IMileage.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\FilterOptions\IModel.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\FilterOptions\IPrice.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\FilterOptions\ISortBy.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\FilterOptions\IType.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\FilterOptions\IYear.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterBirdAndWildlifeAccessories\BirdAndWildlifeAccessoriesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterBirdAndWildlifeAccessories\IBirdAndWildlifeAccessoriesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterBirdAndWildlifeAccessories\IBirdAndWildlifeAccessoriesFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterBirdAndWildlifeAccessories\IBirdAndWildlifeAccessoriesOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterFencingSupplies\FencingSuppliesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterFencingSupplies\IFencingSuppliesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterFencingSupplies\IFencingSuppliesFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterFencingSupplies\IFencingSuppliesOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterGardenDecor\GardenDecorFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterGardenDecor\IGardenDecorFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterGardenDecor\IGardenDecorFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterGardenDecor\IGardenDecorOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterGardeningSupplies\GardeningSuppliesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterGardeningSupplies\IGardeningSuppliesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterGardeningSupplies\IGardeningSuppliesFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterGardeningSupplies\IGardeningSuppliesOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterGardenStructures\GardenStructuresFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterGardenStructures\IGardenStructuresFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterGardenStructures\IGardenStructuresFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterGardenStructures\IGardenStructuresOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterLawnMowers\ILawnMowersFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterLawnMowers\ILawnMowersFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterLawnMowers\ILawnMowersOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterLawnMowers\LawnMowersFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterOutdoorCooking\IOutdoorCookingFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterOutdoorCooking\IOutdoorCookingFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterOutdoorCooking\IOutdoorCookingOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterOutdoorCooking\OutdoorCookingFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterOutdoorLighting\IOutdoorLightingFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterOutdoorLighting\IOutdoorLightingFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterOutdoorLighting\IOutdoorLightingOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterOutdoorLighting\OutdoorLightingFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterOutdoorPowerEquipment\IOutdoorPowerEquipmentFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterOutdoorPowerEquipment\IOutdoorPowerEquipmentFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterOutdoorPowerEquipment\IOutdoorPowerEquipmentOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterOutdoorPowerEquipment\OutdoorPowerEquipmentFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterPatioFurniture\IPatioFurnitureFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterPatioFurniture\IPatioFurnitureFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterPatioFurniture\IPatioFurnitureOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterPatioFurniture\PatioFurnitureFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterPoolsAndSpas\IPoolsAndSpasFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterPoolsAndSpas\IPoolsAndSpasFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterPoolsAndSpas\IPoolsAndSpasOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterPoolsAndSpas\PoolsAndSpasFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterPowerTools\IPowerToolsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterPowerTools\IPowerToolsFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterPowerTools\IPowerToolsOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\FilterPowerTools\PowerToolsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GridHelper\Enum\Style.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Hobbies\FilterAntiquesAndCollectibles\AntiquesAndCollectiblesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Hobbies\FilterAntiquesAndCollectibles\IAntiquesAndCollectiblesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Hobbies\FilterAntiquesAndCollectibles\IAntiquesAndCollectiblesFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Hobbies\FilterAntiquesAndCollectibles\IAntiquesAndCollectiblesOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Hobbies\FilterArtsAndCrafts\ArtsAndCraftsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Hobbies\FilterArtsAndCrafts\IArtsAndCraftsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Hobbies\FilterArtsAndCrafts\IArtsAndCraftsFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Hobbies\FilterArtsAndCrafts\IArtsAndCraftsOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Hobbies\FilterAutoParts\AutoPartsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Hobbies\FilterAutoParts\IAutoPartsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Hobbies\FilterAutoParts\IAutoPartsFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Hobbies\FilterAutoParts\IAutoPartsOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Hobbies\FilterHobbies\HobbiesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Hobbies\FilterHobbies\IHobbiesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Hobbies\FilterHobbies\IHobbiesFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Hobbies\FilterHobbies\IHobbiesOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Hobbies\FishingGear\FishingGearFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Hobbies\FishingGear\IFishingGearFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Hobbies\FishingGear\IFishingGearFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\Hobbies\FishingGear\IFishingGearOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterAppliances\AppliancesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterAppliances\IAppliancesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterAppliances\IAppliancesFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterAppliances\IAppliancesOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterBathProducts\BathProductsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterBathProducts\IBathProductsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterBathProducts\IBathProductsFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterBathProducts\IBathProductsOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterBedding\BeddingFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterBedding\IBeddingFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterBedding\IBeddingFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterBedding\IBeddingOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterBedding\IBedSize.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterCleaningSupplies\CleaningSuppliesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterCleaningSupplies\ICleaningSuppliesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterCleaningSupplies\ICleaningSuppliesFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterCleaningSupplies\ICleaningSuppliesOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterFurniture\FurnitureFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterFurniture\IFurnitureFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterFurniture\IFurnitureFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterFurniture\IFurnitureOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterHomeDecor\HomeDecorFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterHomeDecor\IHomeDecorFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterHomeDecor\IHomeDecorFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterHomeDecor\IHomeDecorOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterHomeGoods\HomeDecorFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterHomeGoods\IHomeDecorFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterHomeGoods\IHomeDecorFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterHomeGoods\IHomeDecorOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterHomeLighting\HomeLightingFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterHomeLighting\IHomeLightingFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterHomeLighting\IHomeLightingFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterHomeLighting\IHomeLightingOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterKitchenAndDiningProducts\IKitchenAndDiningProductsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterKitchenAndDiningProducts\IKitchenAndDiningProductsFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterKitchenAndDiningProducts\IKitchenAndDiningProductsOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterKitchenAndDiningProducts\KitchenAndDiningProductsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterStorageAndOrganization\IStorageAndOrganizationFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterStorageAndOrganization\IStorageAndOrganizationFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterStorageAndOrganization\IStorageAndOrganizationOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterStorageAndOrganization\StorageAndOrganizationFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterTools\IHomeGoodsToolsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterTools\HomeGoodsToolsFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterTools\IHomeGoodsToolsOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeGoods\FilterTools\HomeGoodsToolsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterBathroomVanities\BathroomVanitiesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterBathroomVanities\IBathroomVanitiesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterBathroomVanities\IBathroomVanitiesFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterBathroomVanities\IBathroomVanitiesOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterBathtubs\BathtubsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterBathtubs\IBathtubsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterBathtubs\IBathtubsFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterBathtubs\IBathtubsOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterCountertops\CountertopsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterCountertops\ICountertopsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterCountertops\ICountertopsFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterCountertops\ICountertopsOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterDoors\DoorsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterDoors\IDoorsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterDoors\IDoorsFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterDoors\IDoorsOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterGutters\GuttersFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterGutters\IGuttersFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterGutters\IGuttersFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterGutters\IGuttersOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterHomeHeatingAndCooling\HomeHeatingAndCoolingFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterHomeHeatingAndCooling\IHomeHeatingAndCoolingFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterHomeHeatingAndCooling\IHomeHeatingAndCoolingFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterHomeHeatingAndCooling\IHomeHeatingAndCoolingOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterHomeImprovementSupplies\HomeImprovementSuppliesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterHomeImprovementSupplies\IHomeImprovementSuppliesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterHomeImprovementSupplies\IHomeImprovementSuppliesFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterHomeImprovementSupplies\IHomeImprovementSuppliesOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterKitchenCabinets\IKitchenCabinetsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterKitchenCabinets\IKitchenCabinetsFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterKitchenCabinets\IKitchenCabinetsOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterKitchenCabinets\KitchenCabinetsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterMailboxes\IMailboxesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterMailboxes\IMailboxesFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterMailboxes\IMailboxesOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterMailboxes\MailboxesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterShowersAndShowerParts\IShowersAndShowerPartsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterShowersAndShowerParts\IShowersAndShowerPartsFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterShowersAndShowerParts\IShowersAndShowerPartsOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterShowersAndShowerParts\ShowersAndShowerPartsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterTools\IToolsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterTools\IToolsFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterTools\IToolsOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterTools\ToolsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterVinylFlooring\IVinylFlooringFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterVinylFlooring\IVinylFlooringFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterVinylFlooring\IVinylFlooringOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\HomeImprovementSupplies\FilterVinylFlooring\VinylFlooringFilter.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\IApplyFilter.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\ICategory.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\IFilter.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\IFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterAudioEquipment\AudioEquipmentFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterAudioEquipment\IAudioEquipmentFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterAudioEquipment\IAudioEquipmentFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterAudioEquipment\IAudioEquipmentOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterBrassInstruments\BrassInstrumentsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterBrassInstruments\IBrassInstrumentsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterBrassInstruments\IBrassInstrumentsFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterBrassInstruments\IBrassInstrumentsOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterCellos\CellosFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterCellos\ICellosFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterCellos\ICellosFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterCellos\ICellosOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterClarinets\ClarinetsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterClarinets\IClarinetsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterClarinets\IClarinetsFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterClarinets\IClarinetsOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterDrumSets\DrumSetsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterDrumSets\IDrumSetsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterDrumSets\IDrumSetsFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterDrumSets\IDrumSetsOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterFlutes\FlutesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterFlutes\IFlutesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterFlutes\IFlutesFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterFlutes\IFlutesOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterGuitarsAndBasses\GuitarsAndBassesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterGuitarsAndBasses\IGuitarsAndBassesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterGuitarsAndBasses\IGuitarsAndBassesFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterGuitarsAndBasses\IGuitarsAndBassesOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterMusicalInstruments\MusicalInstrumentsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterMusicalInstruments\IMusicalInstrumentsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterMusicalInstruments\IMusicalInstrumentsFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterMusicalInstruments\IMusicalInstrumentsOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterPercussionInstruments\IPercussionInstrumentsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterPercussionInstruments\IPercussionInstrumentsFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterPercussionInstruments\IPercussionInstrumentsOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterPercussionInstruments\PercussionInstrumentsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterPianosAndKeyboards\IPianosAndKeyboardsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterPianosAndKeyboards\IPianosAndKeyboardsFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterPianosAndKeyboards\IPianosAndKeyboardsOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterPianosAndKeyboards\PianosAndKeyboardsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterSaxophones\ISaxophonesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterSaxophones\ISaxophonesFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterSaxophones\ISaxophonesOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterSaxophones\SaxophonesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterUkuleles\IUkulelesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterUkuleles\IUkulelesFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterUkuleles\IUkulelesOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterUkuleles\UkulelesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterViolas\IViolasFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterViolas\IViolasFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterViolas\IViolasOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterViolas\ViolasFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterViolins\IViolinsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterViolins\IViolinsFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterViolins\IViolinsOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\MusicalInstruments\FilterViolins\ViolinsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\OfficeSupplies\FilterOfficeSupplies\OfficeSuppliesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\OfficeSupplies\FilterOfficeSupplies\IOfficeSuppliesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\OfficeSupplies\FilterOfficeSupplies\IOfficeSuppliesFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\OfficeSupplies\FilterOfficeSupplies\IOfficeSuppliesOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\OfficeSupplies\FilterBubbleWrap\BubbleWrapFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\OfficeSupplies\FilterBubbleWrap\IBubbleWrapFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\OfficeSupplies\FilterBubbleWrap\IBubbleWrapFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\OfficeSupplies\FilterBubbleWrap\IBubbleWrapOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\OfficeSupplies\FilterClipboards\ClipboardsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\OfficeSupplies\FilterClipboards\IClipboardsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\OfficeSupplies\FilterClipboards\IClipboardsFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\OfficeSupplies\FilterClipboards\IClipboardsOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\OfficeSupplies\FilterDeskOrganizers\DeskOrganizersFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\OfficeSupplies\FilterDeskOrganizers\IDeskOrganizersFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\OfficeSupplies\FilterDeskOrganizers\IDeskOrganizersFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\OfficeSupplies\FilterDeskOrganizers\IDeskOrganizersOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\OfficeSupplies\FilterOfficeFurniture\IOfficeFurnitureFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\OfficeSupplies\FilterOfficeFurniture\IOfficeFurnitureFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\OfficeSupplies\FilterOfficeFurniture\IOfficeFurnitureOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\OfficeSupplies\FilterOfficeFurniture\OfficeFurnitureFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\OfficeSupplies\FilterWhiteboards\IWhiteboardsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\OfficeSupplies\FilterWhiteboards\IWhiteboardsFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\OfficeSupplies\FilterWhiteboards\IWhiteboardsOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\OfficeSupplies\FilterWhiteboards\WhiteboardsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PetSupplies\FilterBirdSupplies\BirdSuppliesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PetSupplies\FilterBirdSupplies\IBirdSuppliesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PetSupplies\FilterBirdSupplies\IBirdSuppliesFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PetSupplies\FilterBirdSupplies\IBirdSuppliesOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PetSupplies\FilterCatSupplies\CatSuppliesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PetSupplies\FilterCatSupplies\ICatSuppliesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PetSupplies\FilterCatSupplies\ICatSuppliesFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PetSupplies\FilterCatSupplies\ICatSuppliesOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PetSupplies\FilterChickenSupplies\ChickenSuppliesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PetSupplies\FilterChickenSupplies\IChickenSuppliesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PetSupplies\FilterChickenSupplies\IChickenSuppliesFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PetSupplies\FilterChickenSupplies\IChickenSuppliesOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PetSupplies\FilterDogSupplies\DogSuppliesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PetSupplies\FilterDogSupplies\IDogSuppliesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PetSupplies\FilterDogSupplies\IDogSuppliesFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PetSupplies\FilterDogSupplies\IDogSuppliesOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PetSupplies\FilterFishSupplies\FishSuppliesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PetSupplies\FilterFishSupplies\IFishSuppliesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PetSupplies\FilterFishSupplies\IFishSuppliesFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PetSupplies\FilterFishSupplies\IFishSuppliesOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PetSupplies\FilterPetCrates\IPetCratesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PetSupplies\FilterPetCrates\IPetCratesFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PetSupplies\FilterPetCrates\IPetCratesOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PetSupplies\FilterPetCrates\PetCratesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PetSupplies\FilterPetKennels\IPetKennelsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PetSupplies\FilterPetKennels\IPetKennelsFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PetSupplies\FilterPetKennels\IPetKennelsOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PetSupplies\FilterPetKennels\PetKennelsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PetSupplies\FilterReptileSupplies\IReptileSuppliesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PetSupplies\FilterReptileSupplies\IReptileSuppliesFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PetSupplies\FilterReptileSupplies\IReptileSuppliesOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\PetSupplies\FilterReptileSupplies\ReptileSuppliesFilter.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\FilterApartmentsForRent\ApartmentsForRentFilter.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\FilterApartmentsForRent\IApartmentsForRentFilter.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\FilterApartmentsForRent\IApartmentsForRentFilterOptions.cs" />
@@ -330,11 +608,11 @@
     <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\FilterCondosForRent\ICondosForRentFilter.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\FilterCondosForRent\ICondosForRentFilterOptions.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\FilterCondosForRent\ICondosForRentOptions.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\BathroomCount.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\BedroomCount.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\PropertyRentalCategory.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\PropertyRentalsSortOptions.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\RentalType.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GridHelper\Enum\BathroomCount.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GridHelper\Enum\BedroomCount.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GridHelper\Enum\PropertyRentalCategory.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GridHelper\Enum\PropertyRentalsSortOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GridHelper\Enum\RentalType.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\FilterHousesForRent\HousesForRentFilter.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\FilterHousesForRent\IHousesForRentFilter.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\FilterHousesForRent\IHousesForRentFilterOptions.cs" />
@@ -351,6 +629,90 @@
     <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\FilterTownhousesForRent\ITownhousesForRentFilter.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\FilterTownhousesForRent\ITownhousesForRentFilterOptions.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\PropertyRentals\FilterTownhousesForRent\ITownhousesForRentOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\SportingGoods\FilterBicycles\BicyclesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\SportingGoods\FilterBicycles\IBicyclesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\SportingGoods\FilterBicycles\IBicyclesFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\SportingGoods\FilterBicycles\IBicyclesOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\SportingGoods\FilterExerciseAndFitnessEquipment\ExerciseAndFitnessEquipmentFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\SportingGoods\FilterExerciseAndFitnessEquipment\IExerciseAndFitnessEquipmentFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\SportingGoods\FilterExerciseAndFitnessEquipment\IExerciseAndFitnessEquipmentFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\SportingGoods\FilterExerciseAndFitnessEquipment\IExerciseAndFitnessEquipmentOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\SportingGoods\FilterIndoorGames\IIndoorGamesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\SportingGoods\FilterIndoorGames\IIndoorGamesFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\SportingGoods\FilterIndoorGames\IIndoorGamesOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\SportingGoods\FilterIndoorGames\IndoorGamesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\SportingGoods\FilterKayaks\IKayaksFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\SportingGoods\FilterKayaks\IKayaksFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\SportingGoods\FilterKayaks\IKayaksOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\SportingGoods\FilterKayaks\KayaksFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\SportingGoods\FilterOutdoorGames\IOutdoorGamesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\SportingGoods\FilterOutdoorGames\IOutdoorGamesFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\SportingGoods\FilterOutdoorGames\IOutdoorGamesOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\SportingGoods\FilterOutdoorGames\OutdoorGamesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\SportingGoods\FilterOutdoorRecreationEquipment\IOutdoorRecreationEquipmentFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\SportingGoods\FilterOutdoorRecreationEquipment\IOutdoorRecreationEquipmentFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\SportingGoods\FilterOutdoorRecreationEquipment\IOutdoorRecreationEquipmentOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\SportingGoods\FilterOutdoorRecreationEquipment\OutdoorRecreationEquipmentFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\SportingGoods\FilterSportsEquipment\ISportsEquipmentFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\SportingGoods\FilterSportsEquipment\ISportsEquipmentFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\SportingGoods\FilterSportsEquipment\ISportsEquipmentOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\SportingGoods\FilterSportsEquipment\SportsEquipmentFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\ActionFigures\ActionFiguresFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\ActionFigures\IActionFiguresFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\ActionFigures\IActionFiguresFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\ActionFigures\IActionFiguresOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\BuildingToys\BuildingToysFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\BuildingToys\IBuildingToysFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\BuildingToys\IBuildingToysFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\BuildingToys\IBuildingToysOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\Dollhouses\DollhousesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\Dollhouses\IDollhousesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\Dollhouses\IDollhousesFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\Dollhouses\IDollhousesOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\Dolls\DollsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\Dolls\IDollsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\Dolls\IDollsFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\Dolls\IDollsOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\EducationalToys\EducationalToysFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\EducationalToys\IEducationalToysFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\EducationalToys\IEducationalToysFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\EducationalToys\IEducationalToysOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\Games\GamesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\Games\IGamesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\Games\IGamesFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\Games\IGamesOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\ModelKits\IModelKitsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\ModelKits\IModelKitsFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\ModelKits\IModelKitsOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\ModelKits\ModelKitsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\OutdoorToys\IOutdoorToysFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\OutdoorToys\IOutdoorToysFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\OutdoorToys\IOutdoorToysOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\OutdoorToys\OutdoorToysFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\PlayHouses\IPlayHousesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\PlayHouses\IPlayHousesFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\PlayHouses\IPlayHousesOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\PlayHouses\PlayHousesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\PlayKitchens\IPlayKitchensFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\PlayKitchens\IPlayKitchensFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\PlayKitchens\IPlayKitchensOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\PlayKitchens\PlayKitchensFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\Puzzles\IPuzzlesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\Puzzles\IPuzzlesFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\Puzzles\IPuzzlesOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\Puzzles\PuzzlesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\RemoteControlToys\IRemoteControlToysFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\RemoteControlToys\IRemoteControlToysFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\RemoteControlToys\IRemoteControlToysOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\RemoteControlToys\RemoteControlToysFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\StuffedAnimals\IStuffedAnimalsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\StuffedAnimals\IStuffedAnimalsFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\StuffedAnimals\IStuffedAnimalsOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\StuffedAnimals\StuffedAnimalsFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\ToyVehicles\IToyVehiclesFilter.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\ToyVehicles\IToyVehiclesFilterOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\ToyVehicles\IToyVehiclesOptions.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\ToysAndGames\ToyVehicles\ToyVehiclesFilter.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\FilterBoats\BoatFilter.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\FilterBoats\IBoatFilter.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\FilterBoats\IBoatsFilterOptions.cs" />
@@ -359,15 +721,15 @@
     <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\FilterCars\ICarsFilter.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\FilterCars\ICarsFilterOptions.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\FilterCars\ICarsOptions.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\ItemCondition.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\VehicleBodyStyle.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\VehicleCategory.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\Color.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\VehicleMake.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\VehicleModel.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\VehicleSortOption.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\VehicleTransmissionType.cs" />
-    <Compile Include="Pages\LoggedIn\Components\Grid\Enum\VehicleType.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GridHelper\Enum\ItemCondition.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GridHelper\Enum\VehicleBodyStyle.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GridHelper\Enum\VehicleCategory.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GridHelper\Enum\Color.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GridHelper\Enum\VehicleMake.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GridHelper\Enum\VehicleModel.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GridHelper\Enum\VehicleSortOption.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GridHelper\Enum\VehicleTransmissionType.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Grid\GridHelper\Enum\VehicleType.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\Filters\IVehicleBodyStyle.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\Filters\IVehicleExteriorColor.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Vehicles\Filters\IVehicleInteriorColor.cs" />
@@ -501,6 +863,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ResBabyAndToddlerSize.resx</DependentUpon>
     </Compile>
+    <Compile Include="Resources\ResBedSize.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResBedSize.resx</DependentUpon>
+    </Compile>
     <Compile Include="Resources\ResBodyStyle.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -531,6 +898,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="Resources\ResDecorStyle.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResDecorStyle.resx</DependentUpon>
+    </Compile>
     <Compile Include="Resources\ResDialogPopUpCreate.Designer.cs">
       <DependentUpon>ResDialogPopUpCreate.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -545,6 +917,11 @@
       <DependentUpon>ResEmoji.resx</DependentUpon>
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Resources\ResFinish.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResFinish.resx</DependentUpon>
     </Compile>
     <Compile Include="Resources\ResHomePage1.Designer.cs">
       <DependentUpon>ResHomePage.resx</DependentUpon>
@@ -664,9 +1041,8 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Pages\LoggedIn\Components\Grid\GardenAndOutdoor\" />
-    <Folder Include="Pages\LoggedIn\Components\Grid\RadioButton\" />
-    <Folder Include="Pages\LoggedIn\Components\Grid\Textbox\" />
+    <Folder Include="Pages\LoggedIn\Components\Grid\GridHelper\RadioButton\" />
+    <Folder Include="Pages\LoggedIn\Components\Grid\GridHelper\Textbox\" />
     <Folder Include="Pages\LoggedIn\Home\HomeHeader\Right\Create\" />
   </ItemGroup>
   <ItemGroup>
@@ -678,6 +1054,10 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ResBabyAndToddlerSize.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ResBedSize.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResBedSize.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\ResBodyStyle.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ResBodyStyle.Designer.cs</LastGenOutput>
@@ -687,7 +1067,7 @@
       <LastGenOutput>ResBrand.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\ResCategory.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ResCategory.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </EmbeddedResource>
@@ -703,6 +1083,10 @@
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ResDate.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ResDecorStyle.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResDecorStyle.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Resources\ResDialogPopUpCreate.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ResDialogPopUpCreate.Designer.cs</LastGenOutput>
@@ -714,6 +1098,10 @@
     <EmbeddedResource Include="Resources\ResEmoji.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ResEmoji.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ResFinish.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResFinish.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\ResHomePage.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

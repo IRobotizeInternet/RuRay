@@ -1,6 +1,6 @@
 ﻿namespace RobotizeFacebook.Pages.LoggedIn
 {
-    public interface ICamerasOptions : IFilterOptions, IFilter<ICamerasFilterOptions>
+    public interface ICellPhonesOptions : IFilterOptions, IFilter<ICellPhonesFilterOptions>
     {
 
     }

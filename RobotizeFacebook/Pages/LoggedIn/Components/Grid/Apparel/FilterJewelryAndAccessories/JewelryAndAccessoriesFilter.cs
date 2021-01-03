@@ -33,7 +33,7 @@ namespace RobotizeFacebook.Pages.LoggedIn
             throw new NotImplementedException();
         }
 
-        public IFilterOptions Material(Material material)
+        public IFilterOptions Material(MaterialJewelryAndAccessories material)
         {
             throw new NotImplementedException();
         }

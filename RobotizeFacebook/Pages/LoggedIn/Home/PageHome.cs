@@ -4,6 +4,7 @@ using OpenQA.Selenium.Support.UI;
 using RobotizeFacebook.Pages.LoggedIn;
 using System.Collections.Generic;
 using System.IO;
+using System.Threading;
 
 namespace RobotizeFacebook.Pages.LoggedUser
 {
@@ -24,25 +25,27 @@ namespace RobotizeFacebook.Pages.LoggedUser
 
         public void GenerateAllElements()
         {
+            Driver.FindElementByXPath("//span[text()='Marketplace']").Click();
+            Thread.Sleep(3000);
+            Driver.FindElementByXPath("//span[text()='Garden & Outdoor']").Click();
             var rootFolderPath = @"D:\Dev\Robotize\RobotizeFacebook\Pages\LoggedIn\Components\Grid\Family\FamilyFilter\";
             var fileBaseName = "Family";
-            var xPath = "//a[@href='/marketplace/111906762160356/garden/']//span[text()='Garden & Outdoor']/../../../../../../../../../..//span[contains(@class,'fjf4s8hc')]";
+            var xPath = "//a[@href='/marketplace/111906762160356/toys/']//span[text()='Toys & Games']/../../../../../../../../../..//span[contains(@class,'fjf4s8hc')]";
             foreach (var element in Driver.FindElements(By.XPath(xPath)))
             {
-                var destPath = $@"D:\Dev\Robotize\RobotizeFacebook\Pages\LoggedIn\Components\Grid\GardenAndOutdoor\{element.Text}Filter";
-
-                Directory.CreateDirectory(destPath);
+                var destPath = $@"D:\Dev\Robotize\RobotizeFacebook\Pages\LoggedIn\Components\Grid\ToysAndGames\";
+                var newDirName = element.Text.Replace("&", "And");
+                newDirName = newDirName.Replace("'", "");
+                newDirName = newDirName.Replace(" ", "");
+                var newDir = $"{destPath}{newDirName}";
+                Directory.CreateDirectory(newDir);
                 foreach (var file in Directory.GetFiles(rootFolderPath))
                 {
-                    var newFileName = element.Text.Replace("&", "And");
-                    newFileName = newFileName.Replace("'", "");
-                    newFileName = newFileName.Replace(" ", "");
-
-                    var destFile = Path.Combine(destPath, newFileName);
+                    var fi = Path.GetFileName(file).Replace(fileBaseName, newDirName);
+                    var destFile = Path.Combine(newDir, fi);
                     File.Copy(file, destFile, true);
                     var text = File.ReadAllText(destFile);
-                    text.Replace(fileBaseName, newFileName);
-                    File.WriteAllText(destFile, text);
+                    File.WriteAllText(destFile, text.Replace(fileBaseName, newDirName));
                 }
             }
         }

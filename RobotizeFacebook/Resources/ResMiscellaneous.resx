@@ -234,4 +234,7 @@
   <data name="LenovoYoga" xml:space="preserve">
     <value>Lenovo Yoga</value>
   </data>
+  <data name="Wicker" xml:space="preserve">
+    <value>Wicker</value>
+  </data>
 </root>

@@ -13,6 +13,11 @@ namespace RobotizeFacebook.Pages.LoggedIn
 
         public IPetSuppliesFilterOptions FilterBy => throw new NotImplementedException();
 
+        public IApplyFilter Brand(BrandPetSupply bodyStyle)
+        {
+            throw new NotImplementedException();
+        }
+
         public void Category(PetSuppliesCategory category)
         {
             throw new NotImplementedException();

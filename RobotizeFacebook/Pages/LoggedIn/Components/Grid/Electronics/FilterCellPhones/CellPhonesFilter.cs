@@ -1,23 +1,29 @@
 ﻿using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using System;
+using System.Collections.Generic;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
-    public class TVsFilter : BaseFilter, ITVsFilter, ITVsFilterOptions
+    public class CellPhonesFilter : BaseFilter, ICellPhonesFilter, ICellPhonesFilterOptions
     {
-        public TVsFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public CellPhonesFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
         {
         }
 
-        public ITVsFilterOptions FilterBy => throw new NotImplementedException();
+        public ICellPhonesFilterOptions FilterBy => throw new NotImplementedException();
 
-        public IApplyFilter Brand(BrandTVs bodyStyle)
+        public IApplyFilter Brand(BrandCamera bodyStyle)
         {
             throw new NotImplementedException();
         }
 
-        public IApplyFilter DisplayTechnology(DisplayTechnology displayTechnology)
+        public void Category(CellPhonesCategory category)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<string> GetAllCategories()
         {
             throw new NotImplementedException();
         }
@@ -27,12 +33,17 @@ namespace RobotizeFacebook.Pages.LoggedIn
             throw new NotImplementedException();
         }
 
+        public IApplyFilter Network(Network network)
+        {
+            throw new NotImplementedException();
+        }
+
         public IApplyFilter Price(double? min = null, double? max = null)
         {
             throw new NotImplementedException();
         }
 
-        public IApplyFilter ScreenSize(ScreenSize screenSize)
+        public IApplyFilter ProductLine(ProductLine productLine)
         {
             throw new NotImplementedException();
         }

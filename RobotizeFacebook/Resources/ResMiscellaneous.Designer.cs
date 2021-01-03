@@ -383,5 +383,14 @@ namespace RobotizeFacebook.Resources {
                 return ResourceManager.GetString("Submit", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Wicker.
+        /// </summary>
+        public static string Wicker {
+            get {
+                return ResourceManager.GetString("Wicker", resourceCulture);
+            }
+        }
     }
 }

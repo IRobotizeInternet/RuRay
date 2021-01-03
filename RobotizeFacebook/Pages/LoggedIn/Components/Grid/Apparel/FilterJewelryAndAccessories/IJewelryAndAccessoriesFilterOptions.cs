@@ -6,7 +6,7 @@ namespace RobotizeFacebook.Pages.LoggedIn
         IPrice,
         IItemCondition<ItemCondition>,
         IBrand<BrandJewelryAndAccessories>,
-        Imaterial<Material>
+        IMaterial<MaterialJewelryAndAccessories>
     {
     }
 }
