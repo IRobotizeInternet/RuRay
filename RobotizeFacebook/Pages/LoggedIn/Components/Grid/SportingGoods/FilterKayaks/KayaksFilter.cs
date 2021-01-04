@@ -13,16 +13,6 @@ namespace RobotizeFacebook.Pages.LoggedIn
 
         public IKayaksFilterOptions FilterBy => throw new NotImplementedException();
 
-        public void Category(KayaksCategory category)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<string> GetAllCategories()
-        {
-            throw new NotImplementedException();
-        }
-
         public IFilterOptions ItemCondition(ItemCondition condition)
         {
             throw new NotImplementedException();

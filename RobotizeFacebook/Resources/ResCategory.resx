@@ -1857,4 +1857,13 @@
   <data name="Whiteboards" xml:space="preserve">
     <value>White boards</value>
   </data>
+  <data name="Arbors" xml:space="preserve">
+    <value>Arbors</value>
+  </data>
+  <data name="Gazebos" xml:space="preserve">
+    <value>Gazebos</value>
+  </data>
+  <data name="StorageSheds" xml:space="preserve">
+    <value>Storage Sheds</value>
+  </data>
 </root>

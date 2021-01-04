@@ -12,17 +12,7 @@ namespace RobotizeFacebook.Pages.LoggedIn
         }
 
         public IGardenDecorFilterOptions FilterBy => throw new NotImplementedException();
-
-        public void Category(GardenDecorCategory category)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<string> GetAllCategories()
-        {
-            throw new NotImplementedException();
-        }
-
+        
         public IFilterOptions ItemCondition(ItemCondition condition)
         {
             throw new NotImplementedException();

@@ -1,6 +1,6 @@
 namespace RobotizeFacebook.Pages.LoggedIn
 {
-    public interface IKayaksFilter : IFilter<IKayaksFilterOptions>, ICategory<KayaksCategory>
+    public interface IKayaksFilter : IFilter<IKayaksFilterOptions>
     {
 
     }

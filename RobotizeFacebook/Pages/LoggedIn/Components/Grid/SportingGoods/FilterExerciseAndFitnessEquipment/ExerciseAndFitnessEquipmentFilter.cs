@@ -13,7 +13,7 @@ namespace RobotizeFacebook.Pages.LoggedIn
 
         public IExerciseAndFitnessEquipmentFilterOptions FilterBy => throw new NotImplementedException();
 
-        public void Category(ExerciseAndFitnessEquipmentCagetory category)
+        public void Category(ExerciseAndFitnessEquipmentCategory category)
         {
             throw new NotImplementedException();
         }

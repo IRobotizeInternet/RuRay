@@ -13,7 +13,14 @@ namespace RobotizeFacebook.Pages.LoggedIn
 
         public IHomeDecorFilterOptions FilterBy => throw new NotImplementedException();
 
+        IHomeGoodsFilterOptions IFilter<IHomeGoodsFilterOptions>.FilterBy => throw new NotImplementedException();
+
         public void Category(HomeDecorCategory category)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Category(HomeGoodsCategory category)
         {
             throw new NotImplementedException();
         }

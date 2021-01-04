@@ -349,6 +349,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Arbors.
+        /// </summary>
+        public static string Arbors {
+            get {
+                return ResourceManager.GetString("Arbors", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Arcade Machines.
         /// </summary>
         public static string ArcadeMachines {
@@ -2271,6 +2280,15 @@ namespace RobotizeFacebook.Resources {
         public static string GardenTools {
             get {
                 return ResourceManager.GetString("GardenTools", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Gazebos.
+        /// </summary>
+        public static string Gazebos {
+            get {
+                return ResourceManager.GetString("Gazebos", resourceCulture);
             }
         }
         
@@ -4476,6 +4494,15 @@ namespace RobotizeFacebook.Resources {
         public static string StorageAndOrganization {
             get {
                 return ResourceManager.GetString("StorageAndOrganization", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Storage Sheds.
+        /// </summary>
+        public static string StorageSheds {
+            get {
+                return ResourceManager.GetString("StorageSheds", resourceCulture);
             }
         }
         

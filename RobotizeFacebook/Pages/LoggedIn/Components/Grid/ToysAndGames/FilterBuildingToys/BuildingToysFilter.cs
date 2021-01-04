@@ -5,25 +5,13 @@ using System.Collections.Generic;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
-    public class OfficeSuppliesFilter : BaseFilter, IOfficeSuppliesFilter, IOfficeSuppliesFilterOptions
+    public class BuildingToysFilter : BaseFilter, IBuildingToysFilter, IBuildingToysFilterOptions
     {
-        public OfficeSuppliesFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public BuildingToysFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
         {
         }
 
-        public IBubbleWrapFilterOptions FilterBy => throw new NotImplementedException();
-
-        IOfficeSuppliesFilterOptions IFilter<IOfficeSuppliesFilterOptions>.FilterBy => throw new NotImplementedException();
-
-        public void Category(OfficeSuppliesCategory category)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<string> GetAllCategories()
-        {
-            throw new NotImplementedException();
-        }
+        public IBuildingToysFilterOptions FilterBy => throw new NotImplementedException();
 
         public IFilterOptions ItemCondition(ItemCondition condition)
         {

@@ -1,17 +1,16 @@
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using System;
-using System.Collections.Generic;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
-    public class BirdAndWildlifeAccessoriesFilter : BaseFilter, IBirdAndWildlifeAccessoriesFilter, IBirdAndWildlifeAccessoriesFilterOptions
+    public class PlayHousesFilter : BaseFilter, IPlayHousesFilter, IPlayHousesFilterOptions
     {
-        public BirdAndWildlifeAccessoriesFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public PlayHousesFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
         {
         }
 
-        public IBirdAndWildlifeAccessoriesFilterOptions FilterBy => throw new NotImplementedException();
+        public IPlayHousesFilterOptions FilterBy => throw new NotImplementedException();
 
         public IFilterOptions ItemCondition(ItemCondition condition)
         {

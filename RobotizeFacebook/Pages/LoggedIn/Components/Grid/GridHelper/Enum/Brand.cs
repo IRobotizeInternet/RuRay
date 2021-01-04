@@ -9,6 +9,14 @@ namespace RobotizeFacebook.Pages.LoggedIn
         Loungefly = 0,
     }
 
+    public enum BrandRemoteControlToys
+    {
+        [LocalizedDescription(nameof(ResBrand.DavidYurman), typeof(ResBrand))]
+        Axial = 0,
+        [LocalizedDescription(nameof(ResBrand.Gucci), typeof(ResBrand))]
+        Traxxas = 1,
+    }
+
     public enum BrandJewelryAndAccessories
     {
         [LocalizedDescription(nameof(ResBrand.DavidYurman), typeof(ResBrand))]

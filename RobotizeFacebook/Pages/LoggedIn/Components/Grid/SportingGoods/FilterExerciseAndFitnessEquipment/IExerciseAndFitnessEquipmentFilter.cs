@@ -1,6 +1,6 @@
 namespace RobotizeFacebook.Pages.LoggedIn
 {
-    public interface IExerciseAndFitnessEquipmentFilter : IFilter<IExerciseAndFitnessEquipmentFilterOptions>, ICategory<ExerciseAndFitnessEquipmentCagetory>
+    public interface IExerciseAndFitnessEquipmentFilter : IFilter<IExerciseAndFitnessEquipmentFilterOptions>, ICategory<ExerciseAndFitnessEquipmentCategory>
     {
 
     }

@@ -718,7 +718,7 @@ namespace RobotizeFacebook.Pages.LoggedIn
         ReptileCages = 0
     }
 
-    public enum SportingGoodsCagetory
+    public enum SportingGoodsCategory
     {
         [LocalizedDescription(nameof(ResCategory.Bicycles), typeof(ResCategory))]
         Bicycles = 0,
@@ -736,36 +736,10 @@ namespace RobotizeFacebook.Pages.LoggedIn
         SportsEquipment = 6
     }
 
-    public enum BicyclesCagetory
-    {
-        [LocalizedDescription(nameof(ResCategory.BicycleAccessories), typeof(ResCategory))]
-        BicycleAccessories = 0,
-        [LocalizedDescription(nameof(ResCategory.BicycleParts), typeof(ResCategory))]
-        BicycleParts = 1
-    }
-
-    public enum ExerciseAndFitnessEquipmentCagetory
+    public enum ExerciseAndFitnessEquipmentCategory
     {
         [LocalizedDescription(nameof(ResCategory.AbMachines), typeof(ResCategory))]
         AbMachines = 0,
-        [LocalizedDescription(nameof(ResCategory.AerobicSteps), typeof(ResCategory))]
-        AerobicSteps = 1,
-        [LocalizedDescription(nameof(ResCategory.CardioEquipment), typeof(ResCategory))]
-        CardioEquipment = 2,
-        [LocalizedDescription(nameof(ResCategory.ExerciseBalls), typeof(ResCategory))]
-        ExerciseBalls = 3,
-        [LocalizedDescription(nameof(ResCategory.ExerciseBands), typeof(ResCategory))]
-        ExerciseBands = 4,
-        [LocalizedDescription(nameof(ResCategory.PilatesMachines), typeof(ResCategory))]
-        PilatesMachines = 5,
-        [LocalizedDescription(nameof(ResCategory.PullUpBars), typeof(ResCategory))]
-        PullUpBars = 6,
-        [LocalizedDescription(nameof(ResCategory.WeightLiftingEquipment), typeof(ResCategory))]
-        WeightLiftingEquipment = 7,
-        [LocalizedDescription(nameof(ResCategory.YogaBlocks), typeof(ResCategory))]
-        YogaBlocks = 8,
-        [LocalizedDescription(nameof(ResCategory.YogaMats), typeof(ResCategory))]
-        YogaMats = 9
     }
 
     public enum IndoorGamesCategory
@@ -946,7 +920,15 @@ namespace RobotizeFacebook.Pages.LoggedIn
         [LocalizedDescription(nameof(ResCategory.PowerTools), typeof(ResCategory))] PowerTools = 11,
     }
 
-    public enum GardenSuppliesCategory
+    public enum GardenStructuresCategory
+    {
+        [LocalizedDescription(nameof(ResCategory.Arbors), typeof(ResCategory))] Arbors = 0,
+        [LocalizedDescription(nameof(ResCategory.Gazebos), typeof(ResCategory))] Gazebos = 1,
+        [LocalizedDescription(nameof(ResCategory.StorageSheds), typeof(ResCategory))] StorageSheds = 2,
+        [LocalizedDescription(nameof(ResCategory.PatioUmbrellas), typeof(ResCategory))] PatioUmbrellas = 3
+    }
+
+    public enum GardeningSuppliesCategory
     {
         [LocalizedDescription(nameof(ResCategory.Composters), typeof(ResCategory))] Composters = 0,
         [LocalizedDescription(nameof(ResCategory.GardenTools), typeof(ResCategory))] GardenTools = 1,
@@ -963,7 +945,7 @@ namespace RobotizeFacebook.Pages.LoggedIn
         RemoteToyCarsAndTrucks = 0
     }
 
-    public enum ToyVehicleCategory
+    public enum ToyVehiclesCategory
     {
         [LocalizedDescription(nameof(ResCategory.ToyAirplanes), typeof(ResCategory))]
         ToyAirplanes = 0,

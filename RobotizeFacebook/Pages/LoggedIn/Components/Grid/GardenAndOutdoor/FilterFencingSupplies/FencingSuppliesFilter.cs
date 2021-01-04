@@ -13,16 +13,6 @@ namespace RobotizeFacebook.Pages.LoggedIn
 
         public IFencingSuppliesFilterOptions FilterBy => throw new NotImplementedException();
 
-        public void Category(FencingSuppliesCategory category)
-        {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<string> GetAllCategories()
-        {
-            throw new NotImplementedException();
-        }
-
         public IFilterOptions ItemCondition(ItemCondition condition)
         {
             throw new NotImplementedException();

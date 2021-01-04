@@ -5,17 +5,20 @@ using System.Collections.Generic;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
-    public class OfficeSuppliesFilter : BaseFilter, IOfficeSuppliesFilter, IOfficeSuppliesFilterOptions
+    public class RemoteControlToysFilter : BaseFilter, IRemoteControlToysFilter, IRemoteControlToysFilterOptions
     {
-        public OfficeSuppliesFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public RemoteControlToysFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
         {
         }
 
-        public IBubbleWrapFilterOptions FilterBy => throw new NotImplementedException();
+        public IRemoteControlToysFilterOptions FilterBy => throw new NotImplementedException();
 
-        IOfficeSuppliesFilterOptions IFilter<IOfficeSuppliesFilterOptions>.FilterBy => throw new NotImplementedException();
+        public IApplyFilter Brand(BrandRemoteControlToys bodyStyle)
+        {
+            throw new NotImplementedException();
+        }
 
-        public void Category(OfficeSuppliesCategory category)
+        public void Category(RemoteControlToysCategory category)
         {
             throw new NotImplementedException();
         }
