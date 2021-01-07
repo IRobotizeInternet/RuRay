@@ -771,6 +771,7 @@
     <Compile Include="Pages\LoggedIn\Components\CreatePost\DialogFriendsExcepts.cs" />
     <Compile Include="Pages\LoggedIn\Components\CreatePost\DialogSelectPrivacy.cs" />
     <Compile Include="Pages\LoggedIn\Components\CreatePost\PopupEmoji.cs" />
+    <Compile Include="Pages\LoggedIn\Components\Menus\DivMarketPlaceMenu.cs" />
     <Compile Include="Pages\LoggedIn\Components\SearchBox\SearchBoxSharingWithYourFriends.cs" />
     <Compile Include="Pages\LoggedIn\Dialogs\DialogAllKeyboardShortcuts.cs" />
     <Compile Include="Pages\LoggedIn\Dialogs\Account\PopupDisplayAndAccessibility.cs" />
@@ -800,6 +801,7 @@
     <Compile Include="Pages\LoggedIn\Home\MainSection\SubSections\DialogLearnCreateRoom.cs" />
     <Compile Include="Pages\LoggedIn\Home\MainSection\SubSections\Feed.cs" />
     <Compile Include="Pages\LoggedIn\Home\PageTimeline.cs" />
+    <Compile Include="Pages\LoggedIn\MarketPlace\CreateNewListing\PageCreateNewListing.cs" />
     <Compile Include="Pages\LoggedIn\MarketPlace\PageMarketplace.cs" />
     <Compile Include="Pages\LoggedIn\PrivacyCheckup\PagePrivacyCheckup.cs" />
     <Compile Include="Pages\LoggedIn\Settings\AccountSettings\PageAccount.cs" />
@@ -1045,6 +1047,7 @@
   <ItemGroup>
     <Folder Include="Pages\LoggedIn\Components\GridMarketPlace\GridHelper\RadioButton\" />
     <Folder Include="Pages\LoggedIn\Components\GridMarketPlace\GridHelper\Textbox\" />
+    <Folder Include="Pages\LoggedIn\Components\Notifications\" />
     <Folder Include="Pages\LoggedIn\Home\HomeHeader\Right\Create\" />
   </ItemGroup>
   <ItemGroup>
