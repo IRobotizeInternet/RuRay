@@ -146,6 +146,7 @@
     <Compile Include="CryptoServices\Crypto.cs" />
     <Compile Include="CryptoServices\CryptoServiceForString.cs" />
     <Compile Include="Pages\LoggedIn\Components\CreatePost\DialogSpecificFriends.cs" />
+    <Compile Include="Pages\LoggedIn\Components\DivRememberPassword.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterWomens\IWomensFilter.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterWomens\IWomensFilterOptions.cs" />
     <Compile Include="Pages\LoggedIn\Components\Grid\Apparel\FilterWomens\IWomensOptions.cs" />

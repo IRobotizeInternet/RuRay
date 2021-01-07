@@ -195,9 +195,6 @@
   <data name="NewsFeedPreferences" xml:space="preserve">
     <value>News Feed Preferences</value>
   </data>
-  <data name="NewsFeedPreferences" xml:space="preserve">
-    <value>News Feed Preferences</value>
-  </data>
   <data name="GiveFeedbackToFacebook" xml:space="preserve">
     <value>Give Feedback to Facebook</value>
   </data>
@@ -213,14 +210,8 @@
   <data name="AddAScreenshotOrVideoRecommended" xml:space="preserve">
     <value>Add a Screenshot or Video (recommended)</value>
   </data>
-  <data name="HelpUsImproveTheNewFacebook" xml:space="preserve">
-    <value>Help us improve the new Facebook</value>
-  </data>
   <data name="Submit" xml:space="preserve">
     <value>Submit</value>
-  </data>
-  <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
   </data>
   <data name="SomethingWentWrong" xml:space="preserve">
     <value>Something went wrong</value>
@@ -236,5 +227,14 @@
   </data>
   <data name="Wicker" xml:space="preserve">
     <value>Wicker</value>
+  </data>
+  <data name="DivRememberPassword" xml:space="preserve">
+    <value>Next time you log in on this browser, just click your profile Next time you log in on this browser, just click your profile picture instead of typing a password.</value>
+  </data>
+  <data name="NotNow" xml:space="preserve">
+    <value>Not Now</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
   </data>
 </root>

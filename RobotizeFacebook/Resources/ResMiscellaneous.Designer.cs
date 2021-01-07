@@ -232,6 +232,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Next time you log in on this browser, just click your profile Next time you log in on this browser, just click your profile picture instead of typing a password..
+        /// </summary>
+        public static string DivRememberPassword {
+            get {
+                return ResourceManager.GetString("DivRememberPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Enter new email.
         /// </summary>
         public static string EnterNewEmail {
@@ -300,6 +309,24 @@ namespace RobotizeFacebook.Resources {
         public static string NewsFeedPreferences {
             get {
                 return ResourceManager.GetString("NewsFeedPreferences", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Not Now.
+        /// </summary>
+        public static string NotNow {
+            get {
+                return ResourceManager.GetString("NotNow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        public static string OK {
+            get {
+                return ResourceManager.GetString("OK", resourceCulture);
             }
         }
         
