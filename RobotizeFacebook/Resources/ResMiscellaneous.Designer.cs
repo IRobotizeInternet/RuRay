@@ -250,6 +250,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Filter.
+        /// </summary>
+        public static string Filter {
+            get {
+                return ResourceManager.GetString("Filter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Forgot your password?.
         /// </summary>
         public static string ForgotYourPassword {
@@ -372,6 +381,15 @@ namespace RobotizeFacebook.Resources {
         public static string SaveYourLoginInfo {
             get {
                 return ResourceManager.GetString("SaveYourLoginInfo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Search Facebook.
+        /// </summary>
+        public static string SearchFacebook {
+            get {
+                return ResourceManager.GetString("SearchFacebook", resourceCulture);
             }
         }
         

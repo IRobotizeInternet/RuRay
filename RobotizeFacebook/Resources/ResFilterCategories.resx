@@ -117,130 +117,193 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Add" xml:space="preserve">
-    <value>Add</value>
+  <data name="ActiveSessions" xml:space="preserve">
+    <value>Active Sessions</value>
   </data>
-  <data name="AddAnotherEmailOrMobileNumber" xml:space="preserve">
-    <value>+ Add another email or mobile number</value>
+  <data name="ActivityLog" xml:space="preserve">
+    <value>Activity Log</value>
   </data>
-  <data name="AddEmailAddress" xml:space="preserve">
-    <value>Add Email Address</value>
+  <data name="ActivityYoureTaggedIn" xml:space="preserve">
+    <value>Activity You're Tagged In</value>
   </data>
-  <data name="AddOrChangeOtherNames" xml:space="preserve">
-    <value>Add or change other names</value>
+  <data name="AddedFriends" xml:space="preserve">
+    <value>Added Friends</value>
   </data>
-  <data name="AddYourPhoneNumber" xml:space="preserve">
-    <value>Add your phone number?</value>
+  <data name="AnonymousPostsYouveWritten" xml:space="preserve">
+    <value>Anonymous Posts You've Written</value>
   </data>
-  <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
+  <data name="Apps" xml:space="preserve">
+    <value>Apps</value>
   </data>
-  <data name="ChangeAdAccountContact" xml:space="preserve">
-    <value>Change Ad Account Contact</value>
+  <data name="ArticlesYouveRead" xml:space="preserve">
+    <value>Articles You've Read</value>
   </data>
-  <data name="ChangeEmail" xml:space="preserve">
-    <value>Change Email</value>
+  <data name="Books" xml:space="preserve">
+    <value>Books</value>
   </data>
-  <data name="ChangePassword" xml:space="preserve">
-    <value>Change password</value>
+  <data name="Comments" xml:space="preserve">
+    <value>Comments</value>
   </data>
-  <data name="ChooseAFriend" xml:space="preserve">
-    <value>Choose a friend</value>
+  <data name="CreatedTournaments" xml:space="preserve">
+    <value>Created Tournaments</value>
   </data>
-  <data name="Close" xml:space="preserve">
-    <value>Close</value>
+  <data name="CrisisResponse" xml:space="preserve">
+    <value>Crisis Response</value>
   </data>
-  <data name="Confirm" xml:space="preserve">
-    <value>Confirm</value>
+  <data name="EventInvitations" xml:space="preserve">
+    <value>Event Invitations</value>
   </data>
-  <data name="Continue" xml:space="preserve">
-    <value>Continue</value>
+  <data name="EventResponses" xml:space="preserve">
+    <value>Event Responses</value>
   </data>
-  <data name="CreateRoom" xml:space="preserve">
-    <value>Create Room</value>
+  <data name="Followers" xml:space="preserve">
+    <value>Followers</value>
   </data>
-  <data name="CreateYourRoom" xml:space="preserve">
-    <value>Create Your Room</value>
+  <data name="Following" xml:space="preserve">
+    <value>Following</value>
   </data>
-  <data name="DeleteYourAccountInTheFuture" xml:space="preserve">
-    <value>Delete Your Account in the Future?</value>
+  <data name="FundraiserMatchesYouveCreated" xml:space="preserve">
+    <value>Fundraiser Matches You've Created</value>
   </data>
-  <data name="EnterNewEmail" xml:space="preserve">
-    <value>Enter new email</value>
+  <data name="FundraisersYouHelpManage" xml:space="preserve">
+    <value>Fundraisers You Help Manage</value>
   </data>
-  <data name="ForgotYourPassword" xml:space="preserve">
-    <value>Forgot your password?</value>
+  <data name="Games" xml:space="preserve">
+    <value>Games</value>
   </data>
-  <data name="LearnHowRoomsWork" xml:space="preserve">
-    <value>Learn How Rooms Work</value>
+  <data name="GroupAdminActions" xml:space="preserve">
+    <value>Group Admin Actions</value>
   </data>
-  <data name="LogOutOfAllSessions" xml:space="preserve">
-    <value>Log Out Of All Sessions</value>
+  <data name="GroupPostsAboutGroupsYouHaveRecommended" xml:space="preserve">
+    <value>Group Posts About Groups You Have Recommended</value>
   </data>
-  <data name="RemoveAccount" xml:space="preserve">
-    <value>Remove account</value>
+  <data name="GroupPostsAndComments" xml:space="preserve">
+    <value>Group Posts and Comments</value>
   </data>
-  <data name="RequestThatYourAccountBeDeletedAfterYouPassAway" xml:space="preserve">
-    <value>Request that your account be deleted after you pass away.</value>
+  <data name="GroupReactions" xml:space="preserve">
+    <value>Group Reactions</value>
   </data>
-  <data name="SaveChanges" xml:space="preserve">
-    <value>Save Changes</value>
+  <data name="Groups" xml:space="preserve">
+    <value>Groups</value>
   </data>
-  <data name="SaveYourLoginInfo" xml:space="preserve">
-    <value>Save your login info</value>
+  <data name="GroupsYouveSearchedFor" xml:space="preserve">
+    <value>Groups You've Searched For</value>
   </data>
-  <data name="SeeMore" xml:space="preserve">
-    <value>See More</value>
+  <data name="HiddenFromTimeline" xml:space="preserve">
+    <value>Hidden From Timeline</value>
   </data>
-  <data name="NewsFeedPreferences" xml:space="preserve">
-    <value>News Feed Preferences</value>
+  <data name="HobbiesYouveAddedToYourProfile" xml:space="preserve">
+    <value>Hobbies You've Added to Your Profile</value>
   </data>
-  <data name="GiveFeedbackToFacebook" xml:space="preserve">
-    <value>Give Feedback to Facebook</value>
+  <data name="LifeEvents" xml:space="preserve">
+    <value>Life Events</value>
   </data>
-  <data name="HelpUsImproveTheNewFacebook" xml:space="preserve">
-    <value>Help us improve the new Facebook</value>
+  <data name="LikesAndReactions" xml:space="preserve">
+    <value>Likes and Reactions</value>
   </data>
-  <data name="ChooseAnArea" xml:space="preserve">
-    <value>Choose an Area</value>
+  <data name="LoginsAndLogouts" xml:space="preserve">
+    <value>Logins and Logouts</value>
   </data>
-  <data name="PleaseIncludeAsMuchInfoAsPossible" xml:space="preserve">
-    <value>Please include as much info as possible...</value>
+  <data name="MarketplaceListings" xml:space="preserve">
+    <value>Marketplace Listings</value>
   </data>
-  <data name="AddAScreenshotOrVideoRecommended" xml:space="preserve">
-    <value>Add a Screenshot or Video (recommended)</value>
+  <data name="MemberProfiles" xml:space="preserve">
+    <value>Member Profiles</value>
   </data>
-  <data name="Submit" xml:space="preserve">
-    <value>Submit</value>
+  <data name="MembershipActivity" xml:space="preserve">
+    <value>Membership Activity</value>
   </data>
-  <data name="SomethingWentWrong" xml:space="preserve">
-    <value>Something went wrong</value>
+  <data name="MoviesAndTV" xml:space="preserve">
+    <value>Movies and TV</value>
   </data>
-  <data name="Back" xml:space="preserve">
-    <value>Back</value>
+  <data name="Notes" xml:space="preserve">
+    <value>Notes</value>
   </data>
-  <data name="StoryPrivacy" xml:space="preserve">
-    <value>Story Privacy</value>
+  <data name="OtherRecords" xml:space="preserve">
+    <value>Other Records</value>
   </data>
-  <data name="LenovoYoga" xml:space="preserve">
-    <value>Lenovo Yoga</value>
+  <data name="OthersPostsToYourTimeline" xml:space="preserve">
+    <value>Others' Posts to Your Timeline</value>
   </data>
-  <data name="Wicker" xml:space="preserve">
-    <value>Wicker</value>
+  <data name="PagesPageLikesAndInterests" xml:space="preserve">
+    <value>Pages, Page Likes and Interests</value>
   </data>
-  <data name="DivRememberPassword" xml:space="preserve">
-    <value>Next time you log in on this browser, just click your profile Next time you log in on this browser, just click your profile picture instead of typing a password.</value>
+  <data name="PhotosAndVideos" xml:space="preserve">
+    <value>Photos and Videos</value>
   </data>
-  <data name="NotNow" xml:space="preserve">
-    <value>Not Now</value>
+  <data name="PhotosYoureTaggedIn" xml:space="preserve">
+    <value>Photos You're Tagged In</value>
   </data>
-  <data name="OK" xml:space="preserve">
-    <value>OK</value>
+  <data name="Pokes" xml:space="preserve">
+    <value>Pokes</value>
   </data>
-  <data name="SearchFacebook" xml:space="preserve">
-    <value>Search Facebook</value>
+  <data name="Polls" xml:space="preserve">
+    <value>Polls</value>
   </data>
-  <data name="Filter" xml:space="preserve">
-    <value>Filter</value>
+  <data name="Posts" xml:space="preserve">
+    <value>Posts</value>
+  </data>
+  <data name="PostsAndComments" xml:space="preserve">
+    <value>Posts and Comments</value>
+  </data>
+  <data name="ProductsYouWanted" xml:space="preserve">
+    <value>Products You Wanted</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="ReceivedFriendRequests" xml:space="preserve">
+    <value>Received Friend Requests</value>
+  </data>
+  <data name="RecognizedDevices" xml:space="preserve">
+    <value>Recognized Devices</value>
+  </data>
+  <data name="Relationships" xml:space="preserve">
+    <value>Relationships</value>
+  </data>
+  <data name="RemindersToDonate" xml:space="preserve">
+    <value>Reminders to Donate</value>
+  </data>
+  <data name="RemovedFriends" xml:space="preserve">
+    <value>Removed Friends</value>
+  </data>
+  <data name="Saved" xml:space="preserve">
+    <value>Saved</value>
+  </data>
+  <data name="SearchHistory" xml:space="preserve">
+    <value>Search History</value>
+  </data>
+  <data name="SentFriendRequests" xml:space="preserve">
+    <value>Sent Friend Requests</value>
+  </data>
+  <data name="SongsYouveListenedTo" xml:space="preserve">
+    <value>Songs You've Listened To</value>
+  </data>
+  <data name="StoriesActivity" xml:space="preserve">
+    <value>Stories Activity</value>
+  </data>
+  <data name="VideoPollsYouveTaken" xml:space="preserve">
+    <value>Video Polls You've Taken</value>
+  </data>
+  <data name="VideosYouveSearchedFor" xml:space="preserve">
+    <value>Videos You've Searched For</value>
+  </data>
+  <data name="VideosYouveWatched" xml:space="preserve">
+    <value>Videos You've Watched</value>
+  </data>
+  <data name="VoiceInteractions" xml:space="preserve">
+    <value>Voice Interactions</value>
+  </data>
+  <data name="VoiceSearch" xml:space="preserve">
+    <value>Voice Search</value>
+  </data>
+  <data name="YourEvents" xml:space="preserve">
+    <value>Your Events</value>
+  </data>
+  <data name="YourPlaces" xml:space="preserve">
+    <value>Your Places</value>
+  </data>
+  <data name="YourStories" xml:space="preserve">
+    <value>Your Stories</value>
   </data>
 </root>

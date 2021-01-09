@@ -145,6 +145,8 @@
   <ItemGroup>
     <Compile Include="CryptoServices\Crypto.cs" />
     <Compile Include="CryptoServices\CryptoServiceForString.cs" />
+    <Compile Include="Pages\LoggedIn\ActivityLog\DialogActivityLogFilter.cs" />
+    <Compile Include="Pages\LoggedIn\ActivityLog\DropdownYear.cs" />
     <Compile Include="Pages\LoggedIn\Components\CreatePost\DialogSpecificFriends.cs" />
     <Compile Include="Pages\LoggedIn\Components\DivRememberPassword.cs" />
     <Compile Include="Pages\LoggedIn\Components\GridMarketPlace\Apparel\FilterWomens\IWomensFilter.cs" />
@@ -772,6 +774,7 @@
     <Compile Include="Pages\LoggedIn\Components\CreatePost\DialogSelectPrivacy.cs" />
     <Compile Include="Pages\LoggedIn\Components\CreatePost\PopupEmoji.cs" />
     <Compile Include="Pages\LoggedIn\Components\Menus\DivMarketPlaceMenu.cs" />
+    <Compile Include="Pages\LoggedIn\Components\SearchBox\SearchBoxSearchFacebook.cs" />
     <Compile Include="Pages\LoggedIn\Components\SearchBox\SearchBoxSharingWithYourFriends.cs" />
     <Compile Include="Pages\LoggedIn\Dialogs\DialogAllKeyboardShortcuts.cs" />
     <Compile Include="Pages\LoggedIn\Dialogs\Account\PopupDisplayAndAccessibility.cs" />
@@ -779,7 +782,11 @@
     <Compile Include="Pages\LoggedIn\Dialogs\DialogHelpUsImproveNewFacebook.cs" />
     <Compile Include="Pages\LoggedIn\Dialogs\PopupKeyBoard.cs" />
     <Compile Include="Pages\LoggedIn\Dialogs\DialogNewsFeedPreferences.cs" />
+    <Compile Include="Pages\LoggedIn\Enum\FilterCategory.cs" />
+    <Compile Include="Pages\LoggedIn\Enum\Year.cs" />
     <Compile Include="Pages\LoggedIn\Help\PageHelp.cs" />
+    <Compile Include="Pages\LoggedIn\Home\HomeHeader\Header.cs" />
+    <Compile Include="Pages\LoggedIn\Home\HomeHeader\Left\HeaderLeft.cs" />
     <Compile Include="Pages\LoggedIn\Home\HomeHeader\Middle\Friends\PageFriends.cs" />
     <Compile Include="Pages\LoggedIn\Home\HomeHeader\Middle\GroupFeed\PageGroupFeed.cs" />
     <Compile Include="Pages\LoggedIn\Dialogs\Account\PopupHelpAndSupport.cs" />
@@ -922,6 +929,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="Resources\ResFilterCategories.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResFilterCategories.resx</DependentUpon>
+    </Compile>
     <Compile Include="Resources\ResFinish.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -1035,7 +1047,6 @@
       <Link>msedgedriver.exe</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Pages\LoggedIn\Home\HomeHeader\Left\empty.txt" />
   </ItemGroup>
   <ItemGroup Label="FilesToCopy">
     <Content Include="ReadMe.txt" />
@@ -1103,6 +1114,10 @@
     <EmbeddedResource Include="Resources\ResEmoji.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ResEmoji.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ResFilterCategories.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResFilterCategories.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\ResFinish.resx">
       <Generator>ResXFileCodeGenerator</Generator>
