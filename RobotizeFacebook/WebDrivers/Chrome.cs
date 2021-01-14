@@ -14,7 +14,7 @@ namespace RobotizeFacebook.WebDrivers
         public override RemoteWebDriver Driver(bool useExistingBrowser = true)
         {
             // when useExistingBrowser is set open chrome
-            //if (useExistingBrowser) new ServiceBrowser().OpenBrowser();
+            if (useExistingBrowser) new ServiceBrowser().OpenBrowser();
 
             if (string.IsNullOrEmpty(BaseURL))
             {
@@ -32,6 +32,10 @@ namespace RobotizeFacebook.WebDrivers
                 options.AddUserProfilePreference("credentials_enable_service", false);
                 options.AddUserProfilePreference("password_manager_enabled", false);
                 options.AddUserProfilePreference("allow-running-insecure-content", true);
+                options.AddUserProfilePreference("disable-web-security", true);
+                options.AddUserProfilePreference("allow-file-access-from-file", true); 
+                options.AddUserProfilePreference("force-renderer-accessibility", true);
+                options.AddUserProfilePreference("enable-views-textfield", true);
             }
 
             //options.AddArguments(@"user-data-dir=C:\Users\amhus\AppData\Local\Google\Chrome\User Data\Default" /*Profile Path*/);
