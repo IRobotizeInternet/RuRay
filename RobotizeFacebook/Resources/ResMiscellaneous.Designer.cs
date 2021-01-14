@@ -115,6 +115,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Archive.
+        /// </summary>
+        public static string Archive {
+            get {
+                return ResourceManager.GetString("Archive", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Back.
         /// </summary>
         public static string Back {
@@ -174,6 +183,15 @@ namespace RobotizeFacebook.Resources {
         public static string ChooseAnArea {
             get {
                 return ResourceManager.GetString("ChooseAnArea", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Clear All.
+        /// </summary>
+        public static string ClearAll {
+            get {
+                return ResourceManager.GetString("ClearAll", resourceCulture);
             }
         }
         
@@ -304,6 +322,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to List of Activity Log Items.
+        /// </summary>
+        public static string ListOfActivityLogItems {
+            get {
+                return ResourceManager.GetString("ListOfActivityLogItems", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Log Out Of All Sessions.
         /// </summary>
         public static string LogOutOfAllSessions {
@@ -367,6 +394,33 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Review Photos You Might Be In.
+        /// </summary>
+        public static string ReviewPhotosYouMightBeIn {
+            get {
+                return ResourceManager.GetString("ReviewPhotosYouMightBeIn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Review Posts You&apos;re Tagged In.
+        /// </summary>
+        public static string ReviewPostsYouAreTaggedIn {
+            get {
+                return ResourceManager.GetString("ReviewPostsYouAreTaggedIn", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Review Tags on Your Posts.
+        /// </summary>
+        public static string ReviewTagsOnYourPosts {
+            get {
+                return ResourceManager.GetString("ReviewTagsOnYourPosts", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Save Changes.
         /// </summary>
         public static string SaveChanges {
@@ -426,6 +480,15 @@ namespace RobotizeFacebook.Resources {
         public static string Submit {
             get {
                 return ResourceManager.GetString("Submit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Trash.
+        /// </summary>
+        public static string Trash {
+            get {
+                return ResourceManager.GetString("Trash", resourceCulture);
             }
         }
         

@@ -243,4 +243,25 @@
   <data name="Filter" xml:space="preserve">
     <value>Filter</value>
   </data>
+  <data name="ClearAll" xml:space="preserve">
+    <value>Clear All</value>
+  </data>
+  <data name="ListOfActivityLogItems" xml:space="preserve">
+    <value>List of Activity Log Items</value>
+  </data>
+  <data name="Archive" xml:space="preserve">
+    <value>Archive</value>
+  </data>
+  <data name="ReviewPhotosYouMightBeIn" xml:space="preserve">
+    <value>Review Photos You Might Be In</value>
+  </data>
+  <data name="ReviewPostsYouAreTaggedIn" xml:space="preserve">
+    <value>Review Posts You're Tagged In</value>
+  </data>
+  <data name="ReviewTagsOnYourPosts" xml:space="preserve">
+    <value>Review Tags on Your Posts</value>
+  </data>
+  <data name="Trash" xml:space="preserve">
+    <value>Trash</value>
+  </data>
 </root>
