@@ -1,5 +1,8 @@
-﻿using OpenQA.Selenium.Remote;
+﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
+using RobotizeFacebook.Resources;
+using RobotizeToolbox.Controls.TriggerControls;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
@@ -11,5 +14,7 @@ namespace RobotizeFacebook.Pages.LoggedIn
         {
 
         }
+
+        public Hyperlink<DialogActivityLogFilter> LinkActivityLogFilter => new Hyperlink<DialogActivityLogFilter>(Driver, Wait, By.XPath($"//div[@role='button']/span[text()='{ResMiscellaneous.Filter}']"));
     }
 }

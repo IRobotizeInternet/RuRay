@@ -34,6 +34,8 @@ namespace RobotizeToolbox.Controls
             SearchboxWebElement.Clear();
 
             SearchboxWebElement.SendKeys(value);
+
+            WaitUntilComboboxLoading();
         }
 
         protected IWebElement SelectItem(string itemToSearch)

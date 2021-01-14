@@ -85,10 +85,16 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Components\Eidtor\Editor.cs" />
+    <Compile Include="Components\Eidtor\IHeaderNavigation.cs" />
+    <Compile Include="Components\Eidtor\ILeftNavigation.cs" />
+    <Compile Include="Components\Eidtor\ILowerHalf.cs" />
+    <Compile Include="Components\Eidtor\IUpperHalf.cs" />
     <Compile Include="Controls\BaseDOMProperty.cs" />
     <Compile Include="Controls\Button.cs" />
     <Compile Include="Controls\Checkbox.cs" />
     <Compile Include="Controls\Dropdown\Combobox.cs" />
+    <Compile Include="Components\Eidtor\DialogLeftMenuSettings.cs" />
     <Compile Include="Controls\Dropdown\Dropdown.cs" />
     <Compile Include="Controls\Dropdown\DropdownWithEnum.cs" />
     <Compile Include="Controls\Dropdown\IDropdownElement.cs" />
