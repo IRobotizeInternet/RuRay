@@ -349,6 +349,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Notification Settings.
+        /// </summary>
+        public static string NotificationSettings {
+            get {
+                return ResourceManager.GetString("NotificationSettings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Not Now.
         /// </summary>
         public static string NotNow {
@@ -403,7 +412,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Review Posts You&apos;re Tagged In.
+        ///   Looks up a localized string similar to Review Posts You.
         /// </summary>
         public static string ReviewPostsYouAreTaggedIn {
             get {
@@ -439,6 +448,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Search.
+        /// </summary>
+        public static string Search {
+            get {
+                return ResourceManager.GetString("Search", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Search Facebook.
         /// </summary>
         public static string SearchFacebook {
@@ -453,6 +471,15 @@ namespace RobotizeFacebook.Resources {
         public static string SeeMore {
             get {
                 return ResourceManager.GetString("SeeMore", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show notification dots.
+        /// </summary>
+        public static string ShowNotificationDots {
+            get {
+                return ResourceManager.GetString("ShowNotificationDots", resourceCulture);
             }
         }
         

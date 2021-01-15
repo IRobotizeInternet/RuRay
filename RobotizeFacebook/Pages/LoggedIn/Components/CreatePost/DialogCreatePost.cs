@@ -3,7 +3,7 @@ using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.CommonControls;
-using RobotizeToolbox.Controls.TriggerControls;
+using RobotizeToolbox.Controls;
 using RobotizeToolbox.Dialogs;
 
 namespace RobotizeFacebook.Pages.LoggedIn
@@ -15,9 +15,9 @@ namespace RobotizeFacebook.Pages.LoggedIn
             BaseXPath = "//form[@method='POST']";
         }
 
-        protected override By ByForDialog => By.XPath("//form[@method='POST']//span[text()='Create Post']");
+        protected override By ByForDialog => By.XPath("//form[@method='POST']//span[contains(text(),'Create Post')]");
         public EventTriggerButton<DialogAddToYourPost> ButtonAddToYourPost => 
-            new EventTriggerButton<DialogAddToYourPost>(Driver, Wait, By.XPath($"{BaseXPath}//span[text()='{ResCreatePost.AddToYourPost}']"));
+            new EventTriggerButton<DialogAddToYourPost>(Driver, Wait, By.XPath($"{BaseXPath}//span[contains(text(),'{ResCreatePost.AddToYourPost}')]"));
         public Button ButtonPhotoOrVideo => new Button(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.PhotoOrVideo}']"));
         public Button ButtonTagFriends => new Button(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.TagFriends}']"));
         public Button ButtonFeelingOrActivity => new Button(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.FeelingOrActivity}']"));

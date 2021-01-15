@@ -14,17 +14,17 @@ namespace RobotizeFacebook.Pages.LoggedIn
             BaseXPath = "//form[@method='POST']";
         }
 
-        protected override By ByForDialog => By.XPath($"//form[@method='POST']//span[text()='{ResCreatePost.WatchParty}']");
+        protected override By ByForDialog => By.XPath($"//form[@method='POST']//span[contains(text(),'{ResCreatePost.WatchParty})']");
 
-        public Button ButtonAddToYourPost => new Button(Driver, By.XPath($"{BaseXPath}//span[text()='{ResCreatePost.PhotoOrVideo}']"));
-        public Button ButtonTagFriends => new Button(Driver, By.XPath($"{BaseXPath}//span[text()='{ResCreatePost.TagFriends}']"));
-        public Button ButtonFeelingOrActivity => new Button(Driver, By.XPath($"{BaseXPath}//span[text()='{ResCreatePost.FeelingOrActivity}']"));
-        public Button ButtonCheckIn => new Button(Driver, By.XPath($"{BaseXPath}//span[text()='{ResCreatePost.CheckIn}']"));
-        public Button ButtonGIF => new Button(Driver, By.XPath($"{BaseXPath}//span[text()='{ResCreatePost.GIF}']"));
-        public Button ButtonLiveVideo => new Button(Driver, By.XPath($"{BaseXPath}//span[text()='{ResCreatePost.LiveVideo}']"));
-        public Button ButtonWatchParty => new Button(Driver, By.XPath($"{BaseXPath}//span[text()='{ResCreatePost.WatchParty}']"));
-        public Button ButtonRaiseMoney => new Button(Driver, By.XPath($"{BaseXPath}//span[text()='{ResCreatePost.RaiseMoney}']"));
+        public Button ButtonAddToYourPost => new Button(Driver, By.XPath($"{BaseXPath}//span[contains(text(),'{ResCreatePost.PhotoOrVideo}')]"));
+        public Button ButtonTagFriends => new Button(Driver, By.XPath($"{BaseXPath}//span[contains(text(),'{ResCreatePost.TagFriends}')]"));
+        public Button ButtonFeelingOrActivity => new Button(Driver, By.XPath($"{BaseXPath}//span[contains(text(),'{ResCreatePost.FeelingOrActivity}')]"));
+        public Button ButtonCheckIn => new Button(Driver, By.XPath($"{BaseXPath}//span[contains(text(),'{ResCreatePost.CheckIn}')]"));
+        public Button ButtonGIF => new Button(Driver, By.XPath($"{BaseXPath}//span[contains(text(),'{ResCreatePost.GIF}')]"));
+        public Button ButtonLiveVideo => new Button(Driver, By.XPath($"{BaseXPath}//span[contains(text(),'{ResCreatePost.LiveVideo}')]"));
+        public Button ButtonWatchParty => new Button(Driver, By.XPath($"{BaseXPath}//span[contains(text(),'{ResCreatePost.WatchParty}')]"));
+        public Button ButtonRaiseMoney => new Button(Driver, By.XPath($"{BaseXPath}//span[contains(text(),'{ResCreatePost.RaiseMoney}')]"));
 
-        public Button ButtonBack => new Button(Driver, By.XPath($"{BaseXPath}//span[text()='{ResCreatePost.RaiseMoney}']"));
+        public Button ButtonBack => new Button(Driver, By.XPath($"{BaseXPath}//span[contains(text(),'{ResCreatePost.RaiseMoney}')]"));
     }
 }

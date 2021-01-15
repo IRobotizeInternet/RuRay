@@ -13,7 +13,5 @@ namespace RobotizeFacebook.Pages.LoggedIn
             SearchBoxXPath = $"{BaseXPath}//input[@type='search']";
             SearchItemsXPath = $"{BaseXPath}//a[@role='presentation']//span[@dir='auto']/span";
         }
-
-        public EventTriggerButton<PageActivityLog>
     }
 }

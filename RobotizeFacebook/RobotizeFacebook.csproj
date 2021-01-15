@@ -152,6 +152,8 @@
     <Compile Include="Pages\LoggedIn\ActivityLog\Div\DivTrash.cs" />
     <Compile Include="Pages\LoggedIn\ActivityLog\Div\DivArchive.cs" />
     <Compile Include="Pages\LoggedIn\ActivityLog\DropdownYear.cs" />
+    <Compile Include="Pages\LoggedIn\CommonComponents\ButtonNotificationSettings.cs" />
+    <Compile Include="Pages\LoggedIn\CommonComponents\NavigationSearchbox.cs" />
     <Compile Include="Pages\LoggedIn\Components\CreatePost\DialogSpecificFriends.cs" />
     <Compile Include="Pages\LoggedIn\Components\DivRememberPassword.cs" />
     <Compile Include="Pages\LoggedIn\Components\GridMarketPlace\Apparel\FilterWomens\IWomensFilter.cs" />
@@ -779,12 +781,16 @@
     <Compile Include="Pages\LoggedIn\Components\CreatePost\DialogSelectPrivacy.cs" />
     <Compile Include="Pages\LoggedIn\Components\CreatePost\PopupEmoji.cs" />
     <Compile Include="Pages\LoggedIn\Components\Menus\DivMarketPlaceMenu.cs" />
-    <Compile Include="Pages\LoggedIn\Components\SearchBox\SearchBoxSearchFacebook.cs" />
-    <Compile Include="Pages\LoggedIn\Components\SearchBox\SearchBoxSharingWithYourFriends.cs" />
+    <Compile Include="Pages\LoggedIn\CommonComponents\SearchBoxSearchFacebook.cs" />
+    <Compile Include="Pages\LoggedIn\CommonComponents\SearchBoxSharingWithYourFriends.cs" />
+    <Compile Include="Pages\LoggedIn\DataPageletStreamingBrowseFeed\DataPagelet.cs" />
+    <Compile Include="Pages\LoggedIn\DataPageletStreamingBrowseFeed\DataPageletMarketplace.cs" />
     <Compile Include="Pages\LoggedIn\Dialogs\DialogAllKeyboardShortcuts.cs" />
     <Compile Include="Pages\LoggedIn\Dialogs\Account\PopupDisplayAndAccessibility.cs" />
     <Compile Include="Pages\LoggedIn\Dialogs\Account\DialogGiveFeedbackToFacebook.cs" />
     <Compile Include="Pages\LoggedIn\Dialogs\DialogHelpUsImproveNewFacebook.cs" />
+    <Compile Include="Pages\LoggedIn\Dialogs\DialogNotificationSettings.cs" />
+    <Compile Include="Pages\LoggedIn\Dialogs\PopupNotificationSettings.cs" />
     <Compile Include="Pages\LoggedIn\Dialogs\PopupKeyBoard.cs" />
     <Compile Include="Pages\LoggedIn\Dialogs\DialogNewsFeedPreferences.cs" />
     <Compile Include="Pages\LoggedIn\Enum\FilterCategory.cs" />
@@ -813,6 +819,23 @@
     <Compile Include="Pages\LoggedIn\Home\MainSection\SubSections\DialogLearnCreateRoom.cs" />
     <Compile Include="Pages\LoggedIn\Home\MainSection\SubSections\Feed.cs" />
     <Compile Include="Pages\LoggedIn\Home\PageTimeline.cs" />
+    <Compile Include="Pages\LoggedIn\NavigationMenu\MenuItems.cs" />
+    <Compile Include="Pages\LoggedIn\NavigationMenu\MenuItemsChats.cs" />
+    <Compile Include="Pages\LoggedIn\NavigationMenu\MenuItemsEvents.cs" />
+    <Compile Include="Pages\LoggedIn\NavigationMenu\MenuItemsFacebookPay.cs" />
+    <Compile Include="Pages\LoggedIn\NavigationMenu\MenuItemsFriends.cs" />
+    <Compile Include="Pages\LoggedIn\NavigationMenu\MenuItemsFundraisers.cs" />
+    <Compile Include="Pages\LoggedIn\NavigationMenu\MenuItemsGaming.cs" />
+    <Compile Include="Pages\LoggedIn\NavigationMenu\MenuItemsJobs.cs" />
+    <Compile Include="Pages\LoggedIn\NavigationMenu\MenuItemsMarketPlace.cs" />
+    <Compile Include="Pages\LoggedIn\NavigationMenu\MenuItemsGroups.cs" />
+    <Compile Include="Pages\LoggedIn\NavigationMenu\MenuItemsMemories.cs" />
+    <Compile Include="Pages\LoggedIn\NavigationMenu\MenuItemsMessengerKids.cs" />
+    <Compile Include="Pages\LoggedIn\NavigationMenu\MenuItemsPages.cs" />
+    <Compile Include="Pages\LoggedIn\NavigationMenu\MenuItemsPromote.cs" />
+    <Compile Include="Pages\LoggedIn\NavigationMenu\MenuItemsSaved.cs" />
+    <Compile Include="Pages\LoggedIn\NavigationMenu\MenuItemsWatch.cs" />
+    <Compile Include="Pages\LoggedIn\NavigationMenu\MenuItemWeather.cs" />
     <Compile Include="Pages\LoggedIn\MarketPlace\CreateNewListing\PageCreateNewListing.cs" />
     <Compile Include="Pages\LoggedIn\MarketPlace\PageMarketplace.cs" />
     <Compile Include="Pages\LoggedIn\PrivacyCheckup\PagePrivacyCheckup.cs" />
@@ -979,6 +1002,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>ResNetwork.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ResNotificationSettings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResNotificationSettings.resx</DependentUpon>
     </Compile>
     <Compile Include="Resources\ResPlatform.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -1157,6 +1185,10 @@
     <EmbeddedResource Include="Resources\ResNetwork.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ResNetwork.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ResNotificationSettings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResNotificationSettings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\ResPlatform.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

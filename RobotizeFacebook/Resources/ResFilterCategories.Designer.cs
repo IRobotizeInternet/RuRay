@@ -79,7 +79,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Activity You&apos;re Tagged In.
+        ///   Looks up a localized string similar to Activity You.
         /// </summary>
         public static string ActivityYoureTaggedIn {
             get {
@@ -97,7 +97,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Anonymous Posts You&apos;ve Written.
+        ///   Looks up a localized string similar to Anonymous Posts You.
         /// </summary>
         public static string AnonymousPostsYouveWritten {
             get {
@@ -115,7 +115,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Articles You&apos;ve Read.
+        ///   Looks up a localized string similar to ve Read.
         /// </summary>
         public static string ArticlesYouveRead {
             get {
@@ -196,7 +196,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Fundraiser Matches You&apos;ve Created.
+        ///   Looks up a localized string similar to Fundraiser Matches You.
         /// </summary>
         public static string FundraiserMatchesYouveCreated {
             get {
@@ -268,7 +268,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Groups You&apos;ve Searched For.
+        ///   Looks up a localized string similar to Groups You.
         /// </summary>
         public static string GroupsYouveSearchedFor {
             get {
@@ -286,7 +286,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Hobbies You&apos;ve Added to Your Profile.
+        ///   Looks up a localized string similar to Hobbies You.
         /// </summary>
         public static string HobbiesYouveAddedToYourProfile {
             get {
@@ -376,7 +376,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Others&apos; Posts to Your Timeline.
+        ///   Looks up a localized string similar to Posts to Your Timeline.
         /// </summary>
         public static string OthersPostsToYourTimeline {
             get {
@@ -538,7 +538,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Songs You&apos;ve Listened To.
+        ///   Looks up a localized string similar to ve Listened To.
         /// </summary>
         public static string SongsYouveListenedTo {
             get {
@@ -556,7 +556,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Video Polls You&apos;ve Taken.
+        ///   Looks up a localized string similar to Video Polls You.
         /// </summary>
         public static string VideoPollsYouveTaken {
             get {
@@ -565,7 +565,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Videos You&apos;ve Searched For.
+        ///   Looks up a localized string similar to ve Searched For.
         /// </summary>
         public static string VideosYouveSearchedFor {
             get {
@@ -574,7 +574,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Videos You&apos;ve Watched.
+        ///   Looks up a localized string similar to ve Watched.
         /// </summary>
         public static string VideosYouveWatched {
             get {

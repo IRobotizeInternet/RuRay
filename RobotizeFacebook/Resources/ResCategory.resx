@@ -661,13 +661,13 @@
     <value>2 Bedroom Townhouses</value>
   </data>
   <data name="Womens" xml:space="preserve">
-    <value>Women's</value>
+    <value>Women</value>
   </data>
   <data name="Mens" xml:space="preserve">
-    <value>Men's</value>
+    <value>Men</value>
   </data>
   <data name="KidsClothing" xml:space="preserve">
-    <value>Kids' Clothing</value>
+    <value> Clothing</value>
   </data>
   <data name="BabyClothing" xml:space="preserve">
     <value>Baby Clothing</value>
@@ -793,7 +793,7 @@
     <value>Bowling Accessories</value>
   </data>
   <data name="BoysShoes" xml:space="preserve">
-    <value>Boys' Shoes</value>
+    <value>Boys</value>
   </data>
   <data name="Bracelets" xml:space="preserve">
     <value>Bracelets</value>
@@ -997,7 +997,7 @@
     <value>Garage Sale</value>
   </data>
   <data name="GirlsShoes" xml:space="preserve">
-    <value>Girls' Shoes</value>
+    <value>Girls</value>
   </data>
   <data name="GolfEquipment" xml:space="preserve">
     <value>Golf Equipment</value>
@@ -1042,7 +1042,7 @@
     <value>Hula Hoops</value>
   </data>
   <data name="IndoorAndOutdoorKidsPlayhouses" xml:space="preserve">
-    <value>Indoor &amp;amp; Outdoor Kids' Playhouses</value>
+    <value>Indoor &amp;amp; Outdoor Kids</value>
   </data>
   <data name="IndoorGames" xml:space="preserve">
     <value>Indoor Games</value>
@@ -1096,10 +1096,10 @@
     <value>Media Streamers</value>
   </data>
   <data name="MensClothing" xml:space="preserve">
-    <value>Men's Clothing</value>
+    <value>s Clothing</value>
   </data>
   <data name="MensShoes" xml:space="preserve">
-    <value>Men's Shoes</value>
+    <value>s Shoes</value>
   </data>
   <data name="Miscellaneous" xml:space="preserve">
     <value>Miscellaneous</value>
@@ -1303,13 +1303,13 @@
     <value>Winter Sports Equipment</value>
   </data>
   <data name="WomensClothing" xml:space="preserve">
-    <value>Women's Clothing</value>
+    <value>s Clothing</value>
   </data>
   <data name="WomensHandbagsAndPurses" xml:space="preserve">
-    <value>Women's Handbags &amp;amp; Purses</value>
+    <value>s Handbags &amp;amp; Purses</value>
   </data>
   <data name="WomensShoes" xml:space="preserve">
-    <value>Women's Shoes</value>
+    <value>s Shoes</value>
   </data>
   <data name="YogaBlocks" xml:space="preserve">
     <value>Yoga Blocks</value>

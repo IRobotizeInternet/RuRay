@@ -862,7 +862,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Boys&apos; Shoes.
+        ///   Looks up a localized string similar to Boys.
         /// </summary>
         public static string BoysShoes {
             get {
@@ -2320,7 +2320,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Girls&apos; Shoes.
+        ///   Looks up a localized string similar to Girls.
         /// </summary>
         public static string GirlsShoes {
             get {
@@ -2770,7 +2770,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Indoor &amp;amp; Outdoor Kids&apos; Playhouses.
+        ///   Looks up a localized string similar to Indoor &amp;amp; Outdoor Kids.
         /// </summary>
         public static string IndoorAndOutdoorKidsPlayhouses {
             get {
@@ -2941,7 +2941,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Kids&apos; Clothing.
+        ///   Looks up a localized string similar to  Clothing.
         /// </summary>
         public static string KidsClothing {
             get {
@@ -3265,7 +3265,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Men&apos;s.
+        ///   Looks up a localized string similar to Men.
         /// </summary>
         public static string Mens {
             get {
@@ -3274,7 +3274,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Men&apos;s Clothing.
+        ///   Looks up a localized string similar to s Clothing.
         /// </summary>
         public static string MensClothing {
             get {
@@ -3283,7 +3283,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Men&apos;s Shoes.
+        ///   Looks up a localized string similar to s Shoes.
         /// </summary>
         public static string MensShoes {
             get {
@@ -5164,7 +5164,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Women&apos;s.
+        ///   Looks up a localized string similar to Women.
         /// </summary>
         public static string Womens {
             get {
@@ -5173,7 +5173,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Women&apos;s Clothing.
+        ///   Looks up a localized string similar to s Clothing.
         /// </summary>
         public static string WomensClothing {
             get {
@@ -5182,7 +5182,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Women&apos;s Handbags &amp;amp; Purses.
+        ///   Looks up a localized string similar to s Handbags &amp;amp; Purses.
         /// </summary>
         public static string WomensHandbagsAndPurses {
             get {
@@ -5191,7 +5191,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Women&apos;s Shoes.
+        ///   Looks up a localized string similar to s Shoes.
         /// </summary>
         public static string WomensShoes {
             get {

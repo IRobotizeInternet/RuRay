@@ -90,6 +90,7 @@
     <Compile Include="Components\Eidtor\ILeftNavigation.cs" />
     <Compile Include="Components\Eidtor\ILowerHalf.cs" />
     <Compile Include="Components\Eidtor\IUpperHalf.cs" />
+    <Compile Include="Components\Eidtor\IUpperHalf1.cs" />
     <Compile Include="Controls\BaseDOMProperty.cs" />
     <Compile Include="Controls\Button.cs" />
     <Compile Include="Controls\Checkbox.cs" />

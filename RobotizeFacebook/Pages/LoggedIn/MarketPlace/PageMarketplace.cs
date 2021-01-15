@@ -22,7 +22,7 @@ namespace RobotizeFacebook.Pages
 
         }
 
-        public EventTriggerButton<> TriggerButtonCreateNewListing => new EventTriggerButton<EventResult>()
+        //public EventTriggerButton<> TriggerButtonCreateNewListing => new EventTriggerButton<EventResult>()
         
     }
 }

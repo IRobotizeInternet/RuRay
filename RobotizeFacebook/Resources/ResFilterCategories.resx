@@ -124,19 +124,19 @@
     <value>Activity Log</value>
   </data>
   <data name="ActivityYoureTaggedIn" xml:space="preserve">
-    <value>Activity You're Tagged In</value>
+    <value>Activity You</value>
   </data>
   <data name="AddedFriends" xml:space="preserve">
     <value>Added Friends</value>
   </data>
   <data name="AnonymousPostsYouveWritten" xml:space="preserve">
-    <value>Anonymous Posts You've Written</value>
+    <value>Anonymous Posts You</value>
   </data>
   <data name="Apps" xml:space="preserve">
     <value>Apps</value>
   </data>
   <data name="ArticlesYouveRead" xml:space="preserve">
-    <value>Articles You've Read</value>
+    <value>ve Read</value>
   </data>
   <data name="Books" xml:space="preserve">
     <value>Books</value>
@@ -163,7 +163,7 @@
     <value>Following</value>
   </data>
   <data name="FundraiserMatchesYouveCreated" xml:space="preserve">
-    <value>Fundraiser Matches You've Created</value>
+    <value>Fundraiser Matches You</value>
   </data>
   <data name="FundraisersYouHelpManage" xml:space="preserve">
     <value>Fundraisers You Help Manage</value>
@@ -187,13 +187,13 @@
     <value>Groups</value>
   </data>
   <data name="GroupsYouveSearchedFor" xml:space="preserve">
-    <value>Groups You've Searched For</value>
+    <value>Groups You</value>
   </data>
   <data name="HiddenFromTimeline" xml:space="preserve">
     <value>Hidden From Timeline</value>
   </data>
   <data name="HobbiesYouveAddedToYourProfile" xml:space="preserve">
-    <value>Hobbies You've Added to Your Profile</value>
+    <value>Hobbies You</value>
   </data>
   <data name="LifeEvents" xml:space="preserve">
     <value>Life Events</value>
@@ -223,7 +223,7 @@
     <value>Other Records</value>
   </data>
   <data name="OthersPostsToYourTimeline" xml:space="preserve">
-    <value>Others' Posts to Your Timeline</value>
+    <value>Posts to Your Timeline</value>
   </data>
   <data name="PagesPageLikesAndInterests" xml:space="preserve">
     <value>Pages, Page Likes and Interests</value>
@@ -277,19 +277,19 @@
     <value>Sent Friend Requests</value>
   </data>
   <data name="SongsYouveListenedTo" xml:space="preserve">
-    <value>Songs You've Listened To</value>
+    <value>ve Listened To</value>
   </data>
   <data name="StoriesActivity" xml:space="preserve">
     <value>Stories Activity</value>
   </data>
   <data name="VideoPollsYouveTaken" xml:space="preserve">
-    <value>Video Polls You've Taken</value>
+    <value>Video Polls You</value>
   </data>
   <data name="VideosYouveSearchedFor" xml:space="preserve">
-    <value>Videos You've Searched For</value>
+    <value>ve Searched For</value>
   </data>
   <data name="VideosYouveWatched" xml:space="preserve">
-    <value>Videos You've Watched</value>
+    <value>ve Watched</value>
   </data>
   <data name="VoiceInteractions" xml:space="preserve">
     <value>Voice Interactions</value>
