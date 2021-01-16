@@ -21,7 +21,7 @@ namespace RobotizeFacebook.Pages.LoggedIn.Settings.Tabs.Seperator1
         public Button ButtonAdd => new Button(Driver, By.XPath("//button[text()='Add']"));
         public Button ButtonCancel => new Button(Driver, By.XPath($"//a[text()={ResMiscellaneous.Cancel}]"));
         public Hyperlink<AddPhoneNumberDialog> LinkAddYourPhoneNumber => 
-            new Hyperlink<AddPhoneNumberDialog>(Driver, Wait, By.XPath($"//a[text()={ResMiscellaneous.AddYourPhoneNumber}]"));
+            new Hyperlink<AddPhoneNumberDialog>(Driver, By.XPath($"//a[text()={ResMiscellaneous.AddYourPhoneNumber}]"));
     }
 
     public class AddPhoneNumberDialog : BaseDialog

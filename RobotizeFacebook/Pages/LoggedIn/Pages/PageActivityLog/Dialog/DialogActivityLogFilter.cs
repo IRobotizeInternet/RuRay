@@ -28,6 +28,6 @@ namespace RobotizeFacebook.Pages.LoggedIn
         }
 
         public EventTriggerButton<PageActivityLog> ButtonActivityLog => 
-            new EventTriggerButton<PageActivityLog>(Driver, Wait, By.XPath($"{BaseXPath}//span[contains(text(), '{ResMiscellaneous.ClearAll}')]"));
+            new EventTriggerButton<PageActivityLog>(Driver, By.XPath($"{BaseXPath}//span[contains(text(), '{ResMiscellaneous.ClearAll}')]"));
     }
 }

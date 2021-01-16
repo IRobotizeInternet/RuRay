@@ -1,7 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
-using RobotizeFacebook.Pages.LoggedIn.Settings.AccountSettings;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls.TriggerControls;
 using RobotizeToolbox.Dialogs;
@@ -12,8 +11,8 @@ namespace RobotizeFacebook.Pages.LoggedIn.Settings.Tabs.Seperator1
     public class AdAccount : BaseEditor
     {
         public Label LabelAdAccountContactEmail => new Label(Driver, By.XPath("//div[@id='u_d_2']/div/div/span[1]"));
-        public Hyperlink<AdAccountDialog> LinkChangeAdAccountEmail => new Hyperlink<AdAccountDialog>(Driver, Wait, By.XPath("//div[@id='u_d_2']/div/div/span[2]"));
-        public Hyperlink<PageAccount> LinkAddAccountSettings => new Hyperlink<PageAccount>(Driver, Wait, By.XPath("//a[@class='bizOK']"));
+        public Hyperlink<AdAccountDialog> LinkChangeAdAccountEmail => new Hyperlink<AdAccountDialog>(Driver, By.XPath("//div[@id='u_d_2']/div/div/span[2]"));
+        public Hyperlink<PageAdPreferences> LinkAdAccountSettings => new Hyperlink<PageAdPreferences>(Driver, By.XPath("//a[@class='bizOK']"));
         public Button ButtonClose => new Button(Driver, By.XPath($"//input[@value={ResMiscellaneous.Close}]"));
     }
 

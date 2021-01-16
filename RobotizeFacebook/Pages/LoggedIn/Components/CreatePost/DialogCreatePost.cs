@@ -17,7 +17,7 @@ namespace RobotizeFacebook.Pages.LoggedIn
 
         protected override By ByForDialog => By.XPath("//form[@method='POST']//span[contains(text(),'Create Post')]");
         public EventTriggerButton<DialogAddToYourPost> ButtonAddToYourPost => 
-            new EventTriggerButton<DialogAddToYourPost>(Driver, Wait, By.XPath($"{BaseXPath}//span[contains(text(),'{ResCreatePost.AddToYourPost}')]"));
+            new EventTriggerButton<DialogAddToYourPost>(Driver, By.XPath($"{BaseXPath}//span[contains(text(),'{ResCreatePost.AddToYourPost}')]"));
         public Button ButtonPhotoOrVideo => new Button(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.PhotoOrVideo}']"));
         public Button ButtonTagFriends => new Button(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.TagFriends}']"));
         public Button ButtonFeelingOrActivity => new Button(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.FeelingOrActivity}']"));
@@ -25,17 +25,17 @@ namespace RobotizeFacebook.Pages.LoggedIn
         public Button ButtonGIF => new Button(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.GIF}']"));
         
         public EventTriggerButton<DialogAddToYourPost> ButtonDotDotDot =>
-           new EventTriggerButton<DialogAddToYourPost>(Driver, Wait, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.More}']"));
+           new EventTriggerButton<DialogAddToYourPost>(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.More}']"));
         
         public EventTriggerButton<DialogShowBackgroundOptions> ButtonBackGroundOptions =>
-           new EventTriggerButton<DialogShowBackgroundOptions>(Driver, Wait, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.ShowBackgroundOptions}']"));
+           new EventTriggerButton<DialogShowBackgroundOptions>(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.ShowBackgroundOptions}']"));
         public EventTriggerButton<PopupEmoji> PopupEmojiCollection => 
-            new EventTriggerButton<PopupEmoji>(Driver, Wait, By.XPath($"//div[@aria-label='{ResCreatePost.Emoji}']"));
+            new EventTriggerButton<PopupEmoji>(Driver, By.XPath($"//div[@aria-label='{ResCreatePost.Emoji}']"));
         public TextBox TextBoxWhatsOnYourMind => new TextBox(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.WhatsOnYourMind}']"));
         public Button ButtonPost => new Button(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.Post}']"));
         
         public EventTriggerButton<DialogSelectPrivacy> TriggerEditPrivacyDialog => 
-            new EventTriggerButton<DialogSelectPrivacy>(Driver, Wait, By.XPath($"//div[contains(@aria-label,'{ResCreatePost.EditPrivacy}')]"));
+            new EventTriggerButton<DialogSelectPrivacy>(Driver, By.XPath($"//div[contains(@aria-label,'{ResCreatePost.EditPrivacy}')]"));
     }
 
     public class DialogShowBackgroundOptions : BaseDialog
@@ -50,6 +50,6 @@ namespace RobotizeFacebook.Pages.LoggedIn
         public Button GetBackgroundByName(PostBackgroundcolor background) => new Button(Driver, By.XPath($"{Basepath}//div[@aria-label='{background}']"));
         
         public EventTriggerButton<DialogMoreBackgroundOptions> ButtonMoreBackgroundOptionsDialog =>
-            new EventTriggerButton<DialogMoreBackgroundOptions>(Driver, Wait, By.XPath($"//div[@aria-label='{ResCreatePost.BackgroundOptions}']"));
+            new EventTriggerButton<DialogMoreBackgroundOptions>(Driver, By.XPath($"//div[@aria-label='{ResCreatePost.BackgroundOptions}']"));
     }
 }

@@ -24,6 +24,6 @@ namespace RobotizeFacebook.Pages.LoggedIn
         public RadioButton RButtonCompactModeOff => new RadioButton(Driver, By.XPath(string.Format(RButtonsXPath, ResAccount.CompactMode, ResAccount.Off)));
         
         public EventTriggerButton<PopupKeyBoard> ButtonKeyboard =>
-            new EventTriggerButton<PopupKeyBoard>(Driver, Wait, By.XPath($"{string.Format(RButtonsXPath, ResAccount.CompactMode, ResAccount.On)}/following::span[text()='{ResAccount.Keyboard}'])"));
+            new EventTriggerButton<PopupKeyBoard>(Driver, By.XPath($"{string.Format(RButtonsXPath, ResAccount.CompactMode, ResAccount.On)}/following::span[text()='{ResAccount.Keyboard}'])"));
     }
 }

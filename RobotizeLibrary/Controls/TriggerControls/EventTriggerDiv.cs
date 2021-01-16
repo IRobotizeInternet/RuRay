@@ -9,23 +9,19 @@ namespace RobotizeToolbox.Controls.TriggerControls
     public class EventTriggerDiv<EventResult> where EventResult : class
     {
         private readonly BaseDOMProperty _element;
-        private readonly RemoteWebDriver _driver;
-        private readonly WebDriverWait _wait;
-
+        private RemoteWebDriver _driver;
         public EventTriggerDiv(
-            RemoteWebDriver driver, 
-            WebDriverWait wait, 
+            RemoteWebDriver driver,
             By byForElement)
         {
             _driver = driver;
-            _wait = wait;
             _element = new BaseDOMProperty(driver, byForElement);
         }
 
         public EventResult Click()
         {
             _element.Click();
-            return (EventResult)Activator.CreateInstance(typeof(EventResult), _driver, _wait);
+            return (EventResult)Activator.CreateInstance(typeof(EventResult), _driver);
         }
     }
 }

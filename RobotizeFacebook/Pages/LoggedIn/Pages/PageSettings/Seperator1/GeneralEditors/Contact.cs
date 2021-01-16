@@ -11,6 +11,6 @@ namespace RobotizeFacebook.Pages.LoggedIn.Settings.Tabs.Seperator1
         public Label LabelPrimaryEmail => new Label(Driver, By.XPath("(//div[@class='pbm fbSettingsEditorFields']//div/span)[2]"));
         public Checkbox CheckboxAllowFriendsToIncludeMyEmailAddressIn => new Checkbox(Driver, By.XPath("//input[@id='js_0']"));
         public Hyperlink<AddAnotherEmailDialog> LinkAddAnotherEmailOrMobile => 
-            new Hyperlink<AddAnotherEmailDialog>(Driver, Wait, By.XPath($"//a[text()={ResMiscellaneous.AddAnotherEmailOrMobileNumber}]"));
+            new Hyperlink<AddAnotherEmailDialog>(Driver, By.XPath($"//a[text()={ResMiscellaneous.AddAnotherEmailOrMobileNumber}]"));
     }
 }

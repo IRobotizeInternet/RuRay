@@ -18,23 +18,23 @@ namespace RobotizeFacebook.Pages.LoggedIn
         protected override By ByForDialog => By.XPath($"//div[@aria-label='{ResHomePageHeader.Create}' and @role='dialog']");
 
         public EventTriggerDiv<DialogCreatePost> TriggerDivCreatePost => 
-                    new EventTriggerDiv<DialogCreatePost>(Driver, Wait, By.XPath($"{BaseXPath}//span[text()='{ResHomePageHeader.Post}']"));
+                    new EventTriggerDiv<DialogCreatePost>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResHomePageHeader.Post}']"));
         public EventTriggerDiv<DialogCreatePost> TriggerDivCreateStory =>
-                    new EventTriggerDiv<DialogCreatePost>(Driver, Wait, By.XPath($"{BaseXPath}//span[text()='{ResHomePageHeader.Story}']"));
+                    new EventTriggerDiv<DialogCreatePost>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResHomePageHeader.Story}']"));
         public EventTriggerDiv<DialogCreatePost> TriggerDivCreateRoom =>
-                    new EventTriggerDiv<DialogCreatePost>(Driver, Wait, By.XPath($"{BaseXPath}//span[text()='{ResHomePageHeader.Room}']"));
+                    new EventTriggerDiv<DialogCreatePost>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResHomePageHeader.Room}']"));
         public EventTriggerDiv<DialogCreatePost> TriggerDivCreatePage =>
-                    new EventTriggerDiv<DialogCreatePost>(Driver, Wait, By.XPath($"{BaseXPath}//span[text()='{ResHomePageHeader.Page}']"));
+                    new EventTriggerDiv<DialogCreatePost>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResHomePageHeader.Page}']"));
         public EventTriggerDiv<DialogCreatePost> TriggerDivCreateAd =>
-                    new EventTriggerDiv<DialogCreatePost>(Driver, Wait, By.XPath($"{BaseXPath}//span[text()='{ResHomePageHeader.Ad}']"));
+                    new EventTriggerDiv<DialogCreatePost>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResHomePageHeader.Ad}']"));
         public EventTriggerDiv<DialogCreatePost> TriggerDivCreateGroup =>
-                    new EventTriggerDiv<DialogCreatePost>(Driver, Wait, By.XPath($"{BaseXPath}//span[text()='{ResHomePageHeader.Group}']"));
+                    new EventTriggerDiv<DialogCreatePost>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResHomePageHeader.Group}']"));
         public EventTriggerDiv<DialogCreatePost> TriggerDivCreateEvent =>
-                    new EventTriggerDiv<DialogCreatePost>(Driver, Wait, By.XPath($"{BaseXPath}//span[text()='{ResHomePageHeader.Event}']"));
+                    new EventTriggerDiv<DialogCreatePost>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResHomePageHeader.Event}']"));
         public EventTriggerDiv<DialogCreatePost> TriggerDivCreateMarketPlaceListing =>
-                    new EventTriggerDiv<DialogCreatePost>(Driver, Wait, By.XPath($"{BaseXPath}//span[text()='{ResHomePageHeader.MarketPlaceListing}']"));
+                    new EventTriggerDiv<DialogCreatePost>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResHomePageHeader.MarketPlaceListing}']"));
         public EventTriggerDiv<DialogCreatePost> TriggerDivCreateFundraiser =>
-                    new EventTriggerDiv<DialogCreatePost>(Driver, Wait, By.XPath($"{BaseXPath}//span[text()='{ResHomePageHeader.Fundraiser}']"));
+                    new EventTriggerDiv<DialogCreatePost>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResHomePageHeader.Fundraiser}']"));
 
 
         public void RunConformanceButtonFriendsExcept()

@@ -24,7 +24,7 @@ namespace RobotizeFacebook.Pages.LoggedIn.Settings.Tabs.Seperator1
         public RadioButton ButtonMessengerDontGetNotifications => new RadioButton(Driver, By.XPath("//input[@id='u_e_4']"));
         public Label LabelDefaultEmail => new Label(Driver, By.XPath("//label[@for='u_e_5']//span[1]"));
         public Hyperlink<DialogAddEmailAddress> LinkAddEmailAddress => 
-            new Hyperlink<DialogAddEmailAddress>(Driver, Wait, By.XPath($"//form[@id='u_e_7']//a[text()={ResMiscellaneous.AddEmailAddress}]"));
+            new Hyperlink<DialogAddEmailAddress>(Driver, By.XPath($"//form[@id='u_e_7']//a[text()={ResMiscellaneous.AddEmailAddress}]"));
         public Button ButtonSaveChanges => new Button(Driver, By.XPath("//form[@id='u_e_7']//input[@type='submit']"));
         public Checkbox CheckboxGetEmailAlert(string email = null)
         {

@@ -18,7 +18,7 @@ namespace RobotizeFacebook.Pages.LoggedIn
         protected override By ByForDialog => By.XPath($"//div[@aria-label='{ResAccount.UseSingleCharacterKeyboardShortcuts}']");
 
         public EventTriggerButton<DialogAllKeyboardShortcuts> DialogSeeAllKeyboardShortcuts => 
-            new EventTriggerButton<DialogAllKeyboardShortcuts>(Driver, Wait, By.XPath($"//span[text()='{ResAccount.SeeAllKeyboardShortcuts}']"));
+            new EventTriggerButton<DialogAllKeyboardShortcuts>(Driver, By.XPath($"//span[text()='{ResAccount.SeeAllKeyboardShortcuts}']"));
 
         public RadioButton RButtonUseSingleCharacterKeyboardShortcutsOn =>
             new RadioButton(Driver, By.XPath($"{BaseXPath}//span[text()='{ResAccount.On}']"));

@@ -21,17 +21,16 @@ namespace RobotizeFacebook.Pages.LoggedIn
         
         public EventTriggerButton<DialogFriendsExcepts> ButtonFriendsExcept => 
             new EventTriggerButton<DialogFriendsExcepts>(
-                Driver, 
-                Wait, 
+                Driver,
                 By.XPath($"{BaseXPath}//span[text()='{ResSelectPrivacy.FriendsExcept}']/following::span[contains(text(), '{ResSelectPrivacy.Friends_}')]"));
         
         public EventTriggerButton<DialogSpecificFriends> ButtonSpecificFriends => 
-            new EventTriggerButton<DialogSpecificFriends>(Driver, Wait, By.XPath($"{BaseXPath}//span[@dir='auto' and text()='{ResSelectPrivacy.SpecificFriends}']"));
+            new EventTriggerButton<DialogSpecificFriends>(Driver, By.XPath($"{BaseXPath}//span[@dir='auto' and text()='{ResSelectPrivacy.SpecificFriends}']"));
         
         public RadioButton RButtonOnlyMe => new RadioButton(Driver, By.XPath($"{BaseXPath}//span[text()='{ResSelectPrivacy.OnlyMe}']"));
         
         public EventTriggerButton<DialogCustomPrivacy> ButtonCustom => 
-            new EventTriggerButton<DialogCustomPrivacy>(Driver, Wait, By.XPath($"{BaseXPath}//span[text()='{ResSelectPrivacy.Custom}']"));
+            new EventTriggerButton<DialogCustomPrivacy>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResSelectPrivacy.Custom}']"));
         
         public RadioButton RButtonCloseFriends => new RadioButton(Driver, By.XPath($"{BaseXPath}//span[text()='{ResSelectPrivacy.CloseFriends}']"));
         public RadioButton RButtonCanada => new RadioButton(Driver, By.XPath($"{BaseXPath}//span[text()='{ResSelectPrivacy.Canada}']"));

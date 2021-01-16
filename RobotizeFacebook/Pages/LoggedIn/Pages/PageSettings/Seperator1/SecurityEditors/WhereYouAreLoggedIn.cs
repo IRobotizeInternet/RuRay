@@ -17,7 +17,7 @@ namespace RobotizeFacebook.Pages.LoggedIn.Settings.Tabs.Seperator1.SecurityEdito
             
         }
 
-        public Hyperlink<DialogSeeMore> LinkSeeMore => new Hyperlink<DialogSeeMore>(Driver, Wait, By.XPath($"//span[text()={ResMiscellaneous.SeeMore}]"));
+        public Hyperlink<DialogSeeMore> LinkSeeMore => new Hyperlink<DialogSeeMore>(Driver, By.XPath($"//span[text()={ResMiscellaneous.SeeMore}]"));
         public Label LabelLogOutOfAllSessions => new Label(Driver, By.XPath($"//span[text()={ResMiscellaneous.LogOutOfAllSessions}]"));
     }
 

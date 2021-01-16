@@ -9,16 +9,13 @@ namespace RobotizeToolbox.Controls.TriggerControls
 {
     public class Hyperlink <EventResult> where EventResult : class
     {
+        private RemoteWebDriver _driver;
         private readonly BaseDOMProperty _element;
-        private readonly RemoteWebDriver _driver;
-        private readonly WebDriverWait _wait;
         public Hyperlink(
             RemoteWebDriver driver,
-            WebDriverWait wait, 
             By byForElement)
         {
             _driver = driver;
-            _wait = wait;
             _element = new BaseDOMProperty(driver, byForElement);
         }
 
@@ -26,7 +23,7 @@ namespace RobotizeToolbox.Controls.TriggerControls
         {
             _element.Click();
             Thread.Sleep(5000);
-            return (EventResult)Activator.CreateInstance(typeof(EventResult), _driver, _wait);
+            return (EventResult)Activator.CreateInstance(typeof(EventResult), _driver);
         }
     }
 }

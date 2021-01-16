@@ -13,18 +13,18 @@ namespace RobotizeFacebook.Pages.LoggedIn.LeftMenu
         }
 
         public Hyperlink<DialogActivityLogFilter> LinkActivityLogFilter =>
-            new Hyperlink<DialogActivityLogFilter>(Driver, Wait, By.XPath($"{BaseXPath}//div[@role='button']/span[contains(text(),'{ResMiscellaneous.Filter}'])"));
+            new Hyperlink<DialogActivityLogFilter>(Driver, By.XPath($"{BaseXPath}//div[@role='button']/span[contains(text(),'{ResMiscellaneous.Filter}'])"));
 
         public EventTriggerDiv<DivArchive> DivArchive =>
-            new EventTriggerDiv<DivArchive>(Driver, Wait, By.XPath($"{BaseXPath}//div[@role='button']//span[contains(text(),{ResMiscellaneous.Archive})]"));
+            new EventTriggerDiv<DivArchive>(Driver, By.XPath($"{BaseXPath}//div[@role='button']//span[contains(text(),{ResMiscellaneous.Archive})]"));
 
         public EventTriggerDiv<PageTrash> DivTrash =>
-           new EventTriggerDiv<PageTrash>(Driver, Wait, By.XPath($"{BaseXPath}//div[@role='button']//span[contains(text(),{ResMiscellaneous.Trash})]"));
+           new EventTriggerDiv<PageTrash>(Driver, By.XPath($"{BaseXPath}//div[@role='button']//span[contains(text(),{ResMiscellaneous.Trash})]"));
 
         public EventTriggerDiv<FeedContainerReviewPostsYouAreTaggedIn> DivReviewPostsYouAreTaggedIn =>
-           new EventTriggerDiv<FeedContainerReviewPostsYouAreTaggedIn>(Driver, Wait, By.XPath($"{BaseXPath}//div[@role='button']//span[contains(text(),{ResMiscellaneous.ReviewPostsYouAreTaggedIn})]"));
+           new EventTriggerDiv<FeedContainerReviewPostsYouAreTaggedIn>(Driver, By.XPath($"{BaseXPath}//div[@role='button']//span[contains(text(),{ResMiscellaneous.ReviewPostsYouAreTaggedIn})]"));
 
         public EventTriggerDiv<FeedContainerReviewTagsOnYourPosts> DivReviewTagsOnYourPosts =>
-           new EventTriggerDiv<FeedContainerReviewTagsOnYourPosts>(Driver, Wait, By.XPath($"{BaseXPath}//div[@role='button']//span[contains(text(),{ResMiscellaneous.ReviewTagsOnYourPosts})]"));
+           new EventTriggerDiv<FeedContainerReviewTagsOnYourPosts>(Driver, By.XPath($"{BaseXPath}//div[@role='button']//span[contains(text(),{ResMiscellaneous.ReviewTagsOnYourPosts})]"));
     }
 }

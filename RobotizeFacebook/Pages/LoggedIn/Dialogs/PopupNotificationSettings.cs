@@ -19,6 +19,6 @@ namespace RobotizeFacebook.Pages.LoggedIn
 
         public Button ButtonShowNotificationDots => new Button(Driver, By.XPath($"{BaseXPath}//div[@role='menuitemcheckbox']//span[contains(text(), '{ResMiscellaneous.ShowNotificationDots}')]"));
         public EventTriggerButton<DialogNotificationSettings> ButtonNotificationSetting =>
-            new EventTriggerButton<DialogNotificationSettings>(Driver, Wait, By.XPath($"{BaseXPath}//span[text()='{ResNotificationSettings.CustomizeNotifications}']"));
+            new EventTriggerButton<DialogNotificationSettings>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResNotificationSettings.CustomizeNotifications}']"));
     }
 }

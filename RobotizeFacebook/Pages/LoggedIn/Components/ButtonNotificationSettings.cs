@@ -9,13 +9,11 @@ namespace RobotizeFacebook.Pages.LoggedIn.CommonComponents
     public abstract class ButtonNotificationSettings
     {
         private RemoteWebDriver _driver;
-        private WebDriverWait _wait;
-        public ButtonNotificationSettings(RemoteWebDriver driver, WebDriverWait wait)
+        public ButtonNotificationSettings(RemoteWebDriver driver)
         {
             _driver = driver;
-            _wait = wait;
         }
-        public EventTriggerButton<popupNotificationSettings>
-            Button => new EventTriggerButton<popupNotificationSettings>(_driver, _wait, By.XPath($"//div[@aria-label='{ResNotificationSettings.EditNotificationSettings}'])"));
+        //public EventTriggerButton<popupNotificationSettings>
+        //    Button => new EventTriggerButton<popupNotificationSettings>(_driver);
     }
 }
