@@ -2,11 +2,11 @@
 
 namespace RobotizeFacebook.Pages
 {
-    public class PageChat : PageBase
+    public class PagePages : PageBase
     {
         public override string PageUrl => throw new NotImplementedException();
 
-        public PageChat()
+        public PagePages()
         {
         }
     }

@@ -1,6 +1,6 @@
 ﻿namespace RobotizeFacebook.Pages.LoggedIn
 {
-    public class MenuItemsMemories : MenuItems
+    public class MenuItemsMarketplaceYourAccount : MenuItems
     {
     }
 }
