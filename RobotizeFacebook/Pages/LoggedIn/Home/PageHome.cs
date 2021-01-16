@@ -2,7 +2,6 @@
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using RobotizeFacebook.Pages.LoggedIn;
-using System.Collections.Generic;
 using System.IO;
 using System.Threading;
 

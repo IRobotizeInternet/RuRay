@@ -1,7 +1,6 @@
 ﻿using OpenQA.Selenium.Remote;
 using RobotizeLibrary.Extensions;
 using RobotizeToolbox.Controls;
-using System;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {

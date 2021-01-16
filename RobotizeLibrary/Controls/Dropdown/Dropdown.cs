@@ -1,7 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
-using RobotizeToolbox.Controls;
 using RobotizeToolbox.Extensions;
 using System.Threading;
 
