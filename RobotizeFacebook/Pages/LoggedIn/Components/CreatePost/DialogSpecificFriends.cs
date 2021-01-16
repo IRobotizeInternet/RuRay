@@ -4,6 +4,7 @@ using OpenQA.Selenium.Support.UI;
 using RobotizeToolbox.Dialogs;
 using RobotizeFacebook.Resources;
 using System.Collections.Generic;
+using RobotizeToolbox.Controls;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
@@ -22,9 +23,9 @@ namespace RobotizeFacebook.Pages.LoggedIn
              Driver.FindElements(By.XPath($"//form[@method='POST']//div[@role='grid'][contains(@aria-label, '{ResCreatePost.FriendsWhoWillSeeYourPost}')]//div[@role='button']"));
 
         public EventTriggerButton<DialogCreatePost> TriggerSaveChangesButton =>
-            new EventTriggerButton<DialogCreatePost>(Driver, Wait, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.SaveChanges}']"));
+            new EventTriggerButton<DialogCreatePost>(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.SaveChanges}']"));
 
         public EventTriggerButton<DialogCreatePost> TriggerCancelChangesButton =>
-            new EventTriggerButton<DialogCreatePost>(Driver, Wait, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.Cancel}']"));
+            new EventTriggerButton<DialogCreatePost>(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.Cancel}']"));
     }
 }

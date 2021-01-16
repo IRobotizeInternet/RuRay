@@ -3,6 +3,7 @@ using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using RobotizeToolbox.Dialogs;
 using RobotizeFacebook.Resources;
+using RobotizeToolbox.Controls;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
@@ -16,10 +17,10 @@ namespace RobotizeFacebook.Pages.LoggedIn
         protected override By ByForDialog => By.XPath(_baseXPath);
 
         public EventTriggerButton<DialogHelpUsImproveNewFacebook> DialogHelpToImproveTheNewFacebook =>
-            new EventTriggerButton<DialogHelpUsImproveNewFacebook>(Driver, Wait, By.XPath($"{_baseXPath}//span[text()='{ResMiscellaneous.HelpUsImproveTheNewFacebook}']"));
+            new EventTriggerButton<DialogHelpUsImproveNewFacebook>(Driver, By.XPath($"{_baseXPath}//span[text()='{ResMiscellaneous.HelpUsImproveTheNewFacebook}']"));
 
         public EventTriggerButton<DialogHelpUsImproveNewFacebook> DialogSomethingWentWrong =>
-            new EventTriggerButton<DialogHelpUsImproveNewFacebook>(Driver, Wait, By.XPath($"{_baseXPath}//span[text()='{ResMiscellaneous.SomethingWentWrong}']"));
+            new EventTriggerButton<DialogHelpUsImproveNewFacebook>(Driver, By.XPath($"{_baseXPath}//span[text()='{ResMiscellaneous.SomethingWentWrong}']"));
 
     }
 }

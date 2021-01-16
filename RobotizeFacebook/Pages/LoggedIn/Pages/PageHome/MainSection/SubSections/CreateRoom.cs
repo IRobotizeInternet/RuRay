@@ -2,6 +2,7 @@
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using RobotizeFacebook.Resources;
+using RobotizeToolbox.Controls;
 
 namespace RobotizeFacebook.Pages.LoggedIn.Home.MainSection.SubSections
 {
@@ -17,9 +18,9 @@ namespace RobotizeFacebook.Pages.LoggedIn.Home.MainSection.SubSections
         }
 
         public EventTriggerButton<DialogCreateYourRoom> DialogCreateRoom =>
-            new EventTriggerButton<DialogCreateYourRoom>(_driver, _wait, By.XPath($"//div[@data-pagelet='VideoChatHomeUnit']//span[text()='{ResMiscellaneous.CreateRoom}']"));
+            new EventTriggerButton<DialogCreateYourRoom>(_driver, By.XPath($"//div[@data-pagelet='VideoChatHomeUnit']//span[text()='{ResMiscellaneous.CreateRoom}']"));
 
         public EventTriggerButton<DialogLearnCreateRoom> LinkLearnHowRoomWorks => 
-            new EventTriggerButton<DialogLearnCreateRoom>(_driver, _wait, By.XPath("//div[@data-pagelet='VideoChatHomeUnit']//div[@aria-label='Learn More']"));
+            new EventTriggerButton<DialogLearnCreateRoom>(_driver, By.XPath("//div[@data-pagelet='VideoChatHomeUnit']//div[@aria-label='Learn More']"));
     }
 }

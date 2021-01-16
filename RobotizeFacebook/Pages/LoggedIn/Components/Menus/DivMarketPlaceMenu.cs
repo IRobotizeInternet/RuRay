@@ -1,6 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
+using RobotizeToolbox.Controls;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
@@ -14,12 +15,12 @@ namespace RobotizeFacebook.Pages.LoggedIn
         }
 
         public EventTriggerButton<PageMarketplace> TriggerButtonBrowseAllPage =>
-            new EventTriggerButton<PageMarketplace>(_driver, _wait, By.XPath("//span[text()='Browse All']"));
+            new EventTriggerButton<PageMarketplace>(_driver, By.XPath("//span[text()='Browse All']"));
         public EventTriggerButton<PageMarketplace> TriggerButtonNotifications =>
-            new EventTriggerButton<PageMarketplace>(_driver, _wait, By.XPath("//span[text()='Notifications']"));
+            new EventTriggerButton<PageMarketplace>(_driver, By.XPath("//span[text()='Notifications']"));
         public EventTriggerButton<PageMarketplace> TriggerButtonCart =>
-            new EventTriggerButton<PageMarketplace>(_driver, _wait, By.XPath("//span[text()='Cart']"));
+            new EventTriggerButton<PageMarketplace>(_driver, By.XPath("//span[text()='Cart']"));
         public EventTriggerButton<PageMarketplace> TriggerButonYourAccount =>
-            new EventTriggerButton<PageMarketplace>(_driver, _wait, By.XPath("//span[text()='Your Account']"));
+            new EventTriggerButton<PageMarketplace>(_driver, By.XPath("//span[text()='Your Account']"));
     }
 }
