@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
-    public abstract class MenuItems
+    public class FeedContainerEvents : FeedContainer
     {
+        public override string FeedUrl => throw new NotImplementedException();
     }
 }

@@ -1,25 +1,21 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.Controls.TriggerControls;
 
-namespace RobotizeFacebook.Pages.LoggedIn
+namespace RobotizeFacebook.Pages.LoggedIn.LeftMenu
 {
-    public class PageActivityLog : PageBase
+    public class MenuItemsActivityLog : MenuItems
     {
-        public override string PageUrl => "/allactivity/";
 
         public readonly string BaseXPath = $"//div[@data-pagelet='page']/div/div[@aria-label='{ResMiscellaneous.ListOfActivityLogItems}'][@role='navigation']";
-        public PageActivityLog(RemoteWebDriver driver, WebDriverWait wait)
+        public MenuItemsActivityLog()
         {
-            
         }
 
-        public Hyperlink<DialogActivityLogFilter> LinkActivityLogFilter => 
+        public Hyperlink<DialogActivityLogFilter> LinkActivityLogFilter =>
             new Hyperlink<DialogActivityLogFilter>(Driver, Wait, By.XPath($"{BaseXPath}//div[@role='button']/span[contains(text(),'{ResMiscellaneous.Filter}'])"));
 
-        public EventTriggerDiv<DivArchive> DivArchive => 
+        public EventTriggerDiv<DivArchive> DivArchive =>
             new EventTriggerDiv<DivArchive>(Driver, Wait, By.XPath($"{BaseXPath}//div[@role='button']//span[contains(text(),{ResMiscellaneous.Archive})]"));
 
         public EventTriggerDiv<DivTrash> DivTrash =>

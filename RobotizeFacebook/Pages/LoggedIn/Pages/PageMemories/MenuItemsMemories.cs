@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RobotizeFacebook.Pages.LoggedIn.DataPageletStreamingBrowseFeed
+namespace RobotizeFacebook.Pages.LoggedIn
 {
-    public class DataPageletMarketplace : DataPagelet
+    public class MenuItemsMemories : MenuItems
     {
     }
 }
