@@ -1,5 +1,4 @@
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
 
@@ -7,7 +6,7 @@ namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class HomeHeatingAndCoolingFilter : BaseFilter, IHomeHeatingAndCoolingFilter, IHomeHeatingAndCoolingFilterOptions
     {
-        public HomeHeatingAndCoolingFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public HomeHeatingAndCoolingFilter(RemoteWebDriver driver) : base(driver)
         {
         }
 

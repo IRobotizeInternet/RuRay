@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OpenQA.Selenium;
+using System;
 
 namespace RobotizeFacebook.Pages
 {
@@ -6,8 +7,11 @@ namespace RobotizeFacebook.Pages
     {
         public override string PageUrl => throw new NotImplementedException();
 
+        public override By ByForPage => throw new NotImplementedException();
+
         public PageWeather()
         {
+            
         }
     }
 }

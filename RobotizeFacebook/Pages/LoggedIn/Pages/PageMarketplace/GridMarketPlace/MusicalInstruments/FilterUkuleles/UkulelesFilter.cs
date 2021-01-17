@@ -1,12 +1,11 @@
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using System;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class UkulelesFilter : BaseFilter, IUkulelesFilter, IUkulelesFilterOptions
     {
-        public UkulelesFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public UkulelesFilter(RemoteWebDriver driver) : base(driver)
         {
         }
 

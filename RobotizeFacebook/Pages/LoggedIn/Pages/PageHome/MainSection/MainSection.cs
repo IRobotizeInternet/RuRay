@@ -1,24 +1,20 @@
 ﻿using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using RobotizeFacebook.Pages.LoggedIn.Home.MainSection.SubSections;
 
-namespace RobotizeFacebook.Pages 
+namespace RobotizeFacebook.Pages
 {
     public class MainSection
     {
-        private RemoteWebDriver _driver;
-        private WebDriverWait _wait;
-        public MainSection(RemoteWebDriver driver, WebDriverWait wait)
+        private readonly RemoteWebDriver _driver;
+        public MainSection(RemoteWebDriver driver)
         {
             _driver = driver;
-            _wait = wait;
         }
 
-        public CreatePost SectionCreatePost => new CreatePost(_driver, _wait);
+        public CreatePost SectionCreatePost => new CreatePost(_driver);
 
         public void RunConformance()
         {
-
         }
     }
 }

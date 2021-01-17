@@ -1,5 +1,4 @@
 ﻿using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
 
@@ -7,9 +6,9 @@ namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class FilterFactory
     {
-        public static TFilter GetFilter<TFilter>(RemoteWebDriver driver, WebDriverWait wait) where TFilter : IFilter<IFilterOptions>
+        public static TFilter GetFilter<TFilter>(RemoteWebDriver driver) where TFilter : IFilter<IFilterOptions>
         {
-            return (TFilter)Activator.CreateInstance(_concreteClassMap[typeof(TFilter)], driver, wait);
+            return (TFilter)Activator.CreateInstance(_concreteClassMap[typeof(TFilter)], driver);
         }
 
         private static readonly Dictionary<Type, Type> _concreteClassMap =

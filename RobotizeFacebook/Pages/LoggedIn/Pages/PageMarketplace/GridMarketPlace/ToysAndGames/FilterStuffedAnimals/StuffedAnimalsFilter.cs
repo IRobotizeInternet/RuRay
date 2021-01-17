@@ -1,12 +1,11 @@
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using System;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class StuffedAnimalsFilter : BaseFilter, IStuffedAnimalsFilter, IStuffedAnimalsFilterOptions
     {
-        public StuffedAnimalsFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public StuffedAnimalsFilter(RemoteWebDriver driver) : base(driver)
         {
         }
 

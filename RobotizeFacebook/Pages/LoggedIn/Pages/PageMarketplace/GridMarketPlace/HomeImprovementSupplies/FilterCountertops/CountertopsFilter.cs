@@ -1,12 +1,11 @@
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using System;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class CountertopsFilter : BaseFilter, ICountertopsFilter, ICountertopsFilterOptions
     {
-        public CountertopsFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public CountertopsFilter(RemoteWebDriver driver) : base(driver)
         {
         }
 

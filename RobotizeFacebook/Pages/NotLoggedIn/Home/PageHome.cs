@@ -14,5 +14,7 @@ namespace RobotizeFacebook.Pages.NotLoginPages
         public Button ButtonSettings => new Button(Driver, By.XPath("//div[@id='end']//div[@id='buttons']//ytd-topbar-menu-button-renderer[3]//button"));
 
         public Button ButtonSignIn => new Button(Driver, By.XPath("//div[@id='buttons']//ytd-button-renderer//a"));
+
+        public override By ByForPage => throw new System.NotImplementedException();
     }
 }

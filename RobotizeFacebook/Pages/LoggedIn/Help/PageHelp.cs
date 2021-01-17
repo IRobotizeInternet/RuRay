@@ -1,5 +1,5 @@
-﻿using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
+﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Remote;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
@@ -7,7 +7,9 @@ namespace RobotizeFacebook.Pages.LoggedIn
     {
         public override string PageUrl => "/help/";
 
-        public PageHelp(RemoteWebDriver driver, WebDriverWait wait)
+        public override By ByForPage => throw new System.NotImplementedException();
+
+        public PageHelp(RemoteWebDriver driver)
         {
 
         }

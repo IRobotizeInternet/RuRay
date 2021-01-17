@@ -1,5 +1,4 @@
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
 
@@ -7,7 +6,7 @@ namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class OutdoorCookingFilter : BaseFilter, IOutdoorCookingFilter, IOutdoorCookingFilterOptions
     {
-        public OutdoorCookingFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public OutdoorCookingFilter(RemoteWebDriver driver) : base(driver)
         {
         }
 

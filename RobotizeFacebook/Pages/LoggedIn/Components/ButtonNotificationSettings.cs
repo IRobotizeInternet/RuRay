@@ -1,14 +1,10 @@
-﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
-using RobotizeFacebook.Resources;
-using RobotizeToolbox.Controls;
+﻿using OpenQA.Selenium.Remote;
 
 namespace RobotizeFacebook.Pages.LoggedIn.CommonComponents
 {
     public abstract class ButtonNotificationSettings
     {
-        private RemoteWebDriver _driver;
+        private readonly RemoteWebDriver _driver;
         public ButtonNotificationSettings(RemoteWebDriver driver)
         {
             _driver = driver;

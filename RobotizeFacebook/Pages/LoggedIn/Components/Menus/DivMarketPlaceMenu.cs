@@ -1,14 +1,12 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using RobotizeToolbox.Controls;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class DivMarketPlaceMenu
     {
-        private RemoteWebDriver _driver;
-        private WebDriverWait _wait;
+        private readonly RemoteWebDriver _driver;
         public DivMarketPlaceMenu(RemoteWebDriver driver)
         {
             _driver = driver;

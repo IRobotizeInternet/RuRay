@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using RobotizeToolbox.Dialogs;
 using RobotizeFacebook.Resources;
 using System.Collections.Generic;
@@ -10,7 +9,7 @@ namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class DialogSpecificFriends : BaseSaveCancelDialog
     {
-        public DialogSpecificFriends(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public DialogSpecificFriends(RemoteWebDriver driver) : base(driver)
         {
             BaseXPath = "//form[@method='POST']";
         }

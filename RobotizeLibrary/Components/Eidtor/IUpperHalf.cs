@@ -1,19 +1,18 @@
 ﻿using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 
 namespace RobotizeLibrary.Components
 {
     public abstract class UpperHalf
     {
-        private RemoteWebDriver _driver;
-        private WebDriverWait _wait;
+        private readonly RemoteWebDriver _driver;
+        
         //public EventTriggerButton<DialogLeftMenuSettings> LeftMenuSettingsButton => new EventTriggerButton<DialogLeftMenuSettings>(_driver, _wait, By.XPath());
         //public virtual Combobox SearchBox;
 
-        public UpperHalf(RemoteWebDriver driver, WebDriverWait wait)
+        public UpperHalf(RemoteWebDriver driver)
         {
             _driver = driver;
-            _wait = wait;
+
         }
     }
 }

@@ -1,11 +1,10 @@
 ﻿using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class BabyClothingFilter : BaseFilter, IBabyClothingFilter, IBabyClothingFilterOptions
     {
-        public BabyClothingFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public BabyClothingFilter(RemoteWebDriver driver) : base(driver)
         {
         }
 

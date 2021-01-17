@@ -1,5 +1,5 @@
-﻿using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
+﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Remote;
 
 namespace RobotizeFacebook.Pages
 {
@@ -7,7 +7,9 @@ namespace RobotizeFacebook.Pages
     {
         public override string PageUrl => "/allactivity/?category_key=ARCHIVED";
 
-        public DivArchive(RemoteWebDriver driver, WebDriverWait wait)
+        public override By ByForPage => throw new System.NotImplementedException();
+
+        public DivArchive(RemoteWebDriver driver)
         {
 
         }

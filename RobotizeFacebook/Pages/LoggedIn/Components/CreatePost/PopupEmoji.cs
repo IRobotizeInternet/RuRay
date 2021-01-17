@@ -1,14 +1,13 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.Dialogs;
 
-namespace RobotizeFacebook.Pages.LoggedIn
+namespace RobotizeFacebook.Pages
 {
     public class PopupEmoji : BasePopup
     {
-        public PopupEmoji(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public PopupEmoji(RemoteWebDriver driver) : base(driver)
         {
             
         }

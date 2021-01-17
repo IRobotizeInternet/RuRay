@@ -51,7 +51,7 @@ namespace RobotizeToolbox.Extensions
         public static void WaitForObjectToLoadForTimeSpan(RemoteWebDriver driver, double maxWaitTimeInSeconds = 60)
         {
             var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(maxWaitTimeInSeconds));
-            _ = wait.Until(x =>
+              _ = wait.Until(x =>
               {
                   try
                   {

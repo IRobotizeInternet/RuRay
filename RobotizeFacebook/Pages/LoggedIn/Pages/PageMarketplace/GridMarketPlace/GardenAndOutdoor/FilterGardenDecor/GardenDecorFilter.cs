@@ -1,12 +1,11 @@
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using System;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class GardenDecorFilter : BaseFilter, IGardenDecorFilter, IGardenDecorFilterOptions
     {
-        public GardenDecorFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public GardenDecorFilter(RemoteWebDriver driver) : base(driver)
         {
         }
 

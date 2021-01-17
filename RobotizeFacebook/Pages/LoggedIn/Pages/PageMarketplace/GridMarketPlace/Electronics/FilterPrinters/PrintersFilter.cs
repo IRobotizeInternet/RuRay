@@ -1,12 +1,11 @@
 ﻿using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using System;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class PrintersFilter : BaseFilter, IPrintersFilter, IPrintersFilterOptions
     {
-        public PrintersFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public PrintersFilter(RemoteWebDriver driver) : base(driver)
         {
         }
 

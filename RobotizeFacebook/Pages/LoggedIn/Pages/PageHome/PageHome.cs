@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using RobotizeFacebook.Pages.LoggedIn;
 using System.IO;
 using System.Threading;
@@ -9,7 +8,7 @@ namespace RobotizeFacebook.Pages.LoggedUser
 {
     public class PageHome : PageBase
     {
-        public PageHome(RemoteWebDriver driver, WebDriverWait wait)
+        public PageHome(RemoteWebDriver driver)
         {
         }
 
@@ -19,8 +18,10 @@ namespace RobotizeFacebook.Pages.LoggedUser
         }
 
         public override string PageUrl => "https://www.facebook.com/marketplace/111906762160356/garden";
-        public HomePageHeaderSection HeaderSection => new HomePageHeaderSection(Driver, Wait);
-        public MainSection MainSection => new MainSection(Driver, Wait);
+        public HomePageHeaderSection HeaderSection => new HomePageHeaderSection(Driver);
+        public MainSection MainSection => new MainSection(Driver);
+
+        public override By ByForPage => throw new System.NotImplementedException();
 
         public void GenerateAllElements()
         {

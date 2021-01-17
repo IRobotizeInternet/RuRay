@@ -1,5 +1,5 @@
-﻿using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
+﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Remote;
 
 namespace RobotizeFacebook.Pages.LoggedIn.MarketPlace.CreateNewListing
 {
@@ -7,7 +7,9 @@ namespace RobotizeFacebook.Pages.LoggedIn.MarketPlace.CreateNewListing
     {
         public override string PageUrl => "/marketplace/create";
 
-        public DialogCreateNewListing(RemoteWebDriver driver, WebDriverWait wait)
+        public override By ByForPage => throw new System.NotImplementedException();
+
+        public DialogCreateNewListing(RemoteWebDriver driver)
         {
 
         }

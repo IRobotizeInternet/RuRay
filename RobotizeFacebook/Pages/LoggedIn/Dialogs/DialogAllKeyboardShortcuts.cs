@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.Controls;
 using RobotizeToolbox.Dialogs;
@@ -9,7 +8,7 @@ namespace RobotizeFacebook.Pages.LoggedIn.Dialogs
 {
     public class DialogAllKeyboardShortcuts : BaseDialog
     {
-        public DialogAllKeyboardShortcuts(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public DialogAllKeyboardShortcuts(RemoteWebDriver driver) : base(driver)
         {
         }
 

@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.Controls;
 using RobotizeToolbox.Dialogs;
@@ -9,7 +8,7 @@ namespace RobotizeFacebook.Pages.LoggedIn.Stories.Create
 {
     public class DialogStoryPrivacy : BaseDialog
     {
-        public DialogStoryPrivacy(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public DialogStoryPrivacy(RemoteWebDriver driver) : base(driver)
         {
             BaseXPath = $"//div[@aria-label='{ResMiscellaneous.StoryPrivacy}']";
         }

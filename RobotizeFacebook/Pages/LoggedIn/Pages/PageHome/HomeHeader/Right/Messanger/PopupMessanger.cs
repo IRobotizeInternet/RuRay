@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using RobotizeToolbox.Dialogs;
 using RobotizeFacebook.Resources;
 
@@ -10,7 +9,7 @@ namespace RobotizeFacebook.Pages.LoggedIn.Home.HomeHeader
     {
         protected override By ByForDialog => By.XPath($"//div[@aria-label='{ResHomePageHeader.Messenger}'][@role='dialog']");
 
-        public PopupMessanger(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public PopupMessanger(RemoteWebDriver driver) : base(driver)
         {
         }
     }

@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using RobotizeFacebook.Pages.LoggedIn.Settings.Tabs.Seperator1;
 using RobotizeFacebook.Pages.LoggedIn.Settings.Tabs.Seperator1.Bas;
 using RobotizeToolbox.Controls.TriggerControls;
@@ -10,7 +9,7 @@ namespace RobotizeFacebook.Pages.LoggedIn.Settings.Tabs
     public class General : PageSettings
     {
 
-        public General(RemoteWebDriver driver, WebDriverWait wait): base(driver, wait)
+        public General(RemoteWebDriver driver): base(driver)
         {
 
         }

@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Dialogs;
@@ -10,7 +9,7 @@ namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class DialogMoreBackgroundOptions : BaseDialog
     {
-        public DialogMoreBackgroundOptions(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public DialogMoreBackgroundOptions(RemoteWebDriver driver) : base(driver)
         {
             var list = new List<List<string>>();
             var webElements = Driver.FindElements(By.XPath("//div[@class='oh7imozk idiwt2bm'][1]//div[contains(@aria-label,'background')]"));

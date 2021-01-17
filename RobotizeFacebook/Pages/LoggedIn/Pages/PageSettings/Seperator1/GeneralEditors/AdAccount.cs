@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls.TriggerControls;
 using RobotizeToolbox.Dialogs;
@@ -18,7 +17,7 @@ namespace RobotizeFacebook.Pages.LoggedIn.Settings.Tabs.Seperator1
 
     public class AdAccountDialog : BaseDialog
     {
-        public AdAccountDialog(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public AdAccountDialog(RemoteWebDriver driver) : base(driver)
         {
         }
 

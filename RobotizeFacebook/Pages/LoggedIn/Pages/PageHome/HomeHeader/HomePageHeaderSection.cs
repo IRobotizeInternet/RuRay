@@ -14,10 +14,10 @@ namespace RobotizeFacebook.Pages.LoggedIn
         private readonly RemoteWebDriver _driver;
         private readonly WebDriverWait _wait;
 
-        public HomePageHeaderSection(RemoteWebDriver driver, WebDriverWait wait)
+        public HomePageHeaderSection(RemoteWebDriver driver)
         {
             _driver = driver;
-            _wait = wait;
+
         }
 
         // Items on left.

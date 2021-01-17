@@ -1,12 +1,11 @@
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using System;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class MailboxesFilter : BaseFilter, IMailboxesFilter, IMailboxesFilterOptions
     {
-        public MailboxesFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public MailboxesFilter(RemoteWebDriver driver) : base(driver)
         {
         }
 

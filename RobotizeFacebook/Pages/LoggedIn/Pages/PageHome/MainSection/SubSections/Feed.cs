@@ -1,17 +1,16 @@
 ﻿using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 
 namespace RobotizeFacebook.Pages.LoggedIn.Home.MainSection.SubSections
 {
     public class Feed
     {
-        private RemoteWebDriver _driver;
-        private WebDriverWait _wait;
+        private readonly RemoteWebDriver _driver;
+        
 
-        public Feed(RemoteWebDriver driver, WebDriverWait wait)
+        public Feed(RemoteWebDriver driver)
         {
             _driver = driver;
-            _wait = wait;
+
         }
     }
 }

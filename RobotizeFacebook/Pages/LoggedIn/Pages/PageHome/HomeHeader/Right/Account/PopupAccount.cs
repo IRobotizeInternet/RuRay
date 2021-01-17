@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.Controls;
 using RobotizeToolbox.Dialogs;
@@ -9,7 +8,7 @@ namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class PopupAccount : BasePopup
     {
-        public PopupAccount(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public PopupAccount(RemoteWebDriver driver) : base(driver)
         {
             BaseXPath = $"//div[@aria-label='{ResAccount.Account}'][@role='dialog']";
         }

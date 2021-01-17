@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using RobotizeToolbox.CommonControls;
 using System;
 using System.Threading;
@@ -9,7 +8,7 @@ namespace RobotizeToolbox.Controls.TriggerControls
 {
     public class Hyperlink <EventResult> where EventResult : class
     {
-        private RemoteWebDriver _driver;
+        private readonly RemoteWebDriver _driver;
         private readonly BaseDOMProperty _element;
         public Hyperlink(
             RemoteWebDriver driver,

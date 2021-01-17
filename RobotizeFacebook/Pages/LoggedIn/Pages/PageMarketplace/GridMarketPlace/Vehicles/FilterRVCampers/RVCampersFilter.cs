@@ -1,12 +1,11 @@
 ﻿using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using System;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class RVCampersFilter : BaseFilter, IRVCampersFilter, IRVCampersFilterOptions
     {
-        public RVCampersFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public RVCampersFilter(RemoteWebDriver driver) : base(driver)
         {
         }
 

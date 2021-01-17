@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using RobotizeFacebook.Pages.LoggedIn.Dialogs;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.Controls;
@@ -10,7 +9,7 @@ namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class PopupKeyBoard : BasePopup
     {
-        public PopupKeyBoard(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public PopupKeyBoard(RemoteWebDriver driver) : base(driver)
         {
             BaseXPath = $"//div[@aria-label='{ResAccount.UseSingleCharacterKeyboardShortcuts}']";
         }

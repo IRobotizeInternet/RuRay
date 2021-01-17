@@ -7,8 +7,8 @@ namespace RobotizeFacebook.Pages.LoggedIn.Components
 {
     public class DivRememberPassword
     {
-        private RemoteWebDriver _driver;
-        private string _basePath = $"//span[text()='{ResMiscellaneous.DivRememberPassword}']/../../../../../..";
+        private readonly RemoteWebDriver _driver;
+        private readonly string _basePath = $"//span[text()='{ResMiscellaneous.DivRememberPassword}']/../../../../../..";
         public DivRememberPassword(RemoteWebDriver driver)
         {
             _driver = driver;

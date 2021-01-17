@@ -1,12 +1,11 @@
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using System;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class CellosFilter : BaseFilter, ICellosFilter, ICellosFilterOptions
     {
-        public CellosFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public CellosFilter(RemoteWebDriver driver) : base(driver)
         {
         }
 

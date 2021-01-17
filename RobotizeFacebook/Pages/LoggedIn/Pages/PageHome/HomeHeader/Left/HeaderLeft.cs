@@ -9,5 +9,7 @@ namespace RobotizeFacebook.Pages.LoggedIn.Home.HomeHeader.Left
             new SearchBoxSearchFacebook(Driver, By.XPath($"//input[@role='combobox'][@placeholder='{ResMiscellaneous.SearchFacebook}']/../../../../.."));
 
         public override string PageUrl => throw new System.NotImplementedException();
+
+        public override By ByForPage => throw new System.NotImplementedException();
     }
 }

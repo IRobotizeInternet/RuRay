@@ -1,12 +1,11 @@
 ﻿using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using System;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class HeadphonesFilter : BaseFilter, IHeadphonesFilter, IHeadphonesFilterOptions
     {
-        public HeadphonesFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public HeadphonesFilter(RemoteWebDriver driver) : base(driver)
         {
         }
 

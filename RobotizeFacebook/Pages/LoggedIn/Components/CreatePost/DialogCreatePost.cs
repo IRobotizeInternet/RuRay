@@ -1,16 +1,16 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
+using RobotizeFacebook.Pages.LoggedIn;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls;
 using RobotizeToolbox.Dialogs;
 
-namespace RobotizeFacebook.Pages.LoggedIn
+namespace RobotizeFacebook.Pages
 {
     public class DialogCreatePost : BaseDialog
     {
-        public DialogCreatePost(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public DialogCreatePost(RemoteWebDriver driver) : base(driver)
         {
             BaseXPath = "//form[@method='POST']";
         }
@@ -40,7 +40,7 @@ namespace RobotizeFacebook.Pages.LoggedIn
 
     public class DialogShowBackgroundOptions : BaseDialog
     {
-        public DialogShowBackgroundOptions(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public DialogShowBackgroundOptions(RemoteWebDriver driver) : base(driver)
         {
         }
 

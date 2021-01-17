@@ -12,10 +12,10 @@ namespace RobotizeFacebook.Pages.LoggedIn.Settings.Tabs.Seperator1
 
         }
 
-        public BaseEditor(RemoteWebDriver driver, WebDriverWait wait)
+        public BaseEditor(RemoteWebDriver driver)
         {
             Driver = driver;
-            Wait = wait;
+            
         }
     }
 }

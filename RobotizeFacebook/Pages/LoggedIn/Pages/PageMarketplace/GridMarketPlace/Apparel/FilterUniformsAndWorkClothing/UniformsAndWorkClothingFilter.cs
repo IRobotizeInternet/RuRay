@@ -1,12 +1,11 @@
 ﻿using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using System;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class UniformsAndWorkClothingFilter : BaseFilter, IUniformsAndWorkClothingFilter, IUniformsAndWorkClothingFilterOptions
     {
-        public UniformsAndWorkClothingFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public UniformsAndWorkClothingFilter(RemoteWebDriver driver) : base(driver)
         {
         }
 

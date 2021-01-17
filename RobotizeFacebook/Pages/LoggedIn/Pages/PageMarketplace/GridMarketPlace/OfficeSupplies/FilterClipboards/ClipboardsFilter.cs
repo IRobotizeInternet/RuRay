@@ -1,12 +1,11 @@
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using System;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class ClipboardsFilter : BaseFilter, IClipboardsFilter, IClipboardsFilterOptions
     {
-        public ClipboardsFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public ClipboardsFilter(RemoteWebDriver driver) : base(driver)
         {
         }
 

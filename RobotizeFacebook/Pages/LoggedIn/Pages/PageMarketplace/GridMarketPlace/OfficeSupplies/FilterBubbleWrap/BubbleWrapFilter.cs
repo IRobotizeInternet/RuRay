@@ -1,12 +1,11 @@
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using System;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class BubbleWrapFilter : BaseFilter, IBubbleWrapFilter, IBubbleWrapFilterOptions
     {
-        public BubbleWrapFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public BubbleWrapFilter(RemoteWebDriver driver) : base(driver)
         {
         }
 

@@ -1,14 +1,16 @@
-﻿using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
+﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Remote;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class PageUserHome : PageBase
     {
-        public PageUserHome(RemoteWebDriver driver, WebDriverWait wait)
+        public PageUserHome(RemoteWebDriver driver)
         {
         }
 
         public override string PageUrl => "{0}";
+
+        public override By ByForPage => throw new System.NotImplementedException();
     }
 }

@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using RobotizeToolbox.Dialogs;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.Controls;
@@ -11,12 +10,12 @@ namespace RobotizeFacebook.Pages.LoggedIn
     {
         protected override By ByForDialog => By.XPath(string.Format(_xPathString, ResAccount.Account, ResAccount.Settings));
 
-        public PopupSettingAndPrivacy(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public PopupSettingAndPrivacy(RemoteWebDriver driver) : base(driver)
         {
             BaseXPath = $"//div[@aria-label='{ResAccount.Account}'][@role='dialog']";
         }
 
-        private string _xPathString = "//div[@aria-label='{0}'][@role='dialog']//span[text()='{1}']";
+        private readonly string _xPathString = "//div[@aria-label='{0}'][@role='dialog']//span[text()='{1}']";
 
         public EventTriggerButton<PageSettings> ButtonSettings => 
             new EventTriggerButton<PageSettings>(Driver, By.XPath(string.Format(_xPathString, ResAccount.Account, ResAccount.Settings)));

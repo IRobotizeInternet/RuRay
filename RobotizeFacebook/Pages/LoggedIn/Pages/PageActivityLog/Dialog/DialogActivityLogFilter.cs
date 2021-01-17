@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using RobotizeFacebook.Pages.LoggedIn.Enum;
 using RobotizeFacebook.Resources;
 using RobotizeLibrary.Extensions;
@@ -10,7 +9,7 @@ namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class DialogActivityLogFilter : BaseDialog
     {
-        public DialogActivityLogFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public DialogActivityLogFilter(RemoteWebDriver driver) : base(driver)
         {
             BaseXPath = $"//div[@role='dialog'][@aria-label='{ResMiscellaneous.Filter}']";
         }

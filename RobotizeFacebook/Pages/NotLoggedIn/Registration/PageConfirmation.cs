@@ -17,5 +17,7 @@ namespace RobotizeFacebook.Pages.NotLoggedIn.Login
             new Hyperlink<DialogChangeEmail>(Driver, By.XPath("//a[@href='/change_contactpoint/dialog/']"));
         public EventTriggerButton<DialogSendEamilAgain> ButtonContinue => 
             new EventTriggerButton<DialogSendEamilAgain>(Driver, By.XPath("//button[@name='confirm']"));
+
+        public override By ByForPage => throw new System.NotImplementedException();
     }
 }

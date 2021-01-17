@@ -1,12 +1,11 @@
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using System;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class VinylFlooringFilter : BaseFilter, IVinylFlooringFilter, IVinylFlooringFilterOptions
     {
-        public VinylFlooringFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public VinylFlooringFilter(RemoteWebDriver driver) : base(driver)
         {
         }
 

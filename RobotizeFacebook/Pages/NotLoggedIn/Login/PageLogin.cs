@@ -24,6 +24,8 @@ namespace RobotizeFacebook.Pages
         public Hyperlink<DialogCreateNewAccount> HyperlinkCreateNewAccount
                 => new Hyperlink<DialogCreateNewAccount>(Driver, By.XPath("//a[@data-testid='open-registration-form-button']"));
 
+        public override By ByForPage => throw new System.NotImplementedException();
+
         public PageHome Login()
         {
             TextBoxUserName.SetData(AppSettings.UserName);

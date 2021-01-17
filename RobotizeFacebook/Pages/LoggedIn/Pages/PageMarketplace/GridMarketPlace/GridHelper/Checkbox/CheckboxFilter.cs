@@ -14,7 +14,7 @@ namespace RobotizeFacebook.Pages.LoggedIn
         private readonly By _byFilterButton;
 
         public CheckboxFilter(RemoteWebDriver driver, WebDriverWait wait, By byFilterButton)
-            : base(driver, wait)
+            : base(driver)
         {
             _byFilterButton = byFilterButton;
         }

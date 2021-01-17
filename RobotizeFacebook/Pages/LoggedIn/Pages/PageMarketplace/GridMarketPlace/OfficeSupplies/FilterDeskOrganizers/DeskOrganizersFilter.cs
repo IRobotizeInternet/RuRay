@@ -1,12 +1,11 @@
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using System;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class DeskOrganizersFilter : BaseFilter, IDeskOrganizersFilter, IDeskOrganizersFilterOptions
     {
-        public DeskOrganizersFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public DeskOrganizersFilter(RemoteWebDriver driver) : base(driver)
         {
         }
 

@@ -1,5 +1,4 @@
 ﻿using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using System;
 
 namespace RobotizeLibrary.Components.Eidtor
@@ -8,13 +7,13 @@ namespace RobotizeLibrary.Components.Eidtor
         where THeader : IHeaderNavigation
         where ULeftMenu : ILeftNavigation
     {
-        private Lazy<THeader> _pageHeader;
-        private Lazy<ULeftMenu> _leftMenu;
+        private readonly Lazy<THeader> _pageHeader;
+        private readonly Lazy<ULeftMenu> _leftMenu;
 
-        public Editor(RemoteWebDriver driver, WebDriverWait wait)
+        public Editor(RemoteWebDriver driver)
         {
-            _pageHeader = InitiateLazyInstance<THeader>(driver, wait);
-            _leftMenu = InitiateLazyInstance<ULeftMenu>(driver, wait);
+            _pageHeader = InitiateLazyInstance<THeader>(driver);
+            _leftMenu = InitiateLazyInstance<ULeftMenu>(driver);
         }
 
         /// <summary>
@@ -27,9 +26,9 @@ namespace RobotizeLibrary.Components.Eidtor
         /// </summary>
         public ULeftMenu LeftMenu => _leftMenu.Value;
 
-        private static Lazy<T> InitiateLazyInstance<T>(RemoteWebDriver driver, WebDriverWait wait)
+        private static Lazy<T> InitiateLazyInstance<T>(RemoteWebDriver driver)
         {
-            return new Lazy<T>(() => (T)Activator.CreateInstance(typeof(T), driver, wait));
+            return new Lazy<T>(() => (T)Activator.CreateInstance(typeof(T), driver));
         }
     }
 }

@@ -1,5 +1,4 @@
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
 
@@ -7,7 +6,7 @@ namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class HobbiesFilter : BaseFilter, IHobbiesFilter, IHobbiesFilterOptions
     {
-        public HobbiesFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public HobbiesFilter(RemoteWebDriver driver) : base(driver)
         {
         }
 

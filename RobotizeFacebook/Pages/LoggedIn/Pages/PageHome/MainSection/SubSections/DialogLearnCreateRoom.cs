@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using RobotizeToolbox.Dialogs;
 using RobotizeFacebook.Resources;
 
@@ -10,8 +9,8 @@ namespace RobotizeFacebook.Pages.LoggedIn.Home.MainSection.SubSections
     {
         protected override By ByForDialog => By.XPath($"//div[@aria-label='{ResMiscellaneous.LearnHowRoomsWork}']");
 
-        public DialogLearnCreateRoom(RemoteWebDriver driver, WebDriverWait wait)
-            : base(driver, wait)
+        public DialogLearnCreateRoom(RemoteWebDriver driver)
+            : base(driver)
         {
 
         }

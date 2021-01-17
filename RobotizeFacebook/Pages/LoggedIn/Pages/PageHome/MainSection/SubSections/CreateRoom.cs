@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.Controls;
 
@@ -8,13 +7,13 @@ namespace RobotizeFacebook.Pages.LoggedIn.Home.MainSection.SubSections
 {
     public class CreateRoom
     {
-        private RemoteWebDriver _driver;
-        private WebDriverWait _wait;
+        private readonly RemoteWebDriver _driver;
+        
 
-        public CreateRoom(RemoteWebDriver driver, WebDriverWait wait)
+        public CreateRoom(RemoteWebDriver driver)
         {
             _driver = driver;
-            _wait = wait;
+
         }
 
         public EventTriggerButton<DialogCreateYourRoom> DialogCreateRoom =>

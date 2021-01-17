@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using RobotizeFacebook.Pages.LoggedIn.Settings.Tabs.Seperator1;
 using RobotizeToolbox.CommonControls;
 using RobotizeFacebook.Resources;
@@ -9,7 +8,7 @@ namespace RobotizeFacebook.Pages.LoggedIn.Settings.Tabs
 {
     public class SecurityLogin : BaseEditor
     {
-        public SecurityLogin(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public SecurityLogin(RemoteWebDriver driver) : base(driver)
         {
         }
 

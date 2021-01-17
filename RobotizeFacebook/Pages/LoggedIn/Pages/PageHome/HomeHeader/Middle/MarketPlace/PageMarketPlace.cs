@@ -1,4 +1,5 @@
-﻿using RobotizeToolbox.Controls;
+﻿using OpenQA.Selenium;
+using RobotizeToolbox.Controls;
 
 namespace RobotizeFacebook.Pages.LoggedIn.Home.HomeHeader
 {
@@ -6,9 +7,11 @@ namespace RobotizeFacebook.Pages.LoggedIn.Home.HomeHeader
     {
         public override string PageUrl => "marketplace";
 
+        public override By ByForPage => throw new System.NotImplementedException();
+
         public void FilterItem()
         {
-            var grid = new FacebookGrid(Driver, Wait);
+            var grid = new FacebookGrid(Driver);
             grid.ExpandCollapseFilter<IVehicleFilter>("");
         }
     }

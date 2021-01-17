@@ -1,12 +1,11 @@
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using System;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class BirdAndWildlifeAccessoriesFilter : BaseFilter, IBirdAndWildlifeAccessoriesFilter, IBirdAndWildlifeAccessoriesFilterOptions
     {
-        public BirdAndWildlifeAccessoriesFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public BirdAndWildlifeAccessoriesFilter(RemoteWebDriver driver) : base(driver)
         {
         }
 

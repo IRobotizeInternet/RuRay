@@ -1,5 +1,4 @@
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using System;
 using System.Collections.Generic;
 
@@ -7,7 +6,7 @@ namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class PianosAndKeyboardsFilter : BaseFilter, IPianosAndKeyboardsFilter, IPianosAndKeyboardsFilterOptions
     {
-        public PianosAndKeyboardsFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public PianosAndKeyboardsFilter(RemoteWebDriver driver) : base(driver)
         {
         }
 

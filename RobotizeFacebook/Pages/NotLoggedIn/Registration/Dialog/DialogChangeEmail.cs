@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Dialogs;
 
@@ -10,8 +9,8 @@ namespace RobotizeFacebook.Pages.NotLoggedIn.Login.Dialog
     {
         protected override By ByForDialog => throw new System.NotImplementedException();
 
-        public DialogChangeEmail(RemoteWebDriver driver, WebDriverWait wait) 
-            : base(driver, wait)
+        public DialogChangeEmail(RemoteWebDriver driver) 
+            : base(driver)
         {
         }
 

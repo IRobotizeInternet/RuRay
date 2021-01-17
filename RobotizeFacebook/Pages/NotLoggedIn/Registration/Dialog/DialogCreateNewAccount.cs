@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using RobotizeFacebook.Pages.LoggedUser;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls;
@@ -13,7 +12,7 @@ namespace RobotizeFacebook.Pages.NotLoggedIn
     {
         protected override By ByForDialog => throw new System.NotImplementedException();
 
-        public DialogCreateNewAccount(RemoteWebDriver driver, WebDriverWait wait):base(driver, wait) { }
+        public DialogCreateNewAccount(RemoteWebDriver driver):base(driver) { }
 
         public TextBox TextBoxFirstName => new TextBox(Driver, By.XPath("//input[@name='firstname']"));
         public TextBox TextBoxLastName => new TextBox(Driver, By.XPath("//input[@name='lastname']"));

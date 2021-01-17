@@ -1,13 +1,12 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using System;
 
 namespace RobotizeToolbox.Dialogs
 {
     public class BaseSaveCancelDialog : BaseDialog
     {
-        public BaseSaveCancelDialog(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public BaseSaveCancelDialog(RemoteWebDriver driver) : base(driver)
         {
         }
 

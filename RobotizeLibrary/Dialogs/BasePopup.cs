@@ -12,14 +12,12 @@ namespace RobotizeToolbox.Dialogs
     public abstract class BasePopup
     {
         protected RemoteWebDriver Driver;
-        protected WebDriverWait Wait;
         protected abstract By ByForDialog { get; }
         protected string BaseXPath;
 
-        protected BasePopup(RemoteWebDriver driver, WebDriverWait wait)
+        protected BasePopup(RemoteWebDriver driver)
         {
             Driver = driver;
-            Wait = wait;
             if (ByForDialog != null) WaitForDialogToAppear();
         }
 

@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Dialogs;
@@ -9,7 +8,7 @@ namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class DialogNotificationSettings : BaseDialog
     {
-        public DialogNotificationSettings(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public DialogNotificationSettings(RemoteWebDriver driver) : base(driver)
         {
             BaseXPath = $"//div[@aria-label='{ResMiscellaneous.NotificationSettings}'][@role='dialog']";
         }

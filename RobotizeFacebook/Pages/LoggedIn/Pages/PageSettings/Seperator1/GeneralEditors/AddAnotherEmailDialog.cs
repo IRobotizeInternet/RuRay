@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls;
 using RobotizeToolbox.Controls.TriggerControls;
@@ -11,7 +10,7 @@ namespace RobotizeFacebook.Pages.LoggedIn.Settings.Tabs.Seperator1
 {
     public class AddAnotherEmailDialog : BaseDialog
     {
-        public AddAnotherEmailDialog(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public AddAnotherEmailDialog(RemoteWebDriver driver) : base(driver)
         {
         }
 
@@ -26,7 +25,7 @@ namespace RobotizeFacebook.Pages.LoggedIn.Settings.Tabs.Seperator1
 
     public class AddPhoneNumberDialog : BaseDialog
     {
-        public AddPhoneNumberDialog(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public AddPhoneNumberDialog(RemoteWebDriver driver) : base(driver)
         {
         }
 

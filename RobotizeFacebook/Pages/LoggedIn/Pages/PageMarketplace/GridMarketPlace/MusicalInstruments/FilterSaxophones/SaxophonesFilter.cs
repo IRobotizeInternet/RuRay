@@ -1,12 +1,11 @@
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using System;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class SaxophonesFilter : BaseFilter, ISaxophonesFilter, ISaxophonesFilterOptions
     {
-        public SaxophonesFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public SaxophonesFilter(RemoteWebDriver driver) : base(driver)
         {
         }
 

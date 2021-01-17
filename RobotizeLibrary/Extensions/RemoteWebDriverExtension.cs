@@ -77,6 +77,33 @@ namespace RobotizeToolbox.Extensions
         }
 
         /// <summary>
+        /// Wait until element is appear.
+        /// </summary>
+        public static void WaitUntilElementAppears(
+            this RemoteWebDriver driver,
+            By byForElement,
+            int timeoutSeconds = 60)
+        {
+            var wait = new DefaultWait<By>(byForElement)
+            {
+                PollingInterval = TimeSpan.FromMilliseconds(500),
+                Timeout = TimeSpan.FromSeconds(timeoutSeconds)
+            };
+
+            _ = wait.Until(x =>
+            {
+                try
+                {
+                    var element = driver.FindElement(x);
+                    return false;
+                }
+                catch (NoSuchElementException) { return true; }
+                catch (ElementNotVisibleException) { return true; }
+                catch (StaleElementReferenceException) { return true; }
+            });
+        }
+
+        /// <summary>
         /// Wait if the element is visible.
         /// </summary>
         public static void WaitUntilElementDisappears(

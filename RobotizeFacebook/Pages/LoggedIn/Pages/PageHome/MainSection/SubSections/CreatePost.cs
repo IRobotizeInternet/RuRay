@@ -4,17 +4,15 @@ using OpenQA.Selenium.Support.UI;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.Controls;
 
-namespace RobotizeFacebook.Pages.LoggedIn.Home.MainSection.SubSections
+namespace RobotizeFacebook.Pages
 {
     public class CreatePost
     {
         public RemoteWebDriver Driver;
-        public WebDriverWait Wait;
 
-        public CreatePost(RemoteWebDriver driver, WebDriverWait wait)
+        public CreatePost(RemoteWebDriver driver)
         {
             Driver = driver;
-            Wait = wait;
         }
 
         public EventTriggerButton<DialogCreatePost> ButtonCreatePost => 

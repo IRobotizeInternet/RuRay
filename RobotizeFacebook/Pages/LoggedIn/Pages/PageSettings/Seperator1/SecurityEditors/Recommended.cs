@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls;
 using RobotizeToolbox.Controls.TriggerControls;
@@ -12,7 +11,7 @@ namespace RobotizeFacebook.Pages.LoggedIn.Settings.Tabs.Seperator1
 {
     public class Recommended : BaseEditor
     {
-        public Recommended(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public Recommended(RemoteWebDriver driver) : base(driver)
         {
         }
 
@@ -46,7 +45,7 @@ namespace RobotizeFacebook.Pages.LoggedIn.Settings.Tabs.Seperator1
 
     public class DialogAddEmailAddress : BaseDialog
     {
-        public DialogAddEmailAddress(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public DialogAddEmailAddress(RemoteWebDriver driver) : base(driver)
         {
         }
 
@@ -60,7 +59,7 @@ namespace RobotizeFacebook.Pages.LoggedIn.Settings.Tabs.Seperator1
 
     public class DialogConfirmYourEmail : BaseDialog
     {
-        public DialogConfirmYourEmail(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public DialogConfirmYourEmail(RemoteWebDriver driver) : base(driver)
         {
         }
 

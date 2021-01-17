@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using RobotizeFacebook.Pages.NotLoggedIn.Help;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls.TriggerControls;
@@ -20,7 +19,7 @@ namespace RobotizeFacebook.Pages.LoggedIn.Settings.Tabs.Seperator1
 
     public class DialogDeleteYourAccountInFuture : BaseDialog
     {
-        public DialogDeleteYourAccountInFuture(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public DialogDeleteYourAccountInFuture(RemoteWebDriver driver) : base(driver)
         {
         }
 

@@ -1,5 +1,4 @@
 ﻿using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using RobotizeFacebook.Pages.LoggedIn;
 using System;
 
@@ -8,12 +7,10 @@ namespace RobotizeToolbox.Controls
     public class FacebookGrid
     {
         private readonly RemoteWebDriver _driver;
-        private readonly WebDriverWait _wait;
 
-        public FacebookGrid(RemoteWebDriver driver, WebDriverWait wait) 
+        public FacebookGrid(RemoteWebDriver driver) 
         {
             _driver = driver;
-            _wait = wait;
         }
 
         public void ScrollUntilCategoryFound(string category)
@@ -49,7 +46,7 @@ namespace RobotizeToolbox.Controls
             }
 
             ClickColumnButtonWaitForColumnMenu(columnName);
-            return FilterFactory.GetFilter<TFilter>(_driver, _wait);
+            return FilterFactory.GetFilter<TFilter>(_driver);
         }
     }
 }

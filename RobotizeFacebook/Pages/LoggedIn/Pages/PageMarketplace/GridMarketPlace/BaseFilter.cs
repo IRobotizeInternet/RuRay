@@ -8,10 +8,10 @@ namespace RobotizeFacebook.Pages.LoggedIn
         protected readonly RemoteWebDriver Driver;
         protected readonly WebDriverWait Wait;
        
-        public BaseFilter(RemoteWebDriver driver, WebDriverWait wait)
+        public BaseFilter(RemoteWebDriver driver)
         {
             Driver = driver;
-            Wait = wait;
+            
         }
 
         public virtual void ApplyFilter()

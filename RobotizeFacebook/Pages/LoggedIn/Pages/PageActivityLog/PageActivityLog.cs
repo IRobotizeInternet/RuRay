@@ -1,5 +1,5 @@
-﻿using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
+﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Remote;
 using RobotizeFacebook.Resources;
 
 namespace RobotizeFacebook.Pages.LoggedIn
@@ -8,8 +8,10 @@ namespace RobotizeFacebook.Pages.LoggedIn
     {
         public override string PageUrl => "/allactivity/";
 
+        public override By ByForPage => throw new System.NotImplementedException();
+
         public readonly string BaseXPath = $"//div[@data-pagelet='page']/div/div[@aria-label='{ResMiscellaneous.ListOfActivityLogItems}'][@role='navigation']";
-        public PageActivityLog(RemoteWebDriver driver, WebDriverWait wait)
+        public PageActivityLog(RemoteWebDriver driver)
         {
         }
     }

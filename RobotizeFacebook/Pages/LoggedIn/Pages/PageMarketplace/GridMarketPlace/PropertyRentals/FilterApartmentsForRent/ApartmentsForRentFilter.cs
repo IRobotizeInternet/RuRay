@@ -1,12 +1,11 @@
 ﻿using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using System;
 
 namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class ApartmentsForRentFilter : BaseFilter, IApartmentsForRentFilter, IApartmentsForRentFilterOptions
     {
-        public ApartmentsForRentFilter(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public ApartmentsForRentFilter(RemoteWebDriver driver) : base(driver)
         {
         }
 

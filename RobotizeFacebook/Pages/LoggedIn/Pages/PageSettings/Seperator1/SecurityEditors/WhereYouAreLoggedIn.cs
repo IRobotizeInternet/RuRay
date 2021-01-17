@@ -1,7 +1,6 @@
 ﻿
 using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls.TriggerControls;
 using RobotizeToolbox.Dialogs;
@@ -12,7 +11,7 @@ namespace RobotizeFacebook.Pages.LoggedIn.Settings.Tabs.Seperator1.SecurityEdito
 {
     public class WhereYouAreLoggedIn : BaseEditor
     {
-        public WhereYouAreLoggedIn(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public WhereYouAreLoggedIn(RemoteWebDriver driver) : base(driver)
         {
             
         }
@@ -23,7 +22,7 @@ namespace RobotizeFacebook.Pages.LoggedIn.Settings.Tabs.Seperator1.SecurityEdito
 
     public class DialogSeeMore : BaseDialog
     {
-        public DialogSeeMore(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public DialogSeeMore(RemoteWebDriver driver) : base(driver)
         {
         }
 

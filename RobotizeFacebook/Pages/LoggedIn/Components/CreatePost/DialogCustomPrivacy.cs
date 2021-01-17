@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using RobotizeToolbox.Controls;
 using RobotizeToolbox.Dialogs;
 using RobotizeFacebook.Resources;
@@ -9,7 +8,7 @@ namespace RobotizeFacebook.Pages.LoggedIn
 {
     public class DialogCustomPrivacy : BaseSaveCancelDialog
     {
-        public DialogCustomPrivacy(RemoteWebDriver driver, WebDriverWait wait) : base(driver, wait)
+        public DialogCustomPrivacy(RemoteWebDriver driver) : base(driver)
         {
             BaseXPath = $"//span[text()='{ResSelectPrivacy.CustomPrivacy}']/../../../../..";
         }
