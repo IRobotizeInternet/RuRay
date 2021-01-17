@@ -1108,12 +1108,6 @@
     <None Include="RobotizeFacebook.targets" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RobotizeLibrary\RobotizeToolbox.csproj">
-      <Project>{EFFD0879-83C5-488F-840A-E8CCFD3CD103}</Project>
-      <Name>RobotizeToolbox</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <Content Include="..\packages\Selenium.WebDriver.ChromeDriver.87.0.4280.8800\driver\win32\chromedriver.exe">
       <Link>chromedriver.exe</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -1270,6 +1264,12 @@
   </ItemGroup>
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RobotizeToolbox\RobotizeToolbox.csproj">
+      <Project>{CA179313-4A69-40BD-8F25-66DCC2D6D225}</Project>
+      <Name>RobotizeToolbox</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
