@@ -1,6 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
+using Polly;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -15,9 +16,14 @@ namespace RobotizeToolbox.Extensions
         /// </summary>
         public static IWebElement FindElementWithTimeSpan(this RemoteWebDriver driver, By by, int timeSpanInSeconds = 30)
         {
-            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeSpanInSeconds));
-            var elements = driver.FindElements(by);
-            wait.Until(d =>
+            ICollection<IWebElement> elements = null;
+
+            // Using Polly library: https://github.com/App-vNext/Polly
+            var policy = Policy
+              .Handle<InvalidOperationException>()
+              .WaitAndRetry(10, t => TimeSpan.FromSeconds(timeSpanInSeconds));
+
+            policy.Execute(() =>
             {
                 try
                 {
@@ -26,18 +32,18 @@ namespace RobotizeToolbox.Extensions
                 }
                 catch (TimeoutException ex)
                 {
-                    Debug.WriteLine($"Timed our exception{ex.Message} \n {ex.InnerException}");
+                    Trace.WriteLine($"Timed our exception{ex.Message} \n {ex.InnerException}");
                     return false;
                 }
             });
 
             // If no elements found then throw an exception.
-            if (!elements.Any()) throw new NoSuchElementException($"No element found matching criteria '{by}'");
+            if (elements == null || !elements.Any()) Trace.WriteLine($"No element found matching criteria '{by}'");
 
             // If found more than one element then throw an exception.
-            if (elements.Count() > 1) throw new Exception($"More than one element found matching criteria '{by}'");
+            if (elements.Count() > 1) Trace.WriteLine($"More than one element found matching criteria '{by}'");
 
-            return elements.First();
+            return elements?.First();
         }
 
         /// <summary>
@@ -48,12 +54,12 @@ namespace RobotizeToolbox.Extensions
             var elements =  driver.FindElements(by);
 
             // If no elements found then throw an exception.
-            if (!elements.Any()) throw new NoSuchElementException($"No element found matching criteria '{by}'");
+            if (!elements.Any()) Trace.WriteLine($"{nameof(NoSuchElementException)} occured, element found matching criteria '{by}' not found");
 
             // If found more than one element then throw an exception.
-            if (elements.Count() > 1) throw new Exception($"More than one element found matching criteria '{by}'");
+            if (elements.Count() > 1) Trace.WriteLine($"More than one element found matching criteria '{by}'");
 
-            return elements.First();
+            return elements?.First();
         }
 
         /// <summary>

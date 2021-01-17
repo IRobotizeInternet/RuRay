@@ -1,5 +1,5 @@
 ﻿using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
+
 using RobotizeFacebook.Utilities;
 using RobotizeFacebook.WebDrivers;
 using System;
@@ -15,12 +15,6 @@ namespace RobotizeFacebook.Pages
         [ThreadStatic]
         private static RemoteWebDriver _remoteDriver = null;
 
-        [ThreadStatic]
-        private static WebDriverWait _wait = null;
-
-        private const int _defaultTimeoutInSec = 60;
-        protected WebDriverWait Wait => _wait;
-
         protected BaseDriver()
         {
             BaseURL = AppSettings.BaseURL;
@@ -30,14 +24,12 @@ namespace RobotizeFacebook.Pages
 
         private void InitializeDriverAndWait()
         {
-            if (_remoteDriver == null)
-            {
-                _remoteDriver = Driver;
-
-                // Enable this if you wish to delete the cookies 
-                // _remoteDriver.Manage().Cookies.DeleteAllCookies();
-                _wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(_defaultTimeoutInSec));
-            }
+            if (_remoteDriver != null) return;
+         
+            _remoteDriver = Driver;
+            
+            // Enable this if you wish to delete the cookies each time you start new session.
+            // _remoteDriver.Manage().Cookies.DeleteAllCookies();
         }
 
         private static RemoteWebDriver _driver;

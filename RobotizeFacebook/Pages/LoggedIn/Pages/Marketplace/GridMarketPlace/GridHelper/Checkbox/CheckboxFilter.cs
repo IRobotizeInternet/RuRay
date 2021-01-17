@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Extensions;
 using System;
@@ -13,7 +12,7 @@ namespace RobotizeFacebook.Pages.LoggedIn
     {
         private readonly By _byFilterButton;
 
-        public CheckboxFilter(RemoteWebDriver driver, WebDriverWait wait, By byFilterButton)
+        public CheckboxFilter(RemoteWebDriver driver, By byFilterButton)
             : base(driver)
         {
             _byFilterButton = byFilterButton;

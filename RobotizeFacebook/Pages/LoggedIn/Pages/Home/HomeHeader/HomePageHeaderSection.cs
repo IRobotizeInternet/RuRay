@@ -1,6 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
+
 using RobotizeFacebook.Pages.LoggedIn.Home.HomeHeader;
 using RobotizeFacebook.Pages.LoggedUser;
 using RobotizeFacebook.Resources;
@@ -12,12 +12,10 @@ namespace RobotizeFacebook.Pages.LoggedIn
     public class HomePageHeaderSection
     {
         private readonly RemoteWebDriver _driver;
-        private readonly WebDriverWait _wait;
 
         public HomePageHeaderSection(RemoteWebDriver driver)
         {
             _driver = driver;
-
         }
 
         // Items on left.

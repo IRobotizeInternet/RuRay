@@ -1,6 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
+using Polly;
 using System;
 using System.Diagnostics;
 using System.Threading;
@@ -9,7 +9,6 @@ namespace RobotizeToolbox.Extensions
 {
     public static class Acts
     {
-
         // TODO:
         public static void ClickAndHold()
         {
@@ -46,29 +45,33 @@ namespace RobotizeToolbox.Extensions
         }
 
         /// <summary>
-        /// This method will wait for DOM objects to load for 100 second timeout.
+        /// This method will wait for DOM objects to load for 60 second timeout.
         /// </summary>
         public static void WaitForObjectToLoadForTimeSpan(RemoteWebDriver driver, double maxWaitTimeInSeconds = 60)
         {
-            var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(maxWaitTimeInSeconds));
-              _ = wait.Until(x =>
-              {
-                  try
-                  {
-                      var xPathLoadIndicitor = string.Empty;
-                      if (!driver.FindElement(By.XPath(xPathLoadIndicitor)).Displayed) return true;
-                      else
-                      {
-                          Thread.Sleep(TimeSpan.FromMilliseconds(200));
-                          return false;
-                      }
-                  }
-                  catch (TimeoutException ex)
-                  {
-                      Debug.WriteLine($"Timed our exception{ex.Message} \n {ex.InnerException}");
-                      return false;
-                  }
-              });
+            // Using Polly library: https://github.com/App-vNext/Polly
+            var policy = Policy
+              .Handle<InvalidOperationException>()
+              .WaitAndRetry(10, timespan => TimeSpan.FromSeconds(maxWaitTimeInSeconds));
+            
+            policy.Execute(() =>
+            {
+                try
+                {
+                    var xPathLoadIndicitor = string.Empty;
+                    if (!driver.FindElement(By.XPath(xPathLoadIndicitor)).Displayed) return true;
+                    else
+                    {
+                        Thread.Sleep(TimeSpan.FromMilliseconds(200));
+                        return false;
+                    }
+                }
+                catch (TimeoutException ex)
+                {
+                    Debug.WriteLine($"Timed our exception{ex.Message} \n {ex.InnerException}");
+                    return false;
+                }
+            });
         }
     }
 }

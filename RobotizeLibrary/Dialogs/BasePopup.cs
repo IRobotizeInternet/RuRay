@@ -1,6 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
+
 using RobotizeToolbox.Extensions;
 using System;
 using System.Diagnostics;

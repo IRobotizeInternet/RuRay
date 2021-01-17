@@ -1,10 +1,11 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
+
 using Polly;
 using RobotizeToolbox.Extensions;
 using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading;
 
@@ -36,40 +37,32 @@ namespace RobotizeToolbox.CommonControls
         /// </summary>
         public virtual void Click(int numberOfTries = 5)
         {
-            // Adding delay to avoid rapid action avoid account being disabled. 
-            Thread.Sleep(2000);
-            
-            // It will try to five seconds to click on an element.
-            var wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
-
-            try
-            {
-                // find the element
-                var element = Driver.FindElementWithTimeSpan(ByForElement, timeSpanInSeconds: 10);
-
-                // Using Polly library: https://github.com/App-vNext/Polly
-                var policy = Policy
-                  .Handle<InvalidOperationException>()
-                  .WaitAndRetry(30, t => TimeSpan.FromSeconds(1));
-
-                policy.Execute(() =>
+            // If any of the following execptions occured try again.
+            var knowErrorMessages = new List<string>
                 {
-                    element.Click();
-                });
-            }
-            catch (WebDriverException ex)
-            {
-                // If any of the following execptions occured try again.
-                var knowErrorMessages = new List<string>
-                    {
                         "not clickable at point",
                         "element is not attached",
                         "Timed out"
-                    };
+                };
 
-                if (knowErrorMessages.Any(x => x.Contains(ex.Message))) numberOfTries--;
-                else  throw new Exception($"Unexpected WebDriverException was encountered: {ex.Message} {ex.StackTrace}");
-            }
+            // Using Polly library: https://github.com/App-vNext/Polly
+            var policy = Policy
+              .Handle<InvalidOperationException>()
+              .WaitAndRetry(numberOfTries, timespan => TimeSpan.FromSeconds(10));
+
+            var element = Driver.FindElementWithTimeSpan(ByForElement, timeSpanInSeconds: 10);
+            policy.Execute(() =>
+            {
+                try{ element.Click(); }
+                catch (WebDriverException ex)
+                {
+                    if (!knowErrorMessages.Any(x => x.Contains(ex.Message)))
+                    {
+                        Trace.WriteLine($"Unexpected WebDriverException was encountered: {ex.Message} {ex.StackTrace}");
+                        return;
+                    }
+                }
+            });
         }
 
         /// <summary>/
