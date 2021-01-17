@@ -8,7 +8,7 @@ namespace RobotizeFacebook.Pages.LoggedIn.Settings.Tabs
 {
     public class SecurityLogin : BaseEditor
     {
-        public SecurityLogin(RemoteWebDriver driver) : base(driver)
+        public SecurityLogin(RemoteWebDriver driver) : base()
         {
         }
 

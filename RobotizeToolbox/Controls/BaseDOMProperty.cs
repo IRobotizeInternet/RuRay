@@ -68,11 +68,11 @@ namespace RobotizeToolbox.CommonControls
                     };
 
                 if (knowErrorMessages.Any(x => x.Contains(ex.Message))) numberOfTries--;
-                else throw new Exception($"Unexpected WebDriverException was encountered: {ex.Message} {ex.StackTrace}");
+                else  throw new Exception($"Unexpected WebDriverException was encountered: {ex.Message} {ex.StackTrace}");
             }
         }
 
-        /// <summary>
+        /// <summary>/
         /// Clear value.
         /// Select All + Backspace
         /// </summary>

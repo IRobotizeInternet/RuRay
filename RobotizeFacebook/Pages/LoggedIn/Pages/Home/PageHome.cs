@@ -14,10 +14,10 @@ namespace RobotizeFacebook.Pages.LoggedUser
 
         public PageHome()
         {
-
+            
         }
 
-        public override string PageUrl => "https://www.facebook.com/marketplace/111906762160356/garden";
+        public override string PageUrl => "/";
         public HomePageHeaderSection HeaderSection => new HomePageHeaderSection(Driver);
         public MainSection MainSection => new MainSection(Driver);
 

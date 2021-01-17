@@ -11,7 +11,7 @@ namespace RobotizeFacebook.Pages.LoggedIn.Settings.Tabs.Seperator1.SecurityEdito
 {
     public class WhereYouAreLoggedIn : BaseEditor
     {
-        public WhereYouAreLoggedIn(RemoteWebDriver driver) : base(driver)
+        public WhereYouAreLoggedIn(RemoteWebDriver driver) : base()
         {
             
         }

@@ -11,7 +11,7 @@ namespace RobotizeFacebook.Pages.LoggedIn.Settings.Tabs.Seperator1
 {
     public class Recommended : BaseEditor
     {
-        public Recommended(RemoteWebDriver driver) : base(driver)
+        public Recommended(RemoteWebDriver driver) : base()
         {
         }
 

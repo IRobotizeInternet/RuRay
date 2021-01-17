@@ -1,5 +1,4 @@
 ﻿using OpenQA.Selenium.Remote;
-using RobotizeFacebook.Pages.LoggedIn.Home.MainSection.SubSections;
 
 namespace RobotizeFacebook.Pages
 {
