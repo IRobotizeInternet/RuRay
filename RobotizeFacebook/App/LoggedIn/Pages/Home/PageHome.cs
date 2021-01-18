@@ -1,10 +1,9 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using RobotizeFacebook.App.LoggedIn;
 using System.IO;
 using System.Threading;
 
-namespace RobotizeFacebook.App.LoggedUser
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class PageHome : PageBase
     {

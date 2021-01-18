@@ -3,7 +3,7 @@ using OpenQA.Selenium.Remote;
 using RobotizeToolbox.Dialogs;
 using RobotizeFacebook.Resources;
 
-namespace RobotizeFacebook.App.LoggedIn.Home.HomeHeader
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class PopupMessanger : BaseDialog
     {

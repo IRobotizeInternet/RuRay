@@ -1,5 +1,4 @@
 ﻿using OpenQA.Selenium;
-using RobotizeFacebook.App.LoggedUser;
 using RobotizeFacebook.App.NotLoggedIn;
 using RobotizeFacebook.App.PasswordRecovery;
 using RobotizeFacebook.Utilities;
@@ -8,7 +7,7 @@ using RobotizeToolbox.Controls.TriggerControls;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.Controls;
 
-namespace RobotizeFacebook.App
+namespace RobotizeFacebook.App.NotLoggedIn
 {
     public class PageLogin : PageBase
     {

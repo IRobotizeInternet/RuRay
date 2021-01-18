@@ -1,6 +1,6 @@
 ﻿namespace RobotizeLibrary.Components.Eidtor
 {
-    public interface ILowerHalf
+    public interface IFeedContainer
     {
     }
 }

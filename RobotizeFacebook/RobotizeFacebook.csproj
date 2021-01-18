@@ -143,6 +143,19 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App\LoggedIn\Components\PopupAccount.cs" />
+    <Compile Include="App\LoggedIn\Components\CreatePost\PopupNotificationSettings.cs" />
+    <Compile Include="App\LoggedIn\Dialogs\PopupMessanger.cs" />
+    <Compile Include="App\LoggedIn\Dialogs\PopupNotifications.cs" />
+    <Compile Include="App\LoggedIn\Pages\Home\HomeHeader\HeaderMiddleMenu.cs" />
+    <Compile Include="App\LoggedIn\Pages\Home\HomeHeader\HeaderRightMenu.cs" />
+    <Compile Include="App\LoggedIn\Pages\Messages\DetailsMessages.cs" />
+    <Compile Include="App\LoggedIn\Pages\Messages\FeedContainerMessages.cs" />
+    <Compile Include="App\LoggedIn\Pages\Messages\MenuItemsMessages.cs" />
+    <Compile Include="App\LoggedIn\Pages\Messages\PageMessages.cs" />
+    <Compile Include="App\LoggedIn\Pages\Notifications\FeedContainerNotifications.cs" />
+    <Compile Include="App\LoggedIn\Pages\Notifications\MenuItemsNotifications.cs" />
+    <Compile Include="App\LoggedIn\Pages\Notifications\PageNotifications.cs" />
     <Compile Include="CryptoServices\Crypto.cs" />
     <Compile Include="CryptoServices\CryptoServiceForString.cs" />
     <Compile Include="App\BaseDriver.cs" />
@@ -798,7 +811,7 @@
     <Compile Include="App\LoggedIn\Components\CreatePost\DialogSelectPrivacy.cs" />
     <Compile Include="App\LoggedIn\Components\CreatePost\PopupEmoji.cs" />
     <Compile Include="App\LoggedIn\Components\Menus\DivMarketPlaceMenu.cs" />
-    <Compile Include="App\LoggedIn\Components\SearchBoxSearchFacebook.cs" />
+    <Compile Include="App\LoggedIn\Components\SearchboxSearchFacebook.cs" />
     <Compile Include="App\LoggedIn\Components\SearchBoxSharingWithYourFriends.cs" />
     <Compile Include="App\LoggedIn\Pages\Base\FeedContainer.cs" />
     <Compile Include="App\LoggedIn\Pages\ActivityLog\Feed\FeedContainerReviewTagsOnYourPosts.cs" />
@@ -848,21 +861,14 @@
     <Compile Include="App\LoggedIn\Pages\Weather\FeedContainerWeather.cs" />
     <Compile Include="App\LoggedIn\Help\PageHelp.cs" />
     <Compile Include="App\LoggedIn\Pages\Home\HomeHeader\Header.cs" />
-    <Compile Include="App\LoggedIn\Pages\Home\HomeHeader\Left\HeaderLeft.cs" />
-    <Compile Include="App\LoggedIn\Pages\Home\HomeHeader\Middle\Friends\PageFriends.cs" />
-    <Compile Include="App\LoggedIn\Pages\Home\HomeHeader\Middle\GroupFeed\PageGroupFeed.cs" />
     <Compile Include="App\LoggedIn\Dialogs\Account\PopupHelpAndSupport.cs" />
     <Compile Include="App\LoggedIn\Dialogs\Account\PopupSettingAndPrivacy.cs" />
-    <Compile Include="App\LoggedIn\Pages\Home\HomeHeader\Right\Account\PopupAccount.cs" />
     <Compile Include="App\LoggedIn\Components\CreatePost\DialogCreatePost.cs" />
     <Compile Include="App\LoggedIn\Components\CreatePost\DialogLifeEvents.cs" />
-    <Compile Include="App\LoggedIn\Components\CreatePost\PopupCreate.cs" />
+    <Compile Include="App\LoggedIn\Components\PopupCreate.cs" />
     <Compile Include="App\LoggedIn\Pages\Home\HomeHeader\HomePageHeaderSection.cs" />
     <Compile Include="App\LoggedIn\Enum\PostBackgroundcolor.cs" />
-    <Compile Include="App\LoggedIn\Pages\Home\HomeHeader\Right\Messanger\PopupMessanger.cs" />
-    <Compile Include="App\LoggedIn\Pages\Home\HomeHeader\Right\Notifications\PopupNotifications.cs" />
     <Compile Include="App\LoggedIn\Pages\Home\HomePageLeftSection.cs" />
-    <Compile Include="App\LoggedIn\Pages\Home\HomeHeader\Middle\MarketPlace\PageMarketPlace.cs" />
     <Compile Include="App\LoggedIn\Pages\Home\MainSection\MainSection.cs" />
     <Compile Include="App\LoggedIn\Pages\Home\MainSection\SubSections\CreatePost.cs" />
     <Compile Include="App\LoggedIn\Pages\Home\MainSection\SubSections\CreateRoom.cs" />
@@ -928,7 +934,6 @@
     <Compile Include="App\LoggedIn\Pages\Stories\DialogCreateAStory\DialogCreateAStory.cs" />
     <Compile Include="App\LoggedIn\SupportInbox\PageSupportInbox.cs" />
     <Compile Include="App\LoggedIn\UserHomePage\PageUserHome.cs" />
-    <Compile Include="App\LoggedIn\Pages\Home\HomeHeader\Middle\Watch\PageWatch.cs" />
     <Compile Include="App\NotLoggedIn\Help\PageHelpChooseALegacyContact.cs" />
     <Compile Include="App\NotLoggedIn\Home\PageHome.cs" />
     <Compile Include="App\LoggedIn\Pages\Home\PageHome.cs" />
@@ -1136,7 +1141,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App\LoggedIn\Components\Notifications\" />
-    <Folder Include="App\LoggedIn\Pages\Home\HomeHeader\Right\Create\" />
     <Folder Include="App\LoggedIn\Pages\Marketplace\GridMarketPlace\GridHelper\RadioButton\" />
     <Folder Include="App\LoggedIn\Pages\Marketplace\GridMarketPlace\GridHelper\Textbox\" />
     <Folder Include="App\Pagesa\" />

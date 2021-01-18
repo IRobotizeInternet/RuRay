@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 using RobotizeToolbox.CommonControls;
 
-namespace RobotizeFacebook.App.NotLoginPages
+namespace RobotizeFacebook.App.NotLoggedIn
 {
     public class PageHome : PageBase
     {

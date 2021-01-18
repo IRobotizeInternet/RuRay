@@ -1,7 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using RobotizeFacebook.App;
-using RobotizeFacebook.App.LoggedUser;
-using System.IO;
 
 namespace RobotizeFacebookTests.LoggedIn
 {
@@ -14,8 +11,6 @@ namespace RobotizeFacebookTests.LoggedIn
             //var page = new PageLogin();
             //PageHome d = new PageHome();
             //d.HeaderSection.RunConformance();
-
-            
         }
     }
 }

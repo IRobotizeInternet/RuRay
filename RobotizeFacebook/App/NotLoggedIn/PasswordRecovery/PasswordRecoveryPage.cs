@@ -1,5 +1,5 @@
 ﻿using OpenQA.Selenium;
-using RobotizeFacebook.App.NotLoginPages;
+using RobotizeFacebook.App.NotLoggedIn;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls.TriggerControls;
 
