@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 
-namespace RobotizeFacebook.Pages
+namespace RobotizeFacebook.App
 {
     public class DivArchive : PageBase
     {

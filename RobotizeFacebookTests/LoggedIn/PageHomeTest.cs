@@ -1,6 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using RobotizeFacebook.Pages;
-using RobotizeFacebook.Pages.LoggedUser;
+using RobotizeFacebook.App;
+using RobotizeFacebook.App.LoggedUser;
 using System.IO;
 
 namespace RobotizeFacebookTests.LoggedIn
