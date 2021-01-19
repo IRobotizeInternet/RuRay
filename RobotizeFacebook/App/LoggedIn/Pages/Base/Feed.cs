@@ -1,11 +1,11 @@
 ﻿namespace RobotizeFacebook.App.LoggedIn
 {
-    public abstract class FeedContainer : BaseDriver
+    public abstract class Feed : BaseDriver
     {
         // public 
         public abstract string FeedUrl { get; }
 
-        protected FeedContainer()
+        protected Feed()
         {
         }
 

@@ -2,7 +2,7 @@
 
 namespace RobotizeFacebook.App.LoggedIn.LeftMenu
 {
-    public class FeedContainerWeather : FeedContainer
+    public class FeedWeather : Feed
     {
         public override string FeedUrl => throw new NotImplementedException();
     }

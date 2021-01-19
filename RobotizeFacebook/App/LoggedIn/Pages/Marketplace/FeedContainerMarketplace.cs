@@ -2,7 +2,7 @@
 
 namespace RobotizeFacebook.App.LoggedIn.DataPageletStreamingBrowseFeed
 {
-    public class FeedContainerMarketplace : FeedContainer
+    public class FeedMarketplace : Feed
     {
         public override string FeedUrl => throw new NotImplementedException();
     }

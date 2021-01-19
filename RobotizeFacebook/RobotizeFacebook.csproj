@@ -149,6 +149,10 @@
     <Compile Include="App\LoggedIn\Dialogs\PopupNotifications.cs" />
     <Compile Include="App\LoggedIn\Pages\Home\HomeHeader\HeaderMiddleMenu.cs" />
     <Compile Include="App\LoggedIn\Pages\Home\HomeHeader\HeaderRightMenu.cs" />
+    <Compile Include="App\LoggedIn\Pages\JobsComposer\FeedContainerJobsComposer.cs" />
+    <Compile Include="App\LoggedIn\Pages\JobsComposer\MenuItemsJobsComposer.cs" />
+    <Compile Include="App\LoggedIn\Pages\JobsComposer\PageJobsComposer.cs" />
+    <Compile Include="App\LoggedIn\Pages\Marketplace\FeedMarketplaceNotification.cs" />
     <Compile Include="App\LoggedIn\Pages\Messages\DetailsMessages.cs" />
     <Compile Include="App\LoggedIn\Pages\Messages\FeedContainerMessages.cs" />
     <Compile Include="App\LoggedIn\Pages\Messages\MenuItemsMessages.cs" />
@@ -813,7 +817,7 @@
     <Compile Include="App\LoggedIn\Components\Menus\DivMarketPlaceMenu.cs" />
     <Compile Include="App\LoggedIn\Components\SearchboxSearchFacebook.cs" />
     <Compile Include="App\LoggedIn\Components\SearchBoxSharingWithYourFriends.cs" />
-    <Compile Include="App\LoggedIn\Pages\Base\FeedContainer.cs" />
+    <Compile Include="App\LoggedIn\Pages\Base\Feed.cs" />
     <Compile Include="App\LoggedIn\Pages\ActivityLog\Feed\FeedContainerReviewTagsOnYourPosts.cs" />
     <Compile Include="App\LoggedIn\Pages\ActivityLog\Feed\FeedContainerReviewPostsYouAreTaggedIn.cs" />
     <Compile Include="App\LoggedIn\Pages\ActivityLog\Feed\FeedContainerActivityLog.cs" />
@@ -859,7 +863,7 @@
     <Compile Include="App\LoggedIn\Pages\Watch\FeedContainerWatch.cs" />
     <Compile Include="App\LoggedIn\Pages\Watch\PageWatch.cs" />
     <Compile Include="App\LoggedIn\Pages\Weather\FeedContainerWeather.cs" />
-    <Compile Include="App\LoggedIn\Help\PageHelp.cs" />
+    <Compile Include="App\NotLoggedIn\Help\PageHelp.cs" />
     <Compile Include="App\LoggedIn\Pages\Home\HomeHeader\Header.cs" />
     <Compile Include="App\LoggedIn\Dialogs\Account\PopupHelpAndSupport.cs" />
     <Compile Include="App\LoggedIn\Dialogs\Account\PopupSettingAndPrivacy.cs" />
@@ -933,7 +937,7 @@
     <Compile Include="App\LoggedIn\Dialogs\DialogStoryPrivacy.cs" />
     <Compile Include="App\LoggedIn\Pages\Stories\DialogCreateAStory\DialogCreateAStory.cs" />
     <Compile Include="App\LoggedIn\SupportInbox\PageSupportInbox.cs" />
-    <Compile Include="App\LoggedIn\UserHomePage\PageUserHome.cs" />
+    <Compile Include="App\LoggedIn\Pages\Home\PageUserHome.cs" />
     <Compile Include="App\NotLoggedIn\Help\PageHelpChooseALegacyContact.cs" />
     <Compile Include="App\NotLoggedIn\Home\PageHome.cs" />
     <Compile Include="App\LoggedIn\Pages\Home\PageHome.cs" />
@@ -1039,6 +1043,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ResItemCondition.resx</DependentUpon>
     </Compile>
+    <Compile Include="Resources\ResLeftNav.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResLeftNav.resx</DependentUpon>
+    </Compile>
     <Compile Include="Resources\ResLoginPage.Designer.cs">
       <DependentUpon>ResLoginPage.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -1140,10 +1149,8 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App\LoggedIn\Components\Notifications\" />
     <Folder Include="App\LoggedIn\Pages\Marketplace\GridMarketPlace\GridHelper\RadioButton\" />
     <Folder Include="App\LoggedIn\Pages\Marketplace\GridMarketPlace\GridHelper\Textbox\" />
-    <Folder Include="App\Pagesa\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\ResAccount.resx">
@@ -1218,6 +1225,10 @@
     <EmbeddedResource Include="Resources\ResItemCondition.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ResItemCondition.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ResLeftNav.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResLeftNav.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\ResLoginPage.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
