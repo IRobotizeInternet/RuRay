@@ -147,12 +147,37 @@
     <Compile Include="App\LoggedIn\Components\CreatePost\PopupNotificationSettings.cs" />
     <Compile Include="App\LoggedIn\Dialogs\PopupMessanger.cs" />
     <Compile Include="App\LoggedIn\Dialogs\PopupNotifications.cs" />
+    <Compile Include="App\LoggedIn\Pages\Events\CreateEvent\DialogCreateEventInPerson.cs" />
+    <Compile Include="App\LoggedIn\Pages\Events\CreateEvent\DialogCreateEventOnline.cs" />
+    <Compile Include="App\LoggedIn\Pages\Events\CreateEvent\FeedCreateEventDetails.cs" />
+    <Compile Include="App\LoggedIn\Pages\Events\CreateEvent\FeedCreateEvent.cs" />
+    <Compile Include="App\LoggedIn\Pages\Events\CreateEvent\MenuItemsCreateEventOnline.cs" />
+    <Compile Include="App\LoggedIn\Pages\Events\CreateEvent\MenuItemsCreateEventInPerson.cs" />
+    <Compile Include="App\LoggedIn\Pages\Events\CreateEvent\MenuItemsCreateEvent.cs" />
+    <Compile Include="App\LoggedIn\Pages\Events\CreateEvent\PageCreateEvent.cs" />
+    <Compile Include="App\LoggedIn\Pages\Events\FeedDiscoverEvents.cs" />
+    <Compile Include="App\LoggedIn\Pages\Events\FeedBirthdays.cs" />
+    <Compile Include="App\LoggedIn\Pages\Events\FeedInvites.cs" />
+    <Compile Include="App\LoggedIn\Pages\Events\FeedPastEvents.cs" />
+    <Compile Include="App\LoggedIn\Pages\Events\FeedHosting.cs" />
+    <Compile Include="App\LoggedIn\Pages\Events\FeedInterested.cs" />
+    <Compile Include="App\LoggedIn\Pages\Events\FeedGoing.cs" />
+    <Compile Include="App\LoggedIn\Pages\Events\FeedYourEvents.cs" />
+    <Compile Include="App\LoggedIn\Pages\Events\MenuItemsYourEvent.cs" />
     <Compile Include="App\LoggedIn\Pages\Home\HomeHeader\HeaderMiddleMenu.cs" />
     <Compile Include="App\LoggedIn\Pages\Home\HomeHeader\HeaderRightMenu.cs" />
     <Compile Include="App\LoggedIn\Pages\JobsComposer\FeedContainerJobsComposer.cs" />
     <Compile Include="App\LoggedIn\Pages\JobsComposer\MenuItemsJobsComposer.cs" />
     <Compile Include="App\LoggedIn\Pages\JobsComposer\PageJobsComposer.cs" />
+    <Compile Include="App\LoggedIn\Pages\Marketplace\FeedMarketplaceCart.cs" />
     <Compile Include="App\LoggedIn\Pages\Marketplace\FeedMarketplaceNotification.cs" />
+    <Compile Include="App\LoggedIn\Pages\Marketplace\YourAccount\DialogCommerceProfile.cs" />
+    <Compile Include="App\LoggedIn\Pages\Marketplace\YourAccount\FeedYourAccountFollowing.cs" />
+    <Compile Include="App\LoggedIn\Pages\Marketplace\YourAccount\FeedYourAccountRecentActivity.cs" />
+    <Compile Include="App\LoggedIn\Pages\Marketplace\YourAccount\FeedYourAccountSaved.cs" />
+    <Compile Include="App\LoggedIn\Pages\Marketplace\YourAccount\FeedYourAccount.cs" />
+    <Compile Include="App\LoggedIn\Pages\Marketplace\YourAccount\MenuItemsYourAccount.cs" />
+    <Compile Include="App\LoggedIn\Pages\Marketplace\YourAccount\PageYourAccount.cs" />
     <Compile Include="App\LoggedIn\Pages\Messages\DetailsMessages.cs" />
     <Compile Include="App\LoggedIn\Pages\Messages\FeedContainerMessages.cs" />
     <Compile Include="App\LoggedIn\Pages\Messages\MenuItemsMessages.cs" />
@@ -834,7 +859,7 @@
     <Compile Include="App\LoggedIn\Enum\FilterCategory.cs" />
     <Compile Include="App\LoggedIn\Enum\Year.cs" />
     <Compile Include="App\LoggedIn\Pages\Chat\FeedContainerChats.cs" />
-    <Compile Include="App\LoggedIn\Pages\Events\FeedContainerEvents.cs" />
+    <Compile Include="App\LoggedIn\Pages\Events\FeedHome.cs" />
     <Compile Include="App\LoggedIn\Pages\FacebookPay\FeedContainerFacebookPay.cs" />
     <Compile Include="App\LoggedIn\Pages\Friends\FeedContainerFriends.cs" />
     <Compile Include="App\LoggedIn\Pages\Fundraisers\FeedContainerFundraisers.cs" />
@@ -1227,7 +1252,7 @@
       <LastGenOutput>ResItemCondition.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\ResLeftNav.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
+      <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ResLeftNav.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\ResLoginPage.resx">

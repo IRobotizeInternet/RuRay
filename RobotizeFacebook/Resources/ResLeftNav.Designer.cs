@@ -22,7 +22,7 @@ namespace RobotizeFacebook.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class ResLeftNav {
+    public class ResLeftNav {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,7 +36,7 @@ namespace RobotizeFacebook.Resources {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("RobotizeFacebook.Resources.ResLeftNav", typeof(ResLeftNav).Assembly);
@@ -51,7 +51,7 @@ namespace RobotizeFacebook.Resources {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -61,9 +61,18 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Birthdays.
+        /// </summary>
+        public static string Birthdays {
+            get {
+                return ResourceManager.GetString("Birthdays", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Browse All.
         /// </summary>
-        internal static string BrowseAll {
+        public static string BrowseAll {
             get {
                 return ResourceManager.GetString("BrowseAll", resourceCulture);
             }
@@ -72,36 +81,189 @@ namespace RobotizeFacebook.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Cart.
         /// </summary>
-        internal static string Cart {
+        public static string Cart {
             get {
                 return ResourceManager.GetString("Cart", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Commerce Profile.
+        /// </summary>
+        public static string CommerceProfile {
+            get {
+                return ResourceManager.GetString("CommerceProfile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create Event.
+        /// </summary>
+        public static string CreateEvent {
+            get {
+                return ResourceManager.GetString("CreateEvent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create New Event.
+        /// </summary>
+        public static string CreateNewEvent {
+            get {
+                return ResourceManager.GetString("CreateNewEvent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create New Listing.
         /// </summary>
-        internal static string CreateNewListing {
+        public static string CreateNewListing {
             get {
                 return ResourceManager.GetString("CreateNewListing", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Discover Events.
+        /// </summary>
+        public static string DiscoverEvents {
+            get {
+                return ResourceManager.GetString("DiscoverEvents", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Following.
+        /// </summary>
+        public static string Following {
+            get {
+                return ResourceManager.GetString("Following", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Going.
+        /// </summary>
+        public static string Going {
+            get {
+                return ResourceManager.GetString("Going", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Home.
+        /// </summary>
+        public static string Home {
+            get {
+                return ResourceManager.GetString("Home", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hosting.
+        /// </summary>
+        public static string Hosting {
+            get {
+                return ResourceManager.GetString("Hosting", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to In Person.
+        /// </summary>
+        public static string InPerson {
+            get {
+                return ResourceManager.GetString("InPerson", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Interested.
+        /// </summary>
+        public static string Interested {
+            get {
+                return ResourceManager.GetString("Interested", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invites.
+        /// </summary>
+        public static string Invites {
+            get {
+                return ResourceManager.GetString("Invites", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Notifications.
         /// </summary>
-        internal static string Notifications {
+        public static string Notifications {
             get {
                 return ResourceManager.GetString("Notifications", resourceCulture);
             }
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Online.
+        /// </summary>
+        public static string Online {
+            get {
+                return ResourceManager.GetString("Online", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Past Events.
+        /// </summary>
+        public static string PastEvents {
+            get {
+                return ResourceManager.GetString("PastEvents", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Recent Activity.
+        /// </summary>
+        public static string RecentActivity {
+            get {
+                return ResourceManager.GetString("RecentActivity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Saved.
+        /// </summary>
+        public static string Saved {
+            get {
+                return ResourceManager.GetString("Saved", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Your Account.
         /// </summary>
-        internal static string YourAccount {
+        public static string YourAccount {
             get {
                 return ResourceManager.GetString("YourAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your Events.
+        /// </summary>
+        public static string YourEvents {
+            get {
+                return ResourceManager.GetString("YourEvents", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your Listings.
+        /// </summary>
+        public static string YourListings {
+            get {
+                return ResourceManager.GetString("YourListings", resourceCulture);
             }
         }
     }

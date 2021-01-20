@@ -117,19 +117,73 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Birthdays" xml:space="preserve">
+    <value>Birthdays</value>
+  </data>
   <data name="BrowseAll" xml:space="preserve">
     <value>Browse All</value>
   </data>
   <data name="Cart" xml:space="preserve">
     <value>Cart</value>
   </data>
+  <data name="CommerceProfile" xml:space="preserve">
+    <value>Commerce Profile</value>
+  </data>
+  <data name="CreateEvent" xml:space="preserve">
+    <value>Create Event</value>
+  </data>
+  <data name="CreateNewEvent" xml:space="preserve">
+    <value>Create New Event</value>
+  </data>
   <data name="CreateNewListing" xml:space="preserve">
     <value>Create New Listing</value>
+  </data>
+  <data name="DiscoverEvents" xml:space="preserve">
+    <value>Discover Events</value>
+  </data>
+  <data name="Following" xml:space="preserve">
+    <value>Following</value>
+  </data>
+  <data name="Going" xml:space="preserve">
+    <value>Going</value>
+  </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="Hosting" xml:space="preserve">
+    <value>Hosting</value>
+  </data>
+  <data name="InPerson" xml:space="preserve">
+    <value>In Person</value>
+  </data>
+  <data name="Interested" xml:space="preserve">
+    <value>Interested</value>
+  </data>
+  <data name="Invites" xml:space="preserve">
+    <value>Invites</value>
   </data>
   <data name="Notifications" xml:space="preserve">
     <value>Notifications</value>
   </data>
+  <data name="Online" xml:space="preserve">
+    <value>Online</value>
+  </data>
+  <data name="PastEvents" xml:space="preserve">
+    <value>Past Events</value>
+  </data>
+  <data name="RecentActivity" xml:space="preserve">
+    <value>Recent Activity</value>
+  </data>
+  <data name="Saved" xml:space="preserve">
+    <value>Saved</value>
+  </data>
   <data name="YourAccount" xml:space="preserve">
     <value>Your Account</value>
+  </data>
+  <data name="YourEvents" xml:space="preserve">
+    <value>Your Events</value>
+  </data>
+  <data name="YourListings" xml:space="preserve">
+    <value>Your Listings</value>
   </data>
 </root>

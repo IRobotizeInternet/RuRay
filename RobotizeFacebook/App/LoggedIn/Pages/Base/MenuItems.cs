@@ -2,6 +2,6 @@
 {
     public abstract class MenuItems : BaseDriver
     {
-        internal string BaseXPath => "//div[@data-pagelet='LeftNav']";
+        internal string BaseXPath => "//div[@role='navigation']";
     }
 }

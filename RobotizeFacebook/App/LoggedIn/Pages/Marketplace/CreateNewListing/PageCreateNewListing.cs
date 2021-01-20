@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 
-namespace RobotizeFacebook.App.LoggedIn.MarketPlace.CreateNewListing
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class PageCreateNewListing : PageBase
     {
