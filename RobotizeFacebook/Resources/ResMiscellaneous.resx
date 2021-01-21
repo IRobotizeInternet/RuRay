@@ -1,0 +1,276 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="AddAnotherEmailOrMobileNumber" xml:space="preserve">
+    <value>+ Add another email or mobile number</value>
+  </data>
+  <data name="AddEmailAddress" xml:space="preserve">
+    <value>Add Email Address</value>
+  </data>
+  <data name="AddOrChangeOtherNames" xml:space="preserve">
+    <value>Add or change other names</value>
+  </data>
+  <data name="AddYourPhoneNumber" xml:space="preserve">
+    <value>Add your phone number?</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ChangeAdAccountContact" xml:space="preserve">
+    <value>Change Ad Account Contact</value>
+  </data>
+  <data name="ChangeEmail" xml:space="preserve">
+    <value>Change Email</value>
+  </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Change password</value>
+  </data>
+  <data name="ChooseAFriend" xml:space="preserve">
+    <value>Choose a friend</value>
+  </data>
+  <data name="Close" xml:space="preserve">
+    <value>Close</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Confirm</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="CreateRoom" xml:space="preserve">
+    <value>Create Room</value>
+  </data>
+  <data name="CreateYourRoom" xml:space="preserve">
+    <value>Create Your Room</value>
+  </data>
+  <data name="DeleteYourAccountInTheFuture" xml:space="preserve">
+    <value>Delete Your Account in the Future?</value>
+  </data>
+  <data name="EnterNewEmail" xml:space="preserve">
+    <value>Enter new email</value>
+  </data>
+  <data name="ForgotYourPassword" xml:space="preserve">
+    <value>Forgot your password?</value>
+  </data>
+  <data name="LearnHowRoomsWork" xml:space="preserve">
+    <value>Learn How Rooms Work</value>
+  </data>
+  <data name="LogOutOfAllSessions" xml:space="preserve">
+    <value>Log Out Of All Sessions</value>
+  </data>
+  <data name="RemoveAccount" xml:space="preserve">
+    <value>Remove account</value>
+  </data>
+  <data name="RequestThatYourAccountBeDeletedAfterYouPassAway" xml:space="preserve">
+    <value>Request that your account be deleted after you pass away.</value>
+  </data>
+  <data name="SaveChanges" xml:space="preserve">
+    <value>Save Changes</value>
+  </data>
+  <data name="SaveYourLoginInfo" xml:space="preserve">
+    <value>Save your login info</value>
+  </data>
+  <data name="SeeMore" xml:space="preserve">
+    <value>See More</value>
+  </data>
+  <data name="NewsFeedPreferences" xml:space="preserve">
+    <value>News Feed Preferences</value>
+  </data>
+  <data name="GiveFeedbackToFacebook" xml:space="preserve">
+    <value>Give Feedback to Facebook</value>
+  </data>
+  <data name="HelpUsImproveTheNewFacebook" xml:space="preserve">
+    <value>Help us improve the new Facebook</value>
+  </data>
+  <data name="ChooseAnArea" xml:space="preserve">
+    <value>Choose an Area</value>
+  </data>
+  <data name="PleaseIncludeAsMuchInfoAsPossible" xml:space="preserve">
+    <value>Please include as much info as possible...</value>
+  </data>
+  <data name="AddAScreenshotOrVideoRecommended" xml:space="preserve">
+    <value>Add a Screenshot or Video (recommended)</value>
+  </data>
+  <data name="Submit" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="SomethingWentWrong" xml:space="preserve">
+    <value>Something went wrong</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="StoryPrivacy" xml:space="preserve">
+    <value>Story Privacy</value>
+  </data>
+  <data name="LenovoYoga" xml:space="preserve">
+    <value>Lenovo Yoga</value>
+  </data>
+  <data name="Wicker" xml:space="preserve">
+    <value>Wicker</value>
+  </data>
+  <data name="DivRememberPassword" xml:space="preserve">
+    <value>Next time you log in on this browser, just click your profile Next time you log in on this browser, just click your profile picture instead of typing a password.</value>
+  </data>
+  <data name="NotNow" xml:space="preserve">
+    <value>Not Now</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="SearchFacebook" xml:space="preserve">
+    <value>Search Facebook</value>
+  </data>
+  <data name="Filter" xml:space="preserve">
+    <value>Filter</value>
+  </data>
+  <data name="ClearAll" xml:space="preserve">
+    <value>Clear All</value>
+  </data>
+  <data name="ListOfActivityLogItems" xml:space="preserve">
+    <value>List of Activity Log Items</value>
+  </data>
+  <data name="Archive" xml:space="preserve">
+    <value>Archive</value>
+  </data>
+  <data name="ReviewPhotosYouMightBeIn" xml:space="preserve">
+    <value>Review Photos You Might Be In</value>
+  </data>
+  <data name="ReviewPostsYouAreTaggedIn" xml:space="preserve">
+    <value>Review Posts You</value>
+  </data>
+  <data name="ReviewTagsOnYourPosts" xml:space="preserve">
+    <value>Review Tags on Your Posts</value>
+  </data>
+  <data name="Trash" xml:space="preserve">
+    <value>Trash</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="NotificationSettings" xml:space="preserve">
+    <value>Notification Settings</value>
+  </data>
+  <data name="ShowNotificationDots" xml:space="preserve">
+    <value>Show notification dots</value>
+  </data>
+</root>

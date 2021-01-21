@@ -1,11 +1,12 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
-using RobotizeLibrary.Extensions;
+
+using Polly;
+using RobotizeToolbox.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 
 namespace RobotizeToolbox.CommonControls
 {
@@ -20,6 +21,11 @@ namespace RobotizeToolbox.CommonControls
             Driver = driver;
         }
 
+        public BaseDOMProperty(RemoteWebDriver driver)
+        {
+            Driver = driver;
+        }
+
         /// <summary>
         /// Check whether or not the element exists
         /// </summary>
@@ -30,34 +36,39 @@ namespace RobotizeToolbox.CommonControls
         /// </summary>
         public virtual void Click(int numberOfTries = 5)
         {
+            // Adding delay to avoid rapid action avoid account being disabled. 
+            Thread.Sleep(2000);
+            
             // It will try to five seconds to click on an element.
             var wait = new WebDriverWait(Driver, TimeSpan.FromSeconds(10));
 
-            var isElementClicked = false;
-            while (!isElementClicked)
+            try
             {
-                if (numberOfTries == 0) throw new Exception($"Unable to click element {ByForElement}");
+                // find the element
+                var element = Driver.FindElementWithTimeSpan(ByForElement, timeSpanInSeconds: 10);
 
-                try
+                // Using Polly library: https://github.com/App-vNext/Polly
+                var policy = Policy
+                  .Handle<InvalidOperationException>()
+                  .WaitAndRetry(30, t => TimeSpan.FromSeconds(1));
+
+                policy.Execute(() =>
                 {
-                    // find the element
-                    var element = Driver.FindElementWithTimeSpan(ByForElement, timeSpanInSeconds: 20);
                     element.Click();
-                    isElementClicked = !isElementClicked;
-                }
-                catch (WebDriverException ex)
-                {
-                    // If any of the following execptions occured try again.
-                    var knowErrorMessages = new List<string> 
+                });
+            }
+            catch (WebDriverException ex)
+            {
+                // If any of the following execptions occured try again.
+                var knowErrorMessages = new List<string>
                     {
                         "not clickable at point",
                         "element is not attached",
                         "Timed out"
                     };
 
-                    if (knowErrorMessages.Any(x => x.Contains(ex.Message))) numberOfTries--;
-                    else throw new Exception($"Unexpected WebDriverException was encountered: {ex.Message} {ex.StackTrace}");
-                }
+                if (knowErrorMessages.Any(x => x.Contains(ex.Message))) numberOfTries--;
+                else throw new Exception($"Unexpected WebDriverException was encountered: {ex.Message} {ex.StackTrace}");
             }
         }
 
@@ -81,7 +92,7 @@ namespace RobotizeToolbox.CommonControls
         {
             var startTime = DateTime.Now;
             var timeSpanInSeconds = 30;
-            var finishedSettingValue = false;
+            var finishedSettingValue = true;
             while (finishedSettingValue)
             {
                 try
@@ -148,11 +159,23 @@ namespace RobotizeToolbox.CommonControls
             return elementText;
         }
 
-        public void ScrollToElement(IWebElement webelement)
+        public void ScrollToElement(IWebElement webElement = null)
         {
-            var actions = new Actions(Driver);
-            actions.MoveToElement(webelement);
-            actions.Perform();
+            var jScript = "arguments[0].scrollIntoView(false);" +
+            "var evObj = document.createEvent('MouseEvents');" +
+            "evObj.initMouseEvent(\"mouseover\",true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);" +
+            "arguments[0].dispatchEvent(evObj);";
+
+            var element = Driver.FindElementWithTimeSpan(ByForElement);
+            var targetElement = LocateScrollableElement(Driver, element);
+            Driver.ExecuteScript(jScript, targetElement);
+        }
+
+        private static IWebElement LocateScrollableElement(RemoteWebDriver driver, IWebElement firstElement)
+        {
+            var ancestors = firstElement.FindElements(By.XPath("./ancestor-or-self::*")).Reverse();
+            var scrollableElement = ancestors.FirstOrDefault(element => !element.Location.IsEmpty);
+            return scrollableElement;
         }
     }
 }

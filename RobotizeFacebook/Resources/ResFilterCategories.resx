@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActiveSessions" xml:space="preserve">
+    <value>Active Sessions</value>
+  </data>
+  <data name="ActivityLog" xml:space="preserve">
+    <value>Activity Log</value>
+  </data>
+  <data name="ActivityYoureTaggedIn" xml:space="preserve">
+    <value>Activity You</value>
+  </data>
+  <data name="AddedFriends" xml:space="preserve">
+    <value>Added Friends</value>
+  </data>
+  <data name="AnonymousPostsYouveWritten" xml:space="preserve">
+    <value>Anonymous Posts You</value>
+  </data>
+  <data name="Apps" xml:space="preserve">
+    <value>Apps</value>
+  </data>
+  <data name="ArticlesYouveRead" xml:space="preserve">
+    <value>ve Read</value>
+  </data>
+  <data name="Books" xml:space="preserve">
+    <value>Books</value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="CreatedTournaments" xml:space="preserve">
+    <value>Created Tournaments</value>
+  </data>
+  <data name="CrisisResponse" xml:space="preserve">
+    <value>Crisis Response</value>
+  </data>
+  <data name="EventInvitations" xml:space="preserve">
+    <value>Event Invitations</value>
+  </data>
+  <data name="EventResponses" xml:space="preserve">
+    <value>Event Responses</value>
+  </data>
+  <data name="Followers" xml:space="preserve">
+    <value>Followers</value>
+  </data>
+  <data name="Following" xml:space="preserve">
+    <value>Following</value>
+  </data>
+  <data name="FundraiserMatchesYouveCreated" xml:space="preserve">
+    <value>Fundraiser Matches You</value>
+  </data>
+  <data name="FundraisersYouHelpManage" xml:space="preserve">
+    <value>Fundraisers You Help Manage</value>
+  </data>
+  <data name="Games" xml:space="preserve">
+    <value>Games</value>
+  </data>
+  <data name="GroupAdminActions" xml:space="preserve">
+    <value>Group Admin Actions</value>
+  </data>
+  <data name="GroupPostsAboutGroupsYouHaveRecommended" xml:space="preserve">
+    <value>Group Posts About Groups You Have Recommended</value>
+  </data>
+  <data name="GroupPostsAndComments" xml:space="preserve">
+    <value>Group Posts and Comments</value>
+  </data>
+  <data name="GroupReactions" xml:space="preserve">
+    <value>Group Reactions</value>
+  </data>
+  <data name="Groups" xml:space="preserve">
+    <value>Groups</value>
+  </data>
+  <data name="GroupsYouveSearchedFor" xml:space="preserve">
+    <value>Groups You</value>
+  </data>
+  <data name="HiddenFromTimeline" xml:space="preserve">
+    <value>Hidden From Timeline</value>
+  </data>
+  <data name="HobbiesYouveAddedToYourProfile" xml:space="preserve">
+    <value>Hobbies You</value>
+  </data>
+  <data name="LifeEvents" xml:space="preserve">
+    <value>Life Events</value>
+  </data>
+  <data name="LikesAndReactions" xml:space="preserve">
+    <value>Likes and Reactions</value>
+  </data>
+  <data name="LoginsAndLogouts" xml:space="preserve">
+    <value>Logins and Logouts</value>
+  </data>
+  <data name="MarketplaceListings" xml:space="preserve">
+    <value>Marketplace Listings</value>
+  </data>
+  <data name="MemberProfiles" xml:space="preserve">
+    <value>Member Profiles</value>
+  </data>
+  <data name="MembershipActivity" xml:space="preserve">
+    <value>Membership Activity</value>
+  </data>
+  <data name="MoviesAndTV" xml:space="preserve">
+    <value>Movies and TV</value>
+  </data>
+  <data name="Notes" xml:space="preserve">
+    <value>Notes</value>
+  </data>
+  <data name="OtherRecords" xml:space="preserve">
+    <value>Other Records</value>
+  </data>
+  <data name="OthersPostsToYourTimeline" xml:space="preserve">
+    <value>Posts to Your Timeline</value>
+  </data>
+  <data name="PagesPageLikesAndInterests" xml:space="preserve">
+    <value>Pages, Page Likes and Interests</value>
+  </data>
+  <data name="PhotosAndVideos" xml:space="preserve">
+    <value>Photos and Videos</value>
+  </data>
+  <data name="PhotosYoureTaggedIn" xml:space="preserve">
+    <value>Photos You're Tagged In</value>
+  </data>
+  <data name="Pokes" xml:space="preserve">
+    <value>Pokes</value>
+  </data>
+  <data name="Polls" xml:space="preserve">
+    <value>Polls</value>
+  </data>
+  <data name="Posts" xml:space="preserve">
+    <value>Posts</value>
+  </data>
+  <data name="PostsAndComments" xml:space="preserve">
+    <value>Posts and Comments</value>
+  </data>
+  <data name="ProductsYouWanted" xml:space="preserve">
+    <value>Products You Wanted</value>
+  </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Profile</value>
+  </data>
+  <data name="ReceivedFriendRequests" xml:space="preserve">
+    <value>Received Friend Requests</value>
+  </data>
+  <data name="RecognizedDevices" xml:space="preserve">
+    <value>Recognized Devices</value>
+  </data>
+  <data name="Relationships" xml:space="preserve">
+    <value>Relationships</value>
+  </data>
+  <data name="RemindersToDonate" xml:space="preserve">
+    <value>Reminders to Donate</value>
+  </data>
+  <data name="RemovedFriends" xml:space="preserve">
+    <value>Removed Friends</value>
+  </data>
+  <data name="Saved" xml:space="preserve">
+    <value>Saved</value>
+  </data>
+  <data name="SearchHistory" xml:space="preserve">
+    <value>Search History</value>
+  </data>
+  <data name="SentFriendRequests" xml:space="preserve">
+    <value>Sent Friend Requests</value>
+  </data>
+  <data name="SongsYouveListenedTo" xml:space="preserve">
+    <value>ve Listened To</value>
+  </data>
+  <data name="StoriesActivity" xml:space="preserve">
+    <value>Stories Activity</value>
+  </data>
+  <data name="VideoPollsYouveTaken" xml:space="preserve">
+    <value>Video Polls You</value>
+  </data>
+  <data name="VideosYouveSearchedFor" xml:space="preserve">
+    <value>ve Searched For</value>
+  </data>
+  <data name="VideosYouveWatched" xml:space="preserve">
+    <value>ve Watched</value>
+  </data>
+  <data name="VoiceInteractions" xml:space="preserve">
+    <value>Voice Interactions</value>
+  </data>
+  <data name="VoiceSearch" xml:space="preserve">
+    <value>Voice Search</value>
+  </data>
+  <data name="YourEvents" xml:space="preserve">
+    <value>Your Events</value>
+  </data>
+  <data name="YourPlaces" xml:space="preserve">
+    <value>Your Places</value>
+  </data>
+  <data name="YourStories" xml:space="preserve">
+    <value>Your Stories</value>
+  </data>
+</root>

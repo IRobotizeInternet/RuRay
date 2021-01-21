@@ -1,12 +1,11 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
+
 using System;
 using System.Diagnostics;
 using System.Threading;
 
-namespace RobotizeLibrary.Extensions
+namespace RobotizeToolbox.Extensions
 {
     public static class Acts
     {
@@ -52,7 +51,7 @@ namespace RobotizeLibrary.Extensions
         public static void WaitForObjectToLoadForTimeSpan(RemoteWebDriver driver, double maxWaitTimeInSeconds = 60)
         {
             var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(maxWaitTimeInSeconds));
-            _ = wait.Until(x =>
+              _ = wait.Until(x =>
               {
                   try
                   {

@@ -1,9 +1,9 @@
-﻿using RobotizeFacebookLibrary.CryptoServices;
+﻿using RobotizeFacebook.CryptoServices;
 using System;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace RobotizeFacebookLibrary.Security
+namespace RobotizeFacebook.Security
 {
     public class CryptoServiceForString : Crypto
     {
