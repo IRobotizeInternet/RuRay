@@ -188,12 +188,46 @@
     <Compile Include="App\LoggedIn\Pages\Pages\CreateNewPage\FeedCreateNewPage.cs" />
     <Compile Include="App\LoggedIn\Pages\Pages\CreateNewPage\MenuItemsCreateNewPage.cs" />
     <Compile Include="App\LoggedIn\Pages\Pages\CreateNewPage\PageCreateNewPage.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\FeedEditPageInfo.cs" />
     <Compile Include="App\LoggedIn\Pages\Pages\FeedLikedPages.cs" />
     <Compile Include="App\LoggedIn\Pages\Pages\FeedDiscover.cs" />
     <Compile Include="App\LoggedIn\Pages\Pages\FeedInvites.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\FeedPageQuality.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\DialogEventsTour.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\FeedAppointments.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\FeedNewsFeed.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\FeedBusinessAppStore.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\FeedAdCenter.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\FeedPageQuality.cs" />
     <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\FeedManagePage.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\Inbox\FeedMessenger.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\Inbox\FeedInstagram.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\Inbox\FeedFacebook.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\Inbox\FeedInstagramDirect.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\Inbox\FeedInbox.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\Inbox\MenuItemsInbox.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\Inbox\PageInbox.cs" />
     <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\MenuItemsManagePage.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\PageInsights\FeedFollowers.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\PageInsights\FeedMessages.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\PageInsights\FeedPromote.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\PageInsights\FeedOrders.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\PageInsights\FeedLikes.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\PageInsights\FeedReach.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\PageInsights\FeedPageViews.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\PageInsights\FeedPagePreviews.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\PageInsights\FeedActionsOnPage.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\PageInsights\FeedPosts.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\PageInsights\FeedEvents.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\PageInsights\FeedVideos.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\PageInsights\FeedStories.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\PageInsights\FeedPageInsights.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\PageInsights\MenuItemsPageInsights.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\PageInsights\PagePageInsights.cs" />
     <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\PageManagePage.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\PageSettings\FeedPageSettings.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\PageSettings\MenuItemsPageSettings.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\PageSettings\PagePageSettings.cs" />
     <Compile Include="CryptoServices\Crypto.cs" />
     <Compile Include="CryptoServices\CryptoServiceForString.cs" />
     <Compile Include="App\BaseDriver.cs" />
@@ -1027,6 +1061,11 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="Resources\ResCurrency.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResCurrency.resx</DependentUpon>
+    </Compile>
     <Compile Include="Resources\ResDate.Designer.cs">
       <DependentUpon>ResDate.resx</DependentUpon>
       <AutoGen>True</AutoGen>
@@ -1107,6 +1146,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ResNotificationSettings.resx</DependentUpon>
     </Compile>
+    <Compile Include="Resources\ResOtherSocialMedia.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResOtherSocialMedia.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\ResPageSettings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResPageSettings.resx</DependentUpon>
+    </Compile>
     <Compile Include="Resources\ResPlatform.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -1185,6 +1234,8 @@
   <ItemGroup>
     <Folder Include="App\LoggedIn\Pages\Marketplace\GridMarketPlace\GridHelper\RadioButton\" />
     <Folder Include="App\LoggedIn\Pages\Marketplace\GridMarketPlace\GridHelper\Textbox\" />
+    <Folder Include="App\LoggedIn\Pages\Pages\ManagePage\Notifications\" />
+    <Folder Include="App\LoggedIn\Pages\Pages\ManagePage\Promote\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\ResAccount.resx">
@@ -1219,6 +1270,10 @@
     <EmbeddedResource Include="Resources\ResCreatePost.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ResCreatePost.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ResCurrency.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResCurrency.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\ResDate.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -1284,6 +1339,14 @@
     <EmbeddedResource Include="Resources\ResNotificationSettings.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>ResNotificationSettings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ResOtherSocialMedia.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResOtherSocialMedia.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ResPageSettings.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>ResPageSettings.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\ResPlatform.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

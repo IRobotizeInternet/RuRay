@@ -117,6 +117,9 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ActionsOnPage" xml:space="preserve">
+    <value>Actions on Page</value>
+  </data>
   <data name="AdCenter" xml:space="preserve">
     <value>Ad Center</value>
   </data>
@@ -126,8 +129,20 @@
   <data name="AddProfilePicture" xml:space="preserve">
     <value>Add Profile Picture</value>
   </data>
+  <data name="Ads" xml:space="preserve">
+    <value>Ads</value>
+  </data>
+  <data name="AdvancedMessaging" xml:space="preserve">
+    <value>Advanced Messaging</value>
+  </data>
+  <data name="AllMessages" xml:space="preserve">
+    <value>All Messages</value>
+  </data>
   <data name="Birthdays" xml:space="preserve">
     <value>Birthdays</value>
+  </data>
+  <data name="BrandedContent" xml:space="preserve">
+    <value>Branded Content</value>
   </data>
   <data name="BrowseAll" xml:space="preserve">
     <value>Browse All</value>
@@ -171,8 +186,23 @@
   <data name="EditPageInfo" xml:space="preserve">
     <value>Edit Page Info</value>
   </data>
+  <data name="Events" xml:space="preserve">
+    <value>Events</value>
+  </data>
+  <data name="EventTicketing" xml:space="preserve">
+    <value>Event Ticketing</value>
+  </data>
+  <data name="Facebook" xml:space="preserve">
+    <value>Facebook</value>
+  </data>
+  <data name="Followers" xml:space="preserve">
+    <value>Followers</value>
+  </data>
   <data name="Following" xml:space="preserve">
     <value>Following</value>
+  </data>
+  <data name="General" xml:space="preserve">
+    <value>General</value>
   </data>
   <data name="Going" xml:space="preserve">
     <value>Going</value>
@@ -192,11 +222,20 @@
   <data name="Insights" xml:space="preserve">
     <value>Insights</value>
   </data>
+  <data name="Instagram" xml:space="preserve">
+    <value>Instagram</value>
+  </data>
+  <data name="InstagramDirect" xml:space="preserve">
+    <value>Instagram Direct</value>
+  </data>
   <data name="Interested" xml:space="preserve">
     <value>Interested</value>
   </data>
   <data name="Invites" xml:space="preserve">
     <value>Invites</value>
+  </data>
+  <data name="IssueElectoralOrPoliticalAds" xml:space="preserve">
+    <value>Issue, Electoral or Political Ads</value>
   </data>
   <data name="LatestVideos" xml:space="preserve">
     <value>Latest Videos</value>
@@ -204,11 +243,23 @@
   <data name="LikedPages" xml:space="preserve">
     <value>Liked Pages</value>
   </data>
+  <data name="Likes" xml:space="preserve">
+    <value>Likes</value>
+  </data>
   <data name="Live" xml:space="preserve">
     <value>Live</value>
   </data>
   <data name="Manage" xml:space="preserve">
     <value>Manage</value>
+  </data>
+  <data name="Messages" xml:space="preserve">
+    <value>Messages</value>
+  </data>
+  <data name="Messaging" xml:space="preserve">
+    <value>Messaging</value>
+  </data>
+  <data name="Messenger" xml:space="preserve">
+    <value>Messenger</value>
   </data>
   <data name="NewsFeed" xml:space="preserve">
     <value>News Feed</value>
@@ -219,20 +270,50 @@
   <data name="Online" xml:space="preserve">
     <value>Online</value>
   </data>
+  <data name="Orders" xml:space="preserve">
+    <value>Orders</value>
+  </data>
+  <data name="Overview" xml:space="preserve">
+    <value>Overview</value>
+  </data>
+  <data name="PageInfo" xml:space="preserve">
+    <value>Page Info</value>
+  </data>
   <data name="PageName" xml:space="preserve">
     <value>Page name (required)</value>
+  </data>
+  <data name="PagePreviews" xml:space="preserve">
+    <value>Page Previews</value>
   </data>
   <data name="PageQuality" xml:space="preserve">
     <value>Page Quality</value>
   </data>
+  <data name="PageRoles" xml:space="preserve">
+    <value>Page Roles</value>
+  </data>
+  <data name="PageViews" xml:space="preserve">
+    <value>Page Views</value>
+  </data>
   <data name="PastEvents" xml:space="preserve">
     <value>Past Events</value>
+  </data>
+  <data name="PeopleAndOthePages" xml:space="preserve">
+    <value>People and Other Pages</value>
+  </data>
+  <data name="Posts" xml:space="preserve">
+    <value>Posts</value>
+  </data>
+  <data name="PreferredPageAudience" xml:space="preserve">
+    <value>Preferred Page Audience</value>
   </data>
   <data name="Promote" xml:space="preserve">
     <value>Promote</value>
   </data>
   <data name="PublishingTools" xml:space="preserve">
     <value>Publishing Tools</value>
+  </data>
+  <data name="Reach" xml:space="preserve">
+    <value>Reach</value>
   </data>
   <data name="RecentActivity" xml:space="preserve">
     <value>Recent Activity</value>
@@ -254,6 +335,15 @@
   </data>
   <data name="Shows" xml:space="preserve">
     <value>Shows</value>
+  </data>
+  <data name="Stories" xml:space="preserve">
+    <value>Stories</value>
+  </data>
+  <data name="TemplatesAndTabs" xml:space="preserve">
+    <value>Templates and Tabs</value>
+  </data>
+  <data name="Videos" xml:space="preserve">
+    <value>Videos</value>
   </data>
   <data name="YourAccount" xml:space="preserve">
     <value>Your Account</value>

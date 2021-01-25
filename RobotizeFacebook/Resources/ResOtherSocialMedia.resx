@@ -117,166 +117,70 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Add" xml:space="preserve">
-    <value>Add</value>
+  <data name="Ask.fm" xml:space="preserve">
+    <value>Ask.fm</value>
   </data>
-  <data name="AddAnotherEmailOrMobileNumber" xml:space="preserve">
-    <value>+ Add another email or mobile number</value>
+  <data name="GitHub" xml:space="preserve">
+    <value>GitHub</value>
   </data>
-  <data name="AddEmailAddress" xml:space="preserve">
-    <value>Add Email Address</value>
+  <data name="Instagram" xml:space="preserve">
+    <value>Instagram</value>
   </data>
-  <data name="AddOrChangeOtherNames" xml:space="preserve">
-    <value>Add or change other names</value>
+  <data name="KakaoTalk" xml:space="preserve">
+    <value>KakaoTalk</value>
   </data>
-  <data name="AddYourPhoneNumber" xml:space="preserve">
-    <value>Add your phone number?</value>
+  <data name="Kik" xml:space="preserve">
+    <value>Kik</value>
   </data>
-  <data name="Cancel" xml:space="preserve">
-    <value>Cancel</value>
+  <data name="LINE" xml:space="preserve">
+    <value>LINE</value>
   </data>
-  <data name="ChangeAdAccountContact" xml:space="preserve">
-    <value>Change Ad Account Contact</value>
+  <data name="LinkedIn" xml:space="preserve">
+    <value>LinkedIn</value>
   </data>
-  <data name="ChangeEmail" xml:space="preserve">
-    <value>Change Email</value>
-  </data>
-  <data name="ChangePassword" xml:space="preserve">
-    <value>Change password</value>
-  </data>
-  <data name="ChooseAFriend" xml:space="preserve">
-    <value>Choose a friend</value>
-  </data>
-  <data name="Close" xml:space="preserve">
-    <value>Close</value>
-  </data>
-  <data name="Confirm" xml:space="preserve">
-    <value>Confirm</value>
-  </data>
-  <data name="Continue" xml:space="preserve">
-    <value>Continue</value>
-  </data>
-  <data name="CreateRoom" xml:space="preserve">
-    <value>Create Room</value>
-  </data>
-  <data name="CreateYourRoom" xml:space="preserve">
-    <value>Create Your Room</value>
-  </data>
-  <data name="DeleteYourAccountInTheFuture" xml:space="preserve">
-    <value>Delete Your Account in the Future?</value>
-  </data>
-  <data name="EnterNewEmail" xml:space="preserve">
-    <value>Enter new email</value>
-  </data>
-  <data name="ForgotYourPassword" xml:space="preserve">
-    <value>Forgot your password?</value>
-  </data>
-  <data name="LearnHowRoomsWork" xml:space="preserve">
-    <value>Learn How Rooms Work</value>
-  </data>
-  <data name="LogOutOfAllSessions" xml:space="preserve">
-    <value>Log Out Of All Sessions</value>
-  </data>
-  <data name="RemoveAccount" xml:space="preserve">
-    <value>Remove account</value>
-  </data>
-  <data name="RequestThatYourAccountBeDeletedAfterYouPassAway" xml:space="preserve">
-    <value>Request that your account be deleted after you pass away.</value>
-  </data>
-  <data name="SaveChanges" xml:space="preserve">
-    <value>Save Changes</value>
-  </data>
-  <data name="SaveYourLoginInfo" xml:space="preserve">
-    <value>Save your login info</value>
-  </data>
-  <data name="SeeMore" xml:space="preserve">
-    <value>See More</value>
-  </data>
-  <data name="NewsFeedPreferences" xml:space="preserve">
-    <value>News Feed Preferences</value>
-  </data>
-  <data name="GiveFeedbackToFacebook" xml:space="preserve">
-    <value>Give Feedback to Facebook</value>
-  </data>
-  <data name="HelpUsImproveTheNewFacebook" xml:space="preserve">
-    <value>Help us improve the new Facebook</value>
-  </data>
-  <data name="ChooseAnArea" xml:space="preserve">
-    <value>Choose an Area</value>
-  </data>
-  <data name="PleaseIncludeAsMuchInfoAsPossible" xml:space="preserve">
-    <value>Please include as much info as possible...</value>
-  </data>
-  <data name="AddAScreenshotOrVideoRecommended" xml:space="preserve">
-    <value>Add a Screenshot or Video (recommended)</value>
-  </data>
-  <data name="Submit" xml:space="preserve">
-    <value>Submit</value>
-  </data>
-  <data name="SomethingWentWrong" xml:space="preserve">
-    <value>Something went wrong</value>
-  </data>
-  <data name="Back" xml:space="preserve">
-    <value>Back</value>
-  </data>
-  <data name="StoryPrivacy" xml:space="preserve">
-    <value>Story Privacy</value>
-  </data>
-  <data name="LenovoYoga" xml:space="preserve">
-    <value>Lenovo Yoga</value>
-  </data>
-  <data name="Wicker" xml:space="preserve">
-    <value>Wicker</value>
-  </data>
-  <data name="DivRememberPassword" xml:space="preserve">
-    <value>Next time you log in on this browser, just click your profile Next time you log in on this browser, just click your profile picture instead of typing a password.</value>
-  </data>
-  <data name="NotNow" xml:space="preserve">
-    <value>Not Now</value>
+  <data name="Oculus" xml:space="preserve">
+    <value>Oculus</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>OK</value>
   </data>
-  <data name="SearchFacebook" xml:space="preserve">
-    <value>Search Facebook</value>
+  <data name="Pineterest" xml:space="preserve">
+    <value>Pineterest</value>
   </data>
-  <data name="Filter" xml:space="preserve">
-    <value>Filter</value>
+  <data name="QQ" xml:space="preserve">
+    <value>QQ</value>
   </data>
-  <data name="ClearAll" xml:space="preserve">
-    <value>Clear All</value>
+  <data name="Skype" xml:space="preserve">
+    <value>Skype</value>
   </data>
-  <data name="ListOfActivityLogItems" xml:space="preserve">
-    <value>List of Activity Log Items</value>
+  <data name="Snapchat" xml:space="preserve">
+    <value>Snapchat</value>
   </data>
-  <data name="Archive" xml:space="preserve">
-    <value>Archive</value>
+  <data name="SoundCloud" xml:space="preserve">
+    <value>SoundCloud</value>
   </data>
-  <data name="ReviewPhotosYouMightBeIn" xml:space="preserve">
-    <value>Review Photos You Might Be In</value>
+  <data name="Spotify" xml:space="preserve">
+    <value>Spotify</value>
   </data>
-  <data name="ReviewPostsYouAreTaggedIn" xml:space="preserve">
-    <value>Review Posts You</value>
+  <data name="Tumblr" xml:space="preserve">
+    <value>Tumblr</value>
   </data>
-  <data name="ReviewTagsOnYourPosts" xml:space="preserve">
-    <value>Review Tags on Your Posts</value>
+  <data name="Twitch" xml:space="preserve">
+    <value>Twitch</value>
   </data>
-  <data name="Trash" xml:space="preserve">
-    <value>Trash</value>
+  <data name="Twitter" xml:space="preserve">
+    <value>Twitter</value>
   </data>
-  <data name="Search" xml:space="preserve">
-    <value>Search</value>
+  <data name="VK" xml:space="preserve">
+    <value>VK</value>
   </data>
-  <data name="NotificationSettings" xml:space="preserve">
-    <value>Notification Settings</value>
+  <data name="WeChat" xml:space="preserve">
+    <value>WeChat</value>
   </data>
-  <data name="ShowNotificationDots" xml:space="preserve">
-    <value>Show notification dots</value>
+  <data name="WhatsApp" xml:space="preserve">
+    <value>WhatsApp</value>
   </data>
-  <data name="TakeTour" xml:space="preserve">
-    <value>Take Tour</value>
-  </data>
-  <data name="welcomeToEventsAdminTool" xml:space="preserve">
-    <value>welcomeToEventsAdminTool</value>
+  <data name="YouTube" xml:space="preserve">
+    <value>YouTube</value>
   </data>
 </root>

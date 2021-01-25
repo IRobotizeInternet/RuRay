@@ -511,11 +511,29 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Take Tour.
+        /// </summary>
+        public static string TakeTour {
+            get {
+                return ResourceManager.GetString("TakeTour", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Trash.
         /// </summary>
         public static string Trash {
             get {
                 return ResourceManager.GetString("Trash", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to welcomeToEventsAdminTool.
+        /// </summary>
+        public static string welcomeToEventsAdminTool {
+            get {
+                return ResourceManager.GetString("welcomeToEventsAdminTool", resourceCulture);
             }
         }
         

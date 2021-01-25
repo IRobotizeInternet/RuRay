@@ -1,0 +1,654 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="About" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="Add" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="AddANameForYourService" xml:space="preserve">
+    <value>Add a name for your service</value>
+  </data>
+  <data name="AddAnotherDomain" xml:space="preserve">
+    <value>Add another domain</value>
+  </data>
+  <data name="AddAService" xml:space="preserve">
+    <value>Add a Service</value>
+  </data>
+  <data name="AdditionalInformation" xml:space="preserve">
+    <value>Additional Information</value>
+  </data>
+  <data name="AdditionalLocationDetails" xml:space="preserve">
+    <value>Additional Location Details</value>
+  </data>
+  <data name="AddMessengerToYourWebsite" xml:space="preserve">
+    <value>Add Messenger to your website</value>
+  </data>
+  <data name="AddPhotos" xml:space="preserve">
+    <value>Add Photos</value>
+  </data>
+  <data name="Address" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="Admin" xml:space="preserve">
+    <value>Admin</value>
+  </data>
+  <data name="AdvanceBookings" xml:space="preserve">
+    <value>Advance Bookings</value>
+  </data>
+  <data name="Advertiser" xml:space="preserve">
+    <value>Advertiser</value>
+  </data>
+  <data name="AllActions" xml:space="preserve">
+    <value>All Actions</value>
+  </data>
+  <data name="AllowEmailNotifications" xml:space="preserve">
+    <value>Allow email notifications</value>
+  </data>
+  <data name="AllowNotifications" xml:space="preserve">
+    <value>Allow notifications</value>
+  </data>
+  <data name="AllowSMSNotifications" xml:space="preserve">
+    <value>Allow SMS notifications</value>
+  </data>
+  <data name="AlwaysOpen" xml:space="preserve">
+    <value>Always Open</value>
+  </data>
+  <data name="Analyst" xml:space="preserve">
+    <value>Analyst</value>
+  </data>
+  <data name="AndUp" xml:space="preserve">
+    <value>And up</value>
+  </data>
+  <data name="AppointmentApproval" xml:space="preserve">
+    <value>Appointment Approval</value>
+  </data>
+  <data name="AppointmentDuration" xml:space="preserve">
+    <value>Appointment duration</value>
+  </data>
+  <data name="AppointmentMessaging" xml:space="preserve">
+    <value>Appointment Messaging</value>
+  </data>
+  <data name="AppointmentStartTimeDisplay" xml:space="preserve">
+    <value>Appointment Start Time Display</value>
+  </data>
+  <data name="AskForPrice" xml:space="preserve">
+    <value>Ask for Price</value>
+  </data>
+  <data name="AvailableAppointments" xml:space="preserve">
+    <value>Available Appointments</value>
+  </data>
+  <data name="BanAPerson" xml:space="preserve">
+    <value>Ban a Person</value>
+  </data>
+  <data name="BannedPeopleAndPages" xml:space="preserve">
+    <value>Banned People and Pages</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="Categories" xml:space="preserve">
+    <value>Categories</value>
+  </data>
+  <data name="Cheap" xml:space="preserve">
+    <value>Cheap</value>
+  </data>
+  <data name="City" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="Community" xml:space="preserve">
+    <value>Community</value>
+  </data>
+  <data name="Configure" xml:space="preserve">
+    <value>Configure</value>
+  </data>
+  <data name="Confirm" xml:space="preserve">
+    <value>Confrim</value>
+  </data>
+  <data name="ConfirmYourIdentity" xml:space="preserve">
+    <value>Confirm Your Identity</value>
+  </data>
+  <data name="ConnectAccount" xml:space="preserve">
+    <value>Connect Account</value>
+  </data>
+  <data name="CopyLink" xml:space="preserve">
+    <value>Copy Link</value>
+  </data>
+  <data name="Country" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="CountryCode" xml:space="preserve">
+    <value>Country Code</value>
+  </data>
+  <data name="CreateDisclaimer" xml:space="preserve">
+    <value>Create Disclaimer</value>
+  </data>
+  <data name="CurrentTemplate" xml:space="preserve">
+    <value>Current Template</value>
+  </data>
+  <data name="Custom" xml:space="preserve">
+    <value>Custom</value>
+  </data>
+  <data name="CustomersVisitMyBusinessAtSyStreetAddress" xml:space="preserve">
+    <value>Customers visit my business at my street address (unchecking this box will hide the address from your Page)</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Disconnect" xml:space="preserve">
+    <value>Disconnect</value>
+  </data>
+  <data name="DoubleBooking" xml:space="preserve">
+    <value>Double Booking</value>
+  </data>
+  <data name="Duration" xml:space="preserve">
+    <value>Duration</value>
+  </data>
+  <data name="DurationVaries" xml:space="preserve">
+    <value>Duration Varies</value>
+  </data>
+  <data name="Editor" xml:space="preserve">
+    <value>Editor</value>
+  </data>
+  <data name="EditsToCommentsYouHaveWritten" xml:space="preserve">
+    <value>Edits to Comments you have written</value>
+  </data>
+  <data name="EightHours" xml:space="preserve">
+    <value>8 hours</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="EnterAccountUsername" xml:space="preserve">
+    <value>Enter account username</value>
+  </data>
+  <data name="EnterACityToSetTheTimeZone" xml:space="preserve">
+    <value>Enter a city to set the time zone</value>
+  </data>
+  <data name="EnterNameOrFacebookURL" xml:space="preserve">
+    <value>Enter name or Facebook URL</value>
+  </data>
+  <data name="EventbriteOrganizers" xml:space="preserve">
+    <value>Eventbrite Organizers</value>
+  </data>
+  <data name="Events" xml:space="preserve">
+    <value>Events</value>
+  </data>
+  <data name="Everyone" xml:space="preserve">
+    <value>Everyone</value>
+  </data>
+  <data name="ExistingPageRoles" xml:space="preserve">
+    <value>Existing Page Roles</value>
+  </data>
+  <data name="Expensive" xml:space="preserve">
+    <value>Expensive</value>
+  </data>
+  <data name="FifteenMinutes" xml:space="preserve">
+    <value>15 minutes</value>
+  </data>
+  <data name="FiveHours" xml:space="preserve">
+    <value>5 hours</value>
+  </data>
+  <data name="FixedPrice" xml:space="preserve">
+    <value>Fixed Price</value>
+  </data>
+  <data name="FollowUpMessages" xml:space="preserve">
+    <value>Follow-up Messages</value>
+  </data>
+  <data name="FortyFiveMinutes" xml:space="preserve">
+    <value>45 minutes</value>
+  </data>
+  <data name="FourHours" xml:space="preserve">
+    <value>4 hours</value>
+  </data>
+  <data name="Free" xml:space="preserve">
+    <value>Free</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="GeneralSettings" xml:space="preserve">
+    <value>General Settings</value>
+  </data>
+  <data name="GetANotificationInRealTimeEachTimeThereIsActivityOrUpdatesOnYourPage" xml:space="preserve">
+    <value>Get a notification in real time each time there is activity or updates on your Page</value>
+  </data>
+  <data name="GetStarted" xml:space="preserve">
+    <value>Get Started</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="Groups" xml:space="preserve">
+    <value>Groups</value>
+  </data>
+  <data name="Impressum" xml:space="preserve">
+    <value>Impressum</value>
+  </data>
+  <data name="InfoAboutPeople" xml:space="preserve">
+    <value>Info About People</value>
+  </data>
+  <data name="Jobs" xml:space="preserve">
+    <value>Jobs</value>
+  </data>
+  <data name="JumpToSection" xml:space="preserve">
+    <value>Jump to Section</value>
+  </data>
+  <data name="KeepYourAccessToInbox" xml:space="preserve">
+    <value>Keep your access to Inbox</value>
+  </data>
+  <data name="LanguageLocale" xml:space="preserve">
+    <value>Language Locale</value>
+  </data>
+  <data name="LearnMore" xml:space="preserve">
+    <value>Learn More</value>
+  </data>
+  <data name="LinkAnInstagramAccount" xml:space="preserve">
+    <value>Link an Instagram Account</value>
+  </data>
+  <data name="Live" xml:space="preserve">
+    <value>Live</value>
+  </data>
+  <data name="MapLocation" xml:space="preserve">
+    <value>Map Location</value>
+  </data>
+  <data name="Messaging" xml:space="preserve">
+    <value>Messaging</value>
+  </data>
+  <data name="MessengerReceiver" xml:space="preserve">
+    <value>Messenger receiver</value>
+  </data>
+  <data name="Moderate" xml:space="preserve">
+    <value>Moderate</value>
+  </data>
+  <data name="Moderator" xml:space="preserve">
+    <value>Moderator</value>
+  </data>
+  <data name="MyPageDoesNotOfferWiFi" xml:space="preserve">
+    <value>My page does not offer Wi-Fi</value>
+  </data>
+  <data name="MyPageDoesntHaveALocation" xml:space="preserve">
+    <value>t have a location</value>
+  </data>
+  <data name="MyPageDoesntHaveAnEmail" xml:space="preserve">
+    <value>t have an email</value>
+  </data>
+  <data name="MyPageDoesntHaveAPhoneNumber" xml:space="preserve">
+    <value>t have a phone number</value>
+  </data>
+  <data name="MyPageDoesntHaveAWebsite" xml:space="preserve">
+    <value>t have a website</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Name</value>
+  </data>
+  <data name="NetworkName" xml:space="preserve">
+    <value>Network Name</value>
+  </data>
+  <data name="Newest" xml:space="preserve">
+    <value>Newest</value>
+  </data>
+  <data name="NewFollowersOfPage" xml:space="preserve">
+    <value>New Followers of Page</value>
+  </data>
+  <data name="NewLikes" xml:space="preserve">
+    <value>New Likes</value>
+  </data>
+  <data name="NewLikesOnPagePost" xml:space="preserve">
+    <value>New Likes on Page post</value>
+  </data>
+  <data name="NewMessages" xml:space="preserve">
+    <value>New Messages</value>
+  </data>
+  <data name="NewPageCheckIn" xml:space="preserve">
+    <value>New Page Check-in</value>
+  </data>
+  <data name="NewPageMention" xml:space="preserve">
+    <value>New Page Mention</value>
+  </data>
+  <data name="NewPageReview" xml:space="preserve">
+    <value>New Page Review</value>
+  </data>
+  <data name="NewPostComment" xml:space="preserve">
+    <value>New Post Comment</value>
+  </data>
+  <data name="NewSharesOnPagePosts" xml:space="preserve">
+    <value>New Shares on Page posts</value>
+  </data>
+  <data name="NewSubscribersToEvents" xml:space="preserve">
+    <value>New Subscribers to events</value>
+  </data>
+  <data name="NoHoursAvailable" xml:space="preserve">
+    <value>No Hours Available</value>
+  </data>
+  <data name="NoPrice" xml:space="preserve">
+    <value>No Price</value>
+  </data>
+  <data name="NotApplicable" xml:space="preserve">
+    <value>NotApplicable</value>
+  </data>
+  <data name="Offers" xml:space="preserve">
+    <value>Offers</value>
+  </data>
+  <data name="Oldest" xml:space="preserve">
+    <value>Oldest</value>
+  </data>
+  <data name="OneHour" xml:space="preserve">
+    <value>1 hour</value>
+  </data>
+  <data name="OneTimeNotification" xml:space="preserve">
+    <value>One-Time Notification</value>
+  </data>
+  <data name="OnlineBooking" xml:space="preserve">
+    <value>Online Booking</value>
+  </data>
+  <data name="OnlyGetOneScheduledNotificationPerDayOnAllActivityAndUpdatesOnYourPage" xml:space="preserve">
+    <value>Only get one scheduled notification per day on all activity and updates on your Page</value>
+  </data>
+  <data name="OpenOnSelectedHours" xml:space="preserve">
+    <value>Open on Selected Hours</value>
+  </data>
+  <data name="OperatingAsUsual" xml:space="preserve">
+    <value>Operating as Usual</value>
+  </data>
+  <data name="PageInfo" xml:space="preserve">
+    <value>Page Info</value>
+  </data>
+  <data name="PageNotifications" xml:space="preserve">
+    <value>Page notifications</value>
+  </data>
+  <data name="PageRoles" xml:space="preserve">
+    <value>Page Roles</value>
+  </data>
+  <data name="PagesThatLikeThisPage" xml:space="preserve">
+    <value>Pages That Like This Page</value>
+  </data>
+  <data name="PeopleWhoFollowThisPage" xml:space="preserve">
+    <value>People Who Follow This Page</value>
+  </data>
+  <data name="PeopleWhoLikeThisPage" xml:space="preserve">
+    <value>People Who Like This Page</value>
+  </data>
+  <data name="PermanentlyClosed" xml:space="preserve">
+    <value>Permanently Closed</value>
+  </data>
+  <data name="PhoneNumber" xml:space="preserve">
+    <value>Phone Number</value>
+  </data>
+  <data name="Photos" xml:space="preserve">
+    <value>Photos</value>
+  </data>
+  <data name="PleaseEnterAValidURL" xml:space="preserve">
+    <value>Please enter a valid URL, including the protocol identifier</value>
+  </data>
+  <data name="PrimaryReceiverForHandoverProtocol" xml:space="preserve">
+    <value>Primary Receiver for Handover Protocol</value>
+  </data>
+  <data name="PrivacyPolicy" xml:space="preserve">
+    <value>PrivacyPolicy</value>
+  </data>
+  <data name="Products" xml:space="preserve">
+    <value>Products</value>
+  </data>
+  <data name="Reminders" xml:space="preserve">
+    <value>Reminders</value>
+  </data>
+  <data name="Request" xml:space="preserve">
+    <value>Request</value>
+  </data>
+  <data name="Reviews" xml:space="preserve">
+    <value>Reviews</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>Save</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="SecondaryReceiverForHandoverProtocol" xml:space="preserve">
+    <value>Secondary Receiver for Handover Protocol</value>
+  </data>
+  <data name="SelectDateAndTime" xml:space="preserve">
+    <value>Select Date &amp;amps Time</value>
+  </data>
+  <data name="SelectedCurrency" xml:space="preserve">
+    <value>Selected Currency</value>
+  </data>
+  <data name="SendCode" xml:space="preserve">
+    <value>Send Code</value>
+  </data>
+  <data name="ServiceArea" xml:space="preserve">
+    <value>Service Area</value>
+  </data>
+  <data name="ServiceName" xml:space="preserve">
+    <value>Service name</value>
+  </data>
+  <data name="Services" xml:space="preserve">
+    <value>Services</value>
+  </data>
+  <data name="ServicesList" xml:space="preserve">
+    <value>Services List</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="SetUp" xml:space="preserve">
+    <value>Set Up</value>
+  </data>
+  <data name="SetUpAutomatedResponses" xml:space="preserve">
+    <value>Set up automated responses</value>
+  </data>
+  <data name="SeverHours" xml:space="preserve">
+    <value>7 hours</value>
+  </data>
+  <data name="ShareBookingLink" xml:space="preserve">
+    <value>Share Booking Link</value>
+  </data>
+  <data name="Shop" xml:space="preserve">
+    <value>Shop</value>
+  </data>
+  <data name="ShowAGreeting" xml:space="preserve">
+    <value>Show a greeting</value>
+  </data>
+  <data name="ShowLess" xml:space="preserve">
+    <value>Show less</value>
+  </data>
+  <data name="ShowMore" xml:space="preserve">
+    <value>Show more</value>
+  </data>
+  <data name="ShowService" xml:space="preserve">
+    <value>Show service</value>
+  </data>
+  <data name="ShowServices" xml:space="preserve">
+    <value>Show Services</value>
+  </data>
+  <data name="ShowStartTimesEvery" xml:space="preserve">
+    <value>Show start times every</value>
+  </data>
+  <data name="ShowWhosSendingMessagesOnbehalfOfYourPage" xml:space="preserve">
+    <value>sending messages on behalf of your Page</value>
+  </data>
+  <data name="SixHours" xml:space="preserve">
+    <value>6 hours</value>
+  </data>
+  <data name="SixtyMinutes" xml:space="preserve">
+    <value>60 minutes</value>
+  </data>
+  <data name="Splurge" xml:space="preserve">
+    <value>Splurge</value>
+  </data>
+  <data name="StartingAt" xml:space="preserve">
+    <value>Starting At</value>
+  </data>
+  <data name="SubmitForReview" xml:space="preserve">
+    <value>Submit For Review</value>
+  </data>
+  <data name="SyncToGoogleCalendar" xml:space="preserve">
+    <value>Sync To Google Calendar</value>
+  </data>
+  <data name="TellPeopleWhat" xml:space="preserve">
+    <value>Tell people what</value>
+  </data>
+  <data name="TemporarilyClosed" xml:space="preserve">
+    <value>Temporarily Closed</value>
+  </data>
+  <data name="ThirtyMinutes" xml:space="preserve">
+    <value>30 minutes</value>
+  </data>
+  <data name="ThreeHours" xml:space="preserve">
+    <value>3 hours</value>
+  </data>
+  <data name="TimeZone" xml:space="preserve">
+    <value>Time Zone</value>
+  </data>
+  <data name="TwoHours" xml:space="preserve">
+    <value>2 hours</value>
+  </data>
+  <data name="TypeANameOrEmail" xml:space="preserve">
+    <value>Type a name or email</value>
+  </data>
+  <data name="Unspecified" xml:space="preserve">
+    <value>Unspecified</value>
+  </data>
+  <data name="Username" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="VariablePrice" xml:space="preserve">
+    <value>Variable Price</value>
+  </data>
+  <data name="Video" xml:space="preserve">
+    <value>Video</value>
+  </data>
+  <data name="Website" xml:space="preserve">
+    <value>Website</value>
+  </data>
+  <data name="YourMessengerURL" xml:space="preserve">
+    <value>Your Messenger URL</value>
+  </data>
+  <data name="ZeroHours" xml:space="preserve">
+    <value>0 hours</value>
+  </data>
+  <data name="ZeroMinutes" xml:space="preserve">
+    <value>0 minutes</value>
+  </data>
+  <data name="ZIPCode" xml:space="preserve">
+    <value>ZIP Code</value>
+  </data>
+</root>
