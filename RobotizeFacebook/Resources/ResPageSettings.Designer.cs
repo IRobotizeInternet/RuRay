@@ -1105,6 +1105,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Open With Service Changes.
+        /// </summary>
+        public static string OpenWithServiceChanges {
+            get {
+                return ResourceManager.GetString("OpenWithServiceChanges", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Operating as Usual.
         /// </summary>
         public static string OperatingAsUsual {

@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using RobotizeFacebook.App.NotLoggedIn;
 
 namespace RobotizeFacebookTests.LoggedIn
 {
@@ -8,7 +9,8 @@ namespace RobotizeFacebookTests.LoggedIn
         [TestMethod]
         public void PageConformance()
         {
-            //var page = new PageLogin();
+            var page = new PageLogin();
+            page.Login();
             //PageHome d = new PageHome();
             //d.HeaderSection.RunConformance();
         }

@@ -4,7 +4,7 @@
     {
         // public 
         public abstract string FeedUrl { get; }
-        internal virtual string BaseXPath => "//div[@role='main']";
+        public string BaseXPath = "//div[@role='main']";
 
         protected Feed()
         {

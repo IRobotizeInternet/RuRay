@@ -91,6 +91,11 @@
     <Reference Include="Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions, Version=14.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <HintPath>..\packages\MSTest.TestFramework.2.1.0\lib\net45\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Win32.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Win32.Primitives.4.3.0\lib\net46\Microsoft.Win32.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
@@ -194,7 +199,14 @@
     <Compile Include="App\LoggedIn\Pages\Pages\FeedInvites.cs" />
     <Compile Include="App\LoggedIn\Pages\Pages\FeedPageQuality.cs" />
     <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\DialogEventsTour.cs" />
-    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\FeedAppointments.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\FeedAppointment\ComboBoxCategories.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\FeedAppointment\DialogPromoteBookNowButton.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\FeedAppointment\FeedCalendar.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\FeedAppointment\FeedContacts.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\FeedAppointment\FeedRequests.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\FeedAppointment\FeedAppointmentSettings.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\FeedAppointment\MenuItemsAppointment.cs" />
+    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\FeedAppointment\PageAppointment.cs" />
     <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\FeedNewsFeed.cs" />
     <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\FeedBusinessAppStore.cs" />
     <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\FeedAdCenter.cs" />

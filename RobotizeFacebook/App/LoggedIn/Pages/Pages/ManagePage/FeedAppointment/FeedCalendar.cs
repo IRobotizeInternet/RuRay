@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RobotizeFacebook.App.LoggedIn.Pages.Pages.ManagePage
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
-    public class FeedAppointments : Feed
+    public class FeedCalendar : Feed
     {
         public override string FeedUrl => throw new NotImplementedException();
     }

@@ -1,0 +1,27 @@
+﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Remote;
+using RobotizeFacebook.Resources;
+using RobotizeToolbox.CommonControls;
+using RobotizeToolbox.Controls;
+
+namespace RobotizeFacebook.App.LoggedIn.Pages
+{
+    public class MenuItemsAppointment : MenuItems
+    {
+        public MenuItemsAppointment()
+        {
+            BaseXPath = "//div[@class='fb_content clearfix ']";
+        }
+
+        public EventTriggerButton<FeedCalendar> EventTriggerButtonCalendar =>
+            new EventTriggerButton<FeedCalendar>(Driver, By.XPath($"//div[text()='{ResLeftNav.Calendar}']"));
+        public EventTriggerButton<FeedRequests> EventTriggerButtonRequests =>
+            new EventTriggerButton<FeedRequests>(Driver, By.XPath($"//div[text()='{ResLeftNav.Requests}']"));
+        public EventTriggerButton<FeedContacts> EventTriggerButtonContacts =>
+            new EventTriggerButton<FeedContacts>(Driver, By.XPath($"//div[text()='{ResLeftNav.Contacts}']"));
+        public EventTriggerButton<FeedAppointmentSettings> EventTriggerButtonAppointmentSettings =>
+            new EventTriggerButton<FeedAppointmentSettings>(Driver, By.XPath($"//div[text()='{ResLeftNav.AppointmentSettings}']"));
+        public EventTriggerButton<DialogPromoteBookNowButton> EventTriggerButtonPromoteBookNowButton =>
+            new EventTriggerButton<DialogPromoteBookNowButton>(Driver, By.XPath($"//div[text()='{ResLeftNav.PromoteBookNowButton}']"));
+    }
+}

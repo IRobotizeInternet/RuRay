@@ -465,6 +465,9 @@
   <data name="OpenOnSelectedHours" xml:space="preserve">
     <value>Open on Selected Hours</value>
   </data>
+  <data name="OpenWithServiceChanges" xml:space="preserve">
+    <value>Open With Service Changes</value>
+  </data>
   <data name="OperatingAsUsual" xml:space="preserve">
     <value>Operating as Usual</value>
   </data>
