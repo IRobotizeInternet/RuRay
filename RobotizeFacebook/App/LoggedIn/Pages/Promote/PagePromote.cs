@@ -12,5 +12,10 @@ namespace RobotizeFacebook.App
         public PagePromote()
         {
         }
+
+        public override void RunConformance()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

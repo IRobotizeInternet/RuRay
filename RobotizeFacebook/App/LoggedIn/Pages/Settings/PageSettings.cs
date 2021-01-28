@@ -12,5 +12,10 @@ namespace RobotizeFacebook.App
         public PageSettings(RemoteWebDriver driver)
         {
         }
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

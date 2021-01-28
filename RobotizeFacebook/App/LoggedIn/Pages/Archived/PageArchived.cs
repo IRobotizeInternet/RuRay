@@ -12,5 +12,10 @@ namespace RobotizeFacebook.App
         public PageArchived()
         {
         }
+
+        public override void RunConformance()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -6,8 +6,8 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class MenuItemsEvents : MenuItems
     {
-        public EventTriggerButton<FeedHome> TriggerButtonHome =>
-            new EventTriggerButton<FeedHome>(Driver, By.XPath($"{BaseXPath}//span[contains(text(), '{ResLeftNav.Home}')]"));
+        public EventTriggerButton<FeedEventHome> TriggerButtonHome =>
+            new EventTriggerButton<FeedEventHome>(Driver, By.XPath($"{BaseXPath}//span[contains(text(), '{ResLeftNav.Home}')]"));
         public EventTriggerButton<FeedYourEvents> TriggerButtonYourEvents =>
             new EventTriggerButton<FeedYourEvents>(Driver, By.XPath($"{BaseXPath}//span[contains(text(), '{ResLeftNav.YourEvents}')]"));
         public EventTriggerButton<FeedBirthdays> TriggerButtonBirthdays =>

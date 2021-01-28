@@ -31,5 +31,10 @@ namespace RobotizeFacebook.App.NotLoggedIn
             TextBoxPassword.SetData(AppSettings.Password);
             return ButtonLogin.Click();
         }
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

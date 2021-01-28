@@ -15,24 +15,41 @@ namespace RobotizeFacebook.App
             BaseXPath = "//form[@method='POST']";
         }
 
-        protected override By ByForDialog => By.XPath("//form[@method='POST']//span[contains(text(),'Create Post')]");
+        protected override By ByForDialog => 
+            By.XPath($"//form[@method='POST']//span[contains(text(),'{ResCreatePost.CreatePost}')]");
+        
         public EventTriggerButton<DialogAddToYourPost> ButtonAddToYourPost => 
             new EventTriggerButton<DialogAddToYourPost>(Driver, By.XPath($"{BaseXPath}//span[contains(text(),'{ResCreatePost.AddToYourPost}')]"));
-        public Button ButtonPhotoOrVideo => new Button(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.PhotoOrVideo}']"));
-        public Button ButtonTagFriends => new Button(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.TagFriends}']"));
-        public Button ButtonFeelingOrActivity => new Button(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.FeelingOrActivity}']"));
-        public Button ButtonCheckIn => new Button(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.CheckIn}']"));
-        public Button ButtonGIF => new Button(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.GIF}']"));
+        
+        public Button ButtonPhotoOrVideo => 
+            new Button(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.PhotoOrVideo}']"));
+        
+        public Button ButtonTagFriends => 
+            new Button(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.TagFriends}']"));
+        
+        public Button ButtonFeelingOrActivity => 
+            new Button(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.FeelingOrActivity}']"));
+        
+        public Button ButtonCheckIn => 
+            new Button(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.CheckIn}']"));
+        
+        public Button ButtonGIF => 
+            new Button(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.GIF}']"));
         
         public EventTriggerButton<DialogAddToYourPost> ButtonDotDotDot =>
            new EventTriggerButton<DialogAddToYourPost>(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.More}']"));
         
         public EventTriggerButton<DialogShowBackgroundOptions> ButtonBackGroundOptions =>
            new EventTriggerButton<DialogShowBackgroundOptions>(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.ShowBackgroundOptions}']"));
+        
         public EventTriggerButton<PopupEmoji> PopupEmojiCollection => 
             new EventTriggerButton<PopupEmoji>(Driver, By.XPath($"//div[@aria-label='{ResCreatePost.Emoji}']"));
-        public TextBox TextBoxWhatsOnYourMind => new TextBox(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.WhatsOnYourMind}']"));
-        public Button ButtonPost => new Button(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.Post}']"));
+        
+        public TextBox TextBoxWhatsOnYourMind => 
+            new TextBox(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.WhatsOnYourMind}']"));
+        
+        public Button ButtonPost => 
+            new Button(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.Post}']"));
         
         public EventTriggerButton<DialogSelectPrivacy> TriggerEditPrivacyDialog => 
             new EventTriggerButton<DialogSelectPrivacy>(Driver, By.XPath($"//div[contains(@aria-label,'{ResCreatePost.EditPrivacy}')]"));

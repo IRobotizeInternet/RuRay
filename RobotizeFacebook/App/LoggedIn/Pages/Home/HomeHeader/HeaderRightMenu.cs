@@ -12,13 +12,13 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public Hyperlink<PageUserHome> HyperLinkUserProfile => new Hyperlink<PageUserHome>(Driver, By.XPath("//a[@href='/me/']/parent::div"));
         
         public Hyperlink<PopupCreate> DialogButtonToCreate =>
-            new Hyperlink<PopupCreate>(Driver, By.XPath($"{BaseRigthXPath}//div[@aria-label='{ResHomePageHeader.Create}']"));
+            new Hyperlink<PopupCreate>(Driver, By.XPath($"{BaseRigthXPath}//div[contains(@aria-label, '{ResHomePageHeader.Create}']"));
 
         public Hyperlink<PopupMessanger> DialogButtonMessanger =>
-            new Hyperlink<PopupMessanger>(Driver, By.XPath($"{BaseRigthXPath}//div[@aria-label='{ResHomePageHeader.Messenger}'][1]"));
+            new Hyperlink<PopupMessanger>(Driver, By.XPath($"{BaseRigthXPath}//div[contains(@aria-label, '{ResHomePageHeader.Messenger}'][1]"));
 
         public Hyperlink<PopupNotifications> DialogButtonNotifications =>
-            new Hyperlink<PopupNotifications>(Driver, By.XPath($"{BaseRigthXPath}//div[contains(@aria-label,'{ResHomePageHeader.Notifications})'][1]"));
+            new Hyperlink<PopupNotifications>(Driver, By.XPath($"{BaseRigthXPath}//div[contains(@aria-label, '{ResHomePageHeader.Notifications})'][1]"));
 
         public Label LabelMessangerCount =>
             new Label(Driver, By.XPath($"{BaseRigthXPath}//div[contains(@aria-label,'{ResHomePageHeader.Messenger})'][2]//span//span"));
@@ -29,5 +29,9 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public Hyperlink<PopupAccount> DialogAccount =>
             new Hyperlink<PopupAccount>(Driver, By.XPath($"{BaseRigthXPath}//div[contains(@aria-label,'{ResHomePageHeader.Account})'][1]"));
 
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

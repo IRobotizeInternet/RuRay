@@ -9,5 +9,10 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public override string FeedUrl => throw new NotImplementedException();
 
         public RadioButton RadioButtonGeneralSettings => new RadioButton(Driver, By.XPath($"{BaseXPath}//div[text()='General Settings']/parent::div/parent::div//div[text()='Off']"));
+
+        public override void RunConformance()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

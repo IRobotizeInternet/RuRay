@@ -10,5 +10,10 @@ namespace RobotizeFacebook.App.LoggedIn.Stories.Create
         public EventTriggerDiv<DialogStoryPrivacy> DialogButtonStoryPrivacy => new EventTriggerDiv<DialogStoryPrivacy>(Driver, By.XPath("//div[@class='j83agx80 pfnyh3mw']"));
 
         public override By ByForPage => throw new System.NotImplementedException();
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

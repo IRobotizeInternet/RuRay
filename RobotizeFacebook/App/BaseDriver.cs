@@ -8,6 +8,7 @@ namespace RobotizeFacebook.App
 {
     public abstract class BaseDriver
     {
+        public abstract void RunConformance();
         // Private 
         protected string BaseURL { get; }
         private string WebBrowser { get; }

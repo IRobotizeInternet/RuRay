@@ -12,5 +12,10 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public PageCreateNewPage()
         {
         }
+
+        public override void RunConformance()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

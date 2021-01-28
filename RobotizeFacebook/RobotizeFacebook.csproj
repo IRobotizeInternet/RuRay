@@ -148,6 +148,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App\LoggedIn\Components\CreatePost\DialogHowAreYouFeeling.cs" />
+    <Compile Include="App\LoggedIn\Components\CreatePost\DialogTagFriends.cs" />
     <Compile Include="App\LoggedIn\Components\PopupAccount.cs" />
     <Compile Include="App\LoggedIn\Components\CreatePost\PopupNotificationSettings.cs" />
     <Compile Include="App\LoggedIn\Dialogs\PopupMessanger.cs" />
@@ -240,6 +242,7 @@
     <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\PageSettings\FeedPageSettings.cs" />
     <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\PageSettings\MenuItemsPageSettings.cs" />
     <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\PageSettings\PagePageSettings.cs" />
+    <Compile Include="App\LoggedIn\Pages\UserTimeline\PageUserTimeline.cs" />
     <Compile Include="CryptoServices\Crypto.cs" />
     <Compile Include="CryptoServices\CryptoServiceForString.cs" />
     <Compile Include="App\BaseDriver.cs" />
@@ -950,16 +953,15 @@
     <Compile Include="App\LoggedIn\Components\CreatePost\DialogCreatePost.cs" />
     <Compile Include="App\LoggedIn\Components\CreatePost\DialogLifeEvents.cs" />
     <Compile Include="App\LoggedIn\Components\PopupCreate.cs" />
-    <Compile Include="App\LoggedIn\Pages\Home\HomeHeader\HomePageHeaderSection.cs" />
+    <Compile Include="App\LoggedIn\Pages\Home\HomeHeader\HeaderLeftMenu.cs" />
     <Compile Include="App\LoggedIn\Enum\PostBackgroundcolor.cs" />
-    <Compile Include="App\LoggedIn\Pages\Home\HomePageLeftSection.cs" />
-    <Compile Include="App\LoggedIn\Pages\Home\MainSection\MainSection.cs" />
+    <Compile Include="App\LoggedIn\Pages\Home\FeedHome.cs" />
     <Compile Include="App\LoggedIn\Pages\Home\MainSection\SubSections\CreatePost.cs" />
     <Compile Include="App\LoggedIn\Pages\Home\MainSection\SubSections\CreateRoom.cs" />
     <Compile Include="App\LoggedIn\Pages\Home\MainSection\SubSections\DialogCreateYourRoom.cs" />
     <Compile Include="App\LoggedIn\Pages\Home\MainSection\SubSections\DialogLearnCreateRoom.cs" />
     <Compile Include="App\LoggedIn\Pages\Home\MainSection\SubSections\Feed.cs" />
-    <Compile Include="App\LoggedIn\Pages\Home\PageTimeline.cs" />
+    <Compile Include="App\LoggedIn\Pages\Home\MenuItemsHome.cs" />
     <Compile Include="App\LoggedIn\Pages\Base\MenuItems.cs" />
     <Compile Include="App\LoggedIn\Pages\Chat\MenuItemsChats.cs" />
     <Compile Include="App\LoggedIn\Pages\Events\MenuItemsEvents.cs" />
@@ -1017,7 +1019,6 @@
     <Compile Include="App\LoggedIn\Dialogs\DialogStoryPrivacy.cs" />
     <Compile Include="App\LoggedIn\Pages\Stories\DialogCreateAStory\DialogCreateAStory.cs" />
     <Compile Include="App\LoggedIn\SupportInbox\PageSupportInbox.cs" />
-    <Compile Include="App\LoggedIn\Pages\Home\PageUserHome.cs" />
     <Compile Include="App\NotLoggedIn\Help\PageHelpChooseALegacyContact.cs" />
     <Compile Include="App\NotLoggedIn\Home\PageHome.cs" />
     <Compile Include="App\LoggedIn\Pages\Home\PageHome.cs" />

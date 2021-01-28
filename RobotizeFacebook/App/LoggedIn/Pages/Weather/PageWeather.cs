@@ -13,5 +13,10 @@ namespace RobotizeFacebook.App
         {
             
         }
+
+        public override void RunConformance()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

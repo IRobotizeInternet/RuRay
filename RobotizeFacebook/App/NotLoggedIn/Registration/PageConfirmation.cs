@@ -19,5 +19,10 @@ namespace RobotizeFacebook.App.NotLoggedIn.Login
             new EventTriggerButton<DialogSendEamilAgain>(Driver, By.XPath("//button[@name='confirm']"));
 
         public override By ByForPage => throw new System.NotImplementedException();
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

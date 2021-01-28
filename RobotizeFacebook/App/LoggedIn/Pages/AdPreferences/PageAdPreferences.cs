@@ -12,5 +12,10 @@ namespace RobotizeFacebook.App
         public PageAdPreferences()
         {
         }
+
+        public override void RunConformance()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

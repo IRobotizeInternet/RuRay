@@ -12,5 +12,10 @@ namespace RobotizeFacebook.App
         public PageJobsComposer()
         {
         }
+
+        public override void RunConformance()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -14,5 +14,10 @@ namespace RobotizeFacebook.App.LoggedIn
         public PageActivityLog(RemoteWebDriver driver)
         {
         }
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

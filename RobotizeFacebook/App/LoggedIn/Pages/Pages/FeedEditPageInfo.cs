@@ -49,5 +49,10 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public RadioButton RadioButtonOpenWithServiceChanges => new RadioButton(Driver, By.XPath($"{BaseXPath}//div[contains(text(),'{ResPageSettings.OpenWithServiceChanges}')]/parent::div//input"));
         public RadioButton RadioButtonTemporarilyClosed => new RadioButton(Driver, By.XPath($"{BaseXPath}//div[contains(text(),'{ResPageSettings.TemporarilyClosed}')]/parent::div//input"));
         public RadioButton RadioButtonOperatingAsUsual => new RadioButton(Driver, By.XPath($"{BaseXPath}//div[contains(text(),'{ResPageSettings.OperatingAsUsual}')]/parent::div//input"));
+
+        public override void RunConformance()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

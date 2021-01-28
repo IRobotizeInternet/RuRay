@@ -1,7 +1,9 @@
 ﻿namespace RobotizeFacebook.App.LoggedIn.Pages
 {
-    public abstract class Header : PageBase
+    public class Header
     {
+        public HeaderRightMenu RightMenu { get; }
         public HeaderMiddleMenu MiddleMenu { get; }
+        public HeaderLeftMenu LeftMenu { get; }
     }
 }

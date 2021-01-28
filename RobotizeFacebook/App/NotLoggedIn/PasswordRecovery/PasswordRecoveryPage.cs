@@ -22,5 +22,10 @@ namespace RobotizeFacebook.App.PasswordRecovery
             new Hyperlink<PageHome>(Driver, By.XPath("//div[@class='rfloat _ohf']//a[@role='button']"));
 
         public override By ByForPage => throw new System.NotImplementedException();
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

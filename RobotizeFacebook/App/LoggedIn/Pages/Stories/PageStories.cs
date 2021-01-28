@@ -12,5 +12,10 @@ namespace RobotizeFacebook.App
         public PageStories()
         {
         }
+
+        public override void RunConformance()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

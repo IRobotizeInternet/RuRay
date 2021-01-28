@@ -5,15 +5,8 @@ using RobotizeToolbox.Controls;
 
 namespace RobotizeFacebook.App
 {
-    public class CreatePost
+    public class CreatePost : BaseDriver
     {
-        public RemoteWebDriver Driver;
-
-        public CreatePost(RemoteWebDriver driver)
-        {
-            Driver = driver;
-        }
-
         public EventTriggerButton<DialogCreatePost> ButtonCreatePost => 
             new EventTriggerButton<DialogCreatePost>(Driver, By.XPath($"//span[contains(text(),'{ResCreatePost.WhatsOnYourMind}')]"));
 
@@ -21,15 +14,15 @@ namespace RobotizeFacebook.App
            new EventTriggerButton<PageTimeline>(Driver, By.XPath("//a[contains(@href, 'facebook') and contains(@aria-label,'Timeline')]"));
 
         public EventTriggerButton<DialogCreatePost> ButtonLiveVideo =>
-            new EventTriggerButton<DialogCreatePost>(Driver, By.XPath($"//span[text()='{ResCreatePost.LiveVideo}']/../../.."));
+            new EventTriggerButton<DialogCreatePost>(Driver, By.XPath($"//span[text()='{ResCreatePost.LiveVideo}']"));
 
         public EventTriggerButton<DialogCreatePost> ButtonPhotoOrVideo =>
-            new EventTriggerButton<DialogCreatePost>(Driver, By.XPath($"//span[text()='{ResCreatePost.PhotoOrVideo}']/../../.."));
+            new EventTriggerButton<DialogCreatePost>(Driver, By.XPath($"//span[text()='{ResCreatePost.PhotoOrVideo}']"));
 
         public EventTriggerButton<DialogCreatePost> ButtonFeelingOrActivity =>
-            new EventTriggerButton<DialogCreatePost>(Driver, By.XPath($"//span[text()='{ResCreatePost.FeelingOrActivity}']/../../.."));
+            new EventTriggerButton<DialogCreatePost>(Driver, By.XPath($"//span[text()='{ResCreatePost.FeelingOrActivity}']"));
 
-        public void RunConformance()
+        public override void RunConformance()
         {
             var dialog = ButtonCreatePost.Click();
             ButtonLiveVideo.Click();

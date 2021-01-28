@@ -18,7 +18,12 @@ namespace RobotizeFacebook.App
 
         }
 
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
+
         //public EventTriggerButton<> TriggerButtonCreateNewListing => new EventTriggerButton<EventResult>()
-        
+
     }
 }

@@ -5,7 +5,7 @@ using RobotizeFacebook.Resources;
 using RobotizeToolbox.Controls;
 using RobotizeToolbox.Dialogs;
 
-namespace RobotizeFacebook.App.LoggedIn
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class PopupAccount : BasePopup
     {
@@ -16,8 +16,8 @@ namespace RobotizeFacebook.App.LoggedIn
 
         protected override By ByForDialog => By.XPath(BaseXPath);
 
-        public EventTriggerButton<PageUserHome> TriggerSeeYourProfile => 
-            new EventTriggerButton<PageUserHome>(Driver, By.XPath($"{BaseXPath}//a[@href='/me/']"));
+        public EventTriggerButton<PageUserTimeline> TriggerSeeYourProfile => 
+            new EventTriggerButton<PageUserTimeline>(Driver, By.XPath($"{BaseXPath}//a[@href='/me/']"));
 
         public EventTriggerButton<DialogGiveFeedbackToFacebook> TriggerGiveFeedbackToFBDialog =>
             new EventTriggerButton<DialogGiveFeedbackToFacebook>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResAccount.GiveFeedback}']"));

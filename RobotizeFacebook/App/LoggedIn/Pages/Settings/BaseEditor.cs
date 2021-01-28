@@ -6,5 +6,10 @@
         {
 
         }
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
