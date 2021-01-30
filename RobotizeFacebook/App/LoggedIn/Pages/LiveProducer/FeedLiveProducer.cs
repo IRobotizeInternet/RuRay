@@ -4,7 +4,7 @@ namespace RobotizeFacebook.App.LoggedIn
 {
     public class FeedLiveProducer : Feed
     {
-        public override string FeedUrl => throw new NotImplementedException();
+        public override string FeedUrl => "/live/producer/";
 
         public override void RunConformance()
         {

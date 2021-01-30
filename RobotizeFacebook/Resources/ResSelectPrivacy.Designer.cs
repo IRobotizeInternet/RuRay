@@ -160,11 +160,11 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Select Privacy.
+        ///   Looks up a localized string similar to Select Audience.
         /// </summary>
-        public static string SelectPrivacy {
+        public static string SelectAudience {
             get {
-                return ResourceManager.GetString("SelectPrivacy", resourceCulture);
+                return ResourceManager.GetString("SelectAudience", resourceCulture);
             }
         }
         

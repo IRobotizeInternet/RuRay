@@ -52,8 +52,8 @@ namespace RobotizeFacebook.App
         public Button ButtonPost => 
             new Button(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.Post}']"));
         
-        public EventTriggerButton<DialogSelectPrivacy> TriggerEditPrivacyDialog => 
-            new EventTriggerButton<DialogSelectPrivacy>(Driver, By.XPath($"//div[contains(@aria-label,'{ResCreatePost.EditPrivacy}')]"));
+        public EventTriggerButton<DialogSelectAudience> TriggerEditPrivacyDialog => 
+            new EventTriggerButton<DialogSelectAudience>(Driver, By.XPath($"//div[contains(@aria-label,'{ResCreatePost.EditPrivacy}')]"));
     }
 
     public class DialogShowBackgroundOptions : BaseDialog

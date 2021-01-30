@@ -4,7 +4,7 @@ namespace RobotizeFacebook.App.LoggedIn
 {
     public class FeedJobsComposer : Feed
     {
-        public override string FeedUrl => "/live/producer/";
+        public override string FeedUrl => "";
 
         public override void RunConformance()
         {

@@ -120,8 +120,14 @@
   <data name="ActionsOnPage" xml:space="preserve">
     <value>Actions on Page</value>
   </data>
+  <data name="ActivatePoll" xml:space="preserve">
+    <value>Activate Poll</value>
+  </data>
   <data name="AdCenter" xml:space="preserve">
     <value>Ad Center</value>
+  </data>
+  <data name="AddAnOption" xml:space="preserve">
+    <value>Add an Option</value>
   </data>
   <data name="AddCoverPhoto" xml:space="preserve">
     <value>Add Cover Photo</value>
@@ -131,6 +137,9 @@
   </data>
   <data name="AddProfilePicture" xml:space="preserve">
     <value>Add Profile Picture</value>
+  </data>
+  <data name="AddQuestion" xml:space="preserve">
+    <value>Add Question</value>
   </data>
   <data name="Address" xml:space="preserve">
     <value>Address</value>
@@ -144,6 +153,12 @@
   <data name="AllMessages" xml:space="preserve">
     <value>All Messages</value>
   </data>
+  <data name="AllowViewersToMessageYou" xml:space="preserve">
+    <value>Allow viewers to message you</value>
+  </data>
+  <data name="AllowViewersToRewind" xml:space="preserve">
+    <value>Allow viewers to rewind</value>
+  </data>
   <data name="Always Open" xml:space="preserve">
     <value>Always Open</value>
   </data>
@@ -155,6 +170,9 @@
   </data>
   <data name="BrandedContent" xml:space="preserve">
     <value>Branded Content</value>
+  </data>
+  <data name="BroadcastThisAsASphericalVideo" xml:space="preserve">
+    <value>Broadcast this as a spherical video</value>
   </data>
   <data name="BrowseAll" xml:space="preserve">
     <value>Browse All</value>
@@ -180,11 +198,23 @@
   <data name="City" xml:space="preserve">
     <value>City</value>
   </data>
+  <data name="Clear" xml:space="preserve">
+    <value>Clear</value>
+  </data>
   <data name="CommerceProfile" xml:space="preserve">
     <value>Commerce Profile</value>
   </data>
   <data name="Contacts" xml:space="preserve">
     <value>Contacts</value>
+  </data>
+  <data name="Continue" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="Copy" xml:space="preserve">
+    <value>Copy</value>
+  </data>
+  <data name="CreateAPoll" xml:space="preserve">
+    <value>Create a poll</value>
   </data>
   <data name="CreateEvent" xml:space="preserve">
     <value>Create Event</value>
@@ -201,8 +231,14 @@
   <data name="CreatePage" xml:space="preserve">
     <value>Create Page</value>
   </data>
+  <data name="CreatePoll" xml:space="preserve">
+    <value>Create Poll</value>
+  </data>
   <data name="Date" xml:space="preserve">
     <value>Date</value>
+  </data>
+  <data name="Density" xml:space="preserve">
+    <value>Density</value>
   </data>
   <data name="Description" xml:space="preserve">
     <value>Description</value>
@@ -216,11 +252,23 @@
   <data name="EditPageInfo" xml:space="preserve">
     <value>Edit Page Info</value>
   </data>
+  <data name="EditPoll" xml:space="preserve">
+    <value>Edit Poll</value>
+  </data>
   <data name="Email" xml:space="preserve">
     <value>Email</value>
   </data>
+  <data name="EmbedLiveVideo" xml:space="preserve">
+    <value>Embed live video</value>
+  </data>
+  <data name="EndLiveVideoIfStreamStops" xml:space="preserve">
+    <value>End live video if stream stops</value>
+  </data>
   <data name="EnterAccountUsername" xml:space="preserve">
     <value>Enter account username</value>
+  </data>
+  <data name="EventLogs" xml:space="preserve">
+    <value>Event Logs</value>
   </data>
   <data name="Events" xml:space="preserve">
     <value>Events</value>
@@ -255,11 +303,23 @@
   <data name="GoLiveNow" xml:space="preserve">
     <value>Go Live Now</value>
   </data>
+  <data name="GoLiveSettings" xml:space="preserve">
+    <value>Go Live Settings</value>
+  </data>
   <data name="GoLiveWithOthers" xml:space="preserve">
     <value>Go Live With Others</value>
   </data>
+  <data name="Graphics" xml:space="preserve">
+    <value>Graphics</value>
+  </data>
+  <data name="GraphicsURL" xml:space="preserve">
+    <value>Graphics URL</value>
+  </data>
   <data name="Group" xml:space="preserve">
     <value>Group</value>
+  </data>
+  <data name="Help" xml:space="preserve">
+    <value>Help</value>
   </data>
   <data name="Home" xml:space="preserve">
     <value>Home</value>
@@ -275,6 +335,9 @@
   </data>
   <data name="InPerson" xml:space="preserve">
     <value>In Person</value>
+  </data>
+  <data name="InsertAnEmoji" xml:space="preserve">
+    <value>Insert an emoji</value>
   </data>
   <data name="Insights" xml:space="preserve">
     <value>Insights</value>
@@ -327,6 +390,9 @@
   <data name="NetworkName" xml:space="preserve">
     <value>Netwrok Name</value>
   </data>
+  <data name="Newest" xml:space="preserve">
+    <value>Newest</value>
+  </data>
   <data name="NewsFeed" xml:space="preserve">
     <value>News Feed</value>
   </data>
@@ -338,6 +404,15 @@
   </data>
   <data name="Notifications" xml:space="preserve">
     <value>Notifications</value>
+  </data>
+  <data name="Oldest" xml:space="preserve">
+    <value>Oldest</value>
+  </data>
+  <data name="OneEightyVideo3D" xml:space="preserve">
+    <value>180 Video - 3D</value>
+  </data>
+  <data name="OneEightyVideoStandard" xml:space="preserve">
+    <value>180 Video - Standard</value>
   </data>
   <data name="Online" xml:space="preserve">
     <value>Online</value>
@@ -353,6 +428,9 @@
   </data>
   <data name="OperatingAsUsual" xml:space="preserve">
     <value>Operating as Usual</value>
+  </data>
+  <data name="Option" xml:space="preserve">
+    <value>Option</value>
   </data>
   <data name="Orders" xml:space="preserve">
     <value>Orders</value>
@@ -393,6 +471,12 @@
   <data name="PhoneNumber" xml:space="preserve">
     <value>Phone Number</value>
   </data>
+  <data name="Polling" xml:space="preserve">
+    <value>Polling</value>
+  </data>
+  <data name="Polls" xml:space="preserve">
+    <value>Polls</value>
+  </data>
   <data name="PostInGroup" xml:space="preserve">
     <value>Post in group</value>
   </data>
@@ -423,6 +507,12 @@
   <data name="PublishingTools" xml:space="preserve">
     <value>Publishing Tools</value>
   </data>
+  <data name="Question" xml:space="preserve">
+    <value>Question</value>
+  </data>
+  <data name="Questions" xml:space="preserve">
+    <value>Questions</value>
+  </data>
   <data name="Reach" xml:space="preserve">
     <value>Reach</value>
   </data>
@@ -435,6 +525,9 @@
   <data name="ResourcesAndTools" xml:space="preserve">
     <value>Resources &amp;amp Tools</value>
   </data>
+  <data name="RoundyMcCorners" xml:space="preserve">
+    <value>Roundy McCorners</value>
+  </data>
   <data name="Save" xml:space="preserve">
     <value>Save</value>
   </data>
@@ -444,8 +537,26 @@
   <data name="SavedVideos" xml:space="preserve">
     <value>Saved Videos</value>
   </data>
+  <data name="SaySomethingAboutThisLiveVideo" xml:space="preserve">
+    <value>Say something about this live video…</value>
+  </data>
+  <data name="ScheduleALiveVideo" xml:space="preserve">
+    <value>Schedule a Live Video</value>
+  </data>
+  <data name="ScheduleLiveVideo" xml:space="preserve">
+    <value>Schedule Live Video</value>
+  </data>
   <data name="ScheduleLiveVideoEvent" xml:space="preserve">
     <value>Schedule Live Video Event</value>
+  </data>
+  <data name="SearchResponses" xml:space="preserve">
+    <value>Search Responses</value>
+  </data>
+  <data name="SelectAGraphicsPackage" xml:space="preserve">
+    <value>Select a graphics package</value>
+  </data>
+  <data name="SelectAnImage" xml:space="preserve">
+    <value>Select an Image</value>
   </data>
   <data name="ServiceArea" xml:space="preserve">
     <value>Service Area</value>
@@ -459,8 +570,23 @@
   <data name="Splurge" xml:space="preserve">
     <value>Splurge</value>
   </data>
+  <data name="Station" xml:space="preserve">
+    <value>Station</value>
+  </data>
   <data name="Stories" xml:space="preserve">
     <value>Stories</value>
+  </data>
+  <data name="Stream" xml:space="preserve">
+    <value>Stream</value>
+  </data>
+  <data name="StreamHealth" xml:space="preserve">
+    <value>Stream Health</value>
+  </data>
+  <data name="StreamKey" xml:space="preserve">
+    <value>Stream Key</value>
+  </data>
+  <data name="StreamSetup" xml:space="preserve">
+    <value>Stream Setup</value>
   </data>
   <data name="TagAGameExFortnite" xml:space="preserve">
     <value>Tag a game (ex: Fortnite)</value>
@@ -471,14 +597,35 @@
   <data name="TemporarilyClosed" xml:space="preserve">
     <value>Temporarily Closed</value>
   </data>
+  <data name="ThisBroadcastHasAudioAmbix4" xml:space="preserve">
+    <value>This broadcast has Audio 360 (ambix4)</value>
+  </data>
+  <data name="ThreeSixtyVideo3D" xml:space="preserve">
+    <value>360 Video - 3D</value>
+  </data>
+  <data name="ThreeSixtyVideoCubemap" xml:space="preserve">
+    <value>360 Video - Cubemap</value>
+  </data>
+  <data name="ThreeSixtyVideoStandard" xml:space="preserve">
+    <value>360 Video - Standard</value>
+  </data>
   <data name="Time" xml:space="preserve">
     <value>Time</value>
   </data>
   <data name="Timeline" xml:space="preserve">
     <value>Timeline</value>
   </data>
+  <data name="TimeOfLiveVideo" xml:space="preserve">
+    <value>Time of Live Video</value>
+  </data>
   <data name="TitleOptional" xml:space="preserve">
     <value>Title (optional)</value>
+  </data>
+  <data name="TurnOnAutoGeneratedCaptions" xml:space="preserve">
+    <value>Turn on auto-generated captions</value>
+  </data>
+  <data name="UnpublishAfterLiveVideoEnds" xml:space="preserve">
+    <value>Unpublish after live video ends</value>
   </data>
   <data name="Unspecified" xml:space="preserve">
     <value>Unspecified</value>
@@ -486,11 +633,35 @@
   <data name="UpcomingLiveVideosAndEvents" xml:space="preserve">
     <value>Upcoming Live Videos &amp;amps; Events</value>
   </data>
+  <data name="UseABackupStream" xml:space="preserve">
+    <value>Use a Backup Stream</value>
+  </data>
+  <data name="UseAPersistentStreamKey" xml:space="preserve">
+    <value>Use a Persistent Stream Key</value>
+  </data>
+  <data name="UseCamera" xml:space="preserve">
+    <value>Use Camera</value>
+  </data>
+  <data name="UsePairedEncoder" xml:space="preserve">
+    <value>Use Paired Encoder</value>
+  </data>
   <data name="Username" xml:space="preserve">
     <value>Username</value>
   </data>
+  <data name="UseStreamKey" xml:space="preserve">
+    <value>Use Stream Key</value>
+  </data>
   <data name="Videos" xml:space="preserve">
     <value>Videos</value>
+  </data>
+  <data name="Viewing" xml:space="preserve">
+    <value>Viewing</value>
+  </data>
+  <data name="VitaminC" xml:space="preserve">
+    <value>Vitamin C</value>
+  </data>
+  <data name="WaitingForLiveVideo" xml:space="preserve">
+    <value>Waiting for live video</value>
   </data>
   <data name="Website" xml:space="preserve">
     <value>Website</value>

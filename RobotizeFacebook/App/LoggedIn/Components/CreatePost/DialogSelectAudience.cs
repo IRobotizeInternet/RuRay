@@ -6,14 +6,14 @@ using RobotizeToolbox.Dialogs;
 
 namespace RobotizeFacebook.App.LoggedIn
 {
-    public class DialogSelectPrivacy : BaseDialog
+    public class DialogSelectAudience : BaseDialog
     {
-        public DialogSelectPrivacy(RemoteWebDriver driver) : base(driver)
+        public DialogSelectAudience(RemoteWebDriver driver) : base(driver)
         {
             BaseXPath = "//form[@method='POST']";
         }
 
-        protected override By ByForDialog => By.XPath($"//form[@method='POST']//span[text()='{ResSelectPrivacy.SelectPrivacy}']");
+        protected override By ByForDialog => By.XPath($"//form[@method='POST']//span[text()='{ResSelectPrivacy.SelectAudience}']");
 
         public RadioButton RButtonAddToYourPost => new RadioButton(Driver, By.XPath($"{BaseXPath}//span[text()='{ResSelectPrivacy.Public}']"));
         public RadioButton RButtonFriends => new RadioButton(Driver, By.XPath($"{BaseXPath}//span[text()='{ResSelectPrivacy.Friends}']"));
