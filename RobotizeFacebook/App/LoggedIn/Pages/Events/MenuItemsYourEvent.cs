@@ -16,5 +16,10 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
             new EventTriggerButton<FeedHosting>(Driver, By.XPath($"{BaseXPath}//span[contains(text(), '{ResLeftNav.Hosting}')]"));
         public EventTriggerButton<FeedPastEvents> TriggerButtonPastEvents =>
             new EventTriggerButton<FeedPastEvents>(Driver, By.XPath($"{BaseXPath}//span[contains(text(), '{ResLeftNav.PastEvents}')]"));
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

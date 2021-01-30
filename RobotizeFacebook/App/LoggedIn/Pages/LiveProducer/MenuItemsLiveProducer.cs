@@ -1,6 +1,6 @@
 ﻿namespace RobotizeFacebook.App.LoggedIn
 {
-    public class MenuItemsJobsComposer : MenuItems
+    public class MenuItemsLiveProducer : MenuItems
     {
         public override void RunConformance()
         {

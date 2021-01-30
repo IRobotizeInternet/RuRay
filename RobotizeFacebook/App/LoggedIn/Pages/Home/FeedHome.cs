@@ -4,7 +4,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class FeedHome : BaseDriver
     {
-        public CreatePost SectionCreatePost => new CreatePost(_driver);
+        public CreatePost SectionCreatePost => new CreatePost();
 
         public override void RunConformance()
         {

@@ -9,7 +9,8 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
     {
         // Items in the right.
         private readonly string BaseRigthXPath = "//div[@role='navigation']";
-        public Hyperlink<PageUserHome> HyperLinkUserProfile => new Hyperlink<PageUserHome>(Driver, By.XPath("//a[@href='/me/']/parent::div"));
+        public Hyperlink<PageUserTimeline> HyperLinkUserProfile => 
+            new Hyperlink<PageUserTimeline>(Driver, By.XPath("//a[@href='/me/']/parent::div"));
         
         public Hyperlink<PopupCreate> DialogButtonToCreate =>
             new Hyperlink<PopupCreate>(Driver, By.XPath($"{BaseRigthXPath}//div[contains(@aria-label, '{ResHomePageHeader.Create}']"));

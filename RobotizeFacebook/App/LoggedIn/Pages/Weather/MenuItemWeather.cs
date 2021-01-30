@@ -2,5 +2,9 @@
 {
     public class MenuItemWeather : MenuItems
     {
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

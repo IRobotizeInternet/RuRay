@@ -16,26 +16,30 @@ namespace RobotizeFacebook.App.LoggedIn.Components
 
         protected override By ByForDialog => By.XPath($"//form[@method='POST']//span[contains(text(),'{ResCreatePost.WatchParty})']");
 
-        public Button ButtonPhotoOrVideo => 
+        public Button ButtonPhotoOrVideo =>
             new Button(Driver, By.XPath($"{BaseXPath}//span[contains(text(),'{ResCreatePost.PhotoOrVideo}')]"));
 
-        public EventTriggerButton<DialogTagFriends> TriggerButtonTagFriends => 
+        public EventTriggerButton<DialogTagFriends> TriggerButtonTagFriends =>
             new EventTriggerButton<DialogTagFriends>(Driver, By.XPath($"{BaseXPath}//span[contains(text(),'{ResCreatePost.TagFriends}')]"));
 
-        public EventTriggerButton<DialogHowAreYouFeeling> TriggerButtonFeelingOrActivity => 
+        public EventTriggerButton<DialogHowAreYouFeeling> TriggerButtonFeelingOrActivity =>
             new EventTriggerButton<DialogHowAreYouFeeling>(Driver, By.XPath($"{BaseXPath}//span[contains(text(),'{ResCreatePost.FeelingOrActivity}')]"));
 
-        public Button ButtonCheckIn => 
-            new Button(Driver, By.XPath($"{BaseXPath}//span[contains(text(),'{ResCreatePost.CheckIn}')]"));
-        public Button ButtonGIF => 
-            new Button(Driver, By.XPath($"{BaseXPath}//span[contains(text(),'{ResCreatePost.GIF}')]"));
-        public Button ButtonLiveVideo => 
+        public EventTriggerButton<DialogCheckin> ButtonCheckIn =>
+            new EventTriggerButton<DialogCheckin>(Driver, By.XPath($"{BaseXPath}//span[contains(text(),'{ResCreatePost.CheckIn}')]"));
+
+        public EventTriggerButton<DialogGIF> ButtonGIF =>
+            new EventTriggerButton<DialogGIF>(Driver, By.XPath($"{BaseXPath}//span[contains(text(),'{ResCreatePost.GIF}')]"));
+
+        public Button ButtonLiveVideo =>
             new Button(Driver, By.XPath($"{BaseXPath}//span[contains(text(),'{ResCreatePost.LiveVideo}')]"));
-        public Button ButtonWatchParty => 
-            new Button(Driver, By.XPath($"{BaseXPath}//span[contains(text(),'{ResCreatePost.WatchParty}')]"));
-        public Button ButtonRaiseMoney => 
-            new Button(Driver, By.XPath($"{BaseXPath}//span[contains(text(),'{ResCreatePost.RaiseMoney}')]"));
-        public Button ButtonBack => 
+
+        public EventTriggerButton<DialogAddVideos> ButtonWatchParty =>
+            new EventTriggerButton<DialogAddVideos>(Driver, By.XPath($"{BaseXPath}//span[contains(text(),'{ResCreatePost.WatchParty}')]"));
+        public EventTriggerButton<DialogSelectNonprofit> ButtonRaiseMoney =>
+            new EventTriggerButton<DialogSelectNonprofit>(Driver, By.XPath($"{BaseXPath}//span[contains(text(),'{ResCreatePost.RaiseMoney}')]"));
+        
+        public Button ButtonBack =>
             new Button(Driver, By.XPath($"{BaseXPath}//span[contains(text(),'{ResCreatePost.RaiseMoney}')]"));
     }
 }

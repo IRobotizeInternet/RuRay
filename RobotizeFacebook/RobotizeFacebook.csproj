@@ -148,7 +148,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App\LoggedIn\Components\CreatePost\DialogAddVideos.cs" />
+    <Compile Include="App\LoggedIn\Components\CreatePost\DialogCheckin.cs" />
+    <Compile Include="App\LoggedIn\Components\CreatePost\DialogGIF.cs" />
     <Compile Include="App\LoggedIn\Components\CreatePost\DialogHowAreYouFeeling.cs" />
+    <Compile Include="App\LoggedIn\Components\CreatePost\DialogSelectNonprofit.cs" />
     <Compile Include="App\LoggedIn\Components\CreatePost\DialogTagFriends.cs" />
     <Compile Include="App\LoggedIn\Components\PopupAccount.cs" />
     <Compile Include="App\LoggedIn\Components\CreatePost\PopupNotificationSettings.cs" />
@@ -173,9 +177,12 @@
     <Compile Include="App\LoggedIn\Pages\Events\MenuItemsYourEvent.cs" />
     <Compile Include="App\LoggedIn\Pages\Home\HomeHeader\HeaderMiddleMenu.cs" />
     <Compile Include="App\LoggedIn\Pages\Home\HomeHeader\HeaderRightMenu.cs" />
-    <Compile Include="App\LoggedIn\Pages\JobsComposer\FeedContainerJobsComposer.cs" />
+    <Compile Include="App\LoggedIn\Pages\JobsComposer\FeedJobsComposer.cs" />
     <Compile Include="App\LoggedIn\Pages\JobsComposer\MenuItemsJobsComposer.cs" />
     <Compile Include="App\LoggedIn\Pages\JobsComposer\PageJobsComposer.cs" />
+    <Compile Include="App\LoggedIn\Pages\LiveProducer\FeedLiveProducer.cs" />
+    <Compile Include="App\LoggedIn\Pages\LiveProducer\MenuItemsLiveProducer.cs" />
+    <Compile Include="App\LoggedIn\Pages\LiveProducer\PageLiveProducer.cs" />
     <Compile Include="App\LoggedIn\Pages\Marketplace\FeedMarketplaceCart.cs" />
     <Compile Include="App\LoggedIn\Pages\Marketplace\FeedMarketplaceNotification.cs" />
     <Compile Include="App\LoggedIn\Pages\Marketplace\YourAccount\DialogCommerceProfile.cs" />
@@ -1360,6 +1367,7 @@
     <EmbeddedResource Include="Resources\ResPageSettings.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ResPageSettings.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\ResPlatform.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

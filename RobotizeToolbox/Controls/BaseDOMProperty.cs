@@ -76,6 +76,12 @@ namespace RobotizeToolbox.CommonControls
             elementToClear.Clear();
         }
 
+        public string GetAttribute(string attributeName)
+        {
+            var element = Driver.FindElementWithTimeSpan(ByForElement);
+            return element.GetAttribute(attributeName);
+        }
+
         /// <summary>
         /// Set value into an elements like a textbox for textarea. It also takes a 
         /// boolean flag to replace or append to the current value. 

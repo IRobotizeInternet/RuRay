@@ -51,10 +51,25 @@ namespace RobotizeToolbox.Controls
             targetItem?.Click();
         }
 
+        public virtual void SelectByIndex(string itemToSearch, int index)
+        {
+            SearchItem(itemToSearch);
+            var targetItem = SelectItem(itemToSearch);
+            targetItem?.Click();
+        }
+
         protected IEnumerable<IWebElement> RetrieveSearchedItems(string itemToSearch)
         {
             SearchedResultElements = Driver.FindElements(By.XPath(SearchItemsXPath));
             return SearchedResultElements.Where(x => x.Text.Contains(itemToSearch));
+        }
+
+        protected IWebElement SelectSearchedItems(int itemIndex)
+        {
+            SearchedResultElements = Driver.FindElements(By.XPath(SearchItemsXPath));
+            if (!SearchedResultElements.Any() || SearchedResultElements.Count() < itemIndex + 1) return null;
+
+            return SearchedResultElements.ToArray()[itemIndex];
         }
 
         protected virtual void WaitUntilComboboxLoading(string xPathForWating = null)

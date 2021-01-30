@@ -2,6 +2,9 @@
 {
     public class MenuItemsCreateEventOnline : MenuItems
     {
-        
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

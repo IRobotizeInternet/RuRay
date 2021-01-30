@@ -20,5 +20,10 @@ namespace RobotizeFacebook.App.LoggedIn.LeftMenu
             new Hyperlink<PageWatch>(Driver, By.XPath($"{BaseXPath}//span[contains(text(), '{ResLeftNav.Manage}]"));
         public Hyperlink<PageWatch> HyperlinkButtonLatestVideos =>
             new Hyperlink<PageWatch>(Driver, By.XPath($"{BaseXPath}//span[contains(text(), '{ResLeftNav.LatestVideos}]"));
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

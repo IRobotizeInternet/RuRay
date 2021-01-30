@@ -18,5 +18,10 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
             new EventTriggerButton<FeedFacebook>(Driver, By.XPath($"//div[contains(text(), '{ResLeftNav.Facebook}')]"));
         public EventTriggerButton<FeedInstagram> EventTriggerButtonInstagram =>
             new EventTriggerButton<FeedInstagram>(Driver, By.XPath($"//div[contains(text(), '{ResLeftNav.Instagram}')]"));
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

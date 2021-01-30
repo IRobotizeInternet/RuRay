@@ -135,17 +135,11 @@
   <data name="CheckIn" xml:space="preserve">
     <value>Check In</value>
   </data>
-  <data name="PhotoOrVideo" xml:space="preserve">
-    <value>Photo/Video</value>
-  </data>
   <data name="GIF" xml:space="preserve">
     <value>GIF</value>
   </data>
   <data name="WatchParty" xml:space="preserve">
     <value>Watch Party</value>
-  </data>
-  <data name="PhotoOrVideo" xml:space="preserve">
-    <value>Photo/Video</value>
   </data>
   <data name="RaiseMoney" xml:space="preserve">
     <value>RaiseMoney</value>
@@ -206,5 +200,32 @@
   </data>
   <data name="SpecificFriends" xml:space="preserve">
     <value>Specific Friends</value>
+  </data>
+  <data name="WhereAreYou" xml:space="preserve">
+    <value>Where are you?</value>
+  </data>
+  <data name="SearchForLocation" xml:space="preserve">
+    <value>Search for location</value>
+  </data>
+  <data name="ChooseAGIF" xml:space="preserve">
+    <value>Choose a GIF</value>
+  </data>
+  <data name="GIFSearch" xml:space="preserve">
+    <value>GIF search</value>
+  </data>
+  <data name="AddVideos" xml:space="preserve">
+    <value>Add Videos</value>
+  </data>
+  <data name="SearchForVideos" xml:space="preserve">
+    <value>Search for videos...</value>
+  </data>
+  <data name="SelectThisCheckbox" xml:space="preserve">
+    <value>Select this checkbox</value>
+  </data>
+  <data name="SearchForANonprofitToSupport" xml:space="preserve">
+    <value>Search for a nonprofit to support</value>
+  </data>
+  <data name="SelectNonprofit" xml:space="preserve">
+    <value>Select Nonprofit</value>
   </data>
 </root>

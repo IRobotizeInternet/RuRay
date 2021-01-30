@@ -23,5 +23,10 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
             new EventTriggerButton<FeedAppointmentSettings>(Driver, By.XPath($"//div[text()='{ResLeftNav.AppointmentSettings}']"));
         public EventTriggerButton<DialogPromoteBookNowButton> EventTriggerButtonPromoteBookNowButton =>
             new EventTriggerButton<DialogPromoteBookNowButton>(Driver, By.XPath($"//div[text()='{ResLeftNav.PromoteBookNowButton}']"));
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

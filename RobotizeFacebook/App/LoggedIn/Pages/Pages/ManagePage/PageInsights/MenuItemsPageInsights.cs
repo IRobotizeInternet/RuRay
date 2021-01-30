@@ -40,5 +40,10 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
             new EventTriggerButton<FeedOrders>(Driver, By.XPath($"//span[contains(text(), '{ResLeftNav.Orders}')]"));
         public EventTriggerButton<FeedPromote> EventTriggerButtonPromote =>
             new EventTriggerButton<FeedPromote>(Driver, By.XPath($"//span[contains(text(), '{ResLeftNav.Promote}')]"));
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

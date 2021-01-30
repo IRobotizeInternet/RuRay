@@ -201,6 +201,9 @@
   <data name="CreatePage" xml:space="preserve">
     <value>Create Page</value>
   </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
   <data name="Description" xml:space="preserve">
     <value>Description</value>
   </data>
@@ -237,11 +240,26 @@
   <data name="Following" xml:space="preserve">
     <value>Following</value>
   </data>
+  <data name="Gaming" xml:space="preserve">
+    <value>Gaming</value>
+  </data>
   <data name="General" xml:space="preserve">
     <value>General</value>
   </data>
   <data name="Going" xml:space="preserve">
     <value>Going</value>
+  </data>
+  <data name="GoLive" xml:space="preserve">
+    <value>Go Live</value>
+  </data>
+  <data name="GoLiveNow" xml:space="preserve">
+    <value>Go Live Now</value>
+  </data>
+  <data name="GoLiveWithOthers" xml:space="preserve">
+    <value>Go Live With Others</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>Group</value>
   </data>
   <data name="Home" xml:space="preserve">
     <value>Home</value>
@@ -324,6 +342,9 @@
   <data name="Online" xml:space="preserve">
     <value>Online</value>
   </data>
+  <data name="OnlyMe" xml:space="preserve">
+    <value>Only Me</value>
+  </data>
   <data name="OpenOnSelectedHours" xml:space="preserve">
     <value>Open on Selected Hours</value>
   </data>
@@ -338,6 +359,9 @@
   </data>
   <data name="Overview" xml:space="preserve">
     <value>Overview</value>
+  </data>
+  <data name="Page" xml:space="preserve">
+    <value>Page</value>
   </data>
   <data name="PageInfo" xml:space="preserve">
     <value>Page Info</value>
@@ -369,8 +393,17 @@
   <data name="PhoneNumber" xml:space="preserve">
     <value>Phone Number</value>
   </data>
+  <data name="PostInGroup" xml:space="preserve">
+    <value>Post in group</value>
+  </data>
+  <data name="PostOnTimeline" xml:space="preserve">
+    <value>Post on timeline</value>
+  </data>
   <data name="Posts" xml:space="preserve">
     <value>Posts</value>
+  </data>
+  <data name="PostToPageYouManage" xml:space="preserve">
+    <value>Post to Page you manage</value>
   </data>
   <data name="PreferredPageAudience" xml:space="preserve">
     <value>Preferred Page Audience</value>
@@ -411,6 +444,9 @@
   <data name="SavedVideos" xml:space="preserve">
     <value>Saved Videos</value>
   </data>
+  <data name="ScheduleLiveVideoEvent" xml:space="preserve">
+    <value>Schedule Live Video Event</value>
+  </data>
   <data name="ServiceArea" xml:space="preserve">
     <value>Service Area</value>
   </data>
@@ -426,14 +462,29 @@
   <data name="Stories" xml:space="preserve">
     <value>Stories</value>
   </data>
+  <data name="TagAGameExFortnite" xml:space="preserve">
+    <value>Tag a game (ex: Fortnite)</value>
+  </data>
   <data name="TemplatesAndTabs" xml:space="preserve">
     <value>Templates and Tabs</value>
   </data>
   <data name="TemporarilyClosed" xml:space="preserve">
     <value>Temporarily Closed</value>
   </data>
+  <data name="Time" xml:space="preserve">
+    <value>Time</value>
+  </data>
+  <data name="Timeline" xml:space="preserve">
+    <value>Timeline</value>
+  </data>
+  <data name="TitleOptional" xml:space="preserve">
+    <value>Title (optional)</value>
+  </data>
   <data name="Unspecified" xml:space="preserve">
     <value>Unspecified</value>
+  </data>
+  <data name="UpcomingLiveVideosAndEvents" xml:space="preserve">
+    <value>Upcoming Live Videos &amp;amps; Events</value>
   </data>
   <data name="Username" xml:space="preserve">
     <value>Username</value>

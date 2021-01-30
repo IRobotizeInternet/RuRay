@@ -16,5 +16,10 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
            new EventTriggerButton<PageMarketplaceYourAccount>(Driver, By.XPath($"{BaseXPath}//span[contains(text(), '{ResLeftNav.YourAccount}')]"));
         public EventTriggerButton<PageCreateNewListing> TriggerButtonCreateNewListings =>
            new EventTriggerButton<PageCreateNewListing>(Driver, By.XPath($"{BaseXPath}//span[contains(text(), '{ResLeftNav.CreateNewListing}')]"));
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

@@ -21,6 +21,11 @@ namespace RobotizeFacebook.App.LoggedIn.LeftMenu
         public EventTriggerDiv<PageTrash> DivTrash =>
            new EventTriggerDiv<PageTrash>(Driver, By.XPath($"{BaseXPath}//div[@role='button']//span[contains(text(),{ResMiscellaneous.Trash})]"));
 
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
+
         //public EventTriggerDiv<FeedContainerReviewPostsYouAreTaggedIn> DivReviewPostsYouAreTaggedIn =>
         //   new EventTriggerDiv<FeedContainerReviewPostsYouAreTaggedIn>(Driver, By.XPath($"{BaseXPath}//div[@role='button']//span[contains(text(),{ResMiscellaneous.ReviewPostsYouAreTaggedIn})]"));
 

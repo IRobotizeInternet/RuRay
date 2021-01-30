@@ -16,5 +16,10 @@ namespace RobotizeFacebook.App.LoggedIn
             new EventTriggerButton<PagePages>(Driver, By.XPath($"{BaseXPath}//span[contains(text(), '{ResLeftNav.LikedPages}')]"));
         public EventTriggerButton<PagePages> EventTriggerButtonInvites =>
             new EventTriggerButton<PagePages>(Driver, By.XPath($"{BaseXPath}//span[contains(text(), '{ResLeftNav.Invites}')]"));
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

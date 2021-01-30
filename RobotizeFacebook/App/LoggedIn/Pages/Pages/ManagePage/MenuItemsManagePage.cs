@@ -32,5 +32,10 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
             new EventTriggerButton<PageManagePage>(Driver, By.XPath($"{BaseXPath}//span[contains(text(), '{ResLeftNav.Settings}')]"));
         public EventTriggerButton<PageManagePage> EventTriggerButtonPromote =>
             new EventTriggerButton<PageManagePage>(Driver, By.XPath($"{BaseXPath}//span[contains(text(), '{ResLeftNav.Promote}')]"));
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
