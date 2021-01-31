@@ -187,6 +187,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Choose an Illustration.
+        /// </summary>
+        public static string ChooseAnIllustration {
+            get {
+                return ResourceManager.GetString("ChooseAnIllustration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Clear All.
         /// </summary>
         public static string ClearAll {
@@ -286,11 +295,29 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Friends.
+        /// </summary>
+        public static string Friends {
+            get {
+                return ResourceManager.GetString("Friends", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Give Feedback to Facebook.
         /// </summary>
         public static string GiveFeedbackToFacebook {
             get {
                 return ResourceManager.GetString("GiveFeedbackToFacebook", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Group.
+        /// </summary>
+        public static string Group {
+            get {
+                return ResourceManager.GetString("Group", resourceCulture);
             }
         }
         
@@ -381,6 +408,24 @@ namespace RobotizeFacebook.Resources {
         public static string PleaseIncludeAsMuchInfoAsPossible {
             get {
                 return ResourceManager.GetString("PleaseIncludeAsMuchInfoAsPossible", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Private.
+        /// </summary>
+        public static string Private {
+            get {
+                return ResourceManager.GetString("Private", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Public.
+        /// </summary>
+        public static string Public {
+            get {
+                return ResourceManager.GetString("Public", resourceCulture);
             }
         }
         

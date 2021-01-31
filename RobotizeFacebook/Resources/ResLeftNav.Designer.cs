@@ -205,6 +205,24 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Back.
+        /// </summary>
+        public static string Back {
+            get {
+                return ResourceManager.GetString("Back", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Birthday.
+        /// </summary>
+        public static string Birthday {
+            get {
+                return ResourceManager.GetString("Birthday", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Birthdays.
         /// </summary>
         public static string Birthdays {
@@ -259,6 +277,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Cancel.
+        /// </summary>
+        public static string Cancel {
+            get {
+                return ResourceManager.GetString("Cancel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cart.
         /// </summary>
         public static string Cart {
@@ -291,6 +318,15 @@ namespace RobotizeFacebook.Resources {
         public static string Cheap {
             get {
                 return ResourceManager.GetString("Cheap", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Choose Illustration.
+        /// </summary>
+        public static string ChooseIllustration {
+            get {
+                return ResourceManager.GetString("ChooseIllustration", resourceCulture);
             }
         }
         
@@ -457,6 +493,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Edit.
+        /// </summary>
+        public static string Edit {
+            get {
+                return ResourceManager.GetString("Edit", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Edit Page Info.
         /// </summary>
         public static string EditPageInfo {
@@ -493,11 +538,38 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to End Date.
+        /// </summary>
+        public static string EndDate {
+            get {
+                return ResourceManager.GetString("EndDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to End Date and Time.
+        /// </summary>
+        public static string EndDateAndTime {
+            get {
+                return ResourceManager.GetString("EndDateAndTime", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to End live video if stream stops.
         /// </summary>
         public static string EndLiveVideoIfStreamStops {
             get {
                 return ResourceManager.GetString("EndLiveVideoIfStreamStops", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to End Time.
+        /// </summary>
+        public static string EndTime {
+            get {
+                return ResourceManager.GetString("EndTime", resourceCulture);
             }
         }
         
@@ -520,11 +592,29 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Event name.
+        /// </summary>
+        public static string EventName {
+            get {
+                return ResourceManager.GetString("EventName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Events.
         /// </summary>
         public static string Events {
             get {
                 return ResourceManager.GetString("Events", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Event settings.
+        /// </summary>
+        public static string EventSettings {
+            get {
+                return ResourceManager.GetString("EventSettings", resourceCulture);
             }
         }
         
@@ -556,6 +646,24 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Family.
+        /// </summary>
+        public static string Family {
+            get {
+                return ResourceManager.GetString("Family", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Featured.
+        /// </summary>
+        public static string Featured {
+            get {
+                return ResourceManager.GetString("Featured", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Followers.
         /// </summary>
         public static string Followers {
@@ -570,6 +678,15 @@ namespace RobotizeFacebook.Resources {
         public static string Following {
             get {
                 return ResourceManager.GetString("Following", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Food and Drink.
+        /// </summary>
+        public static string FoodAndDrink {
+            get {
+                return ResourceManager.GetString("FoodAndDrink", resourceCulture);
             }
         }
         
@@ -660,6 +777,15 @@ namespace RobotizeFacebook.Resources {
         public static string Group {
             get {
                 return ResourceManager.GetString("Group", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Guests Can Invite Friends.
+        /// </summary>
+        public static string GuestsCanInviteFriends {
+            get {
+                return ResourceManager.GetString("GuestsCanInviteFriends", resourceCulture);
             }
         }
         
@@ -759,6 +885,15 @@ namespace RobotizeFacebook.Resources {
         public static string Interested {
             get {
                 return ResourceManager.GetString("Interested", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invalid Time.
+        /// </summary>
+        public static string InvalidTime {
+            get {
+                return ResourceManager.GetString("InvalidTime", resourceCulture);
             }
         }
         
@@ -898,6 +1033,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Next.
+        /// </summary>
+        public static string Next {
+            get {
+                return ResourceManager.GetString("Next", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to No Hours Available.
         /// </summary>
         public static string NoHoursAvailable {
@@ -921,6 +1065,15 @@ namespace RobotizeFacebook.Resources {
         public static string Notifications {
             get {
                 return ResourceManager.GetString("Notifications", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        public static string OK {
+            get {
+                return ResourceManager.GetString("OK", resourceCulture);
             }
         }
         
@@ -1087,6 +1240,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Party.
+        /// </summary>
+        public static string Party {
+            get {
+                return ResourceManager.GetString("Party", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Past Events.
         /// </summary>
         public static string PastEvents {
@@ -1186,6 +1348,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Privacy.
+        /// </summary>
+        public static string Privacy {
+            get {
+                return ResourceManager.GetString("Privacy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Privacy Policy.
         /// </summary>
         public static string PrivacyPolicy {
@@ -1267,6 +1438,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Remove co-host.
+        /// </summary>
+        public static string RemoveCoHost {
+            get {
+                return ResourceManager.GetString("RemoveCoHost", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Requests.
         /// </summary>
         public static string Requests {
@@ -1339,6 +1519,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Schedule Live Settings.
+        /// </summary>
+        public static string ScheduleLiveSettings {
+            get {
+                return ResourceManager.GetString("ScheduleLiveSettings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Schedule Live Video.
         /// </summary>
         public static string ScheduleLiveVideo {
@@ -1357,11 +1546,29 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Schedule without creating event.
+        /// </summary>
+        public static string ScheduleWithoutCreatingEvent {
+            get {
+                return ResourceManager.GetString("ScheduleWithoutCreatingEvent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Search Responses.
         /// </summary>
         public static string SearchResponses {
             get {
                 return ResourceManager.GetString("SearchResponses", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Seasons and Holiday.
+        /// </summary>
+        public static string SeasonsAndHoliday {
+            get {
+                return ResourceManager.GetString("SeasonsAndHoliday", resourceCulture);
             }
         }
         
@@ -1402,6 +1609,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Show guest list.
+        /// </summary>
+        public static string ShowGuestList {
+            get {
+                return ResourceManager.GetString("ShowGuestList", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Shows.
         /// </summary>
         public static string Shows {
@@ -1416,6 +1632,24 @@ namespace RobotizeFacebook.Resources {
         public static string Splurge {
             get {
                 return ResourceManager.GetString("Splurge", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Start Date.
+        /// </summary>
+        public static string StartDate {
+            get {
+                return ResourceManager.GetString("StartDate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Start Time.
+        /// </summary>
+        public static string StartTime {
+            get {
+                return ResourceManager.GetString("StartTime", resourceCulture);
             }
         }
         
@@ -1605,6 +1839,15 @@ namespace RobotizeFacebook.Resources {
         public static string UpcomingLiveVideosAndEvents {
             get {
                 return ResourceManager.GetString("UpcomingLiveVideosAndEvents", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Upload Cover Photo.
+        /// </summary>
+        public static string UploadCoverPhoto {
+            get {
+                return ResourceManager.GetString("UploadCoverPhoto", resourceCulture);
             }
         }
         

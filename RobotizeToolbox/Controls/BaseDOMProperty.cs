@@ -175,5 +175,22 @@ namespace RobotizeToolbox.CommonControls
             var scrollableElement = ancestors.FirstOrDefault(element => !element.Location.IsEmpty);
             return scrollableElement;
         }
+
+       
+        public void FileUpload(string filePath)
+        {
+            // By setting the file detector, the SendKeys method will first upload the 
+            // file from the local system to the remote machine on which the code is 
+            // actually running. Then SendKeys will set the file in the<input> element, 
+            // using the local file path on the remote machine.
+            var fileDetectionDriver = Driver as IAllowsFileDetection;
+            fileDetectionDriver.FileDetector = new LocalFileDetector();
+
+            var elementToSendKeys = Driver.FindElementWithTimeSpan(ByForElement);
+
+            if (elementToSendKeys.TagName != "input" || elementToSendKeys.GetAttribute("type") != "file") return;
+
+            elementToSendKeys.SendKeys(filePath);
+        }
     }
 }

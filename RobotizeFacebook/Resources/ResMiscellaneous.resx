@@ -279,4 +279,19 @@
   <data name="welcomeToEventsAdminTool" xml:space="preserve">
     <value>welcomeToEventsAdminTool</value>
   </data>
+  <data name="ChooseAnIllustration" xml:space="preserve">
+    <value>Choose an Illustration</value>
+  </data>
+  <data name="Friends" xml:space="preserve">
+    <value>Friends</value>
+  </data>
+  <data name="Group" xml:space="preserve">
+    <value>Group</value>
+  </data>
+  <data name="Private" xml:space="preserve">
+    <value>Private</value>
+  </data>
+  <data name="Public" xml:space="preserve">
+    <value>Public</value>
+  </data>
 </root>

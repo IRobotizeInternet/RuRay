@@ -165,6 +165,12 @@
   <data name="AppointmentSettings" xml:space="preserve">
     <value>Appointment Settings</value>
   </data>
+  <data name="Back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="Birthday" xml:space="preserve">
+    <value>Birthday</value>
+  </data>
   <data name="Birthdays" xml:space="preserve">
     <value>Birthdays</value>
   </data>
@@ -183,6 +189,9 @@
   <data name="Calendar" xml:space="preserve">
     <value>Calendar</value>
   </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
   <data name="Cart" xml:space="preserve">
     <value>Cart</value>
   </data>
@@ -194,6 +203,9 @@
   </data>
   <data name="Cheap" xml:space="preserve">
     <value>Cheap</value>
+  </data>
+  <data name="ChooseIllustration" xml:space="preserve">
+    <value>Choose Illustration</value>
   </data>
   <data name="City" xml:space="preserve">
     <value>City</value>
@@ -249,6 +261,9 @@
   <data name="DiscoverEvents" xml:space="preserve">
     <value>Discover Events</value>
   </data>
+  <data name="Edit" xml:space="preserve">
+    <value>Edit</value>
+  </data>
   <data name="EditPageInfo" xml:space="preserve">
     <value>Edit Page Info</value>
   </data>
@@ -261,8 +276,17 @@
   <data name="EmbedLiveVideo" xml:space="preserve">
     <value>Embed live video</value>
   </data>
+  <data name="EndDate" xml:space="preserve">
+    <value>End Date</value>
+  </data>
+  <data name="EndDateAndTime" xml:space="preserve">
+    <value>End Date and Time</value>
+  </data>
   <data name="EndLiveVideoIfStreamStops" xml:space="preserve">
     <value>End live video if stream stops</value>
+  </data>
+  <data name="EndTime" xml:space="preserve">
+    <value>End Time</value>
   </data>
   <data name="EnterAccountUsername" xml:space="preserve">
     <value>Enter account username</value>
@@ -270,8 +294,14 @@
   <data name="EventLogs" xml:space="preserve">
     <value>Event Logs</value>
   </data>
+  <data name="EventName" xml:space="preserve">
+    <value>Event name</value>
+  </data>
   <data name="Events" xml:space="preserve">
     <value>Events</value>
+  </data>
+  <data name="EventSettings" xml:space="preserve">
+    <value>Event settings</value>
   </data>
   <data name="EventTicketing" xml:space="preserve">
     <value>Event Ticketing</value>
@@ -282,11 +312,20 @@
   <data name="Facebook" xml:space="preserve">
     <value>Facebook</value>
   </data>
+  <data name="Family" xml:space="preserve">
+    <value>Family</value>
+  </data>
+  <data name="Featured" xml:space="preserve">
+    <value>Featured</value>
+  </data>
   <data name="Followers" xml:space="preserve">
     <value>Followers</value>
   </data>
   <data name="Following" xml:space="preserve">
     <value>Following</value>
+  </data>
+  <data name="FoodAndDrink" xml:space="preserve">
+    <value>Food and Drink</value>
   </data>
   <data name="Gaming" xml:space="preserve">
     <value>Gaming</value>
@@ -317,6 +356,9 @@
   </data>
   <data name="Group" xml:space="preserve">
     <value>Group</value>
+  </data>
+  <data name="GuestsCanInviteFriends" xml:space="preserve">
+    <value>Guests Can Invite Friends</value>
   </data>
   <data name="Help" xml:space="preserve">
     <value>Help</value>
@@ -350,6 +392,9 @@
   </data>
   <data name="Interested" xml:space="preserve">
     <value>Interested</value>
+  </data>
+  <data name="InvalidTime" xml:space="preserve">
+    <value>Invalid Time</value>
   </data>
   <data name="Invites" xml:space="preserve">
     <value>Invites</value>
@@ -396,6 +441,9 @@
   <data name="NewsFeed" xml:space="preserve">
     <value>News Feed</value>
   </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
   <data name="NoHoursAvailable" xml:space="preserve">
     <value>No Hours Available</value>
   </data>
@@ -404,6 +452,9 @@
   </data>
   <data name="Notifications" xml:space="preserve">
     <value>Notifications</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
   </data>
   <data name="Oldest" xml:space="preserve">
     <value>Oldest</value>
@@ -459,6 +510,9 @@
   <data name="PageViews" xml:space="preserve">
     <value>Page Views</value>
   </data>
+  <data name="Party" xml:space="preserve">
+    <value>Party</value>
+  </data>
   <data name="PastEvents" xml:space="preserve">
     <value>Past Events</value>
   </data>
@@ -492,6 +546,9 @@
   <data name="PreferredPageAudience" xml:space="preserve">
     <value>Preferred Page Audience</value>
   </data>
+  <data name="Privacy" xml:space="preserve">
+    <value>Privacy</value>
+  </data>
   <data name="PrivacyPolicy" xml:space="preserve">
     <value>Privacy Policy</value>
   </data>
@@ -519,6 +576,9 @@
   <data name="RecentActivity" xml:space="preserve">
     <value>Recent Activity</value>
   </data>
+  <data name="RemoveCoHost" xml:space="preserve">
+    <value>Remove co-host</value>
+  </data>
   <data name="Requests" xml:space="preserve">
     <value>Requests</value>
   </data>
@@ -543,14 +603,23 @@
   <data name="ScheduleALiveVideo" xml:space="preserve">
     <value>Schedule a Live Video</value>
   </data>
+  <data name="ScheduleLiveSettings" xml:space="preserve">
+    <value>Schedule Live Settings</value>
+  </data>
   <data name="ScheduleLiveVideo" xml:space="preserve">
     <value>Schedule Live Video</value>
   </data>
   <data name="ScheduleLiveVideoEvent" xml:space="preserve">
     <value>Schedule Live Video Event</value>
   </data>
+  <data name="ScheduleWithoutCreatingEvent" xml:space="preserve">
+    <value>Schedule without creating event</value>
+  </data>
   <data name="SearchResponses" xml:space="preserve">
     <value>Search Responses</value>
+  </data>
+  <data name="SeasonsAndHoliday" xml:space="preserve">
+    <value>Seasons and Holiday</value>
   </data>
   <data name="SelectAGraphicsPackage" xml:space="preserve">
     <value>Select a graphics package</value>
@@ -564,11 +633,20 @@
   <data name="Settings" xml:space="preserve">
     <value>Settings</value>
   </data>
+  <data name="ShowGuestList" xml:space="preserve">
+    <value>Show guest list</value>
+  </data>
   <data name="Shows" xml:space="preserve">
     <value>Shows</value>
   </data>
   <data name="Splurge" xml:space="preserve">
     <value>Splurge</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>Start Date</value>
+  </data>
+  <data name="StartTime" xml:space="preserve">
+    <value>Start Time</value>
   </data>
   <data name="Station" xml:space="preserve">
     <value>Station</value>
@@ -632,6 +710,9 @@
   </data>
   <data name="UpcomingLiveVideosAndEvents" xml:space="preserve">
     <value>Upcoming Live Videos &amp;amps; Events</value>
+  </data>
+  <data name="UploadCoverPhoto" xml:space="preserve">
+    <value>Upload Cover Photo</value>
   </data>
   <data name="UseABackupStream" xml:space="preserve">
     <value>Use a Backup Stream</value>
