@@ -2,7 +2,7 @@
 
 namespace RobotizeFacebook.App.NotLoggedIn
 {
-    public class PagePrivacy : PageBase
+    public class PagePrivacy : BasePage
     {
         public override string PageUrl => "about/privacy/update";
 

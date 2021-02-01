@@ -2,7 +2,7 @@
 
 namespace RobotizeFacebook.App.NotLoggedIn.Help
 {
-    public class PageHelpChooseALegacyContact : PageBase
+    public class PageHelpChooseALegacyContact : BasePage
     {
         public override string PageUrl => "/help";
 

@@ -3,7 +3,7 @@ using System;
 
 namespace RobotizeFacebook.App
 {
-    public class PageWeather : PageBase
+    public class PageWeather : BasePage
     {
         public override string PageUrl => throw new NotImplementedException();
 

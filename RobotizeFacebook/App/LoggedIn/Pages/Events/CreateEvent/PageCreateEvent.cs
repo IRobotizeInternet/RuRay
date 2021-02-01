@@ -3,7 +3,7 @@ using System;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
-    public class PageCreateEvent : PageBase
+    public class PageCreateEvent : BasePage
     {
         public override string PageUrl => "/events/create/";
 

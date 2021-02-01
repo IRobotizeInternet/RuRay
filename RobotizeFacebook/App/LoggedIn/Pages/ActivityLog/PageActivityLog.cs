@@ -4,7 +4,7 @@ using RobotizeFacebook.Resources;
 
 namespace RobotizeFacebook.App.LoggedIn
 {
-    public class PageActivityLog : PageBase
+    public class PageActivityLog : BasePage
     {
         public override string PageUrl => "/allactivity/";
 

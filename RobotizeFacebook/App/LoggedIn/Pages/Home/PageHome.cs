@@ -2,7 +2,7 @@
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
-    public class PageHome : PageBase
+    public class PageHome : BasePage
     {
         public PageHome()
         {

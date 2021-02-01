@@ -3,7 +3,7 @@ using OpenQA.Selenium.Remote;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
-    public class PageCreateNewListing : PageBase
+    public class PageCreateNewListing : BasePage
     {
         public override string PageUrl => "/marketplace/create";
 

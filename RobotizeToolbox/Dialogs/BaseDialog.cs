@@ -17,10 +17,10 @@ namespace RobotizeToolbox.Dialogs
         protected BaseDialog(RemoteWebDriver driver)
         {
             Driver = driver;
-            if (ByForDialog != null)  WaitForDialogToAppear();
+            if (ByForDialog != null)  WaitForDialogToAppear(ByForDialog);
         }
 
-        protected virtual void WaitForDialogToAppear()
+        protected virtual void WaitForDialogToAppear(By byForDialog)
         {
             Driver.WaitUntilElementAppears(ByForDialog);
         }

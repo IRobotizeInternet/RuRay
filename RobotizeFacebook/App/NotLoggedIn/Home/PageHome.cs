@@ -3,7 +3,7 @@ using RobotizeToolbox.CommonControls;
 
 namespace RobotizeFacebook.App.NotLoggedIn
 {
-    public class PageHome : PageBase
+    public class PageHome : BasePage
     {
         public override string PageUrl => "/";
 

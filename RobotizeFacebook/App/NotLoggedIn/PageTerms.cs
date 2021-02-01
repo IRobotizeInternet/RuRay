@@ -2,7 +2,7 @@
 
 namespace RobotizeFacebook.App.NotLoggedIn
 {
-    public class PageTerms : PageBase
+    public class PageTerms : BasePage
     {
         public override string PageUrl => "legal/terms/update";
 

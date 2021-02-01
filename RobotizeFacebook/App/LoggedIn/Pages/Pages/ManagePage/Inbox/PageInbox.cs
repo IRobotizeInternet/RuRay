@@ -3,7 +3,7 @@ using System;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
-    public class PageInbox : PageBase
+    public class PageInbox : BasePage
     {
         public override string PageUrl => throw new NotImplementedException();
 

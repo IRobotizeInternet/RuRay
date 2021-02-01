@@ -1,10 +1,5 @@
 ﻿using RobotizeFacebook.Resources;
 using RobotizeToolbox.CustomAttributes;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RobotizeFacebook.App.LoggedIn.Enum
 {

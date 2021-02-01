@@ -3,7 +3,7 @@ using OpenQA.Selenium.Remote;
 
 namespace RobotizeFacebook.App.LoggedIn
 {
-    public class PagePrivacyCheckup : PageBase
+    public class PagePrivacyCheckup : BasePage
     {
         public override string PageUrl => "/privacy/checkup/";
 

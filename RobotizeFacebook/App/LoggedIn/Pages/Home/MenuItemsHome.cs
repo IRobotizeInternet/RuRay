@@ -3,7 +3,7 @@ using OpenQA.Selenium.Remote;
 
 namespace RobotizeFacebook.App
 {
-    public class PageTimeline : PageBase
+    public class PageTimeline : BasePage
     {
         public override string PageUrl => "{0}";
 

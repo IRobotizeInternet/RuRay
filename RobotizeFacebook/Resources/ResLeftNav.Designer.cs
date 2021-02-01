@@ -322,6 +322,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Choose an Illustration.
+        /// </summary>
+        public static string ChooseAnIllustration {
+            get {
+                return ResourceManager.GetString("ChooseAnIllustration", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Choose Illustration.
         /// </summary>
         public static string ChooseIllustration {
@@ -345,6 +354,15 @@ namespace RobotizeFacebook.Resources {
         public static string Clear {
             get {
                 return ResourceManager.GetString("Clear", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Close.
+        /// </summary>
+        public static string Close {
+            get {
+                return ResourceManager.GetString("Close", resourceCulture);
             }
         }
         
@@ -381,6 +399,15 @@ namespace RobotizeFacebook.Resources {
         public static string Copy {
             get {
                 return ResourceManager.GetString("Copy", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Cover Photo.
+        /// </summary>
+        public static string CoverPhoto {
+            get {
+                return ResourceManager.GetString("CoverPhoto", resourceCulture);
             }
         }
         
@@ -516,6 +543,15 @@ namespace RobotizeFacebook.Resources {
         public static string EditPoll {
             get {
                 return ResourceManager.GetString("EditPoll", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Edit Post.
+        /// </summary>
+        public static string EditPost {
+            get {
+                return ResourceManager.GetString("EditPost", resourceCulture);
             }
         }
         
@@ -799,6 +835,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Holiday.
+        /// </summary>
+        public static string Holiday {
+            get {
+                return ResourceManager.GetString("Holiday", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Home.
         /// </summary>
         public static string Home {
@@ -952,6 +997,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Live Video Event Successfully Created.
+        /// </summary>
+        public static string LiveVideoEventSuccessfullyCreated {
+            get {
+                return ResourceManager.GetString("LiveVideoEventSuccessfullyCreated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Manage.
         /// </summary>
         public static string Manage {
@@ -993,6 +1047,15 @@ namespace RobotizeFacebook.Resources {
         public static string Moderate {
             get {
                 return ResourceManager.GetString("Moderate", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to More.
+        /// </summary>
+        public static string More {
+            get {
+                return ResourceManager.GetString("More", resourceCulture);
             }
         }
         
@@ -1438,6 +1501,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Recreation.
+        /// </summary>
+        public static string Recreation {
+            get {
+                return ResourceManager.GetString("Recreation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Remove co-host.
         /// </summary>
         public static string RemoveCoHost {
@@ -1564,6 +1636,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Seasons.
+        /// </summary>
+        public static string Seasons {
+            get {
+                return ResourceManager.GetString("Seasons", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Seasons and Holiday.
         /// </summary>
         public static string SeasonsAndHoliday {
@@ -1605,6 +1686,15 @@ namespace RobotizeFacebook.Resources {
         public static string Settings {
             get {
                 return ResourceManager.GetString("Settings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Set Up Live Video.
+        /// </summary>
+        public static string SetUpLiveVideo {
+            get {
+                return ResourceManager.GetString("SetUpLiveVideo", resourceCulture);
             }
         }
         
@@ -1807,6 +1897,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Travel.
+        /// </summary>
+        public static string Travel {
+            get {
+                return ResourceManager.GetString("Travel", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Turn on auto-generated captions.
         /// </summary>
         public static string TurnOnAutoGeneratedCaptions {
@@ -1920,6 +2019,15 @@ namespace RobotizeFacebook.Resources {
         public static string Viewing {
             get {
                 return ResourceManager.GetString("Viewing", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to View Post.
+        /// </summary>
+        public static string ViewPost {
+            get {
+                return ResourceManager.GetString("ViewPost", resourceCulture);
             }
         }
         

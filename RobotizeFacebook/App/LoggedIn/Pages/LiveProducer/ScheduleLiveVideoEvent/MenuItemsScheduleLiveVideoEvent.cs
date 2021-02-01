@@ -7,12 +7,8 @@ using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls;
 using RobotizeToolbox.Controls.TriggerControls;
 using RobotizeToolbox.Dialogs;
-using RobotizeToolbox.Extensions;
 using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages.JobsComposer.ScheduleLiveVideoEvent
 {
@@ -88,7 +84,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages.JobsComposer.ScheduleLiveVideoEven
 
         public IWebElement ButtonImageIllustration(int index)
         {
-            var illustrations = Driver.FindElements(By.XPath($"//div[@aria-label='Schedule Live Settings']//img[contains(@alt,'Seasons') or contains(@alt,'Holiday') or contains(@alt,'Family')]"));
+            var illustrations = Driver.FindElements(By.XPath($"//div[@aria-label='{ResLeftNav.ScheduleLiveSettings}']//img[contains(@alt,'{ResLeftNav.Seasons}') or contains(@alt,'{ResLeftNav.Holiday}') or contains(@alt,'{ResLeftNav.Family}')]"));
             if (illustrations.Count() < index) return null;
             return illustrations[index];
         }
@@ -111,10 +107,20 @@ namespace RobotizeFacebook.App.LoggedIn.Pages.JobsComposer.ScheduleLiveVideoEven
             {
             }
 
-            protected override By ByForDialog => By.XPath($"//div[@aria-label='{ResLeftNav.InvalidTime}']");
+            protected override By ByForDialog => By.XPath($"//span[text()='{ResLeftNav.InvalidTime}']");
 
-            public Button ButtonOK => new Button(Driver, By.XPath($"//div[@aria-label='{ResLeftNav.InvalidTime}']//div[@aria-label='{ResLeftNav.OK}']"));
+            public Button ButtonOK => new Button(Driver, By.XPath($"//span[text()='{ResLeftNav.InvalidTime}' and //span[text()='{ResLeftNav.OK}']]"));
         }
 
+        public class DialogLiveVideoEventSuccessfullyCreated : BaseDialog
+        {
+            public DialogLiveVideoEventSuccessfullyCreated(RemoteWebDriver driver) : base(driver)
+            {
+            }
+
+            protected override By ByForDialog => By.XPath($"//span[text()='{ResLeftNav.LiveVideoEventSuccessfullyCreated}']");
+
+            public EventTriggerButton<DialogScheduleNext> ButtonClose => new EventTriggerButton<DialogScheduleNext>(Driver, By.XPath($"//span[text()='{ResLeftNav.Close}' and //span[text()='{ResLeftNav.LiveVideoEventSuccessfullyCreated}']]"));
+        }
     }
 }

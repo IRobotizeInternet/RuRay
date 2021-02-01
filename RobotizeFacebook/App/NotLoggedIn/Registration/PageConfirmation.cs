@@ -6,7 +6,7 @@ using RobotizeToolbox.Controls.TriggerControls;
 
 namespace RobotizeFacebook.App.NotLoggedIn.Login
 {
-    public class PageConfirmation : PageBase
+    public class PageConfirmation : BasePage
     {
         public override string PageUrl => "confirmemail.php";
 

@@ -3,7 +3,7 @@ using OpenQA.Selenium.Remote;
 
 namespace RobotizeFacebook.App.LoggedIn
 {
-    public class PageHelp : PageBase
+    public class PageHelp : BasePage
     {
         public override string PageUrl => "/help/";
 

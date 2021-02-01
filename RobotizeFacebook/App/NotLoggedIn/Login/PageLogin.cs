@@ -1,5 +1,4 @@
 ﻿using OpenQA.Selenium;
-using RobotizeFacebook.App.NotLoggedIn;
 using RobotizeFacebook.App.PasswordRecovery;
 using RobotizeFacebook.Utilities;
 using RobotizeToolbox.CommonControls;
@@ -9,7 +8,7 @@ using RobotizeToolbox.Controls;
 
 namespace RobotizeFacebook.App.NotLoggedIn
 {
-    public class PageLogin : PageBase
+    public class PageLogin : BasePage
     {
         public override string PageUrl => "/";
 

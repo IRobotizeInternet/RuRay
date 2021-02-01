@@ -3,10 +3,6 @@ using RobotizeFacebook.Resources;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {

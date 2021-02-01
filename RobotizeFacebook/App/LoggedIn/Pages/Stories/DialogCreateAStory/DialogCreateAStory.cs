@@ -3,7 +3,7 @@ using RobotizeToolbox.Controls.TriggerControls;
 
 namespace RobotizeFacebook.App.LoggedIn.Stories.Create
 {
-    public class DialogCreateAStory : PageBase
+    public class DialogCreateAStory : BasePage
     {
         public override string PageUrl => "/stories/create";
 

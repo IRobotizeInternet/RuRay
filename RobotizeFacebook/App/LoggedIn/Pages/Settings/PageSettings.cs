@@ -3,7 +3,7 @@ using OpenQA.Selenium.Remote;
 
 namespace RobotizeFacebook.App
 {
-    public class PageSettings : PageBase
+    public class PageSettings : BasePage
     {
         public override string PageUrl => "/settings/";
 

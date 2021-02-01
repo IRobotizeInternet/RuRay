@@ -3,7 +3,7 @@ using OpenQA.Selenium.Remote;
 
 namespace RobotizeFacebook.App
 {
-    public class DivArchive : PageBase
+    public class DivArchive : BasePage
     {
         public override string PageUrl => "/allactivity/?category_key=ARCHIVED";
 

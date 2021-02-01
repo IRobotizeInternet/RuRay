@@ -4,7 +4,7 @@ using System;
 
 namespace RobotizeFacebook.App.LoggedIn
 {
-    public class PageSupportInbox : PageBase
+    public class PageSupportInbox : BasePage
     {
         public override string PageUrl => throw new NotImplementedException();
 

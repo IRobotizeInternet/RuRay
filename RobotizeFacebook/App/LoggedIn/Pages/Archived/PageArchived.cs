@@ -3,7 +3,7 @@ using System;
 
 namespace RobotizeFacebook.App
 {
-    public class PageArchived : PageBase
+    public class PageArchived : BasePage
     {
         public override string PageUrl => throw new NotImplementedException();
 

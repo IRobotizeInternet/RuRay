@@ -158,6 +158,7 @@
     <Compile Include="App\LoggedIn\Components\CreatePost\PopupNotificationSettings.cs" />
     <Compile Include="App\LoggedIn\Dialogs\PopupMessanger.cs" />
     <Compile Include="App\LoggedIn\Dialogs\PopupNotifications.cs" />
+    <Compile Include="App\LoggedIn\Enum\MoreIllustration.cs" />
     <Compile Include="App\LoggedIn\Enum\Privacy.cs" />
     <Compile Include="App\LoggedIn\Enum\WhereToPost.cs" />
     <Compile Include="App\LoggedIn\Pages\Events\CreateEvent\DialogCreateEventInPerson.cs" />
@@ -185,14 +186,10 @@
     <Compile Include="App\LoggedIn\Pages\JobsComposer\FeedGoLiveWithOthers.cs" />
     <Compile Include="App\LoggedIn\Pages\JobsComposer\FeedJobsComposer.cs" />
     <Compile Include="App\LoggedIn\Pages\JobsComposer\MenuItemsCommon.cs" />
-    <Compile Include="App\LoggedIn\Pages\LiveProducer\ScheduleLiveVideoEvent\ChooseAnIllustration\DialogChooseIllustration - Copy %282%29.cs" />
-    <Compile Include="App\LoggedIn\Pages\LiveProducer\ScheduleLiveVideoEvent\ChooseAnIllustration\DialogChooseIllustration - Copy %283%29.cs" />
-    <Compile Include="App\LoggedIn\Pages\LiveProducer\ScheduleLiveVideoEvent\ChooseAnIllustration\DialogChooseIllustration - Copy %284%29.cs" />
-    <Compile Include="App\LoggedIn\Pages\LiveProducer\ScheduleLiveVideoEvent\ChooseAnIllustration\TabChooseIllustration.cs" />
+    <Compile Include="App\LoggedIn\Pages\LiveProducer\FeedUpcomingLiveVideosAndEvents.cs" />
     <Compile Include="App\LoggedIn\Pages\LiveProducer\ScheduleLiveVideoEvent\ChooseAnIllustration\DialogChooseIllustration.cs" />
     <Compile Include="App\LoggedIn\Pages\LiveProducer\ScheduleLiveVideoEvent\DialogEventSettings.cs" />
     <Compile Include="App\LoggedIn\Pages\LiveProducer\ScheduleLiveVideoEvent\FeedScheduleLiveVideoEvent.cs" />
-    <Compile Include="App\LoggedIn\Pages\JobsComposer\FeedUpcomingLiveVideosAndEvents.cs" />
     <Compile Include="App\LoggedIn\Pages\JobsComposer\MenuItemsJobsComposer.cs" />
     <Compile Include="App\LoggedIn\Pages\JobsComposer\PageJobsComposer.cs" />
     <Compile Include="App\LoggedIn\Pages\LiveProducer\ScheduleLiveVideoEvent\MenuItemsScheduleLiveVideoEvent.cs" />
@@ -200,6 +197,7 @@
     <Compile Include="App\LoggedIn\Pages\LiveProducer\FeedLiveProducer.cs" />
     <Compile Include="App\LoggedIn\Pages\LiveProducer\MenuItemsLiveProducer.cs" />
     <Compile Include="App\LoggedIn\Pages\LiveProducer\PageLiveProducer.cs" />
+    <Compile Include="App\LoggedIn\Pages\LiveProducer\UpcomingEvents\PageUpcomingEvent.cs" />
     <Compile Include="App\LoggedIn\Pages\Marketplace\FeedMarketplaceCart.cs" />
     <Compile Include="App\LoggedIn\Pages\Marketplace\FeedMarketplaceNotification.cs" />
     <Compile Include="App\LoggedIn\Pages\Marketplace\YourAccount\DialogCommerceProfile.cs" />

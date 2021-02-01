@@ -1,5 +1,4 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.Controls;
 

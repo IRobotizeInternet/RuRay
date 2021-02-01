@@ -5,7 +5,7 @@ using RobotizeToolbox.Controls.TriggerControls;
 
 namespace RobotizeFacebook.App.PasswordRecovery
 {
-    public class PasswordRecoveryPage : PageBase
+    public class PasswordRecoveryPage : BasePage
     {
         public override string PageUrl => "login/identify/?ctx=recover&ars=facebook_login";
 

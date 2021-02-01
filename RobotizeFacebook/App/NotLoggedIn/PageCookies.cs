@@ -2,7 +2,7 @@
 
 namespace RobotizeFacebook.App.NotLoggedIn
 {
-    public class PageCookies : PageBase
+    public class PageCookies : BasePage
     {
         public override string PageUrl => "policies/cookies/";
 
