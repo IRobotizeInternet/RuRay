@@ -1229,6 +1229,7 @@
     <Compile Include="Services\ServiceBrowser.cs" />
     <Compile Include="Services\ServiceCulture.cs" />
     <Compile Include="Utilities\AppSettings.cs" />
+    <Compile Include="Utilities\ScriptUsingFacebook.cs" />
     <Compile Include="WebDrivers\Chrome.cs" />
     <Compile Include="WebDrivers\Edge.cs" />
     <Compile Include="WebDrivers\InternetExplorer.cs" />

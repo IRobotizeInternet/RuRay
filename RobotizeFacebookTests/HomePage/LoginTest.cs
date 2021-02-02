@@ -1,4 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using RobotizeFacebook.Utilities;
 
 namespace RobotizeFacebookTests.HomePage
 {
@@ -9,7 +10,8 @@ namespace RobotizeFacebookTests.HomePage
         public void TestLogInTotheHomePage()
         {
             // dummy test
-            Assert.AreEqual("a", "a");
+            var a = new ScriptUsingFacebook();
+            a.GenerateFacebookHelpApi();
         }
 
         // Mark that this is a unit test method. (Required)
