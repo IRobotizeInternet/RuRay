@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using OpenQA.Selenium;
 using RobotizeFacebook.App;
-using RobotizeFacebook.App.LoggedIn.Pages;
+using System.Reflection.Emit;
 
 namespace SupportingScripts
 {
@@ -16,6 +16,7 @@ namespace SupportingScripts
             var classes = new List<string>();
             foreach(var parent in page.GetMenuItemsNames)
             {
+
                 page.GetMenuItemHyperlink(parent).Click();
                 var childrens = page.GetSubMenuItemsName(parent);
                 var className = CreateClass(parent.Replace(" ", ""));

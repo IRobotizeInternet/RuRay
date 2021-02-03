@@ -16,7 +16,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RobotizeToolbox", "Robotize
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "RasaEngine", "RasaEngine\RasaEngine.pyproj", "{EC42BAE7-121A-4972-9363-AB5FD7297A74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SupportingScripts", "SupportingScripts\SupportingScripts.csproj", "{0BE8769F-B5C4-4BAF-8E26-B1407F26FD08}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SupportingScripts", "SupportingScripts\SupportingScripts.csproj", "{0BE8769F-B5C4-4BAF-8E26-B1407F26FD08}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

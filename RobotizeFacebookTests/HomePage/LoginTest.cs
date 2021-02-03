@@ -10,8 +10,10 @@ namespace RobotizeFacebookTests.HomePage
         public void TestLogInTotheHomePage()
         {
             // dummy test
-            var a = new ScriptUsingFacebook();
-            a.GenerateFacebookHelpApi();
+            //var a = new ScriptUsingFacebook();
+            //a.GenerateFacebookHelpApi();
+            var dynamicGenerate = new DynamicCodeGeneration();
+            dynamicGenerate.GenerateClassCode();
         }
 
         // Mark that this is a unit test method. (Required)

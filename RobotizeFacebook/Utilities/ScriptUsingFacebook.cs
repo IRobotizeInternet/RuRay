@@ -13,33 +13,39 @@ namespace RobotizeFacebook.Utilities
         {
             var page = new PageHelp();
             var classes = new List<string>();
-            foreach(var parent in page.GetMenuItemsNames)
-            {
-                page.GetMenuItemHyperlink(parent).Click();
-                var childrens = page.GetSubMenuItemsName(parent);
-                var className = CreateClass(parent.Replace(" ", ""));
 
-                if (!childrens.Any()) continue;
-                foreach(var child in childrens)
+
+            foreach (var mainMenuItem in page.GetMainMenuItems)
+            {
+                page.GetFirstItem(mainMenuItem).Click();
+                foreach (var parent in page.GetMenuItemsNames)
                 {
-                    page.GetSubMenuItemHyperlink(parent, child).Click();
-                    foreach(var funtionDiv in page.GetFunctionNames)
+                    page.GetMenuItemHyperlink(parent).Click();
+                    var childrens = page.GetSubMenuItemsName(parent);
+                    var className = CreateClass(parent.Replace(" ", ""));
+
+                    if (!childrens.Any()) continue;
+                    foreach (var child in childrens)
                     {
-                        funtionDiv.Click();
-                        foreach (var method in page.GetAllActions(funtionDiv.FindElement(By.XPath("//div[@role='main']//h3//span")).Text))
+                        page.GetSubMenuItemHyperlink(parent, child).Click();
+                        foreach (var funtionDiv in page.GetFunctionNames)
                         {
-                            var h3 = page.GetDescriptionHeader(method.Text);
-                            var header = h3.Text;
-                            foreach(var divText in h3.FindElements(By.XPath("/parent::div//li/div")))
+                            funtionDiv.Click();
+                            foreach (var method in page.GetAllActions(funtionDiv.FindElement(By.XPath("//div[@role='main']//h3//span")).Text))
                             {
-                                var r = divText.Text;
+                                var h3 = page.GetDescriptionHeader(method.Text);
+                                var header = h3.Text;
+                                foreach (var divText in h3.FindElements(By.XPath("/parent::div//li/div")))
+                                {
+                                    var r = divText.Text;
+                                }
                             }
                         }
                     }
-                }
 
-                CloseClass(className);
-                classes.Add(parent.Replace(" ", ""));
+                    CloseClass(className);
+                    classes.Add(parent.Replace(" ", ""));
+                }
             }
         }
 
@@ -74,6 +80,13 @@ namespace RobotizeFacebook.Utilities
 
             public IEnumerable<IWebElement> GetFunctionNames =>
                 Driver.FindElements(By.XPath("//div[@role='main']//h3"));
+
+            public IWebElement GetFirstItem(string name) =>
+                Driver.FindElement(By.XPath($"//a[@aria-labelledby='{name}'][1]"));
+
+            public IEnumerable<string> GetMainMenuItems =>
+                Driver.FindElements(By.XPath("//div[@aria-haspopup='menu']/div/span")).Select(x => x.Text);
+
             public override void RunConformance()
             {
                 throw new NotImplementedException();
