@@ -13,7 +13,7 @@ namespace RobotizeFacebookTests.HomePage
             //var a = new ScriptUsingFacebook();
             //a.GenerateFacebookHelpApi();
             var dynamicGenerate = new DynamicCodeGeneration();
-            dynamicGenerate.GenerateClassCode();
+            dynamicGenerate.GenerateClassCode("TestNameSpace", "TestClassName", new[] {"Method1", "Method2" });
         }
 
         // Mark that this is a unit test method. (Required)

@@ -5,125 +5,119 @@ using System.CodeDom.Compiler;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Text.RegularExpressions;
 
 namespace RobotizeFacebook.Utilities
 {
     public class DynamicCodeGeneration
     {
-        public void GenerateClassCode()
+        public void GenerateClassCode(string nameSpace, string className, IEnumerable<string> methods)
         {
-            var namespaceName = "FacebookHelpCode";
-            var className = "HelloWorld";
-
-            var compileUnit = BuildHelloWorldGraph(namespaceName, new List<string> { "System" }, className);
-            var classString = CreateClass(compileUnit);
-        }
-        public string CreateClass(CodeCompileUnit compileunit)
-        {
-            // Generate the code with the C# code provider.
-            var provider = new CSharpCodeProvider();
-
-            // Build the output file name.
-            string sourceFile;
-            if (provider.FileExtension[0] == '.')
-            {
-                sourceFile = "HelloWorld" + provider.FileExtension;
-            }
-            else
-            {
-                sourceFile = "HelloWorld." + provider.FileExtension;
-            }
-
-            // Create a TextWriter to a StreamWriter to the output file.
-            using (StreamWriter sw = new StreamWriter(sourceFile, false))
-            {
-                var tw = new IndentedTextWriter(sw, "    ");
-
-                // Generate source code using the code provider.
-                provider.GenerateCodeFromCompileUnit(compileunit, tw, new CodeGeneratorOptions());
-
-                // Close the output file.
-                tw.Close();
-            }
-
-            return sourceFile;
+            //var compileUnit = BuildHelloWorldGraph(nameSpace, new List<string> { "System" }, className, methods);
+            //var classString = CreateClass(compileUnit, className);
+            CreateClass("cs", "ChecksumPragma.cs");
         }
 
-        // Build a Hello World program graph using
-        // System.CodeDom types.
-        public CodeCompileUnit BuildHelloWorldGraph(
-            string nameSpaceString, 
-            IEnumerable<string> directives, 
-            string classNameString)
+        public void CreateClass(string providerName, string sourceFileName)
         {
-            // Create a new CodeCompileUnit to contain
-            // the program graph.
-            CodeCompileUnit compileUnit = new CodeCompileUnit();
+            CodeDomProvider provider = CodeDomProvider.CreateProvider(providerName);
 
-            // Declare a new namespace called Samples.
-            CodeNamespace nameSpace = new CodeNamespace(nameSpaceString);
+            Console.WriteLine("Building the CodeDOM graph...");
 
-            // Add the new namespace to the compile unit.
-            compileUnit.Namespaces.Add(nameSpace);
+            CodeCompileUnit cu = new CodeCompileUnit();
 
-            // Add the new namespace import for the System namespace.
-            foreach(var directive in directives) nameSpace.Imports.Add(new CodeNamespaceImport(directive));
+            CreateGraph(cu);
 
-            // Declare a new type called classNameString.
-            var className = new CodeTypeDeclaration(classNameString);
+            StringWriter sw = new StringWriter();
 
-            // Add the new type to the namespace type collection.
-            nameSpace.Types.Add(className);
+            Console.WriteLine("Generating code...");
+            provider.GenerateCodeFromCompileUnit(cu, sw, null);
 
-            // Declare a new code entry point method.
-            CodeEntryPointMethod start = new CodeEntryPointMethod();
+            string output = sw.ToString();
+            output = Regex.Replace(output, "Runtime Version:[^\r\n]*",
+                "Runtime Version omitted for demo");
+
+            Console.WriteLine("Dumping source code...");
+            Console.WriteLine(output);
+
+            Console.WriteLine("Writing source code to file...");
+            Stream s = File.Open(sourceFileName, FileMode.Create);
+            StreamWriter t = new StreamWriter(s);
+            t.Write(output);
+            t.Close();
+            s.Close();
+        }
+
+        // Create a CodeDOM graph.
+        static void CreateGraph(CodeCompileUnit cu)
+        {
+            CodeNamespace ns = new CodeNamespace("Namespace1");
+            ns.Imports.Add(new CodeNamespaceImport("System"));
+            ns.Imports.Add(new CodeNamespaceImport("System.IO"));
+            cu.Namespaces.Add(ns);
+            ns.Comments.Add(new CodeCommentStatement("Namespace Comment"));
+            CodeTypeDeclaration cd = new CodeTypeDeclaration("Class1");
+            ns.Types.Add(cd);
+
+            cd.Comments.Add(new CodeCommentStatement("Outer Type Comment"));
+
+            CodeMemberMethod method1 = new CodeMemberMethod();
+            method1.Name = "Method1";
+            method1.Attributes = (method1.Attributes & ~MemberAttributes.AccessMask) | MemberAttributes.Public;
+
+            CodeMemberMethod method2 = new CodeMemberMethod();
+            method2.Name = "Method2";
+            method2.Attributes = (method2.Attributes & ~MemberAttributes.AccessMask) | MemberAttributes.Public;
+            method2.Comments.Add(new CodeCommentStatement("Method 2 Comment"));
+
+            cd.Members.Add(method1);
+            cd.Members.Add(method2);
+
+            CodeMemberField field1 = new CodeMemberField(typeof(string), "field1");
+            CodeMemberProperty cp = new CodeMemberProperty();
+            cp.Name = "StringProperty";
+            cp.Type = new CodeTypeReference("System.String");
+            cp.Attributes = (cp.Attributes & ~MemberAttributes.AccessMask) | MemberAttributes.Public;
+            cp.GetStatements.Add(new CodeMethodReturnStatement(new CodeFieldReferenceExpression(new CodeThisReferenceExpression(), nameof(field1))));
+            cd.Members.Add(cp);
+            cd.Members.Add(field1);
+            field1.Comments.Add(new CodeCommentStatement("Field 1 Comment"));
+
+            CodeSnippetStatement snippet1 = new CodeSnippetStatement();
+            snippet1.Value = "            Console.WriteLine(field1);";
+
+            // CodeStatement example
+            CodeConstructor constructor1 = new CodeConstructor();
+            constructor1.Attributes = (constructor1.Attributes & ~MemberAttributes.AccessMask) | MemberAttributes.Public;
            
-            
-            className.Members.Add(CreateMethod());
-
-            // Create a type reference for the System.Console class.
-            CodeTypeReferenceExpression csSystemConsoleType = new CodeTypeReferenceExpression("System.Console");
-
-            // Build a Console.WriteLine statement.
-            CodeMethodInvokeExpression cs1 = new CodeMethodInvokeExpression(
-                csSystemConsoleType, "WriteLine",
-                new CodePrimitiveExpression("Hello World!"));
-
-            // Add the WriteLine call to the statement collection.
-            start.Statements.Add(cs1);
-
-            // Build another Console.WriteLine statement.
-            CodeMethodInvokeExpression cs2 = new CodeMethodInvokeExpression(
-                csSystemConsoleType, "WriteLine",
-                new CodePrimitiveExpression("Press the Enter key to continue."));
-
-            // Add the WriteLine call to the statement collection.
-            start.Statements.Add(cs2);
-
-            // Build a call to System.Console.ReadLine.
-            CodeMethodInvokeExpression csReadLine = new CodeMethodInvokeExpression(
-                csSystemConsoleType, "ReadLine");
-
-            // Add the ReadLine statement.
-            start.Statements.Add(csReadLine);
-
-            // Add the code entry point method to
-            // the Members collection of the type.
-            className.Members.Add(start);
-
-            return compileUnit;
+            method2.Statements.Add(snippet1);
         }
 
-        public CodeMemberMethod CreateMethod()
+        public CodeMemberMethod CreateMethod(string methodName)
         {
             var codeMemberMethod = new CodeMemberMethod();
-            codeMemberMethod.Name = "NewMethod";
-
+            codeMemberMethod.Name = methodName;
+            codeMemberMethod.Attributes = MemberAttributes.Public;
+            codeMemberMethod.ReturnType = new CodeTypeReference(typeof(bool));
             var parameter = new CodeParameterDeclarationExpression();
+            codeMemberMethod.Comments.Add(new CodeCommentStatement(new CodeComment("New Comments")));
             parameter.Name = "userName";
             parameter.Type = new CodeTypeReference(typeof(int));
             codeMemberMethod.Parameters.Add(parameter);
+
             return codeMemberMethod;
+        }
+
+        public void AddProperty(CodeTypeDeclaration targetClass)
+        {
+            // Declares a property of type String named StringProperty.
+            CodeMemberProperty property1 = new CodeMemberProperty();
+            property1.Name = "StringProperty";
+            property1.Type = new CodeTypeReference("System.String");
+            property1.Attributes = MemberAttributes.Public;
+            property1.GetStatements.Add(new CodeMethodReturnStatement(new CodeFieldReferenceExpression(new CodeThisReferenceExpression(), "testStringField")));
+            property1.SetStatements.Add(new CodeAssignStatement(new CodeFieldReferenceExpression(new CodeThisReferenceExpression(), "testStringField"), new CodePropertySetValueReferenceExpression()));
+            targetClass.Members.Add(targetClass);
         }
     }
 }
