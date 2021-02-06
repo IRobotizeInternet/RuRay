@@ -11,6 +11,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 
         public override string PageUrl => "/";
         public Header Header => new Header();
+        public MenuItemsHome MenuItems => new MenuItemsHome();
         public FeedHome MainSection => new FeedHome();
 
         public override By ByForPage => throw new System.NotImplementedException();

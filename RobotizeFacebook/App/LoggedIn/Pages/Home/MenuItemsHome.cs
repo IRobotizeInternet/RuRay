@@ -1,15 +1,11 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 
-namespace RobotizeFacebook.App
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
-    public class PageTimeline : BasePage
+    public class MenuItemsHome : MenuItems
     {
-        public override string PageUrl => "{0}";
-
-        public override By ByForPage => throw new System.NotImplementedException();
-
-        public PageTimeline(RemoteWebDriver driver)
+        public MenuItemsHome()
         {
 
         }

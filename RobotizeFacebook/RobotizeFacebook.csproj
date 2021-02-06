@@ -180,6 +180,7 @@
     <Compile Include="App\LoggedIn\Pages\Events\MenuItemsYourEvent.cs" />
     <Compile Include="App\LoggedIn\Pages\Home\HomeHeader\HeaderMiddleMenu.cs" />
     <Compile Include="App\LoggedIn\Pages\Home\HomeHeader\HeaderRightMenu.cs" />
+    <Compile Include="App\LoggedIn\Pages\Home\MainSection\SubSections\PageTimeline.cs" />
     <Compile Include="App\LoggedIn\Pages\JobsComposer\DialogAddATitle.cs" />
     <Compile Include="App\LoggedIn\Pages\JobsComposer\DialogEmojis.cs" />
     <Compile Include="App\LoggedIn\Pages\JobsComposer\DialogRaiseMoney.cs" />
@@ -1275,6 +1276,7 @@
     <Folder Include="App\LoggedIn\Pages\Marketplace\GridMarketPlace\GridHelper\Textbox\" />
     <Folder Include="App\LoggedIn\Pages\Pages\ManagePage\Notifications\" />
     <Folder Include="App\LoggedIn\Pages\Pages\ManagePage\Promote\" />
+    <Folder Include="Services\RobotizeAPIs\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\ResAccount.resx">

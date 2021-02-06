@@ -1,5 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using RobotizeFacebook.App.LoggedIn.Pages;
+using RobotizeFacebook.App.NotLoggedIn;
+using PageHome = RobotizeFacebook.App.LoggedIn.Pages.PageHome;
 
 namespace RobotizeFacebookTests.LoggedIn
 {
@@ -9,11 +11,11 @@ namespace RobotizeFacebookTests.LoggedIn
         [TestMethod]
         public void PageConformance()
         {
-            //var page = new PageLogin();
-            //page.Login();
+            var page = new PageLogin();
+            page.Login();
             PageHome d = new PageHome();
             var count = d.Header.MiddleMenu.GetNotificationOfGroups();
-            //d.HeaderSection.RunConformance();
+            d.Header.RunConformance();
         }
     }
 }

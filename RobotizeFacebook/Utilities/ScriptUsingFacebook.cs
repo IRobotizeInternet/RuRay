@@ -12,17 +12,23 @@ namespace RobotizeFacebook.Utilities
         public void GenerateFacebookHelpApi()
         {
             var page = new PageHelp();
+            page.GoToPage("https://www.facebook.com/help/570785306433644/?helpref=hc_global_nav");
             var classes = new List<string>();
 
-
-            foreach (var mainMenuItem in page.GetMainMenuItems)
+            var classDTO = new ClassDefinationDTO();
+            IList<string> headerMenuItems = page.GetMainMenuItems;
+            foreach (var headerMenuItem in headerMenuItems)
             {
-                page.GetFirstItem(mainMenuItem).Click();
-                foreach (var parent in page.GetMenuItemsNames)
+                classDTO.NameSpace = new Defiantion { Name = headerMenuItem };
+                page.GetFirstItem(headerMenuItem).Click();
+                IList<string> MenuItemList = page.GetMenuItemsNames;
+                foreach (var parent in MenuItemList)
                 {
+                    var newDefination = new Defiantion();
+                    newDefination.Name = parent;
                     page.GetMenuItemHyperlink(parent).Click();
                     var childrens = page.GetSubMenuItemsName(parent);
-                    var className = CreateClass(parent.Replace(" ", ""));
+                    var className = parent.Replace(" ", "");
 
                     if (!childrens.Any()) continue;
                     foreach (var child in childrens)
@@ -64,8 +70,10 @@ namespace RobotizeFacebook.Utilities
         // remove spaces 
         class PageHelp : BasePage
         {
-            public PageHelp() { GoToPage(PageUrl); }
-            public override string PageUrl => "https://www.facebook.com/help/570785306433644/?helpref=hc_fnav";
+            public PageHelp() { 
+               // GoToPage(PageUrl); 
+            }
+            public override string PageUrl => "https://www.facebook.com/help/";
 
             public override By ByForPage => By.XPath("//div");
 
@@ -73,19 +81,19 @@ namespace RobotizeFacebook.Utilities
                 Driver.FindElement(By.XPath($"//div[@aria-label='Using Facebook']//span[text()='{name}']/parent::span/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::a"));
             public IWebElement GetSubMenuItemHyperlink(string parent, string child) =>
                 Driver.FindElement(By.XPath($"//div[@aria-label='Using Facebook']//div[@aria-label='{parent}']//a//span/div/span['{child}']/parent::div/parent::span/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::a"));
-            public IEnumerable<string> GetMenuItemsNames =>
-                Driver.FindElements(By.XPath("*//div[@aria-label='Using Facebook']/div/div/div[contains(@style,'padding-left')]/a//span/span")).Select(x => x.Text);
-            public IEnumerable<string> GetSubMenuItemsName(string name) =>
-                Driver.FindElements(By.XPath($"//div[@aria-label='Using Facebook']//div[@aria-label='{name}']//a//span/div/span")).Select(x => x.Text);
+            public IList<string> GetMenuItemsNames =>
+                Driver.FindElements(By.XPath("*//div[@aria-label='Using Facebook']/div/div/div[contains(@style,'padding-left')]/a//span/span")).Select(x => x.Text).ToList();
+            public IList<string> GetSubMenuItemsName(string name) =>
+                Driver.FindElements(By.XPath($"//div[@aria-label='Using Facebook']//div[@aria-label='{name}']//a//span/div/span")).Select(x => x.Text).ToList();
 
-            public IEnumerable<IWebElement> GetFunctionNames =>
+            public IList<IWebElement> GetFunctionNames =>
                 Driver.FindElements(By.XPath("//div[@role='main']//h3"));
 
             public IWebElement GetFirstItem(string name) =>
-                Driver.FindElement(By.XPath($"//a[@aria-labelledby='{name}'][1]"));
+                Driver.FindElement(By.XPath($"//div[@aria-haspopup='menu']/div[@id='{name}']/span"));
 
-            public IEnumerable<string> GetMainMenuItems =>
-                Driver.FindElements(By.XPath("//div[@aria-haspopup='menu']/div/span")).Select(x => x.Text);
+            public IList<string> GetMainMenuItems =>
+                Driver.FindElements(By.XPath("//div[@aria-haspopup='menu']/div/span")).Select(x => x.Text).ToList();
 
             public override void RunConformance()
             {

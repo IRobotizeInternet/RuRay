@@ -21,7 +21,7 @@ namespace RobotizeFacebook.Utilities
         {
             CodeDomProvider provider = CodeDomProvider.CreateProvider(providerName);
             StringWriter sw = new StringWriter();
-
+            sourceFileName = $@"C:\Dev\Robotize\RobotizeFacebook\Services\RobotizeAPIs\{sourceFileName}";
             Console.WriteLine("Generating code...");
             provider.GenerateCodeFromCompileUnit(cu, sw, null);
 
