@@ -22,7 +22,7 @@ namespace RobotizeToolbox.Controls.TriggerControls
         {
             _element.Click();
             Thread.Sleep(5000);
-            return (EventResult)Activator.CreateInstance(typeof(EventResult), _driver);
+            return (EventResult)Activator.CreateInstance(typeof(EventResult));
         }
     }
 }

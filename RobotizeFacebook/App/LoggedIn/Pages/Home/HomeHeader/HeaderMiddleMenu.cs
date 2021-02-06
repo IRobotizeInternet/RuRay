@@ -37,7 +37,9 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 
         public override void RunConformance()
         {
-            
+            HyperLinkFriends.Click();
+            HyperLinkGroups.Click();
+            HyperLinkMarketPlace.Click();
         }
 
         public int GetNotificationOfGroups()
