@@ -169,6 +169,11 @@ namespace RobotizeToolbox.CommonControls
             Driver.ExecuteScript(jScript, targetElement);
         }
 
+        public void JClickElement(IWebElement webElement = null)
+        {
+            Driver.ExecuteScript("argument[0]", webElement);
+        }
+
         private static IWebElement LocateScrollableElement(RemoteWebDriver driver, IWebElement firstElement)
         {
             var ancestors = firstElement.FindElements(By.XPath("./ancestor-or-self::*")).Reverse();

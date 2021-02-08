@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using OpenQA.Selenium;
 using RobotizeFacebook.App;
+using RobotizeToolbox.CommonControls;
 
 namespace RobotizeFacebook.Utilities
 {
@@ -12,7 +13,8 @@ namespace RobotizeFacebook.Utilities
         public void GenerateFacebookHelpApi()
         {
             var page = new PageHelp();
-            page.GoToPage("https://www.facebook.com/help/570785306433644/?helpref=hc_global_nav");
+            
+            //page.GoToPage("https://www.facebook.com/help/246750422356731/adding-friends/?helpref=hc_fnav");
             var classes = new List<string>();
 
             var classDTO = new ClassDefinationDTO();
@@ -20,37 +22,54 @@ namespace RobotizeFacebook.Utilities
             foreach (var headerMenuItem in headerMenuItems)
             {
                 classDTO.NameSpace = new Defiantion { Name = headerMenuItem };
-                page.GetFirstItem(headerMenuItem).Click();
-                IList<string> MenuItemList = page.GetMenuItemsNames;
-                foreach (var parent in MenuItemList)
+                var childrenCount = page.GetMenuItemsNames.Count();
+                for (var i =0; i<= childrenCount;i++ )
                 {
-                    var newDefination = new Defiantion();
-                    newDefination.Name = parent;
-                    page.GetMenuItemHyperlink(parent).Click();
-                    var childrens = page.GetSubMenuItemsName(parent);
-                    var className = parent.Replace(" ", "");
+                    page.GetFirstItem(headerMenuItem).Click();
+                    var menuItem = page.GetMenuItemsNames.ToList()[i];
+                    var className = menuItem.GetAttribute("aria-label");
+                    var partUrl = menuItem.GetAttribute("href");
+                    page.GoToPage(partUrl);
 
-                    if (!childrens.Any()) continue;
-                    foreach (var child in childrens)
+                    var newDefination = new Defiantion();
+                    newDefination.Name = className;
+                    
+                    var grandChildren = page.GetSubMenuItemsName(className);
+
+                    if (!grandChildren.Any()) continue;
+                    for(var j=0; j< grandChildren.Count; j++) // grandChild in grandChildren)
                     {
-                        page.GetSubMenuItemHyperlink(parent, child).Click();
-                        foreach (var funtionDiv in page.GetFunctionNames)
+                        var grandChildEmement = page.GetSubMenuItemHyperlink(className, grandChildren[j])[j];
+                        var methodDefinitions = new List<MethodDefination>();
+                        page.GoToPage(grandChildEmement.GetAttribute("href"));
+                        var functionNames = page.GetFunctionNames;
+                        var comments = new List<string>();
+                        string funtionNamePart = string.Empty;
+                        for (var k =0; k<= page.GetFunctionNames.Count;k++)
                         {
-                            funtionDiv.Click();
-                            foreach (var method in page.GetAllActions(funtionDiv.FindElement(By.XPath("//div[@role='main']//h3//span")).Text))
+                            page.ClickElement(functionNames[k]);
+                            funtionNamePart = functionNames[k].Text;
+
+                            // TODO: Handle when find elements return no elements. 
+                            var functionSummaryElements = functionNames[k].FindElements(By.XPath($"//div[@role='main']/div//div[2]//div[@role='button']//span[text()='{funtionNamePart}']/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::h3/following-sibling::div[1]//ol//li"));
+                            
+                            foreach (var functionSummaryElement in functionSummaryElements)
                             {
-                                var h3 = page.GetDescriptionHeader(method.Text);
-                                var header = h3.Text;
-                                foreach (var divText in h3.FindElements(By.XPath("/parent::div//li/div")))
-                                {
-                                    var r = divText.Text;
-                                }
+                                //var h3 = page.GetDescriptionHeader(div.Text);
+                                var header = funtionNamePart;
+                                comments.Add(functionSummaryElement.Text);
                             }
+                            page.ClickElement(functionNames[k]);
                         }
+
+                        methodDefinitions.Add(new MethodDefination
+                        {
+                            Name = $"{funtionNamePart}",
+                            Comments = comments
+                        });
                     }
 
                     CloseClass(className);
-                    classes.Add(parent.Replace(" ", ""));
                 }
             }
         }
@@ -71,24 +90,30 @@ namespace RobotizeFacebook.Utilities
         class PageHelp : BasePage
         {
             public PageHelp() { 
-               // GoToPage(PageUrl); 
+               //Driver.FindElement(By.XPath("//div[@aria-label='Using Facebook']//span[text()='Friending']/parent::span/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::a/parent::div")).Click(); 
+            }
+
+            public void ClickElement(IWebElement webElement)
+            {
+                Driver.ExecuteScript("arguments[0].click();", webElement);
             }
             public override string PageUrl => "https://www.facebook.com/help/";
 
             public override By ByForPage => By.XPath("//div");
 
-            public IWebElement GetMenuItemHyperlink(string name) =>
-                Driver.FindElement(By.XPath($"//div[@aria-label='Using Facebook']//span[text()='{name}']/parent::span/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::a"));
-            public IWebElement GetSubMenuItemHyperlink(string parent, string child) =>
-                Driver.FindElement(By.XPath($"//div[@aria-label='Using Facebook']//div[@aria-label='{parent}']//a//span/div/span['{child}']/parent::div/parent::span/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::a"));
-            public IList<string> GetMenuItemsNames =>
-                Driver.FindElements(By.XPath("*//div[@aria-label='Using Facebook']/div/div/div[contains(@style,'padding-left')]/a//span/span")).Select(x => x.Text).ToList();
+            public Button GetMenuItemHyperlink(string name) =>
+                new Button(Driver,By.XPath($"//div[@aria-label='Using Facebook']//span[text()='{name}']/parent::span/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::a"));
+            public IList<IWebElement> GetSubMenuItemHyperlink(string parent, string child) =>
+                Driver.FindElements(By.XPath($"//div[@aria-label='Using Facebook']//div[@aria-label='{parent}']//a//span/div/span['{child}']/parent::div/parent::span/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::a"));
+            public IEnumerable<IWebElement> GetMenuItemsNames =>
+                Driver.FindElements(By.XPath("//a[@aria-labelledby='Using Facebook']"));
             public IList<string> GetSubMenuItemsName(string name) =>
                 Driver.FindElements(By.XPath($"//div[@aria-label='Using Facebook']//div[@aria-label='{name}']//a//span/div/span")).Select(x => x.Text).ToList();
 
             public IList<IWebElement> GetFunctionNames =>
-                Driver.FindElements(By.XPath("//div[@role='main']//h3"));
-
+                Driver.FindElements(By.XPath("//div[@role='main']/div//div[2]//div[@role='button']//span"));
+            public IWebElement GetFunctionDiv(string functionName) =>
+                Driver.FindElement(By.XPath($"//div[@role='main']/div//div[2]//span[text()='{functionName}']"));
             public IWebElement GetFirstItem(string name) =>
                 Driver.FindElement(By.XPath($"//div[@aria-haspopup='menu']/div[@id='{name}']/span"));
 

@@ -14,7 +14,7 @@ namespace RobotizeFacebook.WebDrivers
         public override RemoteWebDriver Driver(bool useExistingBrowser = true)
         {
             // when useExistingBrowser is set open chrome
-            if (useExistingBrowser) new ServiceBrowser().OpenBrowser();
+            //if (useExistingBrowser) new ServiceBrowser().OpenBrowser();
 
             if (string.IsNullOrEmpty(BaseURL))
             {
