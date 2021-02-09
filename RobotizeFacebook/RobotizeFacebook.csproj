@@ -1233,6 +1233,7 @@
     <Compile Include="Utilities\ClassDefinationDTO.cs" />
     <Compile Include="Utilities\DynamicCodeCompilation.cs" />
     <Compile Include="Utilities\DynamicCodeGeneration.cs" />
+    <Compile Include="Utilities\Json.cs" />
     <Compile Include="Utilities\ScriptUsingFacebook.cs" />
     <Compile Include="WebDrivers\Chrome.cs" />
     <Compile Include="WebDrivers\Edge.cs" />

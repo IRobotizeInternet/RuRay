@@ -23,7 +23,7 @@ namespace RobotizeFacebook.Utilities
             {
                 classDTO.NameSpace = new Defiantion { Name = headerMenuItem };
                 var childrenCount = page.GetMenuItemsNames.Count();
-                for (var i =0; i<= childrenCount;i++ )
+                for (var i =1; i<= childrenCount;i++ )
                 {
                     page.GetFirstItem(headerMenuItem).Click();
                     var menuItem = page.GetMenuItemsNames.ToList()[i];
@@ -45,13 +45,20 @@ namespace RobotizeFacebook.Utilities
                         var functionNames = page.GetFunctionNames;
                         var comments = new List<string>();
                         string funtionNamePart = string.Empty;
-                        for (var k =0; k<= page.GetFunctionNames.Count;k++)
+                        for (var k =0; k< page.GetFunctionNames.Count;k++)
                         {
                             page.ClickElement(functionNames[k]);
                             funtionNamePart = functionNames[k].Text;
 
-                            // TODO: Handle when find elements return no elements. 
-                            var functionSummaryElements = functionNames[k].FindElements(By.XPath($"//div[@role='main']/div//div[2]//div[@role='button']//span[text()='{funtionNamePart}']/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::h3/following-sibling::div[1]//ol//li"));
+                            IEnumerable<IWebElement> functionSummaryElements = null;
+                            try
+                            {
+                                functionSummaryElements = functionNames[k].FindElements(By.XPath($"//div[@role='main']/div//div[2]//div[@role='button']//span[text()='{funtionNamePart}']/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::h3/following-sibling::div[1]//ol//li"));
+                            }catch(Exception ex)
+                            {
+                                page.ClickElement(functionNames[k]);
+                                continue;
+                            }
                             
                             foreach (var functionSummaryElement in functionSummaryElements)
                             {
@@ -60,15 +67,18 @@ namespace RobotizeFacebook.Utilities
                                 comments.Add(functionSummaryElement.Text);
                             }
                             page.ClickElement(functionNames[k]);
+
+                            methodDefinitions.Add(new MethodDefination
+                            {
+                                Name = $"{funtionNamePart}",
+                                Comments = comments
+                            });
                         }
+                        Json.SerializeAsync<IList<MethodDefination>>("classes", methodDefinitions);
 
-                        methodDefinitions.Add(new MethodDefination
-                        {
-                            Name = $"{funtionNamePart}",
-                            Comments = comments
-                        });
+
                     }
-
+                    
                     CloseClass(className);
                 }
             }
