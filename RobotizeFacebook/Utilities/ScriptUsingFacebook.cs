@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
+using System.Threading;
 using OpenQA.Selenium;
 using RobotizeFacebook.App;
 using RobotizeToolbox.CommonControls;
@@ -15,16 +15,19 @@ namespace RobotizeFacebook.Utilities
             var page = new PageHelp();
             
             //page.GoToPage("https://www.facebook.com/help/246750422356731/adding-friends/?helpref=hc_fnav");
-            var classes = new List<string>();
+            var classes = new List<ClassDefinationDTO>();
 
-            var classDTO = new ClassDefinationDTO();
+            
             IList<string> headerMenuItems = page.GetMainMenuItems;
             foreach (var headerMenuItem in headerMenuItems)
             {
-                classDTO.NameSpace = new Defiantion { Name = headerMenuItem };
                 var childrenCount = page.GetMenuItemsNames.Count();
                 for (var i =1; i<= childrenCount;i++ )
                 {
+                    var classDTO = new ClassDefinationDTO();
+                    classes.Add(classDTO);
+                    classDTO.NameSpace = new Defiantion { Name = headerMenuItem };
+
                     page.GetFirstItem(headerMenuItem).Click();
                     var menuItem = page.GetMenuItemsNames.ToList()[i];
                     var className = menuItem.GetAttribute("aria-label");
@@ -33,7 +36,8 @@ namespace RobotizeFacebook.Utilities
 
                     var newDefination = new Defiantion();
                     newDefination.Name = className;
-                    
+                    classDTO.ClassDefination = newDefination;
+
                     var grandChildren = page.GetSubMenuItemsName(className);
 
                     if (!grandChildren.Any()) continue;
@@ -48,6 +52,7 @@ namespace RobotizeFacebook.Utilities
                         for (var k =0; k< page.GetFunctionNames.Count;k++)
                         {
                             page.ClickElement(functionNames[k]);
+                            Thread.Sleep(1000);
                             funtionNamePart = functionNames[k].Text;
 
                             IEnumerable<IWebElement> functionSummaryElements = null;
@@ -66,6 +71,8 @@ namespace RobotizeFacebook.Utilities
                                 var header = funtionNamePart;
                                 comments.Add(functionSummaryElement.Text);
                             }
+
+                            Thread.Sleep(3000);
                             page.ClickElement(functionNames[k]);
 
                             methodDefinitions.Add(new MethodDefination
@@ -73,13 +80,15 @@ namespace RobotizeFacebook.Utilities
                                 Name = $"{funtionNamePart}",
                                 Comments = comments
                             });
+
+                            Thread.Sleep(9000);
                         }
-                        Json.SerializeAsync<IList<MethodDefination>>("classes", methodDefinitions);
+                        classDTO.Methods = methodDefinitions;
 
-
+                        Json.Serialize("JsonClasses11", classes);
                     }
-                    
-                    CloseClass(className);
+                    Json.SerializeAsync<IList<ClassDefinationDTO>>("JsonClasses", classes);
+
                 }
             }
         }

@@ -22,5 +22,11 @@ namespace RobotizeFacebook.Utilities
             FileStream createStream = File.Create(fileName);
             JsonSerializer.SerializeAsync(createStream, obj);
         }
+
+        public static void Serialize(string fileName, List<ClassDefinationDTO> obj)
+        {
+            var jsonString = JsonSerializer.Serialize(obj);
+            File.WriteAllText(fileName+DateTime.Today.Millisecond, jsonString);
+        }
     }
 }
