@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,9 +10,15 @@ namespace RobotizeFacebook.Utilities
     public class ClassDefinationDTO
     {
         public Defiantion NameSpace { get; set; }
-        public IEnumerable<string> Directives;
+
+        [JsonProperty("Directives")]
+        public IEnumerable<string> Directives { get; set; }
         public Defiantion ClassDefination { get; set; }
+
+        [JsonProperty("Methods")]
         public IEnumerable<MethodDefination> Methods { get; set; }
+
+        [JsonProperty("Properties")]
         public IEnumerable<Defiantion> Properties { get; set; }
     }
 

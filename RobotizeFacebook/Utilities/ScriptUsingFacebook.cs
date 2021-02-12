@@ -47,7 +47,6 @@ namespace RobotizeFacebook.Utilities
                         var methodDefinitions = new List<MethodDefination>();
                         page.GoToPage(grandChildEmement.GetAttribute("href"));
                         var functionNames = page.GetFunctionNames;
-                        var comments = new List<string>();
                         string funtionNamePart = string.Empty;
                         for (var k =0; k< page.GetFunctionNames.Count;k++)
                         {
@@ -56,39 +55,48 @@ namespace RobotizeFacebook.Utilities
                             funtionNamePart = functionNames[k].Text;
 
                             IEnumerable<IWebElement> functionSummaryElements = null;
+                            IList<string> functionSummaryHeader = null;
                             try
                             {
-                                functionSummaryElements = functionNames[k].FindElements(By.XPath($"//div[@role='main']/div//div[2]//div[@role='button']//span[text()='{funtionNamePart}']/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::h3/following-sibling::div[1]//ol//li"));
+                                functionSummaryElements = functionNames[k].FindElements(By.XPath($"//div[@role='main']/div//div[2]//div[@role='button']//span[text()='{funtionNamePart}']/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::h3/following-sibling::div[1]//ol"));
                             }catch(Exception ex)
                             {
                                 page.ClickElement(functionNames[k]);
                                 continue;
                             }
-                            
-                            foreach (var functionSummaryElement in functionSummaryElements)
-                            {
-                                //var h3 = page.GetDescriptionHeader(div.Text);
-                                var header = funtionNamePart;
-                                comments.Add(functionSummaryElement.Text);
-                            }
 
+                            try
+                            {
+                                functionSummaryHeader = functionNames[k].FindElements(By.XPath($"//div[@role='main']/div//div[2]//div[@role='button']//span[text()='{funtionNamePart}']/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::h3/following-sibling::div[1]//ol/preceding-sibling::h2")).Select(x=>x.Text).ToList();
+                            }
+                            catch (Exception ex){}
+                            var index = 0;
+                            foreach(var functionSummaryElement in functionSummaryElements)
+                            {
+                                var comments = new List<string>();
+                                if (functionSummaryHeader.Count()-1 >= index) funtionNamePart = $"{funtionNamePart}{functionSummaryHeader[index++]}";
+                                foreach (var functionSummary in functionSummaryElement.FindElements(By.XPath("//li")))
+                                {
+                                    var header = funtionNamePart;
+                                    comments.Add(functionSummary.Text);
+                                }
+
+                                methodDefinitions.Add(new MethodDefination
+                                {
+                                    Name = $"{funtionNamePart}",
+                                    Comments = comments
+                                });
+                            }
+                            
                             Thread.Sleep(3000);
                             page.ClickElement(functionNames[k]);
-
-                            methodDefinitions.Add(new MethodDefination
-                            {
-                                Name = $"{funtionNamePart}",
-                                Comments = comments
-                            });
-
                             Thread.Sleep(9000);
                         }
                         classDTO.Methods = methodDefinitions;
 
-                        Json.Serialize("JsonClasses11", classes);
+                        Json.Serialize(@"D:\Dev\Robotize\RobotizeFacebook\Services\RobotizeAPIs\JsonClasses11", classes);
                     }
-                    Json.SerializeAsync<IList<ClassDefinationDTO>>("JsonClasses", classes);
-
+                    Json.Serialize("JsonClasses11", classes);
                 }
             }
         }
