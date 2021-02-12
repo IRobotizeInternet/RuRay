@@ -58,7 +58,7 @@ namespace RobotizeFacebook.Utilities
                             IList<string> functionSummaryHeader = null;
                             try
                             {
-                                functionSummaryElements = functionNames[k].FindElements(By.XPath($"//div[@role='main']/div//div[2]//div[@role='button']//span[text()='{funtionNamePart}']/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::h3/following-sibling::div[1]//ol"));
+                                functionSummaryElements = functionNames[k].FindElements(By.XPath($"//div[@role='main']/div//div[2]//div[@role='button']//span[text()=\"{funtionNamePart}\"]/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::h3/following-sibling::div[1]//ol"));
                             }catch(Exception ex)
                             {
                                 page.ClickElement(functionNames[k]);
@@ -67,7 +67,7 @@ namespace RobotizeFacebook.Utilities
 
                             try
                             {
-                                functionSummaryHeader = functionNames[k].FindElements(By.XPath($"//div[@role='main']/div//div[2]//div[@role='button']//span[text()='{funtionNamePart}']/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::h3/following-sibling::div[1]//ol/preceding-sibling::h2")).Select(x=>x.Text).ToList();
+                                functionSummaryHeader = functionNames[k].FindElements(By.XPath($"//div[@role='main']/div//div[2]//div[@role='button']//span[text()=\"{funtionNamePart}\"]/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::h3/following-sibling::div[1]//ol/preceding-sibling::h2")).Select(x=>x.Text).ToList();
                             }
                             catch (Exception ex){}
                             var index = 0;
