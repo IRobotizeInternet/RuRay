@@ -16,88 +16,99 @@ namespace RobotizeFacebook.Utilities
             
             //page.GoToPage("https://www.facebook.com/help/246750422356731/adding-friends/?helpref=hc_fnav");
             var classes = new List<ClassDefinationDTO>();
-
-            
-            IList<string> headerMenuItems = page.GetMainMenuItems;
-            foreach (var headerMenuItem in headerMenuItems)
+            int attempts = 0;
+            while (attempts < 4)
             {
-                var childrenCount = page.GetMenuItemsNames.Count();
-                for (var i =1; i<= childrenCount;i++ )
+                try
                 {
-                    var classDTO = new ClassDefinationDTO();
-                    classes.Add(classDTO);
-                    classDTO.NameSpace = new Defiantion { Name = headerMenuItem };
-
-                    page.GetFirstItem(headerMenuItem).Click();
-                    var menuItem = page.GetMenuItemsNames.ToList()[i];
-                    var className = menuItem.GetAttribute("aria-label");
-                    var partUrl = menuItem.GetAttribute("href");
-                    page.GoToPage(partUrl);
-
-                    var newDefination = new Defiantion();
-                    newDefination.Name = className;
-                    classDTO.ClassDefination = newDefination;
-
-                    var grandChildren = page.GetSubMenuItemsName(className);
-
-                    if (!grandChildren.Any()) continue;
-                    for(var j=0; j< grandChildren.Count; j++) // grandChild in grandChildren)
+                    IList<string> headerMenuItems = page.GetMainMenuItems;
+                    foreach (var headerMenuItem in headerMenuItems)
                     {
-                        var grandChildEmement = page.GetSubMenuItemHyperlink(className, grandChildren[j])[j];
-                        var methodDefinitions = new List<MethodDefination>();
-                        page.GoToPage(grandChildEmement.GetAttribute("href"));
-                        var functionNames = page.GetFunctionNames;
-                        string funtionNamePart = string.Empty;
-                        for (var k =0; k< page.GetFunctionNames.Count;k++)
+                        var childrenCount = page.GetMenuItemsNames.Count();
+                        for (var i = 12; i <= childrenCount; i++)
                         {
-                            page.ClickElement(functionNames[k]);
-                            Thread.Sleep(1000);
-                            funtionNamePart = functionNames[k].Text;
+                            var classDTO = new ClassDefinationDTO();
+                            classes.Add(classDTO);
+                            classDTO.NameSpace = new Defiantion { Name = headerMenuItem };
 
-                            IEnumerable<IWebElement> functionSummaryElements = null;
-                            IList<string> functionSummaryHeader = null;
-                            try
-                            {
-                                functionSummaryElements = functionNames[k].FindElements(By.XPath($"//div[@role='main']/div//div[2]//div[@role='button']//span[text()=\"{funtionNamePart}\"]/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::h3/following-sibling::div[1]//ol"));
-                            }catch(Exception ex)
-                            {
-                                page.ClickElement(functionNames[k]);
-                                continue;
-                            }
+                            page.GetFirstItem(headerMenuItem).Click();
+                            var menuItem = page.GetMenuItemsNames.ToList()[i];
+                            var className = menuItem.GetAttribute("aria-label");
+                            var partUrl = menuItem.GetAttribute("href");
+                            page.GoToPage(partUrl);
 
-                            try
+                            var newDefination = new Defiantion();
+                            newDefination.Name = className;
+                            classDTO.ClassDefination = newDefination;
+
+                            var grandChildren = page.GetSubMenuItemsName(className);
+
+                            if (!grandChildren.Any()) continue;
+                            var methodDefinitions = new List<MethodDefination>();
+                            for (var j = 0; j < grandChildren.Count; j++) // grandChild in grandChildren)
                             {
-                                functionSummaryHeader = functionNames[k].FindElements(By.XPath($"//div[@role='main']/div//div[2]//div[@role='button']//span[text()=\"{funtionNamePart}\"]/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::h3/following-sibling::div[1]//ol/preceding-sibling::h2")).Select(x=>x.Text).ToList();
-                            }
-                            catch (Exception ex){}
-                            var index = 0;
-                            foreach(var functionSummaryElement in functionSummaryElements)
-                            {
-                                var comments = new List<string>();
-                                if (functionSummaryHeader.Count()-1 >= index) funtionNamePart = $"{funtionNamePart}{functionSummaryHeader[index++]}";
-                                foreach (var functionSummary in functionSummaryElement.FindElements(By.XPath("//li")))
+                                var grandChildEmement = page.GetSubMenuItemHyperlink(className, grandChildren[j])[j];
+
+                                page.GoToPage(grandChildEmement.GetAttribute("href"));
+                                 
+                                string funtionNamePart = string.Empty;
+                                for (var k = 0; k < page.GetFunctionNames.Count; k++)
                                 {
-                                    var header = funtionNamePart;
-                                    comments.Add(functionSummary.Text);
+                                    page.ClickElement(page.GetFunctionNames[k]);
+                                    Thread.Sleep(10000);
+                                    funtionNamePart = page.GetFunctionNames[k].Text;
+
+                                    IEnumerable<IWebElement> functionSummaryElements = null;
+                                    IList<string> functionSummaryHeader = null;
+                                    try
+                                    {
+                                        functionSummaryElements = page.GetFunctionNames[k].FindElements(By.XPath($"//div[@role='main']/div//div[2]//div[@role='button']//span[text()=\"{funtionNamePart}\"]/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::h3/following-sibling::div[1]//ol"));
+                                    }
+                                    catch (Exception ex)
+                                    {
+                                        page.ClickElement(page.GetFunctionNames[k]);
+                                        continue;
+                                    }
+
+                                    try
+                                    {
+                                        functionSummaryHeader = page.GetFunctionNames[k].FindElements(By.XPath($"//div[@role='main']/div//div[2]//div[@role='button']//span[text()=\"{funtionNamePart}\"]/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::h3/following-sibling::div[1]//ol/preceding-sibling::h2")).Select(x => x.Text).ToList();
+                                    }
+                                    catch (Exception ex) { }
+                                    var index = 0;
+                                    foreach (var functionSummaryElement in functionSummaryElements)
+                                    {
+                                        var comments = new List<string>();
+                                        if (functionSummaryHeader.Count() - 1 >= index) funtionNamePart = $"{funtionNamePart}{functionSummaryHeader[index++]}";
+                                        foreach (var functionSummary in functionSummaryElement.FindElements(By.XPath("//li")))
+                                        {
+                                            var header = funtionNamePart;
+                                            comments.Add(functionSummary.Text);
+                                        }
+
+                                        methodDefinitions.Add(new MethodDefination
+                                        {
+                                            Name = $"{funtionNamePart}",
+                                            Comments = comments
+                                        });
+                                    }
+
+                                    Thread.Sleep(10000);
+                                    page.ClickElement(page.GetFunctionNames[k]);
+                                    Thread.Sleep(34000);
                                 }
-
-                                methodDefinitions.Add(new MethodDefination
-                                {
-                                    Name = $"{funtionNamePart}",
-                                    Comments = comments
-                                });
                             }
-                            
-                            Thread.Sleep(3000);
-                            page.ClickElement(functionNames[k]);
-                            Thread.Sleep(9000);
+                            classDTO.Methods = methodDefinitions;
+                            Json.Serialize(@"D:\Dev\Robotize\RobotizeFacebook\Services\RobotizeAPIs\JsonClasses11", classes);
                         }
-                        classDTO.Methods = methodDefinitions;
-
-                        Json.Serialize(@"D:\Dev\Robotize\RobotizeFacebook\Services\RobotizeAPIs\JsonClasses11", classes);
                     }
-                    Json.Serialize("JsonClasses11", classes);
+                    break;
                 }
+                catch (StaleElementReferenceException e)
+                {
+                }
+                attempts++;
+                Thread.Sleep(3000);
             }
         }
 
