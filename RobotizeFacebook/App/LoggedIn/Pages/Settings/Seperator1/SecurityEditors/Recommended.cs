@@ -7,7 +7,7 @@ using RobotizeToolbox.Dialogs;
 using RobotizeFacebook.Resources;
 using System.Collections.Generic;
 
-namespace RobotizeFacebook.App.LoggedIn.Settings.Tabs.Seperator1
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class Recommended : BaseEditor
     {

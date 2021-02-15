@@ -1,6 +1,6 @@
 ﻿using OpenQA.Selenium.Remote;
 
-namespace RobotizeFacebook.App.LoggedIn.Settings.Tabs.Seperator1.SecurityEditors
+namespace RobotizeFacebook.App.LoggedIn.Pages.SecurityEditors
 {
     public class Login : BaseEditor
     {

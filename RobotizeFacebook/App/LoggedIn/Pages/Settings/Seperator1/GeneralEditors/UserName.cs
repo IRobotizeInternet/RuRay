@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 using RobotizeToolbox.CommonControls;
 
-namespace RobotizeFacebook.App.LoggedIn.Settings.Tabs.Seperator1
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class UserName: BaseEditor
     {

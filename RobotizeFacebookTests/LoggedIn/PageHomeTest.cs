@@ -1,7 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using RobotizeFacebook.App.LoggedIn.Pages;
-using RobotizeFacebook.App.NotLoggedIn;
-using PageHome = RobotizeFacebook.App.LoggedIn.Pages.PageHome;
 
 namespace RobotizeFacebookTests.LoggedIn
 {

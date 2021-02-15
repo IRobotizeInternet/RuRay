@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 using OpenQA.Selenium;
-using RobotizeFacebook.App;
 using RobotizeFacebook.App.LoggedIn.Pages;
 using RobotizeToolbox.CommonControls;
 

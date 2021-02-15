@@ -1,7 +1,4 @@
-﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
-
-namespace RobotizeFacebook.App.LoggedIn.Pages
+﻿namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class MenuItemsHome : MenuItems
     {

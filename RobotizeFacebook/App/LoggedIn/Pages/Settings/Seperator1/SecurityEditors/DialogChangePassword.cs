@@ -2,7 +2,7 @@
 using RobotizeToolbox.CommonControls;
 using RobotizeFacebook.Resources;
 
-namespace RobotizeFacebook.App.LoggedIn.Settings.Tabs.Seperator1
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class DialogChangePassword : BaseEditor
     {

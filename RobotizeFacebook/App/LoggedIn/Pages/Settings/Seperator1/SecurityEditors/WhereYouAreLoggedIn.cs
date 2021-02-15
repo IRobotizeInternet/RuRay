@@ -7,7 +7,7 @@ using RobotizeToolbox.Dialogs;
 using RobotizeFacebook.Resources;
 using System;
 
-namespace RobotizeFacebook.App.LoggedIn.Settings.Tabs.Seperator1.SecurityEditors
+namespace RobotizeFacebook.App.LoggedIn.Pages.SecurityEditors
 {
     public class WhereYouAreLoggedIn : BaseEditor
     {

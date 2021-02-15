@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace SupportingScripts
+﻿namespace SupportingScripts
 {
     class Program
     {

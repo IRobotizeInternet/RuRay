@@ -1,7 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using RobotizeFacebook.App.LoggedIn.Settings.Tabs.Seperator1;
-using RobotizeFacebook.App.LoggedIn.Settings.Tabs.Seperator1.Bas;
+using RobotizeFacebook.App.LoggedIn.Pages.Bas;
 using RobotizeToolbox.Controls.TriggerControls;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages

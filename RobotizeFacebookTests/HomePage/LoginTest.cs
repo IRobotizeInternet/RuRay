@@ -1,6 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using RobotizeFacebook.Utilities;
-using System.Collections.Generic;
 
 namespace RobotizeFacebookTests.HomePage
 {
