@@ -3,7 +3,7 @@ using OpenQA.Selenium.Remote;
 using RobotizeToolbox.Dialogs;
 using RobotizeFacebook.Resources;
 
-namespace RobotizeFacebook.App.LoggedIn.Home.MainSection.SubSections
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class DialogCreateYourRoom : BaseDialog
     {

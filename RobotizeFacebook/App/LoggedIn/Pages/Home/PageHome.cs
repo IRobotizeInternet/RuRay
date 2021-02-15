@@ -1,4 +1,7 @@
 ﻿using OpenQA.Selenium;
+using RobotizeFacebook.App.LoggedIn.Home.MainSection.SubSections;
+using RobotizeFacebook.Resources;
+using RobotizeToolbox.Controls;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
@@ -8,6 +11,24 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         {
             
         }
+
+        public EventTriggerButton<PageCreateAStory> EventTriggerButtonCreateStory =>
+            new EventTriggerButton<PageCreateAStory>(Driver, By.XPath($"//div[@data-pagelet='Stories']//span[text()='{ResHomePage.CreateAStory}']"));
+
+        public EventTriggerButton<PageCreateAStory> EventTriggerButtonSeeAllStories =>
+            new EventTriggerButton<PageCreateAStory>(Driver, By.XPath($"//div[@data-pagelet='Stories']//span[text()='{ResHomePage.SeeAllStories}']"));
+
+        public EventTriggerButton<PageLiveProducer> EventTriggerButtonLiveVideo =>
+            new EventTriggerButton<PageLiveProducer>(Driver, By.XPath($"//div[@role='main']//span[text()='{ResCreatePost.LiveVideo}']"));
+
+        public EventTriggerButton<DialogCreatePost> EventTriggerButtonPhotoOrVideo =>
+            new EventTriggerButton<DialogCreatePost>(Driver, By.XPath($"//div[@role='main']//span[text()='{ResCreatePost.PhotoOrVideo}']"));
+        
+        public EventTriggerButton<DialogCreatePost> EventTriggerButtonFeelingOrActivity =>
+                   new EventTriggerButton<DialogCreatePost>(Driver, By.XPath($"//div[@role='main']//span[text()='{ResCreatePost.FeelingOrActivity}']"));
+
+        public EventTriggerButton<DialogCreateYourRoom> EventTriggerButtonCreateNewRoom =>
+           new EventTriggerButton<DialogCreateYourRoom>(Driver, By.XPath($"//div[@role='main']//span[text()='{ResCreatePost.ne}']"));
 
         public override string PageUrl => "/";
 

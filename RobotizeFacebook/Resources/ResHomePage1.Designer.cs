@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace RobotizeToolbox.Resources {
+namespace RobotizeFacebook.Resources {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace RobotizeToolbox.Resources {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("RobotizeLibrary.Resources.ResHomePage", typeof(ResHomePage).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("RobotizeFacebook.Resources.ResHomePage", typeof(ResHomePage).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -70,11 +70,29 @@ namespace RobotizeToolbox.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Create a Story.
+        /// </summary>
+        public static string CreateAStory {
+            get {
+                return ResourceManager.GetString("CreateAStory", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Life Event.
         /// </summary>
         public static string LifeEvent {
             get {
                 return ResourceManager.GetString("LifeEvent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to See all stories.
+        /// </summary>
+        public static string SeeAllStories {
+            get {
+                return ResourceManager.GetString("SeeAllStories", resourceCulture);
             }
         }
     }

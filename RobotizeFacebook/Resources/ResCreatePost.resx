@@ -228,4 +228,16 @@
   <data name="SelectNonprofit" xml:space="preserve">
     <value>Select Nonprofit</value>
   </data>
+  <data name="Comment" xml:space="preserve">
+    <value>Comment</value>
+  </data>
+  <data name="Like" xml:space="preserve">
+    <value>Like</value>
+  </data>
+  <data name="NewRoom" xml:space="preserve">
+    <value>New Room</value>
+  </data>
+  <data name="Share" xml:space="preserve">
+    <value>Share</value>
+  </data>
 </root>

@@ -156,8 +156,11 @@
     <Compile Include="App\LoggedIn\Components\CreatePost\DialogTagFriends.cs" />
     <Compile Include="App\LoggedIn\Components\PopupAccount.cs" />
     <Compile Include="App\LoggedIn\Components\CreatePost\PopupNotificationSettings.cs" />
+    <Compile Include="App\LoggedIn\Dialogs\ChatSettings\DialogChatSettings.cs" />
     <Compile Include="App\LoggedIn\Dialogs\PopupMessanger.cs" />
     <Compile Include="App\LoggedIn\Dialogs\PopupNotifications.cs" />
+    <Compile Include="App\LoggedIn\Divs\BaseDiv.cs" />
+    <Compile Include="App\LoggedIn\Divs\FeedArticle.cs" />
     <Compile Include="App\LoggedIn\Enum\MoreIllustration.cs" />
     <Compile Include="App\LoggedIn\Enum\Privacy.cs" />
     <Compile Include="App\LoggedIn\Enum\WhereToPost.cs" />
@@ -1054,7 +1057,7 @@
     <Compile Include="App\LoggedIn\Pages\Settings\Seperator4\Videos.cs" />
     <Compile Include="App\LoggedIn\Pages\Settings\Seperator1\YourFacebookInformation.cs" />
     <Compile Include="App\LoggedIn\Dialogs\DialogStoryPrivacy.cs" />
-    <Compile Include="App\LoggedIn\Pages\Stories\DialogCreateAStory\DialogCreateAStory.cs" />
+    <Compile Include="App\LoggedIn\Pages\Stories\DialogCreateAStory\PageCreateAStory.cs" />
     <Compile Include="App\LoggedIn\SupportInbox\PageSupportInbox.cs" />
     <Compile Include="App\NotLoggedIn\Help\PageHelpChooseALegacyContact.cs" />
     <Compile Include="App\NotLoggedIn\Home\PageHome.cs" />
@@ -1291,6 +1294,7 @@
     <Folder Include="App\LoggedIn\Pages\Marketplace\GridMarketPlace\GridHelper\Textbox\" />
     <Folder Include="App\LoggedIn\Pages\Pages\ManagePage\Notifications\" />
     <Folder Include="App\LoggedIn\Pages\Pages\ManagePage\Promote\" />
+    <Folder Include="App\LoggedIn\Pages\StoryCreate\" />
     <Folder Include="Services\RobotizeAPIs\" />
   </ItemGroup>
   <ItemGroup>

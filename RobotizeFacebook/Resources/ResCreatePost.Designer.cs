@@ -115,6 +115,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Comment.
+        /// </summary>
+        public static string Comment {
+            get {
+                return ResourceManager.GetString("Comment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create Post.
         /// </summary>
         public static string CreatePost {
@@ -214,6 +223,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Like.
+        /// </summary>
+        public static string Like {
+            get {
+                return ResourceManager.GetString("Like", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Live Video.
         /// </summary>
         public static string LiveVideo {
@@ -228,6 +246,15 @@ namespace RobotizeFacebook.Resources {
         public static string More {
             get {
                 return ResourceManager.GetString("More", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New Room.
+        /// </summary>
+        public static string NewRoom {
+            get {
+                return ResourceManager.GetString("NewRoom", resourceCulture);
             }
         }
         
@@ -336,6 +363,15 @@ namespace RobotizeFacebook.Resources {
         public static string SelectThisCheckbox {
             get {
                 return ResourceManager.GetString("SelectThisCheckbox", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Share.
+        /// </summary>
+        public static string Share {
+            get {
+                return ResourceManager.GetString("Share", resourceCulture);
             }
         }
         
