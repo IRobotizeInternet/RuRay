@@ -277,6 +277,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Campus.
+        /// </summary>
+        public static string Campus {
+            get {
+                return ResourceManager.GetString("Campus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Cancel.
         /// </summary>
         public static string Cancel {
@@ -376,6 +385,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Community Help.
+        /// </summary>
+        public static string CommunityHelp {
+            get {
+                return ResourceManager.GetString("CommunityHelp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Contacts.
         /// </summary>
         public static string Contacts {
@@ -408,6 +426,15 @@ namespace RobotizeFacebook.Resources {
         public static string CoverPhoto {
             get {
                 return ResourceManager.GetString("CoverPhoto", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to COVID-19 Information Center.
+        /// </summary>
+        public static string COVID19InformationCenter {
+            get {
+                return ResourceManager.GetString("COVID19InformationCenter", resourceCulture);
             }
         }
         
@@ -682,11 +709,29 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Facebook Pay.
+        /// </summary>
+        public static string FacebookPay {
+            get {
+                return ResourceManager.GetString("FacebookPay", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Family.
         /// </summary>
         public static string Family {
             get {
                 return ResourceManager.GetString("Family", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Favorites.
+        /// </summary>
+        public static string Favorites {
+            get {
+                return ResourceManager.GetString("Favorites", resourceCulture);
             }
         }
         
@@ -727,11 +772,56 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Friend Lists.
+        /// </summary>
+        public static string FriendLists {
+            get {
+                return ResourceManager.GetString("FriendLists", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Friends.
+        /// </summary>
+        public static string Friends {
+            get {
+                return ResourceManager.GetString("Friends", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Fundraisers.
+        /// </summary>
+        public static string Fundraisers {
+            get {
+                return ResourceManager.GetString("Fundraisers", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Games.
+        /// </summary>
+        public static string Games {
+            get {
+                return ResourceManager.GetString("Games", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Gaming.
         /// </summary>
         public static string Gaming {
             get {
                 return ResourceManager.GetString("Gaming", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Gaming Video.
+        /// </summary>
+        public static string GamingVideo {
+            get {
+                return ResourceManager.GetString("GamingVideo", resourceCulture);
             }
         }
         
@@ -813,6 +903,15 @@ namespace RobotizeFacebook.Resources {
         public static string Group {
             get {
                 return ResourceManager.GetString("Group", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Groups.
+        /// </summary>
+        public static string Groups {
+            get {
+                return ResourceManager.GetString("Groups", resourceCulture);
             }
         }
         
@@ -961,6 +1060,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Jobs.
+        /// </summary>
+        public static string Jobs {
+            get {
+                return ResourceManager.GetString("Jobs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Latest Videos.
         /// </summary>
         public static string LatestVideos {
@@ -1006,11 +1114,38 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Live Videos.
+        /// </summary>
+        public static string LiveVideos {
+            get {
+                return ResourceManager.GetString("LiveVideos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Manage.
         /// </summary>
         public static string Manage {
             get {
                 return ResourceManager.GetString("Manage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Marketplace.
+        /// </summary>
+        public static string Marketplace {
+            get {
+                return ResourceManager.GetString("Marketplace", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Memories.
+        /// </summary>
+        public static string Memories {
+            get {
+                return ResourceManager.GetString("Memories", resourceCulture);
             }
         }
         
@@ -1042,6 +1177,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Messenger Kids.
+        /// </summary>
+        public static string MessengerKids {
+            get {
+                return ResourceManager.GetString("MessengerKids", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Moderate.
         /// </summary>
         public static string Moderate {
@@ -1056,6 +1200,24 @@ namespace RobotizeFacebook.Resources {
         public static string More {
             get {
                 return ResourceManager.GetString("More", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Most Recent.
+        /// </summary>
+        public static string MostRecent {
+            get {
+                return ResourceManager.GetString("MostRecent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Movies.
+        /// </summary>
+        public static string Movies {
+            get {
+                return ResourceManager.GetString("Movies", resourceCulture);
             }
         }
         
@@ -1128,6 +1290,24 @@ namespace RobotizeFacebook.Resources {
         public static string Notifications {
             get {
                 return ResourceManager.GetString("Notifications", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Oculus.
+        /// </summary>
+        public static string Oculus {
+            get {
+                return ResourceManager.GetString("Oculus", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Offer.
+        /// </summary>
+        public static string Offer {
+            get {
+                return ResourceManager.GetString("Offer", resourceCulture);
             }
         }
         
@@ -1290,6 +1470,15 @@ namespace RobotizeFacebook.Resources {
         public static string PageRoles {
             get {
                 return ResourceManager.GetString("PageRoles", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pages.
+        /// </summary>
+        public static string Pages {
+            get {
+                return ResourceManager.GetString("Pages", resourceCulture);
             }
         }
         
@@ -1501,6 +1690,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Recent Ad Activity.
+        /// </summary>
+        public static string RecentAdActivity {
+            get {
+                return ResourceManager.GetString("RecentAdActivity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Recreation.
         /// </summary>
         public static string Recreation {
@@ -1650,6 +1848,24 @@ namespace RobotizeFacebook.Resources {
         public static string SeasonsAndHoliday {
             get {
                 return ResourceManager.GetString("SeasonsAndHoliday", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to See Less.
+        /// </summary>
+        public static string SeeLess {
+            get {
+                return ResourceManager.GetString("SeeLess", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to See More.
+        /// </summary>
+        public static string SeeMore {
+            get {
+                return ResourceManager.GetString("SeeMore", resourceCulture);
             }
         }
         
@@ -2046,6 +2262,24 @@ namespace RobotizeFacebook.Resources {
         public static string WaitingForLiveVideo {
             get {
                 return ResourceManager.GetString("WaitingForLiveVideo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Watch.
+        /// </summary>
+        public static string Watch {
+            get {
+                return ResourceManager.GetString("Watch", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Weather.
+        /// </summary>
+        public static string Weather {
+            get {
+                return ResourceManager.GetString("Weather", resourceCulture);
             }
         }
         

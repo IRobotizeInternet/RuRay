@@ -3,13 +3,13 @@ using System;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
-    public class PageChat : BasePage
+    public class PageChats : BasePage
     {
         public override string PageUrl => throw new NotImplementedException();
 
         public override By ByForPage => throw new NotImplementedException();
 
-        public PageChat()
+        public PageChats()
         {
         }
 

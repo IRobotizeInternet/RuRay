@@ -189,6 +189,9 @@
   <data name="Calendar" xml:space="preserve">
     <value>Calendar</value>
   </data>
+  <data name="Campus" xml:space="preserve">
+    <value>Campus</value>
+  </data>
   <data name="Cancel" xml:space="preserve">
     <value>Cancel</value>
   </data>
@@ -222,6 +225,9 @@
   <data name="CommerceProfile" xml:space="preserve">
     <value>Commerce Profile</value>
   </data>
+  <data name="CommunityHelp" xml:space="preserve">
+    <value>Community Help</value>
+  </data>
   <data name="Contacts" xml:space="preserve">
     <value>Contacts</value>
   </data>
@@ -233,6 +239,9 @@
   </data>
   <data name="CoverPhoto" xml:space="preserve">
     <value>Cover Photo</value>
+  </data>
+  <data name="COVID19InformationCenter" xml:space="preserve">
+    <value>COVID-19 Information Center</value>
   </data>
   <data name="CreateAPoll" xml:space="preserve">
     <value>Create a poll</value>
@@ -324,8 +333,14 @@
   <data name="Facebook" xml:space="preserve">
     <value>Facebook</value>
   </data>
+  <data name="FacebookPay" xml:space="preserve">
+    <value>Facebook Pay</value>
+  </data>
   <data name="Family" xml:space="preserve">
     <value>Family</value>
+  </data>
+  <data name="Favorites" xml:space="preserve">
+    <value>Favorites</value>
   </data>
   <data name="Featured" xml:space="preserve">
     <value>Featured</value>
@@ -339,8 +354,23 @@
   <data name="FoodAndDrink" xml:space="preserve">
     <value>Food and Drink</value>
   </data>
+  <data name="FriendLists" xml:space="preserve">
+    <value>Friend Lists</value>
+  </data>
+  <data name="Friends" xml:space="preserve">
+    <value>Friends</value>
+  </data>
+  <data name="Fundraisers" xml:space="preserve">
+    <value>Fundraisers</value>
+  </data>
+  <data name="Games" xml:space="preserve">
+    <value>Games</value>
+  </data>
   <data name="Gaming" xml:space="preserve">
     <value>Gaming</value>
+  </data>
+  <data name="GamingVideo" xml:space="preserve">
+    <value>Gaming Video</value>
   </data>
   <data name="General" xml:space="preserve">
     <value>General</value>
@@ -368,6 +398,9 @@
   </data>
   <data name="Group" xml:space="preserve">
     <value>Group</value>
+  </data>
+  <data name="Groups" xml:space="preserve">
+    <value>Groups</value>
   </data>
   <data name="GuestsCanInviteFriends" xml:space="preserve">
     <value>Guests Can Invite Friends</value>
@@ -417,6 +450,9 @@
   <data name="IssueElectoralOrPoliticalAds" xml:space="preserve">
     <value>Issue, Electoral or Political Ads</value>
   </data>
+  <data name="Jobs" xml:space="preserve">
+    <value>Jobs</value>
+  </data>
   <data name="LatestVideos" xml:space="preserve">
     <value>Latest Videos</value>
   </data>
@@ -432,8 +468,17 @@
   <data name="LiveVideoEventSuccessfullyCreated" xml:space="preserve">
     <value>Live Video Event Successfully Created</value>
   </data>
+  <data name="LiveVideos" xml:space="preserve">
+    <value>Live Videos</value>
+  </data>
   <data name="Manage" xml:space="preserve">
     <value>Manage</value>
+  </data>
+  <data name="Marketplace" xml:space="preserve">
+    <value>Marketplace</value>
+  </data>
+  <data name="Memories" xml:space="preserve">
+    <value>Memories</value>
   </data>
   <data name="Messages" xml:space="preserve">
     <value>Messages</value>
@@ -444,11 +489,20 @@
   <data name="Messenger" xml:space="preserve">
     <value>Messenger</value>
   </data>
+  <data name="MessengerKids" xml:space="preserve">
+    <value>Messenger Kids</value>
+  </data>
   <data name="Moderate" xml:space="preserve">
     <value>Moderate</value>
   </data>
   <data name="More" xml:space="preserve">
     <value>More</value>
+  </data>
+  <data name="MostRecent" xml:space="preserve">
+    <value>Most Recent</value>
+  </data>
+  <data name="Movies" xml:space="preserve">
+    <value>Movies</value>
   </data>
   <data name="Name" xml:space="preserve">
     <value>Name</value>
@@ -473,6 +527,12 @@
   </data>
   <data name="Notifications" xml:space="preserve">
     <value>Notifications</value>
+  </data>
+  <data name="Oculus" xml:space="preserve">
+    <value>Oculus</value>
+  </data>
+  <data name="Offer" xml:space="preserve">
+    <value>Offer</value>
   </data>
   <data name="OK" xml:space="preserve">
     <value>OK</value>
@@ -527,6 +587,9 @@
   </data>
   <data name="PageRoles" xml:space="preserve">
     <value>Page Roles</value>
+  </data>
+  <data name="Pages" xml:space="preserve">
+    <value>Pages</value>
   </data>
   <data name="PageViews" xml:space="preserve">
     <value>Page Views</value>
@@ -597,6 +660,9 @@
   <data name="RecentActivity" xml:space="preserve">
     <value>Recent Activity</value>
   </data>
+  <data name="RecentAdActivity" xml:space="preserve">
+    <value>Recent Ad Activity</value>
+  </data>
   <data name="Recreation" xml:space="preserve">
     <value>Recreation</value>
   </data>
@@ -647,6 +713,12 @@
   </data>
   <data name="SeasonsAndHoliday" xml:space="preserve">
     <value>Seasons and Holiday</value>
+  </data>
+  <data name="SeeLess" xml:space="preserve">
+    <value>See Less</value>
+  </data>
+  <data name="SeeMore" xml:space="preserve">
+    <value>See More</value>
   </data>
   <data name="SelectAGraphicsPackage" xml:space="preserve">
     <value>Select a graphics package</value>
@@ -779,6 +851,12 @@
   </data>
   <data name="WaitingForLiveVideo" xml:space="preserve">
     <value>Waiting for live video</value>
+  </data>
+  <data name="Watch" xml:space="preserve">
+    <value>Watch</value>
+  </data>
+  <data name="Weather" xml:space="preserve">
+    <value>Weather</value>
   </data>
   <data name="Website" xml:space="preserve">
     <value>Website</value>

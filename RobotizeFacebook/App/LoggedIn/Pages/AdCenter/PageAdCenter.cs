@@ -3,13 +3,13 @@ using System;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
-    public class PageGaming : BasePage
+    public class PageAdCenter : BasePage
     {
         public override string PageUrl => throw new NotImplementedException();
 
         public override By ByForPage => throw new NotImplementedException();
 
-        public PageGaming()
+        public PageAdCenter()
         {
         }
 
