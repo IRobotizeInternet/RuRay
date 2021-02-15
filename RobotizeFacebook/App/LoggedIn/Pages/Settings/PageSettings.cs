@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 
-namespace RobotizeFacebook.App
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class PageSettings : BasePage
     {

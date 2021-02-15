@@ -1,4 +1,6 @@
-﻿namespace RobotizeFacebook.App.LoggedIn
+﻿using RobotizeFacebook.App.LoggedIn.Pages;
+
+namespace RobotizeFacebook.App.LoggedIn
 {
     public abstract class Feed : BaseDriver
     {

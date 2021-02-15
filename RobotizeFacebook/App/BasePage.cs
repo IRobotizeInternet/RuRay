@@ -1,12 +1,16 @@
 ﻿using OpenQA.Selenium;
 using RobotizeToolbox.Extensions;
 
-namespace RobotizeFacebook.App
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public abstract class BasePage : BaseDriver
     {
         public abstract string PageUrl { get; }
         public abstract By ByForPage { get; }
+
+        public virtual Header Header => new Header();
+        public MenuItemsHome MenuItems => new MenuItemsHome();
+        public FeedHome MainSection => new FeedHome();
 
         protected BasePage()
         {

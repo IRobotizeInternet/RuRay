@@ -3,7 +3,7 @@ using RobotizeFacebook.Resources;
 using RobotizeToolbox.Controls;
 using RobotizeToolbox.Controls.TriggerControls;
 
-namespace RobotizeFacebook.App.LoggedIn.LeftMenu
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class MenuItemsWatch : MenuItems
     {

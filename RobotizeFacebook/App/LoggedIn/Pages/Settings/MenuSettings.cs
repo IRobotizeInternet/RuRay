@@ -1,4 +1,4 @@
-﻿namespace RobotizeFacebook.App.LoggedIn.Pages.PageSettings
+﻿namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     class MenuSettings
     {

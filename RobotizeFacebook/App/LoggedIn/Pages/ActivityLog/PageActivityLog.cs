@@ -2,7 +2,7 @@
 using OpenQA.Selenium.Remote;
 using RobotizeFacebook.Resources;
 
-namespace RobotizeFacebook.App.LoggedIn
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class PageActivityLog : BasePage
     {

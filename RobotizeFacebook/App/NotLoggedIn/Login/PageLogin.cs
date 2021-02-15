@@ -1,10 +1,10 @@
 ﻿using OpenQA.Selenium;
-using RobotizeFacebook.App.PasswordRecovery;
 using RobotizeFacebook.Utilities;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls.TriggerControls;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.Controls;
+using RobotizeFacebook.App.LoggedIn.Pages;
 
 namespace RobotizeFacebook.App.NotLoggedIn
 {

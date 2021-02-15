@@ -4,7 +4,7 @@ using RobotizeFacebook.App.LoggedIn.Settings.Tabs.Seperator1;
 using RobotizeFacebook.App.LoggedIn.Settings.Tabs.Seperator1.Bas;
 using RobotizeToolbox.Controls.TriggerControls;
 
-namespace RobotizeFacebook.App.LoggedIn.Settings.Tabs
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class General : PageSettings
     {

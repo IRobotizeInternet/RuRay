@@ -1,4 +1,4 @@
-﻿namespace RobotizeFacebook.App.LoggedIn.LeftMenu
+﻿namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class AdPreferences : MenuItems
     {

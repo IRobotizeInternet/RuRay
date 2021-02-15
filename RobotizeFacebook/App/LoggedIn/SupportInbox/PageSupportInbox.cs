@@ -2,7 +2,7 @@
 using OpenQA.Selenium.Remote;
 using System;
 
-namespace RobotizeFacebook.App.LoggedIn
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class PageSupportInbox : BasePage
     {

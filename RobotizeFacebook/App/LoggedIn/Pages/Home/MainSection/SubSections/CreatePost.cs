@@ -2,7 +2,7 @@
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.Controls;
 
-namespace RobotizeFacebook.App
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class CreatePost : BaseDriver
     {

@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 using RobotizeToolbox.Controls.TriggerControls;
 
-namespace RobotizeFacebook.App.LoggedIn.Stories.Create
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class DialogCreateAStory : BasePage
     {

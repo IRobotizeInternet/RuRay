@@ -12,3 +12,12 @@ Append a white space to the existing command, followed by the following flags:
 The resultant command line string should look something like the following:
 
 "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --remote-debugging-port=9222 --no-first-run --disable-web-security --allow-file-access-from-file --enable-views-textfield --force-renderer-accessibility
+
+----
+Goals
+----
+To be able to create automated tests quickly by using appropriate abstraction layers
+The framework should have meaningful logging and reporting structure
+Should be easily maintainable and extendable
+Should be simple enough for testers to write automated tests
+A retry mechanism to rerun failed tests - this is especially useful for WebDriver UI tests

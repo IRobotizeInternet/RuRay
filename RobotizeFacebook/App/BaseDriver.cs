@@ -4,7 +4,7 @@ using RobotizeFacebook.Utilities;
 using RobotizeFacebook.WebDrivers;
 using System;
 
-namespace RobotizeFacebook.App
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public abstract class BaseDriver
     {

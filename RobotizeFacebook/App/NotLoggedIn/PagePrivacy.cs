@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using RobotizeFacebook.App.LoggedIn.Pages;
 
 namespace RobotizeFacebook.App.NotLoggedIn
 {

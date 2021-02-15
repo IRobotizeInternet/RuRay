@@ -3,7 +3,7 @@ using RobotizeFacebook.App.NotLoggedIn;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls.TriggerControls;
 
-namespace RobotizeFacebook.App.PasswordRecovery
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class PasswordRecoveryPage : BasePage
     {

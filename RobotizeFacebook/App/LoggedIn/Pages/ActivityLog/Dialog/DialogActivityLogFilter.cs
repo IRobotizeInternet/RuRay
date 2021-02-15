@@ -5,7 +5,7 @@ using RobotizeFacebook.Resources;
 using RobotizeLibrary.Extensions;
 using RobotizeToolbox.Controls;
 using RobotizeToolbox.Dialogs;
-namespace RobotizeFacebook.App.LoggedIn
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class DialogActivityLogFilter : BaseDialog
     {

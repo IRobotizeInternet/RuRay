@@ -1,4 +1,4 @@
-﻿namespace RobotizeFacebook.App.LoggedIn
+﻿namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class MenuItemsCreateAStory : MenuItems
     {

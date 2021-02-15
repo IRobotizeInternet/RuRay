@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading;
 using OpenQA.Selenium;
 using RobotizeFacebook.App;
+using RobotizeFacebook.App.LoggedIn.Pages;
 using RobotizeToolbox.CommonControls;
 
 namespace RobotizeFacebook.Utilities
@@ -21,21 +22,21 @@ namespace RobotizeFacebook.Utilities
             {
                 try
                 {
-                    IList<string> headerMenuItems = page.GetMainMenuItems;
-                    foreach (var headerMenuItem in headerMenuItems)
+                    var headerMenuItems = page.GetMainMenuItems;
+                    for (var h = 1;  h< headerMenuItems.Count; h++)
                     {
-                        var childrenCount = page.GetMenuItemsNames.Count();
-                        for (var i = 12; i <= childrenCount; i++)
+                        var childrenCount = page.GetMenuItemsNames(headerMenuItems[h]).Count();
+                        for (var i = 0; i <= childrenCount; i++)
                         {
                             var classDTO = new ClassDefinationDTO();
                             classes.Add(classDTO);
-                            classDTO.NameSpace = new Defiantion { Name = headerMenuItem };
+                            classDTO.NameSpace = new Defiantion { Name = headerMenuItems[h] };
 
-                            page.GetFirstItem(headerMenuItem).Click();
-                            var menuItem = page.GetMenuItemsNames.ToList()[i];
+                            page.GetFirstItem(headerMenuItems[h]).Click();
+                            var menuItem = page.GetMenuItemsNames(headerMenuItems[h]).ToList()[i];
                             var className = menuItem.GetAttribute("aria-label");
                             var partUrl = menuItem.GetAttribute("href");
-                            page.GoToPage(partUrl);
+                            page.ClickElement(menuItem);
 
                             var newDefination = new Defiantion();
                             newDefination.Name = className;
@@ -45,7 +46,7 @@ namespace RobotizeFacebook.Utilities
 
                             if (!grandChildren.Any()) continue;
                             var methodDefinitions = new List<MethodDefination>();
-                            for (var j = 0; j < grandChildren.Count; j++) // grandChild in grandChildren)
+                            for (var j = 0; j < grandChildren.Count; j++)
                             {
                                 var grandChildEmement = page.GetSubMenuItemHyperlink(className, grandChildren[j])[j];
 
@@ -143,8 +144,8 @@ namespace RobotizeFacebook.Utilities
                 new Button(Driver,By.XPath($"//div[@aria-label='Using Facebook']//span[text()='{name}']/parent::span/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::a"));
             public IList<IWebElement> GetSubMenuItemHyperlink(string parent, string child) =>
                 Driver.FindElements(By.XPath($"//div[@aria-label='Using Facebook']//div[@aria-label='{parent}']//a//span/div/span['{child}']/parent::div/parent::span/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::a"));
-            public IEnumerable<IWebElement> GetMenuItemsNames =>
-                Driver.FindElements(By.XPath("//a[@aria-labelledby='Using Facebook']"));
+            public IEnumerable<IWebElement> GetMenuItemsNames(string name) =>
+                Driver.FindElements(By.XPath($"//a[@aria-labelledby='{name}']"));
             public IList<string> GetSubMenuItemsName(string name) =>
                 Driver.FindElements(By.XPath($"//div[@aria-label='Using Facebook']//div[@aria-label='{name}']//a//span/div/span")).Select(x => x.Text).ToList();
 
