@@ -1,6 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using RobotizeFacebook.App.LoggedIn.Pages;
 using RobotizeFacebook.Utilities;
+using RobotizeToolbox.CommonControls;
 
 namespace RobotizeFacebookTests.HomePage
 {
@@ -14,7 +15,7 @@ namespace RobotizeFacebookTests.HomePage
             //var a = new ScriptUsingFacebook();
             //a.GenerateFacebookHelpApi();
             var b = new PageHome();
-            b.Feed.StartScrollingToDown(RobotizeToolbox.Enum.ScrollPosition.Down);
+            b.Feed.StartScrollingToDown(ScrollPosition.Down);
             //var dynamicGenerate = new DynamicCodeGeneration();
             //var classDefination = new ClassDefinationDTO
             //{

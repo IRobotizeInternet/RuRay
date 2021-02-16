@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Remote;
 
 using Polly;
@@ -52,7 +53,7 @@ namespace RobotizeToolbox.CommonControls
             var element = Driver.FindElementWithTimeSpan(ByForElement, timeSpanInSeconds: 10);
             policy.Execute(() =>
             {
-                try{ element.Click(); }
+                try { element.Click(); }
                 catch (WebDriverException ex)
                 {
                     if (!knowErrorMessages.Any(x => x.Contains(ex.Message)))
@@ -159,6 +160,21 @@ namespace RobotizeToolbox.CommonControls
 
         public void ScrollToElement(IWebElement webElement = null)
         {
+            var element = Driver.FindElement(ByForElement);
+
+            //try { JScrollToElement(element); }
+            try { JScrollSmooth(); }
+            
+            catch (Exception ex) { ActionsScrollToElement(element); }
+        }
+
+        public void JClickElement(IWebElement webElement = null)
+        {
+            Driver.ExecuteScript("argument[0]", webElement);
+        }
+
+        public void JScrollToElement(IWebElement webElement = null)
+        {
             var jScript = "arguments[0].scrollIntoView(false);" +
             "var evObj = document.createEvent('MouseEvents');" +
             "evObj.initMouseEvent(\"mouseover\",true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);" +
@@ -169,9 +185,64 @@ namespace RobotizeToolbox.CommonControls
             Driver.ExecuteScript(jScript, targetElement);
         }
 
-        public void JClickElement(IWebElement webElement = null)
+        public void JScrollSmooth()
         {
-            Driver.ExecuteScript("argument[0]", webElement);
+            var element = Driver.FindElementWithTimeSpan(ByForElement);
+            var targetElement = LocateScrollableElement(Driver, element);
+            
+            for (int i = 0; i < 6000; i++)
+            {
+                Driver.ExecuteScript("window.scrollBy(0, 1)", targetElement);
+            }
+        }
+
+        private IWebElement GetScrollableElement(IWebElement element)
+        {
+            var numberOfTries = 10;
+            IWebElement scrollableElement = null;
+            // Using Polly library: https://github.com/App-vNext/Polly
+            var policy = Policy
+              .Handle<InvalidOperationException>()
+              .WaitAndRetry(numberOfTries, timespan => TimeSpan.FromSeconds(15));
+
+            policy.Execute(() =>
+            {
+                try
+                {
+                    var ancestors = element.FindElements(By.XPath("./ancestor-or-self::*")).Reverse();
+                    scrollableElement = ancestors.FirstOrDefault(e => !e.Location.IsEmpty);
+                }
+                catch (StaleElementReferenceException ex)
+                {
+                    // ignore and try again
+                }
+            });
+
+            return scrollableElement;
+        }
+
+        public void ActionsScrollToElement(IWebElement element)
+        {
+            var elementToScrollTo = GetScrollableElement(element);
+            new Actions(Driver).MoveToElement(elementToScrollTo).Build().Perform();
+        }
+
+        public void ActionsDoubleClick(IWebElement element)
+        {
+            var elementToScrollTo = GetScrollableElement(element);
+            new Actions(Driver).DoubleClick(elementToScrollTo).Perform();
+        }
+
+        public void ActionsRightClick(IWebElement element)
+        {
+            var elementToScrollTo = GetScrollableElement(element);
+            new Actions(Driver).ContextClick(elementToScrollTo).Perform();
+        }
+
+        public void ActionsDragAndDrop(IWebElement srourceElement, IWebElement targetElement)
+        {
+            var action = new Actions(Driver);
+            action.DragAndDrop(srourceElement, targetElement).Build().Perform();
         }
 
         private static IWebElement LocateScrollableElement(RemoteWebDriver driver, IWebElement firstElement)
@@ -181,7 +252,7 @@ namespace RobotizeToolbox.CommonControls
             return scrollableElement;
         }
 
-       
+
         public void FileUpload(string filePath)
         {
             // By setting the file detector, the SendKeys method will first upload the 

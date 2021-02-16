@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using RobotizeToolbox.Enum;
 using RobotizeToolbox.Extensions;
 using System;
 using System.Threading;
@@ -21,7 +20,7 @@ namespace RobotizeToolbox.CommonControls
         /// <summary>
         /// Scroll to the last feed.
         /// </summary>
-        public void StartScrollingToDown(ScrollPosition scrollPosition, int scrollingDelay = 30000)
+        public void StartScrollingToDown(ScrollPosition scrollPosition, int scrollingDelay = 10000)
         {
             switch (scrollPosition)
             {
@@ -56,5 +55,6 @@ namespace RobotizeToolbox.CommonControls
         {
             return $"{BaseXPath}//div[@aria-posinset='{positionInSet}']";
         }
+
     }
 }
