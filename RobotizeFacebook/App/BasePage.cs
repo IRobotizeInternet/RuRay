@@ -1,4 +1,5 @@
 ﻿using OpenQA.Selenium;
+using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Extensions;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
@@ -10,10 +11,11 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 
         public virtual Header Header => new Header();
         public MenuItemsHome MenuItems => new MenuItemsHome();
-        public FeedHome MainSection => new FeedHome();
+        public FeedUnit Feed { get; set; }
 
-        protected BasePage()
+        protected BasePage(string baseXPath = null)
         {
+            Feed = new FeedUnit(Driver, By.XPath(baseXPath), baseXPath);
         }
 
         public void GoToPage(string url = null)

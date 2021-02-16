@@ -1,6 +1,6 @@
 ﻿namespace RobotizeFacebook.App.LoggedIn.Pages
 {
-    public class MenuItemsChats : MenuItems
+    public class MenuItemsCampus : MenuItems
     {
         public override void RunConformance()
         {

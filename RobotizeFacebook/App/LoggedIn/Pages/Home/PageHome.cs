@@ -1,5 +1,4 @@
 ﻿using OpenQA.Selenium;
-using RobotizeFacebook.App.LoggedIn.Home.MainSection.SubSections;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.Controls;
 
@@ -7,7 +6,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class PageHome : BasePage
     {
-        public PageHome()
+        public PageHome(string baseXPath = "//div[@role='feed']") : base(baseXPath)
         {
             
         }
@@ -28,7 +27,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
                    new EventTriggerButton<DialogCreatePost>(Driver, By.XPath($"//div[@role='main']//span[text()='{ResCreatePost.FeelingOrActivity}']"));
 
         public EventTriggerButton<DialogCreateYourRoom> EventTriggerButtonCreateNewRoom =>
-           new EventTriggerButton<DialogCreateYourRoom>(Driver, By.XPath($"//div[@role='main']//span[text()='{ResCreatePost.ne}']"));
+           new EventTriggerButton<DialogCreateYourRoom>(Driver, By.XPath($"//div[@role='main']//span[text()='{ResCreatePost.NewRoom}']"));
 
         public override string PageUrl => "/";
 

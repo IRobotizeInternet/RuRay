@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
+using RobotizeFacebook.Resources;
 using RobotizeToolbox.Dialogs;
-using RobotizeToolbox.Resources;
 
 namespace RobotizeFacebook.App.LoggedIn
 {

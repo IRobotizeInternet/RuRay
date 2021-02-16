@@ -1,4 +1,7 @@
-﻿using RobotizeFacebook.App.LoggedIn.Pages;
+﻿using OpenQA.Selenium;
+using RobotizeFacebook.App.LoggedIn.Pages;
+using RobotizeToolbox.CommonControls;
+using System.Threading;
 
 namespace RobotizeFacebook.App.LoggedIn
 {
@@ -6,10 +9,12 @@ namespace RobotizeFacebook.App.LoggedIn
     {
         // public 
         public abstract string FeedUrl { get; }
-        public string BaseXPath = "//div[@role='main']";
+        public string BaseXPath = "//div[@role='Feed']";
+        public FeedUnit FeedUnit;
 
         protected Feed()
         {
+            FeedUnit = new FeedUnit(Driver, By.XPath(BaseXPath), BaseXPath);
         }
 
         public void GoToPage()
