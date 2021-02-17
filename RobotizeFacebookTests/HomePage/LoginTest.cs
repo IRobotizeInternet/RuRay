@@ -15,8 +15,9 @@ namespace RobotizeFacebookTests.HomePage
             //var a = new ScriptUsingFacebook();
             //a.GenerateFacebookHelpApi();
             var b = new PageHome();
-            b.Feed.StartScrollingToDown(ScrollPosition.Down);
-            //var dynamicGenerate = new DynamicCodeGeneration();
+            //b.MenuItems.EventTriggerButtonFriends.Click();
+            b.Feed.StartScrollingToDown(ScrollDirection.Down);
+            var dynamicGenerate = new DynamicCodeGeneration();
             //var classDefination = new ClassDefinationDTO
             //{
             //    Directives = new List<string> { "System" },

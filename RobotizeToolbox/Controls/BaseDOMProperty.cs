@@ -160,12 +160,22 @@ namespace RobotizeToolbox.CommonControls
 
         public void ScrollToElement(IWebElement webElement = null)
         {
-            var element = Driver.FindElement(ByForElement);
+            webElement = webElement ?? Driver.FindElement(ByForElement);
 
-            //try { JScrollToElement(element); }
-            try { JScrollSmooth(); }
-            
-            catch (Exception ex) { ActionsScrollToElement(element); }
+            try {
+                JScrollSmooth(webElement); 
+            }
+            catch (Exception ex) { ActionsScrollToElement(webElement); }
+        }
+
+        public void JScrollSmooth(IWebElement webElement = null)
+        {
+            webElement = webElement ?? Driver.FindElementWithTimeSpan(ByForElement);
+            for (int i = 0; i < 10; i++) Driver.ExecuteScript("window.scrollBy(0, 1)", webElement);
+            for (int i = 0; i < 10; i++) Driver.ExecuteScript("window.scrollBy(0, 2)", webElement);
+            for (int i = 0; i < 30; i++) Driver.ExecuteScript("window.scrollBy(0, 30)", webElement);
+            for (int i = 0; i < 7; i++) Driver.ExecuteScript("window.scrollBy(0, 3)", webElement);
+            for (int i = 0; i < 5; i++) Driver.ExecuteScript("window.scrollBy(0, 1)", webElement);
         }
 
         public void JClickElement(IWebElement webElement = null)
@@ -183,17 +193,6 @@ namespace RobotizeToolbox.CommonControls
             var element = Driver.FindElementWithTimeSpan(ByForElement);
             var targetElement = LocateScrollableElement(Driver, element);
             Driver.ExecuteScript(jScript, targetElement);
-        }
-
-        public void JScrollSmooth()
-        {
-            var element = Driver.FindElementWithTimeSpan(ByForElement);
-            var targetElement = LocateScrollableElement(Driver, element);
-            
-            for (int i = 0; i < 6000; i++)
-            {
-                Driver.ExecuteScript("window.scrollBy(0, 1)", targetElement);
-            }
         }
 
         private IWebElement GetScrollableElement(IWebElement element)
