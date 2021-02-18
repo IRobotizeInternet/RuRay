@@ -1000,7 +1000,6 @@
     <Compile Include="App\LoggedIn\Pages\Home\MainSection\SubSections\CreateRoom.cs" />
     <Compile Include="App\LoggedIn\Pages\Home\MainSection\SubSections\DialogCreateYourRoom.cs" />
     <Compile Include="App\LoggedIn\Pages\Home\MainSection\SubSections\DialogLearnCreateRoom.cs" />
-    <Compile Include="App\LoggedIn\Pages\Home\MainSection\SubSections\Feed.cs" />
     <Compile Include="App\LoggedIn\Pages\Home\MenuItemsHome.cs" />
     <Compile Include="App\LoggedIn\Pages\Base\MenuItems.cs" />
     <Compile Include="App\LoggedIn\Pages\Chat\MenuItemsChats.cs" />

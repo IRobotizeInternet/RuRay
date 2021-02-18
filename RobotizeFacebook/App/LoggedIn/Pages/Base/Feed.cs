@@ -10,12 +10,16 @@ namespace RobotizeFacebook.App.LoggedIn
         // public 
         public abstract string FeedUrl { get; }
         public string BaseXPath = "//div[@role='Feed']";
+        public string FeedUnitIndexPath = $"//div[@role='feed']//div[@aria-posinset={0}]";
         public FeedUnit FeedUnit;
 
-        protected Feed()
+        protected Feed(int feedUnitIndex)
         {
             FeedUnit = new FeedUnit(Driver, By.XPath(BaseXPath), BaseXPath);
+            FeedUnitIndexPath = string.Format(FeedUnitIndexPath, feedUnitIndex);
         }
+
+        public Button ButtonLike(string feedUnitIndex) => new Button(Driver, By.XPath($"{FeedUnitIndexPath}//"));
 
         public void GoToPage()
         {

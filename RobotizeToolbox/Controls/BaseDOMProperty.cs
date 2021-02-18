@@ -176,6 +176,9 @@ namespace RobotizeToolbox.CommonControls
             for (int i = 0; i < 30; i++) Driver.ExecuteScript("window.scrollBy(0, 30)", webElement);
             for (int i = 0; i < 7; i++) Driver.ExecuteScript("window.scrollBy(0, 3)", webElement);
             for (int i = 0; i < 5; i++) Driver.ExecuteScript("window.scrollBy(0, 1)", webElement);
+            JScrollToElement(webElement);
+            for (int i = 0; i < 10; i++) Driver.ExecuteScript("window.scrollBy(0, -2)", webElement);
+            for (int i = 0; i < 5; i++) Driver.ExecuteScript("window.scrollBy(0, -5)", webElement);
         }
 
         public void JClickElement(IWebElement webElement = null)
@@ -185,14 +188,13 @@ namespace RobotizeToolbox.CommonControls
 
         public void JScrollToElement(IWebElement webElement = null)
         {
-            var jScript = "arguments[0].scrollIntoView(false);" +
+            var jScript = "arguments[0].scrollIntoView(true);" +
             "var evObj = document.createEvent('MouseEvents');" +
             "evObj.initMouseEvent(\"mouseover\",true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);" +
             "arguments[0].dispatchEvent(evObj);";
 
-            var element = Driver.FindElementWithTimeSpan(ByForElement);
-            var targetElement = LocateScrollableElement(Driver, element);
-            Driver.ExecuteScript(jScript, targetElement);
+            webElement = webElement ?? Driver.FindElementWithTimeSpan(ByForElement);
+            Driver.ExecuteScript(jScript, webElement);
         }
 
         private IWebElement GetScrollableElement(IWebElement element)

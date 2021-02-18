@@ -21,3 +21,9 @@ The framework should have meaningful logging and reporting structure
 Should be easily maintainable and extendable
 Should be simple enough for testers to write automated tests
 A retry mechanism to rerun failed tests - this is especially useful for WebDriver UI tests
+
+----
+Known issue
+----
+- Often chorme driver does not connect to the browser even after refersing the page.
+Close all the google chrome broser and open again.
