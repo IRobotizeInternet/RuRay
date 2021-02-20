@@ -6,12 +6,12 @@ using System.Threading;
 
 namespace RobotizeToolbox.CommonControls
 {
-    public class FeedUnit : BaseDOMProperty
+    public class FeedControl : BaseDOMProperty
     {
         public int RowCount => Driver.FindElements(By.XPath($"{BaseXPath}//div[contains(@data-pagelet,'FeedUnit')]")).Count;
         public int CurrentFeedUnitIndex { get; set; }
         public string BaseXPath { get; set; }
-        public FeedUnit(RemoteWebDriver driver, 
+        public FeedControl(RemoteWebDriver driver, 
             By byForElement,
             string baseXPath) : base(driver, byForElement)
         {

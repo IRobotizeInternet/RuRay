@@ -167,6 +167,14 @@
     <Compile Include="App\LoggedIn\Pages\AdCenter\FeedAdCenter.cs" />
     <Compile Include="App\LoggedIn\Pages\AdCenter\MenuItemsFeedAdCenter.cs" />
     <Compile Include="App\LoggedIn\Pages\AdCenter\PageAdCenter.cs" />
+    <Compile Include="App\LoggedIn\Pages\Base\BaseHoverOver.cs" />
+    <Compile Include="App\LoggedIn\Components\Feed\DialogChooseHowToInteract.cs" />
+    <Compile Include="App\LoggedIn\Components\Feed\DialogComments.cs" />
+    <Compile Include="App\LoggedIn\Components\Feed\DialogPeopleWhoSharedThis.cs" />
+    <Compile Include="App\LoggedIn\Components\Feed\DialogSeeWhoReactedToThis.cs" />
+    <Compile Include="App\LoggedIn\Components\Feed\DialogShare.cs" />
+    <Compile Include="App\LoggedIn\Components\Feed\FeedUnit.cs" />
+    <Compile Include="App\LoggedIn\Components\HoverOver\HoverOverLike.cs" />
     <Compile Include="App\LoggedIn\Pages\Campus\FeedCampus.cs" />
     <Compile Include="App\LoggedIn\Pages\Campus\MenuItemsCampus.cs" />
     <Compile Include="App\LoggedIn\Pages\Campus\PageCampus.cs" />
@@ -940,7 +948,7 @@
     <Compile Include="App\LoggedIn\Components\Menus\DivMarketPlaceMenu.cs" />
     <Compile Include="App\LoggedIn\Components\SearchboxSearchFacebook.cs" />
     <Compile Include="App\LoggedIn\Components\SearchBoxSharingWithYourFriends.cs" />
-    <Compile Include="App\LoggedIn\Pages\Base\Feed.cs" />
+    <Compile Include="App\LoggedIn\Components\Feed\Feed.cs" />
     <Compile Include="App\LoggedIn\Pages\ActivityLog\Feed\FeedContainerReviewTagsOnYourPosts.cs" />
     <Compile Include="App\LoggedIn\Pages\ActivityLog\Feed\FeedContainerReviewPostsYouAreTaggedIn.cs" />
     <Compile Include="App\LoggedIn\Pages\ActivityLog\Feed\FeedContainerActivityLog.cs" />

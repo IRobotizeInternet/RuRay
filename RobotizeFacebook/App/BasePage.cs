@@ -11,11 +11,11 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 
         public virtual Header Header => new Header();
         public MenuItemsHome MenuItems => new MenuItemsHome();
-        public FeedUnit Feed { get; set; }
+        public FeedControl Feed { get; set; }
 
         protected BasePage(string baseXPath = null)
         {
-            Feed = new FeedUnit(Driver, By.XPath(baseXPath), baseXPath);
+            Feed = new FeedControl(Driver, By.XPath(baseXPath), baseXPath);
         }
 
         public void GoToPage(string url = null)

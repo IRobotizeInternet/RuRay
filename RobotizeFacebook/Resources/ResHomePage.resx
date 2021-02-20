@@ -117,16 +117,64 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Angry" xml:space="preserve">
+    <value>Angry</value>
+  </data>
   <data name="BackgroundOptions" xml:space="preserve">
     <value>Background Options</value>
+  </data>
+  <data name="Care" xml:space="preserve">
+    <value>Care</value>
+  </data>
+  <data name="CopyLink" xml:space="preserve">
+    <value>Copy link</value>
   </data>
   <data name="CreateAStory" xml:space="preserve">
     <value>Create a Story</value>
   </data>
+  <data name="Haha" xml:space="preserve">
+    <value>Haha</value>
+  </data>
   <data name="LifeEvent" xml:space="preserve">
     <value>Life Event</value>
   </data>
+  <data name="Like" xml:space="preserve">
+    <value>Like</value>
+  </data>
+  <data name="Love" xml:space="preserve">
+    <value>Love</value>
+  </data>
+  <data name="Sad" xml:space="preserve">
+    <value>Sad</value>
+  </data>
   <data name="SeeAllStories" xml:space="preserve">
     <value>See all stories</value>
+  </data>
+  <data name="SendInMessenger" xml:space="preserve">
+    <value>Send in Messenger</value>
+  </data>
+  <data name="SendInTwitter" xml:space="preserve">
+    <value>Send in Twitter</value>
+  </data>
+  <data name="SendInWhatsApp" xml:space="preserve">
+    <value>Send in WhatsApp</value>
+  </data>
+  <data name="ShareNowPublic" xml:space="preserve">
+    <value>Share now (Public)</value>
+  </data>
+  <data name="ShareOnAFriendsprofile" xml:space="preserve">
+    <value>Share on a friend's profile</value>
+  </data>
+  <data name="ShareToAgroup" xml:space="preserve">
+    <value>Share to a group</value>
+  </data>
+  <data name="ShareToAPage" xml:space="preserve">
+    <value>Share to a Page</value>
+  </data>
+  <data name="ShareToNewsFeed" xml:space="preserve">
+    <value>Share to News Feed</value>
+  </data>
+  <data name="Wow" xml:space="preserve">
+    <value>Wow</value>
   </data>
 </root>

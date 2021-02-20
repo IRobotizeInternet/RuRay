@@ -61,11 +61,38 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Angry.
+        /// </summary>
+        public static string Angry {
+            get {
+                return ResourceManager.GetString("Angry", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Background Options.
         /// </summary>
         public static string BackgroundOptions {
             get {
                 return ResourceManager.GetString("BackgroundOptions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Care.
+        /// </summary>
+        public static string Care {
+            get {
+                return ResourceManager.GetString("Care", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Copy link.
+        /// </summary>
+        public static string CopyLink {
+            get {
+                return ResourceManager.GetString("CopyLink", resourceCulture);
             }
         }
         
@@ -79,6 +106,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Haha.
+        /// </summary>
+        public static string Haha {
+            get {
+                return ResourceManager.GetString("Haha", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Life Event.
         /// </summary>
         public static string LifeEvent {
@@ -88,11 +124,119 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Like.
+        /// </summary>
+        public static string Like {
+            get {
+                return ResourceManager.GetString("Like", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Love.
+        /// </summary>
+        public static string Love {
+            get {
+                return ResourceManager.GetString("Love", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sad.
+        /// </summary>
+        public static string Sad {
+            get {
+                return ResourceManager.GetString("Sad", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to See all stories.
         /// </summary>
         public static string SeeAllStories {
             get {
                 return ResourceManager.GetString("SeeAllStories", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Send in Messenger.
+        /// </summary>
+        public static string SendInMessenger {
+            get {
+                return ResourceManager.GetString("SendInMessenger", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Send in Twitter.
+        /// </summary>
+        public static string SendInTwitter {
+            get {
+                return ResourceManager.GetString("SendInTwitter", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Send in WhatsApp.
+        /// </summary>
+        public static string SendInWhatsApp {
+            get {
+                return ResourceManager.GetString("SendInWhatsApp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Share now (Public).
+        /// </summary>
+        public static string ShareNowPublic {
+            get {
+                return ResourceManager.GetString("ShareNowPublic", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Share on a friend&apos;s profile.
+        /// </summary>
+        public static string ShareOnAFriendsprofile {
+            get {
+                return ResourceManager.GetString("ShareOnAFriendsprofile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Share to a group.
+        /// </summary>
+        public static string ShareToAgroup {
+            get {
+                return ResourceManager.GetString("ShareToAgroup", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Share to a Page.
+        /// </summary>
+        public static string ShareToAPage {
+            get {
+                return ResourceManager.GetString("ShareToAPage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Share to News Feed.
+        /// </summary>
+        public static string ShareToNewsFeed {
+            get {
+                return ResourceManager.GetString("ShareToNewsFeed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Wow.
+        /// </summary>
+        public static string Wow {
+            get {
+                return ResourceManager.GetString("Wow", resourceCulture);
             }
         }
     }
