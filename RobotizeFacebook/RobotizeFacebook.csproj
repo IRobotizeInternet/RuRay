@@ -154,6 +154,8 @@
     <Compile Include="App\LoggedIn\Components\CreatePost\DialogHowAreYouFeeling.cs" />
     <Compile Include="App\LoggedIn\Components\CreatePost\DialogSelectNonprofit.cs" />
     <Compile Include="App\LoggedIn\Components\CreatePost\DialogTagFriends.cs" />
+    <Compile Include="App\LoggedIn\Components\Feed\DialogHideOrReport.cs" />
+    <Compile Include="App\LoggedIn\Components\Feed\PopupUserProfile.cs" />
     <Compile Include="App\LoggedIn\Components\PopupAccount.cs" />
     <Compile Include="App\LoggedIn\Components\CreatePost\PopupNotificationSettings.cs" />
     <Compile Include="App\LoggedIn\Dialogs\ChatSettings\DialogChatSettings.cs" />

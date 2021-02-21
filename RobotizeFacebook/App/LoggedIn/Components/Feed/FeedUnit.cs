@@ -1,11 +1,9 @@
 ﻿using OpenQA.Selenium;
+using RobotizeFacebook.Resources;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls;
+using RobotizeToolbox.Controls.TriggerControls;
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages.Base
 {
@@ -30,25 +28,39 @@ namespace RobotizeFacebook.App.LoggedIn.Pages.Base
         }
 
         public EventTriggerButton<DialogSeeWhoReactedToThis> EventTriggerButtonSeeWhoReactedToThis =>
-            new EventTriggerButton<DialogSeeWhoReactedToThis>(Driver, By.XPath($"{FeedCommentControlsXPath}//span[@aria-label='See who reacted to this']"));
+            new EventTriggerButton<DialogSeeWhoReactedToThis>(Driver, By.XPath($"{FeedCommentControlsXPath}//span[@aria-label='{ResHomePage.SeeWhoReactedToThis}']"));
         public EventTriggerButton<DialogSeeWhoReactedToThis> EventTriggerButtonNumberOfPeopleReacted =>
-            new EventTriggerButton<DialogSeeWhoReactedToThis>(Driver, By.XPath($"{FeedCommentControlsXPath}//span[@aria-label='See who reacted to this']/following-sibling::div"));
-        public EventTriggerButton<DialogComments> EventTriggerButtonComments =>
-           new EventTriggerButton<DialogComments>(Driver, By.XPath($"{FeedCommentControlsXPath}//span[contains(text(), 'Comments')]"));
+            new EventTriggerButton<DialogSeeWhoReactedToThis>(Driver, By.XPath($"{FeedCommentControlsXPath}//span[@aria-label='{ResHomePage.SeeWhoReactedToThis}']/following-sibling::div"));
+        public EventTriggerButton<DialogComments> EventTriggerButtonShowHideComments =>
+           new EventTriggerButton<DialogComments>(Driver, By.XPath($"{FeedCommentControlsXPath}//span[contains(text(), '{ResHomePage.Comments}')]"));
         public EventTriggerButton<DialogPeopleWhoSharedThis> EventTriggerButtonPeopleWhoSharedThis =>
-            new EventTriggerButton<DialogPeopleWhoSharedThis>(Driver, By.XPath($"{FeedCommentControlsXPath}//button[@aria-label='Voice Selector']"));
+            new EventTriggerButton<DialogPeopleWhoSharedThis>(Driver, By.XPath($"{FeedCommentControlsXPath}//button[@aria-label='{ResHomePage.Shares}']"));
 
-        public Button ButtonLike => new Button(Driver, By.XPath($"{FeedCommentControlsXPath}//span[text()='Like']"));
+        public Button ButtonLike => new Button(Driver, By.XPath($"{FeedCommentControlsXPath}//span[text()='{ResHomePage.Like}']"));
         public EventTriggerButton<DialogComments> EventTriggerButtonComment =>
-           new EventTriggerButton<DialogComments>(Driver, By.XPath($"{FeedCommentControlsXPath}//span[text()='Comment']"));
+           new EventTriggerButton<DialogComments>(Driver, By.XPath($"{FeedCommentControlsXPath}//span[text()='{ResHomePage.Comment}']"));
         public EventTriggerButton<DialogShare> EventTriggerButtonShare =>
-           new EventTriggerButton<DialogShare>(Driver, By.XPath($"{FeedCommentControlsXPath}//span[text()='Share']"));
+           new EventTriggerButton<DialogShare>(Driver, By.XPath($"{FeedCommentControlsXPath}//span[text()='{ResHomePage.Share}']"));
         public EventTriggerButton<DialogChooseHowToInteract> EventTriggerButtonChooseHowToInteract => 
-            new EventTriggerButton<DialogChooseHowToInteract>(Driver, By.XPath($"{FeedCommentControlsXPath}//button[@aria-label='Voice Selector']"));
+            new EventTriggerButton<DialogChooseHowToInteract>(Driver, By.XPath($"{FeedCommentControlsXPath}//button[@aria-label='{ResHomePage.VoiceSelector}']"));
 
         public override void RunConformance()
         {
             throw new NotImplementedException();
         }
+    }
+
+    public class CommentDiv : BaseDiv
+    {
+        public Hyperlink<PopupUserProfile> HyperlinkCommenterName =>
+            new Hyperlink<PopupUserProfile>(Driver, By.XPath(""));
+
+        public Button ButtonLike => new Button(Driver, By.XPath(""));
+        public Button ButtonReply => new Button(Driver, By.XPath(""));
+        public Button ButtonShare => new Button(Driver, By.XPath(""));
+
+        public EventTriggerButton<DialogHideOrReport> EventTriggerButtonHideOrReport =>
+            new EventTriggerButton<DialogHideOrReport>(Driver, By.XPath(""));
+        public Label LabelWhenUserCommentThis => new Label(Driver, By.XPath(""));
     }
 }

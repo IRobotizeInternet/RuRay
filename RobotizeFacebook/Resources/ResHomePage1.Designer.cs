@@ -79,11 +79,38 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Breaks Group Rule.
+        /// </summary>
+        public static string BreaksGroupRule {
+            get {
+                return ResourceManager.GetString("BreaksGroupRule", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Care.
         /// </summary>
         public static string Care {
             get {
                 return ResourceManager.GetString("Care", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Comment.
+        /// </summary>
+        public static string Comment {
+            get {
+                return ResourceManager.GetString("Comment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Comments.
+        /// </summary>
+        public static string Comments {
+            get {
+                return ResourceManager.GetString("Comments", resourceCulture);
             }
         }
         
@@ -106,11 +133,56 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to False Information.
+        /// </summary>
+        public static string FalseInformation {
+            get {
+                return ResourceManager.GetString("FalseInformation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Give feedback or report this comment.
+        /// </summary>
+        public static string GiveFeedbackOrReportThisComment {
+            get {
+                return ResourceManager.GetString("GiveFeedbackOrReportThisComment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Haha.
         /// </summary>
         public static string Haha {
             get {
                 return ResourceManager.GetString("Haha", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Harassment.
+        /// </summary>
+        public static string Harassment {
+            get {
+                return ResourceManager.GetString("Harassment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hate Speech.
+        /// </summary>
+        public static string HateSpeech {
+            get {
+                return ResourceManager.GetString("HateSpeech", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Hide comment.
+        /// </summary>
+        public static string HideComment {
+            get {
+                return ResourceManager.GetString("HideComment", resourceCulture);
             }
         }
         
@@ -142,6 +214,69 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Member Conflict.
+        /// </summary>
+        public static string MemberConflict {
+            get {
+                return ResourceManager.GetString("MemberConflict", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Next.
+        /// </summary>
+        public static string Next {
+            get {
+                return ResourceManager.GetString("Next", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nudity.
+        /// </summary>
+        public static string Nudity {
+            get {
+                return ResourceManager.GetString("Nudity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Nudity or Sexual Activity.
+        /// </summary>
+        public static string NudityOrSexualActivity {
+            get {
+                return ResourceManager.GetString("NudityOrSexualActivity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Other.
+        /// </summary>
+        public static string Other {
+            get {
+                return ResourceManager.GetString("Other", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Report Comment to Admins.
+        /// </summary>
+        public static string ReportCommentToAdmins {
+            get {
+                return ResourceManager.GetString("ReportCommentToAdmins", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Report comment to group admins.
+        /// </summary>
+        public static string ReportCommentToGroupAdmins {
+            get {
+                return ResourceManager.GetString("ReportCommentToGroupAdmins", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Sad.
         /// </summary>
         public static string Sad {
@@ -156,6 +291,15 @@ namespace RobotizeFacebook.Resources {
         public static string SeeAllStories {
             get {
                 return ResourceManager.GetString("SeeAllStories", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to See who reacted to this.
+        /// </summary>
+        public static string SeeWhoReactedToThis {
+            get {
+                return ResourceManager.GetString("SeeWhoReactedToThis", resourceCulture);
             }
         }
         
@@ -187,6 +331,33 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Send to Admins.
+        /// </summary>
+        public static string SendToAdmins {
+            get {
+                return ResourceManager.GetString("SendToAdmins", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Share.
+        /// </summary>
+        public static string Share {
+            get {
+                return ResourceManager.GetString("Share", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Share in WhatsApp.
+        /// </summary>
+        public static string ShareInWhatsApp {
+            get {
+                return ResourceManager.GetString("ShareInWhatsApp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Share now (Public).
         /// </summary>
         public static string ShareNowPublic {
@@ -201,6 +372,15 @@ namespace RobotizeFacebook.Resources {
         public static string ShareOnAFriendsprofile {
             get {
                 return ResourceManager.GetString("ShareOnAFriendsprofile", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Shares.
+        /// </summary>
+        public static string Shares {
+            get {
+                return ResourceManager.GetString("Shares", resourceCulture);
             }
         }
         
@@ -228,6 +408,87 @@ namespace RobotizeFacebook.Resources {
         public static string ShareToNewsFeed {
             get {
                 return ResourceManager.GetString("ShareToNewsFeed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Share to Your Story (Friends).
+        /// </summary>
+        public static string ShareToYourStoryFriends {
+            get {
+                return ResourceManager.GetString("ShareToYourStoryFriends", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Something Else.
+        /// </summary>
+        public static string SomethingElse {
+            get {
+                return ResourceManager.GetString("SomethingElse", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Spam.
+        /// </summary>
+        public static string Spam {
+            get {
+                return ResourceManager.GetString("Spam", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Suicide or Self-Injury.
+        /// </summary>
+        public static string SuicideOrSelfInjury {
+            get {
+                return ResourceManager.GetString("SuicideOrSelfInjury", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Terrorism.
+        /// </summary>
+        public static string Terrorism {
+            get {
+                return ResourceManager.GetString("Terrorism", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unauthorized Sales.
+        /// </summary>
+        public static string UnauthorizedSales {
+            get {
+                return ResourceManager.GetString("UnauthorizedSales", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Violence.
+        /// </summary>
+        public static string Violence {
+            get {
+                return ResourceManager.GetString("Violence", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Voice Selector.
+        /// </summary>
+        public static string VoiceSelector {
+            get {
+                return ResourceManager.GetString("VoiceSelector", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Voilence.
+        /// </summary>
+        public static string Voilence {
+            get {
+                return ResourceManager.GetString("Voilence", resourceCulture);
             }
         }
         
