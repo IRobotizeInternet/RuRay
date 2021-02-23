@@ -60,7 +60,61 @@ namespace RobotizeFacebook.App.LoggedIn.Pages.Base
             new EventTriggerButton<PageHome>(Driver, By.XPath($"{ResHomePage.Next}"));
     }
 
-    public class DialogSearhSomethingElse
+    public class DialogSearhSomethingElse : BaseDialog
     {
+        public DialogSearhSomethingElse(RemoteWebDriver driver) : base(driver)
+        {
+            BaseXPath = "//div[@role='dialog']//";
+        }
+
+        public RadioButton RadioButtonIntellectualProperty => new RadioButton(Driver, By.XPath($"{BaseXPath}{ResHomePage.IntellectualProperty}"));
+        public RadioButton RadioButtonFraudOrScam => new RadioButton(Driver, By.XPath($"{BaseXPath}{ResHomePage.FraudOrScam}"));
+        public RadioButton RadioButtonMockingVictims => new RadioButton(Driver, By.XPath($"{BaseXPath}{ResHomePage.MockingVictims}"));
+        public RadioButton RadioButtonBullying => new RadioButton(Driver, By.XPath($"{BaseXPath}{ResHomePage.Bullying}"));
+        public RadioButton RadioButtonChildAbuse => new RadioButton(Driver, By.XPath($"{BaseXPath}{ResHomePage.ChildAbuse}"));
+        public RadioButton RadioButtonAnimalAbuse => new RadioButton(Driver, By.XPath($"{BaseXPath}{ResHomePage.AnimalAbuse}"));
+        public RadioButton RadioButtonSexualActivity => new RadioButton(Driver, By.XPath($"{BaseXPath}{ResHomePage.SexualActivity}"));
+        public RadioButton RadioButtonSuicideOrSelfInjury => new RadioButton(Driver, By.XPath($"{BaseXPath}{ResHomePage.SuicideOrSelfInjury}"));
+        public RadioButton RadioButtonHateSpeech => new RadioButton(Driver, By.XPath($"{BaseXPath}{ResHomePage.HateSpeech}"));
+
+        public RadioButton RadioButtonPromotingDrugUse => new RadioButton(Driver, By.XPath($"{BaseXPath}{ResHomePage.PromotingDrugUse}"));
+        public RadioButton RadioButtonNonConsensualIntimateImages => new RadioButton(Driver, By.XPath($"{BaseXPath}{ResHomePage.NonConsensualIntimateImages}"));
+        public RadioButton RadioButtonSexualExploitation => new RadioButton(Driver, By.XPath($"{BaseXPath}{ResHomePage.SexualExploitation}"));
+        public RadioButton RadioButtonHarassment => new RadioButton(Driver, By.XPath($"{BaseXPath}{ResHomePage.Harassment}"));
+        public RadioButton RadioButtonUnauthorizedSales => new RadioButton(Driver, By.XPath($"{BaseXPath}{ResHomePage.UnauthorizedSales}"));
+        public RadioButton RadioButtonVoilence => new RadioButton(Driver, By.XPath($"{BaseXPath}{ResHomePage.Voilence}"));
+        public RadioButton RadioButtonSharingPrivateImages => new RadioButton(Driver, By.XPath($"{BaseXPath}{ResHomePage.SharingPrivateImages}"));
+        public EventTriggerButton<DialogDone> EventTriggerButtonNext => new EventTriggerButton<DialogDone>(Driver, By.XPath($"{BaseXPath}{ResHomePage.Next}"));
+
+        protected override By ByForDialog => By.XPath($"//div[@role='dialog']//span[text()='{ResHomePage.Search}']");
+    }
+
+    public class DialogDone : BaseDialog
+    {
+        public DialogDone(RemoteWebDriver driver) : base(driver)
+        {
+            BaseXPath = "//div[@role='dialog']//";
+        }
+
+        public Button ButtonBlockUser =>
+            new Button(Driver, By.XPath($"{BaseXPath}span[contains(text(), {ResHomePage.BlockWithSpace}"));
+        public Button ButtonHidePostsFromUser =>
+            new Button(Driver, By.XPath($"{BaseXPath}span[contains(text(), {ResHomePage.HidePostsFrom}"));
+        public Button ButtonBlockConfirm =>
+           new Button(Driver, By.XPath($"{BaseXPath}span[contains(text(),'{ResHomePage.BlockWithSpace}')]/parent::div/parent::div/parent::div/parent::div/div[2]/div/div/div[1]"));
+        public Button ButtonBlockCancel =>
+          new Button(Driver, By.XPath($"{BaseXPath}span[contains(text(),'{ResHomePage.BlockWithSpace}')]/parent::div/parent::div/parent::div/parent::div/div[2]/div/div/div[2]"));
+
+        public Button ButtonHidePostConfirm =>
+           new Button(Driver, By.XPath($"{BaseXPath}span[contains(text(),'{ResHomePage.HideWithSpace}')]/parent::div/parent::div/parent::div/parent::div/div[2]/div/div/div[1]"));
+        public Button ButtonHidePostCancel =>
+          new Button(Driver, By.XPath($"{BaseXPath}span[contains(text(),'{ResHomePage.HideWithSpace}')]/parent::div/parent::div/parent::div/parent::div/div[2]/div/div/div[2]"));
+
+        public Button ButtonLearn => new Button(Driver, By.XPath($"{BaseXPath}span[contains(text(), {ResHomePage.LearnAbout}"));
+
+        public EventTriggerButton<PageHome> EventTriggerButtonDone =>
+            new EventTriggerButton<PageHome>(Driver, By.XPath($"{BaseXPath}span[contains(text(),'{ResHomePage.Done}')]"));
+
+        protected override By ByForDialog => By.XPath($"//div[@role='dialog']//span[text()='{ResHomePage.YouSelected}']");
     }
 }

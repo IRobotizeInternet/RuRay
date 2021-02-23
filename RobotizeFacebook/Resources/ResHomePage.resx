@@ -117,17 +117,44 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="Activities" xml:space="preserve">
+    <value>Activities</value>
+  </data>
   <data name="Angry" xml:space="preserve">
     <value>Angry</value>
+  </data>
+  <data name="AnimalAbuse" xml:space="preserve">
+    <value>Animal Abuse</value>
+  </data>
+  <data name="AnimalsAndNature" xml:space="preserve">
+    <value>Animals &amp;amps; Nature</value>
   </data>
   <data name="BackgroundOptions" xml:space="preserve">
     <value>Background Options</value>
   </data>
+  <data name="BlockWithOutSpace" xml:space="preserve">
+    <value>Block</value>
+  </data>
+  <data name="BlockWithSpace" xml:space="preserve">
+    <value>Block </value>
+  </data>
   <data name="BreaksGroupRule" xml:space="preserve">
     <value>Breaks Group Rule</value>
   </data>
+  <data name="Bullying" xml:space="preserve">
+    <value>Bullying</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
   <data name="Care" xml:space="preserve">
     <value>Care</value>
+  </data>
+  <data name="ChildAbuse" xml:space="preserve">
+    <value>Child Abuse</value>
+  </data>
+  <data name="ChooseHowToInteract" xml:space="preserve">
+    <value>Choose How to Interact</value>
   </data>
   <data name="Comment" xml:space="preserve">
     <value>Comment</value>
@@ -141,8 +168,20 @@
   <data name="CreateAStory" xml:space="preserve">
     <value>Create a Story</value>
   </data>
+  <data name="Done" xml:space="preserve">
+    <value>Done</value>
+  </data>
   <data name="FalseInformation" xml:space="preserve">
     <value>False Information</value>
+  </data>
+  <data name="Flags" xml:space="preserve">
+    <value>Flags</value>
+  </data>
+  <data name="FoodAndDrink" xml:space="preserve">
+    <value>Food &amp;amps; Drink</value>
+  </data>
+  <data name="FraudOrScam" xml:space="preserve">
+    <value>Fraud or Scam</value>
   </data>
   <data name="GiveFeedbackOrReportThisComment" xml:space="preserve">
     <value>Give feedback or report this comment</value>
@@ -159,6 +198,18 @@
   <data name="HideComment" xml:space="preserve">
     <value>Hide comment</value>
   </data>
+  <data name="HidePostsFrom" xml:space="preserve">
+    <value>Hide posts from</value>
+  </data>
+  <data name="HideWithSpace" xml:space="preserve">
+    <value>Hide </value>
+  </data>
+  <data name="IntellectualProperty" xml:space="preserve">
+    <value>Intellectual Property</value>
+  </data>
+  <data name="LearnAbout" xml:space="preserve">
+    <value>Learn about </value>
+  </data>
   <data name="LifeEvent" xml:space="preserve">
     <value>Life Event</value>
   </data>
@@ -171,8 +222,14 @@
   <data name="MemberConflict" xml:space="preserve">
     <value>Member Conflict</value>
   </data>
+  <data name="MockingVictims" xml:space="preserve">
+    <value>Mocking Victims</value>
+  </data>
   <data name="Next" xml:space="preserve">
     <value>Next</value>
+  </data>
+  <data name="NonConsensualIntimateImages" xml:space="preserve">
+    <value>Non-Consensual Intimate Images</value>
   </data>
   <data name="Nudity" xml:space="preserve">
     <value>Nudity</value>
@@ -180,8 +237,17 @@
   <data name="NudityOrSexualActivity" xml:space="preserve">
     <value>Nudity or Sexual Activity</value>
   </data>
+  <data name="Objects" xml:space="preserve">
+    <value>Objects</value>
+  </data>
   <data name="Other" xml:space="preserve">
     <value>Other</value>
+  </data>
+  <data name="PromotingDrugUse" xml:space="preserve">
+    <value>Promoting Drug Use</value>
+  </data>
+  <data name="Recent" xml:space="preserve">
+    <value>Recent</value>
   </data>
   <data name="ReportCommentToAdmins" xml:space="preserve">
     <value>Report Comment to Admins</value>
@@ -191,6 +257,9 @@
   </data>
   <data name="Sad" xml:space="preserve">
     <value>Sad</value>
+  </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
   </data>
   <data name="SeeAllStories" xml:space="preserve">
     <value>See all stories</value>
@@ -209,6 +278,12 @@
   </data>
   <data name="SendToAdmins" xml:space="preserve">
     <value>Send to Admins</value>
+  </data>
+  <data name="SexualActivity" xml:space="preserve">
+    <value>Sexual Activity</value>
+  </data>
+  <data name="SexualExploitation" xml:space="preserve">
+    <value>Sexual Exploitation</value>
   </data>
   <data name="Share" xml:space="preserve">
     <value>Share</value>
@@ -237,6 +312,12 @@
   <data name="ShareToYourStoryFriends" xml:space="preserve">
     <value>Share to Your Story (Friends)</value>
   </data>
+  <data name="SharingPrivateImages" xml:space="preserve">
+    <value>Sharing Private Images</value>
+  </data>
+  <data name="SmileysAndPeople" xml:space="preserve">
+    <value>Smileys &amp;amps; People</value>
+  </data>
   <data name="SomethingElse" xml:space="preserve">
     <value>Something Else</value>
   </data>
@@ -246,8 +327,14 @@
   <data name="SuicideOrSelfInjury" xml:space="preserve">
     <value>Suicide or Self-Injury</value>
   </data>
+  <data name="Symbols" xml:space="preserve">
+    <value>Symbols</value>
+  </data>
   <data name="Terrorism" xml:space="preserve">
     <value>Terrorism</value>
+  </data>
+  <data name="TravelAndPlaces" xml:space="preserve">
+    <value>Travel &amp;amps; Places</value>
   </data>
   <data name="UnauthorizedSales" xml:space="preserve">
     <value>Unauthorized Sales</value>
@@ -263,5 +350,11 @@
   </data>
   <data name="Wow" xml:space="preserve">
     <value>Wow</value>
+  </data>
+  <data name="WriteAComment" xml:space="preserve">
+    <value>Write a comment</value>
+  </data>
+  <data name="YouSelected" xml:space="preserve">
+    <value>You selected</value>
   </data>
 </root>

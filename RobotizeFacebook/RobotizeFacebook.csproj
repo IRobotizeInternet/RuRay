@@ -171,7 +171,7 @@
     <Compile Include="App\LoggedIn\Pages\AdCenter\PageAdCenter.cs" />
     <Compile Include="App\LoggedIn\Pages\Base\BaseHoverOver.cs" />
     <Compile Include="App\LoggedIn\Components\Feed\DialogChooseHowToInteract.cs" />
-    <Compile Include="App\LoggedIn\Components\Feed\DialogComments.cs" />
+    <Compile Include="App\LoggedIn\Components\Feed\DivComments.cs" />
     <Compile Include="App\LoggedIn\Components\Feed\DialogPeopleWhoSharedThis.cs" />
     <Compile Include="App\LoggedIn\Components\Feed\DialogSeeWhoReactedToThis.cs" />
     <Compile Include="App\LoggedIn\Components\Feed\DialogShare.cs" />

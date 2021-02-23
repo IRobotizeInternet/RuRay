@@ -31,14 +31,14 @@ namespace RobotizeFacebook.App.LoggedIn.Pages.Base
             new EventTriggerButton<DialogSeeWhoReactedToThis>(Driver, By.XPath($"{FeedCommentControlsXPath}//span[@aria-label='{ResHomePage.SeeWhoReactedToThis}']"));
         public EventTriggerButton<DialogSeeWhoReactedToThis> EventTriggerButtonNumberOfPeopleReacted =>
             new EventTriggerButton<DialogSeeWhoReactedToThis>(Driver, By.XPath($"{FeedCommentControlsXPath}//span[@aria-label='{ResHomePage.SeeWhoReactedToThis}']/following-sibling::div"));
-        public EventTriggerButton<DialogComments> EventTriggerButtonShowHideComments =>
-           new EventTriggerButton<DialogComments>(Driver, By.XPath($"{FeedCommentControlsXPath}//span[contains(text(), '{ResHomePage.Comments}')]"));
+        public EventTriggerButton<DivComments> EventTriggerButtonShowHideComments =>
+           new EventTriggerButton<DivComments>(Driver, By.XPath($"{FeedCommentControlsXPath}//span[contains(text(), '{ResHomePage.Comments}')]"), FeedCommentsXPath);
         public EventTriggerButton<DialogPeopleWhoSharedThis> EventTriggerButtonPeopleWhoSharedThis =>
             new EventTriggerButton<DialogPeopleWhoSharedThis>(Driver, By.XPath($"{FeedCommentControlsXPath}//button[@aria-label='{ResHomePage.Shares}']"));
 
         public Button ButtonLike => new Button(Driver, By.XPath($"{FeedCommentControlsXPath}//span[text()='{ResHomePage.Like}']"));
-        public EventTriggerButton<DialogComments> EventTriggerButtonComment =>
-           new EventTriggerButton<DialogComments>(Driver, By.XPath($"{FeedCommentControlsXPath}//span[text()='{ResHomePage.Comment}']"));
+        public EventTriggerButton<DivComments> EventTriggerButtonComment =>
+           new EventTriggerButton<DivComments>(Driver, By.XPath($"{FeedCommentControlsXPath}//span[text()='{ResHomePage.Comment}']"));
         public EventTriggerButton<DialogShare> EventTriggerButtonShare =>
            new EventTriggerButton<DialogShare>(Driver, By.XPath($"{FeedCommentControlsXPath}//span[text()='{ResHomePage.Share}']"));
         public EventTriggerButton<DialogChooseHowToInteract> EventTriggerButtonChooseHowToInteract => 
@@ -48,19 +48,5 @@ namespace RobotizeFacebook.App.LoggedIn.Pages.Base
         {
             throw new NotImplementedException();
         }
-    }
-
-    public class CommentDiv : BaseDiv
-    {
-        public Hyperlink<PopupUserProfile> HyperlinkCommenterName =>
-            new Hyperlink<PopupUserProfile>(Driver, By.XPath(""));
-
-        public Button ButtonLike => new Button(Driver, By.XPath(""));
-        public Button ButtonReply => new Button(Driver, By.XPath(""));
-        public Button ButtonShare => new Button(Driver, By.XPath(""));
-
-        public EventTriggerButton<DialogHideOrReport> EventTriggerButtonHideOrReport =>
-            new EventTriggerButton<DialogHideOrReport>(Driver, By.XPath(""));
-        public Label LabelWhenUserCommentThis => new Label(Driver, By.XPath(""));
     }
 }
