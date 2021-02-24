@@ -58,6 +58,7 @@ namespace RobotizeToolbox.Extensions
             {
                 try
                 {
+                    // TODO: This is incorrect fix this 
                     var xPathLoadIndicitor = string.Empty;
                     if (!driver.FindElement(By.XPath(xPathLoadIndicitor)).Displayed) return true;
                     else

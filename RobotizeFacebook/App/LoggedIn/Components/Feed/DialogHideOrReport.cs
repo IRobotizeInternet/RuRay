@@ -5,7 +5,7 @@ using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls;
 using RobotizeToolbox.Dialogs;
 
-namespace RobotizeFacebook.App.LoggedIn.Pages.Base
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class DialogHideOrReport : BaseDialog
     {

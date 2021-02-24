@@ -155,6 +155,7 @@
     <Compile Include="App\LoggedIn\Components\CreatePost\DialogSelectNonprofit.cs" />
     <Compile Include="App\LoggedIn\Components\CreatePost\DialogTagFriends.cs" />
     <Compile Include="App\LoggedIn\Components\Feed\DialogHideOrReport.cs" />
+    <Compile Include="App\LoggedIn\Components\Feed\PopupComments.cs" />
     <Compile Include="App\LoggedIn\Components\Feed\PopupUserProfile.cs" />
     <Compile Include="App\LoggedIn\Components\PopupAccount.cs" />
     <Compile Include="App\LoggedIn\Components\CreatePost\PopupNotificationSettings.cs" />
@@ -171,7 +172,7 @@
     <Compile Include="App\LoggedIn\Pages\AdCenter\PageAdCenter.cs" />
     <Compile Include="App\LoggedIn\Pages\Base\BaseHoverOver.cs" />
     <Compile Include="App\LoggedIn\Components\Feed\DialogChooseHowToInteract.cs" />
-    <Compile Include="App\LoggedIn\Components\Feed\DivComments.cs" />
+    <Compile Include="App\LoggedIn\Components\Feed\DivUserComment.cs" />
     <Compile Include="App\LoggedIn\Components\Feed\DialogPeopleWhoSharedThis.cs" />
     <Compile Include="App\LoggedIn\Components\Feed\DialogSeeWhoReactedToThis.cs" />
     <Compile Include="App\LoggedIn\Components\Feed\DialogShare.cs" />
@@ -201,7 +202,7 @@
     <Compile Include="App\LoggedIn\Pages\Home\HomeHeader\HeaderRightMenu.cs" />
     <Compile Include="App\LoggedIn\Pages\Home\MainSection\SubSections\PageTimeline.cs" />
     <Compile Include="App\LoggedIn\Pages\JobsComposer\DialogAddATitle.cs" />
-    <Compile Include="App\LoggedIn\Pages\JobsComposer\DialogEmojis.cs" />
+    <Compile Include="App\LoggedIn\Dialogs\DialogEmojis.cs" />
     <Compile Include="App\LoggedIn\Pages\JobsComposer\DialogRaiseMoney.cs" />
     <Compile Include="App\LoggedIn\Pages\JobsComposer\FeedGoLiveWithOthers.cs" />
     <Compile Include="App\LoggedIn\Pages\JobsComposer\FeedJobsComposer.cs" />

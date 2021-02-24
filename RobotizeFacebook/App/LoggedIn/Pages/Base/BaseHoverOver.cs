@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace RobotizeFacebook.App.LoggedIn.Pages.Base
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class BaseHoverOver : BaseDriver
     {

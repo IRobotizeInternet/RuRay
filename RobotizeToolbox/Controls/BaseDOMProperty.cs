@@ -168,6 +168,8 @@ namespace RobotizeToolbox.CommonControls
             catch (Exception ex) { ActionsScrollToElement(webElement); }
         }
 
+
+        // Used this type of sloppy loops to mimic scrolling with fingure.
         public void JScrollSmooth(IWebElement webElement = null)
         {
             webElement = webElement ?? Driver.FindElementWithTimeSpan(ByForElement);
@@ -238,6 +240,12 @@ namespace RobotizeToolbox.CommonControls
         {
             var elementToScrollTo = GetScrollableElement(element);
             new Actions(Driver).ContextClick(elementToScrollTo).Perform();
+        }
+
+        public void MoveCursorToElement(IWebElement element = null)
+        {
+            var action = new Actions(Driver);
+            action.MoveToElement(Driver.FindElement(ByForElement)).Perform();
         }
 
         public void ActionsDragAndDrop(IWebElement srourceElement, IWebElement targetElement)

@@ -120,6 +120,9 @@
   <data name="Activities" xml:space="preserve">
     <value>Activities</value>
   </data>
+  <data name="AllComments" xml:space="preserve">
+    <value>All Comments</value>
+  </data>
   <data name="Angry" xml:space="preserve">
     <value>Angry</value>
   </data>
@@ -161,6 +164,9 @@
   </data>
   <data name="Comments" xml:space="preserve">
     <value>Comments</value>
+  </data>
+  <data name="CommentWithAGIF" xml:space="preserve">
+    <value>Comment with a GIF</value>
   </data>
   <data name="CopyLink" xml:space="preserve">
     <value>Copy link</value>
@@ -204,6 +210,9 @@
   <data name="HideWithSpace" xml:space="preserve">
     <value>Hide </value>
   </data>
+  <data name="InsertAnEmoji" xml:space="preserve">
+    <value>Insert an emoji</value>
+  </data>
   <data name="IntellectualProperty" xml:space="preserve">
     <value>Intellectual Property</value>
   </data>
@@ -225,6 +234,15 @@
   <data name="MockingVictims" xml:space="preserve">
     <value>Mocking Victims</value>
   </data>
+  <data name="MoreComment" xml:space="preserve">
+    <value>more comment</value>
+  </data>
+  <data name="MostRelevant" xml:space="preserve">
+    <value>Most Relevant</value>
+  </data>
+  <data name="Newest" xml:space="preserve">
+    <value>Newest</value>
+  </data>
   <data name="Next" xml:space="preserve">
     <value>Next</value>
   </data>
@@ -243,11 +261,17 @@
   <data name="Other" xml:space="preserve">
     <value>Other</value>
   </data>
+  <data name="PostASticker" xml:space="preserve">
+    <value>Post a sticker</value>
+  </data>
   <data name="PromotingDrugUse" xml:space="preserve">
     <value>Promoting Drug Use</value>
   </data>
   <data name="Recent" xml:space="preserve">
     <value>Recent</value>
+  </data>
+  <data name="Reply" xml:space="preserve">
+    <value>Reply</value>
   </data>
   <data name="ReportCommentToAdmins" xml:space="preserve">
     <value>Report Comment to Admins</value>
@@ -353,6 +377,9 @@
   </data>
   <data name="WriteAComment" xml:space="preserve">
     <value>Write a comment</value>
+  </data>
+  <data name="WriteACommentDotDotDot" xml:space="preserve">
+    <value>Write a comment…</value>
   </data>
   <data name="YouSelected" xml:space="preserve">
     <value>You selected</value>

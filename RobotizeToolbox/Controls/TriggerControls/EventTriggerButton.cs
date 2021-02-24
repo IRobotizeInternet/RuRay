@@ -2,6 +2,7 @@
 using OpenQA.Selenium.Remote;
 using RobotizeToolbox.CommonControls;
 using System;
+using System.Threading;
 
 namespace RobotizeToolbox.Controls
 {
@@ -25,6 +26,12 @@ namespace RobotizeToolbox.Controls
             return _xPath == null
                 ? (EventResult)Activator.CreateInstance(typeof(EventResult))
                 : (EventResult)Activator.CreateInstance(typeof(EventResult), _xPath);
+        }
+
+        public void Hoverover()
+        {
+            Thread.Sleep(3000);
+            _element.MoveCursorToElement();
         }
     }
 }

@@ -70,6 +70,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to All Comments.
+        /// </summary>
+        public static string AllComments {
+            get {
+                return ResourceManager.GetString("AllComments", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Angry.
         /// </summary>
         public static string Angry {
@@ -192,6 +201,15 @@ namespace RobotizeFacebook.Resources {
         public static string Comments {
             get {
                 return ResourceManager.GetString("Comments", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Comment with a GIF.
+        /// </summary>
+        public static string CommentWithAGIF {
+            get {
+                return ResourceManager.GetString("CommentWithAGIF", resourceCulture);
             }
         }
         
@@ -322,6 +340,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Insert an emoji.
+        /// </summary>
+        public static string InsertAnEmoji {
+            get {
+                return ResourceManager.GetString("InsertAnEmoji", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Intellectual Property.
         /// </summary>
         public static string IntellectualProperty {
@@ -385,6 +412,33 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to more comment.
+        /// </summary>
+        public static string MoreComment {
+            get {
+                return ResourceManager.GetString("MoreComment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Most Relevant.
+        /// </summary>
+        public static string MostRelevant {
+            get {
+                return ResourceManager.GetString("MostRelevant", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Newest.
+        /// </summary>
+        public static string Newest {
+            get {
+                return ResourceManager.GetString("Newest", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Next.
         /// </summary>
         public static string Next {
@@ -439,6 +493,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Post a sticker.
+        /// </summary>
+        public static string PostASticker {
+            get {
+                return ResourceManager.GetString("PostASticker", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Promoting Drug Use.
         /// </summary>
         public static string PromotingDrugUse {
@@ -453,6 +516,15 @@ namespace RobotizeFacebook.Resources {
         public static string Recent {
             get {
                 return ResourceManager.GetString("Recent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reply.
+        /// </summary>
+        public static string Reply {
+            get {
+                return ResourceManager.GetString("Reply", resourceCulture);
             }
         }
         
@@ -768,6 +840,15 @@ namespace RobotizeFacebook.Resources {
         public static string WriteAComment {
             get {
                 return ResourceManager.GetString("WriteAComment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Write a comment….
+        /// </summary>
+        public static string WriteACommentDotDotDot {
+            get {
+                return ResourceManager.GetString("WriteACommentDotDotDot", resourceCulture);
             }
         }
         

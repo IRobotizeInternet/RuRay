@@ -27,3 +27,8 @@ Known issue
 ----
 - Often chorme driver does not connect to the browser even after refersing the page.
 Close all the google chrome broser and open again.
+
+
+--
+Read text from element collection
+document.getElementsByClassName("card--frame card--back disabled").forEach(function(element, index){ console.log(element.innerText);});
