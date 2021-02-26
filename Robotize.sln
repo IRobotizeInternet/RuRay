@@ -18,6 +18,8 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "RasaEngine", "RasaEngine\Ra
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SupportingScripts", "SupportingScripts\SupportingScripts.csproj", "{0BE8769F-B5C4-4BAF-8E26-B1407F26FD08}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotizeMobileFacebook", "RobotizeMobileFacebook\RobotizeMobileFacebook.csproj", "{01CDB635-369E-4707-8786-921F43A358A1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -52,6 +54,12 @@ Global
 		{0BE8769F-B5C4-4BAF-8E26-B1407F26FD08}.Dev|Any CPU.Build.0 = Debug|Any CPU
 		{0BE8769F-B5C4-4BAF-8E26-B1407F26FD08}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BE8769F-B5C4-4BAF-8E26-B1407F26FD08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01CDB635-369E-4707-8786-921F43A358A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01CDB635-369E-4707-8786-921F43A358A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01CDB635-369E-4707-8786-921F43A358A1}.Dev|Any CPU.ActiveCfg = Debug|Any CPU
+		{01CDB635-369E-4707-8786-921F43A358A1}.Dev|Any CPU.Build.0 = Debug|Any CPU
+		{01CDB635-369E-4707-8786-921F43A358A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01CDB635-369E-4707-8786-921F43A358A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
