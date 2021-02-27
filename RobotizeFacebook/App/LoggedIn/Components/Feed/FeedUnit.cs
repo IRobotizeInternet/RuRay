@@ -27,10 +27,10 @@ namespace RobotizeFacebook.App.LoggedIn.Pages.Base
             FeedCommentsXPath = $"{string.Format(FeedUnitIndexPath, feedUnitIndex, 4)}/div/div/div[2]";
         }
 
-        public EventTriggerButton<DialogSeeWhoReactedToThis> EventTriggerButtonSeeWhoReactedToThis =>
-            new EventTriggerButton<DialogSeeWhoReactedToThis>(Driver, By.XPath($"{FeedCommentControlsXPath}//span[@aria-label='{ResHomePage.SeeWhoReactedToThis}']"));
-        public EventTriggerButton<DialogSeeWhoReactedToThis> EventTriggerButtonNumberOfPeopleReacted =>
-            new EventTriggerButton<DialogSeeWhoReactedToThis>(Driver, By.XPath($"{FeedCommentControlsXPath}//span[@aria-label='{ResHomePage.SeeWhoReactedToThis}']/following-sibling::div"));
+        public EventTriggerButton<DialogReactions> EventTriggerButtonSeeWhoReactedToThis =>
+            new EventTriggerButton<DialogReactions>(Driver, By.XPath($"{FeedCommentControlsXPath}//span[@aria-label='{ResHomePage.SeeWhoReactedToThis}']"));
+        public EventTriggerButton<DialogReactions> EventTriggerButtonNumberOfPeopleReacted =>
+            new EventTriggerButton<DialogReactions>(Driver, By.XPath($"{FeedCommentControlsXPath}//span[@aria-label='{ResHomePage.SeeWhoReactedToThis}']/following-sibling::div"));
         public EventTriggerButton<PopupComments> EventTriggerButtonShowHideComments =>
            new EventTriggerButton<PopupComments>(Driver, By.XPath($"{FeedCommentControlsXPath}//span[contains(text(), '{ResHomePage.Comments}')]"), FeedCommentsXPath);
         public EventTriggerButton<DialogPeopleWhoSharedThis> EventTriggerButtonPeopleWhoSharedThis =>

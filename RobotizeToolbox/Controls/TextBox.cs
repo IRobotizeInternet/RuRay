@@ -3,7 +3,7 @@ using OpenQA.Selenium.Remote;
 
 namespace RobotizeToolbox.CommonControls
 {
-    public class TextBox : BaseDOMProperty
+    public class TextBox : BaseDOMObject
     {
         public TextBox(RemoteWebDriver driver, By byForElement) : base(driver, byForElement)
         {

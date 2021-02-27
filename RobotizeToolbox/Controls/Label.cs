@@ -3,7 +3,7 @@ using OpenQA.Selenium.Remote;
 
 namespace RobotizeToolbox.CommonControls
 {
-    public class Label : BaseDOMProperty
+    public class Label : BaseDOMObject
     {
         public Label(RemoteWebDriver driver, By byForElement) : base(driver, byForElement)
         {

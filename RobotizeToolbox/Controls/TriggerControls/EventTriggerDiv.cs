@@ -7,14 +7,14 @@ namespace RobotizeToolbox.Controls.TriggerControls
 {
     public class EventTriggerDiv<EventResult> where EventResult : class
     {
-        private readonly BaseDOMProperty _element;
+        private readonly BaseDOMObject _element;
         private readonly RemoteWebDriver _driver;
         public EventTriggerDiv(
             RemoteWebDriver driver,
             By byForElement)
         {
             _driver = driver;
-            _element = new BaseDOMProperty(driver, byForElement);
+            _element = new BaseDOMObject(driver, byForElement);
         }
 
         public EventResult Click()

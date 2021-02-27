@@ -4,7 +4,7 @@ using RobotizeToolbox.CommonControls;
 
 namespace RobotizeToolbox.Controls
 {
-    public class RadioButton : BaseDOMProperty
+    public class RadioButton : BaseDOMObject
     {
         public RadioButton(RemoteWebDriver driver, By byForElement) : base(driver, byForElement) 
         {

@@ -4,7 +4,7 @@ using RobotizeToolbox.CommonControls;
 
 namespace RobotizeToolbox.Controls
 {
-    public class Checkbox : BaseDOMProperty
+    public class Checkbox : BaseDOMObject
     {
         public Checkbox(RemoteWebDriver driver, By byForCheckbox) : base(driver, byForCheckbox) { }
 

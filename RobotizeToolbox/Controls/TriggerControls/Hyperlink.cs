@@ -9,13 +9,13 @@ namespace RobotizeToolbox.Controls.TriggerControls
     public class Hyperlink <EventResult> where EventResult : class
     {
         private readonly RemoteWebDriver _driver;
-        private readonly BaseDOMProperty _element;
+        private readonly BaseDOMObject _element;
         public Hyperlink(
             RemoteWebDriver driver,
             By byForElement)
         {
             _driver = driver;
-            _element = new BaseDOMProperty(driver, byForElement);
+            _element = new BaseDOMObject(driver, byForElement);
         }
 
         public EventResult Click()

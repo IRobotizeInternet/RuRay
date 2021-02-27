@@ -6,7 +6,7 @@ using System.Threading;
 
 namespace RobotizeToolbox.CommonControls
 {
-    public class Dropdown : BaseDOMProperty
+    public class Dropdown : BaseDOMObject
     {
         public Dropdown(RemoteWebDriver driver, By by) : base(driver, by) { }
 

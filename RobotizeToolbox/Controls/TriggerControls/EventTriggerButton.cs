@@ -8,7 +8,7 @@ namespace RobotizeToolbox.Controls
 {
     public class EventTriggerButton <EventResult>  where EventResult: class
     {
-        private readonly BaseDOMProperty _element;
+        private readonly BaseDOMObject _element;
         private readonly string _xPath;
 
         public EventTriggerButton(
@@ -17,7 +17,7 @@ namespace RobotizeToolbox.Controls
             string xPath = null)
         {
             _xPath = xPath;
-            _element = new BaseDOMProperty(driver, byForElement);
+            _element = new BaseDOMObject(driver, byForElement);
         }
 
         public EventResult Click()

@@ -9,7 +9,7 @@ using System.Threading;
 
 namespace RobotizeToolbox.Controls
 {
-    public abstract class Combobox : BaseDOMProperty, IDropdownElement
+    public abstract class Combobox : BaseDOMObject, IDropdownElement
     {
         protected string BaseXPath;
         protected string SearchBoxXPath;

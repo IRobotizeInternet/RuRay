@@ -4,7 +4,7 @@ using RobotizeToolbox.CommonControls;
 
 namespace RobotizeToolbox.Controls
 {
-    public class ButtonImage : BaseDOMProperty
+    public class ButtonImage : BaseDOMObject
     {
         public ButtonImage(RemoteWebDriver driver, By byForElement) : base(driver, byForElement)
         {

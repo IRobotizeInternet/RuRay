@@ -11,18 +11,18 @@ using System.Linq;
 
 namespace RobotizeToolbox.CommonControls
 {
-    public class BaseDOMProperty
+    public class BaseDOMObject
     {
         protected By ByForElement;
         protected RemoteWebDriver Driver;
 
-        public BaseDOMProperty(RemoteWebDriver driver, By byForElement)
+        public BaseDOMObject(RemoteWebDriver driver, By byForElement)
         {
             ByForElement = byForElement;
             Driver = driver;
         }
 
-        public BaseDOMProperty(RemoteWebDriver driver)
+        public BaseDOMObject(RemoteWebDriver driver)
         {
             Driver = driver;
         }
@@ -168,8 +168,7 @@ namespace RobotizeToolbox.CommonControls
             catch (Exception ex) { ActionsScrollToElement(webElement); }
         }
 
-
-        // Used this type of sloppy loops to mimic scrolling with fingure.
+        // Used this type of sloppy loops to mimic scrolling with finger.
         public void JScrollSmooth(IWebElement webElement = null)
         {
             webElement = webElement ?? Driver.FindElementWithTimeSpan(ByForElement);
@@ -261,13 +260,14 @@ namespace RobotizeToolbox.CommonControls
             return scrollableElement;
         }
 
-
+        /// <summary>
+        /// By setting the file detector, the SendKeys method will first upload the 
+        /// file from the local system to the remote machine on which the code is 
+        /// actually running. Then SendKeys will set the file in the<input> element, 
+        /// using the local file path on the remote machine. 
+        /// </summary>
         public void FileUpload(string filePath)
         {
-            // By setting the file detector, the SendKeys method will first upload the 
-            // file from the local system to the remote machine on which the code is 
-            // actually running. Then SendKeys will set the file in the<input> element, 
-            // using the local file path on the remote machine.
             var fileDetectionDriver = Driver as IAllowsFileDetection;
             fileDetectionDriver.FileDetector = new LocalFileDetector();
 

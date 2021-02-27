@@ -267,6 +267,9 @@
   <data name="PromotingDrugUse" xml:space="preserve">
     <value>Promoting Drug Use</value>
   </data>
+  <data name="Reactions" xml:space="preserve">
+    <value>Reactions</value>
+  </data>
   <data name="Recent" xml:space="preserve">
     <value>Recent</value>
   </data>
