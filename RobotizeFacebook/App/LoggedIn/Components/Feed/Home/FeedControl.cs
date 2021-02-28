@@ -4,9 +4,9 @@ using RobotizeToolbox.Extensions;
 using System;
 using System.Threading;
 
-namespace RobotizeToolbox.CommonControls
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
-    public class FeedControl : ScrollControl
+    public class FeedControl : BaseFeed
     {
         
         public string BaseXPath { get; set; }

@@ -155,6 +155,8 @@
     <Compile Include="App\LoggedIn\Components\CreatePost\DialogSelectNonprofit.cs" />
     <Compile Include="App\LoggedIn\Components\CreatePost\DialogTagFriends.cs" />
     <Compile Include="App\LoggedIn\Components\Feed\DialogHideOrReport.cs" />
+    <Compile Include="App\LoggedIn\Components\Feed\Home\BaseFeed.cs" />
+    <Compile Include="App\LoggedIn\Components\Feed\Home\FeedControl.cs" />
     <Compile Include="App\LoggedIn\Components\Feed\PopupComments.cs" />
     <Compile Include="App\LoggedIn\Components\Feed\PopupUserProfile.cs" />
     <Compile Include="App\LoggedIn\Components\PopupAccount.cs" />
@@ -1300,6 +1302,11 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="App\LoggedIn\Components\Feed\GamesVideo\" />
+    <Folder Include="App\LoggedIn\Components\Feed\Games\" />
+    <Folder Include="App\LoggedIn\Components\Feed\Groups\" />
+    <Folder Include="App\LoggedIn\Components\Feed\Marketplace\" />
+    <Folder Include="App\LoggedIn\Components\Feed\Watch\" />
     <Folder Include="App\LoggedIn\Pages\Marketplace\GridMarketPlace\GridHelper\RadioButton\" />
     <Folder Include="App\LoggedIn\Pages\Marketplace\GridMarketPlace\GridHelper\Textbox\" />
     <Folder Include="App\LoggedIn\Pages\Pages\ManagePage\Notifications\" />

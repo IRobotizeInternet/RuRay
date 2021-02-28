@@ -10,11 +10,11 @@ namespace RobotizeFacebook.App.LoggedIn
         // public 
         public abstract string FeedUrl { get; }
         public string BaseXPath = "//div[@role='feed']";
-        public FeedControl FeedUnit;
+        public ScrollControl FeedUnit;
 
         protected Feed()
         {
-            FeedUnit = new FeedControl(Driver, By.XPath(BaseXPath), BaseXPath);
+            FeedUnit = new ScrollControl(Driver, By.XPath(BaseXPath), BaseXPath);
         }
 
         public void GoToPage()

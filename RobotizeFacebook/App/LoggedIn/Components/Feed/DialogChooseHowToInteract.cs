@@ -1,12 +1,11 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 using RobotizeFacebook.Resources;
-using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Dialogs;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace RobotizeFacebook.App.LoggedIn.Pages.Base
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class DialogChooseHowToInteract : BaseDialog
     {
