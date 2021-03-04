@@ -10,14 +10,19 @@ namespace RobotizeToolbox.CommonControls
 {
     public class ScrollControl : BaseDOMObject
     {
-        public virtual int RowCount { get; }
         public int CurrentRowIndex { get; set; }
+        public int RowCount => Driver.FindElements(By.XPath($"{BaseXPath}//div[contains(@data-pagelet,'Feed')]")).Count;
+        public string GetRowXPath(int positionInSet) => $"{BaseXPath}//div[@aria-posinset='{positionInSet}']";
+        public string BaseXPath { get; set; }
+
 
         public ScrollControl(RemoteWebDriver driver, 
             By byForElement,
-            string baseXPath = null) : base(driver, byForElement)
+            string baseXPath = null,
+            int currentRowIndex = 1) : base(driver, byForElement)
         {
-            
+            BaseXPath = baseXPath;
+            CurrentRowIndex = currentRowIndex;
         }
 
         /// <summary>
@@ -80,7 +85,5 @@ namespace RobotizeToolbox.CommonControls
         public void ScrollFeedUnit(string headerText)
         {
         }
-
-        public virtual string GetRowXPath(int positionInSet) => string.Empty;
     }
 }

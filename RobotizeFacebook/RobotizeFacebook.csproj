@@ -148,6 +148,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="App\LoggedIn\Components\Calendar.cs" />
     <Compile Include="App\LoggedIn\Components\CreatePost\DialogAddVideos.cs" />
     <Compile Include="App\LoggedIn\Components\CreatePost\DialogCheckin.cs" />
     <Compile Include="App\LoggedIn\Components\CreatePost\DialogGIF.cs" />
@@ -200,8 +201,14 @@
     <Compile Include="App\LoggedIn\Pages\Events\FeedGoing.cs" />
     <Compile Include="App\LoggedIn\Pages\Events\FeedYourEvents.cs" />
     <Compile Include="App\LoggedIn\Pages\Events\MenuItemsYourEvent.cs" />
+    <Compile Include="App\LoggedIn\Pages\Home\DivVideoChatHomeUnit.cs" />
     <Compile Include="App\LoggedIn\Pages\Home\HomeHeader\HeaderMiddleMenu.cs" />
     <Compile Include="App\LoggedIn\Pages\Home\HomeHeader\HeaderRightMenu.cs" />
+    <Compile Include="App\LoggedIn\Pages\Home\MainSection\SubSections\DialogJoinRoom.cs" />
+    <Compile Include="App\LoggedIn\Pages\Home\MainSection\SubSections\DialogNewRoomName.cs" />
+    <Compile Include="App\LoggedIn\Pages\Home\MainSection\SubSections\DialogRoomName.cs" />
+    <Compile Include="App\LoggedIn\Pages\Home\MainSection\SubSections\DialogStartTime.cs" />
+    <Compile Include="App\LoggedIn\Pages\Home\MainSection\SubSections\EnumRoomName.cs" />
     <Compile Include="App\LoggedIn\Pages\Home\MainSection\SubSections\PageTimeline.cs" />
     <Compile Include="App\LoggedIn\Pages\JobsComposer\DialogAddATitle.cs" />
     <Compile Include="App\LoggedIn\Dialogs\DialogEmojis.cs" />
@@ -1302,11 +1309,7 @@
     </Content>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App\LoggedIn\Components\Feed\GamesVideo\" />
-    <Folder Include="App\LoggedIn\Components\Feed\Games\" />
-    <Folder Include="App\LoggedIn\Components\Feed\Groups\" />
-    <Folder Include="App\LoggedIn\Components\Feed\Marketplace\" />
-    <Folder Include="App\LoggedIn\Components\Feed\Watch\" />
+    <Folder Include="App\LoggedIn\Components\Profile\" />
     <Folder Include="App\LoggedIn\Pages\Marketplace\GridMarketPlace\GridHelper\RadioButton\" />
     <Folder Include="App\LoggedIn\Pages\Marketplace\GridMarketPlace\GridHelper\Textbox\" />
     <Folder Include="App\LoggedIn\Pages\Pages\ManagePage\Notifications\" />
@@ -1371,6 +1374,7 @@
     <EmbeddedResource Include="Resources\ResEmoji.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ResEmoji.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\ResFilterCategories.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
@@ -1395,6 +1399,7 @@
     <EmbeddedResource Include="Resources\ResLeftNav.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ResLeftNav.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\ResLoginPage.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

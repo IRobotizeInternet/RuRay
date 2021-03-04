@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using RobotizeFacebook.App.LoggedIn.Home.MainSection.SubSections;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.Controls;
 
@@ -21,6 +20,6 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
             new EventTriggerButton<DialogCreateYourRoom>(_driver, By.XPath($"//div[@data-pagelet='VideoChatHomeUnit']//span[text()='{ResMiscellaneous.CreateRoom}']"));
 
         public EventTriggerButton<DialogLearnCreateRoom> LinkLearnHowRoomWorks => 
-            new EventTriggerButton<DialogLearnCreateRoom>(_driver, By.XPath("//div[@data-pagelet='VideoChatHomeUnit']//div[@aria-label='Learn More']"));
+            new EventTriggerButton<DialogLearnCreateRoom>(_driver, By.XPath($"//div[@data-pagelet='VideoChatHomeUnit']//div[@aria-label='{ResMiscellaneous.LearnMore}']"));
     }
 }

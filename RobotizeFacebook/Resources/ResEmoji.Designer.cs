@@ -61,7 +61,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥇-1st Place Medal  .
+        ///   Looks up a localized string similar to 🥇-1st Place Medal.
         /// </summary>
         public static string _1stPlaceMedal {
             get {
@@ -70,7 +70,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥈-2nd Place Medal  .
+        ///   Looks up a localized string similar to 🥈-2nd Place Medal.
         /// </summary>
         public static string _2ndPlaceMedal {
             get {
@@ -79,7 +79,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥉-3rd Place Medal  .
+        ///   Looks up a localized string similar to 🥉-3rd Place Medal.
         /// </summary>
         public static string _3rdPlaceMedal {
             get {
@@ -88,7 +88,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧮-Abacus    .
+        ///   Looks up a localized string similar to 🧮-Abacus.
         /// </summary>
         public static string Abacus {
             get {
@@ -97,7 +97,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🪗-Accordion    .
+        ///   Looks up a localized string similar to 🪗-Accordion.
         /// </summary>
         public static string Accordion {
             get {
@@ -106,7 +106,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🩹-Adhesive Bandage   .
+        ///   Looks up a localized string similar to 🩹-Adhesive Bandage.
         /// </summary>
         public static string AdhesiveBandage {
             get {
@@ -115,7 +115,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎟️-Admission Tickets   .
+        ///   Looks up a localized string similar to 🎟️-Admission Tickets.
         /// </summary>
         public static string AdmissionTickets {
             get {
@@ -124,7 +124,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚡-Aerial Tramway   .
+        ///   Looks up a localized string similar to 🚡-Aerial Tramway.
         /// </summary>
         public static string AerialTramway {
             get {
@@ -133,7 +133,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ✈️-Airplane    .
+        ///   Looks up a localized string similar to ✈️-Airplane.
         /// </summary>
         public static string Airplane {
             get {
@@ -142,7 +142,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🛬-Airplane Arrival   .
+        ///   Looks up a localized string similar to 🛬-Airplane Arrival.
         /// </summary>
         public static string AirplaneArrival {
             get {
@@ -151,7 +151,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🛫-Airplane Departure   .
+        ///   Looks up a localized string similar to 🛫-Airplane Departure.
         /// </summary>
         public static string AirplaneDeparture {
             get {
@@ -160,7 +160,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ⏰-Alarm Clock   .
+        ///   Looks up a localized string similar to ⏰-Alarm Clock.
         /// </summary>
         public static string AlarmClock {
             get {
@@ -169,7 +169,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ⚗️-Alembic    .
+        ///   Looks up a localized string similar to ⚗️-Alembic.
         /// </summary>
         public static string Alembic {
             get {
@@ -178,7 +178,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👽-Alien    .
+        ///   Looks up a localized string similar to 👽-Alien.
         /// </summary>
         public static string Alien {
             get {
@@ -187,7 +187,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👾-Alien Monster   .
+        ///   Looks up a localized string similar to 👾-Alien Monster.
         /// </summary>
         public static string AlienMonster {
             get {
@@ -196,7 +196,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚑-Ambulance    .
+        ///   Looks up a localized string similar to 🚑-Ambulance.
         /// </summary>
         public static string Ambulance {
             get {
@@ -205,7 +205,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏈-American Football   .
+        ///   Looks up a localized string similar to 🏈-American Football.
         /// </summary>
         public static string AmericanFootball {
             get {
@@ -214,7 +214,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏺-Amphora    .
+        ///   Looks up a localized string similar to 🏺-Amphora.
         /// </summary>
         public static string Amphora {
             get {
@@ -223,7 +223,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🫀-Anatomical Heart   .
+        ///   Looks up a localized string similar to 🫀-Anatomical Heart.
         /// </summary>
         public static string AnatomicalHeart {
             get {
@@ -232,7 +232,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ⚓-Anchor    .
+        ///   Looks up a localized string similar to ⚓-Anchor.
         /// </summary>
         public static string Anchor {
             get {
@@ -241,7 +241,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 😠-Angry Face   .
+        ///   Looks up a localized string similar to 😠-Angry Face.
         /// </summary>
         public static string AngryFace {
             get {
@@ -259,7 +259,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 😧-Anguished Face   .
+        ///   Looks up a localized string similar to 😧-Anguished Face.
         /// </summary>
         public static string AnguishedFace {
             get {
@@ -268,7 +268,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐜-Ant    .
+        ///   Looks up a localized string similar to 🐜-Ant.
         /// </summary>
         public static string Ant {
             get {
@@ -286,7 +286,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚛-Articulated Lorry   .
+        ///   Looks up a localized string similar to 🚛-Articulated Lorry.
         /// </summary>
         public static string ArticulatedLorry {
             get {
@@ -295,7 +295,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧑‍🎨-Artist    .
+        ///   Looks up a localized string similar to 🧑‍🎨-Artist.
         /// </summary>
         public static string Artist {
             get {
@@ -304,7 +304,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎨-Artist Palette   .
+        ///   Looks up a localized string similar to 🎨-Artist Palette.
         /// </summary>
         public static string ArtistPalette {
             get {
@@ -313,7 +313,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 😲-Astonished Face   .
+        ///   Looks up a localized string similar to 😲-Astonished Face.
         /// </summary>
         public static string AstonishedFace {
             get {
@@ -322,7 +322,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧑‍🚀-Astronaut    .
+        ///   Looks up a localized string similar to 🧑‍🚀-Astronaut.
         /// </summary>
         public static string Astronaut {
             get {
@@ -331,7 +331,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚗-Automobile    .
+        ///   Looks up a localized string similar to 🚗-Automobile.
         /// </summary>
         public static string Automobile {
             get {
@@ -340,7 +340,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🛺-Auto Rickshaw   .
+        ///   Looks up a localized string similar to 🛺-Auto Rickshaw.
         /// </summary>
         public static string AutoRickshaw {
             get {
@@ -349,7 +349,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥑-Avocado    .
+        ///   Looks up a localized string similar to 🥑-Avocado.
         /// </summary>
         public static string Avocado {
             get {
@@ -358,7 +358,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🪓-Axe    .
+        ///   Looks up a localized string similar to 🪓-Axe.
         /// </summary>
         public static string Axe {
             get {
@@ -367,7 +367,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👶-Baby    .
+        ///   Looks up a localized string similar to 👶-Baby.
         /// </summary>
         public static string Baby {
             get {
@@ -376,7 +376,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👼-Baby Angel   .
+        ///   Looks up a localized string similar to 👼-Baby Angel.
         /// </summary>
         public static string BabyAngel {
             get {
@@ -385,7 +385,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍼-Baby Bottle   .
+        ///   Looks up a localized string similar to 🍼-Baby Bottle.
         /// </summary>
         public static string BabyBottle {
             get {
@@ -394,7 +394,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐤-Baby Chick   .
+        ///   Looks up a localized string similar to 🐤-Baby Chick.
         /// </summary>
         public static string BabyChick {
             get {
@@ -439,7 +439,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎒-Backpack    .
+        ///   Looks up a localized string similar to 🎒-Backpack.
         /// </summary>
         public static string Backpack {
             get {
@@ -448,7 +448,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥓-Bacon    .
+        ///   Looks up a localized string similar to 🥓-Bacon.
         /// </summary>
         public static string Bacon {
             get {
@@ -457,7 +457,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦡-Badger    .
+        ///   Looks up a localized string similar to 🦡-Badger.
         /// </summary>
         public static string Badger {
             get {
@@ -466,7 +466,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏸-Badminton    .
+        ///   Looks up a localized string similar to 🏸-Badminton.
         /// </summary>
         public static string Badminton {
             get {
@@ -475,7 +475,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥯-Bagel    .
+        ///   Looks up a localized string similar to 🥯-Bagel.
         /// </summary>
         public static string Bagel {
             get {
@@ -484,7 +484,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🛄-Baggage Claim   .
+        ///   Looks up a localized string similar to 🛄-Baggage Claim.
         /// </summary>
         public static string BaggageClaim {
             get {
@@ -493,7 +493,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥖-Baguette Bread   .
+        ///   Looks up a localized string similar to 🥖-Baguette Bread.
         /// </summary>
         public static string BaguetteBread {
             get {
@@ -502,7 +502,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ⚖️-Balance Scale   .
+        ///   Looks up a localized string similar to ⚖️-Balance Scale.
         /// </summary>
         public static string BalanceScale {
             get {
@@ -511,7 +511,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🩰-Ballet Shoes   .
+        ///   Looks up a localized string similar to 🩰-Ballet Shoes.
         /// </summary>
         public static string BalletShoes {
             get {
@@ -520,7 +520,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎈-Balloon    .
+        ///   Looks up a localized string similar to 🎈-Balloon.
         /// </summary>
         public static string Balloon {
             get {
@@ -538,7 +538,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍌-Banana    .
+        ///   Looks up a localized string similar to 🍌-Banana.
         /// </summary>
         public static string Banana {
             get {
@@ -547,7 +547,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🪕-Banjo    .
+        ///   Looks up a localized string similar to 🪕-Banjo.
         /// </summary>
         public static string Banjo {
             get {
@@ -556,7 +556,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏦-Bank    .
+        ///   Looks up a localized string similar to 🏦-Bank.
         /// </summary>
         public static string Bank {
             get {
@@ -565,7 +565,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💈-Barber Pole   .
+        ///   Looks up a localized string similar to 💈-Barber Pole.
         /// </summary>
         public static string BarberPole {
             get {
@@ -574,7 +574,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📊-Bar Chart   .
+        ///   Looks up a localized string similar to 📊-Bar Chart.
         /// </summary>
         public static string BarChart {
             get {
@@ -583,7 +583,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ⚾-Baseball    .
+        ///   Looks up a localized string similar to ⚾-Baseball.
         /// </summary>
         public static string Baseball {
             get {
@@ -592,7 +592,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧺-Basket    .
+        ///   Looks up a localized string similar to 🧺-Basket.
         /// </summary>
         public static string Basket {
             get {
@@ -601,7 +601,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏀-Basketball    .
+        ///   Looks up a localized string similar to 🏀-Basketball.
         /// </summary>
         public static string Basketball {
             get {
@@ -610,7 +610,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦇-Bat    .
+        ///   Looks up a localized string similar to 🦇-Bat.
         /// </summary>
         public static string Bat {
             get {
@@ -619,7 +619,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🛁-Bathtub    .
+        ///   Looks up a localized string similar to 🛁-Bathtub.
         /// </summary>
         public static string Bathtub {
             get {
@@ -628,7 +628,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🔋-Battery    .
+        ///   Looks up a localized string similar to 🔋-Battery.
         /// </summary>
         public static string Battery {
             get {
@@ -637,7 +637,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏖️-Beach with Umbrella  .
+        ///   Looks up a localized string similar to 🏖️-Beach with Umbrella.
         /// </summary>
         public static string BeachwithUmbrella {
             get {
@@ -655,7 +655,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐻-Bear    .
+        ///   Looks up a localized string similar to 🐻-Bear.
         /// </summary>
         public static string Bear {
             get {
@@ -664,7 +664,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦫-Beaver    .
+        ///   Looks up a localized string similar to 🦫-Beaver.
         /// </summary>
         public static string Beaver {
             get {
@@ -673,7 +673,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🛏️-Bed    .
+        ///   Looks up a localized string similar to 🛏️-Bed.
         /// </summary>
         public static string Bed {
             get {
@@ -682,7 +682,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍺-Beer Mug   .
+        ///   Looks up a localized string similar to 🍺-Beer Mug.
         /// </summary>
         public static string BeerMug {
             get {
@@ -691,7 +691,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🪲-Beetle    .
+        ///   Looks up a localized string similar to 🪲-Beetle.
         /// </summary>
         public static string Beetle {
             get {
@@ -700,7 +700,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🛎️-Bellhop Bell   .
+        ///   Looks up a localized string similar to 🛎️-Bellhop Bell.
         /// </summary>
         public static string BellhopBell {
             get {
@@ -709,7 +709,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🫑-Bell Pepper   .
+        ///   Looks up a localized string similar to 🫑-Bell Pepper.
         /// </summary>
         public static string BellPepper {
             get {
@@ -718,7 +718,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍱-Bento Box   .
+        ///   Looks up a localized string similar to 🍱-Bento Box.
         /// </summary>
         public static string BentoBox {
             get {
@@ -727,7 +727,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧃-Beverage Box   .
+        ///   Looks up a localized string similar to 🧃-Beverage Box.
         /// </summary>
         public static string BeverageBox {
             get {
@@ -736,7 +736,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚲-Bicycle    .
+        ///   Looks up a localized string similar to 🚲-Bicycle.
         /// </summary>
         public static string Bicycle {
             get {
@@ -745,7 +745,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👙-Bikini    .
+        ///   Looks up a localized string similar to 👙-Bikini.
         /// </summary>
         public static string Bikini {
             get {
@@ -754,7 +754,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧢-Billed Cap   .
+        ///   Looks up a localized string similar to 🧢-Billed Cap.
         /// </summary>
         public static string BilledCap {
             get {
@@ -763,7 +763,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐦-Bird    .
+        ///   Looks up a localized string similar to 🐦-Bird.
         /// </summary>
         public static string Bird {
             get {
@@ -772,7 +772,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎂-Birthday Cake   .
+        ///   Looks up a localized string similar to 🎂-Birthday Cake.
         /// </summary>
         public static string BirthdayCake {
             get {
@@ -781,7 +781,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦬-Bison    .
+        ///   Looks up a localized string similar to 🦬-Bison.
         /// </summary>
         public static string Bison {
             get {
@@ -790,7 +790,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐈‍⬛-Black Cat   .
+        ///   Looks up a localized string similar to 🐈‍⬛-Black Cat.
         /// </summary>
         public static string BlackCat {
             get {
@@ -799,7 +799,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ✒️-Black Nib   .
+        ///   Looks up a localized string similar to ✒️-Black Nib.
         /// </summary>
         public static string BlackNib {
             get {
@@ -808,7 +808,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌼-Blossom    .
+        ///   Looks up a localized string similar to 🌼-Blossom.
         /// </summary>
         public static string Blossom {
             get {
@@ -817,7 +817,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐡-Blowfish    .
+        ///   Looks up a localized string similar to 🐡-Blowfish.
         /// </summary>
         public static string Blowfish {
             get {
@@ -826,7 +826,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🫐-Blueberries    .
+        ///   Looks up a localized string similar to 🫐-Blueberries.
         /// </summary>
         public static string Blueberries {
             get {
@@ -835,7 +835,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📘-Blue Book   .
+        ///   Looks up a localized string similar to 📘-Blue Book.
         /// </summary>
         public static string BlueBook {
             get {
@@ -844,7 +844,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐗-Boar    .
+        ///   Looks up a localized string similar to 🐗-Boar.
         /// </summary>
         public static string Boar {
             get {
@@ -853,7 +853,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💣-Bomb    .
+        ///   Looks up a localized string similar to 💣-Bomb.
         /// </summary>
         public static string Bomb {
             get {
@@ -862,7 +862,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦴-Bone    .
+        ///   Looks up a localized string similar to 🦴-Bone.
         /// </summary>
         public static string Bone {
             get {
@@ -871,7 +871,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🔖-Bookmark    .
+        ///   Looks up a localized string similar to 🔖-Bookmark.
         /// </summary>
         public static string Bookmark {
             get {
@@ -880,7 +880,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📑-Bookmark Tabs   .
+        ///   Looks up a localized string similar to 📑-Bookmark Tabs.
         /// </summary>
         public static string BookmarkTabs {
             get {
@@ -889,7 +889,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📚-Books    .
+        ///   Looks up a localized string similar to 📚-Books.
         /// </summary>
         public static string Books {
             get {
@@ -898,7 +898,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🪃-Boomerang    .
+        ///   Looks up a localized string similar to 🪃-Boomerang.
         /// </summary>
         public static string Boomerang {
             get {
@@ -916,7 +916,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💐-Bouquet    .
+        ///   Looks up a localized string similar to 💐-Bouquet.
         /// </summary>
         public static string Bouquet {
             get {
@@ -925,7 +925,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏹-Bow and Arrow  .
+        ///   Looks up a localized string similar to 🏹-Bow and Arrow.
         /// </summary>
         public static string BowandArrow {
             get {
@@ -934,7 +934,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎳-Bowling    .
+        ///   Looks up a localized string similar to 🎳-Bowling.
         /// </summary>
         public static string Bowling {
             get {
@@ -943,7 +943,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥣-Bowl with Spoon  .
+        ///   Looks up a localized string similar to 🥣-Bowl with Spoon.
         /// </summary>
         public static string BowlwithSpoon {
             get {
@@ -952,7 +952,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥊-Boxing Glove   .
+        ///   Looks up a localized string similar to 🥊-Boxing Glove.
         /// </summary>
         public static string BoxingGlove {
             get {
@@ -961,7 +961,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👦-Boy    .
+        ///   Looks up a localized string similar to 👦-Boy.
         /// </summary>
         public static string Boy {
             get {
@@ -970,7 +970,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧠-Brain    .
+        ///   Looks up a localized string similar to 🧠-Brain.
         /// </summary>
         public static string Brain {
             get {
@@ -979,7 +979,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍞-Bread    .
+        ///   Looks up a localized string similar to 🍞-Bread.
         /// </summary>
         public static string Bread {
             get {
@@ -988,7 +988,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤱-Breast Feeding   .
+        ///   Looks up a localized string similar to 🤱-Breast Feeding.
         /// </summary>
         public static string BreastFeeding {
             get {
@@ -997,7 +997,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧱-Brick    .
+        ///   Looks up a localized string similar to 🧱-Brick.
         /// </summary>
         public static string Brick {
             get {
@@ -1006,7 +1006,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌉-Bridge at Night  .
+        ///   Looks up a localized string similar to 🌉-Bridge at Night.
         /// </summary>
         public static string BridgeatNight {
             get {
@@ -1015,7 +1015,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💼-Briefcase    .
+        ///   Looks up a localized string similar to 💼-Briefcase.
         /// </summary>
         public static string Briefcase {
             get {
@@ -1024,7 +1024,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🩲-Briefs    .
+        ///   Looks up a localized string similar to 🩲-Briefs.
         /// </summary>
         public static string Briefs {
             get {
@@ -1033,7 +1033,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥦-Broccoli    .
+        ///   Looks up a localized string similar to 🥦-Broccoli.
         /// </summary>
         public static string Broccoli {
             get {
@@ -1042,7 +1042,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧹-Broom    .
+        ///   Looks up a localized string similar to 🧹-Broom.
         /// </summary>
         public static string Broom {
             get {
@@ -1051,7 +1051,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧋-Bubble Tea   .
+        ///   Looks up a localized string similar to 🧋-Bubble Tea.
         /// </summary>
         public static string BubbleTea {
             get {
@@ -1060,7 +1060,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🪣-Bucket    .
+        ///   Looks up a localized string similar to 🪣-Bucket.
         /// </summary>
         public static string Bucket {
             get {
@@ -1069,7 +1069,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐛-Bug    .
+        ///   Looks up a localized string similar to 🐛-Bug.
         /// </summary>
         public static string Bug {
             get {
@@ -1078,7 +1078,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏗️-Building Construction   .
+        ///   Looks up a localized string similar to 🏗️-Building Construction.
         /// </summary>
         public static string BuildingConstruction {
             get {
@@ -1087,7 +1087,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚅-Bullet Train   .
+        ///   Looks up a localized string similar to 🚅-Bullet Train.
         /// </summary>
         public static string BulletTrain {
             get {
@@ -1096,7 +1096,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌯-Burrito    .
+        ///   Looks up a localized string similar to 🌯-Burrito.
         /// </summary>
         public static string Burrito {
             get {
@@ -1105,7 +1105,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚌-Bus    .
+        ///   Looks up a localized string similar to 🚌-Bus.
         /// </summary>
         public static string Bus {
             get {
@@ -1114,7 +1114,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚏-Bus Stop   .
+        ///   Looks up a localized string similar to 🚏-Bus Stop.
         /// </summary>
         public static string BusStop {
             get {
@@ -1123,7 +1123,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👤-Bust in Silhouette  .
+        ///   Looks up a localized string similar to 👤-Bust in Silhouette.
         /// </summary>
         public static string BustinSilhouette {
             get {
@@ -1132,7 +1132,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👥-Busts in Silhouette  .
+        ///   Looks up a localized string similar to 👥-Busts in Silhouette.
         /// </summary>
         public static string BustsinSilhouette {
             get {
@@ -1141,7 +1141,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧈-Butter    .
+        ///   Looks up a localized string similar to 🧈-Butter.
         /// </summary>
         public static string Butter {
             get {
@@ -1150,7 +1150,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦋-Butterfly    .
+        ///   Looks up a localized string similar to 🦋-Butterfly.
         /// </summary>
         public static string Butterfly {
             get {
@@ -1159,7 +1159,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌵-Cactus    .
+        ///   Looks up a localized string similar to 🌵-Cactus.
         /// </summary>
         public static string Cactus {
             get {
@@ -1168,7 +1168,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📅-Calendar    .
+        ///   Looks up a localized string similar to 📅-Calendar.
         /// </summary>
         public static string Calendar {
             get {
@@ -1177,7 +1177,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤙-Call Me Hand  .
+        ///   Looks up a localized string similar to 🤙-Call Me Hand.
         /// </summary>
         public static string CallMeHand {
             get {
@@ -1186,7 +1186,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐪-Camel    .
+        ///   Looks up a localized string similar to 🐪-Camel.
         /// </summary>
         public static string Camel {
             get {
@@ -1195,7 +1195,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📷-Camera    .
+        ///   Looks up a localized string similar to 📷-Camera.
         /// </summary>
         public static string Camera {
             get {
@@ -1204,7 +1204,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📸-Camera with Flash  .
+        ///   Looks up a localized string similar to 📸-Camera with Flash.
         /// </summary>
         public static string CamerawithFlash {
             get {
@@ -1213,7 +1213,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏕️-Camping    .
+        ///   Looks up a localized string similar to 🏕️-Camping.
         /// </summary>
         public static string Camping {
             get {
@@ -1222,7 +1222,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🕯️-Candle    .
+        ///   Looks up a localized string similar to 🕯️-Candle.
         /// </summary>
         public static string Candle {
             get {
@@ -1231,7 +1231,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍬-Candy    .
+        ///   Looks up a localized string similar to 🍬-Candy.
         /// </summary>
         public static string Candy {
             get {
@@ -1240,7 +1240,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥫-Canned Food   .
+        ///   Looks up a localized string similar to 🥫-Canned Food.
         /// </summary>
         public static string CannedFood {
             get {
@@ -1249,7 +1249,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🛶-Canoe    .
+        ///   Looks up a localized string similar to 🛶-Canoe.
         /// </summary>
         public static string Canoe {
             get {
@@ -1258,7 +1258,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🗃️-Card File Box  .
+        ///   Looks up a localized string similar to 🗃️-Card File Box.
         /// </summary>
         public static string CardFileBox {
             get {
@@ -1267,7 +1267,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📇-Card Index   .
+        ///   Looks up a localized string similar to 📇-Card Index.
         /// </summary>
         public static string CardIndex {
             get {
@@ -1276,7 +1276,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🗂️-Card Index Dividers  .
+        ///   Looks up a localized string similar to 🗂️-Card Index Dividers.
         /// </summary>
         public static string CardIndexDividers {
             get {
@@ -1285,7 +1285,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎠-Carousel Horse   .
+        ///   Looks up a localized string similar to 🎠-Carousel Horse.
         /// </summary>
         public static string CarouselHorse {
             get {
@@ -1294,7 +1294,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🪚-Carpentry Saw   .
+        ///   Looks up a localized string similar to 🪚-Carpentry Saw.
         /// </summary>
         public static string CarpentrySaw {
             get {
@@ -1303,7 +1303,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎏-Carp Streamer   .
+        ///   Looks up a localized string similar to 🎏-Carp Streamer.
         /// </summary>
         public static string CarpStreamer {
             get {
@@ -1312,7 +1312,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥕-Carrot    .
+        ///   Looks up a localized string similar to 🥕-Carrot.
         /// </summary>
         public static string Carrot {
             get {
@@ -1321,7 +1321,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏰-Castle    .
+        ///   Looks up a localized string similar to 🏰-Castle.
         /// </summary>
         public static string Castle {
             get {
@@ -1330,7 +1330,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐈-Cat    .
+        ///   Looks up a localized string similar to 🐈-Cat.
         /// </summary>
         public static string Cat {
             get {
@@ -1339,7 +1339,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐱-Cat Face   .
+        ///   Looks up a localized string similar to 🐱-Cat Face.
         /// </summary>
         public static string CatFace {
             get {
@@ -1366,7 +1366,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ⛓️-Chains    .
+        ///   Looks up a localized string similar to ⛓️-Chains.
         /// </summary>
         public static string Chains {
             get {
@@ -1375,7 +1375,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🪑-Chair    .
+        ///   Looks up a localized string similar to 🪑-Chair.
         /// </summary>
         public static string Chair {
             get {
@@ -1384,7 +1384,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📉-Chart Decreasing   .
+        ///   Looks up a localized string similar to 📉-Chart Decreasing.
         /// </summary>
         public static string ChartDecreasing {
             get {
@@ -1393,7 +1393,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📈-Chart Increasing   .
+        ///   Looks up a localized string similar to 📈-Chart Increasing.
         /// </summary>
         public static string ChartIncreasing {
             get {
@@ -1402,7 +1402,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧀-Cheese Wedge   .
+        ///   Looks up a localized string similar to 🧀-Cheese Wedge.
         /// </summary>
         public static string CheeseWedge {
             get {
@@ -1411,7 +1411,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍒-Cherries    .
+        ///   Looks up a localized string similar to 🍒-Cherries.
         /// </summary>
         public static string Cherries {
             get {
@@ -1420,7 +1420,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌸-Cherry Blossom   .
+        ///   Looks up a localized string similar to 🌸-Cherry Blossom.
         /// </summary>
         public static string CherryBlossom {
             get {
@@ -1429,7 +1429,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ♟️-Chess Pawn   .
+        ///   Looks up a localized string similar to ♟️-Chess Pawn.
         /// </summary>
         public static string ChessPawn {
             get {
@@ -1438,7 +1438,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌰-Chestnut    .
+        ///   Looks up a localized string similar to 🌰-Chestnut.
         /// </summary>
         public static string Chestnut {
             get {
@@ -1447,7 +1447,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌰-Chestnut    .
+        ///   Looks up a localized string similar to 🌰-Chestnut.
         /// </summary>
         public static string Chestnut1 {
             get {
@@ -1456,7 +1456,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐔-Chicken    .
+        ///   Looks up a localized string similar to 🐔-Chicken.
         /// </summary>
         public static string Chicken {
             get {
@@ -1465,7 +1465,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧒-Child    .
+        ///   Looks up a localized string similar to 🧒-Child.
         /// </summary>
         public static string Child {
             get {
@@ -1474,7 +1474,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐿️-Chipmunk    .
+        ///   Looks up a localized string similar to 🐿️-Chipmunk.
         /// </summary>
         public static string Chipmunk {
             get {
@@ -1483,7 +1483,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍫-Chocolate Bar   .
+        ///   Looks up a localized string similar to 🍫-Chocolate Bar.
         /// </summary>
         public static string ChocolateBar {
             get {
@@ -1492,7 +1492,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥢-Chopsticks    .
+        ///   Looks up a localized string similar to 🥢-Chopsticks.
         /// </summary>
         public static string Chopsticks {
             get {
@@ -1501,7 +1501,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎄-Christmas Tree   .
+        ///   Looks up a localized string similar to 🎄-Christmas Tree.
         /// </summary>
         public static string ChristmasTree {
             get {
@@ -1510,7 +1510,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ⛪-Church    .
+        ///   Looks up a localized string similar to ⛪-Church.
         /// </summary>
         public static string Church {
             get {
@@ -1519,7 +1519,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚬-Cigarette    .
+        ///   Looks up a localized string similar to 🚬-Cigarette.
         /// </summary>
         public static string Cigarette {
             get {
@@ -1528,7 +1528,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎪-Circus Tent   .
+        ///   Looks up a localized string similar to 🎪-Circus Tent.
         /// </summary>
         public static string CircusTent {
             get {
@@ -1537,7 +1537,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏙️-Cityscape    .
+        ///   Looks up a localized string similar to 🏙️-Cityscape.
         /// </summary>
         public static string Cityscape {
             get {
@@ -1546,7 +1546,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌆-Cityscape at Dusk  .
+        ///   Looks up a localized string similar to 🌆-Cityscape at Dusk.
         /// </summary>
         public static string CityscapeatDusk {
             get {
@@ -1555,7 +1555,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🗜️-Clamp    .
+        ///   Looks up a localized string similar to 🗜️-Clamp.
         /// </summary>
         public static string Clamp {
             get {
@@ -1564,7 +1564,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎬-Clapper Board   .
+        ///   Looks up a localized string similar to 🎬-Clapper Board.
         /// </summary>
         public static string ClapperBoard {
             get {
@@ -1573,7 +1573,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👏-Clapping Hands   .
+        ///   Looks up a localized string similar to 👏-Clapping Hands.
         /// </summary>
         public static string ClappingHands {
             get {
@@ -1582,7 +1582,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏛️-Classical Building   .
+        ///   Looks up a localized string similar to 🏛️-Classical Building.
         /// </summary>
         public static string ClassicalBuilding {
             get {
@@ -1591,7 +1591,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍻-Clinking Beer Mugs  .
+        ///   Looks up a localized string similar to 🍻-Clinking Beer Mugs.
         /// </summary>
         public static string ClinkingBeerMugs {
             get {
@@ -1600,7 +1600,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥂-Clinking Glasses   .
+        ///   Looks up a localized string similar to 🥂-Clinking Glasses.
         /// </summary>
         public static string ClinkingGlasses {
             get {
@@ -1609,7 +1609,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📋-Clipboard    .
+        ///   Looks up a localized string similar to 📋-Clipboard.
         /// </summary>
         public static string Clipboard {
             get {
@@ -1618,7 +1618,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📕-Closed Book   .
+        ///   Looks up a localized string similar to 📕-Closed Book.
         /// </summary>
         public static string ClosedBook {
             get {
@@ -1645,7 +1645,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌂-Closed Umbrella   .
+        ///   Looks up a localized string similar to 🌂-Closed Umbrella.
         /// </summary>
         public static string ClosedUmbrella {
             get {
@@ -1654,7 +1654,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ☁️-Cloud    .
+        ///   Looks up a localized string similar to ☁️-Cloud.
         /// </summary>
         public static string Cloud {
             get {
@@ -1663,7 +1663,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌩️-Cloud with Lightning  .
+        ///   Looks up a localized string similar to 🌩️-Cloud with Lightning.
         /// </summary>
         public static string CloudwithLightning {
             get {
@@ -1681,7 +1681,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌧️-Cloud with Rain  .
+        ///   Looks up a localized string similar to 🌧️-Cloud with Rain.
         /// </summary>
         public static string CloudwithRain {
             get {
@@ -1690,7 +1690,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌨️-Cloud with Snow  .
+        ///   Looks up a localized string similar to 🌨️-Cloud with Snow.
         /// </summary>
         public static string CloudwithSnow {
             get {
@@ -1699,7 +1699,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤡-Clown Face   .
+        ///   Looks up a localized string similar to 🤡-Clown Face.
         /// </summary>
         public static string ClownFace {
             get {
@@ -1708,7 +1708,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👝-Clutch Bag   .
+        ///   Looks up a localized string similar to 👝-Clutch Bag.
         /// </summary>
         public static string ClutchBag {
             get {
@@ -1717,7 +1717,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧥-Coat    .
+        ///   Looks up a localized string similar to 🧥-Coat.
         /// </summary>
         public static string Coat {
             get {
@@ -1726,7 +1726,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🪳-Cockroach    .
+        ///   Looks up a localized string similar to 🪳-Cockroach.
         /// </summary>
         public static string Cockroach {
             get {
@@ -1735,7 +1735,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍸-Cocktail Glass   .
+        ///   Looks up a localized string similar to 🍸-Cocktail Glass.
         /// </summary>
         public static string CocktailGlass {
             get {
@@ -1744,7 +1744,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥥-Coconut    .
+        ///   Looks up a localized string similar to 🥥-Coconut.
         /// </summary>
         public static string Coconut {
             get {
@@ -1753,7 +1753,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ⚰️-Coffin    .
+        ///   Looks up a localized string similar to ⚰️-Coffin.
         /// </summary>
         public static string Coffin {
             get {
@@ -1762,7 +1762,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🪙-Coin    .
+        ///   Looks up a localized string similar to 🪙-Coin.
         /// </summary>
         public static string Coin {
             get {
@@ -1771,7 +1771,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥶-Cold Face   .
+        ///   Looks up a localized string similar to 🥶-Cold Face.
         /// </summary>
         public static string ColdFace {
             get {
@@ -1780,7 +1780,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💥-Collision    .
+        ///   Looks up a localized string similar to 💥-Collision.
         /// </summary>
         public static string Collision {
             get {
@@ -1789,7 +1789,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ☄️-Comet    .
+        ///   Looks up a localized string similar to ☄️-Comet.
         /// </summary>
         public static string Comet {
             get {
@@ -1798,7 +1798,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧭-Compass    .
+        ///   Looks up a localized string similar to 🧭-Compass.
         /// </summary>
         public static string Compass {
             get {
@@ -1807,7 +1807,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💽-Computer Disk   .
+        ///   Looks up a localized string similar to 💽-Computer Disk.
         /// </summary>
         public static string ComputerDisk {
             get {
@@ -1816,7 +1816,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🖱️-Computer Mouse   .
+        ///   Looks up a localized string similar to 🖱️-Computer Mouse.
         /// </summary>
         public static string ComputerMouse {
             get {
@@ -1825,7 +1825,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎊-Confetti Ball   .
+        ///   Looks up a localized string similar to 🎊-Confetti Ball.
         /// </summary>
         public static string ConfettiBall {
             get {
@@ -1834,7 +1834,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 😖-Confounded Face   .
+        ///   Looks up a localized string similar to 😖-Confounded Face.
         /// </summary>
         public static string ConfoundedFace {
             get {
@@ -1843,7 +1843,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 😕-Confused Face   .
+        ///   Looks up a localized string similar to 😕-Confused Face.
         /// </summary>
         public static string ConfusedFace {
             get {
@@ -1852,7 +1852,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚧-Construction    .
+        ///   Looks up a localized string similar to 🚧-Construction.
         /// </summary>
         public static string Construction {
             get {
@@ -1861,7 +1861,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👷-Construction Worker   .
+        ///   Looks up a localized string similar to 👷-Construction Worker.
         /// </summary>
         public static string ConstructionWorker {
             get {
@@ -1870,7 +1870,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎛️-Control Knobs   .
+        ///   Looks up a localized string similar to 🎛️-Control Knobs.
         /// </summary>
         public static string ControlKnobs {
             get {
@@ -1879,7 +1879,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏪-Convenience Store   .
+        ///   Looks up a localized string similar to 🏪-Convenience Store.
         /// </summary>
         public static string ConvenienceStore {
             get {
@@ -1888,7 +1888,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧑‍🍳-Cook    .
+        ///   Looks up a localized string similar to 🧑‍🍳-Cook.
         /// </summary>
         public static string Cook {
             get {
@@ -1897,7 +1897,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍚-Cooked Rice   .
+        ///   Looks up a localized string similar to 🍚-Cooked Rice.
         /// </summary>
         public static string CookedRice {
             get {
@@ -1906,7 +1906,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍪-Cookie    .
+        ///   Looks up a localized string similar to 🍪-Cookie.
         /// </summary>
         public static string Cookie {
             get {
@@ -1915,7 +1915,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍳-Cooking    .
+        ///   Looks up a localized string similar to 🍳-Cooking.
         /// </summary>
         public static string Cooking {
             get {
@@ -1924,7 +1924,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🛋️-Couch and Lamp  .
+        ///   Looks up a localized string similar to 🛋️-Couch and Lamp.
         /// </summary>
         public static string CouchandLamp {
             get {
@@ -1933,7 +1933,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💑-Couple with Heart  .
+        ///   Looks up a localized string similar to 💑-Couple with Heart.
         /// </summary>
         public static string CouplewithHeart {
             get {
@@ -1969,7 +1969,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐄-Cow    .
+        ///   Looks up a localized string similar to 🐄-Cow.
         /// </summary>
         public static string Cow {
             get {
@@ -1978,7 +1978,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤠-Cowboy Hat Face  .
+        ///   Looks up a localized string similar to 🤠-Cowboy Hat Face.
         /// </summary>
         public static string CowboyHatFace {
             get {
@@ -1987,7 +1987,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐮-Cow Face   .
+        ///   Looks up a localized string similar to 🐮-Cow Face.
         /// </summary>
         public static string CowFace {
             get {
@@ -1996,7 +1996,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦀-Crab    .
+        ///   Looks up a localized string similar to 🦀-Crab.
         /// </summary>
         public static string Crab {
             get {
@@ -2005,7 +2005,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🖍️-Crayon    .
+        ///   Looks up a localized string similar to 🖍️-Crayon.
         /// </summary>
         public static string Crayon {
             get {
@@ -2014,7 +2014,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💳-Credit Card   .
+        ///   Looks up a localized string similar to 💳-Credit Card.
         /// </summary>
         public static string CreditCard {
             get {
@@ -2023,7 +2023,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌙-Crescent Moon   .
+        ///   Looks up a localized string similar to 🌙-Crescent Moon.
         /// </summary>
         public static string CrescentMoon {
             get {
@@ -2032,7 +2032,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦗-Cricket    .
+        ///   Looks up a localized string similar to 🦗-Cricket.
         /// </summary>
         public static string Cricket {
             get {
@@ -2041,7 +2041,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏏-Cricket Game   .
+        ///   Looks up a localized string similar to 🏏-Cricket Game.
         /// </summary>
         public static string CricketGame {
             get {
@@ -2050,7 +2050,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐊-Crocodile    .
+        ///   Looks up a localized string similar to 🐊-Crocodile.
         /// </summary>
         public static string Crocodile {
             get {
@@ -2059,7 +2059,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥐-Croissant    .
+        ///   Looks up a localized string similar to 🥐-Croissant.
         /// </summary>
         public static string Croissant {
             get {
@@ -2068,7 +2068,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤞-Crossed Fingers   .
+        ///   Looks up a localized string similar to 🤞-Crossed Fingers.
         /// </summary>
         public static string CrossedFingers {
             get {
@@ -2077,7 +2077,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ⚔️-Crossed Swords   .
+        ///   Looks up a localized string similar to ⚔️-Crossed Swords.
         /// </summary>
         public static string CrossedSwords {
             get {
@@ -2086,7 +2086,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👑-Crown    .
+        ///   Looks up a localized string similar to 👑-Crown.
         /// </summary>
         public static string Crown {
             get {
@@ -2095,7 +2095,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 😿-Crying Cat   .
+        ///   Looks up a localized string similar to 😿-Crying Cat.
         /// </summary>
         public static string CryingCat {
             get {
@@ -2104,7 +2104,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 😢-Crying Face   .
+        ///   Looks up a localized string similar to 😢-Crying Face.
         /// </summary>
         public static string CryingFace {
             get {
@@ -2113,7 +2113,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🔮-Crystal Ball   .
+        ///   Looks up a localized string similar to 🔮-Crystal Ball.
         /// </summary>
         public static string CrystalBall {
             get {
@@ -2122,7 +2122,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥒-Cucumber    .
+        ///   Looks up a localized string similar to 🥒-Cucumber.
         /// </summary>
         public static string Cucumber {
             get {
@@ -2131,7 +2131,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧁-Cupcake    .
+        ///   Looks up a localized string similar to 🧁-Cupcake.
         /// </summary>
         public static string Cupcake {
             get {
@@ -2140,7 +2140,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥤-Cup with Straw  .
+        ///   Looks up a localized string similar to 🥤-Cup with Straw.
         /// </summary>
         public static string CupwithStraw {
             get {
@@ -2149,7 +2149,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥌-Curling Stone   .
+        ///   Looks up a localized string similar to 🥌-Curling Stone.
         /// </summary>
         public static string CurlingStone {
             get {
@@ -2158,7 +2158,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍛-Curry Rice   .
+        ///   Looks up a localized string similar to 🍛-Curry Rice.
         /// </summary>
         public static string CurryRice {
             get {
@@ -2167,7 +2167,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍮-Custard    .
+        ///   Looks up a localized string similar to 🍮-Custard.
         /// </summary>
         public static string Custard {
             get {
@@ -2176,7 +2176,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🛃-Customs    .
+        ///   Looks up a localized string similar to 🛃-Customs.
         /// </summary>
         public static string Customs {
             get {
@@ -2185,7 +2185,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥩-Cut of Meat  .
+        ///   Looks up a localized string similar to 🥩-Cut of Meat.
         /// </summary>
         public static string CutofMeat {
             get {
@@ -2194,7 +2194,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🗡️-Dagger    .
+        ///   Looks up a localized string similar to 🗡️-Dagger.
         /// </summary>
         public static string Dagger {
             get {
@@ -2203,7 +2203,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍡-Dango    .
+        ///   Looks up a localized string similar to 🍡-Dango.
         /// </summary>
         public static string Dango {
             get {
@@ -2212,7 +2212,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💨-Dashing Away   .
+        ///   Looks up a localized string similar to 💨-Dashing Away.
         /// </summary>
         public static string DashingAway {
             get {
@@ -2221,7 +2221,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧏‍♂️-Deaf Man   .
+        ///   Looks up a localized string similar to 🧏‍♂️-Deaf Man.
         /// </summary>
         public static string DeafMan {
             get {
@@ -2230,7 +2230,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧏-Deaf Person   .
+        ///   Looks up a localized string similar to 🧏-Deaf Person.
         /// </summary>
         public static string DeafPerson {
             get {
@@ -2239,7 +2239,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧏‍♀️-Deaf Woman   .
+        ///   Looks up a localized string similar to 🧏‍♀️-Deaf Woman.
         /// </summary>
         public static string DeafWoman {
             get {
@@ -2248,7 +2248,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌳-Deciduous Tree   .
+        ///   Looks up a localized string similar to 🌳-Deciduous Tree.
         /// </summary>
         public static string DeciduousTree {
             get {
@@ -2257,7 +2257,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦌-Deer    .
+        ///   Looks up a localized string similar to 🦌-Deer.
         /// </summary>
         public static string Deer {
             get {
@@ -2266,7 +2266,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚚-Delivery Truck   .
+        ///   Looks up a localized string similar to 🚚-Delivery Truck.
         /// </summary>
         public static string DeliveryTruck {
             get {
@@ -2275,7 +2275,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏬-Department Store   .
+        ///   Looks up a localized string similar to 🏬-Department Store.
         /// </summary>
         public static string DepartmentStore {
             get {
@@ -2284,7 +2284,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏚️-Derelict House   .
+        ///   Looks up a localized string similar to 🏚️-Derelict House.
         /// </summary>
         public static string DerelictHouse {
             get {
@@ -2293,7 +2293,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏜️-Desert    .
+        ///   Looks up a localized string similar to 🏜️-Desert.
         /// </summary>
         public static string Desert {
             get {
@@ -2302,7 +2302,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏝️-Desert Island   .
+        ///   Looks up a localized string similar to 🏝️-Desert Island.
         /// </summary>
         public static string DesertIsland {
             get {
@@ -2311,7 +2311,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🖥️-Desktop Computer   .
+        ///   Looks up a localized string similar to 🖥️-Desktop Computer.
         /// </summary>
         public static string DesktopComputer {
             get {
@@ -2320,7 +2320,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🕵️-Detective    .
+        ///   Looks up a localized string similar to 🕵️-Detective.
         /// </summary>
         public static string Detective {
             get {
@@ -2329,7 +2329,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎯-Direct Hit   .
+        ///   Looks up a localized string similar to 🎯-Direct Hit.
         /// </summary>
         public static string DirectHit {
             get {
@@ -2338,7 +2338,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 😞-Disappointed Face   .
+        ///   Looks up a localized string similar to 😞-Disappointed Face.
         /// </summary>
         public static string DisappointedFace {
             get {
@@ -2347,7 +2347,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥸-Disguised Face   .
+        ///   Looks up a localized string similar to 🥸-Disguised Face.
         /// </summary>
         public static string DisguisedFace {
             get {
@@ -2356,7 +2356,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤿-Diving Mask   .
+        ///   Looks up a localized string similar to 🤿-Diving Mask.
         /// </summary>
         public static string DivingMask {
             get {
@@ -2365,7 +2365,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🪔-Diya Lamp   .
+        ///   Looks up a localized string similar to 🪔-Diya Lamp.
         /// </summary>
         public static string DiyaLamp {
             get {
@@ -2374,7 +2374,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💫-Dizzy    .
+        ///   Looks up a localized string similar to 💫-Dizzy.
         /// </summary>
         public static string Dizzy {
             get {
@@ -2383,7 +2383,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 😵-Dizzy Face   .
+        ///   Looks up a localized string similar to 😵-Dizzy Face.
         /// </summary>
         public static string DizzyFace {
             get {
@@ -2392,7 +2392,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧬-DNA    .
+        ///   Looks up a localized string similar to 🧬-DNA.
         /// </summary>
         public static string DNA {
             get {
@@ -2401,7 +2401,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦤-Dodo    .
+        ///   Looks up a localized string similar to 🦤-Dodo.
         /// </summary>
         public static string Dodo {
             get {
@@ -2410,7 +2410,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐕-Dog    .
+        ///   Looks up a localized string similar to 🐕-Dog.
         /// </summary>
         public static string Dog {
             get {
@@ -2419,7 +2419,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐶-Dog Face   .
+        ///   Looks up a localized string similar to 🐶-Dog Face.
         /// </summary>
         public static string DogFace {
             get {
@@ -2428,7 +2428,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💵-Dollar Banknote   .
+        ///   Looks up a localized string similar to 💵-Dollar Banknote.
         /// </summary>
         public static string DollarBanknote {
             get {
@@ -2437,7 +2437,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💵-Dollar Banknote   .
+        ///   Looks up a localized string similar to 💵-Dollar Banknote.
         /// </summary>
         public static string DollarBanknote1 {
             get {
@@ -2446,7 +2446,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐬-Dolphin    .
+        ///   Looks up a localized string similar to 🐬-Dolphin.
         /// </summary>
         public static string Dolphin {
             get {
@@ -2455,7 +2455,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚪-Door    .
+        ///   Looks up a localized string similar to 🚪-Door.
         /// </summary>
         public static string Door {
             get {
@@ -2464,7 +2464,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍩-Doughnut    .
+        ///   Looks up a localized string similar to 🍩-Doughnut.
         /// </summary>
         public static string Doughnut {
             get {
@@ -2473,7 +2473,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🕊️-Dove    .
+        ///   Looks up a localized string similar to 🕊️-Dove.
         /// </summary>
         public static string Dove {
             get {
@@ -2491,7 +2491,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐉-Dragon    .
+        ///   Looks up a localized string similar to 🐉-Dragon.
         /// </summary>
         public static string Dragon {
             get {
@@ -2500,7 +2500,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐲-Dragon Face   .
+        ///   Looks up a localized string similar to 🐲-Dragon Face.
         /// </summary>
         public static string DragonFace {
             get {
@@ -2509,7 +2509,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👗-Dress    .
+        ///   Looks up a localized string similar to 👗-Dress.
         /// </summary>
         public static string Dress {
             get {
@@ -2518,7 +2518,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤤-Drooling Face   .
+        ///   Looks up a localized string similar to 🤤-Drooling Face.
         /// </summary>
         public static string DroolingFace {
             get {
@@ -2527,7 +2527,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💧-Droplet    .
+        ///   Looks up a localized string similar to 💧-Droplet.
         /// </summary>
         public static string Droplet {
             get {
@@ -2536,7 +2536,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🩸-Drop of Blood  .
+        ///   Looks up a localized string similar to 🩸-Drop of Blood.
         /// </summary>
         public static string DropofBlood {
             get {
@@ -2545,7 +2545,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🩸-Drop of Blood  .
+        ///   Looks up a localized string similar to 🩸-Drop of Blood.
         /// </summary>
         public static string DropofBlood1 {
             get {
@@ -2554,7 +2554,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥁-Drum    .
+        ///   Looks up a localized string similar to 🥁-Drum.
         /// </summary>
         public static string Drum {
             get {
@@ -2563,7 +2563,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦆-Duck    .
+        ///   Looks up a localized string similar to 🦆-Duck.
         /// </summary>
         public static string Duck {
             get {
@@ -2572,7 +2572,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥟-Dumpling    .
+        ///   Looks up a localized string similar to 🥟-Dumpling.
         /// </summary>
         public static string Dumpling {
             get {
@@ -2581,7 +2581,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📀-DVD    .
+        ///   Looks up a localized string similar to 📀-DVD.
         /// </summary>
         public static string DVD {
             get {
@@ -2590,7 +2590,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦅-Eagle    .
+        ///   Looks up a localized string similar to 🦅-Eagle.
         /// </summary>
         public static string Eagle {
             get {
@@ -2599,7 +2599,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👂-Ear    .
+        ///   Looks up a localized string similar to 👂-Ear.
         /// </summary>
         public static string Ear {
             get {
@@ -2608,7 +2608,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌽-Ear of Corn  .
+        ///   Looks up a localized string similar to 🌽-Ear of Corn.
         /// </summary>
         public static string EarofCorn {
             get {
@@ -2626,7 +2626,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥚-Egg    .
+        ///   Looks up a localized string similar to 🥚-Egg.
         /// </summary>
         public static string Egg {
             get {
@@ -2635,7 +2635,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍆-Eggplant    .
+        ///   Looks up a localized string similar to 🍆-Eggplant.
         /// </summary>
         public static string Eggplant {
             get {
@@ -2644,7 +2644,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🔌-Electric Plug   .
+        ///   Looks up a localized string similar to 🔌-Electric Plug.
         /// </summary>
         public static string ElectricPlug {
             get {
@@ -2653,7 +2653,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐘-Elephant    .
+        ///   Looks up a localized string similar to 🐘-Elephant.
         /// </summary>
         public static string Elephant {
             get {
@@ -2662,7 +2662,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧝-Elf    .
+        ///   Looks up a localized string similar to 🧝-Elf.
         /// </summary>
         public static string Elf {
             get {
@@ -2671,7 +2671,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📧-E Mail   .
+        ///   Looks up a localized string similar to 📧-E Mail.
         /// </summary>
         public static string EMail {
             get {
@@ -2680,7 +2680,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ✉️-Envelope    .
+        ///   Looks up a localized string similar to ✉️-Envelope.
         /// </summary>
         public static string Envelope {
             get {
@@ -2689,7 +2689,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📩-Envelope with Arrow  .
+        ///   Looks up a localized string similar to 📩-Envelope with Arrow.
         /// </summary>
         public static string EnvelopewithArrow {
             get {
@@ -2698,7 +2698,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💶-Euro Banknote   .
+        ///   Looks up a localized string similar to 💶-Euro Banknote.
         /// </summary>
         public static string EuroBanknote {
             get {
@@ -2707,7 +2707,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💶-Euro Banknote   .
+        ///   Looks up a localized string similar to 💶-Euro Banknote.
         /// </summary>
         public static string EuroBanknote1 {
             get {
@@ -2716,7 +2716,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌲-Evergreen Tree   .
+        ///   Looks up a localized string similar to 🌲-Evergreen Tree.
         /// </summary>
         public static string EvergreenTree {
             get {
@@ -2725,7 +2725,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐑-Ewe    .
+        ///   Looks up a localized string similar to 🐑-Ewe.
         /// </summary>
         public static string Ewe {
             get {
@@ -2734,7 +2734,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤯-Exploding Head   .
+        ///   Looks up a localized string similar to 🤯-Exploding Head.
         /// </summary>
         public static string ExplodingHead {
             get {
@@ -2743,7 +2743,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 😑-Expressionless Face   .
+        ///   Looks up a localized string similar to 😑-Expressionless Face.
         /// </summary>
         public static string ExpressionlessFace {
             get {
@@ -2752,7 +2752,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👁️-Eye    .
+        ///   Looks up a localized string similar to 👁️-Eye.
         /// </summary>
         public static string Eye {
             get {
@@ -2761,7 +2761,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👀-Eyes    .
+        ///   Looks up a localized string similar to 👀-Eyes.
         /// </summary>
         public static string Eyes {
             get {
@@ -2779,7 +2779,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 😋-Face Savoring Food  .
+        ///   Looks up a localized string similar to 😋-Face Savoring Food.
         /// </summary>
         public static string FaceSavoringFood {
             get {
@@ -2797,7 +2797,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤮-Face Vomiting   .
+        ///   Looks up a localized string similar to 🤮-Face Vomiting.
         /// </summary>
         public static string FaceVomiting {
             get {
@@ -2833,7 +2833,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧐-Face with Monocle  .
+        ///   Looks up a localized string similar to 🧐-Face with Monocle.
         /// </summary>
         public static string FacewithMonocle {
             get {
@@ -2851,7 +2851,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 😶-Face Without Mouth  .
+        ///   Looks up a localized string similar to 😶-Face Without Mouth.
         /// </summary>
         public static string FaceWithoutMouth {
             get {
@@ -2905,7 +2905,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤒-Face with Thermometer  .
+        ///   Looks up a localized string similar to 🤒-Face with Thermometer.
         /// </summary>
         public static string FacewithThermometer {
             get {
@@ -2914,7 +2914,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 😛-Face with Tongue  .
+        ///   Looks up a localized string similar to 😛-Face with Tongue.
         /// </summary>
         public static string FacewithTongue {
             get {
@@ -2923,7 +2923,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏭-Factory    .
+        ///   Looks up a localized string similar to 🏭-Factory.
         /// </summary>
         public static string Factory {
             get {
@@ -2932,7 +2932,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧑‍🏭-Factory Worker   .
+        ///   Looks up a localized string similar to 🧑‍🏭-Factory Worker.
         /// </summary>
         public static string FactoryWorker {
             get {
@@ -2941,7 +2941,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧚-Fairy    .
+        ///   Looks up a localized string similar to 🧚-Fairy.
         /// </summary>
         public static string Fairy {
             get {
@@ -2950,7 +2950,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧆-Falafel    .
+        ///   Looks up a localized string similar to 🧆-Falafel.
         /// </summary>
         public static string Falafel {
             get {
@@ -2959,7 +2959,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍂-Fallen Leaf   .
+        ///   Looks up a localized string similar to 🍂-Fallen Leaf.
         /// </summary>
         public static string FallenLeaf {
             get {
@@ -2968,7 +2968,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👪-Family    .
+        ///   Looks up a localized string similar to 👪-Family.
         /// </summary>
         public static string Family {
             get {
@@ -2977,7 +2977,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👨‍👦-Family: Man, Boy  .
+        ///   Looks up a localized string similar to 👨‍👦-Family: Man, Boy.
         /// </summary>
         public static string Family_Man_Boy {
             get {
@@ -2995,7 +2995,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👨‍👧-Family: Man, Girl  .
+        ///   Looks up a localized string similar to 👨‍👧-Family: Man, Girl.
         /// </summary>
         public static string Family_Man_Girl {
             get {
@@ -3112,7 +3112,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👩‍👦-Family: Woman, Boy  .
+        ///   Looks up a localized string similar to 👩‍👦-Family: Woman, Boy.
         /// </summary>
         public static string Family_Woman_Boy {
             get {
@@ -3130,7 +3130,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👩‍👧-Family: Woman, Girl  .
+        ///   Looks up a localized string similar to 👩‍👧-Family: Woman, Girl.
         /// </summary>
         public static string Family_Woman_Girl {
             get {
@@ -3202,7 +3202,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧑‍🌾-Farmer    .
+        ///   Looks up a localized string similar to 🧑‍🌾-Farmer.
         /// </summary>
         public static string Farmer {
             get {
@@ -3211,7 +3211,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📠-Fax Machine   .
+        ///   Looks up a localized string similar to 📠-Fax Machine.
         /// </summary>
         public static string FaxMachine {
             get {
@@ -3220,7 +3220,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 😨-Fearful Face   .
+        ///   Looks up a localized string similar to 😨-Fearful Face.
         /// </summary>
         public static string FearfulFace {
             get {
@@ -3229,7 +3229,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🪶-Feather    .
+        ///   Looks up a localized string similar to 🪶-Feather.
         /// </summary>
         public static string Feather {
             get {
@@ -3238,7 +3238,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎡-Ferris Wheel   .
+        ///   Looks up a localized string similar to 🎡-Ferris Wheel.
         /// </summary>
         public static string FerrisWheel {
             get {
@@ -3247,7 +3247,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ⛴️-Ferry    .
+        ///   Looks up a localized string similar to ⛴️-Ferry.
         /// </summary>
         public static string Ferry {
             get {
@@ -3256,7 +3256,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏑-Field Hockey   .
+        ///   Looks up a localized string similar to 🏑-Field Hockey.
         /// </summary>
         public static string FieldHockey {
             get {
@@ -3265,7 +3265,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🗄️-File Cabinet   .
+        ///   Looks up a localized string similar to 🗄️-File Cabinet.
         /// </summary>
         public static string FileCabinet {
             get {
@@ -3274,7 +3274,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📁-File Folder   .
+        ///   Looks up a localized string similar to 📁-File Folder.
         /// </summary>
         public static string FileFolder {
             get {
@@ -3283,7 +3283,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎞️-Film Frames   .
+        ///   Looks up a localized string similar to 🎞️-Film Frames.
         /// </summary>
         public static string FilmFrames {
             get {
@@ -3292,7 +3292,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📽️-Film Projector   .
+        ///   Looks up a localized string similar to 📽️-Film Projector.
         /// </summary>
         public static string FilmProjector {
             get {
@@ -3301,7 +3301,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🔥-Fire    .
+        ///   Looks up a localized string similar to 🔥-Fire.
         /// </summary>
         public static string Fire {
             get {
@@ -3310,7 +3310,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧨-Firecracker    .
+        ///   Looks up a localized string similar to 🧨-Firecracker.
         /// </summary>
         public static string Firecracker {
             get {
@@ -3319,7 +3319,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚒-Fire Engine   .
+        ///   Looks up a localized string similar to 🚒-Fire Engine.
         /// </summary>
         public static string FireEngine {
             get {
@@ -3328,7 +3328,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧯-Fire Extinguisher   .
+        ///   Looks up a localized string similar to 🧯-Fire Extinguisher.
         /// </summary>
         public static string FireExtinguisher {
             get {
@@ -3337,7 +3337,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧑‍🚒-Firefighter    .
+        ///   Looks up a localized string similar to 🧑‍🚒-Firefighter.
         /// </summary>
         public static string Firefighter {
             get {
@@ -3346,7 +3346,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎆-Fireworks    .
+        ///   Looks up a localized string similar to 🎆-Fireworks.
         /// </summary>
         public static string Fireworks {
             get {
@@ -3355,7 +3355,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌓-First Quarter Moon  .
+        ///   Looks up a localized string similar to 🌓-First Quarter Moon.
         /// </summary>
         public static string FirstQuarterMoon {
             get {
@@ -3373,7 +3373,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐟-Fish    .
+        ///   Looks up a localized string similar to 🐟-Fish.
         /// </summary>
         public static string Fish {
             get {
@@ -3391,7 +3391,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎣-Fishing Pole   .
+        ///   Looks up a localized string similar to 🎣-Fishing Pole.
         /// </summary>
         public static string FishingPole {
             get {
@@ -3400,7 +3400,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ⛳-Flag in Hole  .
+        ///   Looks up a localized string similar to ⛳-Flag in Hole.
         /// </summary>
         public static string FlaginHole {
             get {
@@ -3409,7 +3409,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦩-Flamingo    .
+        ///   Looks up a localized string similar to 🦩-Flamingo.
         /// </summary>
         public static string Flamingo {
             get {
@@ -3418,7 +3418,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🔦-Flashlight    .
+        ///   Looks up a localized string similar to 🔦-Flashlight.
         /// </summary>
         public static string Flashlight {
             get {
@@ -3427,7 +3427,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🫓-Flatbread    .
+        ///   Looks up a localized string similar to 🫓-Flatbread.
         /// </summary>
         public static string Flatbread {
             get {
@@ -3436,7 +3436,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥿-Flat Shoe   .
+        ///   Looks up a localized string similar to 🥿-Flat Shoe.
         /// </summary>
         public static string FlatShoe {
             get {
@@ -3445,7 +3445,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💪-Flexed Biceps   .
+        ///   Looks up a localized string similar to 💪-Flexed Biceps.
         /// </summary>
         public static string FlexedBiceps {
             get {
@@ -3454,7 +3454,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💾-Floppy Disk   .
+        ///   Looks up a localized string similar to 💾-Floppy Disk.
         /// </summary>
         public static string FloppyDisk {
             get {
@@ -3463,7 +3463,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 😳-Flushed Face   .
+        ///   Looks up a localized string similar to 😳-Flushed Face.
         /// </summary>
         public static string FlushedFace {
             get {
@@ -3472,7 +3472,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🪰-Fly    .
+        ///   Looks up a localized string similar to 🪰-Fly.
         /// </summary>
         public static string Fly {
             get {
@@ -3481,7 +3481,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥏-Flying Disc   .
+        ///   Looks up a localized string similar to 🥏-Flying Disc.
         /// </summary>
         public static string FlyingDisc {
             get {
@@ -3490,7 +3490,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🛸-Flying Saucer   .
+        ///   Looks up a localized string similar to 🛸-Flying Saucer.
         /// </summary>
         public static string FlyingSaucer {
             get {
@@ -3499,7 +3499,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌫️-Fog    .
+        ///   Looks up a localized string similar to 🌫️-Fog.
         /// </summary>
         public static string Fog {
             get {
@@ -3508,7 +3508,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌁-Foggy    .
+        ///   Looks up a localized string similar to 🌁-Foggy.
         /// </summary>
         public static string Foggy {
             get {
@@ -3517,7 +3517,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🙏-Folded Hands   .
+        ///   Looks up a localized string similar to 🙏-Folded Hands.
         /// </summary>
         public static string FoldedHands {
             get {
@@ -3526,7 +3526,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🫕-Fondue    .
+        ///   Looks up a localized string similar to 🫕-Fondue.
         /// </summary>
         public static string Fondue {
             get {
@@ -3535,7 +3535,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦶-Foot    .
+        ///   Looks up a localized string similar to 🦶-Foot.
         /// </summary>
         public static string Foot {
             get {
@@ -3544,7 +3544,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👣-Footprints    .
+        ///   Looks up a localized string similar to 👣-Footprints.
         /// </summary>
         public static string Footprints {
             get {
@@ -3553,7 +3553,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍴-Fork and Knife  .
+        ///   Looks up a localized string similar to 🍴-Fork and Knife.
         /// </summary>
         public static string ForkandKnife {
             get {
@@ -3571,7 +3571,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥠-Fortune Cookie   .
+        ///   Looks up a localized string similar to 🥠-Fortune Cookie.
         /// </summary>
         public static string FortuneCookie {
             get {
@@ -3580,7 +3580,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ⛲-Fountain    .
+        ///   Looks up a localized string similar to ⛲-Fountain.
         /// </summary>
         public static string Fountain {
             get {
@@ -3589,7 +3589,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🖋️-Fountain Pen   .
+        ///   Looks up a localized string similar to 🖋️-Fountain Pen.
         /// </summary>
         public static string FountainPen {
             get {
@@ -3598,7 +3598,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍀-Four Leaf Clover  .
+        ///   Looks up a localized string similar to 🍀-Four Leaf Clover.
         /// </summary>
         public static string FourLeafClover {
             get {
@@ -3607,7 +3607,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦊-Fox    .
+        ///   Looks up a localized string similar to 🦊-Fox.
         /// </summary>
         public static string Fox {
             get {
@@ -3616,7 +3616,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🖼️-Framed Picture   .
+        ///   Looks up a localized string similar to 🖼️-Framed Picture.
         /// </summary>
         public static string FramedPicture {
             get {
@@ -3625,7 +3625,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍟-French Fries   .
+        ///   Looks up a localized string similar to 🍟-French Fries.
         /// </summary>
         public static string FrenchFries {
             get {
@@ -3634,7 +3634,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍤-Fried Shrimp   .
+        ///   Looks up a localized string similar to 🍤-Fried Shrimp.
         /// </summary>
         public static string FriedShrimp {
             get {
@@ -3643,7 +3643,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐸-Frog    .
+        ///   Looks up a localized string similar to 🐸-Frog.
         /// </summary>
         public static string Frog {
             get {
@@ -3661,7 +3661,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ☹️-Frowning Face   .
+        ///   Looks up a localized string similar to ☹️-Frowning Face.
         /// </summary>
         public static string FrowningFace {
             get {
@@ -3679,7 +3679,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ⛽-Fuel Pump   .
+        ///   Looks up a localized string similar to ⛽-Fuel Pump.
         /// </summary>
         public static string FuelPump {
             get {
@@ -3688,7 +3688,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌕-Full Moon   .
+        ///   Looks up a localized string similar to 🌕-Full Moon.
         /// </summary>
         public static string FullMoon {
             get {
@@ -3697,7 +3697,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌝-Full Moon Face  .
+        ///   Looks up a localized string similar to 🌝-Full Moon Face.
         /// </summary>
         public static string FullMoonFace {
             get {
@@ -3706,7 +3706,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ⚱️-Funeral Urn   .
+        ///   Looks up a localized string similar to ⚱️-Funeral Urn.
         /// </summary>
         public static string FuneralUrn {
             get {
@@ -3715,7 +3715,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎲-Game Die   .
+        ///   Looks up a localized string similar to 🎲-Game Die.
         /// </summary>
         public static string GameDie {
             get {
@@ -3724,7 +3724,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧄-Garlic    .
+        ///   Looks up a localized string similar to 🧄-Garlic.
         /// </summary>
         public static string Garlic {
             get {
@@ -3733,7 +3733,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ⚙️-Gear    .
+        ///   Looks up a localized string similar to ⚙️-Gear.
         /// </summary>
         public static string Gear {
             get {
@@ -3742,7 +3742,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💎-Gem Stone   .
+        ///   Looks up a localized string similar to 💎-Gem Stone.
         /// </summary>
         public static string GemStone {
             get {
@@ -3751,7 +3751,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧞-Genie    .
+        ///   Looks up a localized string similar to 🧞-Genie.
         /// </summary>
         public static string Genie {
             get {
@@ -3760,7 +3760,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👻-Ghost    .
+        ///   Looks up a localized string similar to 👻-Ghost.
         /// </summary>
         public static string Ghost {
             get {
@@ -3769,7 +3769,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦒-Giraffe    .
+        ///   Looks up a localized string similar to 🦒-Giraffe.
         /// </summary>
         public static string Giraffe {
             get {
@@ -3778,7 +3778,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👧-Girl    .
+        ///   Looks up a localized string similar to 👧-Girl.
         /// </summary>
         public static string Girl {
             get {
@@ -3787,7 +3787,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👓-Glasses    .
+        ///   Looks up a localized string similar to 👓-Glasses.
         /// </summary>
         public static string Glasses {
             get {
@@ -3796,7 +3796,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥛-Glass of Milk  .
+        ///   Looks up a localized string similar to 🥛-Glass of Milk.
         /// </summary>
         public static string GlassofMilk {
             get {
@@ -3805,7 +3805,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌎-Globe Showing Americas  .
+        ///   Looks up a localized string similar to 🌎-Globe Showing Americas.
         /// </summary>
         public static string GlobeShowingAmericas {
             get {
@@ -3832,7 +3832,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌐-Globe with Meridians  .
+        ///   Looks up a localized string similar to 🌐-Globe with Meridians.
         /// </summary>
         public static string GlobewithMeridians {
             get {
@@ -3841,7 +3841,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧤-Gloves    .
+        ///   Looks up a localized string similar to 🧤-Gloves.
         /// </summary>
         public static string Gloves {
             get {
@@ -3850,7 +3850,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌟-Glowing Star   .
+        ///   Looks up a localized string similar to 🌟-Glowing Star.
         /// </summary>
         public static string GlowingStar {
             get {
@@ -3859,7 +3859,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥅-Goal Net   .
+        ///   Looks up a localized string similar to 🥅-Goal Net.
         /// </summary>
         public static string GoalNet {
             get {
@@ -3868,7 +3868,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐐-Goat    .
+        ///   Looks up a localized string similar to 🐐-Goat.
         /// </summary>
         public static string Goat {
             get {
@@ -3877,7 +3877,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👺-Goblin    .
+        ///   Looks up a localized string similar to 👺-Goblin.
         /// </summary>
         public static string Goblin {
             get {
@@ -3886,7 +3886,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥽-Goggles    .
+        ///   Looks up a localized string similar to 🥽-Goggles.
         /// </summary>
         public static string Goggles {
             get {
@@ -3895,7 +3895,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦍-Gorilla    .
+        ///   Looks up a localized string similar to 🦍-Gorilla.
         /// </summary>
         public static string Gorilla {
             get {
@@ -3904,7 +3904,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎓-Graduation Cap   .
+        ///   Looks up a localized string similar to 🎓-Graduation Cap.
         /// </summary>
         public static string GraduationCap {
             get {
@@ -3913,7 +3913,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍇-Grapes    .
+        ///   Looks up a localized string similar to 🍇-Grapes.
         /// </summary>
         public static string Grapes {
             get {
@@ -3922,7 +3922,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍏-Green Apple   .
+        ///   Looks up a localized string similar to 🍏-Green Apple.
         /// </summary>
         public static string GreenApple {
             get {
@@ -3931,7 +3931,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📗-Green Book   .
+        ///   Looks up a localized string similar to 📗-Green Book.
         /// </summary>
         public static string GreenBook {
             get {
@@ -3940,7 +3940,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥗-Green Salad   .
+        ///   Looks up a localized string similar to 🥗-Green Salad.
         /// </summary>
         public static string GreenSalad {
             get {
@@ -3949,7 +3949,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 😬-Grimacing Face   .
+        ///   Looks up a localized string similar to 😬-Grimacing Face.
         /// </summary>
         public static string GrimacingFace {
             get {
@@ -3958,7 +3958,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 😺-Grinning Cat   .
+        ///   Looks up a localized string similar to 😺-Grinning Cat.
         /// </summary>
         public static string GrinningCat {
             get {
@@ -3976,7 +3976,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 😀-Grinning Face   .
+        ///   Looks up a localized string similar to 😀-Grinning Face.
         /// </summary>
         public static string GrinningFace {
             get {
@@ -4012,7 +4012,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 😆-Grinning Squinting Face  .
+        ///   Looks up a localized string similar to 😆-Grinning Squinting Face.
         /// </summary>
         public static string GrinningSquintingFace {
             get {
@@ -4021,7 +4021,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💂-Guard    .
+        ///   Looks up a localized string similar to 💂-Guard.
         /// </summary>
         public static string Guard {
             get {
@@ -4030,7 +4030,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦮-Guide Dog   .
+        ///   Looks up a localized string similar to 🦮-Guide Dog.
         /// </summary>
         public static string GuideDog {
             get {
@@ -4039,7 +4039,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎸-Guitar    .
+        ///   Looks up a localized string similar to 🎸-Guitar.
         /// </summary>
         public static string Guitar {
             get {
@@ -4048,7 +4048,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍔-Hamburger    .
+        ///   Looks up a localized string similar to 🍔-Hamburger.
         /// </summary>
         public static string Hamburger {
             get {
@@ -4057,7 +4057,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🔨-Hammer    .
+        ///   Looks up a localized string similar to 🔨-Hammer.
         /// </summary>
         public static string Hammer {
             get {
@@ -4066,7 +4066,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ⚒️-Hammer and Pick  .
+        ///   Looks up a localized string similar to ⚒️-Hammer and Pick.
         /// </summary>
         public static string HammerandPick {
             get {
@@ -4075,7 +4075,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🛠️-Hammer and Wrench  .
+        ///   Looks up a localized string similar to 🛠️-Hammer and Wrench.
         /// </summary>
         public static string HammerandWrench {
             get {
@@ -4084,7 +4084,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐹-Hamster    .
+        ///   Looks up a localized string similar to 🐹-Hamster.
         /// </summary>
         public static string Hamster {
             get {
@@ -4093,7 +4093,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👜-Handbag    .
+        ///   Looks up a localized string similar to 👜-Handbag.
         /// </summary>
         public static string Handbag {
             get {
@@ -4102,7 +4102,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤝-Handshake    .
+        ///   Looks up a localized string similar to 🤝-Handshake.
         /// </summary>
         public static string Handshake {
             get {
@@ -4120,7 +4120,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐣-Hatching Chick   .
+        ///   Looks up a localized string similar to 🐣-Hatching Chick.
         /// </summary>
         public static string HatchingChick {
             get {
@@ -4129,7 +4129,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎧-Headphone    .
+        ///   Looks up a localized string similar to 🎧-Headphone.
         /// </summary>
         public static string Headphone {
             get {
@@ -4138,7 +4138,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🪦-Headstone    .
+        ///   Looks up a localized string similar to 🪦-Headstone.
         /// </summary>
         public static string Headstone {
             get {
@@ -4147,7 +4147,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧑‍⚕️-Health Worker   .
+        ///   Looks up a localized string similar to 🧑‍⚕️-Health Worker.
         /// </summary>
         public static string HealthWorker {
             get {
@@ -4165,7 +4165,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦔-Hedgehog    .
+        ///   Looks up a localized string similar to 🦔-Hedgehog.
         /// </summary>
         public static string Hedgehog {
             get {
@@ -4174,7 +4174,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚁-Helicopter    .
+        ///   Looks up a localized string similar to 🚁-Helicopter.
         /// </summary>
         public static string Helicopter {
             get {
@@ -4183,7 +4183,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌿-Herb    .
+        ///   Looks up a localized string similar to 🌿-Herb.
         /// </summary>
         public static string Herb {
             get {
@@ -4192,7 +4192,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌺-Hibiscus    .
+        ///   Looks up a localized string similar to 🌺-Hibiscus.
         /// </summary>
         public static string Hibiscus {
             get {
@@ -4201,7 +4201,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👠-High Heeled Shoe  .
+        ///   Looks up a localized string similar to 👠-High Heeled Shoe.
         /// </summary>
         public static string HighHeeledShoe {
             get {
@@ -4210,7 +4210,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚄-High Speed Train  .
+        ///   Looks up a localized string similar to 🚄-High Speed Train.
         /// </summary>
         public static string HighSpeedTrain {
             get {
@@ -4219,7 +4219,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ⚡-High Voltage   .
+        ///   Looks up a localized string similar to ⚡-High Voltage.
         /// </summary>
         public static string HighVoltage {
             get {
@@ -4228,7 +4228,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥾-Hiking Boot   .
+        ///   Looks up a localized string similar to 🥾-Hiking Boot.
         /// </summary>
         public static string HikingBoot {
             get {
@@ -4237,7 +4237,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🛕-Hindu Temple   .
+        ///   Looks up a localized string similar to 🛕-Hindu Temple.
         /// </summary>
         public static string HinduTemple {
             get {
@@ -4246,7 +4246,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦛-Hippopotamus    .
+        ///   Looks up a localized string similar to 🦛-Hippopotamus.
         /// </summary>
         public static string Hippopotamus {
             get {
@@ -4255,7 +4255,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🕳️-Hole    .
+        ///   Looks up a localized string similar to 🕳️-Hole.
         /// </summary>
         public static string Hole {
             get {
@@ -4264,7 +4264,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐝-Honeybee    .
+        ///   Looks up a localized string similar to 🐝-Honeybee.
         /// </summary>
         public static string Honeybee {
             get {
@@ -4273,7 +4273,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍯-Honey Pot   .
+        ///   Looks up a localized string similar to 🍯-Honey Pot.
         /// </summary>
         public static string HoneyPot {
             get {
@@ -4282,7 +4282,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🪝-Hook    .
+        ///   Looks up a localized string similar to 🪝-Hook.
         /// </summary>
         public static string Hook {
             get {
@@ -4291,7 +4291,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚥-Horizontal Traffic Light  .
+        ///   Looks up a localized string similar to 🚥-Horizontal Traffic Light.
         /// </summary>
         public static string HorizontalTrafficLight {
             get {
@@ -4300,7 +4300,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐎-Horse    .
+        ///   Looks up a localized string similar to 🐎-Horse.
         /// </summary>
         public static string Horse {
             get {
@@ -4309,7 +4309,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐴-Horse Face   .
+        ///   Looks up a localized string similar to 🐴-Horse Face.
         /// </summary>
         public static string HorseFace {
             get {
@@ -4318,7 +4318,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏇-Horse Racing   .
+        ///   Looks up a localized string similar to 🏇-Horse Racing.
         /// </summary>
         public static string HorseRacing {
             get {
@@ -4327,7 +4327,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏥-Hospital    .
+        ///   Looks up a localized string similar to 🏥-Hospital.
         /// </summary>
         public static string Hospital {
             get {
@@ -4336,7 +4336,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ☕-Hot Beverage   .
+        ///   Looks up a localized string similar to ☕-Hot Beverage.
         /// </summary>
         public static string HotBeverage {
             get {
@@ -4345,7 +4345,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌭-Hot Dog   .
+        ///   Looks up a localized string similar to 🌭-Hot Dog.
         /// </summary>
         public static string HotDog {
             get {
@@ -4354,7 +4354,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏨-Hotel    .
+        ///   Looks up a localized string similar to 🏨-Hotel.
         /// </summary>
         public static string Hotel {
             get {
@@ -4363,7 +4363,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥵-Hot Face   .
+        ///   Looks up a localized string similar to 🥵-Hot Face.
         /// </summary>
         public static string HotFace {
             get {
@@ -4372,7 +4372,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌶️-Hot Pepper   .
+        ///   Looks up a localized string similar to 🌶️-Hot Pepper.
         /// </summary>
         public static string HotPepper {
             get {
@@ -4381,7 +4381,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ⌛-Hourglass Done   .
+        ///   Looks up a localized string similar to ⌛-Hourglass Done.
         /// </summary>
         public static string HourglassDone {
             get {
@@ -4390,7 +4390,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ⏳-Hourglass Not Done  .
+        ///   Looks up a localized string similar to ⏳-Hourglass Not Done.
         /// </summary>
         public static string HourglassNotDone {
             get {
@@ -4399,7 +4399,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏠-House    .
+        ///   Looks up a localized string similar to 🏠-House.
         /// </summary>
         public static string House {
             get {
@@ -4408,7 +4408,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏘️-Houses    .
+        ///   Looks up a localized string similar to 🏘️-Houses.
         /// </summary>
         public static string Houses {
             get {
@@ -4417,7 +4417,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏡-House with Garden  .
+        ///   Looks up a localized string similar to 🏡-House with Garden.
         /// </summary>
         public static string HousewithGarden {
             get {
@@ -4426,7 +4426,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤗-Hugging Face   .
+        ///   Looks up a localized string similar to 🤗-Hugging Face.
         /// </summary>
         public static string HuggingFace {
             get {
@@ -4435,7 +4435,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 😯-Hushed Face   .
+        ///   Looks up a localized string similar to 😯-Hushed Face.
         /// </summary>
         public static string HushedFace {
             get {
@@ -4444,7 +4444,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🛖-Hut    .
+        ///   Looks up a localized string similar to 🛖-Hut.
         /// </summary>
         public static string Hut {
             get {
@@ -4453,7 +4453,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧊-Ice    .
+        ///   Looks up a localized string similar to 🧊-Ice.
         /// </summary>
         public static string Ice {
             get {
@@ -4462,7 +4462,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍨-Ice Cream   .
+        ///   Looks up a localized string similar to 🍨-Ice Cream.
         /// </summary>
         public static string IceCream {
             get {
@@ -4471,7 +4471,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏒-Ice Hockey   .
+        ///   Looks up a localized string similar to 🏒-Ice Hockey.
         /// </summary>
         public static string IceHockey {
             get {
@@ -4480,7 +4480,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ⛸️-Ice Skate   .
+        ///   Looks up a localized string similar to ⛸️-Ice Skate.
         /// </summary>
         public static string IceSkate {
             get {
@@ -4489,7 +4489,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📥-Inbox Tray   .
+        ///   Looks up a localized string similar to 📥-Inbox Tray.
         /// </summary>
         public static string InboxTray {
             get {
@@ -4498,7 +4498,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📨-Incoming Envelope   .
+        ///   Looks up a localized string similar to 📨-Incoming Envelope.
         /// </summary>
         public static string IncomingEnvelope {
             get {
@@ -4507,7 +4507,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ☝️-Index Pointing Up  .
+        ///   Looks up a localized string similar to ☝️-Index Pointing Up.
         /// </summary>
         public static string IndexPointingUp {
             get {
@@ -4516,7 +4516,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎃-Jack O Lantern  .
+        ///   Looks up a localized string similar to 🎃-Jack O Lantern.
         /// </summary>
         public static string JackOLantern {
             get {
@@ -4525,7 +4525,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏯-Japanese Castle   .
+        ///   Looks up a localized string similar to 🏯-Japanese Castle.
         /// </summary>
         public static string JapaneseCastle {
             get {
@@ -4534,7 +4534,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎎-Japanese Dolls   .
+        ///   Looks up a localized string similar to 🎎-Japanese Dolls.
         /// </summary>
         public static string JapaneseDolls {
             get {
@@ -4543,7 +4543,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏣-Japanese Post Office  .
+        ///   Looks up a localized string similar to 🏣-Japanese Post Office.
         /// </summary>
         public static string JapanesePostOffice {
             get {
@@ -4552,7 +4552,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👖-Jeans    .
+        ///   Looks up a localized string similar to 👖-Jeans.
         /// </summary>
         public static string Jeans {
             get {
@@ -4561,7 +4561,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🕹️-Joystick    .
+        ///   Looks up a localized string similar to 🕹️-Joystick.
         /// </summary>
         public static string Joystick {
             get {
@@ -4570,7 +4570,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧑‍⚖️-Judge    .
+        ///   Looks up a localized string similar to 🧑‍⚖️-Judge.
         /// </summary>
         public static string Judge {
             get {
@@ -4579,7 +4579,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🕋-Kaaba    .
+        ///   Looks up a localized string similar to 🕋-Kaaba.
         /// </summary>
         public static string Kaaba {
             get {
@@ -4588,7 +4588,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦘-Kangaroo    .
+        ///   Looks up a localized string similar to 🦘-Kangaroo.
         /// </summary>
         public static string Kangaroo {
             get {
@@ -4597,7 +4597,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🔑-Key    .
+        ///   Looks up a localized string similar to 🔑-Key.
         /// </summary>
         public static string Key {
             get {
@@ -4606,7 +4606,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ⌨️-Keyboard    .
+        ///   Looks up a localized string similar to ⌨️-Keyboard.
         /// </summary>
         public static string Keyboard {
             get {
@@ -4615,7 +4615,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🛴-Kick Scooter   .
+        ///   Looks up a localized string similar to 🛴-Kick Scooter.
         /// </summary>
         public static string KickScooter {
             get {
@@ -4624,7 +4624,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👘-Kimono    .
+        ///   Looks up a localized string similar to 👘-Kimono.
         /// </summary>
         public static string Kimono {
             get {
@@ -4633,7 +4633,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💏-Kiss    .
+        ///   Looks up a localized string similar to 💏-Kiss.
         /// </summary>
         public static string Kiss {
             get {
@@ -4642,7 +4642,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👨‍❤️‍💋‍👨-Kiss: Man, Man  .
+        ///   Looks up a localized string similar to 👨‍❤️‍💋‍👨-Kiss: Man, Man.
         /// </summary>
         public static string Kiss_Man_Man {
             get {
@@ -4651,7 +4651,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👩‍❤️‍💋‍👨-Kiss: Woman, Man  .
+        ///   Looks up a localized string similar to 👩‍❤️‍💋‍👨-Kiss: Woman, Man.
         /// </summary>
         public static string Kiss_Woman_Man {
             get {
@@ -4660,7 +4660,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👩‍❤️‍💋‍👩-Kiss: Woman, Woman  .
+        ///   Looks up a localized string similar to 👩‍❤️‍💋‍👩-Kiss: Woman, Woman.
         /// </summary>
         public static string Kiss_Woman_Woman {
             get {
@@ -4669,7 +4669,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 😽-Kissing Cat   .
+        ///   Looks up a localized string similar to 😽-Kissing Cat.
         /// </summary>
         public static string KissingCat {
             get {
@@ -4678,7 +4678,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 😗-Kissing Face   .
+        ///   Looks up a localized string similar to 😗-Kissing Face.
         /// </summary>
         public static string KissingFace {
             get {
@@ -4705,7 +4705,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💋-Kiss Mark   .
+        ///   Looks up a localized string similar to 💋-Kiss Mark.
         /// </summary>
         public static string KissMark {
             get {
@@ -4714,7 +4714,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🔪-Kitchen Knife   .
+        ///   Looks up a localized string similar to 🔪-Kitchen Knife.
         /// </summary>
         public static string KitchenKnife {
             get {
@@ -4723,7 +4723,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🪁-Kite    .
+        ///   Looks up a localized string similar to 🪁-Kite.
         /// </summary>
         public static string Kite {
             get {
@@ -4732,7 +4732,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥝-Kiwi Fruit   .
+        ///   Looks up a localized string similar to 🥝-Kiwi Fruit.
         /// </summary>
         public static string KiwiFruit {
             get {
@@ -4741,7 +4741,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🪢-Knot    .
+        ///   Looks up a localized string similar to 🪢-Knot.
         /// </summary>
         public static string Knot {
             get {
@@ -4750,7 +4750,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐨-Koala    .
+        ///   Looks up a localized string similar to 🐨-Koala.
         /// </summary>
         public static string Koala {
             get {
@@ -4759,7 +4759,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥼-Lab Coat   .
+        ///   Looks up a localized string similar to 🥼-Lab Coat.
         /// </summary>
         public static string LabCoat {
             get {
@@ -4768,7 +4768,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏷️-Label    .
+        ///   Looks up a localized string similar to 🏷️-Label.
         /// </summary>
         public static string Label {
             get {
@@ -4777,7 +4777,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥍-Lacrosse    .
+        ///   Looks up a localized string similar to 🥍-Lacrosse.
         /// </summary>
         public static string Lacrosse {
             get {
@@ -4786,7 +4786,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🪜-Ladder    .
+        ///   Looks up a localized string similar to 🪜-Ladder.
         /// </summary>
         public static string Ladder {
             get {
@@ -4795,7 +4795,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐞-Lady Beetle   .
+        ///   Looks up a localized string similar to 🐞-Lady Beetle.
         /// </summary>
         public static string LadyBeetle {
             get {
@@ -4804,7 +4804,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💻-Laptop    .
+        ///   Looks up a localized string similar to 💻-Laptop.
         /// </summary>
         public static string Laptop {
             get {
@@ -4813,7 +4813,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌗-Last Quarter Moon  .
+        ///   Looks up a localized string similar to 🌗-Last Quarter Moon.
         /// </summary>
         public static string LastQuarterMoon {
             get {
@@ -4840,7 +4840,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥬-Leafy Green   .
+        ///   Looks up a localized string similar to 🥬-Leafy Green.
         /// </summary>
         public static string LeafyGreen {
             get {
@@ -4849,7 +4849,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📒-Ledger    .
+        ///   Looks up a localized string similar to 📒-Ledger.
         /// </summary>
         public static string Ledger {
             get {
@@ -4858,7 +4858,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤛-Left Facing Fist  .
+        ///   Looks up a localized string similar to 🤛-Left Facing Fist.
         /// </summary>
         public static string LeftFacingFist {
             get {
@@ -4867,7 +4867,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🛅-Left Luggage   .
+        ///   Looks up a localized string similar to 🛅-Left Luggage.
         /// </summary>
         public static string LeftLuggage {
             get {
@@ -4876,7 +4876,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦵-Leg    .
+        ///   Looks up a localized string similar to 🦵-Leg.
         /// </summary>
         public static string Leg {
             get {
@@ -4885,7 +4885,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍋-Lemon    .
+        ///   Looks up a localized string similar to 🍋-Lemon.
         /// </summary>
         public static string Lemon {
             get {
@@ -4894,7 +4894,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐆-Leopard    .
+        ///   Looks up a localized string similar to 🐆-Leopard.
         /// </summary>
         public static string Leopard {
             get {
@@ -4903,7 +4903,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎚️-Level Slider   .
+        ///   Looks up a localized string similar to 🎚️-Level Slider.
         /// </summary>
         public static string LevelSlider {
             get {
@@ -4912,7 +4912,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💡-Light Bulb   .
+        ///   Looks up a localized string similar to 💡-Light Bulb.
         /// </summary>
         public static string LightBulb {
             get {
@@ -4921,7 +4921,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚈-Light Rail   .
+        ///   Looks up a localized string similar to 🚈-Light Rail.
         /// </summary>
         public static string LightRail {
             get {
@@ -4930,7 +4930,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🔗-Link    .
+        ///   Looks up a localized string similar to 🔗-Link.
         /// </summary>
         public static string Link {
             get {
@@ -4939,7 +4939,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🖇️-Linked Paperclips   .
+        ///   Looks up a localized string similar to 🖇️-Linked Paperclips.
         /// </summary>
         public static string LinkedPaperclips {
             get {
@@ -4948,7 +4948,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦁-Lion    .
+        ///   Looks up a localized string similar to 🦁-Lion.
         /// </summary>
         public static string Lion {
             get {
@@ -4957,7 +4957,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💄-Lipstick    .
+        ///   Looks up a localized string similar to 💄-Lipstick.
         /// </summary>
         public static string Lipstick {
             get {
@@ -4966,7 +4966,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦎-Lizard    .
+        ///   Looks up a localized string similar to 🦎-Lizard.
         /// </summary>
         public static string Lizard {
             get {
@@ -4975,7 +4975,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦙-Llama    .
+        ///   Looks up a localized string similar to 🦙-Llama.
         /// </summary>
         public static string Llama {
             get {
@@ -4984,7 +4984,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦞-Lobster    .
+        ///   Looks up a localized string similar to 🦞-Lobster.
         /// </summary>
         public static string Lobster {
             get {
@@ -4993,7 +4993,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🔒-Locked    .
+        ///   Looks up a localized string similar to 🔒-Locked.
         /// </summary>
         public static string Locked {
             get {
@@ -5002,7 +5002,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🔐-Locked with Key  .
+        ///   Looks up a localized string similar to 🔐-Locked with Key.
         /// </summary>
         public static string LockedwithKey {
             get {
@@ -5011,7 +5011,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🔏-Locked with Pen  .
+        ///   Looks up a localized string similar to 🔏-Locked with Pen.
         /// </summary>
         public static string LockedwithPen {
             get {
@@ -5020,7 +5020,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚂-Locomotive    .
+        ///   Looks up a localized string similar to 🚂-Locomotive.
         /// </summary>
         public static string Locomotive {
             get {
@@ -5029,7 +5029,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍭-Lollipop    .
+        ///   Looks up a localized string similar to 🍭-Lollipop.
         /// </summary>
         public static string Lollipop {
             get {
@@ -5038,7 +5038,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🪘-Long Drum   .
+        ///   Looks up a localized string similar to 🪘-Long Drum.
         /// </summary>
         public static string LongDrum {
             get {
@@ -5047,7 +5047,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧴-Lotion Bottle   .
+        ///   Looks up a localized string similar to 🧴-Lotion Bottle.
         /// </summary>
         public static string LotionBottle {
             get {
@@ -5056,7 +5056,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 😭-Loudly Crying Face  .
+        ///   Looks up a localized string similar to 😭-Loudly Crying Face.
         /// </summary>
         public static string LoudlyCryingFace {
             get {
@@ -5065,7 +5065,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏩-Love Hotel   .
+        ///   Looks up a localized string similar to 🏩-Love Hotel.
         /// </summary>
         public static string LoveHotel {
             get {
@@ -5074,7 +5074,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💌-Love Letter   .
+        ///   Looks up a localized string similar to 💌-Love Letter.
         /// </summary>
         public static string LoveLetter {
             get {
@@ -5083,7 +5083,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤟-Love You Gesture  .
+        ///   Looks up a localized string similar to 🤟-Love You Gesture.
         /// </summary>
         public static string LoveYouGesture {
             get {
@@ -5092,7 +5092,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧳-Luggage    .
+        ///   Looks up a localized string similar to 🧳-Luggage.
         /// </summary>
         public static string Luggage {
             get {
@@ -5101,7 +5101,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧳-Luggage    .
+        ///   Looks up a localized string similar to 🧳-Luggage.
         /// </summary>
         public static string Luggage1 {
             get {
@@ -5110,7 +5110,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🫁-Lungs    .
+        ///   Looks up a localized string similar to 🫁-Lungs.
         /// </summary>
         public static string Lungs {
             get {
@@ -5119,7 +5119,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤥-Lying Face   .
+        ///   Looks up a localized string similar to 🤥-Lying Face.
         /// </summary>
         public static string LyingFace {
             get {
@@ -5128,7 +5128,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧙-Mage    .
+        ///   Looks up a localized string similar to 🧙-Mage.
         /// </summary>
         public static string Mage {
             get {
@@ -5137,7 +5137,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🪄-Magic Wand   .
+        ///   Looks up a localized string similar to 🪄-Magic Wand.
         /// </summary>
         public static string MagicWand {
             get {
@@ -5146,7 +5146,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧲-Magnet    .
+        ///   Looks up a localized string similar to 🧲-Magnet.
         /// </summary>
         public static string Magnet {
             get {
@@ -5173,7 +5173,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦣-Mammoth    .
+        ///   Looks up a localized string similar to 🦣-Mammoth.
         /// </summary>
         public static string Mammoth {
             get {
@@ -5182,7 +5182,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👨-Man    .
+        ///   Looks up a localized string similar to 👨-Man.
         /// </summary>
         public static string Man {
             get {
@@ -5191,7 +5191,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👨‍🦲-Man: Bald   .
+        ///   Looks up a localized string similar to 👨‍🦲-Man: Bald.
         /// </summary>
         public static string Man_Bald {
             get {
@@ -5200,7 +5200,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👱‍♂️-Man: Blond Hair  .
+        ///   Looks up a localized string similar to 👱‍♂️-Man: Blond Hair.
         /// </summary>
         public static string Man_BlondHair {
             get {
@@ -5209,7 +5209,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👨‍🦱-Man: Curly Hair  .
+        ///   Looks up a localized string similar to 👨‍🦱-Man: Curly Hair.
         /// </summary>
         public static string Man_CurlyHair {
             get {
@@ -5218,7 +5218,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👨‍🦰-Man: Red Hair  .
+        ///   Looks up a localized string similar to 👨‍🦰-Man: Red Hair.
         /// </summary>
         public static string Man_RedHair {
             get {
@@ -5227,7 +5227,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👨‍🦳-Man: White Hair  .
+        ///   Looks up a localized string similar to 👨‍🦳-Man: White Hair.
         /// </summary>
         public static string Man_WhiteHair {
             get {
@@ -5236,7 +5236,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👨‍🎨-Man Artist   .
+        ///   Looks up a localized string similar to 👨‍🎨-Man Artist.
         /// </summary>
         public static string ManArtist {
             get {
@@ -5245,7 +5245,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👨‍🚀-Man Astronaut   .
+        ///   Looks up a localized string similar to 👨‍🚀-Man Astronaut.
         /// </summary>
         public static string ManAstronaut {
             get {
@@ -5254,7 +5254,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚴‍♂️-Man Biking   .
+        ///   Looks up a localized string similar to 🚴‍♂️-Man Biking.
         /// </summary>
         public static string ManBiking {
             get {
@@ -5263,7 +5263,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ⛹️‍♂️-Man Bouncing Ball  .
+        ///   Looks up a localized string similar to ⛹️‍♂️-Man Bouncing Ball.
         /// </summary>
         public static string ManBouncingBall {
             get {
@@ -5272,7 +5272,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🙇‍♂️-Man Bowing   .
+        ///   Looks up a localized string similar to 🙇‍♂️-Man Bowing.
         /// </summary>
         public static string ManBowing {
             get {
@@ -5281,7 +5281,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤸‍♂️-Man Cartwheeling   .
+        ///   Looks up a localized string similar to 🤸‍♂️-Man Cartwheeling.
         /// </summary>
         public static string ManCartwheeling {
             get {
@@ -5290,7 +5290,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧗‍♂️-Man Climbing   .
+        ///   Looks up a localized string similar to 🧗‍♂️-Man Climbing.
         /// </summary>
         public static string ManClimbing {
             get {
@@ -5299,7 +5299,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👷‍♂️-Man Construction Worker  .
+        ///   Looks up a localized string similar to 👷‍♂️-Man Construction Worker.
         /// </summary>
         public static string ManConstructionWorker {
             get {
@@ -5308,7 +5308,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👨‍🍳-Man Cook   .
+        ///   Looks up a localized string similar to 👨‍🍳-Man Cook.
         /// </summary>
         public static string ManCook {
             get {
@@ -5317,7 +5317,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🕺-Man Dancing   .
+        ///   Looks up a localized string similar to 🕺-Man Dancing.
         /// </summary>
         public static string ManDancing {
             get {
@@ -5326,7 +5326,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🕵️‍♂️-Man Detective   .
+        ///   Looks up a localized string similar to 🕵️‍♂️-Man Detective.
         /// </summary>
         public static string ManDetective {
             get {
@@ -5335,7 +5335,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧝‍♂️-Man Elf   .
+        ///   Looks up a localized string similar to 🧝‍♂️-Man Elf.
         /// </summary>
         public static string ManElf {
             get {
@@ -5344,7 +5344,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤦‍♂️-Man Facepalming   .
+        ///   Looks up a localized string similar to 🤦‍♂️-Man Facepalming.
         /// </summary>
         public static string ManFacepalming {
             get {
@@ -5353,7 +5353,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👨‍🏭-Man Factory Worker  .
+        ///   Looks up a localized string similar to 👨‍🏭-Man Factory Worker.
         /// </summary>
         public static string ManFactoryWorker {
             get {
@@ -5362,7 +5362,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧚‍♂️-Man Fairy   .
+        ///   Looks up a localized string similar to 🧚‍♂️-Man Fairy.
         /// </summary>
         public static string ManFairy {
             get {
@@ -5371,7 +5371,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👨‍🌾-Man Farmer   .
+        ///   Looks up a localized string similar to 👨‍🌾-Man Farmer.
         /// </summary>
         public static string ManFarmer {
             get {
@@ -5380,7 +5380,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👨‍🍼-Man Feeding Baby  .
+        ///   Looks up a localized string similar to 👨‍🍼-Man Feeding Baby.
         /// </summary>
         public static string ManFeedingBaby {
             get {
@@ -5389,7 +5389,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👨‍🚒-Man Firefighter   .
+        ///   Looks up a localized string similar to 👨‍🚒-Man Firefighter.
         /// </summary>
         public static string ManFirefighter {
             get {
@@ -5398,7 +5398,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🙍‍♂️-Man Frowning   .
+        ///   Looks up a localized string similar to 🙍‍♂️-Man Frowning.
         /// </summary>
         public static string ManFrowning {
             get {
@@ -5407,7 +5407,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧞‍♂️-Man Genie   .
+        ///   Looks up a localized string similar to 🧞‍♂️-Man Genie.
         /// </summary>
         public static string ManGenie {
             get {
@@ -5416,7 +5416,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🙅‍♂️-Man Gesturing No  .
+        ///   Looks up a localized string similar to 🙅‍♂️-Man Gesturing No.
         /// </summary>
         public static string ManGesturingNo {
             get {
@@ -5425,7 +5425,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🙆‍♂️-Man Gesturing OK  .
+        ///   Looks up a localized string similar to 🙆‍♂️-Man Gesturing OK.
         /// </summary>
         public static string ManGesturingOK {
             get {
@@ -5434,7 +5434,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💇‍♂️-Man Getting Haircut  .
+        ///   Looks up a localized string similar to 💇‍♂️-Man Getting Haircut.
         /// </summary>
         public static string ManGettingHaircut {
             get {
@@ -5443,7 +5443,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💆‍♂️-Man Getting Massage  .
+        ///   Looks up a localized string similar to 💆‍♂️-Man Getting Massage.
         /// </summary>
         public static string ManGettingMassage {
             get {
@@ -5452,7 +5452,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥭-Mango    .
+        ///   Looks up a localized string similar to 🥭-Mango.
         /// </summary>
         public static string Mango {
             get {
@@ -5461,7 +5461,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏌️‍♂️-Man Golfing   .
+        ///   Looks up a localized string similar to 🏌️‍♂️-Man Golfing.
         /// </summary>
         public static string ManGolfing {
             get {
@@ -5470,7 +5470,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💂‍♂️-Man Guard   .
+        ///   Looks up a localized string similar to 💂‍♂️-Man Guard.
         /// </summary>
         public static string ManGuard {
             get {
@@ -5479,7 +5479,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👨‍⚕️-Man Health Worker  .
+        ///   Looks up a localized string similar to 👨‍⚕️-Man Health Worker.
         /// </summary>
         public static string ManHealthWorker {
             get {
@@ -5524,7 +5524,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤵‍♂️-Man in Tuxedo  .
+        ///   Looks up a localized string similar to 🤵‍♂️-Man in Tuxedo.
         /// </summary>
         public static string ManinTuxedo {
             get {
@@ -5533,7 +5533,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👨‍⚖️-Man Judge   .
+        ///   Looks up a localized string similar to 👨‍⚖️-Man Judge.
         /// </summary>
         public static string ManJudge {
             get {
@@ -5542,7 +5542,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤹‍♂️-Man Juggling   .
+        ///   Looks up a localized string similar to 🤹‍♂️-Man Juggling.
         /// </summary>
         public static string ManJuggling {
             get {
@@ -5551,7 +5551,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧎‍♂️-Man Kneeling   .
+        ///   Looks up a localized string similar to 🧎‍♂️-Man Kneeling.
         /// </summary>
         public static string ManKneeling {
             get {
@@ -5560,7 +5560,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏋️‍♂️-Man Lifting Weights  .
+        ///   Looks up a localized string similar to 🏋️‍♂️-Man Lifting Weights.
         /// </summary>
         public static string ManLiftingWeights {
             get {
@@ -5569,7 +5569,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧙‍♂️-Man Mage   .
+        ///   Looks up a localized string similar to 🧙‍♂️-Man Mage.
         /// </summary>
         public static string ManMage {
             get {
@@ -5578,7 +5578,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👨‍🔧-Man Mechanic   .
+        ///   Looks up a localized string similar to 👨‍🔧-Man Mechanic.
         /// </summary>
         public static string ManMechanic {
             get {
@@ -5587,7 +5587,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚵‍♂️-Man Mountain Biking  .
+        ///   Looks up a localized string similar to 🚵‍♂️-Man Mountain Biking.
         /// </summary>
         public static string ManMountainBiking {
             get {
@@ -5596,7 +5596,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👨‍💼-Man Office Worker  .
+        ///   Looks up a localized string similar to 👨‍💼-Man Office Worker.
         /// </summary>
         public static string ManOfficeWorker {
             get {
@@ -5605,7 +5605,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👨‍✈️-Man Pilot   .
+        ///   Looks up a localized string similar to 👨‍✈️-Man Pilot.
         /// </summary>
         public static string ManPilot {
             get {
@@ -5614,7 +5614,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤾‍♂️-Man Playing Handball  .
+        ///   Looks up a localized string similar to 🤾‍♂️-Man Playing Handball.
         /// </summary>
         public static string ManPlayingHandball {
             get {
@@ -5632,7 +5632,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👮‍♂️-Man Police Officer  .
+        ///   Looks up a localized string similar to 👮‍♂️-Man Police Officer.
         /// </summary>
         public static string ManPoliceOfficer {
             get {
@@ -5641,7 +5641,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🙎‍♂️-Man Pouting   .
+        ///   Looks up a localized string similar to 🙎‍♂️-Man Pouting.
         /// </summary>
         public static string ManPouting {
             get {
@@ -5650,7 +5650,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🙋‍♂️-Man Raising Hand  .
+        ///   Looks up a localized string similar to 🙋‍♂️-Man Raising Hand.
         /// </summary>
         public static string ManRaisingHand {
             get {
@@ -5659,7 +5659,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚣‍♂️-Man Rowing Boat  .
+        ///   Looks up a localized string similar to 🚣‍♂️-Man Rowing Boat.
         /// </summary>
         public static string ManRowingBoat {
             get {
@@ -5668,7 +5668,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏃‍♂️-Man Running   .
+        ///   Looks up a localized string similar to 🏃‍♂️-Man Running.
         /// </summary>
         public static string ManRunning {
             get {
@@ -5677,7 +5677,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👨‍🔬-Man Scientist   .
+        ///   Looks up a localized string similar to 👨‍🔬-Man Scientist.
         /// </summary>
         public static string ManScientist {
             get {
@@ -5686,7 +5686,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤷‍♂️-Man Shrugging   .
+        ///   Looks up a localized string similar to 🤷‍♂️-Man Shrugging.
         /// </summary>
         public static string ManShrugging {
             get {
@@ -5695,7 +5695,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👨‍🎤-Man Singer   .
+        ///   Looks up a localized string similar to 👨‍🎤-Man Singer.
         /// </summary>
         public static string ManSinger {
             get {
@@ -5704,7 +5704,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👞-Mans Shoe   .
+        ///   Looks up a localized string similar to 👞-Mans Shoe.
         /// </summary>
         public static string MansShoe {
             get {
@@ -5713,7 +5713,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧍‍♂️-Man Standing   .
+        ///   Looks up a localized string similar to 🧍‍♂️-Man Standing.
         /// </summary>
         public static string ManStanding {
             get {
@@ -5722,7 +5722,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👨‍🎓-Man Student   .
+        ///   Looks up a localized string similar to 👨‍🎓-Man Student.
         /// </summary>
         public static string ManStudent {
             get {
@@ -5731,7 +5731,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦸‍♂️-Man Superhero   .
+        ///   Looks up a localized string similar to 🦸‍♂️-Man Superhero.
         /// </summary>
         public static string ManSuperhero {
             get {
@@ -5740,7 +5740,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦹‍♂️-Man Supervillain   .
+        ///   Looks up a localized string similar to 🦹‍♂️-Man Supervillain.
         /// </summary>
         public static string ManSupervillain {
             get {
@@ -5749,7 +5749,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏄‍♂️-Man Surfing   .
+        ///   Looks up a localized string similar to 🏄‍♂️-Man Surfing.
         /// </summary>
         public static string ManSurfing {
             get {
@@ -5758,7 +5758,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏊‍♂️-Man Swimming   .
+        ///   Looks up a localized string similar to 🏊‍♂️-Man Swimming.
         /// </summary>
         public static string ManSwimming {
             get {
@@ -5767,7 +5767,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👨‍🏫-Man Teacher   .
+        ///   Looks up a localized string similar to 👨‍🏫-Man Teacher.
         /// </summary>
         public static string ManTeacher {
             get {
@@ -5776,7 +5776,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👨‍💻-Man Technologist   .
+        ///   Looks up a localized string similar to 👨‍💻-Man Technologist.
         /// </summary>
         public static string ManTechnologist {
             get {
@@ -5785,7 +5785,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🕰️-Mantelpiece Clock   .
+        ///   Looks up a localized string similar to 🕰️-Mantelpiece Clock.
         /// </summary>
         public static string MantelpieceClock {
             get {
@@ -5794,7 +5794,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💁‍♂️-Man Tipping Hand  .
+        ///   Looks up a localized string similar to 💁‍♂️-Man Tipping Hand.
         /// </summary>
         public static string ManTippingHand {
             get {
@@ -5803,7 +5803,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦽-Manual Wheelchair   .
+        ///   Looks up a localized string similar to 🦽-Manual Wheelchair.
         /// </summary>
         public static string ManualWheelchair {
             get {
@@ -5812,7 +5812,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧛‍♂️-Man Vampire   .
+        ///   Looks up a localized string similar to 🧛‍♂️-Man Vampire.
         /// </summary>
         public static string ManVampire {
             get {
@@ -5821,7 +5821,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚶‍♂️-Man Walking   .
+        ///   Looks up a localized string similar to 🚶‍♂️-Man Walking.
         /// </summary>
         public static string ManWalking {
             get {
@@ -5830,7 +5830,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👳‍♂️-Man Wearing Turban  .
+        ///   Looks up a localized string similar to 👳‍♂️-Man Wearing Turban.
         /// </summary>
         public static string ManWearingTurban {
             get {
@@ -5839,7 +5839,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👰‍♂️-Man with Veil  .
+        ///   Looks up a localized string similar to 👰‍♂️-Man with Veil.
         /// </summary>
         public static string ManwithVeil {
             get {
@@ -5857,7 +5857,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧟‍♂️-Man Zombie   .
+        ///   Looks up a localized string similar to 🧟‍♂️-Man Zombie.
         /// </summary>
         public static string ManZombie {
             get {
@@ -5866,7 +5866,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍁-Maple Leaf   .
+        ///   Looks up a localized string similar to 🍁-Maple Leaf.
         /// </summary>
         public static string MapleLeaf {
             get {
@@ -5875,7 +5875,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🗾-Map of Japan  .
+        ///   Looks up a localized string similar to 🗾-Map of Japan.
         /// </summary>
         public static string MapofJapan {
             get {
@@ -5884,7 +5884,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥋-Martial Arts Uniform  .
+        ///   Looks up a localized string similar to 🥋-Martial Arts Uniform.
         /// </summary>
         public static string MartialArtsUniform {
             get {
@@ -5893,7 +5893,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧉-Mate    .
+        ///   Looks up a localized string similar to 🧉-Mate.
         /// </summary>
         public static string Mate {
             get {
@@ -5902,7 +5902,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍖-Meat on Bone  .
+        ///   Looks up a localized string similar to 🍖-Meat on Bone.
         /// </summary>
         public static string MeatonBone {
             get {
@@ -5911,7 +5911,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧑‍🔧-Mechanic    .
+        ///   Looks up a localized string similar to 🧑‍🔧-Mechanic.
         /// </summary>
         public static string Mechanic {
             get {
@@ -5920,7 +5920,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦾-Mechanical Arm   .
+        ///   Looks up a localized string similar to 🦾-Mechanical Arm.
         /// </summary>
         public static string MechanicalArm {
             get {
@@ -5929,7 +5929,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦿-Mechanical Leg   .
+        ///   Looks up a localized string similar to 🦿-Mechanical Leg.
         /// </summary>
         public static string MechanicalLeg {
             get {
@@ -5938,7 +5938,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍈-Melon    .
+        ///   Looks up a localized string similar to 🍈-Melon.
         /// </summary>
         public static string Melon {
             get {
@@ -5947,7 +5947,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📝-Memo    .
+        ///   Looks up a localized string similar to 📝-Memo.
         /// </summary>
         public static string Memo {
             get {
@@ -5956,7 +5956,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👬-Men Holding Hands  .
+        ///   Looks up a localized string similar to 👬-Men Holding Hands.
         /// </summary>
         public static string MenHoldingHands {
             get {
@@ -5974,7 +5974,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤼‍♂️-Men Wrestling   .
+        ///   Looks up a localized string similar to 🤼‍♂️-Men Wrestling.
         /// </summary>
         public static string MenWrestling {
             get {
@@ -5983,7 +5983,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧜‍♀️-Mermaid    .
+        ///   Looks up a localized string similar to 🧜‍♀️-Mermaid.
         /// </summary>
         public static string Mermaid {
             get {
@@ -5992,7 +5992,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧜‍♂️-Merman    .
+        ///   Looks up a localized string similar to 🧜‍♂️-Merman.
         /// </summary>
         public static string Merman {
             get {
@@ -6001,7 +6001,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧜-Merperson    .
+        ///   Looks up a localized string similar to 🧜-Merperson.
         /// </summary>
         public static string Merperson {
             get {
@@ -6010,7 +6010,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚇-Metro    .
+        ///   Looks up a localized string similar to 🚇-Metro.
         /// </summary>
         public static string Metro {
             get {
@@ -6019,7 +6019,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦠-Microbe    .
+        ///   Looks up a localized string similar to 🦠-Microbe.
         /// </summary>
         public static string Microbe {
             get {
@@ -6028,7 +6028,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎤-Microphone    .
+        ///   Looks up a localized string similar to 🎤-Microphone.
         /// </summary>
         public static string Microphone {
             get {
@@ -6037,7 +6037,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🔬-Microscope    .
+        ///   Looks up a localized string similar to 🔬-Microscope.
         /// </summary>
         public static string Microscope {
             get {
@@ -6046,7 +6046,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🖕-Middle Finger   .
+        ///   Looks up a localized string similar to 🖕-Middle Finger.
         /// </summary>
         public static string MiddleFinger {
             get {
@@ -6055,7 +6055,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🪖-Military Helmet   .
+        ///   Looks up a localized string similar to 🪖-Military Helmet.
         /// </summary>
         public static string MilitaryHelmet {
             get {
@@ -6064,7 +6064,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎖️-Military Medal   .
+        ///   Looks up a localized string similar to 🎖️-Military Medal.
         /// </summary>
         public static string MilitaryMedal {
             get {
@@ -6073,7 +6073,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌌-Milky Way   .
+        ///   Looks up a localized string similar to 🌌-Milky Way.
         /// </summary>
         public static string MilkyWay {
             get {
@@ -6082,7 +6082,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚐-Minibus    .
+        ///   Looks up a localized string similar to 🚐-Minibus.
         /// </summary>
         public static string Minibus {
             get {
@@ -6091,7 +6091,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🪞-Mirror    .
+        ///   Looks up a localized string similar to 🪞-Mirror.
         /// </summary>
         public static string Mirror {
             get {
@@ -6100,7 +6100,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🗿-Moai    .
+        ///   Looks up a localized string similar to 🗿-Moai.
         /// </summary>
         public static string Moai {
             get {
@@ -6109,7 +6109,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🗿-Moai    .
+        ///   Looks up a localized string similar to 🗿-Moai.
         /// </summary>
         public static string Moai1 {
             get {
@@ -6118,7 +6118,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📱-Mobile Phone   .
+        ///   Looks up a localized string similar to 📱-Mobile Phone.
         /// </summary>
         public static string MobilePhone {
             get {
@@ -6136,7 +6136,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💰-Money Bag   .
+        ///   Looks up a localized string similar to 💰-Money Bag.
         /// </summary>
         public static string MoneyBag {
             get {
@@ -6145,7 +6145,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤑-Money Mouth Face  .
+        ///   Looks up a localized string similar to 🤑-Money Mouth Face.
         /// </summary>
         public static string MoneyMouthFace {
             get {
@@ -6154,7 +6154,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💸-Money with Wings  .
+        ///   Looks up a localized string similar to 💸-Money with Wings.
         /// </summary>
         public static string MoneywithWings {
             get {
@@ -6163,7 +6163,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐒-Monkey    .
+        ///   Looks up a localized string similar to 🐒-Monkey.
         /// </summary>
         public static string Monkey {
             get {
@@ -6172,7 +6172,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐵-Monkey Face   .
+        ///   Looks up a localized string similar to 🐵-Monkey Face.
         /// </summary>
         public static string MonkeyFace {
             get {
@@ -6181,7 +6181,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚝-Monorail    .
+        ///   Looks up a localized string similar to 🚝-Monorail.
         /// </summary>
         public static string Monorail {
             get {
@@ -6190,7 +6190,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥮-Moon Cake   .
+        ///   Looks up a localized string similar to 🥮-Moon Cake.
         /// </summary>
         public static string MoonCake {
             get {
@@ -6199,7 +6199,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎑-Moon Viewing Ceremony  .
+        ///   Looks up a localized string similar to 🎑-Moon Viewing Ceremony.
         /// </summary>
         public static string MoonViewingCeremony {
             get {
@@ -6208,7 +6208,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🕌-Mosque    .
+        ///   Looks up a localized string similar to 🕌-Mosque.
         /// </summary>
         public static string Mosque {
             get {
@@ -6217,7 +6217,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦟-Mosquito    .
+        ///   Looks up a localized string similar to 🦟-Mosquito.
         /// </summary>
         public static string Mosquito {
             get {
@@ -6226,7 +6226,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🛥️-Motor Boat   .
+        ///   Looks up a localized string similar to 🛥️-Motor Boat.
         /// </summary>
         public static string MotorBoat {
             get {
@@ -6235,7 +6235,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏍️-Motorcycle    .
+        ///   Looks up a localized string similar to 🏍️-Motorcycle.
         /// </summary>
         public static string Motorcycle {
             get {
@@ -6244,7 +6244,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦼-Motorized Wheelchair   .
+        ///   Looks up a localized string similar to 🦼-Motorized Wheelchair.
         /// </summary>
         public static string MotorizedWheelchair {
             get {
@@ -6253,7 +6253,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🛵-Motor Scooter   .
+        ///   Looks up a localized string similar to 🛵-Motor Scooter.
         /// </summary>
         public static string MotorScooter {
             get {
@@ -6262,7 +6262,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🛣️-Motorway    .
+        ///   Looks up a localized string similar to 🛣️-Motorway.
         /// </summary>
         public static string Motorway {
             get {
@@ -6271,7 +6271,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ⛰️-Mountain    .
+        ///   Looks up a localized string similar to ⛰️-Mountain.
         /// </summary>
         public static string Mountain {
             get {
@@ -6280,7 +6280,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚠-Mountain Cableway   .
+        ///   Looks up a localized string similar to 🚠-Mountain Cableway.
         /// </summary>
         public static string MountainCableway {
             get {
@@ -6289,7 +6289,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚞-Mountain Railway   .
+        ///   Looks up a localized string similar to 🚞-Mountain Railway.
         /// </summary>
         public static string MountainRailway {
             get {
@@ -6298,7 +6298,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🗻-Mount Fuji   .
+        ///   Looks up a localized string similar to 🗻-Mount Fuji.
         /// </summary>
         public static string MountFuji {
             get {
@@ -6307,7 +6307,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐁-Mouse    .
+        ///   Looks up a localized string similar to 🐁-Mouse.
         /// </summary>
         public static string Mouse {
             get {
@@ -6316,7 +6316,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐭-Mouse Face   .
+        ///   Looks up a localized string similar to 🐭-Mouse Face.
         /// </summary>
         public static string MouseFace {
             get {
@@ -6325,7 +6325,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🪤-Mouse Trap   .
+        ///   Looks up a localized string similar to 🪤-Mouse Trap.
         /// </summary>
         public static string MouseTrap {
             get {
@@ -6334,7 +6334,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👄-Mouth    .
+        ///   Looks up a localized string similar to 👄-Mouth.
         /// </summary>
         public static string Mouth {
             get {
@@ -6343,7 +6343,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎥-Movie Camera   .
+        ///   Looks up a localized string similar to 🎥-Movie Camera.
         /// </summary>
         public static string MovieCamera {
             get {
@@ -6352,7 +6352,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤶-Mrs. Claus   .
+        ///   Looks up a localized string similar to 🤶-Mrs. Claus.
         /// </summary>
         public static string Mrs_Claus {
             get {
@@ -6361,7 +6361,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍄-Mushroom    .
+        ///   Looks up a localized string similar to 🍄-Mushroom.
         /// </summary>
         public static string Mushroom {
             get {
@@ -6370,7 +6370,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍄-Mushroom    .
+        ///   Looks up a localized string similar to 🍄-Mushroom.
         /// </summary>
         public static string Mushroom1 {
             get {
@@ -6379,7 +6379,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎹-Musical Keyboard   .
+        ///   Looks up a localized string similar to 🎹-Musical Keyboard.
         /// </summary>
         public static string MusicalKeyboard {
             get {
@@ -6388,7 +6388,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎼-Musical Score   .
+        ///   Looks up a localized string similar to 🎼-Musical Score.
         /// </summary>
         public static string MusicalScore {
             get {
@@ -6397,7 +6397,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧑‍🎄-Mx Claus   .
+        ///   Looks up a localized string similar to 🧑‍🎄-Mx Claus.
         /// </summary>
         public static string MxClaus {
             get {
@@ -6406,7 +6406,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💅-Nail Polish   .
+        ///   Looks up a localized string similar to 💅-Nail Polish.
         /// </summary>
         public static string NailPolish {
             get {
@@ -6415,7 +6415,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏞️-National Park   .
+        ///   Looks up a localized string similar to 🏞️-National Park.
         /// </summary>
         public static string NationalPark {
             get {
@@ -6424,7 +6424,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤢-Nauseated Face   .
+        ///   Looks up a localized string similar to 🤢-Nauseated Face.
         /// </summary>
         public static string NauseatedFace {
             get {
@@ -6433,7 +6433,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧿-Nazar Amulet   .
+        ///   Looks up a localized string similar to 🧿-Nazar Amulet.
         /// </summary>
         public static string NazarAmulet {
             get {
@@ -6442,7 +6442,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👔-Necktie    .
+        ///   Looks up a localized string similar to 👔-Necktie.
         /// </summary>
         public static string Necktie {
             get {
@@ -6451,7 +6451,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤓-Nerd Face   .
+        ///   Looks up a localized string similar to 🤓-Nerd Face.
         /// </summary>
         public static string NerdFace {
             get {
@@ -6460,7 +6460,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🪆-Nesting Dolls   .
+        ///   Looks up a localized string similar to 🪆-Nesting Dolls.
         /// </summary>
         public static string NestingDolls {
             get {
@@ -6469,7 +6469,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 😐-Neutral Face   .
+        ///   Looks up a localized string similar to 😐-Neutral Face.
         /// </summary>
         public static string NeutralFace {
             get {
@@ -6478,7 +6478,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌑-New Moon   .
+        ///   Looks up a localized string similar to 🌑-New Moon.
         /// </summary>
         public static string NewMoon {
             get {
@@ -6487,7 +6487,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌚-New Moon Face  .
+        ///   Looks up a localized string similar to 🌚-New Moon Face.
         /// </summary>
         public static string NewMoonFace {
             get {
@@ -6496,7 +6496,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📰-Newspaper    .
+        ///   Looks up a localized string similar to 📰-Newspaper.
         /// </summary>
         public static string Newspaper {
             get {
@@ -6505,7 +6505,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌃-Night with Stars  .
+        ///   Looks up a localized string similar to 🌃-Night with Stars.
         /// </summary>
         public static string NightwithStars {
             get {
@@ -6514,7 +6514,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥷-Ninja    .
+        ///   Looks up a localized string similar to 🥷-Ninja.
         /// </summary>
         public static string Ninja {
             get {
@@ -6523,7 +6523,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👃-Nose    .
+        ///   Looks up a localized string similar to 👃-Nose.
         /// </summary>
         public static string Nose {
             get {
@@ -6532,7 +6532,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📓-Notebook    .
+        ///   Looks up a localized string similar to 📓-Notebook.
         /// </summary>
         public static string Notebook {
             get {
@@ -6550,7 +6550,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🔩-Nut and Bolt  .
+        ///   Looks up a localized string similar to 🔩-Nut and Bolt.
         /// </summary>
         public static string NutandBolt {
             get {
@@ -6559,7 +6559,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐙-Octopus    .
+        ///   Looks up a localized string similar to 🐙-Octopus.
         /// </summary>
         public static string Octopus {
             get {
@@ -6568,7 +6568,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍢-Oden    .
+        ///   Looks up a localized string similar to 🍢-Oden.
         /// </summary>
         public static string Oden {
             get {
@@ -6577,7 +6577,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏢-Office Building   .
+        ///   Looks up a localized string similar to 🏢-Office Building.
         /// </summary>
         public static string OfficeBuilding {
             get {
@@ -6586,7 +6586,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧑‍💼-Office Worker   .
+        ///   Looks up a localized string similar to 🧑‍💼-Office Worker.
         /// </summary>
         public static string OfficeWorker {
             get {
@@ -6595,7 +6595,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👹-Ogre    .
+        ///   Looks up a localized string similar to 👹-Ogre.
         /// </summary>
         public static string Ogre {
             get {
@@ -6604,7 +6604,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🛢️-Oil Drum   .
+        ///   Looks up a localized string similar to 🛢️-Oil Drum.
         /// </summary>
         public static string OilDrum {
             get {
@@ -6613,7 +6613,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👌-OK Hand   .
+        ///   Looks up a localized string similar to 👌-OK Hand.
         /// </summary>
         public static string OKHand {
             get {
@@ -6622,7 +6622,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧓-Older Person   .
+        ///   Looks up a localized string similar to 🧓-Older Person.
         /// </summary>
         public static string OlderPerson {
             get {
@@ -6631,7 +6631,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🗝️-Old Key   .
+        ///   Looks up a localized string similar to 🗝️-Old Key.
         /// </summary>
         public static string OldKey {
             get {
@@ -6640,7 +6640,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👴-Old Man   .
+        ///   Looks up a localized string similar to 👴-Old Man.
         /// </summary>
         public static string OldMan {
             get {
@@ -6649,7 +6649,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👵-Old Woman   .
+        ///   Looks up a localized string similar to 👵-Old Woman.
         /// </summary>
         public static string OldWoman {
             get {
@@ -6658,7 +6658,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🫒-Olive    .
+        ///   Looks up a localized string similar to 🫒-Olive.
         /// </summary>
         public static string Olive {
             get {
@@ -6667,7 +6667,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚘-Oncoming Automobile   .
+        ///   Looks up a localized string similar to 🚘-Oncoming Automobile.
         /// </summary>
         public static string OncomingAutomobile {
             get {
@@ -6676,7 +6676,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚍-Oncoming Bus   .
+        ///   Looks up a localized string similar to 🚍-Oncoming Bus.
         /// </summary>
         public static string OncomingBus {
             get {
@@ -6685,7 +6685,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👊-Oncoming Fist   .
+        ///   Looks up a localized string similar to 👊-Oncoming Fist.
         /// </summary>
         public static string OncomingFist {
             get {
@@ -6694,7 +6694,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚔-Oncoming Police Car  .
+        ///   Looks up a localized string similar to 🚔-Oncoming Police Car.
         /// </summary>
         public static string OncomingPoliceCar {
             get {
@@ -6703,7 +6703,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚖-Oncoming Taxi   .
+        ///   Looks up a localized string similar to 🚖-Oncoming Taxi.
         /// </summary>
         public static string OncomingTaxi {
             get {
@@ -6712,7 +6712,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🩱-One Piece Swimsuit  .
+        ///   Looks up a localized string similar to 🩱-One Piece Swimsuit.
         /// </summary>
         public static string OnePieceSwimsuit {
             get {
@@ -6721,7 +6721,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧅-Onion    .
+        ///   Looks up a localized string similar to 🧅-Onion.
         /// </summary>
         public static string Onion {
             get {
@@ -6730,7 +6730,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📖-Open Book   .
+        ///   Looks up a localized string similar to 📖-Open Book.
         /// </summary>
         public static string OpenBook {
             get {
@@ -6739,7 +6739,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📂-Open File Folder  .
+        ///   Looks up a localized string similar to 📂-Open File Folder.
         /// </summary>
         public static string OpenFileFolder {
             get {
@@ -6748,7 +6748,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👐-Open Hands   .
+        ///   Looks up a localized string similar to 👐-Open Hands.
         /// </summary>
         public static string OpenHands {
             get {
@@ -6775,7 +6775,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💿-Optical Disk   .
+        ///   Looks up a localized string similar to 💿-Optical Disk.
         /// </summary>
         public static string OpticalDisk {
             get {
@@ -6784,7 +6784,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📙-Orange Book   .
+        ///   Looks up a localized string similar to 📙-Orange Book.
         /// </summary>
         public static string OrangeBook {
             get {
@@ -6793,7 +6793,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦧-Orangutan    .
+        ///   Looks up a localized string similar to 🦧-Orangutan.
         /// </summary>
         public static string Orangutan {
             get {
@@ -6802,7 +6802,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦦-Otter    .
+        ///   Looks up a localized string similar to 🦦-Otter.
         /// </summary>
         public static string Otter {
             get {
@@ -6811,7 +6811,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📤-Outbox Tray   .
+        ///   Looks up a localized string similar to 📤-Outbox Tray.
         /// </summary>
         public static string OutboxTray {
             get {
@@ -6820,7 +6820,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦉-Owl    .
+        ///   Looks up a localized string similar to 🦉-Owl.
         /// </summary>
         public static string Owl {
             get {
@@ -6829,7 +6829,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐂-Ox    .
+        ///   Looks up a localized string similar to 🐂-Ox.
         /// </summary>
         public static string Ox {
             get {
@@ -6838,7 +6838,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦪-Oyster    .
+        ///   Looks up a localized string similar to 🦪-Oyster.
         /// </summary>
         public static string Oyster {
             get {
@@ -6847,7 +6847,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📦-Package    .
+        ///   Looks up a localized string similar to 📦-Package.
         /// </summary>
         public static string Package {
             get {
@@ -6856,7 +6856,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📄-Page Facing Up  .
+        ///   Looks up a localized string similar to 📄-Page Facing Up.
         /// </summary>
         public static string PageFacingUp {
             get {
@@ -6865,7 +6865,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📟-Pager    .
+        ///   Looks up a localized string similar to 📟-Pager.
         /// </summary>
         public static string Pager {
             get {
@@ -6874,7 +6874,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📃-Page with Curl  .
+        ///   Looks up a localized string similar to 📃-Page with Curl.
         /// </summary>
         public static string PagewithCurl {
             get {
@@ -6883,7 +6883,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🖌️-Paintbrush    .
+        ///   Looks up a localized string similar to 🖌️-Paintbrush.
         /// </summary>
         public static string Paintbrush {
             get {
@@ -6892,7 +6892,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤲-Palms Up Together  .
+        ///   Looks up a localized string similar to 🤲-Palms Up Together.
         /// </summary>
         public static string PalmsUpTogether {
             get {
@@ -6901,7 +6901,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌴-Palm Tree   .
+        ///   Looks up a localized string similar to 🌴-Palm Tree.
         /// </summary>
         public static string PalmTree {
             get {
@@ -6910,7 +6910,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥞-Pancakes    .
+        ///   Looks up a localized string similar to 🥞-Pancakes.
         /// </summary>
         public static string Pancakes {
             get {
@@ -6919,7 +6919,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐼-Panda    .
+        ///   Looks up a localized string similar to 🐼-Panda.
         /// </summary>
         public static string Panda {
             get {
@@ -6928,7 +6928,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📎-Paperclip    .
+        ///   Looks up a localized string similar to 📎-Paperclip.
         /// </summary>
         public static string Paperclip {
             get {
@@ -6937,7 +6937,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🪂-Parachute    .
+        ///   Looks up a localized string similar to 🪂-Parachute.
         /// </summary>
         public static string Parachute {
             get {
@@ -6946,7 +6946,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦜-Parrot    .
+        ///   Looks up a localized string similar to 🦜-Parrot.
         /// </summary>
         public static string Parrot {
             get {
@@ -6955,7 +6955,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥳-Partying Face   .
+        ///   Looks up a localized string similar to 🥳-Partying Face.
         /// </summary>
         public static string PartyingFace {
             get {
@@ -6964,7 +6964,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎉-Party Popper   .
+        ///   Looks up a localized string similar to 🎉-Party Popper.
         /// </summary>
         public static string PartyPopper {
             get {
@@ -6973,7 +6973,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🛳️-Passenger Ship   .
+        ///   Looks up a localized string similar to 🛳️-Passenger Ship.
         /// </summary>
         public static string PassengerShip {
             get {
@@ -6982,7 +6982,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🛂-Passport Control   .
+        ///   Looks up a localized string similar to 🛂-Passport Control.
         /// </summary>
         public static string PassportControl {
             get {
@@ -6991,7 +6991,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐾-Paw Prints   .
+        ///   Looks up a localized string similar to 🐾-Paw Prints.
         /// </summary>
         public static string PawPrints {
             get {
@@ -7000,7 +7000,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍑-Peach    .
+        ///   Looks up a localized string similar to 🍑-Peach.
         /// </summary>
         public static string Peach {
             get {
@@ -7009,7 +7009,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦚-Peacock    .
+        ///   Looks up a localized string similar to 🦚-Peacock.
         /// </summary>
         public static string Peacock {
             get {
@@ -7018,7 +7018,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥜-Peanuts    .
+        ///   Looks up a localized string similar to 🥜-Peanuts.
         /// </summary>
         public static string Peanuts {
             get {
@@ -7027,7 +7027,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍐-Pear    .
+        ///   Looks up a localized string similar to 🍐-Pear.
         /// </summary>
         public static string Pear {
             get {
@@ -7036,7 +7036,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🖊️-Pen    .
+        ///   Looks up a localized string similar to 🖊️-Pen.
         /// </summary>
         public static string Pen {
             get {
@@ -7045,7 +7045,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ✏️-Pencil    .
+        ///   Looks up a localized string similar to ✏️-Pencil.
         /// </summary>
         public static string Pencil {
             get {
@@ -7054,7 +7054,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐧-Penguin    .
+        ///   Looks up a localized string similar to 🐧-Penguin.
         /// </summary>
         public static string Penguin {
             get {
@@ -7063,7 +7063,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 😔-Pensive Face   .
+        ///   Looks up a localized string similar to 😔-Pensive Face.
         /// </summary>
         public static string PensiveFace {
             get {
@@ -7072,7 +7072,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧑‍🤝‍🧑-People Holding Hands  .
+        ///   Looks up a localized string similar to 🧑‍🤝‍🧑-People Holding Hands.
         /// </summary>
         public static string PeopleHoldingHands {
             get {
@@ -7081,7 +7081,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🫂-People Hugging   .
+        ///   Looks up a localized string similar to 🫂-People Hugging.
         /// </summary>
         public static string PeopleHugging {
             get {
@@ -7099,7 +7099,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤼-People Wrestling   .
+        ///   Looks up a localized string similar to 🤼-People Wrestling.
         /// </summary>
         public static string PeopleWrestling {
             get {
@@ -7108,7 +7108,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎭-Performing Arts   .
+        ///   Looks up a localized string similar to 🎭-Performing Arts.
         /// </summary>
         public static string PerformingArts {
             get {
@@ -7117,7 +7117,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 😣-Persevering Face   .
+        ///   Looks up a localized string similar to 😣-Persevering Face.
         /// </summary>
         public static string PerseveringFace {
             get {
@@ -7126,7 +7126,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧑-Person    .
+        ///   Looks up a localized string similar to 🧑-Person.
         /// </summary>
         public static string Person {
             get {
@@ -7135,7 +7135,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧑‍🦲-Person: Bald   .
+        ///   Looks up a localized string similar to 🧑‍🦲-Person: Bald.
         /// </summary>
         public static string Person_Bald {
             get {
@@ -7144,7 +7144,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧔-Person: Beard   .
+        ///   Looks up a localized string similar to 🧔-Person: Beard.
         /// </summary>
         public static string Person_Beard {
             get {
@@ -7153,7 +7153,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👱-Person: Blond Hair  .
+        ///   Looks up a localized string similar to 👱-Person: Blond Hair.
         /// </summary>
         public static string Person_BlondHair {
             get {
@@ -7162,7 +7162,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧑‍🦱-Person: Curly Hair  .
+        ///   Looks up a localized string similar to 🧑‍🦱-Person: Curly Hair.
         /// </summary>
         public static string Person_CurlyHair {
             get {
@@ -7171,7 +7171,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧑‍🦰-Person: Red Hair  .
+        ///   Looks up a localized string similar to 🧑‍🦰-Person: Red Hair.
         /// </summary>
         public static string Person_RedHair {
             get {
@@ -7180,7 +7180,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧑‍🦳-Person: White Hair  .
+        ///   Looks up a localized string similar to 🧑‍🦳-Person: White Hair.
         /// </summary>
         public static string Person_WhiteHair {
             get {
@@ -7189,7 +7189,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚴-Person Biking   .
+        ///   Looks up a localized string similar to 🚴-Person Biking.
         /// </summary>
         public static string PersonBiking {
             get {
@@ -7198,7 +7198,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ⛹️-Person Bouncing Ball  .
+        ///   Looks up a localized string similar to ⛹️-Person Bouncing Ball.
         /// </summary>
         public static string PersonBouncingBall {
             get {
@@ -7207,7 +7207,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🙇-Person Bowing   .
+        ///   Looks up a localized string similar to 🙇-Person Bowing.
         /// </summary>
         public static string PersonBowing {
             get {
@@ -7216,7 +7216,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤸-Person Cartwheeling   .
+        ///   Looks up a localized string similar to 🤸-Person Cartwheeling.
         /// </summary>
         public static string PersonCartwheeling {
             get {
@@ -7225,7 +7225,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧗-Person Climbing   .
+        ///   Looks up a localized string similar to 🧗-Person Climbing.
         /// </summary>
         public static string PersonClimbing {
             get {
@@ -7234,7 +7234,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤦-Person Facepalming   .
+        ///   Looks up a localized string similar to 🤦-Person Facepalming.
         /// </summary>
         public static string PersonFacepalming {
             get {
@@ -7243,7 +7243,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧑‍🍼-Person Feeding Baby  .
+        ///   Looks up a localized string similar to 🧑‍🍼-Person Feeding Baby.
         /// </summary>
         public static string PersonFeedingBaby {
             get {
@@ -7252,7 +7252,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤺-Person Fencing   .
+        ///   Looks up a localized string similar to 🤺-Person Fencing.
         /// </summary>
         public static string PersonFencing {
             get {
@@ -7261,7 +7261,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🙍-Person Frowning   .
+        ///   Looks up a localized string similar to 🙍-Person Frowning.
         /// </summary>
         public static string PersonFrowning {
             get {
@@ -7270,7 +7270,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🙅-Person Gesturing No  .
+        ///   Looks up a localized string similar to 🙅-Person Gesturing No.
         /// </summary>
         public static string PersonGesturingNo {
             get {
@@ -7279,7 +7279,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🙆-Person Gesturing OK  .
+        ///   Looks up a localized string similar to 🙆-Person Gesturing OK.
         /// </summary>
         public static string PersonGesturingOK {
             get {
@@ -7288,7 +7288,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💇-Person Getting Haircut  .
+        ///   Looks up a localized string similar to 💇-Person Getting Haircut.
         /// </summary>
         public static string PersonGettingHaircut {
             get {
@@ -7297,7 +7297,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💆-Person Getting Massage  .
+        ///   Looks up a localized string similar to 💆-Person Getting Massage.
         /// </summary>
         public static string PersonGettingMassage {
             get {
@@ -7306,7 +7306,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏌️-Person Golfing   .
+        ///   Looks up a localized string similar to 🏌️-Person Golfing.
         /// </summary>
         public static string PersonGolfing {
             get {
@@ -7315,7 +7315,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🛌-Person in Bed  .
+        ///   Looks up a localized string similar to 🛌-Person in Bed.
         /// </summary>
         public static string PersoninBed {
             get {
@@ -7387,7 +7387,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤵-Person in Tuxedo  .
+        ///   Looks up a localized string similar to 🤵-Person in Tuxedo.
         /// </summary>
         public static string PersoninTuxedo {
             get {
@@ -7396,7 +7396,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤹-Person Juggling   .
+        ///   Looks up a localized string similar to 🤹-Person Juggling.
         /// </summary>
         public static string PersonJuggling {
             get {
@@ -7405,7 +7405,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧎-Person Kneeling   .
+        ///   Looks up a localized string similar to 🧎-Person Kneeling.
         /// </summary>
         public static string PersonKneeling {
             get {
@@ -7414,7 +7414,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏋️-Person Lifting Weights  .
+        ///   Looks up a localized string similar to 🏋️-Person Lifting Weights.
         /// </summary>
         public static string PersonLiftingWeights {
             get {
@@ -7423,7 +7423,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚵-Person Mountain Biking  .
+        ///   Looks up a localized string similar to 🚵-Person Mountain Biking.
         /// </summary>
         public static string PersonMountainBiking {
             get {
@@ -7432,7 +7432,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤾-Person Playing Handball  .
+        ///   Looks up a localized string similar to 🤾-Person Playing Handball.
         /// </summary>
         public static string PersonPlayingHandball {
             get {
@@ -7450,7 +7450,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🙎-Person Pouting   .
+        ///   Looks up a localized string similar to 🙎-Person Pouting.
         /// </summary>
         public static string PersonPouting {
             get {
@@ -7459,7 +7459,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🙋-Person Raising Hand  .
+        ///   Looks up a localized string similar to 🙋-Person Raising Hand.
         /// </summary>
         public static string PersonRaisingHand {
             get {
@@ -7468,7 +7468,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚣-Person Rowing Boat  .
+        ///   Looks up a localized string similar to 🚣-Person Rowing Boat.
         /// </summary>
         public static string PersonRowingBoat {
             get {
@@ -7477,7 +7477,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚣-Person Rowing Boat  .
+        ///   Looks up a localized string similar to 🚣-Person Rowing Boat.
         /// </summary>
         public static string PersonRowingBoat1 {
             get {
@@ -7486,7 +7486,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏃-Person Running   .
+        ///   Looks up a localized string similar to 🏃-Person Running.
         /// </summary>
         public static string PersonRunning {
             get {
@@ -7495,7 +7495,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤷-Person Shrugging   .
+        ///   Looks up a localized string similar to 🤷-Person Shrugging.
         /// </summary>
         public static string PersonShrugging {
             get {
@@ -7504,7 +7504,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧍-Person Standing   .
+        ///   Looks up a localized string similar to 🧍-Person Standing.
         /// </summary>
         public static string PersonStanding {
             get {
@@ -7513,7 +7513,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏄-Person Surfing   .
+        ///   Looks up a localized string similar to 🏄-Person Surfing.
         /// </summary>
         public static string PersonSurfing {
             get {
@@ -7522,7 +7522,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏊-Person Swimming   .
+        ///   Looks up a localized string similar to 🏊-Person Swimming.
         /// </summary>
         public static string PersonSwimming {
             get {
@@ -7531,7 +7531,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🛀-Person Taking Bath  .
+        ///   Looks up a localized string similar to 🛀-Person Taking Bath.
         /// </summary>
         public static string PersonTakingBath {
             get {
@@ -7540,7 +7540,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💁-Person Tipping Hand  .
+        ///   Looks up a localized string similar to 💁-Person Tipping Hand.
         /// </summary>
         public static string PersonTippingHand {
             get {
@@ -7549,7 +7549,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚶-Person Walking   .
+        ///   Looks up a localized string similar to 🚶-Person Walking.
         /// </summary>
         public static string PersonWalking {
             get {
@@ -7558,7 +7558,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👳-Person Wearing Turban  .
+        ///   Looks up a localized string similar to 👳-Person Wearing Turban.
         /// </summary>
         public static string PersonWearingTurban {
             get {
@@ -7567,7 +7567,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👲-Person With Skullcap  .
+        ///   Looks up a localized string similar to 👲-Person With Skullcap.
         /// </summary>
         public static string PersonWithSkullcap {
             get {
@@ -7576,7 +7576,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👰-Person With Veil  .
+        ///   Looks up a localized string similar to 👰-Person With Veil.
         /// </summary>
         public static string PersonWithVeil {
             get {
@@ -7594,7 +7594,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧫-Petri Dish   .
+        ///   Looks up a localized string similar to 🧫-Petri Dish.
         /// </summary>
         public static string PetriDish {
             get {
@@ -7603,7 +7603,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ⛏️-Pick    .
+        ///   Looks up a localized string similar to ⛏️-Pick.
         /// </summary>
         public static string Pick {
             get {
@@ -7612,7 +7612,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🛻-Pickup Truck   .
+        ///   Looks up a localized string similar to 🛻-Pickup Truck.
         /// </summary>
         public static string PickupTruck {
             get {
@@ -7621,7 +7621,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥧-Pie    .
+        ///   Looks up a localized string similar to 🥧-Pie.
         /// </summary>
         public static string Pie {
             get {
@@ -7630,7 +7630,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐖-Pig    .
+        ///   Looks up a localized string similar to 🐖-Pig.
         /// </summary>
         public static string Pig {
             get {
@@ -7639,7 +7639,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐷-Pig Face   .
+        ///   Looks up a localized string similar to 🐷-Pig Face.
         /// </summary>
         public static string PigFace {
             get {
@@ -7648,7 +7648,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐽-Pig Nose   .
+        ///   Looks up a localized string similar to 🐽-Pig Nose.
         /// </summary>
         public static string PigNose {
             get {
@@ -7657,7 +7657,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💩-Pile of Poo  .
+        ///   Looks up a localized string similar to 💩-Pile of Poo.
         /// </summary>
         public static string PileofPoo {
             get {
@@ -7666,7 +7666,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💊-Pill    .
+        ///   Looks up a localized string similar to 💊-Pill.
         /// </summary>
         public static string Pill {
             get {
@@ -7675,7 +7675,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧑‍✈️-Pilot    .
+        ///   Looks up a localized string similar to 🧑‍✈️-Pilot.
         /// </summary>
         public static string Pilot {
             get {
@@ -7684,7 +7684,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🪅-Piñata    .
+        ///   Looks up a localized string similar to 🪅-Piñata.
         /// </summary>
         public static string Piñata {
             get {
@@ -7693,7 +7693,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤌-Pinched Fingers   .
+        ///   Looks up a localized string similar to 🤌-Pinched Fingers.
         /// </summary>
         public static string PinchedFingers {
             get {
@@ -7702,7 +7702,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤏-Pinching Hand   .
+        ///   Looks up a localized string similar to 🤏-Pinching Hand.
         /// </summary>
         public static string PinchingHand {
             get {
@@ -7711,7 +7711,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍍-Pineapple    .
+        ///   Looks up a localized string similar to 🍍-Pineapple.
         /// </summary>
         public static string Pineapple {
             get {
@@ -7720,7 +7720,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎍-Pine Decoration   .
+        ///   Looks up a localized string similar to 🎍-Pine Decoration.
         /// </summary>
         public static string PineDecoration {
             get {
@@ -7729,7 +7729,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏓-Ping Pong   .
+        ///   Looks up a localized string similar to 🏓-Ping Pong.
         /// </summary>
         public static string PingPong {
             get {
@@ -7738,7 +7738,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🔫-Pistol    .
+        ///   Looks up a localized string similar to 🔫-Pistol.
         /// </summary>
         public static string Pistol {
             get {
@@ -7747,7 +7747,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍕-Pizza    .
+        ///   Looks up a localized string similar to 🍕-Pizza.
         /// </summary>
         public static string Pizza {
             get {
@@ -7756,7 +7756,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🪧-Placard    .
+        ///   Looks up a localized string similar to 🪧-Placard.
         /// </summary>
         public static string Placard {
             get {
@@ -7765,7 +7765,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥺-Pleading Face   .
+        ///   Looks up a localized string similar to 🥺-Pleading Face.
         /// </summary>
         public static string PleadingFace {
             get {
@@ -7774,7 +7774,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🪠-Plunger    .
+        ///   Looks up a localized string similar to 🪠-Plunger.
         /// </summary>
         public static string Plunger {
             get {
@@ -7783,7 +7783,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐻‍❄️-Polar Bear   .
+        ///   Looks up a localized string similar to 🐻‍❄️-Polar Bear.
         /// </summary>
         public static string PolarBear {
             get {
@@ -7792,7 +7792,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚓-Police Car   .
+        ///   Looks up a localized string similar to 🚓-Police Car.
         /// </summary>
         public static string PoliceCar {
             get {
@@ -7801,7 +7801,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚨-Police Car Light  .
+        ///   Looks up a localized string similar to 🚨-Police Car Light.
         /// </summary>
         public static string PoliceCarLight {
             get {
@@ -7810,7 +7810,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👮-Police Officer   .
+        ///   Looks up a localized string similar to 👮-Police Officer.
         /// </summary>
         public static string PoliceOfficer {
             get {
@@ -7819,7 +7819,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐩-Poodle    .
+        ///   Looks up a localized string similar to 🐩-Poodle.
         /// </summary>
         public static string Poodle {
             get {
@@ -7828,7 +7828,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎱-Pool 8 Ball  .
+        ///   Looks up a localized string similar to 🎱-Pool 8 Ball.
         /// </summary>
         public static string Pool8Ball {
             get {
@@ -7837,7 +7837,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍿-Popcorn    .
+        ///   Looks up a localized string similar to 🍿-Popcorn.
         /// </summary>
         public static string Popcorn {
             get {
@@ -7846,7 +7846,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📯-Postal Horn   .
+        ///   Looks up a localized string similar to 📯-Postal Horn.
         /// </summary>
         public static string PostalHorn {
             get {
@@ -7855,7 +7855,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📮-Postbox    .
+        ///   Looks up a localized string similar to 📮-Postbox.
         /// </summary>
         public static string Postbox {
             get {
@@ -7864,7 +7864,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏤-Post Office   .
+        ///   Looks up a localized string similar to 🏤-Post Office.
         /// </summary>
         public static string PostOffice {
             get {
@@ -7873,7 +7873,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚰-Potable Water   .
+        ///   Looks up a localized string similar to 🚰-Potable Water.
         /// </summary>
         public static string PotableWater {
             get {
@@ -7882,7 +7882,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥔-Potato    .
+        ///   Looks up a localized string similar to 🥔-Potato.
         /// </summary>
         public static string Potato {
             get {
@@ -7891,7 +7891,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍲-Pot of Food  .
+        ///   Looks up a localized string similar to 🍲-Pot of Food.
         /// </summary>
         public static string PotofFood {
             get {
@@ -7900,7 +7900,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🪴-Potted Plant   .
+        ///   Looks up a localized string similar to 🪴-Potted Plant.
         /// </summary>
         public static string PottedPlant {
             get {
@@ -7909,7 +7909,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍗-Poultry Leg   .
+        ///   Looks up a localized string similar to 🍗-Poultry Leg.
         /// </summary>
         public static string PoultryLeg {
             get {
@@ -7918,7 +7918,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💷-Pound Banknote   .
+        ///   Looks up a localized string similar to 💷-Pound Banknote.
         /// </summary>
         public static string PoundBanknote {
             get {
@@ -7927,7 +7927,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💷-Pound Banknote   .
+        ///   Looks up a localized string similar to 💷-Pound Banknote.
         /// </summary>
         public static string PoundBanknote1 {
             get {
@@ -7936,7 +7936,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 😾-Pouting Cat   .
+        ///   Looks up a localized string similar to 😾-Pouting Cat.
         /// </summary>
         public static string PoutingCat {
             get {
@@ -7945,7 +7945,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 😡-Pouting Face   .
+        ///   Looks up a localized string similar to 😡-Pouting Face.
         /// </summary>
         public static string PoutingFace {
             get {
@@ -7954,7 +7954,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📿-Prayer Beads   .
+        ///   Looks up a localized string similar to 📿-Prayer Beads.
         /// </summary>
         public static string PrayerBeads {
             get {
@@ -7963,7 +7963,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤰-Pregnant Woman   .
+        ///   Looks up a localized string similar to 🤰-Pregnant Woman.
         /// </summary>
         public static string PregnantWoman {
             get {
@@ -7972,7 +7972,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥨-Pretzel    .
+        ///   Looks up a localized string similar to 🥨-Pretzel.
         /// </summary>
         public static string Pretzel {
             get {
@@ -7981,7 +7981,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤴-Prince    .
+        ///   Looks up a localized string similar to 🤴-Prince.
         /// </summary>
         public static string Prince {
             get {
@@ -7990,7 +7990,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👸-Princess    .
+        ///   Looks up a localized string similar to 👸-Princess.
         /// </summary>
         public static string Princess {
             get {
@@ -7999,7 +7999,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🖨️-Printer    .
+        ///   Looks up a localized string similar to 🖨️-Printer.
         /// </summary>
         public static string Printer {
             get {
@@ -8008,7 +8008,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👛-Purse    .
+        ///   Looks up a localized string similar to 👛-Purse.
         /// </summary>
         public static string Purse {
             get {
@@ -8017,7 +8017,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📌-Pushpin    .
+        ///   Looks up a localized string similar to 📌-Pushpin.
         /// </summary>
         public static string Pushpin {
             get {
@@ -8026,7 +8026,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧩-Puzzle Piece   .
+        ///   Looks up a localized string similar to 🧩-Puzzle Piece.
         /// </summary>
         public static string PuzzlePiece {
             get {
@@ -8035,7 +8035,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐇-Rabbit    .
+        ///   Looks up a localized string similar to 🐇-Rabbit.
         /// </summary>
         public static string Rabbit {
             get {
@@ -8044,7 +8044,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐰-Rabbit Face   .
+        ///   Looks up a localized string similar to 🐰-Rabbit Face.
         /// </summary>
         public static string RabbitFace {
             get {
@@ -8053,7 +8053,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦝-Raccoon    .
+        ///   Looks up a localized string similar to 🦝-Raccoon.
         /// </summary>
         public static string Raccoon {
             get {
@@ -8062,7 +8062,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏎️-Racing Car   .
+        ///   Looks up a localized string similar to 🏎️-Racing Car.
         /// </summary>
         public static string RacingCar {
             get {
@@ -8071,7 +8071,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📻-Radio    .
+        ///   Looks up a localized string similar to 📻-Radio.
         /// </summary>
         public static string Radio {
             get {
@@ -8080,7 +8080,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚃-Railway Car   .
+        ///   Looks up a localized string similar to 🚃-Railway Car.
         /// </summary>
         public static string RailwayCar {
             get {
@@ -8089,7 +8089,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🛤️-Railway Track   .
+        ///   Looks up a localized string similar to 🛤️-Railway Track.
         /// </summary>
         public static string RailwayTrack {
             get {
@@ -8098,7 +8098,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌈-Rainbow    .
+        ///   Looks up a localized string similar to 🌈-Rainbow.
         /// </summary>
         public static string Rainbow {
             get {
@@ -8116,7 +8116,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ✊-Raised Fist   .
+        ///   Looks up a localized string similar to ✊-Raised Fist.
         /// </summary>
         public static string RaisedFist {
             get {
@@ -8125,7 +8125,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ✋-Raised Hand   .
+        ///   Looks up a localized string similar to ✋-Raised Hand.
         /// </summary>
         public static string RaisedHand {
             get {
@@ -8134,7 +8134,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🙌-Raising Hands   .
+        ///   Looks up a localized string similar to 🙌-Raising Hands.
         /// </summary>
         public static string RaisingHands {
             get {
@@ -8143,7 +8143,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐏-Ram    .
+        ///   Looks up a localized string similar to 🐏-Ram.
         /// </summary>
         public static string Ram {
             get {
@@ -8152,7 +8152,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐀-Rat    .
+        ///   Looks up a localized string similar to 🐀-Rat.
         /// </summary>
         public static string Rat {
             get {
@@ -8161,7 +8161,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🪒-Razor    .
+        ///   Looks up a localized string similar to 🪒-Razor.
         /// </summary>
         public static string Razor {
             get {
@@ -8170,7 +8170,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧾-Receipt    .
+        ///   Looks up a localized string similar to 🧾-Receipt.
         /// </summary>
         public static string Receipt {
             get {
@@ -8179,7 +8179,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍎-Red Apple   .
+        ///   Looks up a localized string similar to 🍎-Red Apple.
         /// </summary>
         public static string RedApple {
             get {
@@ -8188,7 +8188,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧧-Red Envelope   .
+        ///   Looks up a localized string similar to 🧧-Red Envelope.
         /// </summary>
         public static string RedEnvelope {
             get {
@@ -8197,7 +8197,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏮-Red Paper Lantern  .
+        ///   Looks up a localized string similar to 🏮-Red Paper Lantern.
         /// </summary>
         public static string RedPaperLantern {
             get {
@@ -8206,7 +8206,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 😌-Relieved Face   .
+        ///   Looks up a localized string similar to 😌-Relieved Face.
         /// </summary>
         public static string RelievedFace {
             get {
@@ -8215,7 +8215,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎗️-Reminder Ribbon   .
+        ///   Looks up a localized string similar to 🎗️-Reminder Ribbon.
         /// </summary>
         public static string ReminderRibbon {
             get {
@@ -8224,7 +8224,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ⛑️-Rescue Workers Helmet  .
+        ///   Looks up a localized string similar to ⛑️-Rescue Workers Helmet.
         /// </summary>
         public static string RescueWorkersHelmet {
             get {
@@ -8233,7 +8233,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦏-Rhinoceros    .
+        ///   Looks up a localized string similar to 🦏-Rhinoceros.
         /// </summary>
         public static string Rhinoceros {
             get {
@@ -8242,7 +8242,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎀-Ribbon    .
+        ///   Looks up a localized string similar to 🎀-Ribbon.
         /// </summary>
         public static string Ribbon {
             get {
@@ -8251,7 +8251,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍙-Rice Ball   .
+        ///   Looks up a localized string similar to 🍙-Rice Ball.
         /// </summary>
         public static string RiceBall {
             get {
@@ -8260,7 +8260,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍘-Rice Cracker   .
+        ///   Looks up a localized string similar to 🍘-Rice Cracker.
         /// </summary>
         public static string RiceCracker {
             get {
@@ -8269,7 +8269,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤜-Right Facing Fist  .
+        ///   Looks up a localized string similar to 🤜-Right Facing Fist.
         /// </summary>
         public static string RightFacingFist {
             get {
@@ -8278,7 +8278,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💍-Ring    .
+        ///   Looks up a localized string similar to 💍-Ring.
         /// </summary>
         public static string Ring {
             get {
@@ -8287,7 +8287,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🪐-Ringed Planet   .
+        ///   Looks up a localized string similar to 🪐-Ringed Planet.
         /// </summary>
         public static string RingedPlanet {
             get {
@@ -8296,7 +8296,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍠-Roasted Sweet Potato  .
+        ///   Looks up a localized string similar to 🍠-Roasted Sweet Potato.
         /// </summary>
         public static string RoastedSweetPotato {
             get {
@@ -8305,7 +8305,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤖-Robot    .
+        ///   Looks up a localized string similar to 🤖-Robot.
         /// </summary>
         public static string Robot {
             get {
@@ -8314,7 +8314,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🪨-Rock    .
+        ///   Looks up a localized string similar to 🪨-Rock.
         /// </summary>
         public static string Rock {
             get {
@@ -8323,7 +8323,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚀-Rocket    .
+        ///   Looks up a localized string similar to 🚀-Rocket.
         /// </summary>
         public static string Rocket {
             get {
@@ -8332,7 +8332,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🗞️-Rolled Up Newspaper  .
+        ///   Looks up a localized string similar to 🗞️-Rolled Up Newspaper.
         /// </summary>
         public static string RolledUpNewspaper {
             get {
@@ -8341,7 +8341,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎢-Roller Coaster   .
+        ///   Looks up a localized string similar to 🎢-Roller Coaster.
         /// </summary>
         public static string RollerCoaster {
             get {
@@ -8350,7 +8350,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🛼-Roller Skate   .
+        ///   Looks up a localized string similar to 🛼-Roller Skate.
         /// </summary>
         public static string RollerSkate {
             get {
@@ -8368,7 +8368,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧻-Roll of Paper  .
+        ///   Looks up a localized string similar to 🧻-Roll of Paper.
         /// </summary>
         public static string RollofPaper {
             get {
@@ -8377,7 +8377,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐓-Rooster    .
+        ///   Looks up a localized string similar to 🐓-Rooster.
         /// </summary>
         public static string Rooster {
             get {
@@ -8386,7 +8386,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌹-Rose    .
+        ///   Looks up a localized string similar to 🌹-Rose.
         /// </summary>
         public static string Rose {
             get {
@@ -8395,7 +8395,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏵️-Rosette    .
+        ///   Looks up a localized string similar to 🏵️-Rosette.
         /// </summary>
         public static string Rosette {
             get {
@@ -8404,7 +8404,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📍-Round Pushpin   .
+        ///   Looks up a localized string similar to 📍-Round Pushpin.
         /// </summary>
         public static string RoundPushpin {
             get {
@@ -8413,7 +8413,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏉-Rugby Football   .
+        ///   Looks up a localized string similar to 🏉-Rugby Football.
         /// </summary>
         public static string RugbyFootball {
             get {
@@ -8422,7 +8422,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎽-Running Shirt   .
+        ///   Looks up a localized string similar to 🎽-Running Shirt.
         /// </summary>
         public static string RunningShirt {
             get {
@@ -8431,7 +8431,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👟-Running Shoe   .
+        ///   Looks up a localized string similar to 👟-Running Shoe.
         /// </summary>
         public static string RunningShoe {
             get {
@@ -8449,7 +8449,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧷-Safety Pin   .
+        ///   Looks up a localized string similar to 🧷-Safety Pin.
         /// </summary>
         public static string SafetyPin {
             get {
@@ -8458,7 +8458,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦺-Safety Vest   .
+        ///   Looks up a localized string similar to 🦺-Safety Vest.
         /// </summary>
         public static string SafetyVest {
             get {
@@ -8467,7 +8467,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ⛵-Sailboat    .
+        ///   Looks up a localized string similar to ⛵-Sailboat.
         /// </summary>
         public static string Sailboat {
             get {
@@ -8476,7 +8476,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍶-Sake    .
+        ///   Looks up a localized string similar to 🍶-Sake.
         /// </summary>
         public static string Sake {
             get {
@@ -8485,7 +8485,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧂-Salt    .
+        ///   Looks up a localized string similar to 🧂-Salt.
         /// </summary>
         public static string Salt {
             get {
@@ -8494,7 +8494,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥪-Sandwich    .
+        ///   Looks up a localized string similar to 🥪-Sandwich.
         /// </summary>
         public static string Sandwich {
             get {
@@ -8503,7 +8503,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎅-Santa Claus   .
+        ///   Looks up a localized string similar to 🎅-Santa Claus.
         /// </summary>
         public static string SantaClaus {
             get {
@@ -8512,7 +8512,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥻-Sari    .
+        ///   Looks up a localized string similar to 🥻-Sari.
         /// </summary>
         public static string Sari {
             get {
@@ -8521,7 +8521,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🛰️-Satellite    .
+        ///   Looks up a localized string similar to 🛰️-Satellite.
         /// </summary>
         public static string Satellite {
             get {
@@ -8530,7 +8530,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📡-Satellite Antenna   .
+        ///   Looks up a localized string similar to 📡-Satellite Antenna.
         /// </summary>
         public static string SatelliteAntenna {
             get {
@@ -8539,7 +8539,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦕-Sauropod    .
+        ///   Looks up a localized string similar to 🦕-Sauropod.
         /// </summary>
         public static string Sauropod {
             get {
@@ -8548,7 +8548,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎷-Saxophone    .
+        ///   Looks up a localized string similar to 🎷-Saxophone.
         /// </summary>
         public static string Saxophone {
             get {
@@ -8557,7 +8557,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧣-Scarf    .
+        ///   Looks up a localized string similar to 🧣-Scarf.
         /// </summary>
         public static string Scarf {
             get {
@@ -8566,7 +8566,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏫-School    .
+        ///   Looks up a localized string similar to 🏫-School.
         /// </summary>
         public static string School {
             get {
@@ -8575,7 +8575,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧑‍🔬-Scientist    .
+        ///   Looks up a localized string similar to 🧑‍🔬-Scientist.
         /// </summary>
         public static string Scientist {
             get {
@@ -8584,7 +8584,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ✂️-Scissors    .
+        ///   Looks up a localized string similar to ✂️-Scissors.
         /// </summary>
         public static string Scissors {
             get {
@@ -8593,7 +8593,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦂-Scorpion    .
+        ///   Looks up a localized string similar to 🦂-Scorpion.
         /// </summary>
         public static string Scorpion {
             get {
@@ -8602,7 +8602,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🪛-Screwdriver    .
+        ///   Looks up a localized string similar to 🪛-Screwdriver.
         /// </summary>
         public static string Screwdriver {
             get {
@@ -8611,7 +8611,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📜-Scroll    .
+        ///   Looks up a localized string similar to 📜-Scroll.
         /// </summary>
         public static string Scroll {
             get {
@@ -8620,7 +8620,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦭-Seal    .
+        ///   Looks up a localized string similar to 🦭-Seal.
         /// </summary>
         public static string Seal {
             get {
@@ -8629,7 +8629,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💺-Seat    .
+        ///   Looks up a localized string similar to 💺-Seat.
         /// </summary>
         public static string Seat {
             get {
@@ -8638,7 +8638,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌱-Seedling    .
+        ///   Looks up a localized string similar to 🌱-Seedling.
         /// </summary>
         public static string Seedling {
             get {
@@ -8656,7 +8656,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤳-Selfie    .
+        ///   Looks up a localized string similar to 🤳-Selfie.
         /// </summary>
         public static string Selfie {
             get {
@@ -8665,7 +8665,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐕‍🦺-Service Dog   .
+        ///   Looks up a localized string similar to 🐕‍🦺-Service Dog.
         /// </summary>
         public static string ServiceDog {
             get {
@@ -8674,7 +8674,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🪡-Sewing Needle   .
+        ///   Looks up a localized string similar to 🪡-Sewing Needle.
         /// </summary>
         public static string SewingNeedle {
             get {
@@ -8692,7 +8692,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ☘️-Shamrock    .
+        ///   Looks up a localized string similar to ☘️-Shamrock.
         /// </summary>
         public static string Shamrock {
             get {
@@ -8701,7 +8701,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦈-Shark    .
+        ///   Looks up a localized string similar to 🦈-Shark.
         /// </summary>
         public static string Shark {
             get {
@@ -8710,7 +8710,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍧-Shaved Ice   .
+        ///   Looks up a localized string similar to 🍧-Shaved Ice.
         /// </summary>
         public static string ShavedIce {
             get {
@@ -8719,7 +8719,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌾-Sheaf of Rice  .
+        ///   Looks up a localized string similar to 🌾-Sheaf of Rice.
         /// </summary>
         public static string SheafofRice {
             get {
@@ -8728,7 +8728,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🛡️-Shield    .
+        ///   Looks up a localized string similar to 🛡️-Shield.
         /// </summary>
         public static string Shield {
             get {
@@ -8737,7 +8737,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ⛩️-Shinto Shrine   .
+        ///   Looks up a localized string similar to ⛩️-Shinto Shrine.
         /// </summary>
         public static string ShintoShrine {
             get {
@@ -8746,7 +8746,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚢-Ship    .
+        ///   Looks up a localized string similar to 🚢-Ship.
         /// </summary>
         public static string Ship {
             get {
@@ -8755,7 +8755,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌠-Shooting Star   .
+        ///   Looks up a localized string similar to 🌠-Shooting Star.
         /// </summary>
         public static string ShootingStar {
             get {
@@ -8764,7 +8764,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌠-Shooting Star   .
+        ///   Looks up a localized string similar to 🌠-Shooting Star.
         /// </summary>
         public static string ShootingStar1 {
             get {
@@ -8773,7 +8773,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🛍️-Shopping Bags   .
+        ///   Looks up a localized string similar to 🛍️-Shopping Bags.
         /// </summary>
         public static string ShoppingBags {
             get {
@@ -8782,7 +8782,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🛒-Shopping Cart   .
+        ///   Looks up a localized string similar to 🛒-Shopping Cart.
         /// </summary>
         public static string ShoppingCart {
             get {
@@ -8791,7 +8791,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍰-Shortcake    .
+        ///   Looks up a localized string similar to 🍰-Shortcake.
         /// </summary>
         public static string Shortcake {
             get {
@@ -8800,7 +8800,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🩳-Shorts    .
+        ///   Looks up a localized string similar to 🩳-Shorts.
         /// </summary>
         public static string Shorts {
             get {
@@ -8809,7 +8809,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚿-Shower    .
+        ///   Looks up a localized string similar to 🚿-Shower.
         /// </summary>
         public static string Shower {
             get {
@@ -8818,7 +8818,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦐-Shrimp    .
+        ///   Looks up a localized string similar to 🦐-Shrimp.
         /// </summary>
         public static string Shrimp {
             get {
@@ -8827,7 +8827,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤫-Shushing Face   .
+        ///   Looks up a localized string similar to 🤫-Shushing Face.
         /// </summary>
         public static string ShushingFace {
             get {
@@ -8845,7 +8845,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧑‍🎤-Singer    .
+        ///   Looks up a localized string similar to 🧑‍🎤-Singer.
         /// </summary>
         public static string Singer {
             get {
@@ -8854,7 +8854,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🛹-Skateboard    .
+        ///   Looks up a localized string similar to 🛹-Skateboard.
         /// </summary>
         public static string Skateboard {
             get {
@@ -8863,7 +8863,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ⛷️-Skier    .
+        ///   Looks up a localized string similar to ⛷️-Skier.
         /// </summary>
         public static string Skier {
             get {
@@ -8872,7 +8872,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎿-Skis    .
+        ///   Looks up a localized string similar to 🎿-Skis.
         /// </summary>
         public static string Skis {
             get {
@@ -8881,7 +8881,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💀-Skull    .
+        ///   Looks up a localized string similar to 💀-Skull.
         /// </summary>
         public static string Skull {
             get {
@@ -8890,7 +8890,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ☠️-Skull and Crossbones  .
+        ///   Looks up a localized string similar to ☠️-Skull and Crossbones.
         /// </summary>
         public static string SkullandCrossbones {
             get {
@@ -8899,7 +8899,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦨-Skunk    .
+        ///   Looks up a localized string similar to 🦨-Skunk.
         /// </summary>
         public static string Skunk {
             get {
@@ -8908,7 +8908,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🛷-Sled    .
+        ///   Looks up a localized string similar to 🛷-Sled.
         /// </summary>
         public static string Sled {
             get {
@@ -8917,7 +8917,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 😴-Sleeping Face   .
+        ///   Looks up a localized string similar to 😴-Sleeping Face.
         /// </summary>
         public static string SleepingFace {
             get {
@@ -8926,7 +8926,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 😪-Sleepy Face   .
+        ///   Looks up a localized string similar to 😪-Sleepy Face.
         /// </summary>
         public static string SleepyFace {
             get {
@@ -8935,7 +8935,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🙁-Slightly Frowning Face  .
+        ///   Looks up a localized string similar to 🙁-Slightly Frowning Face.
         /// </summary>
         public static string SlightlyFrowningFace {
             get {
@@ -8944,7 +8944,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🙂-Slightly Smiling Face  .
+        ///   Looks up a localized string similar to 🙂-Slightly Smiling Face.
         /// </summary>
         public static string SlightlySmilingFace {
             get {
@@ -8953,7 +8953,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦥-Sloth    .
+        ///   Looks up a localized string similar to 🦥-Sloth.
         /// </summary>
         public static string Sloth {
             get {
@@ -8962,7 +8962,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎰-Slot Machine   .
+        ///   Looks up a localized string similar to 🎰-Slot Machine.
         /// </summary>
         public static string SlotMachine {
             get {
@@ -8971,7 +8971,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🛩️-Small Airplane   .
+        ///   Looks up a localized string similar to 🛩️-Small Airplane.
         /// </summary>
         public static string SmallAirplane {
             get {
@@ -8989,7 +8989,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ☺️-Smiling Face   .
+        ///   Looks up a localized string similar to ☺️-Smiling Face.
         /// </summary>
         public static string SmilingFace {
             get {
@@ -9061,7 +9061,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 😏-Smirking Face   .
+        ///   Looks up a localized string similar to 😏-Smirking Face.
         /// </summary>
         public static string SmirkingFace {
             get {
@@ -9070,7 +9070,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐌-Snail    .
+        ///   Looks up a localized string similar to 🐌-Snail.
         /// </summary>
         public static string Snail {
             get {
@@ -9079,7 +9079,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐍-Snake    .
+        ///   Looks up a localized string similar to 🐍-Snake.
         /// </summary>
         public static string Snake {
             get {
@@ -9088,7 +9088,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤧-Sneezing Face   .
+        ///   Looks up a localized string similar to 🤧-Sneezing Face.
         /// </summary>
         public static string SneezingFace {
             get {
@@ -9097,7 +9097,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏂-Snowboarder    .
+        ///   Looks up a localized string similar to 🏂-Snowboarder.
         /// </summary>
         public static string Snowboarder {
             get {
@@ -9106,7 +9106,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏔️-Snow Capped Mountain  .
+        ///   Looks up a localized string similar to 🏔️-Snow Capped Mountain.
         /// </summary>
         public static string SnowCappedMountain {
             get {
@@ -9115,7 +9115,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ❄️-Snowflake    .
+        ///   Looks up a localized string similar to ❄️-Snowflake.
         /// </summary>
         public static string Snowflake {
             get {
@@ -9124,7 +9124,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ☃️-Snowman    .
+        ///   Looks up a localized string similar to ☃️-Snowman.
         /// </summary>
         public static string Snowman {
             get {
@@ -9133,7 +9133,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ⛄-Snowman Without Snow  .
+        ///   Looks up a localized string similar to ⛄-Snowman Without Snow.
         /// </summary>
         public static string SnowmanWithoutSnow {
             get {
@@ -9142,7 +9142,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧼-Soap    .
+        ///   Looks up a localized string similar to 🧼-Soap.
         /// </summary>
         public static string Soap {
             get {
@@ -9151,7 +9151,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ⚽-Soccer Ball   .
+        ///   Looks up a localized string similar to ⚽-Soccer Ball.
         /// </summary>
         public static string SoccerBall {
             get {
@@ -9160,7 +9160,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧦-Socks    .
+        ///   Looks up a localized string similar to 🧦-Socks.
         /// </summary>
         public static string Socks {
             get {
@@ -9169,7 +9169,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥎-Softball    .
+        ///   Looks up a localized string similar to 🥎-Softball.
         /// </summary>
         public static string Softball {
             get {
@@ -9178,7 +9178,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍦-Soft Ice Cream  .
+        ///   Looks up a localized string similar to 🍦-Soft Ice Cream.
         /// </summary>
         public static string SoftIceCream {
             get {
@@ -9187,7 +9187,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍝-Spaghetti    .
+        ///   Looks up a localized string similar to 🍝-Spaghetti.
         /// </summary>
         public static string Spaghetti {
             get {
@@ -9196,7 +9196,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎇-Sparkler    .
+        ///   Looks up a localized string similar to 🎇-Sparkler.
         /// </summary>
         public static string Sparkler {
             get {
@@ -9205,7 +9205,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ✨-Sparkles    .
+        ///   Looks up a localized string similar to ✨-Sparkles.
         /// </summary>
         public static string Sparkles {
             get {
@@ -9214,7 +9214,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🗣️-Speaking Head   .
+        ///   Looks up a localized string similar to 🗣️-Speaking Head.
         /// </summary>
         public static string SpeakingHead {
             get {
@@ -9232,7 +9232,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚤-Speedboat    .
+        ///   Looks up a localized string similar to 🚤-Speedboat.
         /// </summary>
         public static string Speedboat {
             get {
@@ -9241,7 +9241,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🕷️-Spider    .
+        ///   Looks up a localized string similar to 🕷️-Spider.
         /// </summary>
         public static string Spider {
             get {
@@ -9250,7 +9250,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🕸️-Spider Web   .
+        ///   Looks up a localized string similar to 🕸️-Spider Web.
         /// </summary>
         public static string SpiderWeb {
             get {
@@ -9259,7 +9259,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🗓️-Spiral Calendar   .
+        ///   Looks up a localized string similar to 🗓️-Spiral Calendar.
         /// </summary>
         public static string SpiralCalendar {
             get {
@@ -9268,7 +9268,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🗒️-Spiral Notepad   .
+        ///   Looks up a localized string similar to 🗒️-Spiral Notepad.
         /// </summary>
         public static string SpiralNotepad {
             get {
@@ -9277,7 +9277,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐚-Spiral Shell   .
+        ///   Looks up a localized string similar to 🐚-Spiral Shell.
         /// </summary>
         public static string SpiralShell {
             get {
@@ -9286,7 +9286,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧽-Sponge    .
+        ///   Looks up a localized string similar to 🧽-Sponge.
         /// </summary>
         public static string Sponge {
             get {
@@ -9295,7 +9295,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥄-Spoon    .
+        ///   Looks up a localized string similar to 🥄-Spoon.
         /// </summary>
         public static string Spoon {
             get {
@@ -9304,7 +9304,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏅-Sports Medal   .
+        ///   Looks up a localized string similar to 🏅-Sports Medal.
         /// </summary>
         public static string SportsMedal {
             get {
@@ -9313,7 +9313,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚙-Sport Utility Vehicle  .
+        ///   Looks up a localized string similar to 🚙-Sport Utility Vehicle.
         /// </summary>
         public static string SportUtilityVehicle {
             get {
@@ -9322,7 +9322,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐳-Spouting Whale   .
+        ///   Looks up a localized string similar to 🐳-Spouting Whale.
         /// </summary>
         public static string SpoutingWhale {
             get {
@@ -9331,7 +9331,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦑-Squid    .
+        ///   Looks up a localized string similar to 🦑-Squid.
         /// </summary>
         public static string Squid {
             get {
@@ -9349,7 +9349,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏟️-Stadium    .
+        ///   Looks up a localized string similar to 🏟️-Stadium.
         /// </summary>
         public static string Stadium {
             get {
@@ -9358,7 +9358,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ⭐-Star    .
+        ///   Looks up a localized string similar to ⭐-Star.
         /// </summary>
         public static string Star {
             get {
@@ -9367,7 +9367,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤩-Star Struck   .
+        ///   Looks up a localized string similar to 🤩-Star Struck.
         /// </summary>
         public static string StarStruck {
             get {
@@ -9376,7 +9376,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚉-Station    .
+        ///   Looks up a localized string similar to 🚉-Station.
         /// </summary>
         public static string Station {
             get {
@@ -9385,7 +9385,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🗽-Statue of Liberty  .
+        ///   Looks up a localized string similar to 🗽-Statue of Liberty.
         /// </summary>
         public static string StatueofLiberty {
             get {
@@ -9394,7 +9394,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍜-Steaming Bowl   .
+        ///   Looks up a localized string similar to 🍜-Steaming Bowl.
         /// </summary>
         public static string SteamingBowl {
             get {
@@ -9403,7 +9403,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🩺-Stethoscope    .
+        ///   Looks up a localized string similar to 🩺-Stethoscope.
         /// </summary>
         public static string Stethoscope {
             get {
@@ -9412,7 +9412,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ⏱️-Stopwatch    .
+        ///   Looks up a localized string similar to ⏱️-Stopwatch.
         /// </summary>
         public static string Stopwatch {
             get {
@@ -9421,7 +9421,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📏-Straight Ruler   .
+        ///   Looks up a localized string similar to 📏-Straight Ruler.
         /// </summary>
         public static string StraightRuler {
             get {
@@ -9430,7 +9430,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍓-Strawberry    .
+        ///   Looks up a localized string similar to 🍓-Strawberry.
         /// </summary>
         public static string Strawberry {
             get {
@@ -9439,7 +9439,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧑‍🎓-Student    .
+        ///   Looks up a localized string similar to 🧑‍🎓-Student.
         /// </summary>
         public static string Student {
             get {
@@ -9448,7 +9448,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎙️-Studio Microphone   .
+        ///   Looks up a localized string similar to 🎙️-Studio Microphone.
         /// </summary>
         public static string StudioMicrophone {
             get {
@@ -9457,7 +9457,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥙-Stuffed Flatbread   .
+        ///   Looks up a localized string similar to 🥙-Stuffed Flatbread.
         /// </summary>
         public static string StuffedFlatbread {
             get {
@@ -9466,7 +9466,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ☀️-Sun    .
+        ///   Looks up a localized string similar to ☀️-Sun.
         /// </summary>
         public static string Sun {
             get {
@@ -9475,7 +9475,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ⛅-Sun Behind Cloud  .
+        ///   Looks up a localized string similar to ⛅-Sun Behind Cloud.
         /// </summary>
         public static string SunBehindCloud {
             get {
@@ -9511,7 +9511,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌻-Sunflower    .
+        ///   Looks up a localized string similar to 🌻-Sunflower.
         /// </summary>
         public static string Sunflower {
             get {
@@ -9520,7 +9520,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🕶️-Sunglasses    .
+        ///   Looks up a localized string similar to 🕶️-Sunglasses.
         /// </summary>
         public static string Sunglasses {
             get {
@@ -9529,7 +9529,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌅-Sunrise    .
+        ///   Looks up a localized string similar to 🌅-Sunrise.
         /// </summary>
         public static string Sunrise {
             get {
@@ -9538,7 +9538,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌄-Sunrise Over Mountains  .
+        ///   Looks up a localized string similar to 🌄-Sunrise Over Mountains.
         /// </summary>
         public static string SunriseOverMountains {
             get {
@@ -9547,7 +9547,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌇-Sunset    .
+        ///   Looks up a localized string similar to 🌇-Sunset.
         /// </summary>
         public static string Sunset {
             get {
@@ -9556,7 +9556,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌞-Sun with Face  .
+        ///   Looks up a localized string similar to 🌞-Sun with Face.
         /// </summary>
         public static string SunwithFace {
             get {
@@ -9565,7 +9565,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦸-Superhero    .
+        ///   Looks up a localized string similar to 🦸-Superhero.
         /// </summary>
         public static string Superhero {
             get {
@@ -9574,7 +9574,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦹-Supervillain    .
+        ///   Looks up a localized string similar to 🦹-Supervillain.
         /// </summary>
         public static string Supervillain {
             get {
@@ -9583,7 +9583,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍣-Sushi    .
+        ///   Looks up a localized string similar to 🍣-Sushi.
         /// </summary>
         public static string Sushi {
             get {
@@ -9592,7 +9592,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚟-Suspension Railway   .
+        ///   Looks up a localized string similar to 🚟-Suspension Railway.
         /// </summary>
         public static string SuspensionRailway {
             get {
@@ -9601,7 +9601,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦢-Swan    .
+        ///   Looks up a localized string similar to 🦢-Swan.
         /// </summary>
         public static string Swan {
             get {
@@ -9610,7 +9610,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💦-Sweat Droplets   .
+        ///   Looks up a localized string similar to 💦-Sweat Droplets.
         /// </summary>
         public static string SweatDroplets {
             get {
@@ -9619,7 +9619,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🕍-Synagogue    .
+        ///   Looks up a localized string similar to 🕍-Synagogue.
         /// </summary>
         public static string Synagogue {
             get {
@@ -9628,7 +9628,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💉-Syringe    .
+        ///   Looks up a localized string similar to 💉-Syringe.
         /// </summary>
         public static string Syringe {
             get {
@@ -9637,7 +9637,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌮-Taco    .
+        ///   Looks up a localized string similar to 🌮-Taco.
         /// </summary>
         public static string Taco {
             get {
@@ -9646,7 +9646,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥡-Takeout Box   .
+        ///   Looks up a localized string similar to 🥡-Takeout Box.
         /// </summary>
         public static string TakeoutBox {
             get {
@@ -9655,7 +9655,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🫔-Tamale    .
+        ///   Looks up a localized string similar to 🫔-Tamale.
         /// </summary>
         public static string Tamale {
             get {
@@ -9664,7 +9664,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎋-Tanabata Tree   .
+        ///   Looks up a localized string similar to 🎋-Tanabata Tree.
         /// </summary>
         public static string TanabataTree {
             get {
@@ -9673,7 +9673,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍊-Tangerine    .
+        ///   Looks up a localized string similar to 🍊-Tangerine.
         /// </summary>
         public static string Tangerine {
             get {
@@ -9682,7 +9682,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚕-Taxi    .
+        ///   Looks up a localized string similar to 🚕-Taxi.
         /// </summary>
         public static string Taxi {
             get {
@@ -9691,7 +9691,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧑‍🏫-Teacher    .
+        ///   Looks up a localized string similar to 🧑‍🏫-Teacher.
         /// </summary>
         public static string Teacher {
             get {
@@ -9700,7 +9700,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍵-Teacup Without Handle  .
+        ///   Looks up a localized string similar to 🍵-Teacup Without Handle.
         /// </summary>
         public static string TeacupWithoutHandle {
             get {
@@ -9709,7 +9709,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🫖-Teapot    .
+        ///   Looks up a localized string similar to 🫖-Teapot.
         /// </summary>
         public static string Teapot {
             get {
@@ -9718,7 +9718,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📆-Tear Off Calendar  .
+        ///   Looks up a localized string similar to 📆-Tear Off Calendar.
         /// </summary>
         public static string TearOffCalendar {
             get {
@@ -9727,7 +9727,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧑‍💻-Technologist    .
+        ///   Looks up a localized string similar to 🧑‍💻-Technologist.
         /// </summary>
         public static string Technologist {
             get {
@@ -9736,7 +9736,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧸-Teddy Bear   .
+        ///   Looks up a localized string similar to 🧸-Teddy Bear.
         /// </summary>
         public static string TeddyBear {
             get {
@@ -9745,7 +9745,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ☎️-Telephone    .
+        ///   Looks up a localized string similar to ☎️-Telephone.
         /// </summary>
         public static string Telephone {
             get {
@@ -9754,7 +9754,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📞-Telephone Receiver   .
+        ///   Looks up a localized string similar to 📞-Telephone Receiver.
         /// </summary>
         public static string TelephoneReceiver {
             get {
@@ -9763,7 +9763,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🔭-Telescope    .
+        ///   Looks up a localized string similar to 🔭-Telescope.
         /// </summary>
         public static string Telescope {
             get {
@@ -9772,7 +9772,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📺-Television    .
+        ///   Looks up a localized string similar to 📺-Television.
         /// </summary>
         public static string Television {
             get {
@@ -9781,7 +9781,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎾-Tennis    .
+        ///   Looks up a localized string similar to 🎾-Tennis.
         /// </summary>
         public static string Tennis {
             get {
@@ -9790,7 +9790,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ⛺-Tent    .
+        ///   Looks up a localized string similar to ⛺-Tent.
         /// </summary>
         public static string Tent {
             get {
@@ -9799,7 +9799,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧪-Test Tube   .
+        ///   Looks up a localized string similar to 🧪-Test Tube.
         /// </summary>
         public static string TestTube {
             get {
@@ -9808,7 +9808,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌡️-Thermometer    .
+        ///   Looks up a localized string similar to 🌡️-Thermometer.
         /// </summary>
         public static string Thermometer {
             get {
@@ -9817,7 +9817,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤔-Thinking Face   .
+        ///   Looks up a localized string similar to 🤔-Thinking Face.
         /// </summary>
         public static string ThinkingFace {
             get {
@@ -9826,7 +9826,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🩴-Thong Sandal   .
+        ///   Looks up a localized string similar to 🩴-Thong Sandal.
         /// </summary>
         public static string ThongSandal {
             get {
@@ -9835,7 +9835,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧵-Thread    .
+        ///   Looks up a localized string similar to 🧵-Thread.
         /// </summary>
         public static string Thread {
             get {
@@ -9844,7 +9844,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧵-Thread    .
+        ///   Looks up a localized string similar to 🧵-Thread.
         /// </summary>
         public static string Thread1 {
             get {
@@ -9853,7 +9853,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧵-Thread    .
+        ///   Looks up a localized string similar to 🧵-Thread.
         /// </summary>
         public static string Thread2 {
             get {
@@ -9862,7 +9862,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👎-Thumbs Down   .
+        ///   Looks up a localized string similar to 👎-Thumbs Down.
         /// </summary>
         public static string ThumbsDown {
             get {
@@ -9871,7 +9871,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👍-Thumbs Up   .
+        ///   Looks up a localized string similar to 👍-Thumbs Up.
         /// </summary>
         public static string ThumbsUp {
             get {
@@ -9880,7 +9880,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎫-Ticket    .
+        ///   Looks up a localized string similar to 🎫-Ticket.
         /// </summary>
         public static string Ticket {
             get {
@@ -9889,7 +9889,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐅-Tiger    .
+        ///   Looks up a localized string similar to 🐅-Tiger.
         /// </summary>
         public static string Tiger {
             get {
@@ -9898,7 +9898,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐯-Tiger Face   .
+        ///   Looks up a localized string similar to 🐯-Tiger Face.
         /// </summary>
         public static string TigerFace {
             get {
@@ -9907,7 +9907,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ⏲️-Timer Clock   .
+        ///   Looks up a localized string similar to ⏲️-Timer Clock.
         /// </summary>
         public static string TimerClock {
             get {
@@ -9916,7 +9916,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 😫-Tired Face   .
+        ///   Looks up a localized string similar to 😫-Tired Face.
         /// </summary>
         public static string TiredFace {
             get {
@@ -9925,7 +9925,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚽-Toilet    .
+        ///   Looks up a localized string similar to 🚽-Toilet.
         /// </summary>
         public static string Toilet {
             get {
@@ -9934,7 +9934,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🗼-Tokyo Tower   .
+        ///   Looks up a localized string similar to 🗼-Tokyo Tower.
         /// </summary>
         public static string TokyoTower {
             get {
@@ -9943,7 +9943,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍅-Tomato    .
+        ///   Looks up a localized string similar to 🍅-Tomato.
         /// </summary>
         public static string Tomato {
             get {
@@ -9952,7 +9952,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👅-Tongue    .
+        ///   Looks up a localized string similar to 👅-Tongue.
         /// </summary>
         public static string Tongue {
             get {
@@ -9961,7 +9961,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧰-Toolbox    .
+        ///   Looks up a localized string similar to 🧰-Toolbox.
         /// </summary>
         public static string Toolbox {
             get {
@@ -9970,7 +9970,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦷-Tooth    .
+        ///   Looks up a localized string similar to 🦷-Tooth.
         /// </summary>
         public static string Tooth {
             get {
@@ -9979,7 +9979,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🪥-Toothbrush    .
+        ///   Looks up a localized string similar to 🪥-Toothbrush.
         /// </summary>
         public static string Toothbrush {
             get {
@@ -9988,7 +9988,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎩-Top Hat   .
+        ///   Looks up a localized string similar to 🎩-Top Hat.
         /// </summary>
         public static string TopHat {
             get {
@@ -9997,7 +9997,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌪️-Tornado    .
+        ///   Looks up a localized string similar to 🌪️-Tornado.
         /// </summary>
         public static string Tornado {
             get {
@@ -10006,7 +10006,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🖲️-Trackball    .
+        ///   Looks up a localized string similar to 🖲️-Trackball.
         /// </summary>
         public static string Trackball {
             get {
@@ -10015,7 +10015,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚜-Tractor    .
+        ///   Looks up a localized string similar to 🚜-Tractor.
         /// </summary>
         public static string Tractor {
             get {
@@ -10024,7 +10024,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚆-Train    .
+        ///   Looks up a localized string similar to 🚆-Train.
         /// </summary>
         public static string Train {
             get {
@@ -10033,7 +10033,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚊-Tram    .
+        ///   Looks up a localized string similar to 🚊-Tram.
         /// </summary>
         public static string Tram {
             get {
@@ -10042,7 +10042,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚋-Tram Car   .
+        ///   Looks up a localized string similar to 🚋-Tram Car.
         /// </summary>
         public static string TramCar {
             get {
@@ -10051,7 +10051,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦖-T Rex   .
+        ///   Looks up a localized string similar to 🦖-T Rex.
         /// </summary>
         public static string TRex {
             get {
@@ -10060,7 +10060,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📐-Triangular Ruler   .
+        ///   Looks up a localized string similar to 📐-Triangular Ruler.
         /// </summary>
         public static string TriangularRuler {
             get {
@@ -10069,7 +10069,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚎-Trolleybus    .
+        ///   Looks up a localized string similar to 🚎-Trolleybus.
         /// </summary>
         public static string Trolleybus {
             get {
@@ -10078,7 +10078,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏆-Trophy    .
+        ///   Looks up a localized string similar to 🏆-Trophy.
         /// </summary>
         public static string Trophy {
             get {
@@ -10087,7 +10087,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍹-Tropical Drink   .
+        ///   Looks up a localized string similar to 🍹-Tropical Drink.
         /// </summary>
         public static string TropicalDrink {
             get {
@@ -10096,7 +10096,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐠-Tropical Fish   .
+        ///   Looks up a localized string similar to 🐠-Tropical Fish.
         /// </summary>
         public static string TropicalFish {
             get {
@@ -10105,7 +10105,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎺-Trumpet    .
+        ///   Looks up a localized string similar to 🎺-Trumpet.
         /// </summary>
         public static string Trumpet {
             get {
@@ -10114,7 +10114,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👕-T Shirt   .
+        ///   Looks up a localized string similar to 👕-T Shirt.
         /// </summary>
         public static string TShirt {
             get {
@@ -10123,7 +10123,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌷-Tulip    .
+        ///   Looks up a localized string similar to 🌷-Tulip.
         /// </summary>
         public static string Tulip {
             get {
@@ -10132,7 +10132,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥃-Tumbler Glass   .
+        ///   Looks up a localized string similar to 🥃-Tumbler Glass.
         /// </summary>
         public static string TumblerGlass {
             get {
@@ -10141,7 +10141,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦃-Turkey    .
+        ///   Looks up a localized string similar to 🦃-Turkey.
         /// </summary>
         public static string Turkey {
             get {
@@ -10150,7 +10150,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐢-Turtle    .
+        ///   Looks up a localized string similar to 🐢-Turtle.
         /// </summary>
         public static string Turtle {
             get {
@@ -10159,7 +10159,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐫-Two Hump Camel  .
+        ///   Looks up a localized string similar to 🐫-Two Hump Camel.
         /// </summary>
         public static string TwoHumpCamel {
             get {
@@ -10168,7 +10168,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ☂️-Umbrella    .
+        ///   Looks up a localized string similar to ☂️-Umbrella.
         /// </summary>
         public static string Umbrella {
             get {
@@ -10177,7 +10177,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ☂️-Umbrella    .
+        ///   Looks up a localized string similar to ☂️-Umbrella.
         /// </summary>
         public static string Umbrella1 {
             get {
@@ -10186,7 +10186,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ⛱️-Umbrella on Ground  .
+        ///   Looks up a localized string similar to ⛱️-Umbrella on Ground.
         /// </summary>
         public static string UmbrellaonGround {
             get {
@@ -10213,7 +10213,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 😒-Unamused Face   .
+        ///   Looks up a localized string similar to 😒-Unamused Face.
         /// </summary>
         public static string UnamusedFace {
             get {
@@ -10222,7 +10222,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦄-Unicorn    .
+        ///   Looks up a localized string similar to 🦄-Unicorn.
         /// </summary>
         public static string Unicorn {
             get {
@@ -10231,7 +10231,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🔓-Unlocked    .
+        ///   Looks up a localized string similar to 🔓-Unlocked.
         /// </summary>
         public static string Unlocked {
             get {
@@ -10240,7 +10240,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🙃-Upside Down Face  .
+        ///   Looks up a localized string similar to 🙃-Upside Down Face.
         /// </summary>
         public static string UpsideDownFace {
             get {
@@ -10249,7 +10249,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧛-Vampire    .
+        ///   Looks up a localized string similar to 🧛-Vampire.
         /// </summary>
         public static string Vampire {
             get {
@@ -10258,7 +10258,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚦-Vertical Traffic Light  .
+        ///   Looks up a localized string similar to 🚦-Vertical Traffic Light.
         /// </summary>
         public static string VerticalTrafficLight {
             get {
@@ -10267,7 +10267,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ✌️-Victory Hand   .
+        ///   Looks up a localized string similar to ✌️-Victory Hand.
         /// </summary>
         public static string VictoryHand {
             get {
@@ -10276,7 +10276,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📹-Video Camera   .
+        ///   Looks up a localized string similar to 📹-Video Camera.
         /// </summary>
         public static string VideoCamera {
             get {
@@ -10285,7 +10285,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 📼-Videocassette    .
+        ///   Looks up a localized string similar to 📼-Videocassette.
         /// </summary>
         public static string Videocassette {
             get {
@@ -10294,7 +10294,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎮-Video Game   .
+        ///   Looks up a localized string similar to 🎮-Video Game.
         /// </summary>
         public static string VideoGame {
             get {
@@ -10303,7 +10303,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎻-Violin    .
+        ///   Looks up a localized string similar to 🎻-Violin.
         /// </summary>
         public static string Violin {
             get {
@@ -10312,7 +10312,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌋-Volcano    .
+        ///   Looks up a localized string similar to 🌋-Volcano.
         /// </summary>
         public static string Volcano {
             get {
@@ -10321,7 +10321,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏐-Volleyball    .
+        ///   Looks up a localized string similar to 🏐-Volleyball.
         /// </summary>
         public static string Volleyball {
             get {
@@ -10330,7 +10330,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🖖-Vulcan Salute   .
+        ///   Looks up a localized string similar to 🖖-Vulcan Salute.
         /// </summary>
         public static string VulcanSalute {
             get {
@@ -10339,7 +10339,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧇-Waffle    .
+        ///   Looks up a localized string similar to 🧇-Waffle.
         /// </summary>
         public static string Waffle {
             get {
@@ -10348,7 +10348,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌘-Waning Crescent Moon  .
+        ///   Looks up a localized string similar to 🌘-Waning Crescent Moon.
         /// </summary>
         public static string WaningCrescentMoon {
             get {
@@ -10357,7 +10357,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌖-Waning Gibbous Moon  .
+        ///   Looks up a localized string similar to 🌖-Waning Gibbous Moon.
         /// </summary>
         public static string WaningGibbousMoon {
             get {
@@ -10366,7 +10366,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🗑️-Wastebasket    .
+        ///   Looks up a localized string similar to 🗑️-Wastebasket.
         /// </summary>
         public static string Wastebasket {
             get {
@@ -10375,7 +10375,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ⌚-Watch    .
+        ///   Looks up a localized string similar to ⌚-Watch.
         /// </summary>
         public static string Watch {
             get {
@@ -10384,7 +10384,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐃-Water Buffalo   .
+        ///   Looks up a localized string similar to 🐃-Water Buffalo.
         /// </summary>
         public static string WaterBuffalo {
             get {
@@ -10393,7 +10393,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍉-Watermelon    .
+        ///   Looks up a localized string similar to 🍉-Watermelon.
         /// </summary>
         public static string Watermelon {
             get {
@@ -10402,7 +10402,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌊-Water Wave   .
+        ///   Looks up a localized string similar to 🌊-Water Wave.
         /// </summary>
         public static string WaterWave {
             get {
@@ -10411,7 +10411,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👋-Waving Hand   .
+        ///   Looks up a localized string similar to 👋-Waving Hand.
         /// </summary>
         public static string WavingHand {
             get {
@@ -10420,7 +10420,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌒-Waxing Crescent Moon  .
+        ///   Looks up a localized string similar to 🌒-Waxing Crescent Moon.
         /// </summary>
         public static string WaxingCrescentMoon {
             get {
@@ -10429,7 +10429,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌔-Waxing Gibbous Moon  .
+        ///   Looks up a localized string similar to 🌔-Waxing Gibbous Moon.
         /// </summary>
         public static string WaxingGibbousMoon {
             get {
@@ -10438,7 +10438,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🙀-Weary Cat   .
+        ///   Looks up a localized string similar to 🙀-Weary Cat.
         /// </summary>
         public static string WearyCat {
             get {
@@ -10447,7 +10447,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 😩-Weary Face   .
+        ///   Looks up a localized string similar to 😩-Weary Face.
         /// </summary>
         public static string WearyFace {
             get {
@@ -10456,7 +10456,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💒-Wedding    .
+        ///   Looks up a localized string similar to 💒-Wedding.
         /// </summary>
         public static string Wedding {
             get {
@@ -10465,7 +10465,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐋-Whale    .
+        ///   Looks up a localized string similar to 🐋-Whale.
         /// </summary>
         public static string Whale {
             get {
@@ -10474,7 +10474,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦯-White Cane   .
+        ///   Looks up a localized string similar to 🦯-White Cane.
         /// </summary>
         public static string WhiteCane {
             get {
@@ -10483,7 +10483,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💮-White Flower   .
+        ///   Looks up a localized string similar to 💮-White Flower.
         /// </summary>
         public static string WhiteFlower {
             get {
@@ -10492,7 +10492,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥀-Wilted Flower   .
+        ///   Looks up a localized string similar to 🥀-Wilted Flower.
         /// </summary>
         public static string WiltedFlower {
             get {
@@ -10501,7 +10501,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎐-Wind Chime   .
+        ///   Looks up a localized string similar to 🎐-Wind Chime.
         /// </summary>
         public static string WindChime {
             get {
@@ -10510,7 +10510,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🌬️-Wind Face   .
+        ///   Looks up a localized string similar to 🌬️-Wind Face.
         /// </summary>
         public static string WindFace {
             get {
@@ -10519,7 +10519,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🪟-Window    .
+        ///   Looks up a localized string similar to 🪟-Window.
         /// </summary>
         public static string Window {
             get {
@@ -10528,7 +10528,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🍷-Wine Glass   .
+        ///   Looks up a localized string similar to 🍷-Wine Glass.
         /// </summary>
         public static string WineGlass {
             get {
@@ -10537,7 +10537,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 😉-Winking Face   .
+        ///   Looks up a localized string similar to 😉-Winking Face.
         /// </summary>
         public static string WinkingFace {
             get {
@@ -10555,7 +10555,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🐺-Wolf    .
+        ///   Looks up a localized string similar to 🐺-Wolf.
         /// </summary>
         public static string Wolf {
             get {
@@ -10564,7 +10564,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👩-Woman    .
+        ///   Looks up a localized string similar to 👩-Woman.
         /// </summary>
         public static string Woman {
             get {
@@ -10573,7 +10573,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👩‍🦲-Woman: Bald   .
+        ///   Looks up a localized string similar to 👩‍🦲-Woman: Bald.
         /// </summary>
         public static string Woman_Bald {
             get {
@@ -10582,7 +10582,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👱‍♀️-Woman: Blond Hair  .
+        ///   Looks up a localized string similar to 👱‍♀️-Woman: Blond Hair.
         /// </summary>
         public static string Woman_BlondHair {
             get {
@@ -10591,7 +10591,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👩‍🦱-Woman: Curly Hair  .
+        ///   Looks up a localized string similar to 👩‍🦱-Woman: Curly Hair.
         /// </summary>
         public static string Woman_CurlyHair {
             get {
@@ -10600,7 +10600,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👩‍🦰-Woman: Red Hair  .
+        ///   Looks up a localized string similar to 👩‍🦰-Woman: Red Hair.
         /// </summary>
         public static string Woman_RedHair {
             get {
@@ -10609,7 +10609,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👩‍🦳-Woman: White Hair  .
+        ///   Looks up a localized string similar to 👩‍🦳-Woman: White Hair.
         /// </summary>
         public static string Woman_WhiteHair {
             get {
@@ -10627,7 +10627,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👩‍🎨-Woman Artist   .
+        ///   Looks up a localized string similar to 👩‍🎨-Woman Artist.
         /// </summary>
         public static string WomanArtist {
             get {
@@ -10636,7 +10636,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👩‍🚀-Woman Astronaut   .
+        ///   Looks up a localized string similar to 👩‍🚀-Woman Astronaut.
         /// </summary>
         public static string WomanAstronaut {
             get {
@@ -10645,7 +10645,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚴‍♀️-Woman Biking   .
+        ///   Looks up a localized string similar to 🚴‍♀️-Woman Biking.
         /// </summary>
         public static string WomanBiking {
             get {
@@ -10654,7 +10654,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ⛹️‍♀️-Woman Bouncing Ball  .
+        ///   Looks up a localized string similar to ⛹️‍♀️-Woman Bouncing Ball.
         /// </summary>
         public static string WomanBouncingBall {
             get {
@@ -10663,7 +10663,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🙇‍♀️-Woman Bowing   .
+        ///   Looks up a localized string similar to 🙇‍♀️-Woman Bowing.
         /// </summary>
         public static string WomanBowing {
             get {
@@ -10672,7 +10672,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤸‍♀️-Woman Cartwheeling   .
+        ///   Looks up a localized string similar to 🤸‍♀️-Woman Cartwheeling.
         /// </summary>
         public static string WomanCartwheeling {
             get {
@@ -10681,7 +10681,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧗‍♀️-Woman Climbing   .
+        ///   Looks up a localized string similar to 🧗‍♀️-Woman Climbing.
         /// </summary>
         public static string WomanClimbing {
             get {
@@ -10690,7 +10690,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👷‍♀️-Woman Construction Worker  .
+        ///   Looks up a localized string similar to 👷‍♀️-Woman Construction Worker.
         /// </summary>
         public static string WomanConstructionWorker {
             get {
@@ -10699,7 +10699,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👩‍🍳-Woman Cook   .
+        ///   Looks up a localized string similar to 👩‍🍳-Woman Cook.
         /// </summary>
         public static string WomanCook {
             get {
@@ -10708,7 +10708,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💃-Woman Dancing   .
+        ///   Looks up a localized string similar to 💃-Woman Dancing.
         /// </summary>
         public static string WomanDancing {
             get {
@@ -10717,7 +10717,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🕵️‍♀️-Woman Detective   .
+        ///   Looks up a localized string similar to 🕵️‍♀️-Woman Detective.
         /// </summary>
         public static string WomanDetective {
             get {
@@ -10726,7 +10726,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧝‍♀️-Woman Elf   .
+        ///   Looks up a localized string similar to 🧝‍♀️-Woman Elf.
         /// </summary>
         public static string WomanElf {
             get {
@@ -10735,7 +10735,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤦‍♀️-Woman Facepalming   .
+        ///   Looks up a localized string similar to 🤦‍♀️-Woman Facepalming.
         /// </summary>
         public static string WomanFacepalming {
             get {
@@ -10744,7 +10744,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👩‍🏭-Woman Factory Worker  .
+        ///   Looks up a localized string similar to 👩‍🏭-Woman Factory Worker.
         /// </summary>
         public static string WomanFactoryWorker {
             get {
@@ -10753,7 +10753,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧚‍♀️-Woman Fairy   .
+        ///   Looks up a localized string similar to 🧚‍♀️-Woman Fairy.
         /// </summary>
         public static string WomanFairy {
             get {
@@ -10762,7 +10762,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👩‍🌾-Woman Farmer   .
+        ///   Looks up a localized string similar to 👩‍🌾-Woman Farmer.
         /// </summary>
         public static string WomanFarmer {
             get {
@@ -10771,7 +10771,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👩‍🍼-Woman Feeding Baby  .
+        ///   Looks up a localized string similar to 👩‍🍼-Woman Feeding Baby.
         /// </summary>
         public static string WomanFeedingBaby {
             get {
@@ -10780,7 +10780,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👩‍🚒-Woman Firefighter   .
+        ///   Looks up a localized string similar to 👩‍🚒-Woman Firefighter.
         /// </summary>
         public static string WomanFirefighter {
             get {
@@ -10789,7 +10789,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🙍‍♀️-Woman Frowning   .
+        ///   Looks up a localized string similar to 🙍‍♀️-Woman Frowning.
         /// </summary>
         public static string WomanFrowning {
             get {
@@ -10798,7 +10798,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧞‍♀️-Woman Genie   .
+        ///   Looks up a localized string similar to 🧞‍♀️-Woman Genie.
         /// </summary>
         public static string WomanGenie {
             get {
@@ -10807,7 +10807,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🙅‍♀️-Woman Gesturing No  .
+        ///   Looks up a localized string similar to 🙅‍♀️-Woman Gesturing No.
         /// </summary>
         public static string WomanGesturingNo {
             get {
@@ -10816,7 +10816,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🙆‍♀️-Woman Gesturing OK  .
+        ///   Looks up a localized string similar to 🙆‍♀️-Woman Gesturing OK.
         /// </summary>
         public static string WomanGesturingOK {
             get {
@@ -10825,7 +10825,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💇‍♀️-Woman Getting Haircut  .
+        ///   Looks up a localized string similar to 💇‍♀️-Woman Getting Haircut.
         /// </summary>
         public static string WomanGettingHaircut {
             get {
@@ -10834,7 +10834,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💆‍♀️-Woman Getting Massage  .
+        ///   Looks up a localized string similar to 💆‍♀️-Woman Getting Massage.
         /// </summary>
         public static string WomanGettingMassage {
             get {
@@ -10843,7 +10843,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏌️‍♀️-Woman Golfing   .
+        ///   Looks up a localized string similar to 🏌️‍♀️-Woman Golfing.
         /// </summary>
         public static string WomanGolfing {
             get {
@@ -10852,7 +10852,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💂‍♀️-Woman Guard   .
+        ///   Looks up a localized string similar to 💂‍♀️-Woman Guard.
         /// </summary>
         public static string WomanGuard {
             get {
@@ -10861,7 +10861,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👩‍⚕️-Woman Health Worker  .
+        ///   Looks up a localized string similar to 👩‍⚕️-Woman Health Worker.
         /// </summary>
         public static string WomanHealthWorker {
             get {
@@ -10906,7 +10906,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤵‍♀️-Woman in Tuxedo  .
+        ///   Looks up a localized string similar to 🤵‍♀️-Woman in Tuxedo.
         /// </summary>
         public static string WomaninTuxedo {
             get {
@@ -10915,7 +10915,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👩‍⚖️-Woman Judge   .
+        ///   Looks up a localized string similar to 👩‍⚖️-Woman Judge.
         /// </summary>
         public static string WomanJudge {
             get {
@@ -10924,7 +10924,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤹‍♀️-Woman Juggling   .
+        ///   Looks up a localized string similar to 🤹‍♀️-Woman Juggling.
         /// </summary>
         public static string WomanJuggling {
             get {
@@ -10933,7 +10933,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧎‍♀️-Woman Kneeling   .
+        ///   Looks up a localized string similar to 🧎‍♀️-Woman Kneeling.
         /// </summary>
         public static string WomanKneeling {
             get {
@@ -10942,7 +10942,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏋️‍♀️-Woman Lifting Weights  .
+        ///   Looks up a localized string similar to 🏋️‍♀️-Woman Lifting Weights.
         /// </summary>
         public static string WomanLiftingWeights {
             get {
@@ -10951,7 +10951,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧙‍♀️-Woman Mage   .
+        ///   Looks up a localized string similar to 🧙‍♀️-Woman Mage.
         /// </summary>
         public static string WomanMage {
             get {
@@ -10960,7 +10960,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👩‍🔧-Woman Mechanic   .
+        ///   Looks up a localized string similar to 👩‍🔧-Woman Mechanic.
         /// </summary>
         public static string WomanMechanic {
             get {
@@ -10969,7 +10969,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚵‍♀️-Woman Mountain Biking  .
+        ///   Looks up a localized string similar to 🚵‍♀️-Woman Mountain Biking.
         /// </summary>
         public static string WomanMountainBiking {
             get {
@@ -10978,7 +10978,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👩‍💼-Woman Office Worker  .
+        ///   Looks up a localized string similar to 👩‍💼-Woman Office Worker.
         /// </summary>
         public static string WomanOfficeWorker {
             get {
@@ -10987,7 +10987,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👩‍✈️-Woman Pilot   .
+        ///   Looks up a localized string similar to 👩‍✈️-Woman Pilot.
         /// </summary>
         public static string WomanPilot {
             get {
@@ -10996,7 +10996,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤾‍♀️-Woman Playing Handball  .
+        ///   Looks up a localized string similar to 🤾‍♀️-Woman Playing Handball.
         /// </summary>
         public static string WomanPlayingHandball {
             get {
@@ -11014,7 +11014,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👮‍♀️-Woman Police Officer  .
+        ///   Looks up a localized string similar to 👮‍♀️-Woman Police Officer.
         /// </summary>
         public static string WomanPoliceOfficer {
             get {
@@ -11023,7 +11023,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🙎‍♀️-Woman Pouting   .
+        ///   Looks up a localized string similar to 🙎‍♀️-Woman Pouting.
         /// </summary>
         public static string WomanPouting {
             get {
@@ -11032,7 +11032,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🙋‍♀️-Woman Raising Hand  .
+        ///   Looks up a localized string similar to 🙋‍♀️-Woman Raising Hand.
         /// </summary>
         public static string WomanRaisingHand {
             get {
@@ -11041,7 +11041,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚣‍♀️-Woman Rowing Boat  .
+        ///   Looks up a localized string similar to 🚣‍♀️-Woman Rowing Boat.
         /// </summary>
         public static string WomanRowingBoat {
             get {
@@ -11050,7 +11050,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏃‍♀️-Woman Running   .
+        ///   Looks up a localized string similar to 🏃‍♀️-Woman Running.
         /// </summary>
         public static string WomanRunning {
             get {
@@ -11059,7 +11059,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👢-Womans Boot   .
+        ///   Looks up a localized string similar to 👢-Womans Boot.
         /// </summary>
         public static string WomansBoot {
             get {
@@ -11068,7 +11068,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👩‍🔬-Woman Scientist   .
+        ///   Looks up a localized string similar to 👩‍🔬-Woman Scientist.
         /// </summary>
         public static string WomanScientist {
             get {
@@ -11077,7 +11077,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👚-Womans Clothes   .
+        ///   Looks up a localized string similar to 👚-Womans Clothes.
         /// </summary>
         public static string WomansClothes {
             get {
@@ -11086,7 +11086,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👒-Womans Hat   .
+        ///   Looks up a localized string similar to 👒-Womans Hat.
         /// </summary>
         public static string WomansHat {
             get {
@@ -11095,7 +11095,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤷‍♀️-Woman Shrugging   .
+        ///   Looks up a localized string similar to 🤷‍♀️-Woman Shrugging.
         /// </summary>
         public static string WomanShrugging {
             get {
@@ -11104,7 +11104,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👩‍🎤-Woman Singer   .
+        ///   Looks up a localized string similar to 👩‍🎤-Woman Singer.
         /// </summary>
         public static string WomanSinger {
             get {
@@ -11113,7 +11113,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👡-Womans Sandal   .
+        ///   Looks up a localized string similar to 👡-Womans Sandal.
         /// </summary>
         public static string WomansSandal {
             get {
@@ -11122,7 +11122,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧍‍♀️-Woman Standing   .
+        ///   Looks up a localized string similar to 🧍‍♀️-Woman Standing.
         /// </summary>
         public static string WomanStanding {
             get {
@@ -11131,7 +11131,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👩‍🎓-Woman Student   .
+        ///   Looks up a localized string similar to 👩‍🎓-Woman Student.
         /// </summary>
         public static string WomanStudent {
             get {
@@ -11140,7 +11140,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦸‍♀️-Woman Superhero   .
+        ///   Looks up a localized string similar to 🦸‍♀️-Woman Superhero.
         /// </summary>
         public static string WomanSuperhero {
             get {
@@ -11149,7 +11149,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦹‍♀️-Woman Supervillain   .
+        ///   Looks up a localized string similar to 🦹‍♀️-Woman Supervillain.
         /// </summary>
         public static string WomanSupervillain {
             get {
@@ -11158,7 +11158,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏄‍♀️-Woman Surfing   .
+        ///   Looks up a localized string similar to 🏄‍♀️-Woman Surfing.
         /// </summary>
         public static string WomanSurfing {
             get {
@@ -11167,7 +11167,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🏊‍♀️-Woman Swimming   .
+        ///   Looks up a localized string similar to 🏊‍♀️-Woman Swimming.
         /// </summary>
         public static string WomanSwimming {
             get {
@@ -11176,7 +11176,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👩‍🏫-Woman Teacher   .
+        ///   Looks up a localized string similar to 👩‍🏫-Woman Teacher.
         /// </summary>
         public static string WomanTeacher {
             get {
@@ -11185,7 +11185,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👩‍💻-Woman Technologist   .
+        ///   Looks up a localized string similar to 👩‍💻-Woman Technologist.
         /// </summary>
         public static string WomanTechnologist {
             get {
@@ -11194,7 +11194,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💁‍♀️-Woman Tipping Hand  .
+        ///   Looks up a localized string similar to 💁‍♀️-Woman Tipping Hand.
         /// </summary>
         public static string WomanTippingHand {
             get {
@@ -11203,7 +11203,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧛‍♀️-Woman Vampire   .
+        ///   Looks up a localized string similar to 🧛‍♀️-Woman Vampire.
         /// </summary>
         public static string WomanVampire {
             get {
@@ -11212,7 +11212,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🚶‍♀️-Woman Walking   .
+        ///   Looks up a localized string similar to 🚶‍♀️-Woman Walking.
         /// </summary>
         public static string WomanWalking {
             get {
@@ -11221,7 +11221,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👳‍♀️-Woman Wearing Turban  .
+        ///   Looks up a localized string similar to 👳‍♀️-Woman Wearing Turban.
         /// </summary>
         public static string WomanWearingTurban {
             get {
@@ -11230,7 +11230,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧕-Woman with Headscarf  .
+        ///   Looks up a localized string similar to 🧕-Woman with Headscarf.
         /// </summary>
         public static string WomanwithHeadscarf {
             get {
@@ -11239,7 +11239,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👰‍♀️-Woman with Veil  .
+        ///   Looks up a localized string similar to 👰‍♀️-Woman with Veil.
         /// </summary>
         public static string WomanwithVeil {
             get {
@@ -11257,7 +11257,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧟‍♀️-Woman Zombie   .
+        ///   Looks up a localized string similar to 🧟‍♀️-Woman Zombie.
         /// </summary>
         public static string WomanZombie {
             get {
@@ -11266,7 +11266,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 👭-Women Holding Hands  .
+        ///   Looks up a localized string similar to 👭-Women Holding Hands.
         /// </summary>
         public static string WomenHoldingHands {
             get {
@@ -11284,7 +11284,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤼‍♀️-Women Wrestling   .
+        ///   Looks up a localized string similar to 🤼‍♀️-Women Wrestling.
         /// </summary>
         public static string WomenWrestling {
             get {
@@ -11293,7 +11293,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥴-Woozy Face   .
+        ///   Looks up a localized string similar to 🥴-Woozy Face.
         /// </summary>
         public static string WoozyFace {
             get {
@@ -11302,7 +11302,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🗺️-World Map   .
+        ///   Looks up a localized string similar to 🗺️-World Map.
         /// </summary>
         public static string WorldMap {
             get {
@@ -11311,7 +11311,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🪱-Worm    .
+        ///   Looks up a localized string similar to 🪱-Worm.
         /// </summary>
         public static string Worm {
             get {
@@ -11320,7 +11320,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 😟-Worried Face   .
+        ///   Looks up a localized string similar to 😟-Worried Face.
         /// </summary>
         public static string WorriedFace {
             get {
@@ -11329,7 +11329,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🎁-Wrapped Gift   .
+        ///   Looks up a localized string similar to 🎁-Wrapped Gift.
         /// </summary>
         public static string WrappedGift {
             get {
@@ -11338,7 +11338,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🔧-Wrench    .
+        ///   Looks up a localized string similar to 🔧-Wrench.
         /// </summary>
         public static string Wrench {
             get {
@@ -11347,7 +11347,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to ✍️-Writing Hand   .
+        ///   Looks up a localized string similar to ✍️-Writing Hand.
         /// </summary>
         public static string WritingHand {
             get {
@@ -11356,7 +11356,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧶-Yarn    .
+        ///   Looks up a localized string similar to 🧶-Yarn.
         /// </summary>
         public static string Yarn {
             get {
@@ -11365,7 +11365,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧶-Yarn    .
+        ///   Looks up a localized string similar to 🧶-Yarn.
         /// </summary>
         public static string Yarn1 {
             get {
@@ -11374,7 +11374,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧶-Yarn    .
+        ///   Looks up a localized string similar to 🧶-Yarn.
         /// </summary>
         public static string Yarn2 {
             get {
@@ -11383,7 +11383,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🥱-Yawning Face   .
+        ///   Looks up a localized string similar to 🥱-Yawning Face.
         /// </summary>
         public static string YawningFace {
             get {
@@ -11392,7 +11392,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💴-Yen Banknote   .
+        ///   Looks up a localized string similar to 💴-Yen Banknote.
         /// </summary>
         public static string YenBanknote {
             get {
@@ -11401,7 +11401,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 💴-Yen Banknote   .
+        ///   Looks up a localized string similar to 💴-Yen Banknote.
         /// </summary>
         public static string YenBanknote1 {
             get {
@@ -11410,7 +11410,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🪀-Yo Yo   .
+        ///   Looks up a localized string similar to 🪀-Yo Yo.
         /// </summary>
         public static string YoYo {
             get {
@@ -11419,7 +11419,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤪-Zany Face   .
+        ///   Looks up a localized string similar to 🤪-Zany Face.
         /// </summary>
         public static string ZanyFace {
             get {
@@ -11428,7 +11428,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🦓-Zebra    .
+        ///   Looks up a localized string similar to 🦓-Zebra.
         /// </summary>
         public static string Zebra {
             get {
@@ -11437,7 +11437,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🤐-Zipper Mouth Face  .
+        ///   Looks up a localized string similar to 🤐-Zipper Mouth Face.
         /// </summary>
         public static string ZipperMouthFace {
             get {
@@ -11446,7 +11446,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to 🧟-Zombie    .
+        ///   Looks up a localized string similar to 🧟-Zombie.
         /// </summary>
         public static string Zombie {
             get {

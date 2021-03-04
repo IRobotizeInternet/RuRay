@@ -294,4 +294,121 @@
   <data name="Public" xml:space="preserve">
     <value>Public</value>
   </data>
+  <data name="LearnMore" xml:space="preserve">
+    <value>Learn More</value>
+  </data>
+  <data name="RoomName" xml:space="preserve">
+    <value>Room name</value>
+  </data>
+  <data name="StartTime" xml:space="preserve">
+    <value>Start time</value>
+  </data>
+  <data name="VisibleToAllFriends" xml:space="preserve">
+    <value>Visible to all friends</value>
+  </data>
+  <data name="Birthday" xml:space="preserve">
+    <value> Birthday</value>
+  </data>
+  <data name="BoredatHome" xml:space="preserve">
+    <value> Bored at Home</value>
+  </data>
+  <data name="Calendar" xml:space="preserve">
+    <value>Calendar</value>
+  </data>
+  <data name="CoffeeChat" xml:space="preserve">
+    <value> Coffee Chat</value>
+  </data>
+  <data name="DanceParty" xml:space="preserve">
+    <value> Dance Party</value>
+  </data>
+  <data name="Dinner" xml:space="preserve">
+    <value> Dinner</value>
+  </data>
+  <data name="EidCelebration" xml:space="preserve">
+    <value> Eid Celebration</value>
+  </data>
+  <data name="Family" xml:space="preserve">
+    <value> Family</value>
+  </data>
+  <data name="GameNight" xml:space="preserve">
+    <value> Game Night</value>
+  </data>
+  <data name="GradParty" xml:space="preserve">
+    <value> Grad Party</value>
+  </data>
+  <data name="HangingOut" xml:space="preserve">
+    <value> Hanging Out</value>
+  </data>
+  <data name="HappyHour" xml:space="preserve">
+    <value> Happy Hour</value>
+  </data>
+  <data name="HereAllDay" xml:space="preserve">
+    <value> Here All Day</value>
+  </data>
+  <data name="IsThisOn" xml:space="preserve">
+    <value> Is This On?</value>
+  </data>
+  <data name="JoinMe" xml:space="preserve">
+    <value> Join Me!</value>
+  </data>
+  <data name="Karaoke" xml:space="preserve">
+    <value> Karaoke</value>
+  </data>
+  <data name="KeepMeCompany" xml:space="preserve">
+    <value> Keep Me Company</value>
+  </data>
+  <data name="LunchClub" xml:space="preserve">
+    <value> Lunch Club</value>
+  </data>
+  <data name="MohammedsRoom" xml:space="preserve">
+    <value> Mohammed's Room</value>
+  </data>
+  <data name="MultiTasking" xml:space="preserve">
+    <value> Multi-Tasking</value>
+  </data>
+  <data name="New" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="NewRoomName" xml:space="preserve">
+    <value>New Room Name</value>
+  </data>
+  <data name="RiseandShine" xml:space="preserve">
+    <value> Rise and Shine</value>
+  </data>
+  <data name="SquadHang" xml:space="preserve">
+    <value> Squad Hang</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value />
+  </data>
+  <data name="StudyBreak" xml:space="preserve">
+    <value> Study Break</value>
+  </data>
+  <data name="TGIF" xml:space="preserve">
+    <value> TGIF</value>
+  </data>
+  <data name="TryingRooms" xml:space="preserve">
+    <value> Trying Rooms</value>
+  </data>
+  <data name="TVTime" xml:space="preserve">
+    <value> TV Time</value>
+  </data>
+  <data name="Workout" xml:space="preserve">
+    <value> Workout</value>
+  </data>
+  <data name="JoinRoom" xml:space="preserve">
+    <value>Join Room</value>
+  </data>
+  <data name="NextMonth" xml:space="preserve">
+    <value>Next Month</value>
+  </data>
+  <data name="PreviousMonth" xml:space="preserve">
+    <value>Previous Month</value>
+  </data>
+  <data name="ResetToNow" xml:space="preserve">
+    <value>Reset to now</value>
+  </data>
+  <data name="StartDate" xml:space="preserve">
+    <value>Start date</value>
+  </data>
 </root>

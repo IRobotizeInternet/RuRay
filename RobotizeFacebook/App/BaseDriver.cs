@@ -1,5 +1,4 @@
 ﻿using OpenQA.Selenium.Remote;
-
 using RobotizeFacebook.Utilities;
 using RobotizeFacebook.WebDrivers;
 using System;

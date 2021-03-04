@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
-    public class FeedArticle : BaseDiv
+    public class FeedArticle : BaseDriver
     {
 
     }

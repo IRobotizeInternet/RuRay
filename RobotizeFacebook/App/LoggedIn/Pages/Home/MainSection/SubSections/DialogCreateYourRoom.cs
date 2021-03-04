@@ -2,13 +2,13 @@
 using OpenQA.Selenium.Remote;
 using RobotizeToolbox.Dialogs;
 using RobotizeFacebook.Resources;
+using RobotizeToolbox.Controls;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class DialogCreateYourRoom : BaseDialog
     {
-        // This is the ugliest way to making the xpath, feel free to chage to for better.
-        protected override By ByForDialog => By.XPath($"*//span[text()='{ResMiscellaneous.CreateYourRoom}']//..//..//..//..//..//..//..//..//parent::div[@role='dialog']");
+        protected override By ByForDialog => By.XPath($"//div[@role='dialog']//span[text()='{ResMiscellaneous.CreateYourRoom}']");
 
         public DialogCreateYourRoom(RemoteWebDriver driver)
             :base(driver)
@@ -16,5 +16,13 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
             
         }
 
+        public EventTriggerButton<DialogRoomName> EventTriggerButtonRoomName =>
+            new EventTriggerButton<DialogRoomName>(Driver, By.XPath($"//div[@role='dialog']//span[text()='{ResMiscellaneous.RoomName}']"));
+        public EventTriggerButton<DialogStartTime> EventTriggerButtonStartTime =>
+            new EventTriggerButton<DialogStartTime>(Driver, By.XPath($"//div[@role='dialog']//span[text()='{ResMiscellaneous.StartTime}']"));
+        public Checkbox CheckboxVisibleToAllFriends => 
+            new Checkbox(Driver, By.XPath("//div[@role='dialog']//input"));
+        public EventTriggerButton<DialogJoinRoom> EventTriggerButtonCreateRoom =>
+            new EventTriggerButton<DialogJoinRoom>(Driver, By.XPath($"//div[@role='dialog']//span[text()='{ResMiscellaneous.CreateRoom}']"));
     }
 }
