@@ -10,6 +10,17 @@ namespace RobotizeToolbox.CommonControls
 {
     public class ScrollControl : BaseDOMObject
     {
+        // Feed Row Path --         //div[contains(@data-pagelet,'Feed')]
+        // Marketplace categories --//div[contains(@data-pagelet,'BrowseFeedUpsell')]
+        // Friends Row Path --      //div[@role="gridcell"]
+        // Choose GIF --            //input/parent::label/parent::div/parent::div/parent::div//img
+        // Discover events --       //div[@role="main"]//article
+        // Watch feed --            //div[@role='main' ]//video
+        // Watch shows --           //div[@role='main']//a[contains(@href,'/watch/')]/img
+        // Add Videos --            //input/parent::label/parent::div/parent::div//img
+        // Activity Log --          //div[@data-pagelet="page"]//*[name()='svg']
+
+        // Group feed --//div[contains(@data-pagelet,"GroupsFeed")]
         public int CurrentRowIndex { get; set; }
         public int RowCount => Driver.FindElements(By.XPath($"{BaseXPath}//div[contains(@data-pagelet,'Feed')]")).Count;
         public string GetRowXPath(int positionInSet) => $"{BaseXPath}//div[@aria-posinset='{positionInSet}']";
@@ -23,7 +34,7 @@ namespace RobotizeToolbox.CommonControls
         {
             BaseXPath = baseXPath;
             CurrentRowIndex = currentRowIndex;
-        }
+//div[@ data-pagelet="MainFeed"]/div/div/div/div        }
 
         /// <summary>
         /// Scroll to the last row.
