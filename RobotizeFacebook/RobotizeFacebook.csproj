@@ -209,7 +209,6 @@
     <Compile Include="App\LoggedIn\Pages\Home\MainSection\SubSections\DialogRoomName.cs" />
     <Compile Include="App\LoggedIn\Pages\Home\MainSection\SubSections\DialogStartTime.cs" />
     <Compile Include="App\LoggedIn\Pages\Home\MainSection\SubSections\EnumRoomName.cs" />
-    <Compile Include="App\LoggedIn\Pages\Home\MainSection\SubSections\PageTimeline.cs" />
     <Compile Include="App\LoggedIn\Pages\JobsComposer\DialogAddATitle.cs" />
     <Compile Include="App\LoggedIn\Dialogs\DialogEmojis.cs" />
     <Compile Include="App\LoggedIn\Pages\JobsComposer\DialogRaiseMoney.cs" />
@@ -1350,6 +1349,7 @@
     <EmbeddedResource Include="Resources\ResCreatePost.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>
       <LastGenOutput>ResCreatePost.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Resources\ResCurrency.resx">
       <Generator>PublicResXFileCodeGenerator</Generator>

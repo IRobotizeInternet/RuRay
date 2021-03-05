@@ -3,21 +3,23 @@ using System;
 
 namespace RobotizeLibrary.Components.Eidtor
 {
-    public class Editor<THeader, ULeftMenu, VFeedContainer>
+    public class Editor<THeader, ULeftMenu, VFeed, WPage>
         where THeader : IHeaderNavigation
         where ULeftMenu : ILeftNavigation
-        where VFeedContainer : IFeedContainer
-
+        where VFeed : IFeedContainer
+        where WPage : IPage
     {
         private readonly Lazy<THeader> _pageHeader;
         private readonly Lazy<ULeftMenu> _leftMenu;
-        private readonly Lazy<VFeedContainer> _feedContainer;
+        private readonly Lazy<VFeed> _feedContainer;
+        private readonly Lazy<WPage> _page;
 
         public Editor(RemoteWebDriver driver)
         {
             _pageHeader = InitiateLazyInstance<THeader>(driver);
             _leftMenu = InitiateLazyInstance<ULeftMenu>(driver);
-            _feedContainer = InitiateLazyInstance<VFeedContainer>(driver);
+            _feedContainer = InitiateLazyInstance<VFeed>(driver);
+            _page = InitiateLazyInstance<WPage>(driver);
         }
 
         /// <summary>
@@ -33,7 +35,12 @@ namespace RobotizeLibrary.Components.Eidtor
         /// <summary>
         /// Feed container of the page.
         /// </summary>
-        public VFeedContainer FeedContainer => _feedContainer.Value;
+        public VFeed FeedContainer => _feedContainer.Value;
+
+        /// <summary>
+        /// Page.
+        /// </summary>
+        public WPage Page => _page.Value;
 
         private static Lazy<T> InitiateLazyInstance<T>(RemoteWebDriver driver)
         {

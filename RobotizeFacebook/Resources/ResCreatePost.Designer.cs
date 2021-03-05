@@ -133,6 +133,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Create Room.
+        /// </summary>
+        public static string CreateRoom {
+            get {
+                return ResourceManager.GetString("CreateRoom", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Custom.
         /// </summary>
         public static string Custom {
@@ -165,6 +174,15 @@ namespace RobotizeFacebook.Resources {
         public static string FeelingOrActivity {
             get {
                 return ResourceManager.GetString("FeelingOrActivity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to friend room tile.
+        /// </summary>
+        public static string FriendRoomTile {
+            get {
+                return ResourceManager.GetString("FriendRoomTile", resourceCulture);
             }
         }
         

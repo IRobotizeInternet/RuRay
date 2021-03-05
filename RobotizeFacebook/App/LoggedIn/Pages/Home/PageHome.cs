@@ -1,4 +1,6 @@
-﻿using OpenQA.Selenium;
+﻿using System.Collections.Generic;
+using System.Linq;
+using OpenQA.Selenium;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.Controls;
 
@@ -8,26 +10,30 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
     {
         public PageHome(string baseXPath = "//div[@role='feed']") : base(baseXPath)
         {
-            
+
         }
 
         public EventTriggerButton<PageCreateAStory> EventTriggerButtonCreateStory =>
             new EventTriggerButton<PageCreateAStory>(Driver, By.XPath($"//div[@data-pagelet='Stories']//span[text()='{ResHomePage.CreateAStory}']"));
 
-        public EventTriggerButton<PageCreateAStory> EventTriggerButtonSeeAllStories =>
-            new EventTriggerButton<PageCreateAStory>(Driver, By.XPath($"//div[@data-pagelet='Stories']//span[text()='{ResHomePage.SeeAllStories}']"));
+        public EventTriggerButton<PageStories> EventTriggerButtonSeeAllStories =>
+            new EventTriggerButton<PageStories>(Driver, By.XPath($"//div[@data-pagelet='Stories']//span[text()='{ResHomePage.SeeAllStories}']"));
 
         public EventTriggerButton<PageLiveProducer> EventTriggerButtonLiveVideo =>
             new EventTriggerButton<PageLiveProducer>(Driver, By.XPath($"//div[@role='main']//span[text()='{ResCreatePost.LiveVideo}']"));
 
         public EventTriggerButton<DialogCreatePost> EventTriggerButtonPhotoOrVideo =>
             new EventTriggerButton<DialogCreatePost>(Driver, By.XPath($"//div[@role='main']//span[text()='{ResCreatePost.PhotoOrVideo}']"));
-        
+
         public EventTriggerButton<DialogCreatePost> EventTriggerButtonFeelingOrActivity =>
                    new EventTriggerButton<DialogCreatePost>(Driver, By.XPath($"//div[@role='main']//span[text()='{ResCreatePost.FeelingOrActivity}']"));
 
         public EventTriggerButton<DialogCreateYourRoom> EventTriggerButtonCreateNewRoom =>
-           new EventTriggerButton<DialogCreateYourRoom>(Driver, By.XPath($"//div[@role='main']//span[text()='{ResCreatePost.NewRoom}']"));
+           new EventTriggerButton<DialogCreateYourRoom>(Driver, By.XPath($"//div[@role='main']//span[text()='{ResCreatePost.NewRoom}' or text()='{ResCreatePost.CreateRoom}']"));
+
+        public IEnumerable<ButtonImage> AllOnlineFriends =>
+            Driver.FindElements(By.XPath($"//div[@role='main']//div[contains(@aria-label,'{ResCreatePost.FriendRoomTile}')]"))?
+            .Select(x => new ButtonImage(Driver, By.XPath(x.Text.Substring(x.Text.IndexOf($"{ResCreatePost.FriendRoomTile}"), ResCreatePost.FriendRoomTile.Length))));
 
         public override string PageUrl => "/";
 

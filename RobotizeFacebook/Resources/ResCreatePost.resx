@@ -237,7 +237,13 @@
   <data name="NewRoom" xml:space="preserve">
     <value>New Room</value>
   </data>
+  <data name="CreateRoom" xml:space="preserve">
+    <value>Create Room</value>
+  </data>
   <data name="Share" xml:space="preserve">
     <value>Share</value>
+  </data>
+  <data name="FriendRoomTile" xml:space="preserve">
+    <value>friend room tile</value>
   </data>
 </root>

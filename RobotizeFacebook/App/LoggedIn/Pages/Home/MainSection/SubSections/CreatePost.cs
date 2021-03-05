@@ -9,11 +9,11 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public EventTriggerButton<DialogCreatePost> ButtonCreatePost => 
             new EventTriggerButton<DialogCreatePost>(Driver, By.XPath($"//span[contains(text(),'{ResCreatePost.WhatsOnYourMind}')]"));
 
-        public EventTriggerButton<PageTimeline> ButtonTimeline =>
-           new EventTriggerButton<PageTimeline>(Driver, By.XPath("//a[contains(@href, 'facebook') and contains(@aria-label,'Timeline')]"));
+        public EventTriggerButton<PageUserTimeline> ButtonTimeline =>
+           new EventTriggerButton<PageUserTimeline>(Driver, By.XPath("//a[contains(@href, 'facebook') and contains(@aria-label,'Timeline')]"));
 
-        public EventTriggerButton<DialogCreatePost> ButtonLiveVideo =>
-            new EventTriggerButton<DialogCreatePost>(Driver, By.XPath($"//span[text()='{ResCreatePost.LiveVideo}']"));
+        public EventTriggerButton<PageLiveProducer> ButtonLiveVideo =>
+            new EventTriggerButton<PageLiveProducer>(Driver, By.XPath($"//span[text()='{ResCreatePost.LiveVideo}']"));
 
         public EventTriggerButton<DialogCreatePost> ButtonPhotoOrVideo =>
             new EventTriggerButton<DialogCreatePost>(Driver, By.XPath($"//span[text()='{ResCreatePost.PhotoOrVideo}']"));

@@ -1,10 +1,11 @@
 ﻿using OpenQA.Selenium;
+using RobotizeLibrary.Components.Eidtor;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Extensions;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
-    public abstract class BasePage : BaseDriver
+    public abstract class BasePage : BaseDriver, IPage
     {
         public abstract string PageUrl { get; }
         public abstract By ByForPage { get; }
