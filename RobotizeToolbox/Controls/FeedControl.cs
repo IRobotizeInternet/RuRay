@@ -18,8 +18,8 @@ namespace RobotizeToolbox.CommonControls
             CurrentRowIndex = 1;
         }
 
-        public override int RowCount => Driver.FindElements(By.XPath($"{BaseXPath}//div[contains(@data-pagelet,'FeedUnit')]")).Count;;
-        public override string GetRowXPath(int positionInSet)=>$"{BaseXPath}//div[@aria-posinset='{positionInSet}']";
+        //public override int RowCount => Driver.FindElements(By.XPath($"{BaseXPath}//div[contains(@data-pagelet,'FeedUnit')]")).Count;
+        //public override string GetRowXPath(int positionInSet)=>$"{BaseXPath}//div[@aria-posinset='{positionInSet}']";
 
     }
 }

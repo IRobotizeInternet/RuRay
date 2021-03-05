@@ -32,6 +32,5 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public Button ButtonReactionsAtSeventhIndex =>
             new Button(Driver, By.XPath(string.Format(BaseXPath, 9)));
 
-        public 
     }
 }

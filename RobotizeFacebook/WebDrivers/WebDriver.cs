@@ -16,7 +16,7 @@ namespace RobotizeFacebook.WebDrivers
 
         public virtual RemoteWebDriver Driver(bool useExistingBrowser = true) 
         {
-            throw new NotImplementedException("Deriving class not implemeting this function.");
+            throw new NotImplementedException("Driving class has not implemeted this function.");
         }
     }
 }
