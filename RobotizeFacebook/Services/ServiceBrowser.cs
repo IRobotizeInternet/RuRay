@@ -25,11 +25,20 @@ namespace RobotizeFacebook.Services
             }
 
         NotFound:
-            proc.StartInfo.FileName = AppSettings.ChromeBrowserLocation;
-            proc.StartInfo.UseShellExecute = false;
-            proc.StartInfo.Arguments = $"{AppSettings.BaseURL} --remote-debugging-port={AppSettings.DebuggerBrowserPort} --user-data-dir=C:\\Temp";
-            proc.Start();
-            AppSettings.AddAppSettings(proc.Id);
+
+            // The shortcut path is taken from ChangeTarget.ps1 file, if you wish to 
+            // change the path you must do it in the script first.
+            string shortcutAddress = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\ChromeForRomobize.lnk";
+
+            // Below code is being duplicated using powershell script ChangeTarget.ps1
+            //proc.StartInfo.FileName = AppSettings.ChromeBrowserLocation;
+            //proc.StartInfo.UseShellExecute = false;
+            //proc.StartInfo.Arguments = $"{AppSettings.BaseURL} --remote-debugging-port={AppSettings.DebuggerBrowserPort} --user-data-dir=C:\\Temp";
+            //proc.Start();
+
+            //AppSettings.AddAppSettings(proc.Id);
+
+            Process.Start(shortcutAddress);
         }
     }
 }

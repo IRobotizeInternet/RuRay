@@ -38,5 +38,15 @@ namespace RobotizeFacebook.Utilities
             // Save the changes in App.config file.
             config.Save(ConfigurationSaveMode.Modified);
         }
+
+        public static void AddAppSettings(string processId)
+        {
+            Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None); // Add an Application Setting.
+            config.AppSettings.Settings.Remove(nameof(BrowserProcessId));
+            config.AppSettings.Settings.Add(nameof(BrowserProcessId), processId.ToString());
+
+            // Save the changes in App.config file.
+            config.Save(ConfigurationSaveMode.Modified);
+        }
     }
 }

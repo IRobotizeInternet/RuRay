@@ -11,8 +11,9 @@ namespace RobotizeFacebookTests.LoggedIn
         {
             //var page = new PageLogin();
             //page.Login();
-            PageHome d = new PageHome();
-            var count = d.Header.MiddleMenu.GetNotificationOfGroups();
+           PageHome l = new PageHome();
+           
+           var count = l.Header.MiddleMenu.GetNotificationOfGroups();
             //d.Header.RunConformance();
         }
     }

@@ -6,7 +6,7 @@ using System.Threading;
 
 namespace RobotizeToolbox.Controls
 {
-    public class EventTriggerButton <EventResult>  where EventResult: class
+    public class EventTriggerButton <EventResult> : BaseDOMObject  where EventResult: class 
     {
         private readonly BaseDOMObject _element;
         private readonly string _xPath;
@@ -14,7 +14,7 @@ namespace RobotizeToolbox.Controls
         public EventTriggerButton(
             RemoteWebDriver driver,
             By byForElement,
-            string xPath = null)
+            string xPath = null) : base(driver, byForElement)
         {
             _xPath = xPath;
             _element = new BaseDOMObject(driver, byForElement);
