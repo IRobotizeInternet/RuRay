@@ -1,4 +1,6 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using System;
+using System.Diagnostics;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using RobotizeFacebook.App.LoggedIn.Pages;
 
 namespace RobotizeFacebookTests.LoggedIn
@@ -13,7 +15,7 @@ namespace RobotizeFacebookTests.LoggedIn
             //page.Login();
            PageHome l = new PageHome();
            
-           var count = l.Header.MiddleMenu.GetNotificationOfGroups();
+           Debug.WriteLine(l.Header.MiddleMenu.GetNotificationOfGroups());
             //d.Header.RunConformance();
         }
     }

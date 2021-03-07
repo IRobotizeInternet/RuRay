@@ -75,7 +75,7 @@ namespace RobotizeFacebook.WebDrivers
             return driver;
         }
 
-        public RemoteWebDriver GetRemoteWebDriver()
+        private RemoteWebDriver GetRemoteWebDriver()
         {
             var options = new ChromeOptions();
             //Environment.SetEnvironmentVariable("prefs", DriverLocation);

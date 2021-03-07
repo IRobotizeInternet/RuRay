@@ -10,8 +10,6 @@ namespace RobotizeFacebook.Services
         private static Process _process;
         public static void OpenBrowser()
         {
-            _process = new Process();
-
             // The shortcut path is taken from ChangeTarget.ps1 file, if you wish to 
             // change the path you must do it in the script first.
             string shortcutAddress = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\chrome.exe - Shortcut.lnk";
@@ -37,6 +35,7 @@ namespace RobotizeFacebook.Services
             if (int.TryParse(envSettings.Details?.ProcessId, out var previousSessionId)
                 && Process.GetProcessesByName("chrome")
                 .Any(x => x.Id == previousSessionId)) return;
+            _process = new Process();
             _process.StartInfo.FileName = shortcutAddress;
             _process.Start();
             if (envSettings.Details == null) envSettings.Details = new EnvironmentSettingsDTO { ProcessId = _process.Id.ToString() };
