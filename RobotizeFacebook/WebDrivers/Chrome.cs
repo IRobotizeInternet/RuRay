@@ -1,6 +1,7 @@
 ﻿using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Remote;
 using Polly;
+using Polly.Retry;
 using RobotizeFacebook.Services;
 using RobotizeFacebook.Utilities;
 using System;
@@ -52,11 +53,8 @@ namespace RobotizeFacebook.WebDrivers
             ChromeDriver driver = null;
 
             // Using Polly library: https://github.com/App-vNext/Polly
-            var policy = Policy
-              .Handle<InvalidOperationException>()
-              .WaitAndRetry(10, t => TimeSpan.FromSeconds(10));
 
-            policy.Execute(() =>
+            RetryPolicy().Execute(() =>
             {
                 driver = new ChromeDriver(DriverLocation, options, TimeSpan.FromSeconds(WebDriverTimeoutInSeconds));
             });
@@ -104,16 +102,25 @@ namespace RobotizeFacebook.WebDrivers
             return driver;
         }
 
-        public bool SelectTab(RemoteWebDriver driver)
+        public void SelectTab(RemoteWebDriver driver)
         {
-            var baseURLOpened = false;
             foreach(var tab in driver.WindowHandles)
             {
-                if (driver.Title.Contains($"{AppSettings.BaseURL}")) break;
+                if (driver.Url.Contains($"{AppSettings.BaseURL}")) return;
                 driver.SwitchTo().Window(tab);
             }
-         
-            return baseURLOpened;
+
+            RetryPolicy().Execute(() =>
+            {
+                driver.Navigate().GoToUrl(BaseURL);
+            });
+        }
+
+        private RetryPolicy RetryPolicy(int retryCount = 10)
+        {
+            return Policy
+              .Handle<InvalidOperationException>()
+              .WaitAndRetry(retryCount, t => TimeSpan.FromSeconds(10));
         }
     }
 }

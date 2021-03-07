@@ -1281,13 +1281,15 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
     </Compile>
+    <Compile Include="Services\AppData\EnvironmentSettings.cs" />
+    <Compile Include="Services\AppData\EnvironmentSettingsDTO.cs" />
     <Compile Include="Services\ServiceBrowser.cs" />
     <Compile Include="Services\ServiceCulture.cs" />
     <Compile Include="Utilities\AppSettings.cs" />
     <Compile Include="Utilities\ClassDefinationDTO.cs" />
     <Compile Include="Utilities\DynamicCodeCompilation.cs" />
     <Compile Include="Utilities\DynamicCodeGeneration.cs" />
-    <Compile Include="Utilities\Json.cs" />
+    <Compile Include="Utilities\FileOperations.cs" />
     <Compile Include="Utilities\ScriptUsingFacebook.cs" />
     <Compile Include="WebDrivers\Chrome.cs" />
     <Compile Include="WebDrivers\Edge.cs" />
@@ -1297,7 +1299,7 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="ChangeTarget.ps1">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="packages.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>

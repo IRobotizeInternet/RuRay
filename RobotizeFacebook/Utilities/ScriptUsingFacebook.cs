@@ -99,7 +99,7 @@ namespace RobotizeFacebook.Utilities
                                 }
                             }
                             classDTO.Methods = methodDefinitions;
-                            Json.Serialize(@"D:\Dev\Robotize\RobotizeFacebook\Services\RobotizeAPIs\JsonClasses11", classes);
+                            FileOperations.Serialize(@"D:\Dev\Robotize\RobotizeFacebook\Services\RobotizeAPIs\JsonClasses11", classes);
                         }
                     }
                     break;

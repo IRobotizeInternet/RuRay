@@ -2,7 +2,6 @@
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using RobotizeFacebook.Utilities;
 
 namespace RobotizeFacebook.Services
 {
@@ -33,12 +32,15 @@ namespace RobotizeFacebook.Services
                 };
                 process.Start();
             }
-            // Below code is being duplicated using powershell script ChangeTarget.ps1
-            // proc.StartInfo.UseShellExecute = false;
-            // proc.StartInfo.Arguments = $"{AppSettings.BaseURL} --remote-debugging-port={AppSettings.DebuggerBrowserPort} --user-data-dir=C:\\Temp";
-
+            
+            var envSettings = EnvironmentSettings.SettingsData;
+            if (int.TryParse(envSettings.Details?.ProcessId, out var previousSessionId)
+                && Process.GetProcessesByName("chrome")
+                .Any(x => x.Id == previousSessionId)) return;
             _process.StartInfo.FileName = shortcutAddress;
             _process.Start();
+            if (envSettings.Details == null) envSettings.Details = new EnvironmentSettingsDTO { ProcessId = _process.Id.ToString() };
+            else envSettings.Details.ProcessId = _process.Id.ToString();
         }
 
         // To detect redundant calls

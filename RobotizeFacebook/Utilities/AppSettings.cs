@@ -12,8 +12,9 @@ namespace RobotizeFacebook.Utilities
         public static string ChromeBrowserLocation { get; set; }
         public static string DebuggerBrowserUrl { get; set; }
         public static string DebuggerBrowserPort { get; set; }
-        public static string BrowserProcessId { get; set; }
         public static string DefaultCulture { get; set; }
+        public static string RobotizeDataDirectory { get; set; }
+        public static string EnvironmentSettingsFile { get; set; }
 
         static AppSettings()
         {
@@ -25,28 +26,9 @@ namespace RobotizeFacebook.Utilities
             ChromeBrowserLocation = ConfigurationManager.AppSettings[nameof(ChromeBrowserLocation)];
             DebuggerBrowserUrl = ConfigurationManager.AppSettings[nameof(DebuggerBrowserUrl)];
             DebuggerBrowserPort = ConfigurationManager.AppSettings[nameof(DebuggerBrowserPort)];
-            BrowserProcessId = ConfigurationManager.AppSettings[nameof(BrowserProcessId)];
             DefaultCulture = ConfigurationManager.AppSettings[nameof(DefaultCulture)];
-        }
-
-        public static void AddAppSettings(int processId)
-        {
-            Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None); // Add an Application Setting.
-            config.AppSettings.Settings.Remove(nameof(BrowserProcessId));
-            config.AppSettings.Settings.Add(nameof(BrowserProcessId), processId.ToString());
-
-            // Save the changes in App.config file.
-            config.Save(ConfigurationSaveMode.Modified);
-        }
-
-        public static void AddAppSettings(string processId)
-        {
-            Configuration config = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None); // Add an Application Setting.
-            config.AppSettings.Settings.Remove(nameof(BrowserProcessId));
-            config.AppSettings.Settings.Add(nameof(BrowserProcessId), processId.ToString());
-
-            // Save the changes in App.config file.
-            config.Save(ConfigurationSaveMode.Modified);
+            RobotizeDataDirectory = ConfigurationManager.AppSettings[nameof(RobotizeDataDirectory)];
+            EnvironmentSettingsFile = ConfigurationManager.AppSettings[nameof(EnvironmentSettingsFile)];
         }
     }
 }
