@@ -5,7 +5,9 @@ $ShortcutFile = [environment]::GetFolderPath('Desktop') + "\chrome.exe - Shortcu
 $WScriptShell = New-Object -ComObject WScript.Shell
 $Shortcut = $WScriptShell.CreateShortcut($ShortcutFile)
 $Shortcut.TargetPath = "`"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe`""
-$Shortcut.Arguments = '--remote-debugging-port=9222'
+$Shortcut.Arguments = '--remote-debugging-port=9222 '
+# If you wish to use multiple chrome user you need to find and add profile directory ex: --profile-directory="Profile 10"
+#$Shortcut.Arguments = '--remote-debugging-port=9222 --profile-directory="Profile 10"'
 $Shortcut.IconLocation = "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe, 0"
 $Shortcut.Save()
 

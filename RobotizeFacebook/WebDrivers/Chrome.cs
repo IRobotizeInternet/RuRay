@@ -122,5 +122,12 @@ namespace RobotizeFacebook.WebDrivers
               .Handle<InvalidOperationException>()
               .WaitAndRetry(retryCount, t => TimeSpan.FromSeconds(10));
         }
+
+        private void CommandLineTextFromChrome(RemoteWebDriver driver)
+        {
+            // Below code is used to verify the remote debugging and the prot
+            driver.Navigate().GoToUrl("chrome://version/");
+            driver.FindElementById("command_line").Text.Contains("--remote-debugging-port=9222");
+        }
     }
 }
