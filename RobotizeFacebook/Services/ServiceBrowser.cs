@@ -35,11 +35,13 @@ namespace RobotizeFacebook.Services
             if (int.TryParse(envSettings.Details?.ProcessId, out var previousSessionId)
                 && Process.GetProcessesByName("chrome")
                 .Any(x => x.Id == previousSessionId)) return;
+            var existingChromePIds = Process.GetProcessesByName("chrome").Select(x => x.Id);
             _process = new Process();
             _process.StartInfo.FileName = shortcutAddress;
             _process.Start();
-            if (envSettings.Details == null) envSettings.Details = new EnvironmentSettingsDTO { ProcessId = _process.Id.ToString() };
-            else envSettings.Details.ProcessId = _process.Id.ToString();
+            envSettings.Details = new EnvironmentSettingsDTO {
+                ProcessId = Process.GetProcessesByName("chrome").Where(x => !x.Id.IsAny(existingChromePIds)).First().Id.ToString() 
+            };
         }
 
         // To detect redundant calls

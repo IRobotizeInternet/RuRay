@@ -11,7 +11,7 @@ using System.Linq;
 
 namespace RobotizeFacebook.WebDrivers
 {
-    public class Chrome : WebDriver, IDisposable
+    public class Chrome : WebDriver//, IDisposable
     {
         public Chrome(string baseUrl):base(baseUrl) { }
 
@@ -30,6 +30,7 @@ namespace RobotizeFacebook.WebDrivers
                 throw new Exception($"{nameof(BaseURL)} is not set.");
             }
 
+            ServiceTask.CloseTask(nameof(ChromeDriver));
             var options = new ChromeOptions
             {
                 DebuggerAddress = $"{AppSettings.DebuggerBrowserUrl}:{ AppSettings.DebuggerBrowserPort}"
@@ -60,11 +61,6 @@ namespace RobotizeFacebook.WebDrivers
             });
 
             SelectTab(driver);
-            
-            //var driver2 = new RemoteWebDriver(options);
-            //driver2.SessionId = driver.SessionId;
-            //AppSettings.AddAppSettings(driver.SessionId.ToString());
-
 
             // If using existing window then you may not need to maximize it here.
             //driver.Manage().Window.Maximize();
@@ -125,7 +121,7 @@ namespace RobotizeFacebook.WebDrivers
 
         private void CommandLineTextFromChrome(RemoteWebDriver driver)
         {
-            // Below code is used to verify the remote debugging and the prot
+            // Below code is used to verify the remote debugging and the port used.
             driver.Navigate().GoToUrl("chrome://version/");
             driver.FindElementById("command_line").Text.Contains("--remote-debugging-port=9222");
         }

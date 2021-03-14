@@ -2,6 +2,7 @@
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls;
+using System.Diagnostics;
 using System.Text.RegularExpressions;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
@@ -27,13 +28,19 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
             EventTriggerButtonMarketPlace.Click();
         }
 
-        public int GetNotificationOfGroups()
+        public void VerifyNotifications()
         {
-            var btn = new Button(Driver, By.XPath("//a[contains(@aria-label, 'Groups')]"));
-            var t = EventTriggerButtonHome.GetAttribute("aria-label");
-            var notification = btn.GetAttribute("aria-label");
-            var count = Regex.Match(notification, @"\d+").Value;
-            return int.TryParse(count, out var res) ? res : 0;
+            //var btn = new Button(Driver, By.XPath("//a[contains(@aria-label, 'Groups')]"));
+            var notification = EventTriggerButtonHome.GetAttribute("aria-label");
+            Debug.WriteLine(Regex.Match(notification, @"\d+").Value);
+            notification = EventTriggerButtonFriends.GetAttribute("aria-label");
+            Debug.WriteLine(Regex.Match(notification, @"\d+").Value);
+            notification = EventTriggerButtonWatch.GetAttribute("aria-label");
+            Debug.WriteLine(Regex.Match(notification, @"\d+").Value);
+            notification = EventTriggerButtonMarketPlace.GetAttribute("aria-label");
+            Debug.WriteLine(Regex.Match(notification, @"\d+").Value);
+            notification = EventTriggerButtonMarketPlace.GetAttribute("aria-label");
+            Debug.WriteLine(Regex.Match(notification, @"\d+").Value);
         }
     }
 }
