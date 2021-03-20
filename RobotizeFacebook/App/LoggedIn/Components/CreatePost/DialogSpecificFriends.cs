@@ -4,6 +4,7 @@ using RobotizeToolbox.Dialogs;
 using RobotizeFacebook.Resources;
 using System.Collections.Generic;
 using RobotizeToolbox.Controls;
+using RobotizeToolbox.CommonControls;
 
 namespace RobotizeFacebook.App.LoggedIn
 {
@@ -13,6 +14,8 @@ namespace RobotizeFacebook.App.LoggedIn
         {
             BaseXPath = "//form[@method='POST']";
         }
+
+        public ScrollControl ScrollFriendsExcepts => new ScrollControl(Driver, By.XPath($"//form//div[@aria-label='{ResCreatePost.Friends}']/div"));
 
         protected override By ByForDialog => By.XPath($"//form[@method='POST']//span[text()='{ResCreatePost.SpecificFriends}']");
 

@@ -10,7 +10,7 @@ namespace RobotizeToolbox.CommonControls
 {
     public class ScrollControl : BaseDOMObject
     {
-        // Feed Row Path --         //div[contains(@data-pagelet,'Feed')]
+        // Feed Row Path --         //div[contains(@data-pagelet,'feed')]
         // Marketplace categories --//div[contains(@data-pagelet,'BrowseFeedUpsell')]
         // Group feed --            //div[contains(@data-pagelet,"GroupsFeed")]
         // Activity Log --          //div[@data-pagelet="page"]//*[name()='svg']
@@ -23,8 +23,8 @@ namespace RobotizeToolbox.CommonControls
         // Choose GIF --            //input/parent::label/parent::div/parent::div/parent::div//img
         // Add Videos --            //input/parent::label/parent::div/parent::div//img
         public int CurrentRowIndex { get; set; }
-        public int RowCount => Driver.FindElements(By.XPath($"{BaseXPath}//div[contains(@data-pagelet,'Feed')]")).Count;
-        public string GetRowXPath(int positionInSet) => $"{BaseXPath}//div[@aria-posinset='{positionInSet}']";
+        public int RowCount => Driver.FindElements(By.XPath($"{BaseXPath}")).Count;//div[contains(@data-pagelet,'Feed')]")).Count;
+        public string GetRowXPath(int positionInSet) => $"{BaseXPath}//['{positionInSet}']";
         public string BaseXPath { get; set; }
 
         public ScrollControl(RemoteWebDriver driver, 

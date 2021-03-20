@@ -9,13 +9,13 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class FeedUnit : BaseDriver
     {
-        public string BaseXPath { get; set; }//= "//div[@role='feed']";
-        public string FeedUnitIndexPath = "{0}//div[@aria-posinset={1}]/div/div/div/div/div/div/div/div[{2}]";
-        public string FeedInfoXPath => string.Format(FeedUnitIndexPath, BaseXPath, FeedUnitIndex, 1);
-        public string FeedHeaderXPath => string.Format(FeedUnitIndexPath, BaseXPath, FeedUnitIndex, 2);
-        public string FeedMainContentXPath => string.Format(FeedUnitIndexPath, BaseXPath, FeedUnitIndex, 3);
-        public string FeedCommentControlsXPath => $"{string.Format(FeedUnitIndexPath, BaseXPath, FeedUnitIndex, 4)}/div/div/div[1]";
-        public string FeedCommentsXPath => $"{string.Format(FeedUnitIndexPath, BaseXPath, FeedUnitIndex, 4)}/div/div/div[2]";
+        private string BaseXPath { get; set; }//= "//div[@role='feed']";
+        private readonly string _feedUnitIndexPath = "{0}//div[@aria-posinset={1}]/div/div/div/div/div/div/div/div[{2}]";
+        public string FeedInfoXPath => string.Format(_feedUnitIndexPath, BaseXPath, FeedUnitIndex, 1);
+        public string FeedHeaderXPath => string.Format(_feedUnitIndexPath, BaseXPath, FeedUnitIndex, 2);
+        public string FeedMainContentXPath => string.Format(_feedUnitIndexPath, BaseXPath, FeedUnitIndex, 3);
+        public string FeedCommentControlsXPath => $"{string.Format(_feedUnitIndexPath, BaseXPath, FeedUnitIndex, 4)}/div/div/div[1]";
+        public string FeedCommentsXPath => $"{string.Format(_feedUnitIndexPath, BaseXPath, FeedUnitIndex, 4)}/div/div/div[2]";
         public int FeedUnitIndex { get; set; }
 
         public FeedUnit(string baseXPath, int feedUnitIndex)

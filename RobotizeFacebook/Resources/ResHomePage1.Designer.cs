@@ -493,6 +493,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to People Who Shared This.
+        /// </summary>
+        public static string PeopleWhoSharedThis {
+            get {
+                return ResourceManager.GetString("PeopleWhoSharedThis", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Post a sticker.
         /// </summary>
         public static string PostASticker {

@@ -387,4 +387,7 @@
   <data name="YouSelected" xml:space="preserve">
     <value>You selected</value>
   </data>
+  <data name="PeopleWhoSharedThis" xml:space="preserve">
+    <value>People Who Shared This</value>
+  </data>
 </root>

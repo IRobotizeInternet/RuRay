@@ -1,6 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 using RobotizeFacebook.Resources;
+using RobotizeToolbox.CommonControls;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
@@ -9,6 +10,9 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public override string PageUrl => "/allactivity/";
 
         public override By ByForPage => throw new System.NotImplementedException();
+
+        public ScrollControl ScrollActivity =>
+            new ScrollControl(Driver, By.XPath("//div[@data-pagelet='page']//*[name()='svg']/parent::div/parent::div/parent::div"));
 
         public readonly string BaseXPath = $"//div[@data-pagelet='page']/div/div[@aria-label='{ResMiscellaneous.ListOfActivityLogItems}'][@role='navigation']";
         public PageActivityLog(RemoteWebDriver driver)

@@ -1,6 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 using RobotizeFacebook.Resources;
+using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls;
 using RobotizeToolbox.Dialogs;
 
@@ -11,6 +12,9 @@ namespace RobotizeFacebook.App.LoggedIn.Components
         public DialogAddVideos(RemoteWebDriver driver) : base(driver)
         {
         }
+
+        public ScrollControl ScrollVideos =>
+            new ScrollControl(Driver, By.XPath($"//form//div[descendant::input[@aria-label='{ResCreatePost.SearchForVideos}']]/following-sibling::div[2]/div/div"));
 
         protected override By ByForDialog => By.XPath($"//form[@method='POST']/parent::div[@role='dialog']//span[text()='{ResCreatePost.AddVideos}']");
 
