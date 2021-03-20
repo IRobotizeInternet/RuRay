@@ -1,22 +1,15 @@
 ﻿using OpenQA.Selenium;
 using RobotizeFacebook.App.LoggedIn.Pages;
 using RobotizeToolbox.CommonControls;
-using System.Threading;
 
 namespace RobotizeFacebook.App.LoggedIn
 {
     public abstract class Feed : BaseDriver
     {
-        // public 
         public abstract string FeedUrl { get; }
         public virtual string BaseXPath { get; set; }
-        public ScrollControl FeedScroll {
-            get {
-                if (FeedScroll != null) return FeedScroll;
-                return FeedScroll = new ScrollControl(Driver, By.XPath(BaseXPath), BaseXPath);
-            }
-            set { FeedScroll = value; }
-        }
+        public ScrollControl FeedScroll => new ScrollControl(Driver, By.XPath(BaseXPath), BaseXPath);
+        public FeedUnit GetFeedUnit(int index = 1)=> new FeedUnit(index, BaseXPath);
 
         protected Feed()
         {

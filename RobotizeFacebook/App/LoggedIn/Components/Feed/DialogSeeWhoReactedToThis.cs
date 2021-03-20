@@ -10,7 +10,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
     {
         public DialogReactions(RemoteWebDriver driver) : base(driver)
         {
-            BaseXPath = $"//div[@aria-label='{ResHomePage.Reactions}']//div[@role='tab'][@tabindex='0'][{0}]//span";
+            BaseXPath = "//div[@aria-label="+ResHomePage.Reactions+"]//div[@role='tab'][@tabindex='0'][{0}]//span";
         }
 
         protected override By ByForDialog => By.XPath($"//div[@aria-label='{ResHomePage.Reactions}']");

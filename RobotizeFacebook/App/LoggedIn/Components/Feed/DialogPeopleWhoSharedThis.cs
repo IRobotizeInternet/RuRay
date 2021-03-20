@@ -1,4 +1,4 @@
-﻿namespace RobotizeFacebook.App.LoggedIn.Pages.Base
+﻿namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class DialogPeopleWhoSharedThis
     {

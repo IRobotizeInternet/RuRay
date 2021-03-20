@@ -1,30 +1,27 @@
 ﻿using OpenQA.Selenium;
+using RobotizeFacebook.App.LoggedIn.Pages.Base;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls;
-using RobotizeToolbox.Controls.TriggerControls;
 using System;
 
-namespace RobotizeFacebook.App.LoggedIn.Pages.Base
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class FeedUnit : BaseDriver
     {
-        // public 
-        public string BaseXPath = "//div[@role='feed']";
-        public string FeedUnitIndexPath = "//div[@role='feed']//div[@aria-posinset={0}]/div/div/div/div/div/div/div/div[{1}]";
-        public string FeedInfoXPath { get; set; }
-        public string FeedHeaderXPath { get; set; }
-        public string FeedMainContentXPath { get; set; }
-        public string FeedCommentControlsXPath { get; set; }
-        public string FeedCommentsXPath { get; set; }
+        public string BaseXPath { get; set; }//= "//div[@role='feed']";
+        public string FeedUnitIndexPath = "{0}//div[@aria-posinset={1}]/div/div/div/div/div/div/div/div[{2}]";
+        public string FeedInfoXPath => string.Format(FeedUnitIndexPath, BaseXPath, FeedUnitIndex, 1);
+        public string FeedHeaderXPath => string.Format(FeedUnitIndexPath, BaseXPath, FeedUnitIndex, 2);
+        public string FeedMainContentXPath => string.Format(FeedUnitIndexPath, BaseXPath, FeedUnitIndex, 3);
+        public string FeedCommentControlsXPath => $"{string.Format(FeedUnitIndexPath, BaseXPath, FeedUnitIndex, 4)}/div/div/div[1]";
+        public string FeedCommentsXPath => $"{string.Format(FeedUnitIndexPath, BaseXPath, FeedUnitIndex, 4)}/div/div/div[2]";
+        public int FeedUnitIndex { get; set; }
 
-        protected FeedUnit(int feedUnitIndex)
+        public FeedUnit(string baseXPath, int feedUnitIndex)
         {
-            FeedInfoXPath = string.Format(FeedUnitIndexPath, feedUnitIndex, 1);
-            FeedHeaderXPath = string.Format(FeedUnitIndexPath, feedUnitIndex, 2);
-            FeedMainContentXPath = string.Format(FeedUnitIndexPath, feedUnitIndex, 3);
-            FeedCommentControlsXPath = $"{string.Format(FeedUnitIndexPath, feedUnitIndex, 4)}/div/div/div[1]";
-            FeedCommentsXPath = $"{string.Format(FeedUnitIndexPath, feedUnitIndex, 4)}/div/div/div[2]";
+            BaseXPath = baseXPath;
+            FeedUnitIndex = feedUnitIndex;
         }
 
         public EventTriggerButton<DialogReactions> EventTriggerButtonSeeWhoReactedToThis =>
