@@ -16,7 +16,7 @@ namespace RobotizeFacebook.App.LoggedIn
         }
 
         public ScrollControl ScrollFriendsExcepts => 
-            new ScrollControl(Driver, By.XPath("//form//div[@aria-label='{ResCreatePost.Friends}']/div"));
+            new ScrollControl(Driver, "//form//div[@aria-label='{ResCreatePost.Friends}']/div");
 
         protected override By ByForDialog => By.XPath($"//form[@method='POST']//span[text()='{ResCreatePost.FriendsExcept}']");
 

@@ -14,7 +14,7 @@ namespace RobotizeFacebook.App.LoggedIn.Components
         }
 
         public ScrollControl ScrollVideos =>
-            new ScrollControl(Driver, By.XPath($"//form//div[descendant::input[@aria-label='{ResCreatePost.SearchForVideos}']]/following-sibling::div[2]/div/div"));
+            new ScrollControl(Driver, $"//form//div[descendant::input[@aria-label='{ResCreatePost.SearchForVideos}']]/following-sibling::div[2]/div/div");
 
         protected override By ByForDialog => By.XPath($"//form[@method='POST']/parent::div[@role='dialog']//span[text()='{ResCreatePost.AddVideos}']");
 

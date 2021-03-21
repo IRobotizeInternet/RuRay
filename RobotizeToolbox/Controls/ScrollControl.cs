@@ -13,7 +13,7 @@ namespace RobotizeToolbox.CommonControls
         // Feed Row Path --         //div[contains(@data-pagelet,'feed')]
         // Marketplace categories --//div[contains(@data-pagelet,'BrowseFeedUpsell')]
         // Group feed --            //div[contains(@data-pagelet,"GroupsFeed")]
-        // Activity Log --          //div[@data-pagelet="page"]//*[name()='svg']
+        //      Activity Log --          //div[@data-pagelet="page"]//*[name()='svg']
         // Friends Row Path --      //div[@role="gridcell"]
         // Discover events --       //div[@role="main"]//article
         // Watch feed --            //div[@role='main' ]//video
@@ -27,10 +27,9 @@ namespace RobotizeToolbox.CommonControls
         public string GetRowXPath(int positionInSet) => $"{BaseXPath}//['{positionInSet}']";
         public string BaseXPath { get; set; }
 
-        public ScrollControl(RemoteWebDriver driver, 
-            By byForElement,
+        public ScrollControl(RemoteWebDriver driver,
             string baseXPath = null,
-            int currentRowIndex = 1) : base(driver, byForElement)
+            int currentRowIndex = 1) : base(driver, By.XPath(baseXPath))
         {
             BaseXPath = baseXPath;
             CurrentRowIndex = currentRowIndex;

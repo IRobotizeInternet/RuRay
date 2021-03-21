@@ -9,7 +9,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
     public class DialogReactions : BaseDialog
     {
         public ScrollControl ScrollReactions =>
-            new ScrollControl(Driver, By.XPath($"//div[@aria-label='{ResHomePage.Reactions}']/div[3]/div/div"));
+            new ScrollControl(Driver, $"//div[@aria-label='{ResHomePage.Reactions}']/div[3]/div/div");
         
         public DialogReactions(RemoteWebDriver driver) : base(driver)
         {

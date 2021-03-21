@@ -12,7 +12,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public override By ByForPage => throw new System.NotImplementedException();
 
         public ScrollControl ScrollActivity =>
-            new ScrollControl(Driver, By.XPath("//div[@data-pagelet='page']//*[name()='svg']/parent::div/parent::div/parent::div"));
+            new ScrollControl(Driver, "//div[@data-pagelet='page']//*[name()='svg']/parent::div/parent::div/parent::div");
 
         public readonly string BaseXPath = $"//div[@data-pagelet='page']/div/div[@aria-label='{ResMiscellaneous.ListOfActivityLogItems}'][@role='navigation']";
         public PageActivityLog(RemoteWebDriver driver)

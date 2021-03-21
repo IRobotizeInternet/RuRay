@@ -5,7 +5,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class PageMessengerKids : BasePage
     {
-        public override string PageUrl => throw new NotImplementedException();
+        public override string PageUrl => "/messenger_kids";
 
         public override By ByForPage => throw new NotImplementedException();
 

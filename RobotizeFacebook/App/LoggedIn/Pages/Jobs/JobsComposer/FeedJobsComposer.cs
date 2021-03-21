@@ -2,9 +2,9 @@
 
 namespace RobotizeFacebook.App.LoggedIn
 {
-    public class FeedMarketplaceYourAccount : Feed
+    public class FeedJobsComposer : Feed
     {
-        public override string FeedUrl => throw new NotImplementedException();
+        public override string FeedUrl => "/jobs_composer/?job_opening_create_surface=JOBS&source=job_browser";
 
         public override void RunConformance()
         {

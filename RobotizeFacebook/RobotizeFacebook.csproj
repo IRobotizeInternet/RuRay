@@ -228,18 +228,18 @@
     <Compile Include="App\LoggedIn\Pages\Home\MainSection\SubSections\DialogRoomName.cs" />
     <Compile Include="App\LoggedIn\Pages\Home\MainSection\SubSections\DialogStartTime.cs" />
     <Compile Include="App\LoggedIn\Pages\Home\MainSection\SubSections\EnumRoomName.cs" />
-    <Compile Include="App\LoggedIn\Pages\JobsComposer\DialogAddATitle.cs" />
+    <Compile Include="App\LoggedIn\Pages\Jobs\JobsComposer\DialogAddATitle.cs" />
     <Compile Include="App\LoggedIn\Dialogs\DialogEmojis.cs" />
-    <Compile Include="App\LoggedIn\Pages\JobsComposer\DialogRaiseMoney.cs" />
-    <Compile Include="App\LoggedIn\Pages\JobsComposer\FeedGoLiveWithOthers.cs" />
-    <Compile Include="App\LoggedIn\Pages\JobsComposer\FeedJobsComposer.cs" />
-    <Compile Include="App\LoggedIn\Pages\JobsComposer\MenuItemsCommon.cs" />
+    <Compile Include="App\LoggedIn\Pages\Jobs\JobsComposer\DialogRaiseMoney.cs" />
+    <Compile Include="App\LoggedIn\Pages\Jobs\JobsComposer\FeedGoLiveWithOthers.cs" />
+    <Compile Include="App\LoggedIn\Pages\Jobs\JobsComposer\FeedJobsComposer.cs" />
+    <Compile Include="App\LoggedIn\Pages\Jobs\JobsComposer\MenuItemsCommon.cs" />
     <Compile Include="App\LoggedIn\Pages\LiveProducer\FeedUpcomingLiveVideosAndEvents.cs" />
     <Compile Include="App\LoggedIn\Pages\LiveProducer\ScheduleLiveVideoEvent\ChooseAnIllustration\DialogChooseIllustration.cs" />
     <Compile Include="App\LoggedIn\Pages\LiveProducer\ScheduleLiveVideoEvent\DialogEventSettings.cs" />
     <Compile Include="App\LoggedIn\Pages\LiveProducer\ScheduleLiveVideoEvent\FeedScheduleLiveVideoEvent.cs" />
-    <Compile Include="App\LoggedIn\Pages\JobsComposer\MenuItemsJobsComposer.cs" />
-    <Compile Include="App\LoggedIn\Pages\JobsComposer\PageJobsComposer.cs" />
+    <Compile Include="App\LoggedIn\Pages\Jobs\JobsComposer\MenuItemsJobsComposer.cs" />
+    <Compile Include="App\LoggedIn\Pages\Jobs\JobsComposer\PageJobsComposer.cs" />
     <Compile Include="App\LoggedIn\Pages\LiveProducer\ScheduleLiveVideoEvent\MenuItemsScheduleLiveVideoEvent.cs" />
     <Compile Include="App\LoggedIn\Pages\LiveProducer\ScheduleLiveVideoEvent\PageScheduleLiveVideoEvent.cs" />
     <Compile Include="App\LoggedIn\Pages\LiveProducer\FeedLiveProducer.cs" />
@@ -346,9 +346,6 @@
     <Compile Include="App\LoggedIn\Pages\Gaming\PageGames.cs" />
     <Compile Include="App\LoggedIn\Pages\Group\PageGroup.cs" />
     <Compile Include="App\LoggedIn\Pages\Jobs\PageJobs.cs" />
-    <Compile Include="App\LoggedIn\Pages\MarketplaceYourAccount\FeedMarketplaceYourAccount.cs" />
-    <Compile Include="App\LoggedIn\Pages\MarketplaceYourAccount\MenuItemsMarketplaceYourAccount.cs" />
-    <Compile Include="App\LoggedIn\Pages\MarketplaceYourAccount\PageMarketplaceYourAccount.cs" />
     <Compile Include="App\LoggedIn\Pages\Marketplace\CreateNewListing\FeedContainerCreateNewListing.cs" />
     <Compile Include="App\LoggedIn\Pages\Marketplace\CreateNewListing\MenuItemsCreateNewListing.cs" />
     <Compile Include="App\LoggedIn\Pages\Marketplace\GridMarketPlace\Apparel\FilterWomens\IWomensFilter.cs" />
@@ -1334,6 +1331,10 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App\LoggedIn\Components\Profile\" />
+    <Folder Include="App\LoggedIn\Pages\Friends\Birthdays\" />
+    <Folder Include="App\LoggedIn\Pages\Friends\List\" />
+    <Folder Include="App\LoggedIn\Pages\Friends\Requests\" />
+    <Folder Include="App\LoggedIn\Pages\Friends\Suggestions\" />
     <Folder Include="App\LoggedIn\Pages\Marketplace\GridMarketPlace\GridHelper\RadioButton\" />
     <Folder Include="App\LoggedIn\Pages\Marketplace\GridMarketPlace\GridHelper\Textbox\" />
     <Folder Include="App\LoggedIn\Pages\Pages\ManagePage\Notifications\" />

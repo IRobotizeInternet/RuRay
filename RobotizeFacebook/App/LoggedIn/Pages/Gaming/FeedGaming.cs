@@ -4,7 +4,7 @@ namespace RobotizeFacebook.App.LoggedIn
 {
     public class FeedGaming : Feed
     {
-        public override string FeedUrl => throw new NotImplementedException();
+        public override string FeedUrl => "/games";
 
         public override void RunConformance()
         {

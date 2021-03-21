@@ -4,7 +4,7 @@ namespace RobotizeFacebook.App.LoggedIn
 {
     public class FeedMemories : Feed
     {
-        public override string FeedUrl => throw new NotImplementedException();
+        public override string FeedUrl => "/memories";
 
         public override void RunConformance()
         {

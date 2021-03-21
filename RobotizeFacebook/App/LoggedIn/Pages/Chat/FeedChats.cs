@@ -2,7 +2,7 @@
 {
     public class FeedChats : Feed
     {
-        public override string FeedUrl => throw new System.NotImplementedException();
+        public override string FeedUrl => "/messages";
 
         public override void RunConformance()
         {

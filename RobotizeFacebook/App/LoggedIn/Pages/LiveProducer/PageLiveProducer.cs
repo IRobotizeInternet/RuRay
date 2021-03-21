@@ -5,7 +5,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class PageLiveProducer : BasePage
     {
-        public override string PageUrl => throw new NotImplementedException();
+        public override string PageUrl => "/live/producer/";
 
         public override By ByForPage => throw new NotImplementedException();
 
