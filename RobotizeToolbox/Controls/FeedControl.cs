@@ -8,11 +8,8 @@ namespace RobotizeToolbox.CommonControls
 {
     public class FeedControl : ScrollControl
     {
-        
-        public string BaseXPath { get; set; }
-        public FeedControl(RemoteWebDriver driver, 
-            By byForElement,
-            string baseXPath) : base(driver, byForElement)
+        public FeedControl(RemoteWebDriver driver,
+            string baseXPath) : base(driver, baseXPath)
         {
             BaseXPath = baseXPath;
             CurrentRowIndex = 1;

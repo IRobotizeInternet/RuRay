@@ -6,8 +6,8 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class MenuItemsYourAccount : MenuItems
     {
-        public EventTriggerButton<PageMarketplaceYourAccount> TriggerButtonYourListings => 
-            new EventTriggerButton<PageMarketplaceYourAccount>(Driver, By.XPath($"{BaseXPath}//span[contains(text(), '{ResLeftNav.YourListings}')]"));
+        public EventTriggerButton<PageMarketPlaceYourAccount> TriggerButtonYourListings => 
+            new EventTriggerButton<PageMarketPlaceYourAccount>(Driver, By.XPath($"{BaseXPath}//span[contains(text(), '{ResLeftNav.YourListings}')]"));
         public EventTriggerButton<FeedYourAccountSaved> TriggerButtonSaved =>
            new EventTriggerButton<FeedYourAccountSaved>(Driver, By.XPath($"{BaseXPath}//span[contains(text(), '{ResLeftNav.Saved}')]"));
         public EventTriggerButton<FeedYourAccountFollowing> TriggerButtonFollowing =>

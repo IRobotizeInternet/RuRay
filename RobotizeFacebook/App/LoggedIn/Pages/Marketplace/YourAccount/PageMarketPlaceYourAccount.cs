@@ -1,9 +1,9 @@
 ﻿using OpenQA.Selenium;
 using System;
 
-namespace RobotizeFacebook.App.LoggedIn.Pages.Marketplace.YourAccount
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
-    public class PageYourAccount : BasePage
+    public class PageMarketPlaceYourAccount : BasePage
     {
         public override string PageUrl => "/marketplace/you/selling";
 

@@ -254,7 +254,7 @@
     <Compile Include="App\LoggedIn\Pages\Marketplace\YourAccount\FeedYourAccountSaved.cs" />
     <Compile Include="App\LoggedIn\Pages\Marketplace\YourAccount\FeedYourAccount.cs" />
     <Compile Include="App\LoggedIn\Pages\Marketplace\YourAccount\MenuItemsYourAccount.cs" />
-    <Compile Include="App\LoggedIn\Pages\Marketplace\YourAccount\PageYourAccount.cs" />
+    <Compile Include="App\LoggedIn\Pages\Marketplace\YourAccount\PageMarketPlaceYourAccount.cs" />
     <Compile Include="App\LoggedIn\Pages\Messages\DetailsMessages.cs" />
     <Compile Include="App\LoggedIn\Pages\Messages\FeedMessages.cs" />
     <Compile Include="App\LoggedIn\Pages\Messages\MenuItemsMessages.cs" />
