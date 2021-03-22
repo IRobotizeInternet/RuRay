@@ -6,12 +6,12 @@ using RobotizeToolbox.Dialogs;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
-    public class DialogReactions : BaseDialog
+    public class DialogSeeWhoReactedToThis : BaseDialog
     {
-        public ScrollControl ScrollReactions =>
-            new ScrollControl(Driver, $"//div[@aria-label='{ResHomePage.Reactions}']/div[3]/div/div");
+        public ScrollControl<ListItemSeeWhoReactedToThis> ScrollReactions =>
+            new ScrollControl<ListItemSeeWhoReactedToThis>(Driver, $"//div[@aria-label='{ResHomePage.Reactions}']/div[3]/div/div");
         
-        public DialogReactions(RemoteWebDriver driver) : base(driver)
+        public DialogSeeWhoReactedToThis(RemoteWebDriver driver) : base(driver)
         {
             BaseXPath = "//div[@aria-label="+ResHomePage.Reactions+"]//div[@role='tab'][@tabindex='0'][{0}]//span";
         }

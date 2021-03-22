@@ -5,7 +5,7 @@ using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls;
 using RobotizeToolbox.Dialogs;
 
-namespace RobotizeFacebook.App.LoggedIn.Components
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class DialogAddVideos : BaseDialog
     {
@@ -13,8 +13,8 @@ namespace RobotizeFacebook.App.LoggedIn.Components
         {
         }
 
-        public ScrollControl ScrollVideos =>
-            new ScrollControl(Driver, $"//form//div[descendant::input[@aria-label='{ResCreatePost.SearchForVideos}']]/following-sibling::div[2]/div/div");
+        public ScrollControl<ListItemAddVideo> ScrollVideos =>
+            new ScrollControl<ListItemAddVideo>(Driver, $"//form//div[descendant::input[@aria-label='{ResCreatePost.SearchForVideos}']]/following-sibling::div[2]/div/div");
 
         protected override By ByForDialog => By.XPath($"//form[@method='POST']/parent::div[@role='dialog']//span[text()='{ResCreatePost.AddVideos}']");
 

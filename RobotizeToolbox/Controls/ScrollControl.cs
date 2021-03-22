@@ -4,12 +4,15 @@ using System.Text;
 using System.Threading;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
+using RobotizeToolbox.Components;
 using RobotizeToolbox.Extensions;
 
 namespace RobotizeToolbox.CommonControls
 {
-    public class ScrollControl : BaseDOMObject
+    public class ScrollControl<TListItem> : BaseDOMObject 
+        where TListItem : IListItem
     {
+        // div[@ data-pagelet="MainFeed"]/div/div/div/div 
         // Feed Row Path --         //div[contains(@data-pagelet,'feed')]
         // Marketplace categories --//div[contains(@data-pagelet,'BrowseFeedUpsell')]
         // Group feed --            //div[contains(@data-pagelet,"GroupsFeed")]
@@ -26,6 +29,7 @@ namespace RobotizeToolbox.CommonControls
         public int RowCount => Driver.FindElements(By.XPath($"{BaseXPath}")).Count;//div[contains(@data-pagelet,'Feed')]")).Count;
         public string GetRowXPath(int positionInSet) => $"{BaseXPath}//['{positionInSet}']";
         public string BaseXPath { get; set; }
+        public TListItem ListITems { get; set; }
 
         public ScrollControl(RemoteWebDriver driver,
             string baseXPath = null,
@@ -33,7 +37,6 @@ namespace RobotizeToolbox.CommonControls
         {
             BaseXPath = baseXPath;
             CurrentRowIndex = currentRowIndex;
-//div[@ data-pagelet="MainFeed"]/div/div/div/div        
         }
 
         /// <summary>

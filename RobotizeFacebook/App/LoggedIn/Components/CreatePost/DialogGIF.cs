@@ -13,8 +13,8 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         {
         }
 
-        public ScrollControl ScrollGIF =>
-           new ScrollControl(Driver, $"//form[descendant::input[@aria-label='{ResCreatePost.GIFSearch}']]//img[@alt='GIF']");//form[@method='POST']/parent::div[@role='dialog']/form/div/div[2]/div/div[2]/div/div[2]/div/div/div"));
+        //public ScrollControl ScrollGIF =>
+        //   new ScrollControl(Driver, $"//form[descendant::input[@aria-label='{ResCreatePost.GIFSearch}']]//img[@alt='GIF']");//form[@method='POST']/parent::div[@role='dialog']/form/div/div[2]/div/div[2]/div/div[2]/div/div/div"));
 
         protected override By ByForDialog => By.XPath($"//form[@method='POST']/parent::div[@role='dialog']//span[text()='{ResCreatePost.ChooseAGIF}']");
 

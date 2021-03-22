@@ -2,12 +2,13 @@
 using RobotizeFacebook.App.LoggedIn.Pages.Base;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.CommonControls;
+using RobotizeToolbox.Components;
 using RobotizeToolbox.Controls;
 using System;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
-    public class FeedUnit : BaseDriver
+    public class FeedUnit : BaseDriver, IListItem
     {
         private string BaseXPath { get; set; }//= "//div[@role='feed']";
         private readonly string _feedUnitIndexPath = "{0}//div[@aria-posinset={1}]/div/div/div/div/div/div/div/div[{2}]";
@@ -24,10 +25,10 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
             FeedUnitIndex = feedUnitIndex;
         }
 
-        public EventTriggerButton<DialogReactions> EventTriggerButtonSeeWhoReactedToThis =>
-            new EventTriggerButton<DialogReactions>(Driver, By.XPath($"{FeedCommentControlsXPath}//span[@aria-label='{ResHomePage.SeeWhoReactedToThis}']"));
-        public EventTriggerButton<DialogReactions> EventTriggerButtonNumberOfPeopleReacted =>
-            new EventTriggerButton<DialogReactions>(Driver, By.XPath($"{FeedCommentControlsXPath}//span[@aria-label='{ResHomePage.SeeWhoReactedToThis}']/following-sibling::div"));
+        public EventTriggerButton<DialogSeeWhoReactedToThis> EventTriggerButtonSeeWhoReactedToThis =>
+            new EventTriggerButton<DialogSeeWhoReactedToThis>(Driver, By.XPath($"{FeedCommentControlsXPath}//span[@aria-label='{ResHomePage.SeeWhoReactedToThis}']"));
+        public EventTriggerButton<DialogSeeWhoReactedToThis> EventTriggerButtonNumberOfPeopleReacted =>
+            new EventTriggerButton<DialogSeeWhoReactedToThis>(Driver, By.XPath($"{FeedCommentControlsXPath}//span[@aria-label='{ResHomePage.SeeWhoReactedToThis}']/following-sibling::div"));
         public EventTriggerButton<PopupComments> EventTriggerButtonShowHideComments =>
            new EventTriggerButton<PopupComments>(Driver, By.XPath($"{FeedCommentControlsXPath}//span[contains(text(), '{ResHomePage.Comments}')]"), FeedCommentsXPath);
         public EventTriggerButton<DialogPeopleWhoSharedThis> EventTriggerButtonPeopleWhoSharedThis =>

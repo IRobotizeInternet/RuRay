@@ -246,4 +246,49 @@
   <data name="FriendRoomTile" xml:space="preserve">
     <value>friend room tile</value>
   </data>
+  <data name="RemoveFromFriendsWhoWontSeeYourPost" xml:space="preserve">
+    <value>Remove from Friends Who Won't See Your Post</value>
+  </data>
+  <data name="AddToFriendsWhoWontSeeYourPost" xml:space="preserve">
+    <value>Add to Friends Who Won't See Your Post</value>
+  </data>
+  <data name="RemoveFromFriendsWhoWillSeeYourPost" xml:space="preserve">
+    <value>Remove from Friends Who Will See Your Post</value>
+  </data>
+  <data name="AddToFriendsWhoWillSeeYourPost" xml:space="preserve">
+    <value>Add to Friends Who Will See Your Post</value>
+  </data>
+  <data name="SelectThisCheckbox" xml:space="preserve">
+    <value>Select this checkbox</value>
+  </data>
+  <data name="SendThisToFriendsOrPostItOnYourTimeline" xml:space="preserve">
+    <value>Send this to friends or post it on your timeline.</value>
+  </data>
+  <data name="ShowAttachment" xml:space="preserve">
+    <value>Show Attachment</value>
+  </data>
+  <data name="Menu" xml:space="preserve">
+    <value>menu</value>
+  </data>
+  <data name="TurnOnNotificationsForThisPost" xml:space="preserve">
+    <value>Turn on notifications for this post</value>
+  </data>
+  <data name="SavePost" xml:space="preserve">
+    <value>Save post</value>
+  </data>
+  <data name="Embed" xml:space="preserve">
+    <value>Embed</value>
+  </data>
+  <data name="HideAllFrom" xml:space="preserve">
+    <value>Hide all from</value>
+  </data>
+  <data name="Unfollow" xml:space="preserve">
+    <value>Unfollow</value>
+  </data>
+  <data name="AddFriend" xml:space="preserve">
+    <value>Add Friend</value>
+  </data>
+  <data name="Follow" xml:space="preserve">
+    <value>Follow</value>
+  </data>
 </root>

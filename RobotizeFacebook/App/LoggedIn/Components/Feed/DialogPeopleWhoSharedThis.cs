@@ -6,8 +6,8 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class DialogPeopleWhoSharedThis : BaseDriver
     {
-        public ScrollControl ScrollReactions =>
-           new ScrollControl(Driver, $"//div[@aria-label='{ResHomePage.PeopleWhoSharedThis}']/div[3]/div/div/div");
+        public ScrollControl<ListItemPeopleWhoSharedThis> ScrollReactions =>
+           new ScrollControl<ListItemPeopleWhoSharedThis>(Driver, $"//div[@aria-label='{ResHomePage.PeopleWhoSharedThis}']/div[3]/div/div/div");
 
         public override void RunConformance()
         {

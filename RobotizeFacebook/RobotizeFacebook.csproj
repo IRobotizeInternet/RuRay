@@ -174,9 +174,15 @@
     <Compile Include="App\LoggedIn\Components\CreatePost\DialogHowAreYouFeeling.cs" />
     <Compile Include="App\LoggedIn\Components\CreatePost\DialogSelectNonprofit.cs" />
     <Compile Include="App\LoggedIn\Components\CreatePost\DialogTagFriends.cs" />
+    <Compile Include="App\LoggedIn\Components\CreatePost\ListItems\ListItemActivity.cs" />
+    <Compile Include="App\LoggedIn\Components\CreatePost\ListItems\ListItemAddVideo.cs" />
+    <Compile Include="App\LoggedIn\Components\CreatePost\ListItems\ListItemSpecificFriends.cs" />
+    <Compile Include="App\LoggedIn\Components\CreatePost\ListItems\ListItemFriendsExcept.cs" />
     <Compile Include="App\LoggedIn\Components\Feed\DialogHideOrReport.cs" />
     <Compile Include="App\LoggedIn\Components\Feed\Home\BaseFeed.cs" />
     <Compile Include="App\LoggedIn\Components\Feed\Home\FeedControl.cs" />
+    <Compile Include="App\LoggedIn\Components\Feed\ListItems\ListItemReactions.cs" />
+    <Compile Include="App\LoggedIn\Components\Feed\ListItems\ListItemPeopleWhoSharedThis.cs" />
     <Compile Include="App\LoggedIn\Components\Feed\PopupComments.cs" />
     <Compile Include="App\LoggedIn\Components\Feed\PopupUserProfile.cs" />
     <Compile Include="App\LoggedIn\Components\PopupAccount.cs" />

@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using RobotizeToolbox.Controls;
 using RobotizeToolbox.CommonControls;
 
-namespace RobotizeFacebook.App.LoggedIn
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class DialogSpecificFriends : BaseSaveCancelDialog
     {
@@ -15,7 +15,8 @@ namespace RobotizeFacebook.App.LoggedIn
             BaseXPath = "//form[@method='POST']";
         }
 
-        public ScrollControl ScrollFriendsExcepts => new ScrollControl(Driver, $"//form//div[@aria-label='{ResCreatePost.Friends}']/div");
+        public ScrollControl<ListItemSpecificFriends> ScrollFriendsExcepts => 
+            new ScrollControl<ListItemSpecificFriends>(Driver, $"//form//div[@aria-label='{ResCreatePost.Friends}']/div");
 
         protected override By ByForDialog => By.XPath($"//form[@method='POST']//span[text()='{ResCreatePost.SpecificFriends}']");
 

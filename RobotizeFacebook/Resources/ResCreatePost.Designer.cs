@@ -61,6 +61,33 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add Friend.
+        /// </summary>
+        public static string AddFriend {
+            get {
+                return ResourceManager.GetString("AddFriend", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add to Friends Who Will See Your Post.
+        /// </summary>
+        public static string AddToFriendsWhoWillSeeYourPost {
+            get {
+                return ResourceManager.GetString("AddToFriendsWhoWillSeeYourPost", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add to Friends Who Won&apos;t See Your Post.
+        /// </summary>
+        public static string AddToFriendsWhoWontSeeYourPost {
+            get {
+                return ResourceManager.GetString("AddToFriendsWhoWontSeeYourPost", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add to Your Post.
         /// </summary>
         public static string AddToYourPost {
@@ -160,6 +187,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Embed.
+        /// </summary>
+        public static string Embed {
+            get {
+                return ResourceManager.GetString("Embed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Emoji.
         /// </summary>
         public static string Emoji {
@@ -174,6 +210,15 @@ namespace RobotizeFacebook.Resources {
         public static string FeelingOrActivity {
             get {
                 return ResourceManager.GetString("FeelingOrActivity", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Follow.
+        /// </summary>
+        public static string Follow {
+            get {
+                return ResourceManager.GetString("Follow", resourceCulture);
             }
         }
         
@@ -241,6 +286,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Hide all from.
+        /// </summary>
+        public static string HideAllFrom {
+            get {
+                return ResourceManager.GetString("HideAllFrom", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Like.
         /// </summary>
         public static string Like {
@@ -255,6 +309,15 @@ namespace RobotizeFacebook.Resources {
         public static string LiveVideo {
             get {
                 return ResourceManager.GetString("LiveVideo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to menu.
+        /// </summary>
+        public static string Menu {
+            get {
+                return ResourceManager.GetString("Menu", resourceCulture);
             }
         }
         
@@ -331,11 +394,38 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Remove from Friends Who Will See Your Post.
+        /// </summary>
+        public static string RemoveFromFriendsWhoWillSeeYourPost {
+            get {
+                return ResourceManager.GetString("RemoveFromFriendsWhoWillSeeYourPost", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Remove from Friends Who Won&apos;t See Your Post.
+        /// </summary>
+        public static string RemoveFromFriendsWhoWontSeeYourPost {
+            get {
+                return ResourceManager.GetString("RemoveFromFriendsWhoWontSeeYourPost", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Save Changes.
         /// </summary>
         public static string SaveChanges {
             get {
                 return ResourceManager.GetString("SaveChanges", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save post.
+        /// </summary>
+        public static string SavePost {
+            get {
+                return ResourceManager.GetString("SavePost", resourceCulture);
             }
         }
         
@@ -385,11 +475,29 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Send this to friends or post it on your timeline..
+        /// </summary>
+        public static string SendThisToFriendsOrPostItOnYourTimeline {
+            get {
+                return ResourceManager.GetString("SendThisToFriendsOrPostItOnYourTimeline", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Share.
         /// </summary>
         public static string Share {
             get {
                 return ResourceManager.GetString("Share", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Show Attachment.
+        /// </summary>
+        public static string ShowAttachment {
+            get {
+                return ResourceManager.GetString("ShowAttachment", resourceCulture);
             }
         }
         
@@ -417,6 +525,24 @@ namespace RobotizeFacebook.Resources {
         public static string TagFriends {
             get {
                 return ResourceManager.GetString("TagFriends", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Turn on notifications for this post.
+        /// </summary>
+        public static string TurnOnNotificationsForThisPost {
+            get {
+                return ResourceManager.GetString("TurnOnNotificationsForThisPost", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Unfollow.
+        /// </summary>
+        public static string Unfollow {
+            get {
+                return ResourceManager.GetString("Unfollow", resourceCulture);
             }
         }
         
