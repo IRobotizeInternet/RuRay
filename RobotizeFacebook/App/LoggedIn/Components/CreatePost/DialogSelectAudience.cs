@@ -4,7 +4,7 @@ using RobotizeFacebook.Resources;
 using RobotizeToolbox.Controls;
 using RobotizeToolbox.Dialogs;
 
-namespace RobotizeFacebook.App.LoggedIn
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class DialogSelectAudience : BaseDialog
     {

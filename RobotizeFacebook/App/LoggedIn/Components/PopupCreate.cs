@@ -5,7 +5,7 @@ using RobotizeToolbox.Controls.TriggerControls;
 using RobotizeToolbox.Dialogs;
 using System.Linq;
 
-namespace RobotizeFacebook.App.LoggedIn
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class PopupCreate : BaseDialog
     {

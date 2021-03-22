@@ -7,7 +7,7 @@ using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls;
 using RobotizeToolbox.Dialogs;
 
-namespace RobotizeFacebook.App
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class DialogCreatePost : BaseDialog
     {
