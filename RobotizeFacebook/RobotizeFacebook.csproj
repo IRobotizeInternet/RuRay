@@ -204,7 +204,7 @@
     <Compile Include="App\LoggedIn\Components\Feed\DialogPeopleWhoSharedThis.cs" />
     <Compile Include="App\LoggedIn\Components\Feed\DialogSeeWhoReactedToThis.cs" />
     <Compile Include="App\LoggedIn\Components\Feed\DialogShare.cs" />
-    <Compile Include="App\LoggedIn\Components\Feed\FeedUnit.cs" />
+    <Compile Include="App\LoggedIn\Components\Feed\ListItenFeedUnit.cs" />
     <Compile Include="App\LoggedIn\Components\HoverOver\HoverOverLike.cs" />
     <Compile Include="App\LoggedIn\Pages\Campus\FeedCampus.cs" />
     <Compile Include="App\LoggedIn\Pages\Campus\MenuItemsCampus.cs" />

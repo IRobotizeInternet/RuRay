@@ -8,8 +8,8 @@ namespace RobotizeFacebook.App.LoggedIn
     {
         public abstract string FeedUrl { get; }
         public virtual string BaseXPath { get; set; }
-        public ScrollControl<FeedUnit> FeedScroll => new ScrollControl<FeedUnit>(Driver, BaseXPath);
-        public FeedUnit GetFeedUnit(int index = 1) => new FeedUnit(BaseXPath, index);
+        public ScrollControl<ListItenFeedUnit> FeedScroll => new ScrollControl<ListItenFeedUnit>(Driver, BaseXPath);
+        public ListItenFeedUnit GetFeedUnit(int index = 1) => new ListItenFeedUnit(BaseXPath, index);
 
         protected Feed()
         {

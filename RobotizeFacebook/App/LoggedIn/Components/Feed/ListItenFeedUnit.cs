@@ -8,7 +8,7 @@ using System;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
-    public class FeedUnit : BaseDriver, IListItem
+    public class ListItenFeedUnit : BaseDriver, IListItem
     {
         private string BaseXPath { get; set; }//= "//div[@role='feed']";
         private readonly string _feedUnitIndexPath = "{0}//div[@aria-posinset={1}]/div/div/div/div/div/div/div/div[{2}]";
@@ -19,7 +19,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public string FeedCommentsXPath => $"{string.Format(_feedUnitIndexPath, BaseXPath, FeedUnitIndex, 4)}/div/div/div[2]";
         public int FeedUnitIndex { get; set; }
 
-        public FeedUnit(string baseXPath, int feedUnitIndex)
+        public ListItenFeedUnit(string baseXPath, int feedUnitIndex)
         {
             BaseXPath = baseXPath;
             FeedUnitIndex = feedUnitIndex;
