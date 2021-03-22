@@ -2,7 +2,7 @@
 
 namespace RobotizeFacebook.App.LoggedIn
 {
-    public class FeedJobsComposer : Feed
+    public class FeedJobsComposer : FeedComponent
     {
         public override string FeedUrl => "/jobs_composer/?job_opening_create_surface=JOBS&source=job_browser";
 

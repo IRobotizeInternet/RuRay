@@ -1,6 +1,6 @@
 ﻿namespace RobotizeFacebook.App.LoggedIn
 {
-    public class FeedAdTopics : Feed
+    public class FeedAdTopics : FeedComponent
     {
         public override string FeedUrl => "/adpreferences/advertisers/?entry_product=account_settings_menu";
 

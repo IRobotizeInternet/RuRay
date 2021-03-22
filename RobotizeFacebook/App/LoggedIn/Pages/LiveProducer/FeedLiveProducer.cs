@@ -2,7 +2,7 @@
 
 namespace RobotizeFacebook.App.LoggedIn
 {
-    public class FeedLiveProducer : Feed
+    public class FeedLiveProducer : FeedComponent
     {
         public override string FeedUrl => "/live/producer/";
 

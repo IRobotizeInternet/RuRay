@@ -2,7 +2,7 @@
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
-    public class FeedAppointmentSettings : Feed
+    public class FeedAppointmentSettings : FeedComponent
     {
         public override string FeedUrl => throw new NotImplementedException();
 

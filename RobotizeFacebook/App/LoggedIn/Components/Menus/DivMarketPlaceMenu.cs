@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
+using RobotizeFacebook.Resources;
 using RobotizeToolbox.Controls;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
@@ -13,12 +14,12 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         }
 
         public EventTriggerButton<PageMarketplace> TriggerButtonBrowseAllPage =>
-            new EventTriggerButton<PageMarketplace>(_driver, By.XPath("//span[text()='Browse All']"));
+            new EventTriggerButton<PageMarketplace>(_driver, By.XPath($"//span[text()='{ResLeftNav.BrowseAll}']"));
         public EventTriggerButton<PageMarketplace> TriggerButtonNotifications =>
-            new EventTriggerButton<PageMarketplace>(_driver, By.XPath("//span[text()='Notifications']"));
+            new EventTriggerButton<PageMarketplace>(_driver, By.XPath($"//span[text()='{ResLeftNav.Notifications}']"));
         public EventTriggerButton<PageMarketplace> TriggerButtonCart =>
-            new EventTriggerButton<PageMarketplace>(_driver, By.XPath("//span[text()='Cart']"));
+            new EventTriggerButton<PageMarketplace>(_driver, By.XPath($"//span[text()='{ResLeftNav.Cart}']"));
         public EventTriggerButton<PageMarketplace> TriggerButonYourAccount =>
-            new EventTriggerButton<PageMarketplace>(_driver, By.XPath("//span[text()='Your Account']"));
+            new EventTriggerButton<PageMarketplace>(_driver, By.XPath($"//span[text()='{ResLeftNav.YourAccount}']"));
     }
 }

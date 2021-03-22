@@ -7,7 +7,7 @@ using System;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
-    public class FeedUpcomingLiveVideosAndEvents : Feed
+    public class FeedUpcomingLiveVideosAndEvents : FeedComponent
     {
         public override string FeedUrl => "/live/producer/upcoming/";
         private string PostXPath = string.Empty;

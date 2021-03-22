@@ -2,7 +2,7 @@
 
 namespace RobotizeFacebook.App.LoggedIn
 {
-    public class FeedJobs : Feed
+    public class FeedJobs : FeedComponent
     {
         public override string FeedUrl => "/jobs/?source=bookmark";
 

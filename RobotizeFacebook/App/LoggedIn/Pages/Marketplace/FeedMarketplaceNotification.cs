@@ -2,7 +2,7 @@
 
 namespace RobotizeFacebook.App.LoggedIn.Pages.Marketplace
 {
-    public class FeedMarketplaceNotification : Feed
+    public class FeedMarketplaceNotification : FeedComponent
     {
         public override string FeedUrl => "marketplace/notifications";
 

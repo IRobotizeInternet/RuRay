@@ -4,7 +4,7 @@ using RobotizeToolbox.Controls;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
-    public class FeedCreateEvent : Feed
+    public class FeedCreateEvent : FeedComponent
     {
         public override string FeedUrl => "/events/create/";
 

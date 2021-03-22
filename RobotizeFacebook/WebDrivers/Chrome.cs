@@ -5,9 +5,6 @@ using Polly.Retry;
 using RobotizeFacebook.Services;
 using RobotizeFacebook.Utilities;
 using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
 
 namespace RobotizeFacebook.WebDrivers
 {
@@ -30,6 +27,9 @@ namespace RobotizeFacebook.WebDrivers
                 throw new Exception($"{nameof(BaseURL)} is not set.");
             }
 
+            // NOTE: This will cause problem when we run this code 
+            // in multi threaded program. Remove this code, to avoid 
+            // running into problems when experimenting with parallel runs.
             ServiceTask.CloseTask(nameof(ChromeDriver));
             var options = new ChromeOptions
             {
@@ -52,8 +52,6 @@ namespace RobotizeFacebook.WebDrivers
             //options.BinaryLocation = @"C:\Program Files (x86)\Google\Chrome\Application\chrome.exe";
 
             ChromeDriver driver = null;
-
-            // Using Polly library: https://github.com/App-vNext/Polly
 
             RetryPolicy().Execute(() =>
             {

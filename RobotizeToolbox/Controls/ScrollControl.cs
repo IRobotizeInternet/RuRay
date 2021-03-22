@@ -27,15 +27,18 @@ namespace RobotizeToolbox.CommonControls
         // Add Videos --            //input/parent::label/parent::div/parent::div//img
         public int CurrentRowIndex { get; set; }
         public int RowCount => Driver.FindElements(By.XPath($"{BaseXPath}")).Count;//div[contains(@data-pagelet,'Feed')]")).Count;
-        public string GetRowXPath(int positionInSet) => $"{BaseXPath}//['{positionInSet}']";
+        public string GetRowXPath(int positionInSet) => $"{BaseXPath}{string.Format(PositionXPath, positionInSet)}";
         public string BaseXPath { get; set; }
+        public string PositionXPath { get; set; }
         public TListItem ListITems { get; set; }
 
         public ScrollControl(RemoteWebDriver driver,
             string baseXPath = null,
+            string positionXPath = null,
             int currentRowIndex = 1) : base(driver, By.XPath(baseXPath))
         {
             BaseXPath = baseXPath;
+            PositionXPath = positionXPath;
             CurrentRowIndex = currentRowIndex;
         }
 

@@ -1,6 +1,6 @@
 ﻿namespace RobotizeFacebook.App.LoggedIn
 {
-    public class FeedReviewTagsOnYourPosts : Feed
+    public class FeedReviewTagsOnYourPosts : FeedComponent
     {
         public override string FeedUrl => "/allactivity/?category_key=tagreview&log_filter=tagreview";
 

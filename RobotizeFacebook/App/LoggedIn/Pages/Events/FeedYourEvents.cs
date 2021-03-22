@@ -2,7 +2,7 @@
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
-    public class FeedYourEvents : Feed
+    public class FeedYourEvents : FeedComponent
     {
         public override string FeedUrl => "/events/calendar/";
 

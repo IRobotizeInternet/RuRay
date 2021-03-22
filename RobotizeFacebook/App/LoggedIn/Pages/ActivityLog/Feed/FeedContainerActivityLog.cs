@@ -1,6 +1,6 @@
 ﻿namespace RobotizeFacebook.App.LoggedIn
 {
-    public class FeedActivityLog : Feed
+    public class FeedActivityLog : FeedComponent
     {
         public override string FeedUrl => "/allactivity/?category_key=SEARCH&log_filter=search";
 

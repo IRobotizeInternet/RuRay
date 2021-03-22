@@ -2,7 +2,7 @@
 
 namespace RobotizeFacebook.App.LoggedIn
 {
-    public class FeedGroups : Feed
+    public class FeedGroups : FeedComponent
     {
         public override string FeedUrl => "/groups/feed/";
 

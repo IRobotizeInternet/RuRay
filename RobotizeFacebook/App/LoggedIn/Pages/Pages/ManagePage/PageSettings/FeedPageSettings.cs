@@ -4,7 +4,7 @@ using System;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
-    public class FeedPageSettings : Feed
+    public class FeedPageSettings : FeedComponent
     {
         public override string FeedUrl => throw new NotImplementedException();
 

@@ -8,9 +8,8 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class PageHome : BasePage
     {
-        public PageHome(string baseXPath = "//div[@role='feed']") : base(baseXPath)
+        public PageHome()
         {
-
         }
 
         public EventTriggerButton<PageCreateAStory> EventTriggerButtonCreateStory =>
@@ -35,13 +34,15 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
             Driver.FindElements(By.XPath($"//div[@role='main']//div[contains(@aria-label,'{ResCreatePost.FriendRoomTile}')]"))?
             .Select(x => new ButtonImage(Driver, By.XPath(x.Text.Substring(x.Text.IndexOf($"{ResCreatePost.FriendRoomTile}"), ResCreatePost.FriendRoomTile.Length))));
 
+        public FeedHome Feeds => new FeedHome();
+
         public override string PageUrl => "/";
 
         public override By ByForPage => throw new System.NotImplementedException();
 
         public override void RunConformance()
         {
-                   
+            Feeds.FeedScroll.ScrollingDownWithAGivenInterval();
         }
 
         //public void GenerateAllElements()

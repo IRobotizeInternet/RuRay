@@ -1,6 +1,6 @@
 ﻿namespace RobotizeFacebook.App.LoggedIn
 {
-    public class FeedChats : Feed
+    public class FeedChats : FeedComponent
     {
         public override string FeedUrl => "/messages";
 
