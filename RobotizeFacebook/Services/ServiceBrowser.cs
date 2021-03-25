@@ -31,6 +31,7 @@ namespace RobotizeFacebook.Services
                 process.Start();
             }
             
+            // This is a very interesting hack. Read the code carefully to understand it better.
             var envSettings = EnvironmentSettings.SettingsData;
             if (int.TryParse(envSettings.Details?.ProcessId, out var previousSessionId)
                 && Process.GetProcessesByName("chrome")

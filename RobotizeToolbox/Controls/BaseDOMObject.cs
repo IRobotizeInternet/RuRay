@@ -161,11 +161,11 @@ namespace RobotizeToolbox.CommonControls
         public void ScrollToElement(IWebElement webElement = null)
         {
             webElement = webElement ?? Driver.FindElement(ByForElement);
-
-            try {
+            try
+            {
                 JScrollSmooth(webElement); 
             }
-            catch (Exception ex) { ActionsScrollToElement(webElement); }
+            catch (Exception) { ActionsScrollToElement(webElement); }
         }
 
         // Used this type of sloppy loops to mimic scrolling with finger.
@@ -216,6 +216,7 @@ namespace RobotizeToolbox.CommonControls
                 }
                 catch (StaleElementReferenceException ex)
                 {
+                    Debug.WriteLine(ex.Message);
                     // ignore and try again
                 }
             });

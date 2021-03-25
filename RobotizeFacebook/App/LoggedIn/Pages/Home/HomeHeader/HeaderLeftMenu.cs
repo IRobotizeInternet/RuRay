@@ -7,14 +7,12 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class HeaderLeftMenu : BaseDriver
     {
-        private readonly RemoteWebDriver _driver;
-
         // Items on left.
-        public Hyperlink<PageUserTimeline> HyperLinkFacebookTitleIcon => 
-            new Hyperlink<PageUserTimeline>(_driver, By.XPath("//a[@aria-label='Facebook']"));
+        public Hyperlink<PageUserTimeline> HyperLinkFacebookTitleIcon =>
+            new Hyperlink<PageUserTimeline>(Driver, By.XPath("//a[@aria-label='Facebook']"));
 
         public SearchboxSearchFacebook SearchboxFacebook => 
-            new SearchboxSearchFacebook(_driver, By.XPath($"//input[@placeholder='{ResHomePageHeader.SearchFacebook}']"));
+            new SearchboxSearchFacebook(Driver, By.XPath($"//input[@placeholder='{ResHomePageHeader.SearchFacebook}']"));
         
         public override void RunConformance()
         {

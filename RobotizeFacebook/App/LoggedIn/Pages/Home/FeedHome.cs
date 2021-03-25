@@ -6,13 +6,20 @@
 
         public override string FeedUrl => "/";
 
+        public FeedHome()
+        {
+            base.BaseXPath = "//div[contains(@data-pagelet,'Feed')]";
+            base.PositionXPath = "//div[@aria-posinset='{0}']";
+        }
+
+        public void TryToSetCurrentFeedIndex()
+        {
+            
+        }
+
         public override void RunConformance()
         {
             throw new System.NotImplementedException();
-        }
-
-        public FeedHome(string baseXPath = "//div[@role='feed']", string positionXPath = "//div[@aria-posinset='{0}']") : base(baseXPath, positionXPath)
-        {
         }
     }
 }

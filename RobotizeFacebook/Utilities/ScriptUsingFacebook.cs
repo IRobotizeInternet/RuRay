@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Threading;
 using OpenQA.Selenium;
@@ -64,7 +65,7 @@ namespace RobotizeFacebook.Utilities
                                     {
                                         functionSummaryElements = page.GetFunctionNames[k].FindElements(By.XPath($"//div[@role='main']/div//div[2]//div[@role='button']//span[text()=\"{funtionNamePart}\"]/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::h3/following-sibling::div[1]//ol"));
                                     }
-                                    catch (Exception ex)
+                                    catch (Exception)
                                     {
                                         page.ClickElement(page.GetFunctionNames[k]);
                                         continue;
@@ -74,7 +75,7 @@ namespace RobotizeFacebook.Utilities
                                     {
                                         functionSummaryHeader = page.GetFunctionNames[k].FindElements(By.XPath($"//div[@role='main']/div//div[2]//div[@role='button']//span[text()=\"{funtionNamePart}\"]/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::h3/following-sibling::div[1]//ol/preceding-sibling::h2")).Select(x => x.Text).ToList();
                                     }
-                                    catch (Exception ex) { }
+                                    catch (Exception) { }
                                     var index = 0;
                                     foreach (var functionSummaryElement in functionSummaryElements)
                                     {
@@ -106,6 +107,7 @@ namespace RobotizeFacebook.Utilities
                 }
                 catch (StaleElementReferenceException e)
                 {
+                    Debug.WriteLine(e.Message);
                 }
                 attempts++;
                 Thread.Sleep(3000);
