@@ -25,10 +25,10 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
             new EventTriggerButton<DialogCreatePost>(Driver, By.XPath($"//div[@role='main']//span[text()='{ResCreatePost.PhotoOrVideo}']"));
 
         public EventTriggerButton<DialogCreatePost> EventTriggerButtonFeelingOrActivity =>
-                   new EventTriggerButton<DialogCreatePost>(Driver, By.XPath($"//div[@role='main']//span[text()='{ResCreatePost.FeelingOrActivity}']"));
+            new EventTriggerButton<DialogCreatePost>(Driver, By.XPath($"//div[@role='main']//span[text()='{ResCreatePost.FeelingOrActivity}']"));
 
         public EventTriggerButton<DialogCreateYourRoom> EventTriggerButtonCreateNewRoom =>
-           new EventTriggerButton<DialogCreateYourRoom>(Driver, By.XPath($"//div[@role='main']//span[text()='{ResCreatePost.NewRoom}' or text()='{ResCreatePost.CreateRoom}']"));
+            new EventTriggerButton<DialogCreateYourRoom>(Driver, By.XPath($"//div[@role='main']//span[text()='{ResCreatePost.NewRoom}' or text()='{ResCreatePost.CreateRoom}']"));
 
         public IEnumerable<ButtonImage> AllOnlineFriends =>
             Driver.FindElements(By.XPath($"//div[@role='main']//div[contains(@aria-label,'{ResCreatePost.FriendRoomTile}')]"))?
@@ -42,8 +42,8 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 
         public override void RunConformance()
         {
-            //Feeds.FeedScroll.ScrollingDownWithAGivenInterval();
-            Feeds.FeedScroll.ScrollingUpWithAGivenInterval();
+            Feeds.FeedScroll.ScrollingDownWithAGivenInterval();
+            //Feeds.FeedScroll.ScrollingUpWithAGivenInterval();
         }
 
         //public void GenerateAllElements()
