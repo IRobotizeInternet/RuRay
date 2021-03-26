@@ -42,8 +42,8 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 
         public override void RunConformance()
         {
-            Feeds.FeedScroll.ScrollingDownWithAGivenInterval();
-            //Feeds.FeedScroll.ScrollingUpWithAGivenInterval();
+            Feeds.FeedScroll.ScrollingDownWithAGivenInterval(scrollFromCurrentLocation: true);
+            Feeds.FeedScroll.ScrollingUpWithAGivenInterval(scrollFromCurrentLocation: true);
         }
 
         //public void GenerateAllElements()

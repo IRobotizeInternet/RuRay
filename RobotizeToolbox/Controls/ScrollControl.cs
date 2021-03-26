@@ -45,8 +45,13 @@ namespace RobotizeToolbox.CommonControls
         /// <summary>
         /// Scroll to the last row.
         /// </summary>
-        public void ScrollingDownWithAGivenInterval(int scrollingDelay = 3000)
+        public void ScrollingDownWithAGivenInterval(
+            int numberOfUnitToScroll = 10,
+            bool scrollFromCurrentLocation = false, 
+            int scrollingDelay = 3000)
         {
+            if (scrollFromCurrentLocation) SetIndexOfElementInViewPort();
+            var counter = 0;
             while (true)
             {
                 var rowCountBeforeScroll = RowCount;
@@ -54,6 +59,7 @@ namespace RobotizeToolbox.CommonControls
                 var rowCountAfterScroll = RowCount;
                 if (CurrentRowIndex >= RowCount && rowCountBeforeScroll == rowCountAfterScroll) break;
                 Thread.Sleep(scrollingDelay);
+                if (counter <= numberOfUnitToScroll) break;
             }
             Thread.Sleep(3000);
         }
@@ -61,13 +67,19 @@ namespace RobotizeToolbox.CommonControls
         /// <summary>
         /// Scroll to the first row.
         /// </summary>
-        public void ScrollingUpWithAGivenInterval(int scrollingDelay = 3000)
+        public void ScrollingUpWithAGivenInterval(
+            int numberOfUnitToScroll = 10,
+            bool scrollFromCurrentLocation = false, 
+            int scrollingDelay = 3000)
         {
+            if (scrollFromCurrentLocation) SetIndexOfElementInViewPort();
+            var counter = 0;
             while (true)
             {
                 if (CurrentRowIndex <= 0) break;
                 ScrollFeedUnit(CurrentRowIndex--);
                 Thread.Sleep(scrollingDelay);
+                if (counter <= numberOfUnitToScroll) break;
             }
             Thread.Sleep(3000);
         }
@@ -101,6 +113,18 @@ namespace RobotizeToolbox.CommonControls
         /// </summary>
         public void ScrollFeedUnit(string headerText)
         {
+        }
+
+        public void SetIndexOfElementInViewPort()
+        {
+            var index = 1;
+            for (; index < Driver.FindElements(By.XPath(BaseXPath)).Count; index++)
+            {
+                // If element not in visible view port continue searching.
+                if(!JscriptExecutor.IsElementOutViewport(Driver, GetRowXPath(index))) continue;
+                break;
+            }
+            CurrentRowIndex = index;
         }
     }
 }
