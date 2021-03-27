@@ -31,50 +31,15 @@ namespace RobotizeToolbox.Extensions
         public static bool IsElementOutViewport(RemoteWebDriver driver, string xpath)
         {
             var jsString = "function isElementOutViewport() {" +
-                    $"var el = document.evaluate(\"{xpath}\", " +
-                    @"document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
-                    var top = el.offsetTop;
-                    var left = el.offsetLeft;
-                    var width = el.offsetWidth;
-                    var height = el.offsetHeight;
-
-                    while (el.offsetParent)
-                    {
-                        el = el.offsetParent;
-                        top += el.offsetTop;
-                        left += el.offsetLeft;
-                    }
-
-                    return (
-                      top < (window.pageYOffset + window.innerHeight) &&
-                      left < (window.pageXOffset + window.innerWidth) &&
-                      (top + height) > window.pageYOffset &&
-                      (left + width) > window.pageXOffset
-                    );
-                }
-                return this.isElementOutViewport();";
-            
-            try
-            {
-                var js = (IJavaScriptExecutor)driver;
-                return (bool)js.ExecuteScript(jsString);
-            }
-            catch {
-                return false;
-            }
-        }
-
-        public static bool IsElementOutViewport_1(RemoteWebDriver driver, string xpath)
-        {
-            var jsString = "function isElementOutViewport() {" +
+                    // Get element buy xPath
                     $"var element = document.evaluate(\"{xpath}\", " +
                     @"document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
                        const rect = element.getBoundingClientRect();
-                    console.log(rect.top);
-                    console.log(rect.bottom)
-                    console.log((document.documentElement.clientHeight));
-                    let hight = (window.innerHeight || document.documentElement.clientHeight);
-                    let width = (window.innerWidth || document.documentElement.clientWidth);
+                    
+                    let hight = (document.documentElement.clientHeight);
+                    let width = (document.documentElement.clientWidth);
+                    
+                    // Check if the given element is entirely within the viewport
                     var res = (
                         rect.top >= 0 &&
                         rect.left >= 0 &&
@@ -84,9 +49,19 @@ namespace RobotizeToolbox.Extensions
                     
                     let diff = 0;
                     if(res) return res;
+
+                    // Check if the given element streaches top and botton of the viewport
                     else if(res == false && (rect.top < 0 && rect.bottom > hight)) return true;
+            
+                    // Check if the given element's top portion is beyond viewport
                     else if(rect.top < 0) diff = rect.bottom + rect.top;
+                    
+                    // Check if the given element's bottom portion is beyond viewport
                     else if(rect.bottom > hight) diff = hight - rect.top;
+                    
+                    // We set the current element is in viewport if it is atleast hight/2.5
+                    // I choose 2.5 and trial an error, initial thoughts were check if half of the 
+                    // current element is visible.
                     return diff >= hight/2.5;
                 }
             return isElementOutViewport();";

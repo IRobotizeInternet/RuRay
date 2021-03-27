@@ -55,7 +55,7 @@ namespace RobotizeToolbox.CommonControls
             while (true)
             {
                 var rowCountBeforeScroll = RowCount;
-                ScrollFeedUnit(CurrentRowIndex++, true);
+                ScrollFeedUnit(++CurrentRowIndex, true);
                 var rowCountAfterScroll = RowCount;
                 if (CurrentRowIndex >= RowCount && rowCountBeforeScroll == rowCountAfterScroll) break;
                 Thread.Sleep(scrollingDelay);
@@ -77,7 +77,7 @@ namespace RobotizeToolbox.CommonControls
             while (true)
             {
                 if (CurrentRowIndex <= 0) break;
-                ScrollFeedUnit(CurrentRowIndex--, false);
+                ScrollFeedUnit(--CurrentRowIndex, false);
                 Thread.Sleep(scrollingDelay);
                 if (counter++ > numberOfUnitToScroll) break;
             }
@@ -122,7 +122,7 @@ namespace RobotizeToolbox.CommonControls
             for (; index < elementsCount; index++)
             {
                 // If element not in visible view port continue searching.
-                if(!JscriptExecutor.IsElementOutViewport_1(Driver, GetRowXPath(index))) continue;
+                if(!JscriptExecutor.IsElementOutViewport(Driver, GetRowXPath(index))) continue;
                 CurrentRowIndex = index;
                 return;
             }
