@@ -46,7 +46,7 @@ namespace RobotizeToolbox.CommonControls
         /// Scroll to the last row.
         /// </summary>
         public void ScrollingDownWithAGivenInterval(
-            int numberOfUnitToScroll = 10,
+            int numberOfUnitToScroll = 3,
             bool scrollFromCurrentLocation = false, 
             int scrollingDelay = 3000)
         {
@@ -68,7 +68,7 @@ namespace RobotizeToolbox.CommonControls
         /// Scroll to the first row.
         /// </summary>
         public void ScrollingUpWithAGivenInterval(
-            int numberOfUnitToScroll = 10,
+            int numberOfUnitToScroll = 3,
             bool scrollFromCurrentLocation = false, 
             int scrollingDelay = 3000)
         {
