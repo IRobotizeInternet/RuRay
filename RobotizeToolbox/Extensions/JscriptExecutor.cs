@@ -1,4 +1,5 @@
-﻿using OpenQA.Selenium;
+﻿using System;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 
 namespace RobotizeToolbox.Extensions
@@ -52,9 +53,79 @@ namespace RobotizeToolbox.Extensions
                     );
                 }
                 return this.isElementOutViewport();";
-            var js = (IJavaScriptExecutor)driver;
-            var res =  (bool)js.ExecuteScript(jsString);
-            return res;
+            
+            try
+            {
+                var js = (IJavaScriptExecutor)driver;
+                return (bool)js.ExecuteScript(jsString);
+            }
+            catch {
+                return false;
+            }
+        }
+
+        public static bool IsElementOutViewport_1(RemoteWebDriver driver, string xpath)
+        {
+            var jsString = "function isElementOutViewport() {" +
+                    $"var element = document.evaluate(\"{xpath}\", " +
+                    @"document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+                    const rect = element.getBoundingClientRect();
+                    return (
+                        rect.top >= 0 &&
+                        rect.left >= 0 &&
+                        rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                        rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+                    );
+                }
+                return this.isElementOutViewport();";
+
+
+//            function isElementOutViewport()
+//            {
+//                var element = document.evaluate("//div[contains(@data-pagelet,'Feed')]//div[@aria-posinset='12']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+//                const rect = element.getBoundingClientRect();
+//                console.log(rect.top);
+//                console.log(rect.left);
+//                console.log(rect.bottom)
+//console.log((rect.bottom / 3) <= (window.innerHeight || document.documentElement.clientHeight));
+//                console.log(rect.right <= (window.innerWidth || document.documentElement.clientWidth));
+//                var a = (
+//                    rect.top >= -100 &&
+//                    rect.left >= 0 &&
+//                    (rect.bottom / 3) <= (window.innerHeight || document.documentElement.clientHeight) &&
+//                    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+//                );
+//                console.log(a);
+//                return a;
+//            }
+//            this.isElementOutViewport();
+            try
+            {
+                var js = (IJavaScriptExecutor)driver;
+                return (bool)js.ExecuteScript(jsString);
+            }
+            catch(Exception ex)
+            {
+                return false;
+            }
+        }
+
+        public static bool GetElementFromMiddleOfViewPoint(RemoteWebDriver driver)
+        {
+            var jsString = @"return document.elementFromPoint(window.innerWidth/2, window.innerHeight/2);";
+
+            try
+            {
+                var js = (IJavaScriptExecutor)driver;
+                var ele = (IWebElement)js.ExecuteScript(jsString);
+                var elementId = ((RemoteWebElement)js.ExecuteScript(jsString));
+                return true;
+            }
+            catch(Exception ex)
+            {
+                return false;
+            }
+            
         }
 
         /// <summary>
@@ -88,6 +159,13 @@ namespace RobotizeToolbox.Extensions
                                 "}" +
                                 "return getElementXPath(arguments[0]).toLowerCase();";
             return (string)((IJavaScriptExecutor)driver).ExecuteScript(javaScript, element);
+        }
+    }
+
+    public class ChildRemoteWebElement : RemoteWebElement
+    {
+        public ChildRemoteWebElement(RemoteWebDriver parentDriver, string id) : base(parentDriver, id)
+        {
         }
     }
 }

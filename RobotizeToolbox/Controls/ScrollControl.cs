@@ -55,11 +55,11 @@ namespace RobotizeToolbox.CommonControls
             while (true)
             {
                 var rowCountBeforeScroll = RowCount;
-                ScrollFeedUnit(CurrentRowIndex++);
+                ScrollFeedUnit(CurrentRowIndex++, true);
                 var rowCountAfterScroll = RowCount;
                 if (CurrentRowIndex >= RowCount && rowCountBeforeScroll == rowCountAfterScroll) break;
                 Thread.Sleep(scrollingDelay);
-                if (counter <= numberOfUnitToScroll) break;
+                if (counter++ > numberOfUnitToScroll) break;
             }
             Thread.Sleep(3000);
         }
@@ -77,9 +77,9 @@ namespace RobotizeToolbox.CommonControls
             while (true)
             {
                 if (CurrentRowIndex <= 0) break;
-                ScrollFeedUnit(CurrentRowIndex--);
+                ScrollFeedUnit(CurrentRowIndex--, false);
                 Thread.Sleep(scrollingDelay);
-                if (counter <= numberOfUnitToScroll) break;
+                if (counter++ > numberOfUnitToScroll) break;
             }
             Thread.Sleep(3000);
         }
@@ -102,9 +102,9 @@ namespace RobotizeToolbox.CommonControls
         /// <summary>
         /// Scroll up for a given position in set
         /// </summary>
-        public void ScrollFeedUnit(int positionInSet)
+        public void ScrollFeedUnit(int positionInSet, bool scrollUp = true)
         {
-            ScrollToElement(Driver.FindElementWithTimeSpan(By.XPath(GetRowXPath(positionInSet))));
+            ScrollToElement(Driver.FindElementWithTimeSpan(By.XPath(GetRowXPath(positionInSet))), scrollUp);
             Driver.FindElementWithTimeSpan(By.XPath(GetRowXPath(positionInSet)));
         }
 
@@ -115,16 +115,17 @@ namespace RobotizeToolbox.CommonControls
         {
         }
 
-        public void SetIndexOfElementInViewPort()
+        private void SetIndexOfElementInViewPort()
         {
+            var elementsCount = Driver.FindElements(By.XPath(BaseXPath)).Count;
             var index = 1;
-            for (; index < Driver.FindElements(By.XPath(BaseXPath)).Count; index++)
+            for (; index < elementsCount; index++)
             {
                 // If element not in visible view port continue searching.
-                if(!JscriptExecutor.IsElementOutViewport(Driver, GetRowXPath(index))) continue;
-                break;
+                if(!JscriptExecutor.IsElementOutViewport_1(Driver, GetRowXPath(index))) continue;
+                CurrentRowIndex = index;
+                return;
             }
-            CurrentRowIndex = index;
         }
     }
 }

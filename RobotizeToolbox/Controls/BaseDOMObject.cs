@@ -158,18 +158,20 @@ namespace RobotizeToolbox.CommonControls
             return elementText;
         }
 
-        public void ScrollToElement(IWebElement webElement = null)
+        public void ScrollToElement(IWebElement webElement = null, bool scrollUp = true)
         {
             webElement = webElement ?? Driver.FindElement(ByForElement);
             try
             {
-                JScrollSmooth(webElement); 
+                if (scrollUp) JScrollSmoothUp(webElement);
+                else JScrollSmoothDown(webElement);
             }
             catch (Exception) { ActionsScrollToElement(webElement); }
         }
 
         // Used this type of sloppy loops to mimic scrolling with finger.
-        public void JScrollSmooth(IWebElement webElement = null)
+        // How did I came up with these numbers, just tried bunch of things to see if it is smooth. 
+        public void JScrollSmoothUp(IWebElement webElement = null)
         {
             webElement = webElement ?? Driver.FindElementWithTimeSpan(ByForElement);
             for (int i = 0; i < 10; i++) Driver.ExecuteScript("window.scrollBy(0, 1)", webElement);
@@ -180,6 +182,23 @@ namespace RobotizeToolbox.CommonControls
             JScrollToElement(webElement);
             for (int i = 0; i < 10; i++) Driver.ExecuteScript("window.scrollBy(0, -2)", webElement);
             for (int i = 0; i < 5; i++) Driver.ExecuteScript("window.scrollBy(0, -5)", webElement);
+
+        }
+
+        // Used this type of sloppy loops to mimic scrolling with finger.
+        // How did I came up with these numbers, just tried bunch of things to see if it is smooth. 
+        public void JScrollSmoothDown(IWebElement webElement = null)
+        {
+            webElement = webElement ?? Driver.FindElementWithTimeSpan(ByForElement);
+            for (int i = 0; i < 10; i++) Driver.ExecuteScript("window.scrollBy(0, -1)", webElement);
+            for (int i = 0; i < 10; i++) Driver.ExecuteScript("window.scrollBy(0, -2)", webElement);
+            for (int i = 0; i < 30; i++) Driver.ExecuteScript("window.scrollBy(0, -30)", webElement);
+            for (int i = 0; i < 7; i++) Driver.ExecuteScript("window.scrollBy(0, -3)", webElement);
+            for (int i = 0; i < 5; i++) Driver.ExecuteScript("window.scrollBy(0, -1)", webElement);
+            JScrollToElement(webElement);
+            for (int i = 0; i < 10; i++) Driver.ExecuteScript("window.scrollBy(0, 2)", webElement);
+            for (int i = 0; i < 5; i++) Driver.ExecuteScript("window.scrollBy(0, 5)", webElement);
+
         }
 
         public void JClickElement(IWebElement webElement = null)
