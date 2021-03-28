@@ -3,16 +3,17 @@ using OpenQA.Selenium;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
-    public class FeedHome : FeedComponent
+    public class FeedHome : Feed
     {
         public CreatePost SectionCreatePost => new CreatePost();
 
         public override string FeedUrl => "/";
+        public int FeedIndex = 1;
 
-        public FeedHome()
+        public FeedHome() : 
+            base(baseXPath: "//div[contains(@data-pagelet,'Feed')]", positionXPath: "//div[@aria-posinset='{0}']")
         {
-            base.BaseXPath = "//div[contains(@data-pagelet,'Feed')]";
-            base.PositionXPath = "//div[@aria-posinset='{0}']";
+           
         }
 
         public override void RunConformance()

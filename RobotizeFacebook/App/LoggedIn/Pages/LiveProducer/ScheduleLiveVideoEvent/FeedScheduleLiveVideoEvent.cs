@@ -1,6 +1,6 @@
 ﻿namespace RobotizeFacebook.App.LoggedIn.Pages
 {
-    public class FeedScheduleLiveVideoEvent : FeedComponent
+    public class FeedScheduleLiveVideoEvent : Feed
     {
         public override string FeedUrl => "/live/producer/events/create/";
 

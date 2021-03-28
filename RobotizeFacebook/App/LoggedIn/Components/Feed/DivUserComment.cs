@@ -22,6 +22,8 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         {
             get
             {
+                // TODO: Need to fix this, HoverOverLike should be initialized with base path 
+                //var xPath = $"{FeedCommentControlsXPath}//span[text()='{ResHomePage.Like}']";
                 var hoverButton = new EventTriggerButton<HoverOverLike>(Driver, By.XPath($"{BaseXPath}//div[text()='{ResHomePage.Like}']"));
                 hoverButton.Hoverover();
                 return hoverButton;

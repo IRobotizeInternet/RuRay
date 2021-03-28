@@ -2,7 +2,7 @@
 
 namespace RobotizeFacebook.App.LoggedIn
 {
-    public class FeedMovies : FeedComponent
+    public class FeedMovies : Feed
     {
         public override string FeedUrl => "/movies";
 

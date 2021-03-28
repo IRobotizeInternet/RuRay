@@ -2,7 +2,7 @@
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
-    public class FeedNotifications : FeedComponent
+    public class FeedNotifications : Feed
     {
         public override string FeedUrl => "/notifications";
 

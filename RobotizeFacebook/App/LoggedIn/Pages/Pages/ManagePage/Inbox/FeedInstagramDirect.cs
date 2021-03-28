@@ -2,7 +2,7 @@
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
-    public class FeedInstagramDirect : FeedComponent
+    public class FeedInstagramDirect : Feed
     {
         public override string FeedUrl => throw new NotImplementedException();
 

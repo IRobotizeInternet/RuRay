@@ -6,6 +6,9 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class HoverOverLike : BaseHoverOver
     {
+        public HoverOverLike()
+        {
+        }
         public string BaseXPath = "//div[@data-pagelet='page']/following-sibling::div/div//div";
         public Button ButtonReactionLike => new Button(Driver, By.XPath($"{BaseXPath}[@aria-label='{ResHomePage.Like}']"));
         public Button ButtonReactionLove => new Button(Driver, By.XPath($"{BaseXPath}[@aria-label='{ResHomePage.Love}']"));

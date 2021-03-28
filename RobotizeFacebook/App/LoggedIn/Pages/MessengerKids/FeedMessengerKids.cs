@@ -2,7 +2,7 @@
 
 namespace RobotizeFacebook.App.LoggedIn
 {
-    public class FeedMessengerKids : FeedComponent
+    public class FeedMessengerKids : Feed
     {
         public override string FeedUrl => "/messenger_kids";
 

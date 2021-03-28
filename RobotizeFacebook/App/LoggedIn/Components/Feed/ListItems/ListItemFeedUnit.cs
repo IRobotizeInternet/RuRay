@@ -19,10 +19,11 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public string FeedCommentsXPath => $"{string.Format(_feedUnitIndexPath, BaseXPath, FeedUnitIndex, 4)}/div/div/div[2]";
         public int FeedUnitIndex { get; set; }
 
-        public ListItemFeedUnit(string baseXPath, int feedUnitIndex)
+        public ListItemFeedUnit(string baseXPath, int feedUnitIndex = 1)
         {
             BaseXPath = baseXPath;
             FeedUnitIndex = feedUnitIndex;
+            //var hoverButton = new EventTriggerButton<HoverOverLike>(Driver, By.XPath($"{BaseXPath}//div[text()='{ResHomePage.Like}']"));
         }
 
         public EventTriggerButton<DialogSeeWhoReactedToThis> EventTriggerButtonSeeWhoReactedToThis =>
@@ -34,7 +35,8 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public EventTriggerButton<DialogPeopleWhoSharedThis> EventTriggerButtonPeopleWhoSharedThis =>
             new EventTriggerButton<DialogPeopleWhoSharedThis>(Driver, By.XPath($"{FeedCommentControlsXPath}//button[@aria-label='{ResHomePage.Shares}']"));
 
-        public Button ButtonLike => new Button(Driver, By.XPath($"{FeedCommentControlsXPath}//span[text()='{ResHomePage.Like}']"));
+        public EventTriggerButton<HoverOverLike> ButtonLike =>
+            new EventTriggerButton<HoverOverLike>(Driver, By.XPath($"{FeedCommentControlsXPath}//span[text()='{ResHomePage.Like}']"));
         public EventTriggerButton<PopupComments> EventTriggerButtonComment =>
            new EventTriggerButton<PopupComments>(Driver, By.XPath($"{FeedCommentControlsXPath}//span[text()='{ResHomePage.Comment}']"));
         public EventTriggerButton<DialogShare> EventTriggerButtonShare =>

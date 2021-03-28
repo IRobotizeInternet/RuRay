@@ -2,7 +2,7 @@
 
 namespace RobotizeFacebook.App.LoggedIn
 {
-    public class FeedMemories : FeedComponent
+    public class FeedMemories : Feed
     {
         public override string FeedUrl => "/memories";
 

@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
+using System.Threading;
 using OpenQA.Selenium;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.Controls;
@@ -34,7 +35,15 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
             Driver.FindElements(By.XPath($"//rdiv[@role='main']//div[contains(@aria-label,'{ResCreatePost.FriendRoomTile}')]"))?
             .Select(x => new ButtonImage(Driver, By.XPath(x.Text.Substring(x.Text.IndexOf($"{ResCreatePost.FriendRoomTile}"), ResCreatePost.FriendRoomTile.Length))));
 
-        public FeedHome Feeds => new FeedHome();
+        public FeedHome _feed;
+        public FeedHome Feed
+        {
+            get
+            {
+                if (_feed == null) _feed = new FeedHome();
+                return _feed;
+            }
+        }
 
         public override string PageUrl => "/";
 
@@ -42,8 +51,13 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 
         public override void RunConformance()
         {
-            Feeds.FeedScroll.ScrollingDownWithAGivenInterval(scrollFromCurrentLocation: true);
-            Feeds.FeedScroll.ScrollingUpWithAGivenInterval(scrollFromCurrentLocation: true);
+            Feed.FeedScroll.ScrollingDownWithAGivenInterval(1, scrollFromCurrentLocation: true);
+            var likeButton = Feed.FeedScroll.ListITem.ButtonLike;
+            likeButton.Hoverover().ButtonReactionLike.Click();
+            Thread.Sleep(2000);
+            likeButton.Click();
+
+            Feed.FeedScroll.ScrollingUpWithAGivenInterval(scrollFromCurrentLocation: true);
         }
 
         //public void GenerateAllElements()

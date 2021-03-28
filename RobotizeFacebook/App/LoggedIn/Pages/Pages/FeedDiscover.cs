@@ -2,7 +2,7 @@
 
 namespace RobotizeFacebook.App.LoggedIn
 {
-    public class FeedDiscover : FeedComponent
+    public class FeedDiscover : Feed
     {
         public override string FeedUrl => "/pages/?category=top&ref=bookmarks";
 

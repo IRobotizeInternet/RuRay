@@ -2,7 +2,7 @@
 
 namespace RobotizeFacebook.App.LoggedIn
 {
-    public class FeedFacebookPay : FeedComponent
+    public class FeedFacebookPay : Feed
     {
         public override string FeedUrl => "/facebook_pay/?referrer=bookmark";
 

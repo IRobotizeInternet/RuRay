@@ -166,7 +166,7 @@ namespace RobotizeToolbox.CommonControls
                 if (scrollUp) JScrollSmoothUp(webElement);
                 else JScrollSmoothDown(webElement);
             }
-            catch (Exception) { ActionsScrollToElement(webElement); }
+            catch (Exception) { ScrollToElement(webElement); }
         }
 
         // Used this type of sloppy loops to mimic scrolling with finger.
@@ -198,8 +198,9 @@ namespace RobotizeToolbox.CommonControls
             JScrollToElement(webElement);
             for (int i = 0; i < 10; i++) Driver.ExecuteScript("window.scrollBy(0, 2)", webElement);
             for (int i = 0; i < 5; i++) Driver.ExecuteScript("window.scrollBy(0, 5)", webElement);
-
         }
+
+
 
         public void JClickElement(IWebElement webElement = null)
         {
@@ -243,7 +244,7 @@ namespace RobotizeToolbox.CommonControls
             return scrollableElement;
         }
 
-        public void ActionsScrollToElement(IWebElement element)
+        public void ScrollToElement(IWebElement element)
         {
             var elementToScrollTo = GetScrollableElement(element);
             new Actions(Driver).MoveToElement(elementToScrollTo).Build().Perform();
@@ -264,7 +265,8 @@ namespace RobotizeToolbox.CommonControls
         public void MoveCursorToElement(IWebElement element = null)
         {
             var action = new Actions(Driver);
-            action.MoveToElement(Driver.FindElement(ByForElement)).Perform();
+            if(Driver.TryFindElement(ByForElement, out var ele) && !ele.Location.IsEmpty) 
+                action.MoveToElement(ele).Perform();
         }
 
         public void ActionsDragAndDrop(IWebElement srourceElement, IWebElement targetElement)

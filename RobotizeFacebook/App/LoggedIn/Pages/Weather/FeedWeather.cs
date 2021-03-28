@@ -2,7 +2,7 @@
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
-    public class FeedWeather : FeedComponent
+    public class FeedWeather : Feed
     {
         public override string FeedUrl => throw new NotImplementedException();
 

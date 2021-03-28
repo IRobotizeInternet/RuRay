@@ -28,10 +28,13 @@ namespace RobotizeToolbox.Controls
                 : (EventResult)Activator.CreateInstance(typeof(EventResult), _xPath);
         }
 
-        public void Hoverover()
+        public EventResult Hoverover()
         {
-            Thread.Sleep(3000);
             _element.MoveCursorToElement();
+            Thread.Sleep(3000);
+            return _xPath == null
+               ? (EventResult)Activator.CreateInstance(typeof(EventResult))
+               : (EventResult)Activator.CreateInstance(typeof(EventResult), _xPath);
         }
     }
 }

@@ -999,7 +999,7 @@
     <Compile Include="App\LoggedIn\Components\Menus\DivMarketPlaceMenu.cs" />
     <Compile Include="App\LoggedIn\Components\SearchboxSearchFacebook.cs" />
     <Compile Include="App\LoggedIn\Components\SearchBoxSharingWithYourFriends.cs" />
-    <Compile Include="App\LoggedIn\Components\Feed\FeedComponent.cs" />
+    <Compile Include="App\LoggedIn\Components\Feed\Feed.cs" />
     <Compile Include="App\LoggedIn\Pages\ActivityLog\Feed\FeedContainerReviewTagsOnYourPosts.cs" />
     <Compile Include="App\LoggedIn\Pages\ActivityLog\Feed\FeedContainerReviewPostsYouAreTaggedIn.cs" />
     <Compile Include="App\LoggedIn\Pages\ActivityLog\Feed\FeedContainerActivityLog.cs" />

@@ -2,7 +2,7 @@
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
-    public class FeedYourAccount : FeedComponent
+    public class FeedYourAccount : Feed
     {
         public override string FeedUrl => "/marketplace/you/selling";
 

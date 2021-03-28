@@ -25,12 +25,21 @@ namespace RobotizeToolbox.CommonControls
         // Game Video Browse --     //div[@role="main"]//img
         // Choose GIF --            //input/parent::label/parent::div/parent::div/parent::div//img
         // Add Videos --            //input/parent::label/parent::div/parent::div//img
-        public int CurrentRowIndex { get; set; }
+        public static int CurrentRowIndex { get; set; }
         public int RowCount => Driver.FindElements(By.XPath($"{BaseXPath}")).Count;//div[contains(@data-pagelet,'Feed')]")).Count;
         public string GetRowXPath(int positionInSet) => $"{BaseXPath}{string.Format(PositionXPath, positionInSet)}";
         public string BaseXPath { get; set; }
         public string PositionXPath { get; set; }
-        public TListItem ListITems { get; set; }
+        private TListItem _listItem;
+        public TListItem ListITem
+        {
+            get
+            {
+                if(_listItem == null)
+                    _listItem = (TListItem)Activator.CreateInstance(typeof(TListItem), BaseXPath, CurrentRowIndex);
+                return _listItem;
+            }
+        }
 
         public ScrollControl(RemoteWebDriver driver,
             string baseXPath = null,
@@ -59,7 +68,7 @@ namespace RobotizeToolbox.CommonControls
                 var rowCountAfterScroll = RowCount;
                 if (CurrentRowIndex >= RowCount && rowCountBeforeScroll == rowCountAfterScroll) break;
                 Thread.Sleep(scrollingDelay);
-                if (counter++ > numberOfUnitToScroll) break;
+                if (++counter >= numberOfUnitToScroll) break;
             }
             Thread.Sleep(3000);
         }
@@ -79,7 +88,7 @@ namespace RobotizeToolbox.CommonControls
                 if (CurrentRowIndex <= 0) break;
                 ScrollFeedUnit(--CurrentRowIndex, false);
                 Thread.Sleep(scrollingDelay);
-                if (counter++ > numberOfUnitToScroll) break;
+                if (++counter >= numberOfUnitToScroll) break;
             }
             Thread.Sleep(3000);
         }

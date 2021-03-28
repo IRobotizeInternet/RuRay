@@ -2,7 +2,7 @@
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
-    public class FeedWatch : FeedComponent
+    public class FeedWatch : Feed
     {
         public override string FeedUrl => "/watch";
 
