@@ -45,5 +45,10 @@ namespace RobotizeToolbox.Dialogs
                 return false;
             }
         }
+
+        public void Close(string xPath)
+        {
+            Driver.FindElement(By.XPath(xPath)).Click();
+        }
     }
 }

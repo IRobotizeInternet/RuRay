@@ -64,7 +64,7 @@ namespace RobotizeToolbox.CommonControls
             while (true)
             {
                 var rowCountBeforeScroll = RowCount;
-                ScrollFeedUnit(++CurrentRowIndex, true);
+                ScrollFeedUnit(CurrentRowIndex++, true);
                 var rowCountAfterScroll = RowCount;
                 if (CurrentRowIndex >= RowCount && rowCountBeforeScroll == rowCountAfterScroll) break;
                 Thread.Sleep(scrollingDelay);
@@ -86,7 +86,7 @@ namespace RobotizeToolbox.CommonControls
             while (true)
             {
                 if (CurrentRowIndex <= 0) break;
-                ScrollFeedUnit(--CurrentRowIndex, false);
+                ScrollFeedUnit(CurrentRowIndex--, false);
                 Thread.Sleep(scrollingDelay);
                 if (++counter >= numberOfUnitToScroll) break;
             }

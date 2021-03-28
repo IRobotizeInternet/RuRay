@@ -35,7 +35,7 @@ namespace RobotizeToolbox.CommonControls
         /// <summary>
         /// This method will try to click on the element atleast five times.
         /// </summary>
-        public virtual void Click(int numberOfTries = 5)
+        public virtual bool Click(int numberOfTries = 5)
         {
             // If any of the following execptions occured try again.
             var knowErrorMessages = new List<string>
@@ -59,10 +59,11 @@ namespace RobotizeToolbox.CommonControls
                     if (!knowErrorMessages.Any(x => x.Contains(ex.Message)))
                     {
                         Trace.WriteLine($"Unexpected WebDriverException was encountered: {ex.Message} {ex.StackTrace}");
-                        return;
                     }
                 }
             });
+
+            return true;
         }
 
         /// <summary>/
@@ -262,6 +263,11 @@ namespace RobotizeToolbox.CommonControls
             new Actions(Driver).ContextClick(elementToScrollTo).Perform();
         }
 
+        /// <summary>
+        ///  Clicking on the element twicw will require the cursor to be moved frist before 
+        ///  we act on the same element, otherwise it will throwup.
+        /// </summary>
+        /// <param name="element"> Web element</param>
         public void MoveCursorToElement(IWebElement element = null)
         {
             var action = new Actions(Driver);

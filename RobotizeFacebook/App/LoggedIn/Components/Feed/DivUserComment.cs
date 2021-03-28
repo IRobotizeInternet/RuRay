@@ -18,17 +18,15 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public string UserName { get; set; }
         protected override By ByForDialog => By.XPath($"");
 
-        public EventTriggerButton<HoverOverLike> ButtonLike
-        {
-            get
-            {
-                // TODO: Need to fix this, HoverOverLike should be initialized with base path 
-                //var xPath = $"{FeedCommentControlsXPath}//span[text()='{ResHomePage.Like}']";
-                var hoverButton = new EventTriggerButton<HoverOverLike>(Driver, By.XPath($"{BaseXPath}//div[text()='{ResHomePage.Like}']"));
-                hoverButton.Hoverover();
-                return hoverButton;
-            }
-        }
+        public EventTriggerButton<HoverOverLike> ButtonLike =>
+            new EventTriggerButton<HoverOverLike>(Driver,
+                By.XPath($"{BaseXPath}//span[text()='{ResHomePage.Like}' or " +
+                    $"text()='{ResHomePage.Love}' or " +
+                    $"text()='{ResHomePage.Angry}' or " +
+                    $"text()='{ResHomePage.Sad}' or " +
+                    $"text()='{ResHomePage.Care}' or " +
+                    $"text()='{ResHomePage.Haha}' or " +
+                    $"text()='{ResHomePage.Wow}']"));
         public Button ButtonReply => new Button(Driver, By.XPath($"{BaseXPath}//div[text()='{ResHomePage.Reply}']"));
         public Button ButtonShare => new Button(Driver, By.XPath($"{BaseXPath}//div[text()='{ResHomePage.Share}']"));
 

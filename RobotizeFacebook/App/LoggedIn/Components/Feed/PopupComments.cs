@@ -8,14 +8,15 @@ using System;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
-    public class PopupComments : BasePopup
+    public class PopupComments : BaseDriver
     {
-        public PopupComments(RemoteWebDriver driver, string baseXPath = null) : base(driver)
+        public string BaseXPath { get; set; }
+        public PopupComments(string baseXPath = null)
         {
             BaseXPath = baseXPath;
         }
 
-        protected override By ByForDialog => throw new NotImplementedException();
+        protected By ByForDialog => throw new NotImplementedException();
 
         public TextBox TextBoxWriteAComment =>
            new TextBox(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResHomePage.WriteAComment}'][@role='textbox']"));
@@ -43,6 +44,11 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public DivUserComment UsersComments(string userName)
         {
            return new DivUserComment(Driver, $"{BaseXPath}/span/following-sibling::ul/li//div[contains(@aria-label,'{userName}')]");
+        }
+
+        public override void RunConformance()
+        {
+            throw new NotImplementedException();
         }
     }
 

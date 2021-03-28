@@ -2,6 +2,7 @@
 using OpenQA.Selenium.Remote;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.CommonControls;
+using RobotizeToolbox.Controls;
 using RobotizeToolbox.Dialogs;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
@@ -31,9 +32,14 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public Button ButtonReactionsAtFifthIndex =>
             new Button(Driver, By.XPath(string.Format(BaseXPath, 6)));
         public Button ButtonReactionsAtSixthIndex =>
-            new Button(Driver, By.XPath(string.Format(BaseXPath, 8)));
+            new Button(Driver, By.XPath(string.Format(BaseXPath, 7)));
         public Button ButtonReactionsAtSeventhIndex =>
-            new Button(Driver, By.XPath(string.Format(BaseXPath, 9)));
-
+            new Button(Driver, By.XPath(string.Format(BaseXPath, 8)));
+        
+        public PageHome Close()
+        {
+            var xPath = $"//div[@aria-label='{ResHomePage.Reactions}']//div[@aria-label='{ResLeftNav.Close}']";
+            return new EventTriggerButton<PageHome>(Driver, By.XPath(xPath)).Click();
+        }
     }
 }

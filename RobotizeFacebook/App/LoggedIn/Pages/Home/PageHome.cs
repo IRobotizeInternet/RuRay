@@ -51,13 +51,44 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 
         public override void RunConformance()
         {
+            // Verify all the reaction buttons. 
             Feed.FeedScroll.ScrollingDownWithAGivenInterval(1, scrollFromCurrentLocation: true);
             var likeButton = Feed.FeedScroll.ListITem.ButtonLike;
-            likeButton.Hoverover().ButtonReactionLike.Click();
-            Thread.Sleep(2000);
-            likeButton.Click();
+            //likeButton.Hoverover().ButtonReactionLike.Click();
+            //Thread.Sleep(2000);
+            //likeButton.Click();
+            //// Clicking on the comment box to move the fox from button, otherwise it will 
+            //Feed.FeedScroll.ListITem.EventTriggerButtonComment.Click();
+            //likeButton.Hoverover().ButtonReactionWow.Click();
+            //Thread.Sleep(2000);
+            //likeButton.Click();
+            //Feed.FeedScroll.ListITem.EventTriggerButtonComment.Click();
+            //likeButton.Hoverover().ButtonReactionSad.Click();
+            //Thread.Sleep(2000);
+            //likeButton.Click();
+            //Feed.FeedScroll.ListITem.EventTriggerButtonComment.Click();
+            //likeButton.Hoverover().ButtonReactionHaha.Click();
+            //Thread.Sleep(2000);
+            //likeButton.Click();
+            //Feed.FeedScroll.ListITem.EventTriggerButtonComment.Click();
+            //likeButton.Hoverover().ButtonReactionCare.Click();
+            //Thread.Sleep(2000);
+            //likeButton.Click();
+            //Feed.FeedScroll.ListITem.EventTriggerButtonComment.Click();
+            //likeButton.Hoverover().ButtonReactionAngry.Click();
+            //Thread.Sleep(2000);
+            //likeButton.Click();
 
-            Feed.FeedScroll.ScrollingUpWithAGivenInterval(scrollFromCurrentLocation: true);
+            var reactionsWindow = Feed.FeedScroll.ListITem.EventTriggerButtonSeeWhoReactedToThis.Click();
+            reactionsWindow.ButtonAllReactions.Click();
+            reactionsWindow.ButtonReactionsAtFirstIndex.Click();
+            reactionsWindow.ButtonReactionsAtSecondIndex.Click();
+            reactionsWindow.ButtonReactionsAtThirdIndex.Click();
+            reactionsWindow.ButtonReactionsAtFourthIndex.Click();
+            reactionsWindow.ButtonReactionsAtFifthIndex.Click();
+            reactionsWindow.ButtonReactionsAtSixthIndex.Click();
+            reactionsWindow.ButtonReactionsAtSeventhIndex.Click();
+            reactionsWindow.Close();
         }
 
         //public void GenerateAllElements()
