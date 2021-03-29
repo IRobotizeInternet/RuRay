@@ -29,7 +29,6 @@ namespace RobotizeToolbox.Extensions
         /// <returns>true if element is in viewport, otherwise false</returns>
         public static bool IsElementOutViewport(RemoteWebDriver driver, string xpath)
         {
-            
             var jsString = "function isElementOutViewport() {" +
                     // Get element buy xPath
                     $"var element = document.evaluate(\"{xpath}\", " +
@@ -129,16 +128,15 @@ namespace RobotizeToolbox.Extensions
 
         // Used this type of sloppy loops to mimic scrolling with finger.
         // How did I came up with these numbers, just tried bunch of things to see if it is smooth. 
-        public static void JScrollSmooth(
+        public static void JScrollSmoothUp(
             RemoteWebDriver driver,
             string xPathDestElement)
         {
             var destWebElement = driver.FindElementWithTimeSpan(By.XPath(xPathDestElement));
-            //var windowsHeight = int.Parse(driver.ExecuteScript("return window.innerHeight;").ToString());
             var currentLocation = ((RemoteWebElement)destWebElement).LocationOnScreenOnceScrolledIntoView;
 
             // Slowly scroll to mimic manual scrolling. 
-            for (var i = 1; currentLocation.Y >= 120; i+= 110 /*120 & 110 is an offset I came up after trying different combinations*/)
+            for (var i = 1; currentLocation.Y >= 80; i+= 80 /*100 & 80 is an offset I came up after trying different combinations*/)
             {
                 for(var j = 0; j < 8; j++) driver.ExecuteScript($"window.scrollBy(0, { j * 2 })");
                 for (var j = 8; j > 0; j--) driver.ExecuteScript($"window.scrollBy(0, { j * 2 })");
@@ -163,7 +161,7 @@ namespace RobotizeToolbox.Extensions
             var currentLocation = ((RemoteWebElement)destWebElement).LocationOnScreenOnceScrolledIntoView;
 
             // Slowly scroll to mimic manual scrolling. 
-            for (var i = 1; currentLocation.Y < 120; i += 110 /*120 & 110 is an offset I came up after trying different combinations*/)
+            for (var i = 1; currentLocation.Y < 100; i += 80 /*100 & 80 is an offset I came up after trying different combinations*/)
             {
                 for (var j = 0; j < 8; j++) driver.ExecuteScript($"window.scrollBy(0, { -1 * j * 2 })");
                 for (var j = 8; j > 0; j--) driver.ExecuteScript($"window.scrollBy(0, { -1 * j * 2 })");
@@ -173,10 +171,17 @@ namespace RobotizeToolbox.Extensions
             }
 
             // Adding this offset to give more natural scrolling effect. 
-            for (int i = 0; i < 10; i++) driver.ExecuteScript("window.scrollBy(0, 0.02)", destWebElement);
-            for (int i = 0; i < 5; i++) driver.ExecuteScript("window.scrollBy(0, 0.05)", destWebElement);
+            for (int i = 0; i < 10; i++) driver.ExecuteScript("window.scrollBy(0, 2)", destWebElement);
+            for (int i = 0; i < 5; i++) driver.ExecuteScript("window.scrollBy(0, 2)", destWebElement);
         }
 
+        /// <summary>
+        /// please use <see cref="JScrollSmoothDown"/> or <see cref="JScrollSmoothUp"/> 
+        /// for smooth scrolling
+        /// </summary>
+        /// <param name="driver"></param>
+        /// <param name="byForElement"></param>
+        /// <param name="webElement"></param>
         public static void JScrollToElement(
             RemoteWebDriver driver, 
             By byForElement, 

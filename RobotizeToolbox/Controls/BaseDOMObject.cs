@@ -172,7 +172,7 @@ namespace RobotizeToolbox.CommonControls
 
         private void JScrollSmoothUp(string xPathTargetElement)
         {
-            JscriptExecutor.JScrollSmooth(Driver, xPathTargetElement);
+            JscriptExecutor.JScrollSmoothUp(Driver, xPathTargetElement);
         }
 
         public void JScrollSmoothDown(

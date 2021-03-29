@@ -1,0 +1,26 @@
+﻿body {
+}
+
+var css = `border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+  box-shadow: 10px 10px rgba(0,0,0,.25);`;
+var style = document.createElement('style');
+
+if (style.styleSheet) {
+    style .styleSheet.cssText = css;
+}
+
+else {
+    style .appendChild(document.createTextNode(css));
+}
+
+document.getElementsByTagName('head')[0].appendChild(style);
+
+var ha = document.evaluate("//div[@class='article-content']", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue
+ha.style.position = "relative"
+ha.style.width = "350px"
+ha.style.height = "550px"
+ha.style.background = "white"
+ha.style.borderradius = "0% 0% 0% 0% / 0% 0% 0% 0%"
+ha.style.color = "white"
+ha.style.boxshadow = "20px 20px rgba(0,0,0,.15)"
+ha.style.transition = "all .4s ease"
