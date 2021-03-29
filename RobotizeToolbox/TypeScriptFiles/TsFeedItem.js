@@ -2,8 +2,8 @@ var TsFeedItem = /** @class */ (function () {
     function TsFeedItem(_xpath) {
         this._xpath = _xpath;
     }
-    TsFeedItem.prototype.isElementOutViewport = function () {
-        var element = document.evaluate("" + this._xpath, document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+    TsFeedItem.prototype.isElementOutViewport = function (element) {
+        //let element = document.evaluate("//div", document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
         var rect = element.getBoundingClientRect();
         console.log(rect.top);
         console.log(rect.bottom);

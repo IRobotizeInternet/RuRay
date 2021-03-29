@@ -24,7 +24,7 @@ namespace RobotizeToolbox.CommonControls
         {
             Thread.Sleep(1500);
 
-            ScrollToElement();
+            //ScrollToElement();
             //var dropdownElement = Driver.FindSingleVisibleElementWait(ByForElement);
             //var selectElement = new SelectElement(dropdownElement);
             //selectElement.SelectByText(itemToSelect);

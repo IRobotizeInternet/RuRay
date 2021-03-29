@@ -8,9 +8,8 @@ namespace RobotizeToolbox.Extensions
     {
         public static void ScrollInToView(RemoteWebDriver driver, IWebElement element)
         {
-            IJavaScriptExecutor js = (IJavaScriptExecutor)driver;
+            var js = (IJavaScriptExecutor)driver;
             js.ExecuteScript("arguments[0].scrollIntoView();", element);
-
         }
 
         public static void ScrollToTheElement(RemoteWebDriver driver, IWebElement element)
@@ -30,6 +29,7 @@ namespace RobotizeToolbox.Extensions
         /// <returns>true if element is in viewport, otherwise false</returns>
         public static bool IsElementOutViewport(RemoteWebDriver driver, string xpath)
         {
+            
             var jsString = "function isElementOutViewport() {" +
                     // Get element buy xPath
                     $"var element = document.evaluate(\"{xpath}\", " +
@@ -126,12 +126,69 @@ namespace RobotizeToolbox.Extensions
                                 "return getElementXPath(arguments[0]).toLowerCase();";
             return (string)((IJavaScriptExecutor)driver).ExecuteScript(javaScript, element);
         }
-    }
 
-    public class ChildRemoteWebElement : RemoteWebElement
-    {
-        public ChildRemoteWebElement(RemoteWebDriver parentDriver, string id) : base(parentDriver, id)
+        // Used this type of sloppy loops to mimic scrolling with finger.
+        // How did I came up with these numbers, just tried bunch of things to see if it is smooth. 
+        public static void JScrollSmooth(
+            RemoteWebDriver driver,
+            string xPathDestElement)
         {
+            var destWebElement = driver.FindElementWithTimeSpan(By.XPath(xPathDestElement));
+            //var windowsHeight = int.Parse(driver.ExecuteScript("return window.innerHeight;").ToString());
+            var currentLocation = ((RemoteWebElement)destWebElement).LocationOnScreenOnceScrolledIntoView;
+
+            // Slowly scroll to mimic manual scrolling. 
+            for (var i = 1; currentLocation.Y >= 120; i+= 110 /*120 & 110 is an offset I came up after trying different combinations*/)
+            {
+                for(var j = 0; j < 8; j++) driver.ExecuteScript($"window.scrollBy(0, { j * 2 })");
+                for (var j = 8; j > 0; j--) driver.ExecuteScript($"window.scrollBy(0, { j * 2 })");
+               
+                destWebElement = driver.FindElementWithTimeSpan(By.XPath(xPathDestElement));
+                currentLocation = ((RemoteWebElement)destWebElement).LocationOnScreenOnceScrolledIntoView;
+            }
+            
+            // Adding this offset to give more natural scrolling effect. 
+            for (int i = 0; i < 10; i++) driver.ExecuteScript("window.scrollBy(0, -0.02)", destWebElement);
+            for (int i = 0; i < 5; i++) driver.ExecuteScript("window.scrollBy(0, -0.05)", destWebElement);
+        }
+
+        // Used this type of sloppy loops to mimic scrolling with finger.
+        // How did I came up with these numbers, just tried bunch of things to see if it is smooth. 
+        public static void JScrollSmoothDown(
+            RemoteWebDriver driver,
+            string xPathDestElement)
+        {
+            var destWebElement = driver.FindElementWithTimeSpan(By.XPath(xPathDestElement));
+            //var windowsHeight = int.Parse(driver.ExecuteScript("return window.innerHeight;").ToString());
+            var currentLocation = ((RemoteWebElement)destWebElement).LocationOnScreenOnceScrolledIntoView;
+
+            // Slowly scroll to mimic manual scrolling. 
+            for (var i = 1; currentLocation.Y < 120; i += 110 /*120 & 110 is an offset I came up after trying different combinations*/)
+            {
+                for (var j = 0; j < 8; j++) driver.ExecuteScript($"window.scrollBy(0, { -1 * j * 2 })");
+                for (var j = 8; j > 0; j--) driver.ExecuteScript($"window.scrollBy(0, { -1 * j * 2 })");
+
+                destWebElement = driver.FindElementWithTimeSpan(By.XPath(xPathDestElement));
+                currentLocation = ((RemoteWebElement)destWebElement).LocationOnScreenOnceScrolledIntoView;
+            }
+
+            // Adding this offset to give more natural scrolling effect. 
+            for (int i = 0; i < 10; i++) driver.ExecuteScript("window.scrollBy(0, 0.02)", destWebElement);
+            for (int i = 0; i < 5; i++) driver.ExecuteScript("window.scrollBy(0, 0.05)", destWebElement);
+        }
+
+        public static void JScrollToElement(
+            RemoteWebDriver driver, 
+            By byForElement, 
+            IWebElement webElement = null)
+        {
+            var jScript = "arguments[0].scrollIntoView(true);" +
+            "var evObj = document.createEvent('MouseEvents');" +
+            "evObj.initMouseEvent(\"mouseover\",true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);" +
+            "arguments[0].dispatchEvent(evObj);";
+
+            webElement = webElement ?? driver.FindElementWithTimeSpan(byForElement);
+            driver.ExecuteScript(jScript, webElement);
         }
     }
 }

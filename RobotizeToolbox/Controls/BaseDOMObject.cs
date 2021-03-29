@@ -1,7 +1,6 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Remote;
-
 using Polly;
 using RobotizeToolbox.Extensions;
 using System;
@@ -159,64 +158,37 @@ namespace RobotizeToolbox.CommonControls
             return elementText;
         }
 
-        public void ScrollToElement(IWebElement webElement = null, bool scrollUp = true)
+        public void ScrollToElement(
+            string xPathTargetElement,
+            bool scrollUp = true)
         {
-            webElement = webElement ?? Driver.FindElement(ByForElement);
             try
             {
-                if (scrollUp) JScrollSmoothUp(webElement);
-                else JScrollSmoothDown(webElement);
+                if (scrollUp) JScrollSmoothUp(xPathTargetElement);
+                else JScrollSmoothDown(xPathTargetElement);
             }
-            catch (Exception) { ScrollToElement(webElement); }
+            catch (Exception ex) { ScrollToElement(xPathTargetElement); }
         }
 
-        // Used this type of sloppy loops to mimic scrolling with finger.
-        // How did I came up with these numbers, just tried bunch of things to see if it is smooth. 
-        public void JScrollSmoothUp(IWebElement webElement = null)
+        private void JScrollSmoothUp(string xPathTargetElement)
         {
-            webElement = webElement ?? Driver.FindElementWithTimeSpan(ByForElement);
-            for (int i = 0; i < 10; i++) Driver.ExecuteScript("window.scrollBy(0, 1)", webElement);
-            for (int i = 0; i < 10; i++) Driver.ExecuteScript("window.scrollBy(0, 2)", webElement);
-            for (int i = 0; i < 30; i++) Driver.ExecuteScript("window.scrollBy(0, 30)", webElement);
-            for (int i = 0; i < 7; i++) Driver.ExecuteScript("window.scrollBy(0, 3)", webElement);
-            for (int i = 0; i < 5; i++) Driver.ExecuteScript("window.scrollBy(0, 1)", webElement);
-            JScrollToElement(webElement);
-            for (int i = 0; i < 10; i++) Driver.ExecuteScript("window.scrollBy(0, -2)", webElement);
-            for (int i = 0; i < 5; i++) Driver.ExecuteScript("window.scrollBy(0, -5)", webElement);
-
+            JscriptExecutor.JScrollSmooth(Driver, xPathTargetElement);
         }
 
-        // Used this type of sloppy loops to mimic scrolling with finger.
-        // How did I came up with these numbers, just tried bunch of things to see if it is smooth. 
-        public void JScrollSmoothDown(IWebElement webElement = null)
+        public void JScrollSmoothDown(
+            string xPathTargetElement)
         {
-            webElement = webElement ?? Driver.FindElementWithTimeSpan(ByForElement);
-            for (int i = 0; i < 10; i++) Driver.ExecuteScript("window.scrollBy(0, -1)", webElement);
-            for (int i = 0; i < 10; i++) Driver.ExecuteScript("window.scrollBy(0, -2)", webElement);
-            for (int i = 0; i < 30; i++) Driver.ExecuteScript("window.scrollBy(0, -30)", webElement);
-            for (int i = 0; i < 7; i++) Driver.ExecuteScript("window.scrollBy(0, -3)", webElement);
-            for (int i = 0; i < 5; i++) Driver.ExecuteScript("window.scrollBy(0, -1)", webElement);
-            JScrollToElement(webElement);
-            for (int i = 0; i < 10; i++) Driver.ExecuteScript("window.scrollBy(0, 2)", webElement);
-            for (int i = 0; i < 5; i++) Driver.ExecuteScript("window.scrollBy(0, 5)", webElement);
+            JscriptExecutor.JScrollSmoothDown(Driver, xPathTargetElement);
         }
-
-
 
         public void JClickElement(IWebElement webElement = null)
         {
             Driver.ExecuteScript("argument[0]", webElement);
         }
 
-        public void JScrollToElement(IWebElement webElement = null)
+        private void JScrollToElement(IWebElement webElement = null)
         {
-            var jScript = "arguments[0].scrollIntoView(true);" +
-            "var evObj = document.createEvent('MouseEvents');" +
-            "evObj.initMouseEvent(\"mouseover\",true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);" +
-            "arguments[0].dispatchEvent(evObj);";
-
-            webElement = webElement ?? Driver.FindElementWithTimeSpan(ByForElement);
-            Driver.ExecuteScript(jScript, webElement);
+            JscriptExecutor.JScrollToElement(Driver, ByForElement);
         }
 
         private IWebElement GetScrollableElement(IWebElement element)
@@ -264,8 +236,8 @@ namespace RobotizeToolbox.CommonControls
         }
 
         /// <summary>
-        ///  Clicking on the element twicw will require the cursor to be moved frist before 
-        ///  we act on the same element, otherwise it will throwup.
+        ///  Clicking on the element twice will require the cursor to be moved frist, before 
+        ///  we act on the same element; otherwise, it will throwup.
         /// </summary>
         /// <param name="element"> Web element</param>
         public void MoveCursorToElement(IWebElement element = null)

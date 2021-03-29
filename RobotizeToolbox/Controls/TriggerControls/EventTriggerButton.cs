@@ -26,7 +26,7 @@ namespace RobotizeToolbox.Controls
             _element.Click();
             Thread.Sleep(2500);
             return _xPath == null
-                ? (EventResult)Activator.CreateInstance(typeof(EventResult), Driver)
+                ? (EventResult)Activator.CreateInstance(typeof(EventResult))
                 : (EventResult)Activator.CreateInstance(typeof(EventResult), _xPath);
         }
 

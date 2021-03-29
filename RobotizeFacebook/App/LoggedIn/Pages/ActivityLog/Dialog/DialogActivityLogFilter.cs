@@ -22,7 +22,8 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public RadioButton GetFilterCategoryButton(FilterCategory category)
         {
             var rButton = new RadioButton(Driver, By.XPath($"{BaseXPath}//span[contains(text(), {category})]"));
-            rButton.ScrollToElement();
+            // TODO: Fix the below function.
+            //rButton.ScrollToElement();
             return rButton;
         }
 

@@ -56,7 +56,7 @@ namespace RobotizeToolbox.CommonControls
         /// </summary>
         public void ScrollingDownWithAGivenInterval(
             int numberOfUnitToScroll = 3,
-            bool scrollFromCurrentLocation = false, 
+            bool scrollFromCurrentLocation = true, 
             int scrollingDelay = 3000)
         {
             if (scrollFromCurrentLocation) SetIndexOfElementInViewPort();
@@ -78,7 +78,7 @@ namespace RobotizeToolbox.CommonControls
         /// </summary>
         public void ScrollingUpWithAGivenInterval(
             int numberOfUnitToScroll = 3,
-            bool scrollFromCurrentLocation = false, 
+            bool scrollFromCurrentLocation = true, 
             int scrollingDelay = 3000)
         {
             if (scrollFromCurrentLocation) SetIndexOfElementInViewPort();
@@ -113,7 +113,7 @@ namespace RobotizeToolbox.CommonControls
         /// </summary>
         public void ScrollFeedUnit(int positionInSet, bool scrollUp = true)
         {
-            ScrollToElement(Driver.FindElementWithTimeSpan(By.XPath(GetRowXPath(positionInSet))), scrollUp);
+            ScrollToElement(GetRowXPath(positionInSet), scrollUp);
             Driver.FindElementWithTimeSpan(By.XPath(GetRowXPath(positionInSet)));
         }
 

@@ -18,6 +18,8 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public string UserName { get; set; }
         protected override By ByForDialog => By.XPath($"");
 
+        // Please note since we are relying on button text which could change 
+        // So we have added all the possible comibinations. 
         public EventTriggerButton<HoverOverLike> ButtonLike =>
             new EventTriggerButton<HoverOverLike>(Driver,
                 By.XPath($"{BaseXPath}//span[text()='{ResHomePage.Like}' or " +
