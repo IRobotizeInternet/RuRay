@@ -2,6 +2,7 @@
 using System.Linq;
 using System.Threading;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Remote;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.Controls;
 
@@ -10,6 +11,10 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
     public class PageHome : BasePage
     {
         public PageHome()
+        {
+        }
+
+        public PageHome(RemoteWebDriver driver)
         {
         }
 
@@ -52,8 +57,8 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public override void RunConformance()
         {
             // Verify all the reaction buttons. 
-            Feed.FeedScroll.ScrollingDownWithAGivenInterval(3, scrollFromCurrentLocation: true);
-            Feed.FeedScroll.ScrollingUpWithAGivenInterval(3, scrollFromCurrentLocation: true);
+            //Feed.FeedScroll.ScrollingDownWithAGivenInterval(3, scrollFromCurrentLocation: true);
+            Feed.FeedScroll.ScrollingUpWithAGivenInterval(1, scrollFromCurrentLocation: true);
             //var likeButton = Feed.FeedScroll.ListITem.ButtonLike;
             //likeButton.Hoverover().ButtonReactionLike.Click();
             //Thread.Sleep(2000);
@@ -80,8 +85,9 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
             //Thread.Sleep(2000);
             //likeButton.Click();
 
-            //var reactionsWindow = Feed.FeedScroll.ListITem.EventTriggerButtonSeeWhoReactedToThis.Click();
-            //reactionsWindow.ButtonAllReactions.Click();
+            var reactionsWindow = Feed.FeedScroll.ListITem.EventTriggerButtonSeeWhoReactedToThis.Click();
+            reactionsWindow.ScrollReactions.ScrollMore(scrollingLength: 3, scrollDown: 1);
+            reactionsWindow.ButtonAllReactions.Click();
             //reactionsWindow.ButtonReactionsAtFirstIndex.Click();
             //reactionsWindow.ButtonReactionsAtSecondIndex.Click();
             //reactionsWindow.ButtonReactionsAtThirdIndex.Click();
@@ -89,7 +95,11 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
             //reactionsWindow.ButtonReactionsAtFifthIndex.Click();
             //reactionsWindow.ButtonReactionsAtSixthIndex.Click();
             //reactionsWindow.ButtonReactionsAtSeventhIndex.Click();
-            //reactionsWindow.Close();
+            //reactionsWindow.ButtonAllReactions.Click();
+            reactionsWindow.ScrollReactions.ScrollMore(scrollingLength: 10, -1);
+            reactionsWindow.ScrollReactions.ScrollMore(scrollingLength: 10, 1);
+            Thread.Sleep(5000);
+            reactionsWindow.Close();
         }
 
         //public void GenerateAllElements()

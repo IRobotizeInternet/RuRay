@@ -27,7 +27,13 @@ namespace RobotizeToolbox.CommonControls
         // Add Videos --            //input/parent::label/parent::div/parent::div//img
         public static int CurrentRowIndex { get; set; }
         public int RowCount => Driver.FindElements(By.XPath($"{BaseXPath}")).Count;//div[contains(@data-pagelet,'Feed')]")).Count;
-        public string GetRowXPath(int positionInSet) => $"{BaseXPath}{string.Format(PositionXPath, positionInSet)}";
+        
+        public string GetRowXPath(int positionInSet) {
+            return PositionXPath == null 
+                ? BaseXPath 
+                : $"{BaseXPath}{string.Format(PositionXPath, positionInSet)}";    
+        }
+
         public string BaseXPath { get; set; }
         public string PositionXPath { get; set; }
         private TListItem _listItem;
@@ -36,7 +42,7 @@ namespace RobotizeToolbox.CommonControls
             get
             {
                 if(_listItem == null)
-                    _listItem = (TListItem)Activator.CreateInstance(typeof(TListItem), BaseXPath, CurrentRowIndex);
+                    _listItem = (TListItem)Activator.CreateInstance(typeof(TListItem), BaseXPath, CurrentRowIndex == 0 ? 1 : CurrentRowIndex);
                 return _listItem;
             }
         }
@@ -64,7 +70,7 @@ namespace RobotizeToolbox.CommonControls
             while (true)
             {
                 var rowCountBeforeScroll = RowCount;
-                ScrollFeedUnit(CurrentRowIndex++, true);
+                ScrollItem(CurrentRowIndex++, true);
                 var rowCountAfterScroll = RowCount;
                 if (CurrentRowIndex >= RowCount && rowCountBeforeScroll == rowCountAfterScroll) break;
                 Thread.Sleep(scrollingDelay);
@@ -86,9 +92,10 @@ namespace RobotizeToolbox.CommonControls
             while (true)
             {
                 if (CurrentRowIndex <= 0) break;
-                ScrollFeedUnit(CurrentRowIndex--, false);
+                ScrollItem(CurrentRowIndex, false);
                 Thread.Sleep(scrollingDelay);
                 if (++counter >= numberOfUnitToScroll) break;
+                CurrentRowIndex--;
             }
             Thread.Sleep(3000);
         }
@@ -111,10 +118,19 @@ namespace RobotizeToolbox.CommonControls
         /// <summary>
         /// Scroll up for a given position in set
         /// </summary>
-        public void ScrollFeedUnit(int positionInSet, bool scrollUp = true)
+        public void ScrollItem(int positionInSet, bool scrollUp = true)
         {
             ScrollToElement(GetRowXPath(positionInSet), scrollUp);
             Driver.FindElementWithTimeSpan(By.XPath(GetRowXPath(positionInSet)));
+        }
+
+        /// <summary>
+        /// Use this to scroll more irrespective of the position. 
+        /// </summary>
+        /// <param name="scrollingLength"></param>
+        public void ScrollMore(int scrollingLength = 10, int scrollDown = -1)
+        {
+            base.ScrollMore(scrollingLength, scrollDown);
         }
 
         /// <summary>

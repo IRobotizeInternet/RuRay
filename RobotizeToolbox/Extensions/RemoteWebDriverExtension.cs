@@ -88,25 +88,24 @@ namespace RobotizeToolbox.Extensions
         public static void WaitUntilElementAppears(
             this RemoteWebDriver driver,
             By byForElement,
-            int timeoutSeconds = 60)
+            int timeoutSeconds = 2,
+            int numberOfTires = 5 )
         {
-            var wait = new DefaultWait<By>(byForElement)
+            try
             {
-                PollingInterval = TimeSpan.FromMilliseconds(500),
-                Timeout = TimeSpan.FromSeconds(timeoutSeconds)
-            };
+                var policy = Policy
+              .Handle<NoSuchElementException>()
+              .WaitAndRetry(numberOfTires, t => TimeSpan.FromSeconds(timeoutSeconds));
 
-            _ = wait.Until(x =>
-            {
-                try
+                policy.Execute(() =>
                 {
-                    var element = driver.FindElement(x);
-                    return false;
-                }
-                catch (NoSuchElementException) { return true; }
-                catch (ElementNotVisibleException) { return true; }
-                catch (StaleElementReferenceException) { return true; }
-            });
+                    var element = driver.FindElement(byForElement);
+                });
+            }
+            catch(NoSuchElementException ex)
+            {
+                Debug.WriteLine($"Exception occured ofter trying {numberOfTires} times. Message: {ex.Message}");
+            }
         }
 
         /// <summary>
@@ -117,23 +116,15 @@ namespace RobotizeToolbox.Extensions
             By byForElement,
             int timeoutSeconds = 60)
         {
-            var wait = new DefaultWait<By>(byForElement)
-            {
-                PollingInterval = TimeSpan.FromMilliseconds(500),
-                Timeout = TimeSpan.FromSeconds(timeoutSeconds)
-            };
+            var policy = Policy
+             .Handle<Exception>()
+             .WaitAndRetry(5, t => TimeSpan.FromSeconds(timeoutSeconds));
 
-            _ = wait.Until(x =>
-             {
-                 try
-                 {
-                     var element = driver.FindElement(x);
-                     return false;
-                 }
-                 catch (NoSuchElementException){ return true; }
-                 catch (ElementNotVisibleException) { return true; }
-                 catch (StaleElementReferenceException) { return true; }
-             });
+            policy.Execute(() =>
+            {
+                var elements = driver.FindElements(byForElement);
+                if (elements.Any()) throw new Exception();
+            });
         }
     }
 }

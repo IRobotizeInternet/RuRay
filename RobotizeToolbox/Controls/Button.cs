@@ -12,7 +12,7 @@ namespace RobotizeToolbox.CommonControls
 
         public void Click()
         {
-            Thread.Sleep(3000);
+            Thread.Sleep(1500);
             base.Click();
         }
     }

@@ -33,6 +33,7 @@ namespace RobotizeToolbox.CommonControls
 
         /// <summary>
         /// This method will try to click on the element atleast five times.
+        /// Known issue <see cref="https://stackoverflow.com/questions/11908249/debugging-element-is-not-clickable-at-point-error?page=1&tab=votes#tab-top"/>
         /// </summary>
         public virtual bool Click(int numberOfTries = 5)
         {
@@ -47,12 +48,14 @@ namespace RobotizeToolbox.CommonControls
             // Using Polly library: https://github.com/App-vNext/Polly
             var policy = Policy
               .Handle<InvalidOperationException>()
-              .WaitAndRetry(numberOfTries, timespan => TimeSpan.FromSeconds(10));
+              .WaitAndRetry(numberOfTries, timespan => TimeSpan.FromSeconds(3));
 
-            var element = Driver.FindElementWithTimeSpan(ByForElement, timeSpanInSeconds: 10);
             policy.Execute(() =>
             {
-                try { element.Click(); }
+                try {
+                    var element = Driver.FindElementWithTimeSpan(ByForElement, timeSpanInSeconds: 3);
+                    element.Click(); 
+                }
                 catch (WebDriverException ex)
                 {
                     if (!knowErrorMessages.Any(x => x.Contains(ex.Message)))
@@ -60,6 +63,7 @@ namespace RobotizeToolbox.CommonControls
                         Trace.WriteLine($"Unexpected WebDriverException was encountered: {ex.Message} {ex.StackTrace}");
                     }
                 }
+                catch(InvalidOperationException ex) { Debug.WriteLine(ex.Message); }
             });
 
             return true;
@@ -158,7 +162,7 @@ namespace RobotizeToolbox.CommonControls
             return elementText;
         }
 
-        public void ScrollToElement(
+        protected void ScrollToElement(
             string xPathTargetElement,
             bool scrollUp = true)
         {
@@ -170,25 +174,62 @@ namespace RobotizeToolbox.CommonControls
             catch (Exception ex) { ScrollToElement(xPathTargetElement); }
         }
 
-        private void JScrollSmoothUp(string xPathTargetElement)
+        // Used this type of sloppy loops to mimic scrolling with finger.
+        // How did I came up with these numbers, just tried bunch of things to see if it is smooth. 
+        protected void JScrollSmoothUp(
+            string xPathDestElement)
         {
-            JscriptExecutor.JScrollSmoothUp(Driver, xPathTargetElement);
+            var destWebElement = Driver.FindElementWithTimeSpan(By.XPath(xPathDestElement));
+            var currentLocation = ((RemoteWebElement)destWebElement).LocationOnScreenOnceScrolledIntoView;
+
+            // Slowly scroll to mimic manual scrolling. 
+            for (var i = 1; currentLocation.Y >= 100; i += 80 /*100 & 80 is an offset I came up after trying different combinations*/)            {
+                for (var j = 0; j < 8; j++) JscriptExecutor.Scroll(Driver, j * 2);
+                for (var j = 8; j > 0; j--) JscriptExecutor.Scroll(Driver, j * 2);
+
+                destWebElement = Driver.FindElementWithTimeSpan(By.XPath(xPathDestElement));
+                currentLocation = ((RemoteWebElement)destWebElement).LocationOnScreenOnceScrolledIntoView;
+            }
+
+            // Adding this offset to give more natural scrolling effect. 
+            for (int i = 0; i < 10; i++) ScrollMore(scrollingLength: 5, scrollDown: 1);
         }
 
-        public void JScrollSmoothDown(
-            string xPathTargetElement)
+        // Used this type of sloppy loops to mimic scrolling with finger.
+        // How did I came up with these numbers, just tried bunch of things to see if it is smooth. 
+        protected void JScrollSmoothDown(
+            string xPathDestElement)
         {
-            JscriptExecutor.JScrollSmoothDown(Driver, xPathTargetElement);
+            var destWebElement = Driver.FindElementWithTimeSpan(By.XPath(xPathDestElement));
+            var currentLocation = ((RemoteWebElement)destWebElement).LocationOnScreenOnceScrolledIntoView;
+
+            // Slowly scroll to mimic manual scrolling. 
+            for (var i = 1; currentLocation.Y < 100; i += 80 /*80 is an offset I came up after trying different combinations*/)
+            {
+                for (var j = 0; j < 8; j++) JscriptExecutor.Scroll(Driver, j * -2);
+                for (var j = 8; j > 0; j--) JscriptExecutor.Scroll(Driver, j * -2);
+
+                destWebElement = Driver.FindElementWithTimeSpan(By.XPath(xPathDestElement));
+                currentLocation = ((RemoteWebElement)destWebElement).LocationOnScreenOnceScrolledIntoView;
+            }
+
+            // Adding this offset to give more natural scrolling effect. 
+            for (int i = 0; i < 10; i++) ScrollMore(scrollingLength: 5);
         }
 
-        public void JClickElement(IWebElement webElement = null)
+        /// <summary>
+        /// Use this method to scroll up/down for a give hieght
+        /// </summary>
+        /// <param name="scrollingLength"></param>
+        /// <param name="scrollDown"> -1 scrolling down and 1 for scrolling up</param>
+        protected void ScrollMore(int scrollingLength = 10, int scrollDown = -1)
+        {
+            JscriptExecutor.Scroll(Driver, scrollingLength * 0.05);
+        }
+
+        protected void JClickElement(IWebElement webElement = null)
         {
             Driver.ExecuteScript("argument[0]", webElement);
-        }
-
-        private void JScrollToElement(IWebElement webElement = null)
-        {
-            JscriptExecutor.JScrollToElement(Driver, ByForElement);
         }
 
         private IWebElement GetScrollableElement(IWebElement element)
