@@ -16,7 +16,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
             new ScrollControl<ListItemSeeWhoReactedToThis>(
                 Driver, 
                 $"//div[@aria-label='{ResHomePage.Reactions}']/div[3]/div/div",
-                $"//div[@aria-label='{ResHomePage.Reactions}']/div[3]" /*This could be improved to use existing parameter*/);
+                scrollXPath: $"//div[@aria-label='{ResHomePage.Reactions}']/div[3]" /*This could be improved to use existing parameter*/);
 
 
         public DialogSeeWhoReactedToThis(RemoteWebDriver driver) : base(driver)

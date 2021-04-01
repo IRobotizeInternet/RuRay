@@ -26,8 +26,6 @@ namespace RobotizeToolbox.Extensions
                 // Get element by xPath
                 $"var element = document.evaluate(\"{xpath}\", " +
                 @"document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
-                    const rect = element.getBoundingClientRect();
-                    
                 const rect = element.getBoundingClientRect();
                     
                 let height = (document.documentElement.clientHeight);
@@ -121,36 +119,16 @@ namespace RobotizeToolbox.Extensions
             // When scrolling popup/dialog list
             var jScript = 
                 $"var element = document.evaluate(\"{elementXPath}\", " +
-                 $@"document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
-                      element.scrollBy({scrollingLengthXAxis}, { scrollingLengthYAxis })";
-            driver.ExecuteScript(jScript);
+                 @"document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+                      element.scrollBy({0}, {1})";
+            for (var i = 0; i < scrollingLengthXAxis; i++) driver.ExecuteScript(string.Format(jScript, i, 0)); /*scroll along x-axis*/
+            for (var i = 0; i < scrollingLengthYAxis; i++) driver.ExecuteScript(string.Format(jScript, 0, i)); /*scroll along x-axis*/
         }
 
         public static int GetViewPortHieght(RemoteWebDriver driver)
         {
             var js = (IJavaScriptExecutor)driver;
             return int.Parse(js.ExecuteScript("return window.innerHeight").ToString());
-        }
-
-        /// <summary>
-        /// please use <see cref="JScrollSmoothDown"/> or <see cref="JScrollSmoothUp"/> 
-        /// for smooth scrolling
-        /// </summary>
-        /// <param name="driver"></param>
-        /// <param name="byForElement"></param>
-        /// <param name="webElement"></param>
-        public static void JScrollToElement(
-            RemoteWebDriver driver, 
-            By byForElement, 
-            IWebElement webElement = null)
-        {
-            var jScript = "arguments[0].scrollIntoView(true);" +
-            "var evObj = document.createEvent('MouseEvents');" +
-            "evObj.initMouseEvent(\"mouseover\",true, false, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);" +
-            "arguments[0].dispatchEvent(evObj);";
-
-            webElement = webElement ?? driver.FindElementWithTimeSpan(byForElement);
-            driver.ExecuteScript(jScript, webElement);
         }
 
         public static void ScrollToTheElement(RemoteWebDriver driver, IWebElement element)

@@ -135,7 +135,7 @@ namespace RobotizeToolbox.CommonControls
 
         public void ScrollDownMore(
             double scrollingLengthXAxis = 0,
-            double scrollingLengthYAxis = 10)
+            double scrollingLengthYAxis = -10)
         {
             ScrollMore(ScrollXPath, scrollingLengthXAxis, scrollingLengthYAxis);
         }

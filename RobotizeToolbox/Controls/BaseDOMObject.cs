@@ -35,26 +35,29 @@ namespace RobotizeToolbox.CommonControls
         /// This method will try to click on the element atleast five times.
         /// Known issue <see cref="https://stackoverflow.com/questions/11908249/debugging-element-is-not-clickable-at-point-error?page=1&tab=votes#tab-top"/>
         /// </summary>
-        public virtual bool Click(int numberOfTries = 5)
+        public virtual bool Click(int numberOfTries = 3)
         {
             // Using Polly library: https://github.com/App-vNext/Polly
             var policy = Policy
               .Handle<InvalidOperationException>()
               .Or<WebDriverException>()
+              .Or<ElementClickInterceptedException>() /* This could happen when element under other element ex: behing dialog window*/
               .WaitAndRetry(numberOfTries, timespan => TimeSpan.FromSeconds(3));
-
-            try
+            
+            policy.Execute(() =>
             {
-                policy.Execute(() =>
+                try
                 {
                     var element = Driver.FindElementWithTimeSpan(ByForElement, timeSpanInSeconds: 3);
                     element.Click();
-                });
-            }
-            catch(Exception ex)
-            {
-                Debug.WriteLine(ex.Message);
-            }
+                }catch(ElementClickInterceptedException ex)
+                {
+                    // Catching this exclusively, although it is added to the policy 
+                    // we found some cases where it is still managing to break the execution.
+                    // So we added this to handle it gracefully.
+                    Debug.WriteLine(ex.Message);
+                }
+            });
 
             return true;
         }
@@ -84,7 +87,7 @@ namespace RobotizeToolbox.CommonControls
         public void SetData(string valueToEnter, bool overwrite = true)
         {
             var startTime = DateTime.Now;
-            var timeSpanInSeconds = 30;
+            var timeSpanInSeconds = 5;
             var finishedSettingValue = true;
             while (finishedSettingValue)
             {
@@ -114,7 +117,7 @@ namespace RobotizeToolbox.CommonControls
         public string GetText()
         {
             var gettingElementText = true;
-            var totalAttempts = 10;
+            var totalAttempts = 3;
             var attempts = totalAttempts;
             var elementText = string.Empty;
 
@@ -171,7 +174,7 @@ namespace RobotizeToolbox.CommonControls
         {
             var destWebElement = Driver.FindElementWithTimeSpan(By.XPath(xPathDestElement));
             var currentLocation = ((RemoteWebElement)destWebElement).LocationOnScreenOnceScrolledIntoView;
-
+            var previousLocation = currentLocation;
             // Slowly scroll to mimic manual scrolling. 
             for (var i = 1; currentLocation.Y >= 100; i += 80 /*100 & 80 is an offset I came up after trying different combinations*/)            {
                 for (var j = 0; j < 8; j++) JscriptExecutor.ScrollBy(Driver, null, scrollingLengthYAxis: j * 2);
@@ -179,6 +182,13 @@ namespace RobotizeToolbox.CommonControls
 
                 destWebElement = Driver.FindElementWithTimeSpan(By.XPath(xPathDestElement));
                 currentLocation = ((RemoteWebElement)destWebElement).LocationOnScreenOnceScrolledIntoView;
+
+                // Please note, this check is added to ensure when we scroll the element and 
+                // new location is same as previous location, it is an indicator that the element
+                // we are trying to scroll is hidden by other element and did not move when using
+                // ScrollBy function. To avoid being stuck in the the infinite loop, we added this 
+                // this check. 
+                if (previousLocation == currentLocation) break;
             }
 
             // Adding this offset to give more natural scrolling effect. 
@@ -193,6 +203,7 @@ namespace RobotizeToolbox.CommonControls
             var destWebElement = Driver.FindElementWithTimeSpan(By.XPath(xPathDestElement));
             var currentLocation = ((RemoteWebElement)destWebElement).LocationOnScreenOnceScrolledIntoView;
 
+            var previousLocation = currentLocation;
             // Slowly scroll to mimic manual scrolling. 
             for (var i = 1; currentLocation.Y < 100; i += 80 /*80 is an offset I came up after trying different combinations*/)
             {
@@ -201,6 +212,13 @@ namespace RobotizeToolbox.CommonControls
 
                 destWebElement = Driver.FindElementWithTimeSpan(By.XPath(xPathDestElement));
                 currentLocation = ((RemoteWebElement)destWebElement).LocationOnScreenOnceScrolledIntoView;
+
+                // Please note, this check is added to ensure when we scroll the element and 
+                // new location is same as previous location, it is an indicator that the element
+                // we are trying to scroll is hidden by other element and did not move when using
+                // ScrollBy function. To avoid being stuck in the the infinite loop, we added this 
+                // this check. 
+                if (previousLocation == currentLocation) break;
             }
 
             // Adding this offset to give more natural scrolling effect. 
@@ -221,8 +239,8 @@ namespace RobotizeToolbox.CommonControls
             JscriptExecutor.ScrollBy(
                 Driver, 
                 elementXPath,
-                scrollDown * scrollingLengthXAxis * 0.05 /*Adding some random offset*/,
-                scrollDown * scrollingLengthYAxis * 0.05 /*Adding some random offset*/);
+                scrollDown * scrollingLengthXAxis * 2 /*Adding some random offset*/,
+                scrollDown * scrollingLengthYAxis * 2 /*Adding some random offset*/);
         }
 
         protected void JClickElement(IWebElement webElement = null)

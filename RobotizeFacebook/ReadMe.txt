@@ -43,3 +43,10 @@ Picovoice is:
 - Zero Latency: Edge-first architecture eliminates unpredictable network delay.
 - Accurate: Resilient to noise and reverberation. It outperforms cloud-based alternatives by wide margins *.
 - Cross-Platform: Design once, deploy anywhere. Build using familiar languages and frameworks.
+
+
+Avoiding bot detecting:
+This may not necessary if we actually contact the owner of the website and get permission to serve our purpose;
+I found this article which could be helpful when we are building the scritp
+ https://stackoverflow.com/questions/33225947/can-a-website-detect-when-you-are-using-selenium-with-chromedriver
+ "The bot detection scripts usually look anything containing word "selenium" / "webdriver" in any of the variables (on window object), and also document variables called $cdc_ and $wdc_. Of course, all of this depends on which browser you are on. All the different browsers expose different things."

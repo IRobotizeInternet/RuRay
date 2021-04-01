@@ -14,7 +14,7 @@ namespace RobotizeToolbox.Extensions
         /// <summary>
         /// Return the web element matching the selector.
         /// </summary>
-        public static IWebElement FindElementWithTimeSpan(this RemoteWebDriver driver, By by, int timeSpanInSeconds = 30)
+        public static IWebElement FindElementWithTimeSpan(this RemoteWebDriver driver, By by, int timeSpanInSeconds = 5)
         {
             ICollection<IWebElement> elements = null;
 
@@ -22,7 +22,7 @@ namespace RobotizeToolbox.Extensions
             var policy = Policy
               .Handle<InvalidOperationException>()
               .Or<TimeoutException>()
-              .WaitAndRetry(10, t => TimeSpan.FromSeconds(timeSpanInSeconds));
+              .WaitAndRetry(3, t => TimeSpan.FromSeconds(timeSpanInSeconds));
 
             policy.Execute(() =>
             {
@@ -82,7 +82,7 @@ namespace RobotizeToolbox.Extensions
             this RemoteWebDriver driver,
             By byForElement,
             int timeoutSeconds = 2,
-            int numberOfTires = 5 )
+            int numberOfTires = 3 )
         {
             try
             {
