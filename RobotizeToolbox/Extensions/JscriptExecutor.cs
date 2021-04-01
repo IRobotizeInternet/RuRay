@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 
@@ -23,38 +24,45 @@ namespace RobotizeToolbox.Extensions
             var jsString = "function isElementOutViewport() {" +
                     
                 // Get element by xPath
-                    $"var element = document.evaluate(\"{xpath}\", " +
-                    @"document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
-                       const rect = element.getBoundingClientRect();
+                $"var element = document.evaluate(\"{xpath}\", " +
+                @"document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+                    const rect = element.getBoundingClientRect();
                     
-                    let hight = (document.documentElement.clientHeight);
-                    let width = (document.documentElement.clientWidth);
+                const rect = element.getBoundingClientRect();
                     
-                    // Check if the given element is entirely within the viewport
-                    var res = (
-                        rect.top >= 0 &&
-                        rect.left >= 0 &&
-                        (rect.bottom) <=  hight &&
-                        rect.right <= width
-                    );
+                let height = (document.documentElement.clientHeight);
+                let width = (document.documentElement.clientWidth);
                     
-                    let diff = 0;
-                    if(res) return res;
+                // Check if the given element is entirely within the viewport
+                var res = (
+                    rect.top >= 0 &&
+                    rect.left >= 0 &&
+                    (rect.bottom) <=  height &&
+                    rect.right <= width
+                );
+                    
+                let viewportPercent = 0;
+                if(res) return res;
 
-                    // Check if the given element streaches top and botton of the viewport
-                    else if(res == false && (rect.top < 0 && rect.bottom > hight)) return true;
-            
-                    // Check if the given element's top portion is beyond viewport
-                    else if(rect.top < 0) diff = rect.bottom + rect.top;
-                    
-                    // Check if the given element's bottom portion is beyond viewport
-                    else if(rect.bottom > hight) diff = hight - rect.top;
-                    
-                    // We set the current element is in viewport if it is atleast hight/2.5
-                    // I choose 2.5 after trying few options, initial thoughts were check if half of the 
-                    // current element is visible.
-                    return diff >= hight/2.5;
-                }
+                // Check if the given element streaches top and botton of the viewport
+                else if(res == false && (rect.top < 0 && rect.bottom > height)) return true;
+
+                // If the element completely off the viewport just return false.
+                else if((rect.top < 0 && rect.bottom < 0) || (rect.top > height && rect.bottom > height)) { console.log('completely outside');return false;}
+
+                // Check if the given element's top portion is beyond viewport
+                else if (rect.top < 0) { console.log('top is outside'); viewportPercent = Math.round((rect.bottom / height) * 100); }
+
+                // Check if the given element's bottom portion is beyond viewport
+                else if (rect.bottom > height) { console.log('bottom is out'); viewportPercent = Math.round(((height - rect.top) / height) * 100); }
+
+                // We set the current element is in viewport if it is atleast 40%
+                // I choose 40% after trying few options, initial thoughts were check if half of the
+                // current element is visible.
+                console.log('Element percentage in viewport: ' + viewportPercent);
+                if (viewportPercent >= 40 == false) return false;
+                element.focus();
+                return true;}
             return isElementOutViewport();";
             try
             {
@@ -63,6 +71,7 @@ namespace RobotizeToolbox.Extensions
             }
             catch(Exception ex)
             {
+                Debug.WriteLine(ex.Message);
                 return false;
             }
         }
