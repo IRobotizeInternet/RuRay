@@ -27,7 +27,7 @@ namespace RobotizeToolbox.CommonControls
         // Add Videos --            //input/parent::label/parent::div/parent::div//img
         public static int CurrentRowIndex { get; set; }
         public int RowCount => Driver.FindElements(By.XPath($"{BaseXPath}")).Count;//div[contains(@data-pagelet,'Feed')]")).Count;
-        
+        public string ScrollXPath { get; set; }
         public string GetRowXPath(int positionInSet) {
             return PositionXPath == null 
                 ? BaseXPath 
@@ -50,11 +50,13 @@ namespace RobotizeToolbox.CommonControls
         public ScrollControl(RemoteWebDriver driver,
             string baseXPath = null,
             string positionXPath = null,
-            int currentRowIndex = 1) : base(driver, By.XPath(baseXPath))
+            int currentRowIndex = 1, 
+            string scrollXPath = null) : base(driver, By.XPath(baseXPath))
         {
             BaseXPath = baseXPath;
             PositionXPath = positionXPath;
             CurrentRowIndex = currentRowIndex;
+            ScrollXPath = scrollXPath;
         }
 
         /// <summary>
@@ -124,13 +126,18 @@ namespace RobotizeToolbox.CommonControls
             Driver.FindElementWithTimeSpan(By.XPath(GetRowXPath(positionInSet)));
         }
 
-        /// <summary>
-        /// Use this to scroll more irrespective of the position. 
-        /// </summary>
-        /// <param name="scrollingLength"></param>
-        public void ScrollMore(int scrollingLength = 10, int scrollDown = -1)
+        public void ScrollUpMore(
+             double scrollingLengthXAxis = 0,
+            double scrollingLengthYAxis = 10)
         {
-            base.ScrollMore(scrollingLength, scrollDown);
+            ScrollMore(ScrollXPath, scrollingLengthXAxis, scrollingLengthYAxis, scrollDown: 1);
+        }
+
+        public void ScrollDownMore(
+            double scrollingLengthXAxis = 0,
+            double scrollingLengthYAxis = 10)
+        {
+            ScrollMore(ScrollXPath, scrollingLengthXAxis, scrollingLengthYAxis);
         }
 
         /// <summary>

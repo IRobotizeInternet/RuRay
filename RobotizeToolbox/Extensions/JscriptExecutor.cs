@@ -21,7 +21,8 @@ namespace RobotizeToolbox.Extensions
         public static bool IsElementOutViewport(RemoteWebDriver driver, string xpath)
         {
             var jsString = "function isElementOutViewport() {" +
-                    // Get element buy xPath
+                    
+                // Get element by xPath
                     $"var element = document.evaluate(\"{xpath}\", " +
                     @"document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
                        const rect = element.getBoundingClientRect();
@@ -117,14 +118,39 @@ namespace RobotizeToolbox.Extensions
             return (string)((IJavaScriptExecutor)driver).ExecuteScript(javaScript, element);
         }
 
-        public static void Scroll(RemoteWebDriver driver, double scrollingLength = 10)
+        /// <summary>
+        /// When scrolling pop/dialog list compare to scrolling window we need to 
+        /// pass element xpath inorder to identify the parent containig the scroll bar.
+        /// window.scrollBy will on work on the Feed Windows. 
+        /// </summary>
+        /// <param name="driver"></param>
+        /// <param name="elementXPath">When xpath is null the code will try to scroll feed window.</param>
+        /// <param name="scrollingLengthXAxis"></param>
+        /// <param name="scrollingLengthYAxis"></param>
+        public static void ScrollBy(
+            RemoteWebDriver driver, 
+            string elementXPath, 
+            double scrollingLengthXAxis = 10,
+            double scrollingLengthYAxis = 0)
         {
-            driver.ExecuteScript($"window.scrollBy(0, { scrollingLength })");
+            if (elementXPath == null)
+            {
+                driver.ExecuteScript($"window.scrollBy({scrollingLengthXAxis}, { scrollingLengthYAxis })");
+                return;
+            }
+
+            // When scrolling popup/dialog list
+            var jScript = 
+                $"var element = document.evaluate(\"{elementXPath}\", " +
+                 $@"document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+                      element.scrollBy({scrollingLengthXAxis}, { scrollingLengthYAxis })";
+            driver.ExecuteScript(jScript);
         }
 
         public static int GetViewPortHieght(RemoteWebDriver driver)
         {
-            return int.Parse(driver.ExecuteScript("return window.innerHeight").ToString());
+            var js = (IJavaScriptExecutor)driver;
+            return int.Parse(js.ExecuteScript("return window.innerHeight").ToString());
         }
 
         /// <summary>

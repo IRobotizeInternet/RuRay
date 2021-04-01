@@ -37,34 +37,24 @@ namespace RobotizeToolbox.CommonControls
         /// </summary>
         public virtual bool Click(int numberOfTries = 5)
         {
-            // If any of the following execptions occured try again.
-            var knowErrorMessages = new List<string>
-                {
-                        "not clickable at point",
-                        "element is not attached",
-                        "Timed out"
-                };
-
             // Using Polly library: https://github.com/App-vNext/Polly
             var policy = Policy
               .Handle<InvalidOperationException>()
+              .Or<WebDriverException>()
               .WaitAndRetry(numberOfTries, timespan => TimeSpan.FromSeconds(3));
 
-            policy.Execute(() =>
+            try
             {
-                try {
-                    var element = Driver.FindElementWithTimeSpan(ByForElement, timeSpanInSeconds: 3);
-                    element.Click(); 
-                }
-                catch (WebDriverException ex)
+                policy.Execute(() =>
                 {
-                    if (!knowErrorMessages.Any(x => x.Contains(ex.Message)))
-                    {
-                        Trace.WriteLine($"Unexpected WebDriverException was encountered: {ex.Message} {ex.StackTrace}");
-                    }
-                }
-                catch(InvalidOperationException ex) { Debug.WriteLine(ex.Message); }
-            });
+                    var element = Driver.FindElementWithTimeSpan(ByForElement, timeSpanInSeconds: 3);
+                    element.Click();
+                });
+            }
+            catch(Exception ex)
+            {
+                Debug.WriteLine(ex.Message);
+            }
 
             return true;
         }
@@ -184,15 +174,15 @@ namespace RobotizeToolbox.CommonControls
 
             // Slowly scroll to mimic manual scrolling. 
             for (var i = 1; currentLocation.Y >= 100; i += 80 /*100 & 80 is an offset I came up after trying different combinations*/)            {
-                for (var j = 0; j < 8; j++) JscriptExecutor.Scroll(Driver, j * 2);
-                for (var j = 8; j > 0; j--) JscriptExecutor.Scroll(Driver, j * 2);
+                for (var j = 0; j < 8; j++) JscriptExecutor.ScrollBy(Driver, null, scrollingLengthYAxis: j * 2);
+                for (var j = 8; j > 0; j--) JscriptExecutor.ScrollBy(Driver, null, scrollingLengthYAxis: j * 2);
 
                 destWebElement = Driver.FindElementWithTimeSpan(By.XPath(xPathDestElement));
                 currentLocation = ((RemoteWebElement)destWebElement).LocationOnScreenOnceScrolledIntoView;
             }
 
             // Adding this offset to give more natural scrolling effect. 
-            for (int i = 0; i < 10; i++) ScrollMore(scrollingLength: 5, scrollDown: 1);
+            for (int i = 0; i < 10; i++) ScrollMore(null, scrollingLengthYAxis: 5, scrollDown : 1);
         }
 
         // Used this type of sloppy loops to mimic scrolling with finger.
@@ -206,15 +196,15 @@ namespace RobotizeToolbox.CommonControls
             // Slowly scroll to mimic manual scrolling. 
             for (var i = 1; currentLocation.Y < 100; i += 80 /*80 is an offset I came up after trying different combinations*/)
             {
-                for (var j = 0; j < 8; j++) JscriptExecutor.Scroll(Driver, j * -2);
-                for (var j = 8; j > 0; j--) JscriptExecutor.Scroll(Driver, j * -2);
+                for (var j = 0; j < 8; j++) JscriptExecutor.ScrollBy(Driver, null, scrollingLengthYAxis: j * -2);
+                for (var j = 8; j > 0; j--) JscriptExecutor.ScrollBy(Driver, null, scrollingLengthYAxis: j * -2);
 
                 destWebElement = Driver.FindElementWithTimeSpan(By.XPath(xPathDestElement));
                 currentLocation = ((RemoteWebElement)destWebElement).LocationOnScreenOnceScrolledIntoView;
             }
 
             // Adding this offset to give more natural scrolling effect. 
-            for (int i = 0; i < 10; i++) ScrollMore(scrollingLength: 5);
+            for (int i = 0; i < 10; i++) ScrollMore(null, scrollingLengthYAxis: 5);
         }
 
         /// <summary>
@@ -222,9 +212,17 @@ namespace RobotizeToolbox.CommonControls
         /// </summary>
         /// <param name="scrollingLength"></param>
         /// <param name="scrollDown"> -1 scrolling down and 1 for scrolling up</param>
-        protected void ScrollMore(int scrollingLength = 10, int scrollDown = -1)
+        protected void ScrollMore(
+            string elementXPath,
+            double scrollingLengthXAxis = 0,
+            double scrollingLengthYAxis = 10,
+            int scrollDown = -1)
         {
-            JscriptExecutor.Scroll(Driver, scrollingLength * 0.05);
+            JscriptExecutor.ScrollBy(
+                Driver, 
+                elementXPath,
+                scrollDown * scrollingLengthXAxis * 0.05 /*Adding some random offset*/,
+                scrollDown * scrollingLengthYAxis * 0.05 /*Adding some random offset*/);
         }
 
         protected void JClickElement(IWebElement webElement = null)

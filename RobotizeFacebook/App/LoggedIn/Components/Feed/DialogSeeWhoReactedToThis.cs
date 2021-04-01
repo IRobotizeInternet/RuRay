@@ -13,8 +13,12 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         // base path of the list items for scrolling to work "//div[@aria-label='Reactions']/div[3]"
         // Look into element.scrollBy instead.
         public ScrollControl<ListItemSeeWhoReactedToThis> ScrollReactions =>
-            new ScrollControl<ListItemSeeWhoReactedToThis>(Driver, $"//div[@aria-label='{ResHomePage.Reactions}']/div[3]/div/div");
-        
+            new ScrollControl<ListItemSeeWhoReactedToThis>(
+                Driver, 
+                $"//div[@aria-label='{ResHomePage.Reactions}']/div[3]/div/div",
+                $"//div[@aria-label='{ResHomePage.Reactions}']/div[3]" /*This could be improved to use existing parameter*/);
+
+
         public DialogSeeWhoReactedToThis(RemoteWebDriver driver) : base(driver)
         {
             BaseXPath = "//div[@aria-label='"+ResHomePage.Reactions+"']//div[@role='tab'][@tabindex='0'][{0}]//span";
@@ -38,7 +42,8 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
             new Button(Driver, By.XPath(string.Format(BaseXPath, 7)));
         public Button ButtonReactionsAtSeventhIndex =>
             new Button(Driver, By.XPath(string.Format(BaseXPath, 8)));
-        public Button EventTriggerButtonMore => new Button(Driver, ByForDialog);
+
+        public Button ButtonMore => new Button(Driver, ByForDialog);
         public Button ButtonMoreReactionsByIndex(int index) =>
             new Button(Driver, By.XPath($"//div[@data-pagelet='root']/div[@role='menu']//div[@role='menuitemradio'][{index}]"));
         public PageHome Close()

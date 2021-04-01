@@ -21,20 +21,13 @@ namespace RobotizeToolbox.Extensions
             // Using Polly library: https://github.com/App-vNext/Polly
             var policy = Policy
               .Handle<InvalidOperationException>()
+              .Or<TimeoutException>()
               .WaitAndRetry(10, t => TimeSpan.FromSeconds(timeSpanInSeconds));
 
             policy.Execute(() =>
             {
-                try
-                {
-                    elements = driver.FindElements(by);
-                    return elements.Any();
-                }
-                catch (TimeoutException ex)
-                {
-                    Trace.WriteLine($"Timed our exception{ex.Message} \n {ex.InnerException}");
-                    return false;
-                }
+                elements = driver.FindElements(by);
+                return elements.Any();
             });
 
             // If no elements found then throw an exception.
@@ -43,7 +36,7 @@ namespace RobotizeToolbox.Extensions
             // If found more than one element then throw an exception.
             if (elements.Count() > 1) Trace.WriteLine($"More than one element found matching criteria '{by}'");
 
-            return elements?.First();
+            return elements.Any() ? elements.First() : null;
         }
 
         /// <summary>

@@ -35,7 +35,7 @@ namespace RobotizeToolbox.Controls
             // TODO: We need to think about this things in future, othere it will cause significant delay. 
             _element.MoveCursorToElement();
             Thread.Sleep(3000);
-            return (EventResult)Activator.CreateInstance(typeof(EventResult));
+            return (EventResult)Activator.CreateInstance(typeof(EventResult), Driver);
         }
     }
 }
