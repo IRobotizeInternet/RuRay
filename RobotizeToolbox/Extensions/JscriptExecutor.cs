@@ -60,9 +60,12 @@ namespace RobotizeToolbox.Extensions
                 // I choose 40% after trying few options, initial thoughts were check if half of the
                 // current element is visible.
                 console.log('Element percentage in viewport: ' + viewportPercent);
+                
                 if (viewportPercent >= 40 == false) return false;
+                
                 element.focus();
-                return true;}
+                return true;
+            }
             return isElementOutViewport();";
             try
             {
@@ -89,42 +92,9 @@ namespace RobotizeToolbox.Extensions
             }
             catch(Exception ex)
             {
+                Debug.WriteLine(ex.Message);
                 return false;
             }
-            
-        }
-
-        /// <summary>
-        /// Get the xpath from an IWebElement.
-        /// </summary>
-        /// <param name="driver">Driver</param>
-        /// <param name="element">element</param>
-        /// <returns>xpath</returns>
-        public static string GetElementXPath(RemoteWebDriver driver, IWebElement element)
-        {
-            var javaScript = "function getElementXPath(elt){" +
-                                    "var path = \"\";" +
-                                    "for (; elt && elt.nodeType == 1; elt = elt.parentNode){" +
-                                        "idx = getElementIdx(elt);" +
-                                        "xname = elt.tagName;" +
-                                        "if (idx > 1){" +
-                                            "xname += \"[\" + idx + \"]\";" +
-                                        "}" +
-                                        "path = \"/\" + xname + path;" +
-                                    "}" +
-                                    "return path;" +
-                                "}" +
-                                "function getElementIdx(elt){" +
-                                    "var count = 1;" +
-                                    "for (var sib = elt.previousSibling; sib ; sib = sib.previousSibling){" +
-                                        "if(sib.nodeType == 1 && sib.tagName == elt.tagName){" +
-                                            "count++;" +
-                                        "}" +
-                                    "}" +
-                                    "return count;" +
-                                "}" +
-                                "return getElementXPath(arguments[0]).toLowerCase();";
-            return (string)((IJavaScriptExecutor)driver).ExecuteScript(javaScript, element);
         }
 
         /// <summary>
