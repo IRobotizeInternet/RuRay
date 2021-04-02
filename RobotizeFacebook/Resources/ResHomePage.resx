@@ -135,6 +135,15 @@
   <data name="BackgroundOptions" xml:space="preserve">
     <value>Background Options</value>
   </data>
+  <data name="Undo" xml:space="preserve">
+    <value>Undo</value>
+  </data>
+  <data name="PreviousItems" xml:space="preserve">
+    <value>Previous Items</value>
+  </data>
+  <data name="NextItems" xml:space="preserve">
+    <value>Next Items</value>
+  </data>
   <data name="BlockWithOutSpace" xml:space="preserve">
     <value>Block</value>
   </data>
@@ -291,6 +300,9 @@
   <data name="SeeAllStories" xml:space="preserve">
     <value>See all stories</value>
   </data>
+  <data name="SeeAll" xml:space="preserve">
+    <value>See All</value>
+  </data>
   <data name="SeeWhoReactedToThis" xml:space="preserve">
     <value>See who reacted to this</value>
   </data>
@@ -389,5 +401,11 @@
   </data>
   <data name="PeopleWhoSharedThis" xml:space="preserve">
     <value>People Who Shared This</value>
+  </data>
+  <data name="ActionsForThisPost" xml:space="preserve">
+    <value>Actions for this post</value>
+  </data>
+  <data name="HidePeopleYouMayKnow" xml:space="preserve">
+    <value>Hide People You May Know</value>
   </data>
 </root>

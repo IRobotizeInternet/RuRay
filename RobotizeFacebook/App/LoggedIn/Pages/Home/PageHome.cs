@@ -40,6 +40,8 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
             Driver.FindElements(By.XPath($"//rdiv[@role='main']//div[contains(@aria-label,'{ResCreatePost.FriendRoomTile}')]"))?
             .Select(x => new ButtonImage(Driver, By.XPath(x.Text.Substring(x.Text.IndexOf($"{ResCreatePost.FriendRoomTile}"), ResCreatePost.FriendRoomTile.Length))));
 
+        public Button ButtonUndo => new Button(Driver, By.XPath($"//span[text()='{ResHomePage.Undo}']"));
+
         public FeedHome _feed;
         public FeedHome Feed
         {
@@ -57,48 +59,48 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public override void RunConformance()
         {
             // Verify all the reaction buttons. 
-            Feed.FeedScroll.ScrollingDownWithAGivenInterval(3, scrollFromCurrentLocation: true);
+            //Feed.FeedScroll.ScrollingDownWithAGivenInterval(3, scrollFromCurrentLocation: true);
             Feed.FeedScroll.ScrollingUpWithAGivenInterval(1, scrollFromCurrentLocation: true);
-            var likeButton = Feed.FeedScroll.ListITem.ButtonLike;
-            likeButton.Hoverover().ButtonReactionLike.Click();
-            Thread.Sleep(2000);
-            likeButton.Click();
-            // Clicking on the comment box to move the fox from button, otherwise it will 
-            Feed.FeedScroll.ListITem.EventTriggerButtonComment.Click();
-            likeButton.Hoverover().ButtonReactionWow.Click();
-            Thread.Sleep(2000);
-            likeButton.Click();
-            Feed.FeedScroll.ListITem.EventTriggerButtonComment.Click();
-            likeButton.Hoverover().ButtonReactionSad.Click();
-            Thread.Sleep(2000);
-            likeButton.Click();
-            Feed.FeedScroll.ListITem.EventTriggerButtonComment.Click();
-            likeButton.Hoverover().ButtonReactionHaha.Click();
-            Thread.Sleep(2000);
-            likeButton.Click();
-            Feed.FeedScroll.ListITem.EventTriggerButtonComment.Click();
-            likeButton.Hoverover().ButtonReactionCare.Click();
-            Thread.Sleep(2000);
-            likeButton.Click();
-            Feed.FeedScroll.ListITem.EventTriggerButtonComment.Click();
-            likeButton.Hoverover().ButtonReactionAngry.Click();
-            Thread.Sleep(2000);
-            likeButton.Click();
+            //var likeButton = Feed.FeedScroll.ListITem.ButtonLike;
+            //likeButton.Hoverover().ButtonReactionLike.Click();
+            //Thread.Sleep(2000);
+            //likeButton.Click();
+            //// Clicking on the comment box to move the fox from button, otherwise it will 
+            //Feed.FeedScroll.ListITem.EventTriggerButtonComment.Click();
+            //likeButton.Hoverover().ButtonReactionWow.Click();
+            //Thread.Sleep(2000);
+            //likeButton.Click();
+            //Feed.FeedScroll.ListITem.EventTriggerButtonComment.Click();
+            //likeButton.Hoverover().ButtonReactionSad.Click();
+            //Thread.Sleep(2000);
+            //likeButton.Click();
+            //Feed.FeedScroll.ListITem.EventTriggerButtonComment.Click();
+            //likeButton.Hoverover().ButtonReactionHaha.Click();
+            //Thread.Sleep(2000);
+            //likeButton.Click();
+            //Feed.FeedScroll.ListITem.EventTriggerButtonComment.Click();
+            //likeButton.Hoverover().ButtonReactionCare.Click();
+            //Thread.Sleep(2000);
+            //likeButton.Click();
+            //Feed.FeedScroll.ListITem.EventTriggerButtonComment.Click();
+            //likeButton.Hoverover().ButtonReactionAngry.Click();
+            //Thread.Sleep(2000);
+            //likeButton.Click();
 
-            var reactionsWindow = Feed.FeedScroll.ListITem.EventTriggerButtonSeeWhoReactedToThis.Click();
-            reactionsWindow.ScrollReactions.ScrollDownMore();
-            reactionsWindow.ButtonAllReactions.Click();
-            reactionsWindow.ButtonReactionsAtFirstIndex.Click();
-            reactionsWindow.ButtonReactionsAtSecondIndex.Click();
-            reactionsWindow.ButtonReactionsAtThirdIndex.Click();
-            reactionsWindow.ButtonReactionsAtFourthIndex.Click();
-            reactionsWindow.ButtonReactionsAtFifthIndex.Click();
-            reactionsWindow.ButtonReactionsAtSixthIndex.Click();
-            reactionsWindow.ButtonReactionsAtSeventhIndex.Click();
-            reactionsWindow.ButtonAllReactions.Click();
-            reactionsWindow.ScrollReactions.ScrollDownMore();
-            reactionsWindow.ScrollReactions.ScrollUpMore();
-            Thread.Sleep(5000);
+            //var reactionsWindow = Feed.FeedScroll.ListITem.EventTriggerButtonSeeWhoReactedToThis.Click();
+            //reactionsWindow.ScrollReactions.ScrollDownMore();
+            //reactionsWindow.ButtonAllReactions.Click();
+            //reactionsWindow.ButtonReactionsAtFirstIndex.Click();
+            //reactionsWindow.ButtonReactionsAtSecondIndex.Click();
+            //reactionsWindow.ButtonReactionsAtThirdIndex.Click();
+            //reactionsWindow.ButtonReactionsAtFourthIndex.Click();
+            //reactionsWindow.ButtonReactionsAtFifthIndex.Click();
+            //reactionsWindow.ButtonReactionsAtSixthIndex.Click();
+            //reactionsWindow.ButtonReactionsAtSeventhIndex.Click();
+            //reactionsWindow.ButtonAllReactions.Click();
+            //reactionsWindow.ScrollReactions.ScrollDownMore();
+            //reactionsWindow.ScrollReactions.ScrollUpMore();
+            //Thread.Sleep(5000);
             var item = Feed.FeedScroll.ListITem;
             var peopleWhoSharedDialog = item.EventTriggerButtonPeopleWhoSharedThis.Click();
             var itemPersonWhoSharedIt = peopleWhoSharedDialog.ScrollPeopleWhoSharedThis;

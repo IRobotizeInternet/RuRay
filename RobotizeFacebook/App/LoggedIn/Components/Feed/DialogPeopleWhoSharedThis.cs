@@ -5,6 +5,10 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class DialogPeopleWhoSharedThis : BaseDriver
     {
+        public DialogPeopleWhoSharedThis(string baseXPath)
+        {
+        }
+
         public ScrollControl<ListItemPeopleWhoSharedThis> ScrollPeopleWhoSharedThis =>
            new ScrollControl<ListItemPeopleWhoSharedThis>(
                Driver, 

@@ -61,6 +61,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Actions for this post.
+        /// </summary>
+        public static string ActionsForThisPost {
+            get {
+                return ResourceManager.GetString("ActionsForThisPost", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Activities.
         /// </summary>
         public static string Activities {
@@ -322,6 +331,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Hide People You May Know.
+        /// </summary>
+        public static string HidePeopleYouMayKnow {
+            get {
+                return ResourceManager.GetString("HidePeopleYouMayKnow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Hide posts from.
         /// </summary>
         public static string HidePostsFrom {
@@ -448,6 +466,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Next Items.
+        /// </summary>
+        public static string NextItems {
+            get {
+                return ResourceManager.GetString("NextItems", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Non-Consensual Intimate Images.
         /// </summary>
         public static string NonConsensualIntimateImages {
@@ -507,6 +534,15 @@ namespace RobotizeFacebook.Resources {
         public static string PostASticker {
             get {
                 return ResourceManager.GetString("PostASticker", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Previous Items.
+        /// </summary>
+        public static string PreviousItems {
+            get {
+                return ResourceManager.GetString("PreviousItems", resourceCulture);
             }
         }
         
@@ -579,6 +615,15 @@ namespace RobotizeFacebook.Resources {
         public static string Search {
             get {
                 return ResourceManager.GetString("Search", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to See All.
+        /// </summary>
+        public static string SeeAll {
+            get {
+                return ResourceManager.GetString("SeeAll", resourceCulture);
             }
         }
         
@@ -813,6 +858,15 @@ namespace RobotizeFacebook.Resources {
         public static string UnauthorizedSales {
             get {
                 return ResourceManager.GetString("UnauthorizedSales", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Undo.
+        /// </summary>
+        public static string Undo {
+            get {
+                return ResourceManager.GetString("Undo", resourceCulture);
             }
         }
         
