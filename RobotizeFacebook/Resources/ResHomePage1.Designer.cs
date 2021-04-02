@@ -574,6 +574,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Related.
+        /// </summary>
+        public static string Related {
+            get {
+                return ResourceManager.GetString("Related", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Reply.
         /// </summary>
         public static string Reply {

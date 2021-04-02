@@ -151,6 +151,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Comments.
+        /// </summary>
+        public static string Comments {
+            get {
+                return ResourceManager.GetString("Comments", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Create Post.
         /// </summary>
         public static string CreatePost {
@@ -331,6 +340,24 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to more comments.
+        /// </summary>
+        public static string MoreComments {
+            get {
+                return ResourceManager.GetString("MoreComments", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to More Shares.
+        /// </summary>
+        public static string MoreShares {
+            get {
+                return ResourceManager.GetString("MoreShares", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to New Room.
         /// </summary>
         public static string NewRoom {
@@ -394,6 +421,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Related Discussions.
+        /// </summary>
+        public static string RelatedDiscussions {
+            get {
+                return ResourceManager.GetString("RelatedDiscussions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Remove from Friends Who Will See Your Post.
         /// </summary>
         public static string RemoveFromFriendsWhoWillSeeYourPost {
@@ -417,6 +453,15 @@ namespace RobotizeFacebook.Resources {
         public static string SaveChanges {
             get {
                 return ResourceManager.GetString("SaveChanges", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Save link.
+        /// </summary>
+        public static string SaveLink {
+            get {
+                return ResourceManager.GetString("SaveLink", resourceCulture);
             }
         }
         
@@ -453,6 +498,15 @@ namespace RobotizeFacebook.Resources {
         public static string SearchForVideos {
             get {
                 return ResourceManager.GetString("SearchForVideos", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to See who reacted to this.
+        /// </summary>
+        public static string SeeWhoReactedToThis {
+            get {
+                return ResourceManager.GetString("SeeWhoReactedToThis", resourceCulture);
             }
         }
         

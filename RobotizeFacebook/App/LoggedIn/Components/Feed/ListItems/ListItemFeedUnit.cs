@@ -33,18 +33,10 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
            new EventTriggerButton<PopupComments>(Driver, By.XPath($"{FeedCommentControlsXPath}//span[contains(text(), '{ResHomePage.Comments}')]"), FeedCommentsXPath);
         public EventTriggerButton<DialogPeopleWhoSharedThis> EventTriggerButtonPeopleWhoSharedThis =>
             new EventTriggerButton<DialogPeopleWhoSharedThis>(Driver, By.XPath($"{FeedCommentControlsXPath}//span[contains(text(), '{ResHomePage.Shares}')]"));
-        
-        // Please note since we are relying on button text which could change 
-        // So we have added all the possible comibinations. 
+        public EventTriggerButton<DialogRelatedDiscussions> EventTriggerButtonRelated =>
+           new EventTriggerButton<DialogRelatedDiscussions>(Driver, By.XPath($"{FeedCommentControlsXPath}//span[contains(text(), '{ResHomePage.Related}')]"));
         public EventTriggerButton<HoverOverLike> ButtonLike =>
-            new EventTriggerButton<HoverOverLike>(Driver, 
-                By.XPath($"{FeedCommentControlsXPath}//span[text()='{ResHomePage.Like}' or " +
-                    $"text()='{ResHomePage.Love}' or " +
-                    $"text()='{ResHomePage.Angry}' or " +
-                    $"text()='{ResHomePage.Sad}' or " +
-                    $"text()='{ResHomePage.Care}' or " +
-                    $"text()='{ResHomePage.Haha}' or " +
-                    $"text()='{ResHomePage.Wow}']"));
+            new EventTriggerButton<HoverOverLike>(Driver, By.XPath($"{FeedCommentControlsXPath}{Constants.LikeOptions}"));
 
         public EventTriggerButton<PopupComments> EventTriggerButtonComment =>
            new EventTriggerButton<PopupComments>(Driver, 

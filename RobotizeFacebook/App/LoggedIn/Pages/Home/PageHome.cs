@@ -4,6 +4,7 @@ using System.Threading;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 using RobotizeFacebook.Resources;
+using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
@@ -103,7 +104,9 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
             //Thread.Sleep(5000);
             var item = Feed.FeedScroll.ListITem;
             var peopleWhoSharedDialog = item.EventTriggerButtonPeopleWhoSharedThis.Click();
-            var itemPersonWhoSharedIt = peopleWhoSharedDialog.ScrollPeopleWhoSharedThis;
+            peopleWhoSharedDialog.ScrollPeopleWhoSharedThis.ScrollDownMore();
+            peopleWhoSharedDialog.ScrollPeopleWhoSharedThis.ScrollDownMore();
+            peopleWhoSharedDialog.ScrollPeopleWhoSharedThis.ScrollUpMore();
             //reactionsWindow.Close();
         }
 

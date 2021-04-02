@@ -408,4 +408,7 @@
   <data name="HidePeopleYouMayKnow" xml:space="preserve">
     <value>Hide People You May Know</value>
   </data>
+  <data name="Related" xml:space="preserve">
+    <value>Related</value>
+  </data>
 </root>

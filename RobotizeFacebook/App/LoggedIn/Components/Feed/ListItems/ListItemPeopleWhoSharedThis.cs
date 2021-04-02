@@ -11,8 +11,11 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public Label LabelUserName =>
             new Label(Driver, By.XPath($"{BaseXPath}//strong/span"));
 
-        public Button ButtonLike =>
-            new Button(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.Like}']"));
+        public EventTriggerButton<HoverOverUserProfile> EventTriggerButtonUserName =>
+            new EventTriggerButton<HoverOverUserProfile>(Driver, By.XPath($"{BaseXPath}//strong/span"));
+
+        public EventTriggerButton<HoverOverLike> ButtonLike =>
+           new EventTriggerButton<HoverOverLike>(Driver, By.XPath($"{BaseXPath}{Constants.LikeOptions}"));
 
         public Button ButtonSendThisToFriendsOrPostItOnYourTimeline =>
             new Button(Driver, By.XPath($"{BaseXPath}//div[@aria-label=\"{ResCreatePost.SendThisToFriendsOrPostItOnYourTimeline}\"]"));
@@ -42,13 +45,13 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
             new Button(Driver, By.XPath($"//div[@role='menuitem']//span[contains(text(),'{ResCreatePost.Unfollow}']"));
 
         public Button ButtonSavePost =>
-            new Button(Driver, By.XPath($"//div[@role='menuitem']//span[contains(text(),'{ResCreatePost.SavePost}']"));
-
-        public Button ButtonEmbed =>
-            new Button(Driver, By.XPath($"//div[@role='menuitem']//span[contains(text(),'{ResCreatePost.Embed}']"));
+            new Button(Driver, By.XPath($"//div[@role='menuitem']//span[contains(text(),'{ResCreatePost.SavePost}'] or contains(text(),'{ResCreatePost.SaveLink}']"));
 
         public Button ButtonTurnOnNotificationsForThisPost =>
             new Button(Driver, By.XPath($"//div[@role='menuitem']//span[contains(text(),'{ResCreatePost.TurnOnNotificationsForThisPost}']"));
+
+        public Button ButtonEmbed =>
+            new Button(Driver, By.XPath($"//div[@role='menuitem']//span[contains(text(),'{ResCreatePost.Embed}']"));
 
         protected override By ByForDialog => By.XPath($"//div[@role='menuitem']//span[text()='{ResCreatePost.TurnOnNotificationsForThisPost}']");
 

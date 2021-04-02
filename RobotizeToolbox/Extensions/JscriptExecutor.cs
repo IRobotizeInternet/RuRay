@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
+using Polly;
 
 namespace RobotizeToolbox.Extensions
 {
@@ -121,8 +122,15 @@ namespace RobotizeToolbox.Extensions
                 $"var element = document.evaluate(\"{elementXPath}\", " +
                  @"document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
                       element.scrollBy({0}, {1})";
-            for (var i = 0; i < scrollingLengthXAxis; i++) driver.ExecuteScript(string.Format(jScript, i, 0)); /*scroll along x-axis*/
-            for (var i = 0; i < scrollingLengthYAxis; i++) driver.ExecuteScript(string.Format(jScript, 0, i)); /*scroll along x-axis*/
+            var policy = Policy
+              .Handle<WebDriverException>()
+              .WaitAndRetry(3 /*Number of tries*/, timespan => TimeSpan.FromSeconds(3));
+
+            policy.Execute(() =>
+            {
+                for (var i = 0; i < scrollingLengthXAxis; i++) driver.ExecuteScript(string.Format(jScript, i, 0)); /*scroll along x-axis*/
+                for (var i = 0; i < scrollingLengthYAxis; i++) driver.ExecuteScript(string.Format(jScript, 0, i)); /*scroll along x-axis*/
+            });
         }
 
         public static int GetViewPortHieght(RemoteWebDriver driver)
