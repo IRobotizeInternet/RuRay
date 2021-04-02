@@ -11,8 +11,8 @@ namespace RobotizeFacebookTests.LoggedIn
         {
             //var page = new PageLogin();
             //page.Login();
-            PageHome l = new PageHome();
-            l.RunConformance();
+           // PageHome l = new PageHome();
+           // l.RunConformance();
 
             //l.Header.MiddleMenu.VerifyNotifications();
             //d.Header.RunConformance();
