@@ -6,7 +6,6 @@ using RobotizeLibrary.Extensions;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls;
 using RobotizeToolbox.Controls.TriggerControls;
-using RobotizeToolbox.Dialogs;
 using System;
 using System.Linq;
 
@@ -55,7 +54,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages.JobsComposer.ScheduleLiveVideoEven
 
         public class DialogEndDateAndTime : BaseDialog
         {
-            public DialogEndDateAndTime(RemoteWebDriver driver) : base(driver)
+            public DialogEndDateAndTime()
             {
             }
 
@@ -63,12 +62,16 @@ namespace RobotizeFacebook.App.LoggedIn.Pages.JobsComposer.ScheduleLiveVideoEven
             public TextBox TextBoxEndDate => new TextBox(Driver, By.XPath($"{BaseXPath}//span[text()='{ResLeftNav.EndDate}']"));
             public TextBox TextBoxEndTime => new TextBox(Driver, By.XPath($"{BaseXPath}//span[text()='{ResLeftNav.EndTime}']"));
 
+            public override void RunConformance()
+            {
+                throw new NotImplementedException();
+            }
         }
     }
 
     public class DialogScheduleNext : BaseDialog
     {
-        public DialogScheduleNext(RemoteWebDriver driver) : base(driver)
+        public DialogScheduleNext()
         {
         }
 
@@ -89,6 +92,11 @@ namespace RobotizeFacebook.App.LoggedIn.Pages.JobsComposer.ScheduleLiveVideoEven
             return illustrations[index];
         }
 
+        public override void RunConformance()
+        {
+            throw new NotImplementedException();
+        }
+
         public EventTriggerButton<DialogEventSettings> EventTriggerButtonEventSettings =>
             new EventTriggerButton<DialogEventSettings>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResLeftNav.EventSettings}']"));
 
@@ -103,24 +111,34 @@ namespace RobotizeFacebook.App.LoggedIn.Pages.JobsComposer.ScheduleLiveVideoEven
 
         public class DialogInvalidTime : BaseDialog
         {
-            public DialogInvalidTime(RemoteWebDriver driver) : base(driver)
+            public DialogInvalidTime()
             {
             }
 
             protected override By ByForDialog => By.XPath($"//span[text()='{ResLeftNav.InvalidTime}']");
 
             public Button ButtonOK => new Button(Driver, By.XPath($"//span[text()='{ResLeftNav.InvalidTime}' and //span[text()='{ResLeftNav.OK}']]"));
+
+            public override void RunConformance()
+            {
+                throw new NotImplementedException();
+            }
         }
 
         public class DialogLiveVideoEventSuccessfullyCreated : BaseDialog
         {
-            public DialogLiveVideoEventSuccessfullyCreated(RemoteWebDriver driver) : base(driver)
+            public DialogLiveVideoEventSuccessfullyCreated()
             {
             }
 
             protected override By ByForDialog => By.XPath($"//span[text()='{ResLeftNav.LiveVideoEventSuccessfullyCreated}']");
 
             public EventTriggerButton<DialogScheduleNext> ButtonClose => new EventTriggerButton<DialogScheduleNext>(Driver, By.XPath($"//span[text()='{ResLeftNav.Close}' and //span[text()='{ResLeftNav.LiveVideoEventSuccessfullyCreated}']]"));
+
+            public override void RunConformance()
+            {
+                throw new NotImplementedException();
+            }
         }
     }
 }

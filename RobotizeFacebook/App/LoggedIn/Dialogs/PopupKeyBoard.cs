@@ -1,15 +1,12 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
-using RobotizeFacebook.App.LoggedIn.Dialogs;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.Controls;
-using RobotizeToolbox.Dialogs;
 
-namespace RobotizeFacebook.App.LoggedIn
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class PopupKeyBoard : BasePopup
     {
-        public PopupKeyBoard(RemoteWebDriver driver) : base(driver)
+        public PopupKeyBoard()
         {
             BaseXPath = $"//div[@aria-label='{ResAccount.UseSingleCharacterKeyboardShortcuts}']";
         }
@@ -24,5 +21,10 @@ namespace RobotizeFacebook.App.LoggedIn
 
         public RadioButton RButtonUseSingleCharacterKeyboardShortcutsOff =>
             new RadioButton(Driver, By.XPath($"{BaseXPath}//span[text()='{ResAccount.Off}']"));
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

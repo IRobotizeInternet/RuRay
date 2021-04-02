@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium;
 using RobotizeLibrary.Components.Eidtor;
-using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Extensions;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages

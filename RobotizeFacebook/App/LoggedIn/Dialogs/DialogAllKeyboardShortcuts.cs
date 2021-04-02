@@ -1,14 +1,12 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.Controls;
-using RobotizeToolbox.Dialogs;
 
-namespace RobotizeFacebook.App.LoggedIn.Dialogs
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class DialogAllKeyboardShortcuts : BaseDialog
     {
-        public DialogAllKeyboardShortcuts(RemoteWebDriver driver) : base(driver)
+        public DialogAllKeyboardShortcuts()
         {
         }
 
@@ -16,5 +14,10 @@ namespace RobotizeFacebook.App.LoggedIn.Dialogs
         protected override By ByForDialog => By.XPath(_baseXPath);
 
         public Checkbox SingleCharacterKeyboardShortCut => new Checkbox(Driver, By.XPath($"{_baseXPath}//input[@type='checkbox']"));
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

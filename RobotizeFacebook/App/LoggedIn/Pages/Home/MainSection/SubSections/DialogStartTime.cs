@@ -1,15 +1,13 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls;
-using RobotizeToolbox.Dialogs;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class DialogStartTime : BaseDialog
     {
-        public DialogStartTime(RemoteWebDriver driver) : base(driver)
+        public DialogStartTime()
         {
         }
 
@@ -25,6 +23,9 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public Button ButtonSave =>
             new Button(Driver, By.XPath($"//div[@role='dialog']//div[@aria-label='{ResLeftNav.Save}']"));
 
-
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

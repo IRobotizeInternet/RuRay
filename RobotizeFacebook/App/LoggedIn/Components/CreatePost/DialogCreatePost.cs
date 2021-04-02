@@ -1,17 +1,15 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using RobotizeFacebook.App.LoggedIn;
 using RobotizeFacebook.App.LoggedIn.Components;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls;
-using RobotizeToolbox.Dialogs;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class DialogCreatePost : BaseDialog
     {
-        public DialogCreatePost(RemoteWebDriver driver) : base(driver)
+        public DialogCreatePost(RemoteWebDriver driver) : base()
         {
             BaseXPath = "//form[@method='POST']";
         }
@@ -54,11 +52,16 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         
         public EventTriggerButton<DialogSelectAudience> TriggerEditPrivacyDialog => 
             new EventTriggerButton<DialogSelectAudience>(Driver, By.XPath($"//div[contains(@aria-label,'{ResCreatePost.EditPrivacy}')]"));
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 
     public class DialogShowBackgroundOptions : BaseDialog
     {
-        public DialogShowBackgroundOptions(RemoteWebDriver driver) : base(driver)
+        public DialogShowBackgroundOptions(RemoteWebDriver driver) : base()
         {
         }
 
@@ -66,7 +69,12 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         protected override By ByForDialog => By.XPath($"//div[@aria-label='{ResCreatePost.Nobackground}']");
 
         public Button GetBackgroundByName(PostBackgroundcolor background) => new Button(Driver, By.XPath($"{Basepath}//div[@aria-label='{background}']"));
-        
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
+
         public EventTriggerButton<DialogMoreBackgroundOptions> ButtonMoreBackgroundOptionsDialog =>
             new EventTriggerButton<DialogMoreBackgroundOptions>(Driver, By.XPath($"//div[@aria-label='{ResCreatePost.BackgroundOptions}']"));
     }

@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using RobotizeToolbox.Dialogs;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.Controls;
 
@@ -10,7 +9,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
     {
         protected override By ByForDialog => By.XPath(string.Format(_xPathString, ResAccount.Account, ResAccount.Settings));
 
-        public PopupSettingAndPrivacy(RemoteWebDriver driver) : base(driver)
+        public PopupSettingAndPrivacy()
         {
             BaseXPath = $"//div[@aria-label='{ResAccount.Account}'][@role='dialog']";
         }
@@ -35,5 +34,10 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         // TODO: The click event needs to be adjusted to have an additional parameter, that selects tabs after loading the page.
         public EventTriggerButton<PageSettings> ButtonLanguage => 
             new EventTriggerButton<PageSettings>(Driver, By.XPath(string.Format(_xPathString, ResAccount.Account, ResAccount.Language)));
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

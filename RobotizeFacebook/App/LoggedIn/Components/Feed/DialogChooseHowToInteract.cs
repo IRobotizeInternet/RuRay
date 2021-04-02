@@ -1,7 +1,5 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
 using RobotizeFacebook.Resources;
-using RobotizeToolbox.Dialogs;
 using System.Collections.Generic;
 using System.Linq;
 
@@ -9,7 +7,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class DialogChooseHowToInteract : BaseDialog
     {
-        public DialogChooseHowToInteract(RemoteWebDriver driver) : base(driver)
+        public DialogChooseHowToInteract()
         {
         }
 
@@ -22,6 +20,11 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
             var options = AllAvailableOptiosOfHowToInteract;
             if (index > options.Count) return;
             AllAvailableOptiosOfHowToInteract[index].Click();
+        }
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

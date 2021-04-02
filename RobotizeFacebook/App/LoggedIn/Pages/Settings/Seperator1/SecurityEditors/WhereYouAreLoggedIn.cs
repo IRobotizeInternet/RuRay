@@ -3,7 +3,6 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls.TriggerControls;
-using RobotizeToolbox.Dialogs;
 using RobotizeFacebook.Resources;
 using System;
 
@@ -22,10 +21,15 @@ namespace RobotizeFacebook.App.LoggedIn.Pages.SecurityEditors
 
     public class DialogSeeMore : BaseDialog
     {
-        public DialogSeeMore(RemoteWebDriver driver) : base(driver)
+        public DialogSeeMore()
         {
         }
 
         protected override By ByForDialog => throw new NotImplementedException();
+
+        public override void RunConformance()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

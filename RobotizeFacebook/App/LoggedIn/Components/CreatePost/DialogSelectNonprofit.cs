@@ -2,17 +2,21 @@
 using OpenQA.Selenium.Remote;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.Controls;
-using RobotizeToolbox.Dialogs;
 
-namespace RobotizeFacebook.App.LoggedIn.Components
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class DialogSelectNonprofit : BaseDialog
     {
-        public DialogSelectNonprofit(RemoteWebDriver driver) : base(driver)
+        public DialogSelectNonprofit()
         {
         }
 
         protected override By ByForDialog => By.XPath($"//form[@method='POST']/parent::div[@role='dialog']//span[text()='{ResCreatePost.SelectNonprofit}']");
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
 
         public sealed class CheckinCombox : Combobox
         {

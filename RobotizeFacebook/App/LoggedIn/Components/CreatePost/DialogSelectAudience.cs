@@ -1,14 +1,12 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.Controls;
-using RobotizeToolbox.Dialogs;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class DialogSelectAudience : BaseDialog
     {
-        public DialogSelectAudience(RemoteWebDriver driver) : base(driver)
+        public DialogSelectAudience()
         {
             BaseXPath = "//form[@method='POST']";
         }
@@ -33,5 +31,10 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         
         public RadioButton RButtonCloseFriends => new RadioButton(Driver, By.XPath($"{BaseXPath}//span[text()='{ResSelectPrivacy.CloseFriends}']"));
         public RadioButton RButtonCanada => new RadioButton(Driver, By.XPath($"{BaseXPath}//span[text()='{ResSelectPrivacy.Canada}']"));
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

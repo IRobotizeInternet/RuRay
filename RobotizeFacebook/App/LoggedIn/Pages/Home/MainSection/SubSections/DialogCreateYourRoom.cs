@@ -1,6 +1,4 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
-using RobotizeToolbox.Dialogs;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.Controls;
 
@@ -10,8 +8,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
     {
         protected override By ByForDialog => By.XPath($"//div[@role='dialog']//span[text()='{ResMiscellaneous.CreateYourRoom}']");
 
-        public DialogCreateYourRoom(RemoteWebDriver driver)
-            :base(driver)
+        public DialogCreateYourRoom()
         {
             
         }
@@ -24,5 +21,10 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
             new Checkbox(Driver, By.XPath("//div[@role='dialog']//input"));
         public EventTriggerButton<DialogJoinRoom> EventTriggerButtonCreateRoom =>
             new EventTriggerButton<DialogJoinRoom>(Driver, By.XPath($"//div[@role='dialog']//span[text()='{ResMiscellaneous.CreateRoom}']"));
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

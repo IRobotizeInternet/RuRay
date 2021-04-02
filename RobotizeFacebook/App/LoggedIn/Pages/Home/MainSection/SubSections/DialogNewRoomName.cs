@@ -1,20 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
+﻿using OpenQA.Selenium;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls;
-using RobotizeToolbox.Dialogs;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class DialogNewRoomName : BaseDialog
     {
-        public DialogNewRoomName(RemoteWebDriver driver) : base(driver)
+        public DialogNewRoomName()
         {
             //var a = "🌴";
             BaseXPath = $"//div[@role='dialog']//span[text()='{ResMiscellaneous.NewRoomName}']/parent::span/parent::h2/parent::div/following-sibling::div[3]";
@@ -32,6 +25,11 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 
         public Button ButtonChooseAnImageByIndex(int index)
             =>new Button(Driver, By.XPath($"{BaseXPath}/div/div/div[{index}]//img"));
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
 
         public EventTriggerButton<CreateRoom> ButtonSave =>
             new EventTriggerButton<CreateRoom>(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResLeftNav.Save}']"));

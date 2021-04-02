@@ -1,15 +1,13 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
 using RobotizeFacebook.App.LoggedIn.Enum;
 using RobotizeFacebook.Resources;
 using RobotizeLibrary.Extensions;
 using RobotizeToolbox.Controls;
-using RobotizeToolbox.Dialogs;
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class DialogActivityLogFilter : BaseDialog
     {
-        public DialogActivityLogFilter(RemoteWebDriver driver) : base(driver)
+        public DialogActivityLogFilter()
         {
             BaseXPath = $"//div[@role='dialog'][@aria-label='{ResMiscellaneous.Filter}']";
         }
@@ -25,6 +23,11 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
             // TODO: Fix the below function.
             //rButton.ScrollToElement();
             return rButton;
+        }
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
         }
 
         public EventTriggerButton<PageActivityLog> ButtonActivityLog => 

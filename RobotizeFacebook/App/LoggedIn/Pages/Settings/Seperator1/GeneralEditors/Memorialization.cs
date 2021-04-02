@@ -1,9 +1,7 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
 using RobotizeFacebook.App.NotLoggedIn.Help;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls.TriggerControls;
-using RobotizeToolbox.Dialogs;
 using RobotizeFacebook.Resources;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
@@ -19,7 +17,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 
     public class DialogDeleteYourAccountInFuture : BaseDialog
     {
-        public DialogDeleteYourAccountInFuture(RemoteWebDriver driver) : base(driver)
+        public DialogDeleteYourAccountInFuture()
         {
         }
 
@@ -29,5 +27,10 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public Button ButtonCancel => new Button(Driver, By.XPath("//a[text()='Cancel']"));
         public Hyperlink<PageHelpChooseALegacyContact> LinkLearnMore => 
             new Hyperlink<PageHelpChooseALegacyContact>(Driver, By.XPath("//div[@role='dialog']//a[text()='Learn More']"));
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

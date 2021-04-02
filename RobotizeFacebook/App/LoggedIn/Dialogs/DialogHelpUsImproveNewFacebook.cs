@@ -1,14 +1,12 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.CommonControls;
-using RobotizeToolbox.Dialogs;
 
-namespace RobotizeFacebook.App.LoggedIn
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class DialogHelpUsImproveNewFacebook : BaseDialog
     {
-        public DialogHelpUsImproveNewFacebook(RemoteWebDriver driver) : base(driver)
+        public DialogHelpUsImproveNewFacebook()
         {
             BaseXPath = $"//div[@aria-label='{ResMiscellaneous.GiveFeedbackToFacebook}' and @role='dialog']//span[text()='{ResMiscellaneous.HelpUsImproveTheNewFacebook}']/../../../..";
         }
@@ -23,5 +21,10 @@ namespace RobotizeFacebook.App.LoggedIn
         public Button ButtonAddAScreenshotOrVideoRecommended => new Button(Driver, By.XPath($"{BaseXPath}//label[@span[text()='{ResMiscellaneous.AddAScreenshotOrVideoRecommended}']"));
         public Button ButtonCancel => new Button(Driver, By.XPath($"{BaseXPath}//label[@aria-label='{ResMiscellaneous.Cancel}']"));
         public Button ButtonSubmit => new Button(Driver, By.XPath($"{BaseXPath}//label[@aria-label='{ResMiscellaneous.Submit}']"));
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

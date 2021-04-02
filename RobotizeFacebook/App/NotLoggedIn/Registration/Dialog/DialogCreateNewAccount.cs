@@ -1,9 +1,8 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
+using RobotizeFacebook.App.LoggedIn.Pages;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls;
 using RobotizeToolbox.Controls.TriggerControls;
-using RobotizeToolbox.Dialogs;
 
 namespace RobotizeFacebook.App.NotLoggedIn
 {
@@ -11,7 +10,7 @@ namespace RobotizeFacebook.App.NotLoggedIn
     {
         protected override By ByForDialog => throw new System.NotImplementedException();
 
-        public DialogCreateNewAccount(RemoteWebDriver driver):base(driver) { }
+        public DialogCreateNewAccount() { }
 
         public TextBox TextBoxFirstName => new TextBox(Driver, By.XPath("//input[@name='firstname']"));
         public TextBox TextBoxLastName => new TextBox(Driver, By.XPath("//input[@name='lastname']"));
@@ -37,5 +36,9 @@ namespace RobotizeFacebook.App.NotLoggedIn
 
         public EventTriggerButton<PageHome> ButtonSignUp => new EventTriggerButton<PageHome>(Driver, By.XPath("//button[@name='websubmit')]"));
 
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

@@ -1,5 +1,4 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.CommonControls;
 
@@ -7,7 +6,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class HoverOverLike : BaseHoverOver
     {
-        public HoverOverLike(RemoteWebDriver driver)
+        public HoverOverLike()
         {
         }
         public string BaseXPath = "//div[@data-pagelet='page']/following-sibling::div/div//div";

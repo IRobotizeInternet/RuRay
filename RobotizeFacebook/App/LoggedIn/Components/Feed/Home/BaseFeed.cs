@@ -1,6 +1,4 @@
-﻿using RobotizeToolbox.CommonControls;
-
-namespace RobotizeFacebook.App.LoggedIn.Pages
+﻿namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class BaseFeed : BaseDriver
     {

@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium;
 using RobotizeFacebook.Resources;
-using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls;
 using System.Diagnostics;
 using System.Text.RegularExpressions;

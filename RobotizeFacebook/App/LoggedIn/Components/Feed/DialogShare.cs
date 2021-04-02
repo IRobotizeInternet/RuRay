@@ -1,14 +1,12 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.CommonControls;
-using RobotizeToolbox.Dialogs;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages.Base
 {
     public class DialogShare : BaseDialog
     {
-        public DialogShare(RemoteWebDriver driver) : base(driver)
+        public DialogShare()
         {
             BaseXPath = "";
         }
@@ -35,5 +33,10 @@ namespace RobotizeFacebook.App.LoggedIn.Pages.Base
           new Button(Driver, By.XPath($"//span[text()='{ResHomePage.SendInTwitter}']"));
         public Button EventTriggerButtonCopyLink =>
             new Button(Driver, By.XPath($"//span[text()='{ResHomePage.CopyLink}']"));
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

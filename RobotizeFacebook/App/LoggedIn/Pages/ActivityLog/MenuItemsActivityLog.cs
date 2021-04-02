@@ -7,9 +7,9 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
     public class MenuItemsActivityLog : MenuItems
     {
 
-        public readonly string BaseXPath = $"//div[@data-pagelet='page']/div/div[@aria-label='{ResMiscellaneous.ListOfActivityLogItems}'][@role='navigation']";
         public MenuItemsActivityLog()
         {
+            BaseXPath = $"//div[@data-pagelet='page']/div/div[@aria-label='{ResMiscellaneous.ListOfActivityLogItems}'][@role='navigation']";
         }
 
         public Hyperlink<DialogActivityLogFilter> LinkActivityLogFilter =>

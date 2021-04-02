@@ -1,16 +1,14 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls;
 using RobotizeToolbox.Controls.TriggerControls;
-using RobotizeToolbox.Dialogs;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class DivUserComment : BaseDialog
     {
-        public DivUserComment(RemoteWebDriver driver, string baseXPath = null) : base(driver)
+        public DivUserComment(string baseXPath = null)
         {
             BaseXPath = baseXPath;
         }
@@ -39,5 +37,10 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 
         public EventTriggerButton<DialogHideOrReport> EventTriggerButtonHideOrReport =>
             new EventTriggerButton<DialogHideOrReport>(Driver, By.XPath(""));
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

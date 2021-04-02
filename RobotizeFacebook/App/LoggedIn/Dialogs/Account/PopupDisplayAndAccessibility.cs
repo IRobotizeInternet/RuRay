@@ -1,14 +1,12 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.Controls;
-using RobotizeToolbox.Dialogs;
 
-namespace RobotizeFacebook.App.LoggedIn
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class PopupDisplayAndAccessibility : BasePopup
     {
-        public PopupDisplayAndAccessibility(RemoteWebDriver driver) : base(driver)
+        public PopupDisplayAndAccessibility()
         {
             BaseXPath = $"//div[@aria-label = '{ResAccount.Account}']";
         }
@@ -24,5 +22,10 @@ namespace RobotizeFacebook.App.LoggedIn
         
         public EventTriggerButton<PopupKeyBoard> ButtonKeyboard =>
             new EventTriggerButton<PopupKeyBoard>(Driver, By.XPath($"{string.Format(RButtonsXPath, ResAccount.CompactMode, ResAccount.On)}/following::span[text()='{ResAccount.Keyboard}'])"));
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

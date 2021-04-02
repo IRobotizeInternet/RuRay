@@ -2,14 +2,13 @@
 using OpenQA.Selenium.Remote;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.Controls;
-using RobotizeToolbox.Dialogs;
 using RobotizeToolbox.Extensions;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages.JobsComposer.ScheduleLiveVideoEvent
 {
     public class DialogEventSettings : BaseDialog
     {
-        public DialogEventSettings(RemoteWebDriver driver) : base(driver)
+        public DialogEventSettings()
         {
         }
 
@@ -32,6 +31,12 @@ namespace RobotizeFacebook.App.LoggedIn.Pages.JobsComposer.ScheduleLiveVideoEven
             Driver.TryFindElement(By.XPath($"//div[@aria-label='{ResLeftNav.ScheduleLiveSettings}']//div[@aria-label='{ResLeftNav.RemoveCoHost}' and //div[@aria-label='{ResLeftNav.ScheduleLiveSettings}']//span[text()='{coHostName}']]"), out var webElementCoHost);
             webElementCoHost.Click();
         }
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
+
         public class CoHostCombobox : Combobox
         {
             public CoHostCombobox(RemoteWebDriver driver, By byForElement) : base(driver, byForElement)

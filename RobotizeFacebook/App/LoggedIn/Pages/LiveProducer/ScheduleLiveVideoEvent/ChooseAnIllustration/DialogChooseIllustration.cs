@@ -4,7 +4,6 @@ using RobotizeFacebook.App.LoggedIn.Enum;
 using RobotizeFacebook.Resources;
 using RobotizeLibrary.Extensions;
 using RobotizeToolbox.Controls;
-using RobotizeToolbox.Dialogs;
 using RobotizeToolbox.Extensions;
 using System.Linq;
 
@@ -12,7 +11,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class DialogChooseIllustration : BaseDialog
     {
-        public DialogChooseIllustration(RemoteWebDriver driver) : base(driver)
+        public DialogChooseIllustration()
         {
             BaseXPath = $"//div[@aria-label='{ResLeftNav.ChooseAnIllustration}']";
         }
@@ -31,16 +30,26 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
             new EventTriggerButton<DialogIllustration>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResLeftNav.Family}']"), $"{BaseXPath}//div[@role='tab'][@aria-selected='true']//span[text()='{ResLeftNav.Family}']");
         public EventTriggerButton<DropDownMoreIllustration> EventTriggerButtonMoreIllustration =>
             new EventTriggerButton<DropDownMoreIllustration>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResLeftNav.More}']"), $"{BaseXPath}//div[@role='tab'][@aria-selected='true']//span[text()='{ResLeftNav.More}']");
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 
     public class DialogIllustration : BaseDialog
     {
-        public DialogIllustration(RemoteWebDriver driver, string tabXPath) : base(driver)
+        public DialogIllustration(string tabXPath)
         {
             WaitForDialogToAppear(By.XPath(tabXPath));
         }
 
         protected override By ByForDialog => By.XPath($"//div[@aria-label='{ResLeftNav.ChooseAnIllustration}']");
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
 
         public void SelectIllustration(int index)
         {

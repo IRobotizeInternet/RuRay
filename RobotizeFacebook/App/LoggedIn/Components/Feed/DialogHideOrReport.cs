@@ -1,15 +1,13 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls;
-using RobotizeToolbox.Dialogs;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class DialogHideOrReport : BaseDialog
     {
-        public DialogHideOrReport(RemoteWebDriver driver) : base(driver)
+        public DialogHideOrReport()
         {
         }
 
@@ -17,12 +15,17 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public Button ButtonReportCommentToGroupAdmins => new Button(Driver, By.XPath($"//span[text()='{ResHomePage.ReportCommentToGroupAdmins}'])"));
         public Button ButtonGiveFeedbackOrReportThisComment => new Button(Driver, By.XPath($"//span[text()='{ResHomePage.GiveFeedbackOrReportThisComment}'])"));
         protected override By ByForDialog => throw new System.NotImplementedException();
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 
     public class DialogReportCommentToGroupAdmin : BaseDialog
     {
         protected override By ByForDialog => By.XPath($"//span[text()='{ResHomePage.ReportCommentToAdmins}']");
-        public DialogReportCommentToGroupAdmin(RemoteWebDriver driver) : base(driver)
+        public DialogReportCommentToGroupAdmin()
         {
         }
 
@@ -36,12 +39,17 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public Button ButtonOther => new Button(Driver, By.XPath($"{ResHomePage.Other}"));
         public EventTriggerButton<PageHome> EventTriggerButtonSendToAdmin =>
             new EventTriggerButton<PageHome>(Driver, By.XPath($"{ResHomePage.SendToAdmins}"));
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 
     public class DialogGiveFeedbackOrReportThisComment : BaseDialog
     {
         protected override By ByForDialog => By.XPath($"//span[text()='{ResHomePage.ReportCommentToAdmins}']");
-        public DialogGiveFeedbackOrReportThisComment(RemoteWebDriver driver) : base(driver)
+        public DialogGiveFeedbackOrReportThisComment()
         {
         }
 
@@ -58,11 +66,16 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
             new EventTriggerButton<DialogSearhSomethingElse>(Driver, By.XPath($"{ResHomePage.SomethingElse}"));
         public EventTriggerButton<PageHome> EventTriggerButtonNext =>
             new EventTriggerButton<PageHome>(Driver, By.XPath($"{ResHomePage.Next}"));
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 
     public class DialogSearhSomethingElse : BaseDialog
     {
-        public DialogSearhSomethingElse(RemoteWebDriver driver) : base(driver)
+        public DialogSearhSomethingElse()
         {
             BaseXPath = "//div[@role='dialog']//";
         }
@@ -87,11 +100,16 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public EventTriggerButton<DialogDone> EventTriggerButtonNext => new EventTriggerButton<DialogDone>(Driver, By.XPath($"{BaseXPath}{ResHomePage.Next}"));
 
         protected override By ByForDialog => By.XPath($"//div[@role='dialog']//span[text()='{ResHomePage.Search}']");
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 
     public class DialogDone : BaseDialog
     {
-        public DialogDone(RemoteWebDriver driver) : base(driver)
+        public DialogDone()
         {
             BaseXPath = "//div[@role='dialog']//";
         }
@@ -116,5 +134,10 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
             new EventTriggerButton<PageHome>(Driver, By.XPath($"{BaseXPath}span[contains(text(),'{ResHomePage.Done}')]"));
 
         protected override By ByForDialog => By.XPath($"//div[@role='dialog']//span[text()='{ResHomePage.YouSelected}']");
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

@@ -1,10 +1,8 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Components;
 using RobotizeToolbox.Controls;
-using RobotizeToolbox.Dialogs;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
@@ -33,7 +31,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 
     public class DialogPeopleWhoSharedThisMenu : BaseDialog
     {
-        public DialogPeopleWhoSharedThisMenu(RemoteWebDriver driver) : base(driver)
+        public DialogPeopleWhoSharedThisMenu()
         {
         }
 
@@ -53,5 +51,10 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
             new Button(Driver, By.XPath($"//div[@role='menuitem']//span[contains(text(),'{ResCreatePost.TurnOnNotificationsForThisPost}']"));
 
         protected override By ByForDialog => By.XPath($"//div[@role='menuitem']//span[text()='{ResCreatePost.TurnOnNotificationsForThisPost}']");
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

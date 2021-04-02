@@ -1,15 +1,13 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.CommonControls;
-using RobotizeToolbox.Dialogs;
 using System.Collections.Generic;
 
-namespace RobotizeFacebook.App.LoggedIn
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class DialogMoreBackgroundOptions : BaseDialog
     {
-        public DialogMoreBackgroundOptions(RemoteWebDriver driver) : base(driver)
+        public DialogMoreBackgroundOptions()
         {
             var list = new List<List<string>>();
             var webElements = Driver.FindElements(By.XPath("//div[@class='oh7imozk idiwt2bm'][1]//div[contains(@aria-label,'background')]"));
@@ -40,5 +38,10 @@ namespace RobotizeFacebook.App.LoggedIn
         public Button GetPopularBackground(PostBackgroundcolor background) => new Button(Driver, By.XPath($"{Basepath}//div[@aria-label='{background}']"));
         public Button GetNewBackground(PostBackgroundcolor background) => new Button(Driver, By.XPath($"{Basepath}//div[@aria-label='{background}']"));
         public Button GetMoreBackground(PostBackgroundcolor background) => new Button(Driver, By.XPath($"{Basepath}//div[@aria-label='{background}']"));
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

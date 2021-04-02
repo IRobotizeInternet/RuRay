@@ -1,15 +1,13 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.Controls.TriggerControls;
-using RobotizeToolbox.Dialogs;
 using System.Linq;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class PopupCreate : BaseDialog
     {
-        public PopupCreate(RemoteWebDriver driver) : base(driver)
+        public PopupCreate()
         {
             BaseXPath = $"//div[@aria-label='{ResHomePageHeader.Create}' and @role='dialog']";
         }
@@ -64,7 +62,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
             specificFriends.TriggerCancelChangesButton.Click();
         }
 
-        public void RunConformance()
+        public override void RunConformance()
         {
             RunConformanceButtonSpecificFriends();
             RunConformanceButtonFriendsExcept();

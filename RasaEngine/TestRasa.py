@@ -1,4 +1,3 @@
-import os
 
 home_dir = os.chdir("c:\\Dev\\Robotize\\Rasa\\venv\\Scripts\\")
 home_dir = os.system("dir")

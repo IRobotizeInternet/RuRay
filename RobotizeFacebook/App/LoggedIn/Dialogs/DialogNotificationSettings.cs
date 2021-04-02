@@ -1,14 +1,12 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.CommonControls;
-using RobotizeToolbox.Dialogs;
 
-namespace RobotizeFacebook.App.LoggedIn
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class DialogNotificationSettings : BaseDialog
     {
-        public DialogNotificationSettings(RemoteWebDriver driver) : base(driver)
+        public DialogNotificationSettings()
         {
             BaseXPath = $"//div[@aria-label='{ResMiscellaneous.NotificationSettings}'][@role='dialog']";
         }
@@ -25,5 +23,10 @@ namespace RobotizeFacebook.App.LoggedIn
         public Button ButtonMessageReminders => new Button(Driver, By.XPath($"//span[contains(text(),'{ResNotificationSettings.MessageReminders}')]/../../../../../../..//div[@role='button']"));
 
         public Button ButtonDont => new Button(Driver, By.XPath($"//div[@aria-label='Notification Settings'][@role='dialog']//span[text()='{ResNotificationSettings.Done}']"));
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

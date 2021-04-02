@@ -1,8 +1,6 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls.TriggerControls;
-using RobotizeToolbox.Dialogs;
 using RobotizeFacebook.Resources;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
@@ -17,7 +15,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 
     public class AdAccountDialog : BaseDialog
     {
-        public AdAccountDialog(RemoteWebDriver driver) : base(driver)
+        public AdAccountDialog()
         {
         }
 
@@ -26,5 +24,10 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public TextBox TextBoxNewEmail => new TextBox(Driver, By.XPath($"//input[@placeholder={ResMiscellaneous.EnterNewEmail}]"));
         public Button ButtonCancel => new Button(Driver, By.XPath($"//div[text()={ResMiscellaneous.Cancel}]"));
         public Button ButtonChangeEmail => new Button(Driver, By.XPath($"//div[text()={ResMiscellaneous.ChangeEmail}]"));
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

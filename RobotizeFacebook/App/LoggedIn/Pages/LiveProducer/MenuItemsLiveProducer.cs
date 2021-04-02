@@ -1,13 +1,11 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 using RobotizeFacebook.App.LoggedIn.Components;
-using RobotizeFacebook.App.LoggedIn.Pages;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls;
-using RobotizeToolbox.Dialogs;
 
-namespace RobotizeFacebook.App.LoggedIn
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class MenuItemsLiveProducer : MenuItems
     {
@@ -56,11 +54,16 @@ namespace RobotizeFacebook.App.LoggedIn
 
     public class PopupTagAGame : BasePopup
     {
-        public PopupTagAGame(RemoteWebDriver driver) : base(driver)
+        public PopupTagAGame()
         {
         }
 
         protected override By ByForDialog => By.XPath($"//div[@aria-label='{ResLeftNav.GoLiveSettings}']//input[@aria-label='{ResLeftNav.TagAGameExFortnite}']");
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
 
         private class ComboBoxTagAGame : Combobox
         {

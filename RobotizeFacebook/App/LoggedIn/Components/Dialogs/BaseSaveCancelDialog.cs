@@ -1,17 +1,21 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
 using System;
 
-namespace RobotizeToolbox.Dialogs
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class BaseSaveCancelDialog : BaseDialog
     {
-        public BaseSaveCancelDialog(RemoteWebDriver driver) : base(driver)
+        public BaseSaveCancelDialog()
         {
         }
 
         protected override By ByForDialog => throw new NotImplementedException();
-        
+
+        public override void RunConformance()
+        {
+            throw new NotImplementedException();
+        }
+
         //public Button ButtonCancel => new Button(Driver, By.XPath($"//span[contains(text(),'{ResSelectPrivacy.Cancel}')]/../../../../.."));
         //public Button ButtonSaveChanges => new Button(Driver, By.XPath($"//span[contains(text(),'{ResSelectPrivacy.SaveChanges}')]/../../../../.."));
     }

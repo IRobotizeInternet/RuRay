@@ -3,7 +3,6 @@ using OpenQA.Selenium.Remote;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls;
-using RobotizeToolbox.Dialogs;
 using System;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
@@ -43,7 +42,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 
         public DivUserComment UsersComments(string userName)
         {
-           return new DivUserComment(Driver, $"{BaseXPath}/span/following-sibling::ul/li//div[contains(@aria-label,'{userName}')]");
+           return new DivUserComment($"{BaseXPath}/span/following-sibling::ul/li//div[contains(@aria-label,'{userName}')]");
         }
 
         public override void RunConformance()
@@ -54,10 +53,15 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 
     public class PopupMostRelevant : BasePopup
     {
-        public PopupMostRelevant(RemoteWebDriver driver) : base(driver)
+        public PopupMostRelevant()
         {
         }
 
         protected override By ByForDialog => throw new NotImplementedException();
+
+        public override void RunConformance()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

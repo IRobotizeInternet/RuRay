@@ -1,9 +1,7 @@
-﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
+﻿using System;
+using OpenQA.Selenium;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.Controls;
-using RobotizeToolbox.Dialogs;
-using System;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
@@ -36,8 +34,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 
     public class UpcomingLiveVideosAndEvent : BaseDialog
     {
-        protected string BaseXPath = string.Empty;
-        public UpcomingLiveVideosAndEvent(RemoteWebDriver driver, string baseXPath) : base(driver)
+        public UpcomingLiveVideosAndEvent(string baseXPath)
         {
             BaseXPath = baseXPath;
         }
@@ -53,5 +50,10 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 
         public EventTriggerButton<PageLiveProducer> EventTriggerButtonSetUpLiveVideo =>
             new EventTriggerButton<PageLiveProducer>(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResLeftNav.SetUpLiveVideo}']"));
+
+        public override void RunConformance()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

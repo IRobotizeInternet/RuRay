@@ -26,7 +26,7 @@ namespace RobotizeToolbox.Controls
             _element.Click();
             Thread.Sleep(2500);
             return _xPath == null
-                ? (EventResult)Activator.CreateInstance(typeof(EventResult), Driver)
+                ? (EventResult)Activator.CreateInstance(typeof(EventResult))
                 : (EventResult)Activator.CreateInstance(typeof(EventResult), _xPath);
         }
 
@@ -35,7 +35,7 @@ namespace RobotizeToolbox.Controls
             // TODO: We need to think about this things in future, othere it will cause significant delay. 
             _element.MoveCursorToElement();
             Thread.Sleep(3000);
-            return (EventResult)Activator.CreateInstance(typeof(EventResult), Driver);
+            return (EventResult)Activator.CreateInstance(typeof(EventResult));
         }
     }
 }

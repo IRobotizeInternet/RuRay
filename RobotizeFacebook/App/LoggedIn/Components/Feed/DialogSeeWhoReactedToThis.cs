@@ -1,9 +1,7 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls;
-using RobotizeToolbox.Dialogs;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
@@ -19,7 +17,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
                 scrollXPath: $"//div[@aria-label='{ResHomePage.Reactions}']/div[3]" /*This could be improved to use existing parameter*/);
 
 
-        public DialogSeeWhoReactedToThis(RemoteWebDriver driver) : base(driver)
+        public DialogSeeWhoReactedToThis()
         {
             BaseXPath = "//div[@aria-label='"+ResHomePage.Reactions+"']//div[@role='tab'][@tabindex='0'][{0}]//span";
         }
@@ -50,6 +48,11 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         {
             var xPath = $"//div[@aria-label='{ResHomePage.Reactions}']//div[@aria-label='{ResLeftNav.Close}']";
             return new EventTriggerButton<PageHome>(Driver, By.XPath(xPath)).Click();
+        }
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
         }
     }
 }

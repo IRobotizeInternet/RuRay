@@ -1,25 +1,22 @@
-﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
-using RobotizeToolbox.Extensions;
-using System;
+﻿using System;
 using System.Diagnostics;
 using System.Linq;
+using OpenQA.Selenium;
+using RobotizeToolbox.Extensions;
 
-namespace RobotizeToolbox.Dialogs
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
-    public abstract class BasePopup
+    public abstract class BaseDialog : BaseDriver
     {
-        protected RemoteWebDriver Driver;
         protected abstract By ByForDialog { get; }
         protected string BaseXPath;
 
-        protected BasePopup(RemoteWebDriver driver)
+        protected BaseDialog()
         {
-            Driver = driver;
-            if (ByForDialog != null) WaitForDialogToAppear();
+            if (ByForDialog != null)  WaitForDialogToAppear(ByForDialog);
         }
 
-        protected virtual void WaitForDialogToAppear()
+        protected virtual void WaitForDialogToAppear(By byForDialog)
         {
             Driver.WaitUntilElementAppears(ByForDialog);
         }
@@ -43,6 +40,11 @@ namespace RobotizeToolbox.Dialogs
                 Debug.WriteLine("Web element was not found for a given period.");
                 return false;
             }
+        }
+
+        public void Close(string xPath)
+        {
+            Driver.FindElement(By.XPath(xPath)).Click();
         }
     }
 }

@@ -1,16 +1,14 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
 using RobotizeFacebook.App.LoggedIn.Pages;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls;
-using RobotizeToolbox.Dialogs;
 
 namespace RobotizeFacebook.App.LoggedIn.Components
 {
     public class DialogAddToYourPost : BaseDialog
     {
-        public DialogAddToYourPost(RemoteWebDriver driver) : base(driver)
+        public DialogAddToYourPost() : base()
         {
             BaseXPath = "//form[@method='POST']";
         }
@@ -42,5 +40,10 @@ namespace RobotizeFacebook.App.LoggedIn.Components
         
         public Button ButtonBack =>
             new Button(Driver, By.XPath($"{BaseXPath}//span[contains(text(),'{ResCreatePost.RaiseMoney}')]"));
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

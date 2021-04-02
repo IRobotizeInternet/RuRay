@@ -1,15 +1,13 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
 using RobotizeFacebook.App.NotLoggedIn;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.Controls;
-using RobotizeToolbox.Dialogs;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class PopupAccount : BasePopup
     {
-        public PopupAccount(RemoteWebDriver driver) : base(driver)
+        public PopupAccount()
         {
             BaseXPath = $"//div[@aria-label='{ResAccount.Account}'][@role='dialog']";
         }
@@ -33,5 +31,10 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 
         public EventTriggerButton<PageLogin> TriggerLogOutPage =>
            new EventTriggerButton<PageLogin>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResAccount.LogOut}']"));
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

@@ -1,14 +1,12 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
-using RobotizeToolbox.Dialogs;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.Controls;
 
-namespace RobotizeFacebook.App.LoggedIn
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class DialogGiveFeedbackToFacebook : BaseDialog
     {
-        public DialogGiveFeedbackToFacebook(RemoteWebDriver driver) : base(driver)
+        public DialogGiveFeedbackToFacebook()
         {
         }
 
@@ -21,5 +19,9 @@ namespace RobotizeFacebook.App.LoggedIn
         public EventTriggerButton<DialogHelpUsImproveNewFacebook> DialogSomethingWentWrong =>
             new EventTriggerButton<DialogHelpUsImproveNewFacebook>(Driver, By.XPath($"{_baseXPath}//span[text()='{ResMiscellaneous.SomethingWentWrong}']"));
 
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

@@ -1,16 +1,19 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
-using RobotizeToolbox.Dialogs;
 using System;
 
-namespace RobotizeFacebook.App.LoggedIn.Components
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class DialogTagFriends : BaseDialog
     {
-        public DialogTagFriends(RemoteWebDriver driver) : base(driver)
+        public DialogTagFriends()
         {
         }
 
         protected override By ByForDialog => throw new NotImplementedException();
+
+        public override void RunConformance()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using RobotizeToolbox.Dialogs;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.Controls;
 
@@ -8,7 +7,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class PopupHelpAndSupport : BasePopup
     {
-        public PopupHelpAndSupport(RemoteWebDriver driver) : base(driver)
+        public PopupHelpAndSupport()
         {
             BaseXPath = $"//div[@aria-label='{ResAccount.Account}'][@role='dialog']//span[text()='{ResAccount.HelpCenter}']/../../../../../../../../../../..";
         }
@@ -21,5 +20,10 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
           new EventTriggerButton<PageSupportInbox>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResAccount.SupportInbox}']"));
         public EventTriggerButton<PageSettings> ButtonReportAProblem =>
           new EventTriggerButton<PageSettings>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResAccount.ReportAProblem}']"));
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

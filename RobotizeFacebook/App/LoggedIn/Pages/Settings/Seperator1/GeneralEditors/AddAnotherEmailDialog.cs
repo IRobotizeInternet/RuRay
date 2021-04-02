@@ -1,16 +1,14 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls;
 using RobotizeToolbox.Controls.TriggerControls;
-using RobotizeToolbox.Dialogs;
 using RobotizeFacebook.Resources;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class AddAnotherEmailDialog : BaseDialog
     {
-        public AddAnotherEmailDialog(RemoteWebDriver driver) : base(driver)
+        public AddAnotherEmailDialog()
         {
         }
 
@@ -21,11 +19,16 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public Button ButtonCancel => new Button(Driver, By.XPath($"//a[text()={ResMiscellaneous.Cancel}]"));
         public Hyperlink<AddPhoneNumberDialog> LinkAddYourPhoneNumber => 
             new Hyperlink<AddPhoneNumberDialog>(Driver, By.XPath($"//a[text()={ResMiscellaneous.AddYourPhoneNumber}]"));
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 
     public class AddPhoneNumberDialog : BaseDialog
     {
-        public AddPhoneNumberDialog(RemoteWebDriver driver) : base(driver)
+        public AddPhoneNumberDialog()
         {
         }
 
@@ -36,5 +39,10 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public RadioButton ConfirmNumberBy => new RadioButton(Driver, By.XPath("//input[@name='verification_type']"));
         public Button ButtonContinue => new Button(Driver, By.XPath($"//button[text()={ResMiscellaneous.Continue}]"));
         public Button ButtonCancel => new Button(Driver, By.XPath($"//button[text()={ResMiscellaneous.Cancel}]"));
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

@@ -3,7 +3,6 @@ using OpenQA.Selenium.Remote;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls;
 using RobotizeToolbox.Controls.TriggerControls;
-using RobotizeToolbox.Dialogs;
 using RobotizeFacebook.Resources;
 using System.Collections.Generic;
 
@@ -45,7 +44,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 
     public class DialogAddEmailAddress : BaseDialog
     {
-        public DialogAddEmailAddress(RemoteWebDriver driver) : base(driver)
+        public DialogAddEmailAddress()
         {
         }
 
@@ -55,11 +54,16 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public Button ButtonDialogClose => new Button(Driver, By.XPath("//form[@id='u_y_1']//a[@title='Close']"));
         public Button ButtonCancel => new Button(Driver, By.XPath($"//a[text()='{ResMiscellaneous.Cancel}']"));
         public Button ButtonAdd => new Button(Driver, By.XPath($"//form[@id='u_y_1']//button[text()={ResMiscellaneous.Add}]"));
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 
     public class DialogConfirmYourEmail : BaseDialog
     {
-        public DialogConfirmYourEmail(RemoteWebDriver driver) : base(driver)
+        public DialogConfirmYourEmail()
         {
         }
 
@@ -67,5 +71,10 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public TextBox TextBoxConfirmEmailCode => new TextBox(Driver, By.XPath("//form[@action='/login_alerts/add/confirm/write/']//input[@placeholder]"));
         public Button ButtonCancel => new Button(Driver, By.XPath($"//form[@action='/login_alerts/add/confirm/write/']//a[text()={ResMiscellaneous.Cancel}]"));
         public Button ButtonConfirm => new Button(Driver, By.XPath($"//form[@action='/login_alerts/add/confirm/write/']//button[text()={ResMiscellaneous.Confirm}]"));
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

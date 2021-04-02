@@ -4,7 +4,6 @@ using OpenQA.Selenium.Remote;
 using Polly;
 using RobotizeToolbox.Extensions;
 using System;
-using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 
@@ -49,7 +48,7 @@ namespace RobotizeToolbox.CommonControls
                 try
                 {
                     var element = Driver.FindElementWithTimeSpan(ByForElement, timeSpanInSeconds: 3);
-                    element.Click();
+                    element?.Click();
                 }catch(ElementClickInterceptedException ex)
                 {
                     // Catching this exclusively, although it is added to the policy 
@@ -164,7 +163,10 @@ namespace RobotizeToolbox.CommonControls
                 if (scrollUp) JScrollSmoothUp(xPathTargetElement);
                 else JScrollSmoothDown(xPathTargetElement);
             }
-            catch (Exception ex) { ScrollToElement(xPathTargetElement); }
+            catch (Exception ex) {
+                Debug.WriteLine(ex.Message);
+                ScrollToElement(xPathTargetElement); 
+            }
         }
 
         // Used this type of sloppy loops to mimic scrolling with finger.

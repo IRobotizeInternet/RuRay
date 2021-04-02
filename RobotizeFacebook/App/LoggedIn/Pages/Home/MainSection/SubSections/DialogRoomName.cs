@@ -1,7 +1,5 @@
-﻿using OpenQA.Selenium.Remote;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 using RobotizeFacebook.Resources;
-using RobotizeToolbox.Dialogs;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Enums;
 using RobotizeToolbox.Controls;
@@ -10,7 +8,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class DialogRoomName : BaseDialog
     {
-        public DialogRoomName(RemoteWebDriver driver) : base(driver)
+        public DialogRoomName()
         {
         }
 
@@ -20,6 +18,11 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         {
             if (roomName.GetDescription() == ResMiscellaneous.New) return null;
             return new Button(Driver, By.XPath($"//div[@role='dialog']//span[text()='{roomName.GetDescription()}']"));
+        }
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
         }
 
         public EventTriggerButton<DialogNewRoomName> EventTriggerButtonNew =>

@@ -1,8 +1,6 @@
 ﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls;
-using RobotizeToolbox.Dialogs;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {
@@ -19,10 +17,15 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 
     public class DialogMenu : BaseDialog
     {
-        public DialogMenu(RemoteWebDriver driver) : base(driver)
+        public DialogMenu()
         {
         }
 
         protected override By ByForDialog => By.XPath("//span[text()='Delete']");
+
+        public override void RunConformance()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
