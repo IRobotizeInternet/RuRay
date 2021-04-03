@@ -16,9 +16,11 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public Button ButtonAddToFriendsWhoWontSeeYourPost =>
             new Button(Driver, By.XPath($"//form//div[@aria-label=\"{ResCreatePost.AddToFriendsWhoWontSeeYourPost}\"]"));
 
-        
-        public ListItemFriendsExcept(string baseXPath)
+        public int Index { get; set; }
+
+        public ListItemFriendsExcept(string baseXPath, int index = 1)
         {
+            Index = index;
             BaseXPath = baseXPath;
         }
     }

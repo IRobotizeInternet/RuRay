@@ -327,6 +327,9 @@
   <data name="Share" xml:space="preserve">
     <value>Share</value>
   </data>
+  <data name="Send" xml:space="preserve">
+    <value>Send</value>
+  </data>
   <data name="ShareInWhatsApp" xml:space="preserve">
     <value>Share in WhatsApp</value>
   </data>
@@ -410,5 +413,23 @@
   </data>
   <data name="Related" xml:space="preserve">
     <value>Related</value>
+  </data>
+  <data name="ShareNow" xml:space="preserve">
+    <value>Share now</value>
+  </data>
+  <data name="SendInMessenger" xml:space="preserve">
+    <value>Send in Messenger</value>
+  </data>
+  <data name="SaySomethingAboutThis" xml:space="preserve">
+    <value>Say something about this...</value>
+  </data>
+  <data name="Sent" xml:space="preserve">
+    <value>Sent</value>
+  </data>
+  <data name="SendToNewGroup" xml:space="preserve">
+    <value>Send to New Group</value>
+  </data>
+  <data name="SendToGroup" xml:space="preserve">
+    <value>Send to Group</value>
   </data>
 </root>

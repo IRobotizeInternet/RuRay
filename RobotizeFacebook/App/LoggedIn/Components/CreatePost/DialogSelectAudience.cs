@@ -8,7 +8,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
     {
         public DialogSelectAudience()
         {
-            BaseXPath = "//form[@method='POST']";
+            BaseXPath = $"//form[@method='POST']//div[./div/div/h2/span/span[text()='{ResSelectPrivacy.SelectAudience}']]";
         }
 
         protected override By ByForDialog => By.XPath($"//form[@method='POST']//span[text()='{ResSelectPrivacy.SelectAudience}']");

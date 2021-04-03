@@ -19,9 +19,12 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public Button ButtonFollow =>
              new Button(Driver, By.XPath($"{BaseXPath}//span[text()='{ResCreatePost.Follow}']"));
 
-        public ListItemSeeWhoReactedToThis(string baseXPath)
+        public int Index { get; set; }
+
+        public ListItemSeeWhoReactedToThis(string baseXPath, int index = 1)
         {
             BaseXPath = baseXPath;
+            Index = index;
         }
     }
 }

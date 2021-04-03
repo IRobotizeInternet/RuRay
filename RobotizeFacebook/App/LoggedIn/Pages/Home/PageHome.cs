@@ -66,7 +66,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
             //likeButton.Hoverover().ButtonReactionLike.Click();
             //Thread.Sleep(2000);
             //likeButton.Click();
-            //// Clicking on the comment box to move the fox from button, otherwise it will 
+            //Clicking on the comment box to move the fox from button, otherwise it will
             //Feed.FeedScroll.ListITem.EventTriggerButtonComment.Click();
             //likeButton.Hoverover().ButtonReactionWow.Click();
             //Thread.Sleep(2000);
@@ -103,11 +103,17 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
             //reactionsWindow.ScrollReactions.ScrollUpMore();
             //Thread.Sleep(5000);
             var item = Feed.FeedScroll.ListITem;
+            item.EventTriggerButtonComment.Click();
             var peopleWhoSharedDialog = item.EventTriggerButtonPeopleWhoSharedThis.Click();
-            peopleWhoSharedDialog.ScrollPeopleWhoSharedThis.ScrollDownMore();
-            peopleWhoSharedDialog.ScrollPeopleWhoSharedThis.ScrollDownMore();
-            peopleWhoSharedDialog.ScrollPeopleWhoSharedThis.ScrollUpMore();
-            //reactionsWindow.Close();
+            //peopleWhoSharedDialog.ScrollPeopleWhoSharedThis.ScrollDownMore();
+            var listItemScroll = peopleWhoSharedDialog.ScrollPeopleWhoSharedThis;
+            listItemScroll.ScrollDownMore();
+            listItemScroll.ScrollUpMore();
+            listItemScroll.ScrollingDownWithAGivenInterval();
+            var reactions = listItemScroll.ListITem.ButtonLike.Click();
+            reactions.ButtonReactionLike.Click();
+            //listItemScroll.ListITem.ButtonShowAttachment
+            peopleWhoSharedDialog.Close();
         }
 
         //public void GenerateAllElements()

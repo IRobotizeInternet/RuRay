@@ -10,7 +10,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
     {
         public DialogSpecificFriends()
         {
-            BaseXPath = "//form[@method='POST']";
+            BaseXPath = $"//form[@method='POST']//div[./div/div/h2/span/span[text()='{ResCreatePost.SpecificFriends}']]";
         }
 
         public ScrollControl<ListItemSpecificFriends> ScrollFriendsExcepts => 

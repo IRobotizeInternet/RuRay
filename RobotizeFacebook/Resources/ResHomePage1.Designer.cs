@@ -619,6 +619,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Say something about this....
+        /// </summary>
+        public static string SaySomethingAboutThis {
+            get {
+                return ResourceManager.GetString("SaySomethingAboutThis", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Search.
         /// </summary>
         public static string Search {
@@ -651,6 +660,15 @@ namespace RobotizeFacebook.Resources {
         public static string SeeWhoReactedToThis {
             get {
                 return ResourceManager.GetString("SeeWhoReactedToThis", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Send.
+        /// </summary>
+        public static string Send {
+            get {
+                return ResourceManager.GetString("Send", resourceCulture);
             }
         }
         
@@ -691,6 +709,33 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Send to Group.
+        /// </summary>
+        public static string SendToGroup {
+            get {
+                return ResourceManager.GetString("SendToGroup", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Send to New Group.
+        /// </summary>
+        public static string SendToNewGroup {
+            get {
+                return ResourceManager.GetString("SendToNewGroup", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sent.
+        /// </summary>
+        public static string Sent {
+            get {
+                return ResourceManager.GetString("Sent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Sexual Activity.
         /// </summary>
         public static string SexualActivity {
@@ -723,6 +768,15 @@ namespace RobotizeFacebook.Resources {
         public static string ShareInWhatsApp {
             get {
                 return ResourceManager.GetString("ShareInWhatsApp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Share now.
+        /// </summary>
+        public static string ShareNow {
+            get {
+                return ResourceManager.GetString("ShareNow", resourceCulture);
             }
         }
         

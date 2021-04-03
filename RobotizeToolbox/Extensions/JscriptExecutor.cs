@@ -128,8 +128,9 @@ namespace RobotizeToolbox.Extensions
 
             policy.Execute(() =>
             {
-                for (var i = 0; i < scrollingLengthXAxis; i++) driver.ExecuteScript(string.Format(jScript, i, 0)); /*scroll along x-axis*/
-                for (var i = 0; i < scrollingLengthYAxis; i++) driver.ExecuteScript(string.Format(jScript, 0, i)); /*scroll along x-axis*/
+                // Using Math.Abs for negative directions.
+                for (var i = 0; i < Math.Abs(scrollingLengthXAxis); i++) driver.ExecuteScript(string.Format(jScript, i, 0)); /*scroll along x-axis*/
+                for (var i = 0; i < Math.Abs(scrollingLengthYAxis); i++) driver.ExecuteScript(string.Format(jScript, 0, i)); /*scroll along x-axis*/
             });
         }
 

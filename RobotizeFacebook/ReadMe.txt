@@ -25,7 +25,7 @@ A retry mechanism to rerun failed tests - this is especially useful for WebDrive
 ----
 Known issue
 ----
-- Often chorme driver does not connect to the browser even after refersing the page.
+- Often chorme driver does not connect/Dont click/click on incorrect element even after refersing the page.
 Close all the google chrome broser and open again.
 
 

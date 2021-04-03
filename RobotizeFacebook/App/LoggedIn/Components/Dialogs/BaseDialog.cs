@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.Linq;
 using OpenQA.Selenium;
+using RobotizeFacebook.Resources;
 using RobotizeToolbox.Extensions;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
@@ -42,9 +43,9 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
             }
         }
 
-        public void Close(string xPath)
+        public void Close(string xPath = null)
         {
-            Driver.FindElement(By.XPath(xPath)).Click();
+            Driver.FindElement(By.XPath(xPath ?? $"//div[@role='dialog']//div[@aria-label='{ResLeftNav.Close}']")).Click();
         }
     }
 }

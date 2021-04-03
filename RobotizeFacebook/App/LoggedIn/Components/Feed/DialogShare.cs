@@ -1,8 +1,9 @@
 ﻿using OpenQA.Selenium;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.CommonControls;
+using RobotizeToolbox.Controls;
 
-namespace RobotizeFacebook.App.LoggedIn.Pages.Base
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class DialogShare : BaseDialog
     {
@@ -11,16 +12,16 @@ namespace RobotizeFacebook.App.LoggedIn.Pages.Base
             BaseXPath = "";
         }
 
-        protected override By ByForDialog => By.XPath($"//span[text()='{ResHomePage.ShareNowPublic}']");
+        protected override By ByForDialog => By.XPath($"//span[contains(text(),'{ResHomePage.ShareNow}')]");
 
         public Button ButtonShareNowPublic =>
            new Button(Driver, By.XPath($"//span[text()='{ResHomePage.ShareNowPublic}']"));
-        public Button ButtonShareToNewsFeed =>
-            new Button(Driver, By.XPath($"//span[text()='{ResHomePage.ShareToNewsFeed}']"));
-        public Button EventTriggerButtonShowHideComments =>
+        public EventTriggerButton<CreatePost> ButtonShareToNewsFeed =>
+            new EventTriggerButton<CreatePost>(Driver, By.XPath($"//span[text()='{ResHomePage.ShareToNewsFeed}']"));
+        public Button EventTriggerButtonShareToYourStory =>
            new Button(Driver, By.XPath($"//span[text()='{ResHomePage.ShareToYourStoryFriends}']"));
-        public Button EventTriggerButtonSendInMessenger =>
-            new Button(Driver, By.XPath($"//span[text()='{ResHomePage.SendInMessenger}']"));
+        public EventTriggerButton<DialogSendInMessenger> EventTriggerButtonSendInMessenger =>
+            new EventTriggerButton<DialogSendInMessenger>(Driver, By.XPath($"//span[text()='{ResHomePage.SendInMessenger}']"));
         public Button EventTriggerButtonPeopleShareInWhatsApp =>
             new Button(Driver, By.XPath($"//span[text()='{ResHomePage.ShareInWhatsApp}']"));
         public Button EventTriggerButtonShareToAgroup =>

@@ -1,0 +1,45 @@
+﻿using System;
+using OpenQA.Selenium;
+using RobotizeFacebook.Resources;
+using RobotizeToolbox.CommonControls;
+using RobotizeToolbox.Controls;
+
+namespace RobotizeFacebook.App.LoggedIn.Pages
+{
+    public class DialogSendInMessenger : BaseDialog
+    {
+        public DialogSendInMessenger()
+        {
+            BaseXPath = $"//div[@aria-label='{ResHomePage.SendInMessenger}']";
+        }
+
+        protected override By ByForDialog => By.XPath($"//div[@aria-label='{ResHomePage.SendInMessenger}']");
+
+        public TextBox TextBoxSaySomething => 
+            new TextBox(Driver, By.XPath($"//div[@aria-label='{ResHomePage.SaySomethingAboutThis}']"));
+
+        public EventTriggerButton<DialogSendToGroup<DialogSendInMessenger>> EventTriggerButtonSendToGroup => 
+            new EventTriggerButton<DialogSendToGroup<DialogSendInMessenger>>(
+                Driver, 
+                By.XPath($"{BaseXPath}//span[text()='{ResHomePage.SendToNewGroup}']"));
+
+
+        public SearchBoxSharingWithYourFriends ComboboxSearchFriends => 
+            new SearchBoxSharingWithYourFriends(
+                Driver, 
+                ByForDialog, 
+                BaseXPath, 
+                searchItemsXPath: $"{BaseXPath}//div[@aria-label='{ResHomePage.Send}' or @aria-label='{ResHomePage.Sent}']");
+
+        public ScrollControl<ListItemSpecificFriends> ScrollSendInMessenger =>
+           new ScrollControl<ListItemSpecificFriends>(
+               Driver, 
+               $"//form//div[@aria-label='{ResCreatePost.Friends}']/div",
+               scrollXPath: $"{BaseXPath}//div[@data-visualcompletion='ignore-dynamic' and ./descendant-or-self::div//span[text()='{ResHomePage.Send}']]");
+
+        public override void RunConformance()
+        {
+            throw new NotImplementedException();
+        }
+    }
+}

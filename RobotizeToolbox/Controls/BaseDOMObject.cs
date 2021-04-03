@@ -31,7 +31,7 @@ namespace RobotizeToolbox.CommonControls
         public bool IsDOMObjectExist => Driver.TryFindElement(ByForElement, out _);
 
         /// <summary>
-        /// This method will try to click on the element atleast five times.
+        /// This method will try to click on the element atleast three times.
         /// Known issue <see cref="https://stackoverflow.com/questions/11908249/debugging-element-is-not-clickable-at-point-error?page=1&tab=votes#tab-top"/>
         /// </summary>
         public virtual bool Click(int numberOfTries = 3)
@@ -40,7 +40,7 @@ namespace RobotizeToolbox.CommonControls
             var policy = Policy
               .Handle<InvalidOperationException>()
               .Or<WebDriverException>()
-              .Or<ElementClickInterceptedException>() /* This could happen when element under other element ex: behing dialog window*/
+              .Or<ElementClickInterceptedException>() /* This could happen when element under other element ex: Behind dialog window*/
               .WaitAndRetry(numberOfTries, timespan => TimeSpan.FromSeconds(3));
             
             policy.Execute(() =>

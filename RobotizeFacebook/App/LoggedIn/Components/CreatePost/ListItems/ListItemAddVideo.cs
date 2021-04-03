@@ -17,8 +17,11 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public Checkbox CheckboxSelectThisCheckbox =>
             new Checkbox(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.SelectThisCheckbox}']"));
         
-        public ListItemAddVideo(string baseXPath)
+        public int Index { get; set; }
+
+        public ListItemAddVideo(string baseXPath, int index = 1)
         {
+            Index = index;
             BaseXPath = baseXPath;
         }
     }

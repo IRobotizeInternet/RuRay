@@ -28,7 +28,7 @@ namespace RobotizeToolbox.CommonControls
         public string ScrollXPath { get; set; }
         public string GetRowXPath(int positionInSet) {
             return PositionXPath == null 
-                ? BaseXPath 
+                ? $"{BaseXPath}[{positionInSet}]"
                 : $"{BaseXPath}{string.Format(PositionXPath, positionInSet)}";    
         }
 
