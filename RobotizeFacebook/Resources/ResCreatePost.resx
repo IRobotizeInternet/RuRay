@@ -306,4 +306,7 @@
   <data name="MoreShares" xml:space="preserve">
     <value>More Shares</value>
   </data>
+  <data name="NewMessage" xml:space="preserve">
+    <value>New Message</value>
+  </data>
 </root>

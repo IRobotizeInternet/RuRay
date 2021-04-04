@@ -5,9 +5,9 @@ using RobotizeToolbox.Controls;
 
 namespace RobotizeFacebook.App.LoggedIn
 {
-    public class SearchboxSearchFacebook : Combobox
+    public class ComboboxSearchFacebook : Combobox
     {
-        public SearchboxSearchFacebook(RemoteWebDriver driver, By byForElement) : base(driver, byForElement)
+        public ComboboxSearchFacebook(RemoteWebDriver driver, By byForElement) : base(driver, byForElement)
         {
             BaseXPath = $"//input[@role='combobox'][@placeholder='{ResMiscellaneous.SearchFacebook}']/../../../../..";
             SearchBoxXPath = $"{BaseXPath}//input[@type='search']";

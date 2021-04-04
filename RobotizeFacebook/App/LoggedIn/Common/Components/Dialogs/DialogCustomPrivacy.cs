@@ -14,7 +14,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         protected override By ByForDialog => By.XPath($"//span[text()='{ResSelectPrivacy.CustomPrivacy}']/../../../../..");
 
         public Checkbox CheckboxFriendsOfTagged => new Checkbox(Driver, By.XPath($"{BaseXPath}//input[@type='checkbox']"));
-        public SearchBoxSharingWithYourFriends ComboboxDontShareWith => 
-            new SearchBoxSharingWithYourFriends(Driver, By.XPath($"{BaseXPath}//input[@type='checkbox']"), BaseXPath);
+        public ComboboxSharingWithYourFriends ComboboxDontShareWith => 
+            new ComboboxSharingWithYourFriends(Driver, By.XPath($"{BaseXPath}//input[@type='checkbox']"), BaseXPath);
     }
 }

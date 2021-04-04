@@ -358,6 +358,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to New Message.
+        /// </summary>
+        public static string NewMessage {
+            get {
+                return ResourceManager.GetString("NewMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to New Room.
         /// </summary>
         public static string NewRoom {

@@ -7,9 +7,9 @@ using System.Threading;
 
 namespace RobotizeFacebook.App.LoggedIn
 {
-    public class SearchBoxSharingWithYourFriends : Combobox
+    public class ComboboxSharingWithYourFriends : Combobox
     {
-        public SearchBoxSharingWithYourFriends(
+        public ComboboxSharingWithYourFriends(
             RemoteWebDriver driver, 
             By byForElement, 
             string baseXPath,

@@ -1,0 +1,20 @@
+﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Remote;
+using RobotizeFacebook.Resources;
+using RobotizeToolbox.Controls;
+
+namespace RobotizeFacebook.App.LoggedIn.Pages
+{
+    public partial class DialogAddVideos
+    {
+        public class ComboboxCheckin : Combobox
+        {
+            public ComboboxCheckin(RemoteWebDriver driver, By byForElement) : base(driver, byForElement)
+            {
+                BaseXPath = $"//form[@method='POST']/parent::div[@role='dialog']";
+                SearchBoxXPath = $"{BaseXPath}//input[contains(@aria-label,'{ResCreatePost.SearchForVideos}')][@type='text']";
+                SearchItemsXPath = $"{BaseXPath}//input[@aria-label='{ResCreatePost.SearchForVideos}']/parent::label/parent::div/parent::div//div[@aria-label='{ResCreatePost.SelectThisCheckbox}']']";
+            }
+        }
+    }
+}

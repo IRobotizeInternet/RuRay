@@ -191,6 +191,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App\LoggedIn\Common\Components\Calendar.cs" />
+    <Compile Include="App\LoggedIn\Common\Components\Comboboxes\ComboboxNewMessageTo.cs" />
+    <Compile Include="App\LoggedIn\Common\Components\Comboboxes\ComboboxCheckin.cs" />
     <Compile Include="App\LoggedIn\Common\Components\Dialogs\DialogAddVideos.cs" />
     <Compile Include="App\LoggedIn\Common\Components\Dialogs\DialogCheckin.cs" />
     <Compile Include="App\LoggedIn\Common\Components\Dialogs\DialogGIF.cs" />
@@ -201,6 +203,7 @@
     <Compile Include="App\LoggedIn\Common\Components\Dialogs\DialogTagFriends.cs" />
     <Compile Include="App\LoggedIn\Common\Components\Dialogs\DialogPeopleWhoSharedThisMenu.cs" />
     <Compile Include="App\LoggedIn\Common\Components\Dialogs\DialogMenu.cs" />
+    <Compile Include="App\LoggedIn\Common\Components\ListItems\ListItemMessangerChat.cs" />
     <Compile Include="App\LoggedIn\Common\Components\ListItems\ListItemActivity.cs" />
     <Compile Include="App\LoggedIn\Common\Components\ListItems\ListItemAddVideo.cs" />
     <Compile Include="App\LoggedIn\Common\Components\ListItems\ListItemSendToGroup.cs" />
@@ -219,6 +222,7 @@
     <Compile Include="App\LoggedIn\Common\Components\ListItems\ListItemReactions.cs" />
     <Compile Include="App\LoggedIn\Common\Components\ListItems\ListItemPeopleWhoSharedThis.cs" />
     <Compile Include="App\LoggedIn\Common\Components\Popups\PopupComments.cs" />
+    <Compile Include="App\LoggedIn\Common\Components\Popups\PopupNewMessage.cs" />
     <Compile Include="App\LoggedIn\Common\Components\Popups\PopupUserProfile.cs" />
     <Compile Include="App\LoggedIn\Common\Components\HoverOver\HoverUserProfile.cs" />
     <Compile Include="App\LoggedIn\Common\Components\Popups\PopupAccount.cs" />
@@ -370,7 +374,7 @@
     <Compile Include="App\LoggedIn\Common\Components\Dialogs\DialogActivityLogFilter.cs" />
     <Compile Include="App\LoggedIn\Common\Components\DropdownYear.cs" />
     <Compile Include="App\LoggedIn\Common\Components\ButtonNotificationSettings.cs" />
-    <Compile Include="App\LoggedIn\Common\Components\NavigationSearchbox.cs" />
+    <Compile Include="App\LoggedIn\Common\Components\Comboboxes\ComboboxNavigation.cs" />
     <Compile Include="App\LoggedIn\Common\Components\Dialogs\DialogSpecificFriends.cs" />
     <Compile Include="App\LoggedIn\Common\Divs\DivRememberPassword.cs" />
     <Compile Include="App\LoggedIn\Pages\AdPreferences\FeedContainerAdSettings.cs" />
@@ -1016,8 +1020,8 @@
     <Compile Include="App\LoggedIn\Common\Components\Dialogs\DialogSelectAudience.cs" />
     <Compile Include="App\LoggedIn\Common\Components\Popups\PopupEmoji.cs" />
     <Compile Include="App\LoggedIn\Common\Components\Menus\DivMarketPlaceMenu.cs" />
-    <Compile Include="App\LoggedIn\Common\Components\SearchboxSearchFacebook.cs" />
-    <Compile Include="App\LoggedIn\Common\Components\SearchBoxSharingWithYourFriends.cs" />
+    <Compile Include="App\LoggedIn\Common\Components\Comboboxes\ComboboxSearchFacebook.cs" />
+    <Compile Include="App\LoggedIn\Common\Components\Comboboxes\ComboboxSharingWithYourFriends.cs" />
     <Compile Include="App\LoggedIn\Common\Components\Feed\Feed.cs" />
     <Compile Include="App\LoggedIn\Pages\ActivityLog\Feed\FeedContainerReviewTagsOnYourPosts.cs" />
     <Compile Include="App\LoggedIn\Pages\ActivityLog\Feed\FeedContainerReviewPostsYouAreTaggedIn.cs" />

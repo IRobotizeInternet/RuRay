@@ -432,4 +432,7 @@
   <data name="AddFriend" xml:space="preserve">
     <value>Add Friend</value>
   </data>
+  <data name="Messages" xml:space="preserve">
+    <value>Messages</value>
+  </data>
 </root>

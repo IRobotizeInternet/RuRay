@@ -5,9 +5,9 @@ using RobotizeToolbox.Controls;
 
 namespace RobotizeFacebook.App.LoggedIn
 {
-    public abstract class NavigationSearchbox : Combobox
+    public abstract class ComboboxNavigation : Combobox
     {
-        public NavigationSearchbox(RemoteWebDriver driver, By byForElement) : base(driver, byForElement)
+        public ComboboxNavigation(RemoteWebDriver driver, By byForElement) : base(driver, byForElement)
         {
             BaseXPath = $"//div[@data-pagelet='LeftNavSearchContainer']";
             SearchBoxXPath = $"{BaseXPath}//input[contains(@aria-label,'{ResMiscellaneous.Search}')][@role='combobox']";

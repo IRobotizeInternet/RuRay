@@ -24,8 +24,8 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
                 By.XPath($"{BaseXPath}//span[text()='{ResHomePage.SendToNewGroup}']"));
 
 
-        public SearchBoxSharingWithYourFriends ComboboxSearchFriends => 
-            new SearchBoxSharingWithYourFriends(
+        public ComboboxSharingWithYourFriends ComboboxSearchFriends => 
+            new ComboboxSharingWithYourFriends(
                 Driver, 
                 ByForDialog, 
                 BaseXPath, 

@@ -43,6 +43,9 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 
         public Button ButtonUndo => new Button(Driver, By.XPath($"//span[text()='{ResHomePage.Undo}']"));
 
+        public EventTriggerButton<PopupNewMessage> EventTriggerButtonNewMessage => 
+            new EventTriggerButton<PopupNewMessage>(Driver, By.XPath($"//div[@aria-label='{ResCreatePost.NewMessage}']"));
+
         public FeedHome _feed;
         public FeedHome Feed
         {
