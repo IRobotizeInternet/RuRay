@@ -351,8 +351,8 @@
   <data name="ShareToNewsFeed" xml:space="preserve">
     <value>Share to News Feed</value>
   </data>
-  <data name="ShareToYourStoryFriends" xml:space="preserve">
-    <value>Share to Your Story (Friends)</value>
+  <data name="ShareToYourStory" xml:space="preserve">
+    <value>Share to Your Story</value>
   </data>
   <data name="SharingPrivateImages" xml:space="preserve">
     <value>Sharing Private Images</value>
@@ -416,9 +416,6 @@
   </data>
   <data name="ShareNow" xml:space="preserve">
     <value>Share now</value>
-  </data>
-  <data name="SendInMessenger" xml:space="preserve">
-    <value>Send in Messenger</value>
   </data>
   <data name="SaySomethingAboutThis" xml:space="preserve">
     <value>Say something about this...</value>

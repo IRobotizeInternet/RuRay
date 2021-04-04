@@ -79,7 +79,7 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Add to Friends Who Won&apos;t See Your Post.
+        ///   Looks up a localized string similar to Add to Friends Who Won\&apos;t See Your Post.
         /// </summary>
         public static string AddToFriendsWhoWontSeeYourPost {
             get {

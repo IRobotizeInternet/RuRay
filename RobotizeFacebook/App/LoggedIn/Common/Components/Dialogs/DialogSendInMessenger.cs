@@ -31,8 +31,8 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
                 BaseXPath, 
                 searchItemsXPath: $"{BaseXPath}//div[@aria-label='{ResHomePage.Send}' or @aria-label='{ResHomePage.Sent}']");
 
-        public ScrollControl<ListItemSpecificFriends> ScrollSendInMessenger =>
-           new ScrollControl<ListItemSpecificFriends>(
+        public ScrollControl<ListItemSendInMessenger> ScrollSendInMessenger =>
+           new ScrollControl<ListItemSendInMessenger>(
                Driver, 
                $"//form//div[@aria-label='{ResCreatePost.Friends}']/div",
                scrollXPath: $"{BaseXPath}//div[@data-visualcompletion='ignore-dynamic' and ./descendant-or-self::div//span[text()='{ResHomePage.Send}']]");

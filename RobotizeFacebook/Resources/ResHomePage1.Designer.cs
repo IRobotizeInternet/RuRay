@@ -835,11 +835,11 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Share to Your Story (Friends).
+        ///   Looks up a localized string similar to Share to Your Story.
         /// </summary>
-        public static string ShareToYourStoryFriends {
+        public static string ShareToYourStory {
             get {
-                return ResourceManager.GetString("ShareToYourStoryFriends", resourceCulture);
+                return ResourceManager.GetString("ShareToYourStory", resourceCulture);
             }
         }
         

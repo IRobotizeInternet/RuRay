@@ -8,20 +8,21 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
     public class ListItemFriendsExcept : BaseDiv, IListItem
     {
         public Label LabelFriendName =>
-            new Label(Driver, By.XPath($"//form//div[@aria-label='{ResCreatePost.Friends}']/div[1]//div[@class='']/div/div/span"));
+            new Label(Driver, By.XPath($"{BaseXPath}/div[{Index}]/div/div/div/div/div[2]/div/div/div/div[1]/span"));
 
         public Button ButtonRemoveFromFriendsWhoWontSeeYourPost =>
-            new Button(Driver, By.XPath($"//form//div[@aria-label=\"{ResCreatePost.RemoveFromFriendsWhoWontSeeYourPost}\"]"));
+           new Button(Driver, By.XPath($"{BaseXPath}/div[{Index}]//div[@role='img']"));
 
         public Button ButtonAddToFriendsWhoWontSeeYourPost =>
-            new Button(Driver, By.XPath($"//form//div[@aria-label=\"{ResCreatePost.AddToFriendsWhoWontSeeYourPost}\"]"));
+            new Button(Driver, By.XPath($"{BaseXPath}/div[{Index}]//div[@role='img']"));
 
+        //form//div[@aria-label="Friends Who Will See Your Post"]//div[@role="gridcell"][1]//span
         public int Index { get; set; }
 
         public ListItemFriendsExcept(string baseXPath, int index = 1)
         {
             Index = index;
-            BaseXPath = baseXPath;
+            BaseXPath = baseXPath ?? $"//form//div[@aria-label='{ResCreatePost.Friends}']"; ;
         }
     }
 }

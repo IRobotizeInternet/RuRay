@@ -59,49 +59,63 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 
         public override void RunConformance()
         {
-            // Verify all the reaction buttons. 
-            //Feed.FeedScroll.ScrollingDownWithAGivenInterval(3, scrollFromCurrentLocation: true);
-            Feed.FeedScroll.ScrollingUpWithAGivenInterval(1, scrollFromCurrentLocation: true);
-            //var likeButton = Feed.FeedScroll.ListITem.ButtonLike;
-            //likeButton.Hoverover().ButtonReactionLike.Click();
-            //Thread.Sleep(2000);
-            //likeButton.Click();
-            //Clicking on the comment box to move the fox from button, otherwise it will
-            //Feed.FeedScroll.ListITem.EventTriggerButtonComment.Click();
-            //likeButton.Hoverover().ButtonReactionWow.Click();
-            //Thread.Sleep(2000);
-            //likeButton.Click();
-            //Feed.FeedScroll.ListITem.EventTriggerButtonComment.Click();
-            //likeButton.Hoverover().ButtonReactionSad.Click();
-            //Thread.Sleep(2000);
-            //likeButton.Click();
-            //Feed.FeedScroll.ListITem.EventTriggerButtonComment.Click();
-            //likeButton.Hoverover().ButtonReactionHaha.Click();
-            //Thread.Sleep(2000);
-            //likeButton.Click();
-            //Feed.FeedScroll.ListITem.EventTriggerButtonComment.Click();
-            //likeButton.Hoverover().ButtonReactionCare.Click();
-            //Thread.Sleep(2000);
-            //likeButton.Click();
-            //Feed.FeedScroll.ListITem.EventTriggerButtonComment.Click();
-            //likeButton.Hoverover().ButtonReactionAngry.Click();
-            //Thread.Sleep(2000);
-            //likeButton.Click();
+            //RunConformanceReactions();
+            //RunConformanceReactionsWindow();
+            RunConformanceShareWindow();
+        }
 
-            //var reactionsWindow = Feed.FeedScroll.ListITem.EventTriggerButtonSeeWhoReactedToThis.Click();
-            //reactionsWindow.ScrollReactions.ScrollDownMore();
-            //reactionsWindow.ButtonAllReactions.Click();
-            //reactionsWindow.ButtonReactionsAtFirstIndex.Click();
-            //reactionsWindow.ButtonReactionsAtSecondIndex.Click();
-            //reactionsWindow.ButtonReactionsAtThirdIndex.Click();
-            //reactionsWindow.ButtonReactionsAtFourthIndex.Click();
-            //reactionsWindow.ButtonReactionsAtFifthIndex.Click();
-            //reactionsWindow.ButtonReactionsAtSixthIndex.Click();
-            //reactionsWindow.ButtonReactionsAtSeventhIndex.Click();
-            //reactionsWindow.ButtonAllReactions.Click();
-            //reactionsWindow.ScrollReactions.ScrollDownMore();
-            //reactionsWindow.ScrollReactions.ScrollUpMore();
-            //Thread.Sleep(5000);
+        public void RunConformanceReactions()
+        {
+           // Verify all the reaction buttons.
+            Feed.FeedScroll.ScrollingDownWithAGivenInterval(3, scrollFromCurrentLocation: true);
+            var likeButton = Feed.FeedScroll.ListITem.ButtonLike;
+            likeButton.Hoverover().ButtonReactionLike.Click();
+            Thread.Sleep(2000);
+            likeButton.Click();
+
+            // Clicking on the comment box to move the fox from button, otherwise it will
+            Feed.FeedScroll.ListITem.EventTriggerButtonComment.Click();
+            likeButton.Hoverover().ButtonReactionWow.Click();
+            Thread.Sleep(2000);
+            likeButton.Click();
+            Feed.FeedScroll.ListITem.EventTriggerButtonComment.Click();
+            likeButton.Hoverover().ButtonReactionSad.Click();
+            Thread.Sleep(2000);
+            likeButton.Click();
+            Feed.FeedScroll.ListITem.EventTriggerButtonComment.Click();
+            likeButton.Hoverover().ButtonReactionHaha.Click();
+            Thread.Sleep(2000);
+            likeButton.Click();
+            Feed.FeedScroll.ListITem.EventTriggerButtonComment.Click();
+            likeButton.Hoverover().ButtonReactionCare.Click();
+            Thread.Sleep(2000);
+            likeButton.Click();
+            Feed.FeedScroll.ListITem.EventTriggerButtonComment.Click();
+            likeButton.Hoverover().ButtonReactionAngry.Click();
+            Thread.Sleep(2000);
+            likeButton.Click();
+        }
+        public void RunConformanceReactionsWindow()
+        {
+            Feed.FeedScroll.ScrollingUpWithAGivenInterval(1, scrollFromCurrentLocation: true);
+            var reactionsWindow = Feed.FeedScroll.ListITem.EventTriggerButtonSeeWhoReactedToThis.Click();
+            reactionsWindow.ScrollReactions.ScrollDownMore();
+            reactionsWindow.ButtonAllReactions.Click();
+            reactionsWindow.ButtonReactionsAtFirstIndex.Click();
+            reactionsWindow.ButtonReactionsAtSecondIndex.Click();
+            reactionsWindow.ButtonReactionsAtThirdIndex.Click();
+            reactionsWindow.ButtonReactionsAtFourthIndex.Click();
+            reactionsWindow.ButtonReactionsAtFifthIndex.Click();
+            reactionsWindow.ButtonReactionsAtSixthIndex.Click();
+            reactionsWindow.ButtonReactionsAtSeventhIndex.Click();
+            reactionsWindow.ButtonAllReactions.Click();
+            reactionsWindow.ScrollReactions.ScrollDownMore();
+            reactionsWindow.ScrollReactions.ScrollUpMore();
+            Thread.Sleep(5000);
+        }
+        public void RunConformanceShareWindow()
+        {
+            Feed.FeedScroll.ScrollingUpWithAGivenInterval(1, scrollFromCurrentLocation: true);
             var item = Feed.FeedScroll.ListITem;
             item.EventTriggerButtonComment.Click();
             var peopleWhoSharedDialog = item.EventTriggerButtonPeopleWhoSharedThis.Click();
@@ -113,7 +127,16 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
             var reactions = listItemScroll.ListITem.ButtonLike.Click();
             reactions.ButtonReactionLike.Click();
             //listItemScroll.ListITem.ButtonShowAttachment
-            peopleWhoSharedDialog.Close();
+            var dialogShare = listItemScroll.ListITem.EventTriggerButtonShare.Click();
+            var text = dialogShare.ButtonShareNowPublic.GetText();
+            text = dialogShare.ButtonShareToNewsFeed.GetText();
+
+            text = dialogShare.EventTriggerButtonShareToYourStoryFriends.GetText();
+
+            var dialogSendInMessanger = dialogShare.EventTriggerButtonSendInMessenger.Click();
+            dialogSendInMessanger.ScrollSendInMessenger.ScrollingUpWithAGivenInterval(6);
+            dialogSendInMessanger.ComboboxSearchFriends.Select("Wei");
+            dialogSendInMessanger.ScrollSendInMessenger.ListITem.ButtonSend.Click();
         }
 
         //public void GenerateAllElements()

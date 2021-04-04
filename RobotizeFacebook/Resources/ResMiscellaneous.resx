@@ -411,4 +411,7 @@
   <data name="StartDate" xml:space="preserve">
     <value>Start date</value>
   </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
 </root>

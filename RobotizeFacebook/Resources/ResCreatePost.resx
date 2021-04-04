@@ -253,16 +253,13 @@
     <value>Remove from Friends Who Won't See Your Post</value>
   </data>
   <data name="AddToFriendsWhoWontSeeYourPost" xml:space="preserve">
-    <value>Add to Friends Who Won't See Your Post</value>
+    <value>Add to Friends Who Won\'t See Your Post</value>
   </data>
   <data name="RemoveFromFriendsWhoWillSeeYourPost" xml:space="preserve">
     <value>Remove from Friends Who Will See Your Post</value>
   </data>
   <data name="AddToFriendsWhoWillSeeYourPost" xml:space="preserve">
     <value>Add to Friends Who Will See Your Post</value>
-  </data>
-  <data name="SelectThisCheckbox" xml:space="preserve">
-    <value>Select this checkbox</value>
   </data>
   <data name="SendThisToFriendsOrPostItOnYourTimeline" xml:space="preserve">
     <value>Send this to friends or post it on your timeline.</value>
@@ -298,7 +295,7 @@
     <value>Related Discussions</value>
   </data>
   <data name="SeeWhoReactedToThis" xml:space="preserve">
-    <value>See who reacted to this</value> 
+    <value>See who reacted to this</value>
   </data>
   <data name="Comments" xml:space="preserve">
     <value>Comments</value>

@@ -19,7 +19,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public EventTriggerButton<CreatePost> ButtonShareToNewsFeed =>
             new EventTriggerButton<CreatePost>(Driver, By.XPath($"//span[text()='{ResHomePage.ShareToNewsFeed}']"));
         public Button EventTriggerButtonShareToYourStory =>
-           new Button(Driver, By.XPath($"//span[text()='{ResHomePage.ShareToYourStoryFriends}']"));
+           new Button(Driver, By.XPath($"//span[text()='{ResHomePage.ShareToYourStory}']"));
         public EventTriggerButton<DialogSendInMessenger> EventTriggerButtonSendInMessenger =>
             new EventTriggerButton<DialogSendInMessenger>(Driver, By.XPath($"//span[text()='{ResHomePage.SendInMessenger}']"));
         public Button EventTriggerButtonPeopleShareInWhatsApp =>
@@ -29,7 +29,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public Button EventTriggerButtonShareToAPage =>
             new Button(Driver, By.XPath($"//span[text()='{ResHomePage.ShareToAPage}']"));
         public Button EventTriggerButtonShareToYourStoryFriends =>
-            new Button(Driver, By.XPath($"//span[text()=\"{ResHomePage.ShareToYourStoryFriends}\"]"));
+            new Button(Driver, By.XPath($"//span[contains(text(),\"{ResHomePage.ShareToYourStory}\"])"));
         public Button EventTriggerButtonSendInTwitter =>
           new Button(Driver, By.XPath($"//span[text()='{ResHomePage.SendInTwitter}']"));
         public Button EventTriggerButtonCopyLink =>
