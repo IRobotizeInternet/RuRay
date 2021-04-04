@@ -429,4 +429,7 @@
   <data name="SendToGroup" xml:space="preserve">
     <value>Send to Group</value>
   </data>
+  <data name="AddFriend" xml:space="preserve">
+    <value>Add Friend</value>
+  </data>
 </root>

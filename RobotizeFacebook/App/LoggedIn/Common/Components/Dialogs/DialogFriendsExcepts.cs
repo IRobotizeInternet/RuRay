@@ -8,9 +8,10 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class DialogFriendsExcepts : BaseSaveCancelDialog
     {
-        public DialogFriendsExcepts()
+        public DialogFriendsExcepts(string baseXPath)
         {
-            BaseXPath = "//form[@method='POST']";
+            BaseXPath = baseXPath;
+            BaseXPath = baseXPath ?? $"//form[@method='POST']/div[.//h2/descendant-or-self::span[text()='{ResCreatePost.FriendsExcept}']]";
         }
 
         public ScrollControl<ListItemFriendsExcept> ScrollFriendsExcepts => 

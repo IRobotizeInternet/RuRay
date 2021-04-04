@@ -8,16 +8,13 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
     public class ListItemSeeWhoReactedToThis : BaseDiv, IListItem
     {
         public Button ButtonUserProfile =>
-            new Button(Driver, By.XPath($"{BaseXPath}//a[contains(@href, 'user')]//*[name()='svg']"));
+            new Button(Driver, By.XPath($"{BaseXPath}[{Index}]//img"));
 
         public Label LabelUserName =>
-            new Label(Driver, By.XPath($"{BaseXPath}//a[text()]"));
+            new Label(Driver, By.XPath($"{BaseXPath}[{Index}]/div/div/div[2]/div[1]//span]"));
 
-        public Button ButtonAddFriend =>
-            new Button(Driver, By.XPath($"{BaseXPath}//span[text()='{ResCreatePost.AddFriend}']"));
-
-        public Button ButtonFollow =>
-             new Button(Driver, By.XPath($"{BaseXPath}//span[text()='{ResCreatePost.Follow}']"));
+        public Button ButtonAddFriendOrFollow =>
+            new Button(Driver, By.XPath($"{BaseXPath}[{Index}]//span[text()='{ResHomePage.AddFriend}' or text()='{ResCreatePost.Follow}']"));
 
         public int Index { get; set; }
 

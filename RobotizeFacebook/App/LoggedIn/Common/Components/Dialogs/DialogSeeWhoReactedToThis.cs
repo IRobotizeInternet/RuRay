@@ -7,14 +7,11 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class DialogSeeWhoReactedToThis : BaseDialog
     {
-        // TODO: Scrolling is not working for pop up windows we need to pass
-        // base path of the list items for scrolling to work "//div[@aria-label='Reactions']/div[3]"
-        // Look into element.scrollBy instead.
         public ScrollControl<ListItemSeeWhoReactedToThis> ScrollReactions =>
             new ScrollControl<ListItemSeeWhoReactedToThis>(
                 Driver, 
-                $"//div[@aria-label='{ResHomePage.Reactions}']/div[3]/div/div",
-                scrollXPath: $"//div[@aria-label='{ResHomePage.Reactions}']/div[3]" /*This could be improved to use existing parameter*/);
+                $"//div[@aria-label='{ResHomePage.Reactions}']/div[3]//div[@data-visualcompletion='ignore-dynamic']",
+                scrollXPath: $"//div[@aria-label='{ResHomePage.Reactions}']/div[3]");
 
 
         public DialogSeeWhoReactedToThis()
