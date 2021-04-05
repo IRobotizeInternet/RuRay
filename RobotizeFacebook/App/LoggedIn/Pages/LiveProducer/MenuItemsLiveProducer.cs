@@ -39,8 +39,8 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public EventTriggerButton<DialogRaiseMoney> EventTriggerButtonRaiseMoney =>
              new EventTriggerButton<DialogRaiseMoney>(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.RaiseMoney}']"));
 
-        public EventTriggerButton<DialogEmojis> EventTriggerButtonInsertAnEmoji =>
-             new EventTriggerButton<DialogEmojis>(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResLeftNav.InsertAnEmoji}']"));
+        public EventTriggerButton<DialogChooseAnEmoji> EventTriggerButtonInsertAnEmoji =>
+             new EventTriggerButton<DialogChooseAnEmoji>(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResLeftNav.InsertAnEmoji}']"));
 
         public EventTriggerButton<DialogAddATitle> EventTriggerGoLive =>
             new EventTriggerButton<DialogAddATitle>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResLeftNav.GoLive}']"));

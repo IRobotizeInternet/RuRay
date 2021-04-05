@@ -14,10 +14,11 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 
         public ListItemActivity(string baseXPath, int index = 1)
         {
-            Index = index;
+            XIndex = index;
             BaseXPath = baseXPath;
         }
 
-        public int Index { get; set; }
+        public int XIndex { get; set; }
+        public int YIndex { get; set; }
     }
 }

@@ -358,7 +358,7 @@
     <value>Sharing Private Images</value>
   </data>
   <data name="SmileysAndPeople" xml:space="preserve">
-    <value>Smileys &amp;amps; People</value>
+    <value>Smileys &amp; People</value>
   </data>
   <data name="SomethingElse" xml:space="preserve">
     <value>Something Else</value>
@@ -434,5 +434,89 @@
   </data>
   <data name="Messages" xml:space="preserve">
     <value>Messages</value>
+  </data>
+  <data name="Aa" xml:space="preserve">
+    <value>Aa</value>
+  </data>
+  <data name="AttachAPhotoOrVideo" xml:space="preserve">
+    <value>Attach a photo or video</value>
+  </data>
+  <data name="ChooseAGif" xml:space="preserve">
+    <value>Choose a gif</value>
+  </data>
+  <data name="ChooseASicker" xml:space="preserve">
+    <value>Choose a sticker</value>
+  </data>
+  <data name="OpenMoreActions" xml:space="preserve">
+    <value>Open more actions</value>
+  </data>
+  <data name="ChooseAnEmoji" xml:space="preserve">
+    <value>Choose an emoji</value>
+  </data>
+  <data name="RecentlyUsed" xml:space="preserve">
+    <value>Recently Used</value>
+  </data>
+  <data name="SendALike" xml:space="preserve">
+    <value>Send a Like</value>
+  </data>
+  <data name="PressEnterToSend" xml:space="preserve">
+    <value>Press Enter to send</value>
+  </data>
+  <data name="ChatSettings" xml:space="preserve">
+    <value>Chat Settings</value>
+  </data>
+  <data name="CloseChat" xml:space="preserve">
+    <value>Close chat</value>
+  </data>
+  <data name="MinimizeChat" xml:space="preserve">
+    <value>Minimize chat</value>
+  </data>
+  <data name="StartAVoiceCallWith" xml:space="preserve">
+    <value>Start a voice call with</value>
+  </data>
+  <data name="OpeninMessenger" xml:space="preserve">
+    <value>Open in Messenger</value>
+  </data>
+  <data name="NewMessengerAppforWindows" xml:space="preserve">
+    <value>New! Messenger App for Windows</value>
+  </data>
+  <data name="ViewProfile" xml:space="preserve">
+    <value>View Profile</value>
+  </data>
+  <data name="Color" xml:space="preserve">
+    <value>Color</value>
+  </data>
+  <data name="Emoji" xml:space="preserve">
+    <value>Emoji</value>
+  </data>
+  <data name="Nicknames" xml:space="preserve">
+    <value>Nicknames</value>
+  </data>
+  <data name="Creategroup" xml:space="preserve">
+    <value>Create group</value>
+  </data>
+  <data name="Muteconversation" xml:space="preserve">
+    <value>Mute conversation</value>
+  </data>
+  <data name="Ignoremessages" xml:space="preserve">
+    <value>Ignore messages</value>
+  </data>
+  <data name="Block" xml:space="preserve">
+    <value>Block</value>
+  </data>
+  <data name="Deleteconversation" xml:space="preserve">
+    <value>Delete conversation</value>
+  </data>
+  <data name="SomethingsWrong" xml:space="preserve">
+    <value>Something's wrong</value>
+  </data>
+  <data name="Givefeedbackandreporttheconversation" xml:space="preserve">
+    <value>Give feedback and report the conversation</value>
+  </data>
+  <data name="CloseMoreActions" xml:space="preserve">
+    <value>Close more actions</value>
+  </data>
+  <data name="MessageActions" xml:space="preserve">
+    <value>Message actions</value>
   </data>
 </root>

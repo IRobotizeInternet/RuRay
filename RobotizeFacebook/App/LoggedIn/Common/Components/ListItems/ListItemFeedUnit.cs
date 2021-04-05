@@ -11,17 +11,17 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
     {
         private string BaseXPath { get; set; }
         private readonly string _feedUnitIndexPath = "{0}//div[@aria-posinset={1}]/div/div/div/div/div/div/div/div[{2}]";
-        public string FeedInfoXPath => string.Format(_feedUnitIndexPath, BaseXPath, Index, 1);
-        public string FeedHeaderXPath => string.Format(_feedUnitIndexPath, BaseXPath, Index, 2);
-        public string FeedMainContentXPath => string.Format(_feedUnitIndexPath, BaseXPath, Index, 3);
-        public string FeedCommentControlsXPath => $"{string.Format(_feedUnitIndexPath, BaseXPath, Index, 4)}/div/div/div[1]";
-        public string FeedCommentsXPath => $"{string.Format(_feedUnitIndexPath, BaseXPath, Index, 4)}/div/div/div[2]";
-        public int Index { get; set; }
+        public string FeedInfoXPath => string.Format(_feedUnitIndexPath, BaseXPath, XIndex, 1);
+        public string FeedHeaderXPath => string.Format(_feedUnitIndexPath, BaseXPath, XIndex, 2);
+        public string FeedMainContentXPath => string.Format(_feedUnitIndexPath, BaseXPath, XIndex, 3);
+        public string FeedCommentControlsXPath => $"{string.Format(_feedUnitIndexPath, BaseXPath, XIndex, 4)}/div/div/div[1]";
+        public string FeedCommentsXPath => $"{string.Format(_feedUnitIndexPath, BaseXPath, XIndex, 4)}/div/div/div[2]";
+        public int XIndex { get; set; }
         
         public ListItemFeedUnit(string baseXPath, int index = 1)
         {
             BaseXPath = baseXPath;
-            Index = index;
+            XIndex = index;
         }
 
         public EventTriggerButton<DialogSeeWhoReactedToThis> EventTriggerButtonSeeWhoReactedToThis =>
@@ -46,6 +46,8 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public EventTriggerButton<DialogChooseHowToInteract> EventTriggerButtonChooseHowToInteract => 
             new EventTriggerButton<DialogChooseHowToInteract>(Driver, By.XPath($"{FeedCommentControlsXPath}//button[@aria-label='{ResHomePage.VoiceSelector}']"));
 
+        public int YIndex { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+
         public override void RunConformance()
         {
             throw new NotImplementedException();
@@ -55,11 +57,11 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
     public class PeopleYouMayKnow : BaseDriver, IListItem
     {
         private string BaseXPath { get; set; }
-        public int Index { get; set; }
+        public int XIndex { get; set; }
 
         public PeopleYouMayKnow(string baseXPath, int index = 1)
         {
-            Index = index;
+            XIndex = index;
             BaseXPath = baseXPath ?? $"//div[contains(@data-pagelet,'Feed')]//div[@aria-posinset={index}]/div/div/div/div/div/div/div";
         }
 
@@ -77,6 +79,8 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 
         public Button ButtonPreviousItems =>
             new Button(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResHomePage.PreviousItems}']"));
+
+        public int YIndex { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
 
         public override void RunConformance()
         {

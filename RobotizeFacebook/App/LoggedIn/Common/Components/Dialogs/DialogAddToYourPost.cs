@@ -27,8 +27,8 @@ namespace RobotizeFacebook.App.LoggedIn.Components
         public EventTriggerButton<DialogCheckin> ButtonCheckIn =>
             new EventTriggerButton<DialogCheckin>(Driver, By.XPath($"{BaseXPath}//span[contains(text(),'{ResCreatePost.CheckIn}')]"));
 
-        public EventTriggerButton<DialogGIF> ButtonGIF =>
-            new EventTriggerButton<DialogGIF>(Driver, By.XPath($"{BaseXPath}//span[contains(text(),'{ResCreatePost.GIF}')]"));
+        public EventTriggerButton<DialogChooseAGIF> ButtonGIF =>
+            new EventTriggerButton<DialogChooseAGIF>(Driver, By.XPath($"{BaseXPath}//span[contains(text(),'{ResCreatePost.GIF}')]"));
 
         public Button ButtonLiveVideo =>
             new Button(Driver, By.XPath($"{BaseXPath}//span[contains(text(),'{ResCreatePost.LiveVideo}')]"));

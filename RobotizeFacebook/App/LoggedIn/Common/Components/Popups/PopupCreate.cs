@@ -39,7 +39,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
             var post = TriggerDivCreatePost.Click();
             var privacyDialog = post.TriggerEditPrivacyDialog.Click();
             var exceptFriends = privacyDialog.ButtonFriendsExcept.Click();
-            exceptFriends.ComboboxSearchFriends.Select("Faisal");
+            exceptFriends.ComboboxSearchFriends.Select("TestName");
             post = exceptFriends.TriggerSaveChangesButton.Click();
             privacyDialog = post.TriggerEditPrivacyDialog.Click();
             exceptFriends = privacyDialog.ButtonFriendsExcept.Click();
@@ -53,7 +53,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
             var post = TriggerDivCreatePost.Click();
             var privacyDialog = post.TriggerEditPrivacyDialog.Click();
             var specificFriends = privacyDialog.ButtonSpecificFriends.Click();
-            specificFriends.ComboboxSearchFriends.Select("Faisal");
+            specificFriends.ComboboxSearchFriends.Select("TestName");
             post = specificFriends.TriggerSaveChangesButton.Click();
             privacyDialog = post.TriggerEditPrivacyDialog.Click();
             specificFriends = privacyDialog.ButtonSpecificFriends.Click();

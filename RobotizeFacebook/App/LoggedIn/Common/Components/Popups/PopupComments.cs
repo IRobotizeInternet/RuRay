@@ -23,17 +23,17 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public EventTriggerButton<PopupMostRelevant> EventTriggerButtonMostRelevantAllCommentsNewest =>
             new EventTriggerButton<PopupMostRelevant>(Driver, By.XPath($"{BaseXPath}//span[[text()='{ResHomePage.MostRelevant}' or text()='{ResHomePage.AllComments}' or text()='{ResHomePage.Newest}']"));
 
-        public EventTriggerButton<DialogEmojis> EventTriggerButtonInsertAnEmoji =>
-            new EventTriggerButton<DialogEmojis>(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResHomePage.InsertAnEmoji}']"));
+        public EventTriggerButton<DialogChooseAnEmoji> EventTriggerButtonInsertAnEmoji =>
+            new EventTriggerButton<DialogChooseAnEmoji>(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResHomePage.InsertAnEmoji}']"));
 
-        public EventTriggerButton<DialogGIF> EventTriggerButtonCommentWithAGIF =>
-            new EventTriggerButton<DialogGIF>(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResHomePage.CommentWithAGIF}']"));
+        public EventTriggerButton<DialogChooseAGIF> EventTriggerButtonCommentWithAGIF =>
+            new EventTriggerButton<DialogChooseAGIF>(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResHomePage.CommentWithAGIF}']"));
 
-        public EventTriggerButton<DialogGIF> EventTriggerButtonPostASticker =>
-            new EventTriggerButton<DialogGIF>(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResHomePage.PostASticker}']"));
+        public EventTriggerButton<DialogChooseAGIF> EventTriggerButtonPostASticker =>
+            new EventTriggerButton<DialogChooseAGIF>(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResHomePage.PostASticker}']"));
 
-        public EventTriggerButton<DialogGIF> EventTriggerButtonMoreComment =>
-           new EventTriggerButton<DialogGIF>(Driver, By.XPath($"{BaseXPath}//span[contains(text(),'{ResHomePage.MoreComment}')]"));
+        public EventTriggerButton<DialogChooseAGIF> EventTriggerButtonMoreComment =>
+           new EventTriggerButton<DialogChooseAGIF>(Driver, By.XPath($"{BaseXPath}//span[contains(text(),'{ResHomePage.MoreComment}')]"));
 
         public EventTriggerButton<PopupMostRelevant> EventTriggerButtonWriteACommentDotDotDot =>
              new EventTriggerButton<PopupMostRelevant>(Driver, By.XPath($"{BaseXPath}//span[contains(text(),'{ResHomePage.WriteACommentDotDotDot}')]"));

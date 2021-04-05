@@ -26,11 +26,12 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public EventTriggerButton<DialogPeopleWhoSharedThisMenu> EventTriggerButtonMenu =>
             new EventTriggerButton<DialogPeopleWhoSharedThisMenu>(Driver, By.XPath($"{BaseXPath}//div[@aria-haspopup=\"{ResCreatePost.Menu}\"]"));
 
-        public int Index { get; set; }
+        public int XIndex { get; set; }
+        public int YIndex { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
 
         public ListItemRelatedDiscussions(string baseXPath, int index = 1)
         {
-            Index = index;
+            XIndex = index;
             BaseXPath = baseXPath;
         }
     }

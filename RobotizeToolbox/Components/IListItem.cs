@@ -2,7 +2,8 @@
 {
     public interface IListItem
     {
-        int Index { get; set; }
+        int XIndex { get; set; }
+        int YIndex { get; set; }
         void RunConformance();
     }
 }
