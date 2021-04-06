@@ -160,6 +160,33 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Block Messages and Calls.
+        /// </summary>
+        public static string BlockMessagesAndCalls {
+            get {
+                return ResourceManager.GetString("BlockMessagesAndCalls", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Block messages and calls?.
+        /// </summary>
+        public static string BlockMessagesAndCalls1 {
+            get {
+                return ResourceManager.GetString("BlockMessagesAndCalls1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Block on Facebook.
+        /// </summary>
+        public static string BlockOnFacebook {
+            get {
+                return ResourceManager.GetString("BlockOnFacebook", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Block.
         /// </summary>
         public static string BlockWithOutSpace {
@@ -358,6 +385,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Delete Conversation.
+        /// </summary>
+        public static string DeleteConversation1 {
+            get {
+                return ResourceManager.GetString("DeleteConversation1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Done.
         /// </summary>
         public static string Done {
@@ -399,6 +435,42 @@ namespace RobotizeFacebook.Resources {
         public static string FoodAndDrink {
             get {
                 return ResourceManager.GetString("FoodAndDrink", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to For 1 Hour.
+        /// </summary>
+        public static string For1Hour {
+            get {
+                return ResourceManager.GetString("For1Hour", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to For 24 Hours.
+        /// </summary>
+        public static string For24Hours {
+            get {
+                return ResourceManager.GetString("For24Hours", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to For 30 minutes.
+        /// </summary>
+        public static string For30minutes {
+            get {
+                return ResourceManager.GetString("For30minutes", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to For 8 Hours.
+        /// </summary>
+        public static string For8Hours {
+            get {
+                return ResourceManager.GetString("For8Hours", resourceCulture);
             }
         }
         
@@ -498,6 +570,15 @@ namespace RobotizeFacebook.Resources {
         public static string Ignoremessages {
             get {
                 return ResourceManager.GetString("Ignoremessages", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ignore this conversation?.
+        /// </summary>
+        public static string IgnoreThisConversation {
+            get {
+                return ResourceManager.GetString("IgnoreThisConversation", resourceCulture);
             }
         }
         
@@ -1200,6 +1281,15 @@ namespace RobotizeFacebook.Resources {
         public static string Undo {
             get {
                 return ResourceManager.GetString("Undo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Until I turn it back on.
+        /// </summary>
+        public static string UntilIturnitbackon {
+            get {
+                return ResourceManager.GetString("UntilIturnitbackon", resourceCulture);
             }
         }
         

@@ -522,4 +522,34 @@
   <data name="Mute" xml:space="preserve">
     <value>Mute</value>
   </data>
+  <data name="For30minutes" xml:space="preserve">
+    <value>For 30 minutes</value>
+  </data>
+  <data name="For1Hour" xml:space="preserve">
+    <value>For 1 Hour</value>
+  </data>
+  <data name="For8Hours" xml:space="preserve">
+    <value>For 8 Hours</value>
+  </data>
+  <data name="For24Hours" xml:space="preserve">
+    <value>For 24 Hours</value>
+  </data>
+  <data name="UntilIturnitbackon" xml:space="preserve">
+    <value>Until I turn it back on</value>
+  </data>
+  <data name="IgnoreThisConversation" xml:space="preserve">
+    <value>Ignore this conversation?</value>
+  </data>
+  <data name="BlockMessagesAndCalls" xml:space="preserve">
+    <value>Block Messages and Calls</value>
+  </data>
+  <data name="BlockMessagesAndCalls1" xml:space="preserve">
+    <value>Block messages and calls?</value>
+  </data>
+  <data name="BlockOnFacebook" xml:space="preserve">
+    <value>Block on Facebook</value>
+  </data>
+  <data name="DeleteConversation1" xml:space="preserve">
+    <value>Delete Conversation</value>
+  </data>
 </root>

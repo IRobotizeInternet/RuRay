@@ -224,7 +224,9 @@
     <Compile Include="App\LoggedIn\Common\Components\ListItems\ListItemReactions.cs" />
     <Compile Include="App\LoggedIn\Common\Components\ListItems\ListItemPeopleWhoSharedThis.cs" />
     <Compile Include="App\LoggedIn\Common\Components\Dialogs\DialogChooseASticker.cs" />
+    <Compile Include="App\LoggedIn\Common\Components\Popups\DialogBlockUser.cs" />
     <Compile Include="App\LoggedIn\Common\Components\Popups\DialogColor.cs" />
+    <Compile Include="App\LoggedIn\Common\Components\Popups\DialogIgnoreThisConversation.cs" />
     <Compile Include="App\LoggedIn\Common\Components\Popups\DialogMuteConversation.cs" />
     <Compile Include="App\LoggedIn\Common\Components\Popups\DialogNickNames.cs" />
     <Compile Include="App\LoggedIn\Common\Components\Popups\ListItemNickname.cs" />
