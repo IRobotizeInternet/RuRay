@@ -11,7 +11,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
             BaseXPath = "//div[@role='dialog']//ul[@role='tablist']";
         }
 
-        protected override By ByForDialog => By.XPath("//div[@role='dialog']//ul[@role='tablist']");
+        protected override By ByForDialog => By.XPath($"//div[@aria-label='{ResCreatePost.Emoji}'][@role='dialog']");
 
         public ScrollControl<ListItemEmojiImage> ScrollControlChooseEmoji =>
             new ScrollControl<ListItemEmojiImage>(

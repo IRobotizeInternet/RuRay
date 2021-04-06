@@ -51,6 +51,9 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public EventTriggerButton<PopupMenuChatSettings> EventTriggerButtonChatSettings =>
             new EventTriggerButton<PopupMenuChatSettings>(Driver, By.XPath($"//div[@aria-label=['{ResHomePage.ChatSettings}']"));
 
+        public EventTriggerButton<HoverOverUserProfile> EventTriggerButtonUserProfile =>
+            new EventTriggerButton<HoverOverUserProfile>(Driver, By.XPath($"//div[@aria-label=['{ResHomePage.ChatSettings}']//img"));
+
         public Button ButtonAttachAPhotoOrVideo =>
             new Button(Driver, By.XPath($"//div[@data-pagelet='ChatTab']//div[@aria-label='{ResHomePage.AttachAPhotoOrVideo}'][not(contains(@aria-disabled,'true'))][@tabindex='0']"));
 
