@@ -519,4 +519,7 @@
   <data name="MessageActions" xml:space="preserve">
     <value>Message actions</value>
   </data>
+  <data name="Mute" xml:space="preserve">
+    <value>Mute</value>
+  </data>
 </root>
