@@ -26,9 +26,8 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 
         public ComboboxSharingWithYourFriends ComboboxSearchFriends => 
             new ComboboxSharingWithYourFriends(
-                Driver, 
-                ByForDialog, 
-                BaseXPath, 
+                Driver,
+                BaseXPath,
                 searchItemsXPath: $"{BaseXPath}//div[@aria-label='{ResHomePage.Send}' or @aria-label='{ResHomePage.Sent}']");
 
         public ScrollControl<ListItemSendInMessenger> ScrollSendInMessenger =>

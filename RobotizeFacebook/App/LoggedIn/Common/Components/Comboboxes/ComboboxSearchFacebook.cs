@@ -7,9 +7,9 @@ namespace RobotizeFacebook.App.LoggedIn
 {
     public class ComboboxSearchFacebook : Combobox
     {
-        public ComboboxSearchFacebook(RemoteWebDriver driver, By byForElement) : base(driver, byForElement)
+        public ComboboxSearchFacebook(RemoteWebDriver driver, string baseXPath) : base(driver, By.XPath(baseXPath))
         {
-            BaseXPath = $"//input[@role='combobox'][@placeholder='{ResMiscellaneous.SearchFacebook}']/../../../../..";
+            BaseXPath = baseXPath ?? $"//input[@role='combobox'][@placeholder='{ResMiscellaneous.SearchFacebook}']/../../../../..";
             SearchBoxXPath = $"{BaseXPath}//input[@type='search']";
             SearchItemsXPath = $"{BaseXPath}//a[@role='presentation']//span[@dir='auto']/span";
         }

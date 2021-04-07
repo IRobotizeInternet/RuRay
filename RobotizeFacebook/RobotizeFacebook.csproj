@@ -191,6 +191,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App\LoggedIn\Common\Components\Calendar.cs" />
+    <Compile Include="App\LoggedIn\Common\Components\Comboboxes\ComboboxAddMembers.cs" />
     <Compile Include="App\LoggedIn\Common\Components\Comboboxes\ComboboxNewMessageTo.cs" />
     <Compile Include="App\LoggedIn\Common\Components\Comboboxes\ComboboxCheckin.cs" />
     <Compile Include="App\LoggedIn\Common\Components\Dialogs\DialogAddVideos.cs" />
@@ -204,6 +205,7 @@
     <Compile Include="App\LoggedIn\Common\Components\Dialogs\DialogPeopleWhoSharedThisMenu.cs" />
     <Compile Include="App\LoggedIn\Common\Components\Dialogs\DialogMenu.cs" />
     <Compile Include="App\LoggedIn\Common\Components\ListItems\ListItemButton.cs" />
+    <Compile Include="App\LoggedIn\Common\Components\ListItems\ListItemCallPeopleToJoin.cs" />
     <Compile Include="App\LoggedIn\Common\Components\ListItems\ListItemEmojiImage.cs" />
     <Compile Include="App\LoggedIn\Common\Components\ListItems\ListItemMessangerChat.cs" />
     <Compile Include="App\LoggedIn\Common\Components\ListItems\ListItemActivity.cs" />
@@ -244,6 +246,10 @@
     <Compile Include="App\LoggedIn\Common\Components\Popups\PopupNotifications.cs" />
     <Compile Include="App\LoggedIn\Common\Divs\BaseDiv.cs" />
     <Compile Include="App\LoggedIn\Common\Components\Feed\FeedArticle.cs" />
+    <Compile Include="App\LoggedIn\Common\Divs\DialogCreateGroup.cs" />
+    <Compile Include="App\LoggedIn\Common\Divs\DivContacts.cs" />
+    <Compile Include="App\LoggedIn\Common\Divs\ListItemContact.cs" />
+    <Compile Include="App\LoggedIn\Common\Divs\ListItemContactGroupConversation.cs" />
     <Compile Include="App\LoggedIn\Common\Enum\MoreIllustration.cs" />
     <Compile Include="App\LoggedIn\Common\Enum\Privacy.cs" />
     <Compile Include="App\LoggedIn\Common\Enum\WhereToPost.cs" />
@@ -279,6 +285,7 @@
     <Compile Include="App\LoggedIn\Pages\Events\FeedYourEvents.cs" />
     <Compile Include="App\LoggedIn\Pages\Events\MenuItemsYourEvent.cs" />
     <Compile Include="App\LoggedIn\Common\Divs\DivVideoChatHomeUnit.cs" />
+    <Compile Include="App\LoggedIn\Pages\GroupCall\PageGroupCall.cs" />
     <Compile Include="App\LoggedIn\Pages\Home\HomeHeader\HeaderMiddleMenu.cs" />
     <Compile Include="App\LoggedIn\Pages\Home\HomeHeader\HeaderRightMenu.cs" />
     <Compile Include="App\LoggedIn\Common\Components\Dialogs\DialogJoinRoom.cs" />

@@ -495,6 +495,9 @@
   <data name="Creategroup" xml:space="preserve">
     <value>Create group</value>
   </data>
+  <data name="CreateGroup1" xml:space="preserve">
+    <value>Create Group</value>
+  </data>
   <data name="Muteconversation" xml:space="preserve">
     <value>Mute conversation</value>
   </data>
@@ -551,5 +554,14 @@
   </data>
   <data name="DeleteConversation1" xml:space="preserve">
     <value>Delete Conversation</value>
+  </data>
+  <data name="CreateNewGroup" xml:space="preserve">
+    <value>Create New Group</value>
+  </data>
+  <data name="InvitePeople" xml:space="preserve">
+    <value>Invite People</value>
+  </data>
+  <data name="SUGGESTED" xml:space="preserve">
+    <value>SUGGESTED</value>
   </data>
 </root>

@@ -14,9 +14,9 @@ namespace RobotizeFacebook.App.LoggedIn.Common.Components.Comboboxes
     {
         public ComboboxNewMessageTo(
            RemoteWebDriver driver,
-           By byForElement) : base(driver, byForElement)
+           string baseXPath) : base(driver, By.XPath(baseXPath))
         {
-            BaseXPath = "//div[@data-pagelet='ChatTab']";
+            BaseXPath = baseXPath ?? "//div[@data-pagelet='ChatTab']";
             SearchBoxXPath = $"{BaseXPath}//input[@type='search']";
             SearchItemsXPath = $"{BaseXPath}//ul[@role='listbox']//li[@role='option']";
         }

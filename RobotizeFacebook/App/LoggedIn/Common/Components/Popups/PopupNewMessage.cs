@@ -26,7 +26,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         }
 
         public ComboboxSharingWithYourFriends ComboboxSearchByNameOrGroup =>
-           new ComboboxSharingWithYourFriends(Driver, By.XPath($"{BaseXPath}//input[@type='checkbox']"), BaseXPath);
+           new ComboboxSharingWithYourFriends(Driver, BaseXPath);
 
         public EventTriggerButton<PopupChatMessageMoreActions> EventTriggerButtonOpenMoreActions =>
             new EventTriggerButton<PopupChatMessageMoreActions>(Driver, By.XPath($"//div[@aria-label='{ResHomePage.OpenMoreActions}']"));

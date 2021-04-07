@@ -14,8 +14,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         protected override By ByForDialog => By.XPath($"//div[@aria-label='{ResMiscellaneous.GiveFeedbackToFacebook}' and @role='dialog']//span[text()='{ResMiscellaneous.HelpUsImproveTheNewFacebook}']/../../../..");
 
         public ComboboxSharingWithYourFriends ComboboxChooseAnArea => new ComboboxSharingWithYourFriends(
-            Driver, 
-            By.XPath($"{BaseXPath}//label[@aria-label='{ResMiscellaneous.ChooseAnArea}']"), 
+            Driver,
             BaseXPath);
         public TextBox TextBoxChooseAnArea => new TextBox(Driver, By.XPath($"{BaseXPath}//textarea[@placeholder='{ResMiscellaneous.PleaseIncludeAsMuchInfoAsPossible}']"));
         public Button ButtonAddAScreenshotOrVideoRecommended => new Button(Driver, By.XPath($"{BaseXPath}//label[@span[text()='{ResMiscellaneous.AddAScreenshotOrVideoRecommended}']"));

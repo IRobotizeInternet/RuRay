@@ -376,6 +376,24 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Create Group.
+        /// </summary>
+        public static string CreateGroup1 {
+            get {
+                return ResourceManager.GetString("CreateGroup1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create New Group.
+        /// </summary>
+        public static string CreateNewGroup {
+            get {
+                return ResourceManager.GetString("CreateNewGroup", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Delete conversation.
         /// </summary>
         public static string Deleteconversation {
@@ -597,6 +615,15 @@ namespace RobotizeFacebook.Resources {
         public static string IntellectualProperty {
             get {
                 return ResourceManager.GetString("IntellectualProperty", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Invite People.
+        /// </summary>
+        public static string InvitePeople {
+            get {
+                return ResourceManager.GetString("InvitePeople", resourceCulture);
             }
         }
         
@@ -1227,6 +1254,15 @@ namespace RobotizeFacebook.Resources {
         public static string StartAVoiceCallWith {
             get {
                 return ResourceManager.GetString("StartAVoiceCallWith", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to SUGGESTED.
+        /// </summary>
+        public static string SUGGESTED {
+            get {
+                return ResourceManager.GetString("SUGGESTED", resourceCulture);
             }
         }
         

@@ -309,4 +309,34 @@
   <data name="NewMessage" xml:space="preserve">
     <value>New Message</value>
   </data>
+  <data name="CallPeopleToJoin" xml:space="preserve">
+    <value>Call People to Join</value>
+  </data>
+  <data name="CreateGroup" xml:space="preserve">
+    <value>Create Group</value>
+  </data>
+  <data name="LeaveRoom" xml:space="preserve">
+    <value>Leave room</value>
+  </data>
+  <data name="MuteMicrophone" xml:space="preserve">
+    <value>Mute microphone</value>
+  </data>
+  <data name="SearchForPeople" xml:space="preserve">
+    <value>Search for people</value>
+  </data>
+  <data name="SeeCallParticipants" xml:space="preserve">
+    <value>See call participants</value>
+  </data>
+  <data name="ShareYourScreen" xml:space="preserve">
+    <value>Share your screen</value>
+  </data>
+  <data name="TurnOffVideo" xml:space="preserve">
+    <value>Turn off video</value>
+  </data>
+  <data name="YourVideoMicrophoneOnClickToMinimize" xml:space="preserve">
+    <value>Your video, microphone on.Click to minimize</value>
+  </data>
+  <data name="YourVideoMicrophoneOnClickToShow" xml:space="preserve">
+    <value>Your video, microphone on.Click to show</value>
+  </data>
 </root>

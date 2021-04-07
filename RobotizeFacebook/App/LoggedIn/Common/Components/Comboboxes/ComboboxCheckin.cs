@@ -9,7 +9,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
     {
         public class ComboboxCheckin : Combobox
         {
-            public ComboboxCheckin(RemoteWebDriver driver, By byForElement) : base(driver, byForElement)
+            public ComboboxCheckin(RemoteWebDriver driver, string baseXPath) : base(driver, By.XPath(baseXPath))
             {
                 BaseXPath = $"//form[@method='POST']/parent::div[@role='dialog']";
                 SearchBoxXPath = $"{BaseXPath}//input[contains(@aria-label,'{ResCreatePost.SearchForVideos}')][@type='text']";

@@ -1,23 +1,24 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
+using RobotizeFacebook.Resources;
 using RobotizeToolbox.Controls;
 using RobotizeToolbox.Extensions;
 using System;
 using System.Threading;
 
-namespace RobotizeFacebook.App.LoggedIn
+namespace RobotizeFacebook.App.LoggedIn.Pages
 {
-    public class ComboboxSharingWithYourFriends : Combobox
+    public class ComboboxAddMembers : Combobox
     {
-        public ComboboxSharingWithYourFriends(
-            RemoteWebDriver driver,
-            string baseXPath,
-            string searchBoxXPath = null,
-            string searchItemsXPath = null) : base(driver, By.XPath(baseXPath))
+        public ComboboxAddMembers(
+           RemoteWebDriver driver,
+           string baseXPath,
+           string searchBoxXPath = null,
+           string searchItemsXPath = null) : base(driver, By.XPath(baseXPath))
         {
-            BaseXPath = baseXPath;
-            SearchBoxXPath = searchBoxXPath ?? $"{BaseXPath}//input[@type='search' and contains(@role, 'textbox')]";
-            SearchItemsXPath = searchItemsXPath ?? $"{BaseXPath}//div[contains(@role, 'grid')]//div[@role='row']//div[@role='button']";
+            BaseXPath = baseXPath ?? $"//div[@aria-label='{ResCreatePost.CreateGroup}']";
+            SearchBoxXPath = searchBoxXPath ?? $"{BaseXPath}//input[@type='search' and contains(@role, 'combobox')]";
+            SearchItemsXPath = searchItemsXPath ?? $"{BaseXPath}//div[@aria-label='{ResCreatePost.CreateGroup}']//ul[contains(@role, 'listbox')]/li";
         }
 
         public override void Select(string itemToSearch)

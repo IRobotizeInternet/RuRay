@@ -9,7 +9,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
     public class Memorialization: BaseEditor
     {
         public ComboboxSharingWithYourFriends ComboboxChooseAFriend => 
-            new ComboboxSharingWithYourFriends(Driver, By.XPath($"//input[@placeholder={ResMiscellaneous.ChooseAFriend}]"), string.Empty);
+            new ComboboxSharingWithYourFriends(Driver, string.Empty);
         public Button ButtonAdd => new Button(Driver, By.XPath($"//button[text()={ResMiscellaneous.Add}]"));
         public Hyperlink<DialogDeleteYourAccountInFuture> Link =>
             new Hyperlink<DialogDeleteYourAccountInFuture>(Driver, By.XPath($"//input[@value={ResMiscellaneous.RequestThatYourAccountBeDeletedAfterYouPassAway}]"));

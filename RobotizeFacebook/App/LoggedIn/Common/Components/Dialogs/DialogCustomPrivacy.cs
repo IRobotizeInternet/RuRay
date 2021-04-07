@@ -15,6 +15,6 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 
         public Checkbox CheckboxFriendsOfTagged => new Checkbox(Driver, By.XPath($"{BaseXPath}//input[@type='checkbox']"));
         public ComboboxSharingWithYourFriends ComboboxDontShareWith => 
-            new ComboboxSharingWithYourFriends(Driver, By.XPath($"{BaseXPath}//input[@type='checkbox']"), BaseXPath);
+            new ComboboxSharingWithYourFriends(Driver, BaseXPath);
     }
 }

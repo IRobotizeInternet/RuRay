@@ -19,7 +19,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 
         protected override By ByForDialog => By.XPath($"//form[@method='POST']//span[text()='{ResCreatePost.FriendsExcept}']");
 
-        public ComboboxSharingWithYourFriends ComboboxSearchFriends => new ComboboxSharingWithYourFriends(Driver, ByForDialog, BaseXPath);
+        public ComboboxSharingWithYourFriends ComboboxSearchFriends => new ComboboxSharingWithYourFriends(Driver, BaseXPath);
 
         public IEnumerable<IWebElement> FriendsWhoWontSeeYourPost => 
              Driver.FindElements(By.XPath($"//form[@method='POST']//div[@role='grid'][contains(@aria-label, '{ResCreatePost.FriendsWhoWontSeeYourPost}')]//div[@role='button']"));

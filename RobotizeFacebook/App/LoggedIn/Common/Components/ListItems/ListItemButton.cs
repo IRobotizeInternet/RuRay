@@ -7,7 +7,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 {
     public class ListItemButton : BaseDiv, IListItem
     {
-        //public Label LabelActivity => new Label(Driver, By.XPath($"{BaseXPath}"));
+        public Label LabelActivity => new Label(Driver, By.XPath($"{BaseXPath}[{XIndex}]"));
 
         public ListItemButton(string baseXPath, int index = 1)
         {

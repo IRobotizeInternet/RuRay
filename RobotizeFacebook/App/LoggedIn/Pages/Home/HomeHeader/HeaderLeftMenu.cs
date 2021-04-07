@@ -11,7 +11,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
             new Hyperlink<PageUserTimeline>(Driver, By.XPath("//a[@aria-label='Facebook']"));
 
         public ComboboxSearchFacebook SearchboxFacebook => 
-            new ComboboxSearchFacebook(Driver, By.XPath($"//input[@placeholder='{ResHomePageHeader.SearchFacebook}']"));
+            new ComboboxSearchFacebook(Driver, null);
         
         public override void RunConformance()
         {
