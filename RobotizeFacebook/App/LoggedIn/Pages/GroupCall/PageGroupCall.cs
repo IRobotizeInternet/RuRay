@@ -1,11 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using OpenQA.Selenium;
 using RobotizeFacebook.Resources;
 using RobotizeToolbox.CommonControls;
+using RobotizeToolbox.Controls;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages.GroupCall
 {
@@ -60,5 +57,46 @@ namespace RobotizeFacebook.App.LoggedIn.Pages.GroupCall
 
         public ScrollControl<ListItemCallPeopleToJoin> ScrollControlCallPeopleToJoin
             => new ScrollControl<ListItemCallPeopleToJoin>(Driver, "");
+
+        public EventTriggerButton<DialogMenuOptions> EventTriggerButtonMenuOptions =>
+            new EventTriggerButton<DialogMenuOptions>(Driver, By.XPath($"//button[@aria-label={ResCreatePost.MenuOptions}]"));
+
+        public class DialogMenuOptions : BaseDialog
+        {
+            protected override By ByForDialog => By.XPath($"//div[@data-pagelet='root']//span[text()='{ResCreatePost.DeviceSettings}']");
+
+            public EventTriggerButton<DialogGroupCallSettings> EventTriggerButtonGroupCallSettings
+                => new EventTriggerButton<DialogGroupCallSettings>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResCreatePost.DeviceSettings}']"));
+
+            public Button ButtonEnterFullScreen
+                => new Button(Driver, By.XPath($"{BaseXPath}//span[text()='{ResCreatePost.EnterFullscreen}']"));
+
+            public Button ButtonExitFullscreen
+                => new Button(Driver, By.XPath($"{BaseXPath}//span[text()='{ResCreatePost.ExitFullscreen}']"));
+
+            public DialogMenuOptions()
+            {
+                BaseXPath = $"//div[@data-pagelet='root']";
+            }
+            public override void RunConformance()
+            {
+                throw new NotImplementedException();
+            }
+        }
+    }
+
+    public class DialogGroupCallSettings : BaseDialog
+    {
+        protected override By ByForDialog => By.XPath($"//div[@aria-label='{ResCreatePost.VideoAndAudioCallSettings}']");
+
+        public DialogGroupCallSettings()
+        {
+            BaseXPath = $"//div[@aria-label='{ResCreatePost.VideoAndAudioCallSettings}']";
+        }
+
+        public override void RunConformance()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

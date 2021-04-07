@@ -205,6 +205,15 @@ namespace RobotizeFacebook.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Device Settings.
+        /// </summary>
+        public static string DeviceSettings {
+            get {
+                return ResourceManager.GetString("DeviceSettings", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Edit privacy.
         /// </summary>
         public static string EditPrivacy {
@@ -228,6 +237,24 @@ namespace RobotizeFacebook.Resources {
         public static string Emoji {
             get {
                 return ResourceManager.GetString("Emoji", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Enter Fullscreen.
+        /// </summary>
+        public static string EnterFullscreen {
+            get {
+                return ResourceManager.GetString("EnterFullscreen", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Exit Fullscreen.
+        /// </summary>
+        public static string ExitFullscreen {
+            get {
+                return ResourceManager.GetString("ExitFullscreen", resourceCulture);
             }
         }
         
@@ -354,6 +381,15 @@ namespace RobotizeFacebook.Resources {
         public static string Menu {
             get {
                 return ResourceManager.GetString("Menu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Menu Options.
+        /// </summary>
+        public static string MenuOptions {
+            get {
+                return ResourceManager.GetString("MenuOptions", resourceCulture);
             }
         }
         
@@ -678,6 +714,15 @@ namespace RobotizeFacebook.Resources {
         public static string Unfollow {
             get {
                 return ResourceManager.GetString("Unfollow", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Video and audio call settings.
+        /// </summary>
+        public static string VideoAndAudioCallSettings {
+            get {
+                return ResourceManager.GetString("VideoAndAudioCallSettings", resourceCulture);
             }
         }
         

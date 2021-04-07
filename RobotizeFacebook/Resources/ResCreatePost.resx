@@ -333,6 +333,21 @@
   <data name="TurnOffVideo" xml:space="preserve">
     <value>Turn off video</value>
   </data>
+  <data name="DeviceSettings" xml:space="preserve">
+    <value>Device Settings</value>
+  </data>
+  <data name="EnterFullscreen" xml:space="preserve">
+    <value>Enter Fullscreen</value>
+  </data>
+  <data name="ExitFullscreen" xml:space="preserve">
+    <value>Exit Fullscreen</value>
+  </data>
+  <data name="MenuOptions" xml:space="preserve">
+    <value>Menu Options</value>
+  </data>
+  <data name="VideoAndAudioCallSettings" xml:space="preserve">
+    <value>Video and audio call settings</value>
+  </data>
   <data name="YourVideoMicrophoneOnClickToMinimize" xml:space="preserve">
     <value>Your video, microphone on.Click to minimize</value>
   </data>

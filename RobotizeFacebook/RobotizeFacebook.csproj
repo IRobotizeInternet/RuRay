@@ -197,7 +197,11 @@
     <Compile Include="App\LoggedIn\Common\Components\Dialogs\DialogAddVideos.cs" />
     <Compile Include="App\LoggedIn\Common\Components\Dialogs\DialogCheckin.cs" />
     <Compile Include="App\LoggedIn\Common\Components\Dialogs\DialogChooseAGIF.cs" />
+    <Compile Include="App\LoggedIn\Common\Components\Dialogs\DialogDone.cs" />
+    <Compile Include="App\LoggedIn\Common\Components\Dialogs\DialogGiveFeedbackOrReportThisComment.cs" />
     <Compile Include="App\LoggedIn\Common\Components\Dialogs\DialogHowAreYouFeeling.cs" />
+    <Compile Include="App\LoggedIn\Common\Components\Dialogs\DialogReportCommentToGroupAdmin.cs" />
+    <Compile Include="App\LoggedIn\Common\Components\Dialogs\DialogSearhSomethingElse.cs" />
     <Compile Include="App\LoggedIn\Common\Components\Dialogs\DialogSelectNonprofit.cs" />
     <Compile Include="App\LoggedIn\Common\Components\Dialogs\DialogSendToGroup.cs" />
     <Compile Include="App\LoggedIn\Common\Components\Dialogs\DialogShareToYourStory.cs" />
@@ -226,11 +230,11 @@
     <Compile Include="App\LoggedIn\Common\Components\ListItems\ListItemReactions.cs" />
     <Compile Include="App\LoggedIn\Common\Components\ListItems\ListItemPeopleWhoSharedThis.cs" />
     <Compile Include="App\LoggedIn\Common\Components\Dialogs\DialogChooseASticker.cs" />
-    <Compile Include="App\LoggedIn\Common\Components\Popups\DialogBlockUser.cs" />
-    <Compile Include="App\LoggedIn\Common\Components\Popups\DialogColor.cs" />
-    <Compile Include="App\LoggedIn\Common\Components\Popups\DialogIgnoreThisConversation.cs" />
-    <Compile Include="App\LoggedIn\Common\Components\Popups\DialogMuteConversation.cs" />
-    <Compile Include="App\LoggedIn\Common\Components\Popups\DialogNickNames.cs" />
+    <Compile Include="App\LoggedIn\Common\Components\Dialogs\DialogBlockUser.cs" />
+    <Compile Include="App\LoggedIn\Common\Components\Dialogs\DialogColor.cs" />
+    <Compile Include="App\LoggedIn\Common\Components\Dialogs\DialogIgnoreThisConversation.cs" />
+    <Compile Include="App\LoggedIn\Common\Components\Dialogs\DialogMuteConversation.cs" />
+    <Compile Include="App\LoggedIn\Common\Components\Dialogs\DialogNickNames.cs" />
     <Compile Include="App\LoggedIn\Common\Components\Popups\ListItemNickname.cs" />
     <Compile Include="App\LoggedIn\Common\Components\Popups\PopupChatMessageMoreActions.cs" />
     <Compile Include="App\LoggedIn\Common\Components\Popups\PopupComments.cs" />
@@ -246,7 +250,7 @@
     <Compile Include="App\LoggedIn\Common\Components\Popups\PopupNotifications.cs" />
     <Compile Include="App\LoggedIn\Common\Divs\BaseDiv.cs" />
     <Compile Include="App\LoggedIn\Common\Components\Feed\FeedArticle.cs" />
-    <Compile Include="App\LoggedIn\Common\Divs\DialogCreateGroup.cs" />
+    <Compile Include="App\LoggedIn\Common\Components\Dialogs\DialogCreateGroup.cs" />
     <Compile Include="App\LoggedIn\Common\Divs\DivContacts.cs" />
     <Compile Include="App\LoggedIn\Common\Divs\ListItemContact.cs" />
     <Compile Include="App\LoggedIn\Common\Divs\ListItemContactGroupConversation.cs" />
@@ -341,7 +345,7 @@
     <Compile Include="App\LoggedIn\Pages\Pages\FeedDiscover.cs" />
     <Compile Include="App\LoggedIn\Pages\Pages\FeedInvites.cs" />
     <Compile Include="App\LoggedIn\Pages\Pages\FeedPageQuality.cs" />
-    <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\DialogEventsTour.cs" />
+    <Compile Include="App\LoggedIn\Common\Components\Dialogs\DialogEventsTour.cs" />
     <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\FeedAppointment\ComboBoxCategories.cs" />
     <Compile Include="App\LoggedIn\Common\Components\Dialogs\DialogPromoteBookNowButton.cs" />
     <Compile Include="App\LoggedIn\Pages\Pages\ManagePage\FeedAppointment\FeedCalendar.cs" />
@@ -1130,7 +1134,7 @@
     <Compile Include="App\LoggedIn\Pages\Settings\Seperator1\GeneralEditors\Memorialization.cs" />
     <Compile Include="App\LoggedIn\Pages\Settings\Seperator1\GeneralEditors\Name.cs" />
     <Compile Include="App\LoggedIn\Pages\Settings\Seperator1\GeneralEditors\UserName.cs" />
-    <Compile Include="App\LoggedIn\Pages\Settings\Seperator1\SecurityEditors\DialogChangePassword.cs" />
+    <Compile Include="App\LoggedIn\Common\Components\Dialogs\DialogChangePassword.cs" />
     <Compile Include="App\LoggedIn\Pages\Settings\Seperator1\SecurityEditors\Login.cs" />
     <Compile Include="App\LoggedIn\Pages\Settings\Seperator1\SecurityEditors\Recommended.cs" />
     <Compile Include="App\LoggedIn\Pages\Settings\Seperator1\SecurityEditors\WhereYouAreLoggedIn.cs" />
