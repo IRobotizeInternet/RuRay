@@ -11,8 +11,4 @@
     <None Remove="FacebookHelpAPI\**" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\RobotizeAPI\RobotizeAPI.API\RobotizeFacebook.csproj" />
-  </ItemGroup>
-
 </Project>
