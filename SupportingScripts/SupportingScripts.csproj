@@ -6,11 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="FacebookHelpAPI\" />
+    <Compile Remove="FacebookHelpAPI\**" />
+    <EmbeddedResource Remove="FacebookHelpAPI\**" />
+    <None Remove="FacebookHelpAPI\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\RobotizeFacebook\RobotizeFacebook.csproj" />
+    <ProjectReference Include="..\RobotizeAPI\RobotizeAPI.API\RobotizeFacebook.csproj" />
   </ItemGroup>
 
 </Project>

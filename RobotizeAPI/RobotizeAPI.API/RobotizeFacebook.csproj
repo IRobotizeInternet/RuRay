@@ -1,0 +1,408 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>RobotizeAPI.API.xml</DocumentationFile>   
+    <NoWarn>$(NoWarn);1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="app.config" />
+    <Content Remove="packages.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="ReadMe.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="..\..\packages\Selenium.WebDriver.ChromeDriver.89.0.4389.2300\driver\win32\chromedriver.exe" Link="chromedriver.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\packages\Selenium.WebDriver.IEDriver.3.150.1.2\driver\IEDriverServer.exe" Link="IEDriverServer.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\packages\Selenium.WebDriver.MicrosoftWebDriver.10.0.17134\driver\MicrosoftWebDriver.exe" Link="MicrosoftWebDriver.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="..\..\packages\Selenium.WebDriver.MSEdgeDriver.85.0.564.41\driver\win64\msedgedriver.exe" Link="msedgedriver.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ReadMe.txt" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="9.0.0" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.1" />   
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="4.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="4.1.1" />
+    <PackageReference Include="Serilog.AspNetCore" Version="3.2.0" />
+    <PackageReference Include="Serilog.Settings.Configuration" Version="3.1.0" />
+    <PackageReference Include="Serilog.Sinks.Async" Version="1.4.0" />
+    <PackageReference Include="Serilog.Sinks.PeriodicBatching" Version="2.2.0" />
+    <PackageReference Include="Serilog.Sinks.RollingFile" Version="3.3.0" />
+    <PackageReference Include="SpecFlow" Version="3.7.38" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.0.0-rc4" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Filters" Version="5.0.0-rc8" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\RobotizeToolbox\RobotizeToolbox.csproj" />
+    <ProjectReference Include="..\RobotizeAPI.Configuration\RobotizeAPI.Configuration.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="App\LoggedIn\Pages\Friends\birthdays\" />
+    <Folder Include="App\LoggedIn\Pages\Friends\list\" />
+    <Folder Include="App\LoggedIn\Pages\Friends\requests\" />
+    <Folder Include="App\LoggedIn\Pages\Friends\suggestions\" />
+    <Folder Include="App\LoggedIn\Pages\Marketplace\GridMarketPlace\GridHelper\radiobutton\" />
+    <Folder Include="App\LoggedIn\Pages\Marketplace\GridMarketPlace\GridHelper\textbox\" />
+    <Folder Include="App\LoggedIn\Pages\Pages\ManagePage\notifications\" />
+    <Folder Include="App\LoggedIn\Pages\Pages\ManagePage\promote\" />
+    <Folder Include="App\LoggedIn\Pages\storycreate\" />
+    <Folder Include="Logs\" />
+    <Folder Include="Properties\PublishProfiles\" />
+    <Folder Include="Services\RobotizeAPIs\" />
+    <Folder Include="SpecFlow\drivers\" />
+    <Folder Include="SpecFlow\hooks\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Resources\ResAccount.Designer.cs">
+      <DependentUpon>ResAccount.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\ResBabyAndToddlerSize.Designer.cs">
+      <DependentUpon>ResBabyAndToddlerSize.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\ResBedSize.Designer.cs">
+      <DependentUpon>ResBedSize.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\ResBodyStyle.Designer.cs">
+      <DependentUpon>ResBodyStyle.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\ResBrand.Designer.cs">
+      <DependentUpon>ResBrand.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\ResCategory.Designer.cs">
+      <DependentUpon>ResCategory.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\ResColor.Designer.cs">
+      <DependentUpon>ResColor.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\ResCreatePost.Designer.cs">
+      <DependentUpon>ResCreatePost.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\ResCurrency.Designer.cs">
+      <DependentUpon>ResCurrency.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\ResDate.Designer.cs">
+      <DependentUpon>ResDate.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\ResDecorStyle.Designer.cs">
+      <DependentUpon>ResDecorStyle.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\ResDialogPopUpCreate.Designer.cs">
+      <DependentUpon>ResDialogPopUpCreate.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\ResDisplayTechnology.Designer.cs">
+      <DependentUpon>ResDisplayTechnology.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\ResEmoji.Designer.cs">
+      <DependentUpon>ResEmoji.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\ResFeature.Designer.cs">
+      <DependentUpon>ResFeature.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\ResFilterCategories.Designer.cs">
+      <DependentUpon>ResFilterCategories.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\ResFinish.Designer.cs">
+      <DependentUpon>ResFinish.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\ResHomePage.Designer.cs">
+      <DependentUpon>ResHomePage.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\ResHomePageHeader.Designer.cs">
+      <DependentUpon>ResHomePageHeader.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\ResItemCondition.Designer.cs">
+      <DependentUpon>ResItemCondition.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\ResLeftNav.Designer.cs">
+      <DependentUpon>ResLeftNav.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\ResLoginPage.Designer.cs">
+      <DependentUpon>ResLoginPage.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\ResMiscellaneous.Designer.cs">
+      <DependentUpon>ResMiscellaneous.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\ResMonth.Designer.cs">
+      <DependentUpon>ResMonth.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\ResNetwork.Designer.cs">
+      <DependentUpon>ResNetwork.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\ResNotificationSettings.Designer.cs">
+      <DependentUpon>ResNotificationSettings.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\ResOtherSocialMedia.Designer.cs">
+      <DependentUpon>ResOtherSocialMedia.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\ResPageSettings.Designer.cs">
+      <DependentUpon>ResPageSettings.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\ResPlatform.Designer.cs">
+      <DependentUpon>ResPlatform.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\ResPostBackground.Designer.cs">
+      <DependentUpon>ResPostBackground.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\ResPostBackGroundColor.Designer.cs">
+      <DependentUpon>ResPostBackGroundColor.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\ResScreenSize.Designer.cs">
+      <DependentUpon>ResScreenSize.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\ResSelectPrivacy.Designer.cs">
+      <DependentUpon>ResSelectPrivacy.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Update="Resources\ResYear.Designer.cs">
+      <DependentUpon>ResYear.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Update="Resources\ResAccount.resx">
+      <SubType>Designer</SubType>
+      <LastGenOutput>ResAccount.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ResBabyAndToddlerSize.resx">
+      <LastGenOutput>ResBabyAndToddlerSize.Designer.cs</LastGenOutput>
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ResBedSize.resx">
+      <LastGenOutput>ResBedSize.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ResBodyStyle.resx">
+      <LastGenOutput>ResBodyStyle.Designer.cs</LastGenOutput>
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ResBrand.resx">
+      <LastGenOutput>ResBrand.Designer.cs</LastGenOutput>
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ResCategory.resx">
+      <SubType>Designer</SubType>
+      <LastGenOutput>ResCategory.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ResColor.resx">
+      <LastGenOutput>ResColor.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ResCreatePost.resx">
+      <SubType>Designer</SubType>
+      <LastGenOutput>ResCreatePost.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ResCurrency.resx">
+      <LastGenOutput>ResCurrency.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ResDate.resx">
+      <LastGenOutput>ResDate.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ResDecorStyle.resx">
+      <LastGenOutput>ResDecorStyle.Designer.cs</LastGenOutput>
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ResDialogPopUpCreate.resx">
+      <LastGenOutput>ResDialogPopUpCreate.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ResDisplayTechnology.resx">
+      <LastGenOutput>ResDisplayTechnology.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ResEmoji.resx">
+      <SubType>Designer</SubType>
+      <LastGenOutput>ResEmoji.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ResFeature.resx">
+      <LastGenOutput>ResFeature.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ResFilterCategories.resx">
+      <LastGenOutput>ResFilterCategories.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ResFinish.resx">
+      <LastGenOutput>ResFinish.Designer.cs</LastGenOutput>
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ResHomePage.resx">
+      <SubType>Designer</SubType>
+      <LastGenOutput>ResHomePage.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ResHomePageHeader.resx">
+      <LastGenOutput>ResHomePageHeader.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ResItemCondition.resx">
+      <LastGenOutput>ResItemCondition.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ResLeftNav.resx">
+      <SubType>Designer</SubType>
+      <LastGenOutput>ResLeftNav.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ResLoginPage.resx">
+      <LastGenOutput>ResLoginPage.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ResMiscellaneous.resx">
+      <LastGenOutput>ResMiscellaneous.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ResMonth.resx">
+      <SubType>Designer</SubType>
+      <LastGenOutput>ResMonth.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ResNetwork.resx">
+      <LastGenOutput>ResNetwork.Designer.cs</LastGenOutput>
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ResNotificationSettings.resx">
+      <LastGenOutput>ResNotificationSettings.Designer.cs</LastGenOutput>
+      <Generator>ResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ResOtherSocialMedia.resx">
+      <LastGenOutput>ResOtherSocialMedia.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ResPageSettings.resx">
+      <SubType>Designer</SubType>
+      <LastGenOutput>ResPageSettings.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ResPlatform.resx">
+      <LastGenOutput>ResPlatform.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ResPostBackground.resx">
+      <LastGenOutput>ResPostBackground.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ResPostBackGroundColor.resx">
+      <LastGenOutput>ResPostBackGroundColor.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ResScreenSize.resx">
+      <LastGenOutput>ResScreenSize.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ResSelectPrivacy.resx">
+      <LastGenOutput>ResSelectPrivacy.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Resources\ResYear.resx">
+      <LastGenOutput>ResYear.Designer.cs</LastGenOutput>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="ChangeTarget.ps1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
+</Project>

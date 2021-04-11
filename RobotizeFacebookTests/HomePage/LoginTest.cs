@@ -1,5 +1,5 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using RobotizeFacebook.Utilities;
+//using RobotizeFacebook.Utilities;
 
 namespace RobotizeFacebookTests.HomePage
 {
@@ -14,7 +14,7 @@ namespace RobotizeFacebookTests.HomePage
             //a.GenerateFacebookHelpApi();
             //var b = new PageHome();
             //b.Feed.StartScrollingToDown(ScrollDirection.Down);
-            var dynamicGenerate = new DynamicCodeGeneration();
+            //var dynamicGenerate = new DynamicCodeGeneration();
             //var classDefination = new ClassDefinationDTO
             //{
             //    Directives = new List<string> { "System" },

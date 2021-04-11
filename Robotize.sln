@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotizeFacebook", "RobotizeFacebook\RobotizeFacebook.csproj", "{5D8EAA6D-F5F1-4F10-9FB1-1A87A2461319}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotizeFacebookTest", "RobotizeFacebookTests\RobotizeFacebookTest.csproj", "{8BF64D4A-72BD-4841-894B-82ADD8873EA5}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B743ED3C-8F9C-49B9-ACCF-0673FB8668E3}"
@@ -20,6 +18,22 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SupportingScripts", "Suppor
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotizeMobileFacebook", "RobotizeMobileFacebook\RobotizeMobileFacebook.csproj", "{01CDB635-369E-4707-8786-921F43A358A1}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RobotizeFacebook", "RobotizeAPI\RobotizeAPI.API\RobotizeFacebook.csproj", "{7D90447C-D705-466D-B667-8A2A628B15C4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RobotizeAPI.BLL", "RobotizeAPI\RobotizeAPI.BLL\RobotizeAPI.BLL.csproj", "{E8D5B040-0724-4BA1-8B1E-AC62D38077D3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RobotizeAPI.Configuration", "RobotizeAPI\RobotizeAPI.Configuration\RobotizeAPI.Configuration.csproj", "{8B96DF12-DC71-4238-8DB6-B0CCD624D3B5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RobotizeAPI.DAL.MySql", "RobotizeAPI\RobotizeAPI.DAL.MySql\RobotizeAPI.DAL.MySql.csproj", "{9243165E-988F-4556-BE99-D8FC42A63F62}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{CC42BF3D-0751-490F-9B33-F5A715E45F6F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RobotizeAPI.BLL.Tests", "RobotizeAPI\RobotizeAPI.BLL.Tests\RobotizeAPI.BLL.Tests.csproj", "{17A772A1-62DA-4828-B448-7D0E56D37018}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DbUp", "DbUp", "{0D05B06D-7DD5-42C4-9C09-E8798C26C591}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RobotizeAPI.DbUp.MySql", "RobotizeAPI\RobotizeAPI.DbUp.MySql\RobotizeAPI.DbUp.MySql.csproj", "{32D7217E-057D-4570-BE80-3CCDED615228}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,12 +41,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5D8EAA6D-F5F1-4F10-9FB1-1A87A2461319}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5D8EAA6D-F5F1-4F10-9FB1-1A87A2461319}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5D8EAA6D-F5F1-4F10-9FB1-1A87A2461319}.Dev|Any CPU.ActiveCfg = Dev|Any CPU
-		{5D8EAA6D-F5F1-4F10-9FB1-1A87A2461319}.Dev|Any CPU.Build.0 = Dev|Any CPU
-		{5D8EAA6D-F5F1-4F10-9FB1-1A87A2461319}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{5D8EAA6D-F5F1-4F10-9FB1-1A87A2461319}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{8BF64D4A-72BD-4841-894B-82ADD8873EA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8BF64D4A-72BD-4841-894B-82ADD8873EA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BF64D4A-72BD-4841-894B-82ADD8873EA5}.Dev|Any CPU.ActiveCfg = Dev|Any CPU
@@ -60,9 +68,49 @@ Global
 		{01CDB635-369E-4707-8786-921F43A358A1}.Dev|Any CPU.Build.0 = Debug|Any CPU
 		{01CDB635-369E-4707-8786-921F43A358A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{01CDB635-369E-4707-8786-921F43A358A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7D90447C-D705-466D-B667-8A2A628B15C4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D90447C-D705-466D-B667-8A2A628B15C4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7D90447C-D705-466D-B667-8A2A628B15C4}.Dev|Any CPU.ActiveCfg = Debug|Any CPU
+		{7D90447C-D705-466D-B667-8A2A628B15C4}.Dev|Any CPU.Build.0 = Debug|Any CPU
+		{7D90447C-D705-466D-B667-8A2A628B15C4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7D90447C-D705-466D-B667-8A2A628B15C4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8D5B040-0724-4BA1-8B1E-AC62D38077D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8D5B040-0724-4BA1-8B1E-AC62D38077D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8D5B040-0724-4BA1-8B1E-AC62D38077D3}.Dev|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8D5B040-0724-4BA1-8B1E-AC62D38077D3}.Dev|Any CPU.Build.0 = Debug|Any CPU
+		{E8D5B040-0724-4BA1-8B1E-AC62D38077D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8D5B040-0724-4BA1-8B1E-AC62D38077D3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B96DF12-DC71-4238-8DB6-B0CCD624D3B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B96DF12-DC71-4238-8DB6-B0CCD624D3B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B96DF12-DC71-4238-8DB6-B0CCD624D3B5}.Dev|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B96DF12-DC71-4238-8DB6-B0CCD624D3B5}.Dev|Any CPU.Build.0 = Debug|Any CPU
+		{8B96DF12-DC71-4238-8DB6-B0CCD624D3B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B96DF12-DC71-4238-8DB6-B0CCD624D3B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9243165E-988F-4556-BE99-D8FC42A63F62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9243165E-988F-4556-BE99-D8FC42A63F62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9243165E-988F-4556-BE99-D8FC42A63F62}.Dev|Any CPU.ActiveCfg = Debug|Any CPU
+		{9243165E-988F-4556-BE99-D8FC42A63F62}.Dev|Any CPU.Build.0 = Debug|Any CPU
+		{9243165E-988F-4556-BE99-D8FC42A63F62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9243165E-988F-4556-BE99-D8FC42A63F62}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17A772A1-62DA-4828-B448-7D0E56D37018}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17A772A1-62DA-4828-B448-7D0E56D37018}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17A772A1-62DA-4828-B448-7D0E56D37018}.Dev|Any CPU.ActiveCfg = Debug|Any CPU
+		{17A772A1-62DA-4828-B448-7D0E56D37018}.Dev|Any CPU.Build.0 = Debug|Any CPU
+		{17A772A1-62DA-4828-B448-7D0E56D37018}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17A772A1-62DA-4828-B448-7D0E56D37018}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32D7217E-057D-4570-BE80-3CCDED615228}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32D7217E-057D-4570-BE80-3CCDED615228}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32D7217E-057D-4570-BE80-3CCDED615228}.Dev|Any CPU.ActiveCfg = Debug|Any CPU
+		{32D7217E-057D-4570-BE80-3CCDED615228}.Dev|Any CPU.Build.0 = Debug|Any CPU
+		{32D7217E-057D-4570-BE80-3CCDED615228}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32D7217E-057D-4570-BE80-3CCDED615228}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{17A772A1-62DA-4828-B448-7D0E56D37018} = {CC42BF3D-0751-490F-9B33-F5A715E45F6F}
+		{32D7217E-057D-4570-BE80-3CCDED615228} = {0D05B06D-7DD5-42C4-9C09-E8798C26C591}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B16C1725-C75B-4D3F-9B5F-EA702538E231}

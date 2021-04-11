@@ -78,10 +78,6 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\RobotizeFacebook\RobotizeFacebook.csproj">
-      <Project>{5d8eaa6d-f5f1-4f10-9fb1-1a87a2461319}</Project>
-      <Name>RobotizeFacebook</Name>
-    </ProjectReference>
     <ProjectReference Include="..\RobotizeToolbox\RobotizeToolbox.csproj">
       <Project>{CA179313-4A69-40BD-8F25-66DCC2D6D225}</Project>
       <Name>RobotizeToolbox</Name>
