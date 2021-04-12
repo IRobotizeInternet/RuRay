@@ -27,7 +27,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public Label LabelNotificationsCount =>
             new Label(Driver, By.XPath($"{BaseRigthXPath}//div[contains(@aria-label,'{ResHomePageHeader.Notifications})'][2]//span//span"));
 
-        public Hyperlink<PopupAccount> DialogAccount =>
+        public Hyperlink<PopupAccount> EventTriggerButtonAccount =>
             new Hyperlink<PopupAccount>(Driver, By.XPath($"{BaseRigthXPath}//div[contains(@aria-label,'{ResHomePageHeader.Account})'][1]"));
 
         public override void RunConformance()

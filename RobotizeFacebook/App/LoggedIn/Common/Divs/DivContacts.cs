@@ -29,7 +29,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public EventTriggerButton<DialogCreateGroup> EventTriggerButtonCreateNewGroup =>
             new EventTriggerButton<DialogCreateGroup>(Driver, By.XPath($"//div[@data-pagelet='RightRail']//span[text()='{ResHomePage.CreateNewGroup}']"));
 
-        public EventTriggerButton<> EventTriggerButtonCreateRoom => 
-            new EventTriggerButton<EventResult>(Driver, By.XPath($"//div[@aria-label='{ResCreatePost.NewRoom}']"));
+        //public EventTriggerButton<> EventTriggerButtonCreateRoom => 
+        //    new EventTriggerButton<EventResult>(Driver, By.XPath($"//div[@aria-label='{ResCreatePost.NewRoom}']"));
     }
 }

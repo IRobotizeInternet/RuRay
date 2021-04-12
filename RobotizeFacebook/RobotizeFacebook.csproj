@@ -254,6 +254,7 @@
     <Compile Include="App\LoggedIn\Common\Divs\DivContacts.cs" />
     <Compile Include="App\LoggedIn\Common\Divs\ListItemContact.cs" />
     <Compile Include="App\LoggedIn\Common\Divs\ListItemContactGroupConversation.cs" />
+    <Compile Include="App\LoggedIn\Common\Enum\EnumOnOff.cs" />
     <Compile Include="App\LoggedIn\Common\Enum\MoreIllustration.cs" />
     <Compile Include="App\LoggedIn\Common\Enum\Privacy.cs" />
     <Compile Include="App\LoggedIn\Common\Enum\WhereToPost.cs" />
