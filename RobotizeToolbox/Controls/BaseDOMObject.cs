@@ -6,6 +6,7 @@ using RobotizeToolbox.Extensions;
 using System;
 using System.Diagnostics;
 using System.Linq;
+using System.Threading.Tasks;
 
 namespace RobotizeToolbox.CommonControls
 {
@@ -34,7 +35,7 @@ namespace RobotizeToolbox.CommonControls
         /// This method will try to click on the element atleast three times.
         /// Known issue <see cref="https://stackoverflow.com/questions/11908249/debugging-element-is-not-clickable-at-point-error?page=1&tab=votes#tab-top"/>
         /// </summary>
-        public virtual bool Click(int numberOfTries = 3)
+        public async virtual Task<bool> Click(int numberOfTries = 3)
         {
             // Using Polly library: https://github.com/App-vNext/Polly
             var policy = Policy

@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Robotize.API</name>
+    </assembly>
+    <members>
+        <member name="M:Robotize.API.Controllers.CarsController.#ctor(AutoMapper.IMapper,Robotize.BLL.Contracts.ICarsService)">
+            <summary>
+            Cars db api
+            </summary>
+            <param name="mapper"></param>
+            <param name="carsService"></param>
+        </member>
+        <member name="M:Robotize.API.Controllers.CarsController.CreateCarAsync(Robotize.API.Models.Car)">
+            <summary>
+            Create a new car
+            </summary>
+            <param name="car"></param>
+            <returns>Returns created car</returns>           
+        </member>
+        <member name="M:Robotize.API.Controllers.CarsController.GetCarAsync(System.Guid)">
+            <summary>
+            Get car by id
+            </summary>
+            <param name="id">Car Id</param>
+            <returns>Returns finded car</returns>
+        </member>
+        <member name="M:Robotize.API.Controllers.CarsController.UpdateCarAsync(System.Guid,Robotize.API.Models.Car)">
+            <summary>
+            Update existing car
+            </summary>
+            <param name="id">Car id</param>
+            <param name="car">Car parameters</param>
+            <returns></returns>
+        </member>
+        <member name="M:Robotize.API.Controllers.CarsController.DeleteCarAsync(System.Guid)">
+            <summary>
+            Delete car
+            </summary>
+            <param name="id">Car id</param>
+            <returns></returns>
+        </member>
+        <member name="M:Robotize.API.Controllers.CarsController.GetCarsListAsync(System.Int32,System.Int32)">
+            <summary>
+            Get cars list
+            </summary>
+            <param name="pageNumber">Page number</param>
+            <param name="pageSize">Page size</param>
+            <returns></returns>
+        </member>
+        <member name="M:Robotize.API.Controllers.HomeHeaderController.#ctor(AutoMapper.IMapper,Robotize.BLL.Contracts.IServiceHomeHeader)">
+            <summary>
+            Cars db api
+            </summary>
+            <param name="mapper"></param>
+            <param name="serviceHomeHeader"></param>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Robotize.API.Controllers.HomeHeaderController.FacebookSwitchMode(Robotize.BLL.Switch)" -->
+        <member name="M:Robotize.API.Controllers.TodoController.#ctor(AutoMapper.IMapper,Robotize.BLL.TodosMockProxyService)">
+            <summary>
+            Todos mock web proxy 
+            </summary>
+            <param name="mapper"></param>
+            <param name="todosMockService"></param>
+        </member>
+        <member name="M:Robotize.API.Controllers.TodoController.GetTodoById(System.Int32)">
+            <summary>
+            Get todo by id
+            </summary>
+            <param name="id">Todo id</param>     
+            <returns></returns>
+        </member>
+        <member name="M:Robotize.API.Controllers.TodoController.GetTodos">
+            <summary>
+            Get todos list from remote mock api
+            </summary>      
+            <returns></returns>
+        </member>
+        <member name="M:Robotize.API.Controllers.TokenController.GenerateToken">
+            <summary>
+            Generate sample token
+            </summary>       
+            <returns>Generated token</returns>        
+        </member>
+        <member name="M:Robotize.API.Controllers.TokenController.ValidateToken(System.String)">
+            <summary>
+            Validate sample token
+            </summary>
+            <param name="token">Token for validation</param>
+            <returns>Token validation status</returns>        
+        </member>
+        <member name="M:Robotize.API.Controllers.CarsV0Controller.GetCarsV0ListAsync(System.Int32)">
+            <summary>
+            Get cars list
+            </summary>       
+            <param name="limit">Items count</param>
+            <returns></returns>
+        </member>
+        <member name="T:Robotize.API.Models.Car">
+            <summary>
+            Car type
+            </summary>
+        </member>
+        <member name="P:Robotize.API.Models.Car.Id">
+            <summary>
+            Car id
+            </summary>
+        </member>
+        <member name="P:Robotize.API.Models.Car.ModelName">
+            <summary>
+            Car model name
+            </summary>
+        </member>
+        <member name="P:Robotize.API.Models.Car.CarType">
+            <summary>
+            Car type
+            </summary>
+        </member>
+        <member name="P:Robotize.API.Models.Car.CreatedOn">
+            <summary>
+            CreatedOn
+            </summary>
+        </member>
+        <member name="P:Robotize.API.Models.Car.ModifiedOn">
+            <summary>
+            ModifiedOn
+            </summary>
+        </member>
+        <member name="T:Robotize.API.Models.CarType">
+            <summary>
+            Car type
+            </summary>
+        </member>
+        <member name="F:Robotize.API.Models.CarType.Hatchback">
+            <summary>
+            Hatchback
+            </summary>
+        </member>
+        <member name="F:Robotize.API.Models.CarType.Sedan">
+            <summary>
+            Sedan
+            </summary>
+        </member>
+        <member name="F:Robotize.API.Models.CarType.SUV">
+            <summary>
+            SUV
+            </summary>
+        </member>
+        <member name="F:Robotize.API.Models.CarType.Coupe">
+            <summary>
+            Coupe
+            </summary>
+        </member>
+        <member name="T:Robotize.API.Models.Todo">
+            <summary>
+            Todo item
+            </summary>
+        </member>
+        <member name="P:Robotize.API.Models.Todo.Id">
+            <summary>
+            Todo id
+            </summary>
+        </member>
+        <member name="P:Robotize.API.Models.Todo.Title">
+            <summary>
+            Todo title
+            </summary> 
+        </member>
+        <member name="P:Robotize.API.Models.Todo.Completed">
+            <summary>
+            Todo status
+            </summary>        
+        </member>
+    </members>
+</doc>
