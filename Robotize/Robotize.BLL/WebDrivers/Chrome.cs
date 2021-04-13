@@ -53,6 +53,7 @@ namespace RobotizeFacebook.WebDrivers
 
             ChromeDriver driver = null;
 
+            // TODO: Please fix the drivers location, currently it is not working.
             RetryPolicy().Execute(() =>
             {
                 driver = new ChromeDriver(DriverLocation, options, TimeSpan.FromSeconds(WebDriverTimeoutInSeconds));

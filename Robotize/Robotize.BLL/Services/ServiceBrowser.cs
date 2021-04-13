@@ -39,7 +39,14 @@ namespace RobotizeFacebook.Services
             var existingChromePIds = Process.GetProcessesByName("chrome").Select(x => x.Id);
             _process = new Process();
             _process.StartInfo.FileName = shortcutAddress;
-            _process.Start();
+            var p = new Process
+            {
+                StartInfo = new ProcessStartInfo(shortcutAddress)
+                {
+                    UseShellExecute = true
+                }
+            };
+            p.Start();
             envSettings.Details = new EnvironmentSettingsDTO {
                 ProcessId = Process.GetProcessesByName("chrome").Where(x => !existingChromePIds.Contains(x.Id)).First().Id.ToString() 
             };
