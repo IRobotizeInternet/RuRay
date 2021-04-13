@@ -3,10 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30011.22
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotizeFacebook", "RobotizeFacebook\RobotizeFacebook.csproj", "{5D8EAA6D-F5F1-4F10-9FB1-1A87A2461319}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotizeFacebookTest", "RobotizeFacebookTests\RobotizeFacebookTest.csproj", "{8BF64D4A-72BD-4841-894B-82ADD8873EA5}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{B743ED3C-8F9C-49B9-ACCF-0673FB8668E3}"
 	ProjectSection(SolutionItems) = preProject
 		.editorconfig = .editorconfig
@@ -18,23 +14,21 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "RasaEngine", "RasaEngine\Ra
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SupportingScripts", "SupportingScripts\SupportingScripts.csproj", "{0BE8769F-B5C4-4BAF-8E26-B1407F26FD08}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotizeMobileFacebook", "RobotizeMobileFacebook\RobotizeMobileFacebook.csproj", "{01CDB635-369E-4707-8786-921F43A358A1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Robotize.API", "Robotize\Robotize.API\Robotize.API.csproj", "{AF1E9440-561F-4567-A123-135127E7C021}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Robotize.API", "Robotize\Robotize.API\Robotize.API.csproj", "{AF1E9440-561F-4567-A123-135127E7C021}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Robotize.BLL", "Robotize\Robotize.BLL\Robotize.BLL.csproj", "{7F0C082A-AF70-4F9B-8A3B-78A6497568E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Robotize.BLL", "Robotize\Robotize.BLL\Robotize.BLL.csproj", "{7F0C082A-AF70-4F9B-8A3B-78A6497568E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Robotize.Configuration", "Robotize\Robotize.Configuration\Robotize.Configuration.csproj", "{13A4FC34-BD8E-4285-8BC7-79D804D9CB8E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Robotize.Configuration", "Robotize\Robotize.Configuration\Robotize.Configuration.csproj", "{13A4FC34-BD8E-4285-8BC7-79D804D9CB8E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Robotize.DAL.MySql", "Robotize\Robotize.DAL.MySql\Robotize.DAL.MySql.csproj", "{548FD253-95C2-42FE-9E66-C3341B869A07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Robotize.DAL.MySql", "Robotize\Robotize.DAL.MySql\Robotize.DAL.MySql.csproj", "{548FD253-95C2-42FE-9E66-C3341B869A07}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C402C72A-3431-4A1D-BEFB-B973F29CD1FC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Robotize.BLL.Tests", "Robotize\Robotize.BLL.Tests\Robotize.BLL.Tests.csproj", "{415CF374-D506-4A5B-BAB6-EC9B54469657}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Robotize.BLL.Tests", "Robotize\Robotize.BLL.Tests\Robotize.BLL.Tests.csproj", "{415CF374-D506-4A5B-BAB6-EC9B54469657}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DbUp", "DbUp", "{DA572D55-621F-4F4C-982E-ADBD68E7001D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Robotize.DbUp.MySql", "Robotize\Robotize.DbUp.MySql\Robotize.DbUp.MySql.csproj", "{0BA3E121-96A4-4A3E-A57A-3A4B5E848CDF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Robotize.DbUp.MySql", "Robotize\Robotize.DbUp.MySql\Robotize.DbUp.MySql.csproj", "{0BA3E121-96A4-4A3E-A57A-3A4B5E848CDF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -43,18 +37,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5D8EAA6D-F5F1-4F10-9FB1-1A87A2461319}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5D8EAA6D-F5F1-4F10-9FB1-1A87A2461319}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5D8EAA6D-F5F1-4F10-9FB1-1A87A2461319}.Dev|Any CPU.ActiveCfg = Dev|Any CPU
-		{5D8EAA6D-F5F1-4F10-9FB1-1A87A2461319}.Dev|Any CPU.Build.0 = Dev|Any CPU
-		{5D8EAA6D-F5F1-4F10-9FB1-1A87A2461319}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{5D8EAA6D-F5F1-4F10-9FB1-1A87A2461319}.Release|Any CPU.Build.0 = Debug|Any CPU
-		{8BF64D4A-72BD-4841-894B-82ADD8873EA5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8BF64D4A-72BD-4841-894B-82ADD8873EA5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8BF64D4A-72BD-4841-894B-82ADD8873EA5}.Dev|Any CPU.ActiveCfg = Dev|Any CPU
-		{8BF64D4A-72BD-4841-894B-82ADD8873EA5}.Dev|Any CPU.Build.0 = Dev|Any CPU
-		{8BF64D4A-72BD-4841-894B-82ADD8873EA5}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{8BF64D4A-72BD-4841-894B-82ADD8873EA5}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{CA179313-4A69-40BD-8F25-66DCC2D6D225}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CA179313-4A69-40BD-8F25-66DCC2D6D225}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CA179313-4A69-40BD-8F25-66DCC2D6D225}.Dev|Any CPU.ActiveCfg = Debug|Any CPU
@@ -70,12 +52,6 @@ Global
 		{0BE8769F-B5C4-4BAF-8E26-B1407F26FD08}.Dev|Any CPU.Build.0 = Debug|Any CPU
 		{0BE8769F-B5C4-4BAF-8E26-B1407F26FD08}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BE8769F-B5C4-4BAF-8E26-B1407F26FD08}.Release|Any CPU.Build.0 = Release|Any CPU
-		{01CDB635-369E-4707-8786-921F43A358A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{01CDB635-369E-4707-8786-921F43A358A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{01CDB635-369E-4707-8786-921F43A358A1}.Dev|Any CPU.ActiveCfg = Debug|Any CPU
-		{01CDB635-369E-4707-8786-921F43A358A1}.Dev|Any CPU.Build.0 = Debug|Any CPU
-		{01CDB635-369E-4707-8786-921F43A358A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{01CDB635-369E-4707-8786-921F43A358A1}.Release|Any CPU.Build.0 = Release|Any CPU
 		{AF1E9440-561F-4567-A123-135127E7C021}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{AF1E9440-561F-4567-A123-135127E7C021}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AF1E9440-561F-4567-A123-135127E7C021}.Dev|Any CPU.ActiveCfg = Debug|Any CPU

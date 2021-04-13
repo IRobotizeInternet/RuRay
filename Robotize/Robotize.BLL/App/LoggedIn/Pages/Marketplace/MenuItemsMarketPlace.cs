@@ -8,8 +8,8 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
     {
         public EventTriggerButton<PageMarketplace> TriggerButtonBrowerAll => 
             new EventTriggerButton<PageMarketplace>(Driver, By.XPath($"{BaseXPath}//span[contains(text(), '{ResLeftNav.BrowseAll}')]"));
-        public EventTriggerButton<FeedNotifications> TriggerButtonNotification =>
-           new EventTriggerButton<FeedNotifications>(Driver, By.XPath($"{BaseXPath}//span[contains(text(), '{ResLeftNav.Notifications}')]"));
+        public EventTriggerButton<FeedContainerNotifications> TriggerButtonNotification =>
+           new EventTriggerButton<FeedContainerNotifications>(Driver, By.XPath($"{BaseXPath}//span[contains(text(), '{ResLeftNav.Notifications}')]"));
         public EventTriggerButton<FeedMarketplaceCart> TriggerButtonCart =>
            new EventTriggerButton<FeedMarketplaceCart>(Driver, By.XPath($"{BaseXPath}//span[contains(text(), '{ResLeftNav.Cart}')]"));
         public EventTriggerButton<PageMarketPlaceYourAccount> TriggerButtonYourAccount =>

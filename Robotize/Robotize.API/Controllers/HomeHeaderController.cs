@@ -40,7 +40,7 @@ namespace Robotize.API.Controllers
         /// </summary>
         /// <param name="mode" <see cref="Switch"/>></param>
         /// <returns>Returns created car</returns>           
-        [HttpPost("")]
+        [HttpPost("{mode}")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Unsupported visual mode")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]

@@ -4,8 +4,8 @@
     {
         static void Main(string[] args)
         {
-            var a = new ScriptUsingFacebook();
-            a.GenerateFacebookHelpApi();
+            //var a = new ScriptUsingFacebook();
+            //a.GenerateFacebookHelpApi();
         }
     }
 }

@@ -8,9 +8,4 @@
   <ItemGroup>
     <Folder Include="FacebookHelpAPI\" />
   </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\RobotizeFacebook\RobotizeFacebook.csproj" />
-  </ItemGroup>
-
 </Project>
