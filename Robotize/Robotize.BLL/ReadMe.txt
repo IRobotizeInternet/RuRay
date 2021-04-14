@@ -26,7 +26,7 @@ A retry mechanism to rerun failed tests - this is especially useful for WebDrive
 Known issue
 ----
 - Often chorme driver does not connect/Dont click/click on incorrect element even after refersing the page.
-Close all the google chrome broser and open again (Sometime existing browser cause new browser to be opened with unknown port
+Must close all the google chrome browser before running the robotizer (Sometime existing browser cause new browser to be opened with unknown port
 that will eventually throw up (https://stackoverflow.com/questions/56356452/selenium-chromedriver-the-http-request-to-the-remote-webdriver-server-for-url)
 
 

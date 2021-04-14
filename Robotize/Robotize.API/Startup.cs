@@ -42,6 +42,7 @@ namespace Robotize.API
             services.Configure<AppSettings>(appSettingsSection);
             var appSettings = appSettingsSection.Get<AppSettings>();
 
+            // Adding this code to open the browser, and redirect to the default url defined in the app.config
             PageHome pageHome = new PageHome();
 
             services.AddControllers();
