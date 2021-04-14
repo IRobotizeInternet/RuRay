@@ -56,7 +56,7 @@ namespace RobotizeFacebook.WebDrivers
             // TODO: Please fix the drivers location, currently it is not working.
             RetryPolicy().Execute(() =>
             {
-                driver = new ChromeDriver(DriverLocation, options, TimeSpan.FromSeconds(WebDriverTimeoutInSeconds));
+                driver = new ChromeDriver(options);
             });
 
             SelectTab(driver);

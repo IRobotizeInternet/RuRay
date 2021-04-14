@@ -39,7 +39,7 @@
 
   <ItemGroup>
     <None Include="..\..\packages\Selenium.WebDriver.ChromeDriver.89.0.4389.2300\driver\win32\chromedriver.exe" Link="chromedriver.exe">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="app.config" />
   </ItemGroup>
