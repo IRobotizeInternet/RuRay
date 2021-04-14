@@ -5,10 +5,15 @@ namespace Robotize.BLL.Contracts
     public interface IServiceHomeHeader
     {
         /// <summary>
-        /// Switch Facebook color mode
+        /// Homepage Scroll Down
         /// </summary>
-        /// <param name="mode"></param>
         /// <returns></returns>
-        Task<bool> FacebookSwitchMode(Switch mode);
+        Task<bool> HomePageScrollDown();
+
+        /// <summary>
+        /// Homepage Scroll Up
+        /// </summary>
+        /// <returns></returns>
+        Task<bool> HomePageScrollUp();
     }
 }

@@ -90,6 +90,8 @@ namespace RobotizeFacebook.WebDrivers
         {
             foreach(var tab in driver.WindowHandles)
             {
+                // TODO: This code is being hit twice when it ran first time, find the cuase and fix it.
+                // This should only be called one or being called explicitly. 
                 if (driver.Url.Contains($"{AppSettings.BaseURL}")) return;
                 driver.SwitchTo().Window(tab);
             }

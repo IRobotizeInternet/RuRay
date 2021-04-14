@@ -55,7 +55,12 @@
             <param name="mapper"></param>
             <param name="serviceHomeHeader"></param>
         </member>
-        <!-- Badly formed XML comment ignored for member "M:Robotize.API.Controllers.HomeHeaderController.FacebookSwitchMode(Robotize.BLL.Switch)" -->
+        <member name="M:Robotize.API.Controllers.HomeHeaderController.HomePageScrollDown">
+            <summary>
+            Homepage scroll down
+            </summary>
+            <returns>Returns created car</returns>           
+        </member>
         <member name="M:Robotize.API.Controllers.TodoController.#ctor(AutoMapper.IMapper,Robotize.BLL.TodosMockProxyService)">
             <summary>
             Todos mock web proxy 

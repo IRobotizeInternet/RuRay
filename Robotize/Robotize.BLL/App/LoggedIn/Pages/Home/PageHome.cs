@@ -3,7 +3,7 @@ using System.Linq;
 using System.Threading;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using RobotizeFacebook.Resources;
+using Robotize.BLL.Resources;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls;
 

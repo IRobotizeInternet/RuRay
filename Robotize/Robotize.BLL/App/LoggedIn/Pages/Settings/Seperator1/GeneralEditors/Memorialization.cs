@@ -2,7 +2,7 @@
 using RobotizeFacebook.App.NotLoggedIn.Help;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls.TriggerControls;
-using RobotizeFacebook.Resources;
+using Robotize.BLL.Resources;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages
 {

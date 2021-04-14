@@ -94,3 +94,5 @@ System.Resources.MissingManifestResourceException: Could not find the resource "
    at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
    at Robotize.API.Middleware.HttpContextMiddleware.Invoke(HttpContext httpContext) in D:\Dev\Robotize\Robotize\Robotize.API\Middlewares\HttpContextMiddleware.cs:line 40
+2021-04-13 23:59:21.086 -07:00 [Information] web api service is started.
+2021-04-13 23:59:32.314 -07:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 7563.7062 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:""][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"]

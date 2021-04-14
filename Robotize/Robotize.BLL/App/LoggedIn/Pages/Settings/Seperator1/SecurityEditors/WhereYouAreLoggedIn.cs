@@ -3,7 +3,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls.TriggerControls;
-using RobotizeFacebook.Resources;
+using Robotize.BLL.Resources;
 using System;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages.SecurityEditors

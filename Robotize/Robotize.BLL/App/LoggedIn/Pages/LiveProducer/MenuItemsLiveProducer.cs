@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 using RobotizeFacebook.App.LoggedIn.Components;
-using RobotizeFacebook.Resources;
+using Robotize.BLL.Resources;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls;
 

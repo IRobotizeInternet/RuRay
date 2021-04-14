@@ -2,7 +2,7 @@
 using OpenQA.Selenium.Remote;
 using RobotizeFacebook.App.LoggedIn.Pages;
 using RobotizeToolbox.CommonControls;
-using RobotizeFacebook.Resources;
+using Robotize.BLL.Resources;
 
 namespace RobotizeFacebook.App.LoggedIn.Settings.Tabs
 {

@@ -36,23 +36,31 @@ namespace Robotize.API.Controllers
         }
 
         /// <summary>
-        /// Create a new car
+        /// Homepage scroll down
         /// </summary>
-        /// <param name="mode" <see cref="Switch"/>></param>
         /// <returns>Returns created car</returns>           
-        [HttpPost("{mode}")]
+        [HttpPost("")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
-        [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Unsupported visual mode")]
+        [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Unsupported visual action")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
-        public async Task<IActionResult> FacebookSwitchMode([FromRoute] Switch mode)
+        public async Task<IActionResult> HomePageScrollDown()
         {
-            if (mode == Switch.INVALID)
-            {
-                return BadRequest();
-            }
-
-            await _serviceHomeHeader.FacebookSwitchMode(mode);
+            await _serviceHomeHeader.HomePageScrollDown();
             return Ok();
         }
+
+        ///// <summary>
+        ///// Homepage scroll Up
+        ///// </summary>
+        ///// <returns>Returns created car</returns>           
+        //[HttpPost("")]
+        //[SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
+        //[SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Unsupported visual action")]
+        //[SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
+        //public async Task<IActionResult> HomePageScrollUp()
+        //{
+        //    await _serviceHomeHeader.HomePageScrollUp();
+        //    return Ok();
+        //}
     }
 }

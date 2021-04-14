@@ -2,7 +2,7 @@
 using System.Diagnostics;
 using System.Linq;
 using OpenQA.Selenium;
-using RobotizeFacebook.Resources;
+using Robotize.BLL.Resources;
 using RobotizeToolbox.Extensions;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages

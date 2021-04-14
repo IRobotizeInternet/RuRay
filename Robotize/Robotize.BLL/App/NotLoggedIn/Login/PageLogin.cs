@@ -2,7 +2,7 @@
 using RobotizeFacebook.Utilities;
 using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls.TriggerControls;
-using RobotizeFacebook.Resources;
+using Robotize.BLL.Resources;
 using RobotizeToolbox.Controls;
 using RobotizeFacebook.App.LoggedIn.Pages;
 
