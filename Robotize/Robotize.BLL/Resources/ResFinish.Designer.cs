@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace RobotizeFacebook.Resources {
+namespace Robotize.BLL.Resources {
     using System;
     
     
@@ -22,7 +22,7 @@ namespace RobotizeFacebook.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class ResFinish {
+    public class ResFinish {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,10 +36,10 @@ namespace RobotizeFacebook.Resources {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("RobotizeFacebook.Resources.ResFinish", typeof(ResFinish).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Robotize.BLL.Resources.ResFinish", typeof(ResFinish).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -51,7 +51,7 @@ namespace RobotizeFacebook.Resources {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace RobotizeFacebook.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Distressed.
         /// </summary>
-        internal static string Distressed {
+        public static string Distressed {
             get {
                 return ResourceManager.GetString("Distressed", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace RobotizeFacebook.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Mirrored.
         /// </summary>
-        internal static string Mirrored {
+        public static string Mirrored {
             get {
                 return ResourceManager.GetString("Mirrored", resourceCulture);
             }
@@ -81,7 +81,7 @@ namespace RobotizeFacebook.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Painted.
         /// </summary>
-        internal static string Painted {
+        public static string Painted {
             get {
                 return ResourceManager.GetString("Painted", resourceCulture);
             }
@@ -90,7 +90,7 @@ namespace RobotizeFacebook.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Stained.
         /// </summary>
-        internal static string Stained {
+        public static string Stained {
             get {
                 return ResourceManager.GetString("Stained", resourceCulture);
             }

@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace RobotizeFacebook.Resources {
+namespace Robotize.BLL.Resources {
     using System;
     
     
@@ -22,7 +22,7 @@ namespace RobotizeFacebook.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class ResNetwork {
+    public class ResNetwork {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,10 +36,10 @@ namespace RobotizeFacebook.Resources {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("RobotizeFacebook.Resources.ResNetwork", typeof(ResNetwork).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Robotize.BLL.Resources.ResNetwork", typeof(ResNetwork).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -51,7 +51,7 @@ namespace RobotizeFacebook.Resources {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace RobotizeFacebook.Resources {
         /// <summary>
         ///   Looks up a localized string similar to AT&amp;amp;T.
         /// </summary>
-        internal static string ATAndT {
+        public static string ATAndT {
             get {
                 return ResourceManager.GetString("ATAndT", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace RobotizeFacebook.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Boost Mobile.
         /// </summary>
-        internal static string BoostMobile {
+        public static string BoostMobile {
             get {
                 return ResourceManager.GetString("BoostMobile", resourceCulture);
             }
@@ -81,7 +81,7 @@ namespace RobotizeFacebook.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Cricket Wireless.
         /// </summary>
-        internal static string CricketWireless {
+        public static string CricketWireless {
             get {
                 return ResourceManager.GetString("CricketWireless", resourceCulture);
             }
@@ -90,7 +90,7 @@ namespace RobotizeFacebook.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Metro by T-Mobile.
         /// </summary>
-        internal static string MetroByTMobile {
+        public static string MetroByTMobile {
             get {
                 return ResourceManager.GetString("MetroByTMobile", resourceCulture);
             }
@@ -99,7 +99,7 @@ namespace RobotizeFacebook.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Sprint.
         /// </summary>
-        internal static string Sprint {
+        public static string Sprint {
             get {
                 return ResourceManager.GetString("Sprint", resourceCulture);
             }
@@ -108,7 +108,7 @@ namespace RobotizeFacebook.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Straight Talk.
         /// </summary>
-        internal static string StraightTalk {
+        public static string StraightTalk {
             get {
                 return ResourceManager.GetString("StraightTalk", resourceCulture);
             }
@@ -117,7 +117,7 @@ namespace RobotizeFacebook.Resources {
         /// <summary>
         ///   Looks up a localized string similar to T-Mobile.
         /// </summary>
-        internal static string TMobile {
+        public static string TMobile {
             get {
                 return ResourceManager.GetString("TMobile", resourceCulture);
             }
@@ -126,7 +126,7 @@ namespace RobotizeFacebook.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Unlocked.
         /// </summary>
-        internal static string Unlocked {
+        public static string Unlocked {
             get {
                 return ResourceManager.GetString("Unlocked", resourceCulture);
             }
@@ -135,7 +135,7 @@ namespace RobotizeFacebook.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Verizon.
         /// </summary>
-        internal static string Verizon {
+        public static string Verizon {
             get {
                 return ResourceManager.GetString("Verizon", resourceCulture);
             }

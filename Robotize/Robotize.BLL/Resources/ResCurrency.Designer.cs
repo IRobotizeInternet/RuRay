@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace RobotizeFacebook.Resources {
+namespace Robotize.BLL.Resources {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace RobotizeFacebook.Resources {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("RobotizeFacebook.Resources.ResCurrency", typeof(ResCurrency).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Robotize.BLL.Resources.ResCurrency", typeof(ResCurrency).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

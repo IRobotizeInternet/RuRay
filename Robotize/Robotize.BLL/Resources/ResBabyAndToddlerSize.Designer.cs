@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace RobotizeFacebook.Resources {
+namespace Robotize.BLL.Resources {
     using System;
     
     
@@ -22,7 +22,7 @@ namespace RobotizeFacebook.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class ResBabyAndToddlerSize {
+    public class ResBabyAndToddlerSize {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,10 +36,10 @@ namespace RobotizeFacebook.Resources {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("RobotizeFacebook.Resources.ResBabyAndToddlerSize", typeof(ResBabyAndToddlerSize).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Robotize.BLL.Resources.ResBabyAndToddlerSize", typeof(ResBabyAndToddlerSize).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -51,7 +51,7 @@ namespace RobotizeFacebook.Resources {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace RobotizeFacebook.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 18-24 Months.
         /// </summary>
-        internal static string EighteenTo24Months {
+        public static string EighteenTo24Months {
             get {
                 return ResourceManager.GetString("EighteenTo24Months", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace RobotizeFacebook.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 5T.
         /// </summary>
-        internal static string FiveT {
+        public static string FiveT {
             get {
                 return ResourceManager.GetString("FiveT", resourceCulture);
             }
@@ -81,7 +81,7 @@ namespace RobotizeFacebook.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 4T.
         /// </summary>
-        internal static string FourT {
+        public static string FourT {
             get {
                 return ResourceManager.GetString("FourT", resourceCulture);
             }
@@ -90,7 +90,7 @@ namespace RobotizeFacebook.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Loungefly.
         /// </summary>
-        internal static string Loungefly {
+        public static string Loungefly {
             get {
                 return ResourceManager.GetString("Loungefly", resourceCulture);
             }
@@ -99,7 +99,7 @@ namespace RobotizeFacebook.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Newborn.
         /// </summary>
-        internal static string Newborn {
+        public static string Newborn {
             get {
                 return ResourceManager.GetString("Newborn", resourceCulture);
             }
@@ -108,7 +108,7 @@ namespace RobotizeFacebook.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 9-12 Months.
         /// </summary>
-        internal static string NineTo12Months {
+        public static string NineTo12Months {
             get {
                 return ResourceManager.GetString("NineTo12Months", resourceCulture);
             }
@@ -117,7 +117,7 @@ namespace RobotizeFacebook.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Preemie.
         /// </summary>
-        internal static string Preemie {
+        public static string Preemie {
             get {
                 return ResourceManager.GetString("Preemie", resourceCulture);
             }
@@ -126,7 +126,7 @@ namespace RobotizeFacebook.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 6-9 Months.
         /// </summary>
-        internal static string SixToNineMonths {
+        public static string SixToNineMonths {
             get {
                 return ResourceManager.GetString("SixToNineMonths", resourceCulture);
             }
@@ -135,7 +135,7 @@ namespace RobotizeFacebook.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 3T.
         /// </summary>
-        internal static string ThreeT {
+        public static string ThreeT {
             get {
                 return ResourceManager.GetString("ThreeT", resourceCulture);
             }
@@ -144,7 +144,7 @@ namespace RobotizeFacebook.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 3-6 Months.
         /// </summary>
-        internal static string ThreeToSixMonths {
+        public static string ThreeToSixMonths {
             get {
                 return ResourceManager.GetString("ThreeToSixMonths", resourceCulture);
             }
@@ -153,7 +153,7 @@ namespace RobotizeFacebook.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 12-18 Months.
         /// </summary>
-        internal static string TwelveTo18Months {
+        public static string TwelveTo18Months {
             get {
                 return ResourceManager.GetString("TwelveTo18Months", resourceCulture);
             }
@@ -162,7 +162,7 @@ namespace RobotizeFacebook.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 2T.
         /// </summary>
-        internal static string TwoT {
+        public static string TwoT {
             get {
                 return ResourceManager.GetString("TwoT", resourceCulture);
             }
@@ -171,7 +171,7 @@ namespace RobotizeFacebook.Resources {
         /// <summary>
         ///   Looks up a localized string similar to 0-3 Months.
         /// </summary>
-        internal static string ZeroToThreeMonths {
+        public static string ZeroToThreeMonths {
             get {
                 return ResourceManager.GetString("ZeroToThreeMonths", resourceCulture);
             }

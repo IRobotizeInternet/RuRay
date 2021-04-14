@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace RobotizeFacebook.Resources {
+namespace Robotize.BLL.Resources {
     using System;
     
     
@@ -22,7 +22,7 @@ namespace RobotizeFacebook.Resources {
     [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class ResNotificationSettings {
+    public class ResNotificationSettings {
         
         private static global::System.Resources.ResourceManager resourceMan;
         
@@ -36,10 +36,10 @@ namespace RobotizeFacebook.Resources {
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager {
+        public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("RobotizeFacebook.Resources.ResNotificationSettings", typeof(ResNotificationSettings).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Robotize.BLL.Resources.ResNotificationSettings", typeof(ResNotificationSettings).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
@@ -51,7 +51,7 @@ namespace RobotizeFacebook.Resources {
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture {
+        public static global::System.Globalization.CultureInfo Culture {
             get {
                 return resourceCulture;
             }
@@ -63,7 +63,7 @@ namespace RobotizeFacebook.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Buy and Sell Groups.
         /// </summary>
-        internal static string BuyAndSellGroups {
+        public static string BuyAndSellGroups {
             get {
                 return ResourceManager.GetString("BuyAndSellGroups", resourceCulture);
             }
@@ -72,7 +72,7 @@ namespace RobotizeFacebook.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Customize notifications.
         /// </summary>
-        internal static string CustomizeNotifications {
+        public static string CustomizeNotifications {
             get {
                 return ResourceManager.GetString("CustomizeNotifications", resourceCulture);
             }
@@ -81,7 +81,7 @@ namespace RobotizeFacebook.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Done.
         /// </summary>
-        internal static string Done {
+        public static string Done {
             get {
                 return ResourceManager.GetString("Done", resourceCulture);
             }
@@ -90,7 +90,7 @@ namespace RobotizeFacebook.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Edit Notification Settings.
         /// </summary>
-        internal static string EditNotificationSettings {
+        public static string EditNotificationSettings {
             get {
                 return ResourceManager.GetString("EditNotificationSettings", resourceCulture);
             }
@@ -99,7 +99,7 @@ namespace RobotizeFacebook.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Featured Items.
         /// </summary>
-        internal static string FeaturedItems {
+        public static string FeaturedItems {
             get {
                 return ResourceManager.GetString("FeaturedItems", resourceCulture);
             }
@@ -108,7 +108,7 @@ namespace RobotizeFacebook.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Listing Status.
         /// </summary>
-        internal static string ListingStatus {
+        public static string ListingStatus {
             get {
                 return ResourceManager.GetString("ListingStatus", resourceCulture);
             }
@@ -117,7 +117,7 @@ namespace RobotizeFacebook.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Message Reminders.
         /// </summary>
-        internal static string MessageReminders {
+        public static string MessageReminders {
             get {
                 return ResourceManager.GetString("MessageReminders", resourceCulture);
             }
@@ -126,7 +126,7 @@ namespace RobotizeFacebook.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Recommendations for You.
         /// </summary>
-        internal static string RecommendationsForYou {
+        public static string RecommendationsForYou {
             get {
                 return ResourceManager.GetString("RecommendationsForYou", resourceCulture);
             }
@@ -135,7 +135,7 @@ namespace RobotizeFacebook.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Reduced Prices.
         /// </summary>
-        internal static string ReducedPrices {
+        public static string ReducedPrices {
             get {
                 return ResourceManager.GetString("ReducedPrices", resourceCulture);
             }
@@ -144,7 +144,7 @@ namespace RobotizeFacebook.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Saved Items.
         /// </summary>
-        internal static string SavedItems {
+        public static string SavedItems {
             get {
                 return ResourceManager.GetString("SavedItems", resourceCulture);
             }
@@ -153,7 +153,7 @@ namespace RobotizeFacebook.Resources {
         /// <summary>
         ///   Looks up a localized string similar to Similar Items.
         /// </summary>
-        internal static string SimilarItems {
+        public static string SimilarItems {
             get {
                 return ResourceManager.GetString("SimilarItems", resourceCulture);
             }
