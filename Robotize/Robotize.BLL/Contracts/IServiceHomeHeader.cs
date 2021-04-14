@@ -10,10 +10,17 @@ namespace Robotize.BLL.Contracts
         /// <returns></returns>
         Task<bool> HomePageScrollDown();
 
+        ///// <summary>
+        ///// Homepage Scroll Up
+        ///// </summary>
+        ///// <returns></returns>
+        //Task<bool> HomePageScrollUp();
+
         /// <summary>
-        /// Homepage Scroll Up
+        /// Change Facebook visual mode
         /// </summary>
+        /// <param name="mode"></param>
         /// <returns></returns>
-        Task<bool> HomePageScrollUp();
+        Task<bool> FacebookChangeVisualMode(Switch mode);
     }
 }

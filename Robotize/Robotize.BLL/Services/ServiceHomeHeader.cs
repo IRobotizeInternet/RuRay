@@ -21,6 +21,17 @@ namespace Robotize.BLL
             
         }
 
+        public Task<bool> FacebookChangeVisualMode(Switch mode)
+        {
+            var pageHome = new PageHome();
+            var dialog = pageHome.Header.RightMenu.EventTriggerButtonAccount.Click();
+            var accessibilityDialog = dialog.TriggerDisplayAndAccessibilityDialog.Click();
+            if (mode == Switch.ON) accessibilityDialog.RButtonDarkModeOn.Click();
+            else accessibilityDialog.RButtonDarkModeOff.Click();
+            pageHome.Header.RightMenu.EventTriggerButtonAccount.Click();
+            return Task.FromResult(true);
+        }
+
         public Task<bool> HomePageScrollUp()
         {
             var pageHome = new PageHome();

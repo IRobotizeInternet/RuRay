@@ -59,7 +59,11 @@
             <summary>
             Homepage scroll down
             </summary>
-            <returns>Returns created car</returns>           
+        </member>
+        <member name="M:Robotize.API.Controllers.HomeHeaderController.FacebookChangeVisualMode(Robotize.BLL.Switch)">
+            <summary>
+            Homepage scroll Up
+            </summary>
         </member>
         <member name="M:Robotize.API.Controllers.TodoController.#ctor(AutoMapper.IMapper,Robotize.BLL.TodosMockProxyService)">
             <summary>

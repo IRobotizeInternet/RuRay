@@ -12,7 +12,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
             BaseXPath = $"//div[@aria-label='{ResAccount.Account}'][@role='dialog']";
         }
 
-        protected override By ByForDialog => By.XPath(BaseXPath);
+        protected override By ByForDialog => By.XPath($"//div[@aria-label='{ResAccount.Account}'][@role='dialog']");
 
         public EventTriggerButton<PageUserTimeline> TriggerSeeYourProfile => 
             new EventTriggerButton<PageUserTimeline>(Driver, By.XPath($"{BaseXPath}//a[@href='/me/']"));

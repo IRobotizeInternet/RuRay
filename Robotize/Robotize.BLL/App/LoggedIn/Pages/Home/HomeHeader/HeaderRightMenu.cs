@@ -19,16 +19,16 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
             new Hyperlink<PopupMessanger>(Driver, By.XPath($"{BaseRigthXPath}//div[contains(@aria-label, '{ResHomePageHeader.Messenger}'][1]"));
 
         public Hyperlink<PopupNotifications> DialogButtonNotifications =>
-            new Hyperlink<PopupNotifications>(Driver, By.XPath($"{BaseRigthXPath}//div[contains(@aria-label, '{ResHomePageHeader.Notifications})'][1]"));
+            new Hyperlink<PopupNotifications>(Driver, By.XPath($"{BaseRigthXPath}//div[contains(@aria-label, '{ResHomePageHeader.Notifications}')][1]"));
 
         public Label LabelMessangerCount =>
-            new Label(Driver, By.XPath($"{BaseRigthXPath}//div[contains(@aria-label,'{ResHomePageHeader.Messenger})'][2]//span//span"));
+            new Label(Driver, By.XPath($"{BaseRigthXPath}//div[contains(@aria-label,'{ResHomePageHeader.Messenger}')][2]//span//span"));
 
         public Label LabelNotificationsCount =>
-            new Label(Driver, By.XPath($"{BaseRigthXPath}//div[contains(@aria-label,'{ResHomePageHeader.Notifications})'][2]//span//span"));
+            new Label(Driver, By.XPath($"{BaseRigthXPath}//div[contains(@aria-label,'{ResHomePageHeader.Notifications}')][2]//span//span"));
 
         public Hyperlink<PopupAccount> EventTriggerButtonAccount =>
-            new Hyperlink<PopupAccount>(Driver, By.XPath($"{BaseRigthXPath}//div[contains(@aria-label,'{ResHomePageHeader.Account})'][1]"));
+            new Hyperlink<PopupAccount>(Driver, By.XPath($"{BaseRigthXPath}//div[contains(@aria-label,'{ResHomePageHeader.Account}')][1]"));
 
         public override void RunConformance()
         {
