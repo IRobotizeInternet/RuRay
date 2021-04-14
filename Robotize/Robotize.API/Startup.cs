@@ -22,6 +22,7 @@ using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
+using RobotizeFacebook.App.LoggedIn.Pages;
 
 namespace Robotize.API
 {
@@ -40,6 +41,8 @@ namespace Robotize.API
             var appSettingsSection = Configuration.GetSection("AppSettings");
             services.Configure<AppSettings>(appSettingsSection);
             var appSettings = appSettingsSection.Get<AppSettings>();
+
+            PageHome pageHome = new PageHome();
 
             services.AddControllers();
 
