@@ -62,7 +62,7 @@
         </member>
         <member name="M:Robotize.API.Controllers.HomeHeaderController.FacebookChangeVisualMode(Robotize.BLL.Switch)">
             <summary>
-            Homepage scroll Up
+            Facebook Change Visual Mode
             </summary>
         </member>
         <member name="M:Robotize.API.Controllers.TodoController.#ctor(AutoMapper.IMapper,Robotize.BLL.TodosMockProxyService)">
@@ -104,6 +104,20 @@
             </summary>       
             <param name="limit">Items count</param>
             <returns></returns>
+        </member>
+        <member name="M:Robotize.API.Controllers.WindowsScreenController.#ctor(AutoMapper.IMapper,Robotize.BLL.Contracts.IServiceWindowsScreen)">
+            <summary>
+            Windows Screen api
+            </summary>
+            <param name="mapper"></param>
+            <param name="serviceWindowsScreen"></param>
+        </member>
+        <member name="M:Robotize.API.Controllers.WindowsScreenController.CreateCarAsync(Robotize.BLL.Contracts.GridVisibility)">
+            <summary>
+            Show or hide gird on the screen
+            </summary>
+            <param name="gridVisibility"></param>
+            <returns></returns>           
         </member>
         <member name="T:Robotize.API.Models.Car">
             <summary>

@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>D:\Dev\Robotize\Robotize\Robotize.API\bin\Debug\</OutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\Robotize\Robotize.API\app.config" Link="app.config" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Robotize\Robotize.BLL\Robotize.BLL.csproj" />
+  </ItemGroup>
+
+</Project>

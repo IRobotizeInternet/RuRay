@@ -24,4 +24,6 @@ namespace RobotizeFacebook.Services
 
         public static EnvironmentSettings SettingsData => new EnvironmentSettings();
     }
+
+
 }

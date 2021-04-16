@@ -30,9 +30,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DbUp", "DbUp", "{DA572D55-6
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Robotize.DbUp.MySql", "Robotize\Robotize.DbUp.MySql\Robotize.DbUp.MySql.csproj", "{0BA3E121-96A4-4A3E-A57A-3A4B5E848CDF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RobotizeSpeechToText", "RobotizeSpeechToText\RobotizeSpeechToText.csproj", "{3460F788-F92A-415E-B86D-DAC3ADB3A667}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RobotizeSpeechToText", "RobotizeSpeechToText\RobotizeSpeechToText.csproj", "{3460F788-F92A-415E-B86D-DAC3ADB3A667}"
 EndProject
 Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PythonApplication1", "PythonApplication1\PythonApplication1.pyproj", "{D99B33D0-E037-42FB-A497-46FC260A201B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ScreenTools", "ScreenTools\ScreenTools.csproj", "{7B1056A1-207B-40E0-AFA4-82D1F50A3D76}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -101,6 +103,12 @@ Global
 		{D99B33D0-E037-42FB-A497-46FC260A201B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D99B33D0-E037-42FB-A497-46FC260A201B}.Dev|Any CPU.ActiveCfg = Debug|Any CPU
 		{D99B33D0-E037-42FB-A497-46FC260A201B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B1056A1-207B-40E0-AFA4-82D1F50A3D76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B1056A1-207B-40E0-AFA4-82D1F50A3D76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B1056A1-207B-40E0-AFA4-82D1F50A3D76}.Dev|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B1056A1-207B-40E0-AFA4-82D1F50A3D76}.Dev|Any CPU.Build.0 = Debug|Any CPU
+		{7B1056A1-207B-40E0-AFA4-82D1F50A3D76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B1056A1-207B-40E0-AFA4-82D1F50A3D76}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

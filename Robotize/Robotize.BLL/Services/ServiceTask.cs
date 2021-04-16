@@ -6,10 +6,19 @@ namespace RobotizeFacebook.Services
     {
         public static void CloseTask(string taskName)
         {
-            foreach (var process in Process.GetProcessesByName(taskName))
+            foreach (var process in Process.GetProcessesByName(taskName)) process.Kill();
+        }
+
+        public static void CreateTask(string taskName)
+        {
+            var p = new Process
             {
-                process.Kill();
-            }
+                StartInfo = new ProcessStartInfo(taskName)
+                {
+                    UseShellExecute = true
+                }
+            };
+            p.Start();
         }
     }
 }
