@@ -6,6 +6,7 @@ using RobotizeFacebook.Services;
 using RobotizeFacebook.Utilities;
 using System.Runtime.InteropServices;
 using System;
+using System.Linq;
 
 namespace ScreenTools
 {
@@ -13,7 +14,7 @@ namespace ScreenTools
     {
         Dictionary<int, Point> Coordinates = new Dictionary<int, Point>();
 
-        public ScreenGrid()
+        public ScreenGrid(string[] args)
         {
             // This is where we keep the coordinates, so web api's can read from.
             AppSettings.EnvironmentSettingsFile = ConfigurationManager.AppSettings[nameof(AppSettings.EnvironmentSettingsFile)];
@@ -37,7 +38,7 @@ namespace ScreenTools
             // Make backbroud transparent.
             TransparencyKey = BackColor;
 
-            var sizeValue = 150;
+            var sizeValue = args.Any() ? int.Parse(args[0]) : 100;
             // Fill the windows screen with label. 
             for (var i = 0; i < screenScale.Width; i += sizeValue)
             {

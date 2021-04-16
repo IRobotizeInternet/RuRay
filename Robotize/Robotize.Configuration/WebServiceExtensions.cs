@@ -52,6 +52,8 @@ namespace Microsoft.Extensions.DependencyInjection
             services.TryAddScoped<IServiceHomeHeader, ServiceHomeHeader>(); 
             services.TryAddScoped<IServiceWindowsScreen, ServiceWindowsScreen>();
             services.TryAddScoped<IJwtTokenService, JwtTokenService>();
+            services.TryAddScoped<IServiceKeyboard, ServiceKeyboard>();
+            
 
             services.AddHttpClient();
             services.AddHttpClient<TodosMockProxyService>(c =>

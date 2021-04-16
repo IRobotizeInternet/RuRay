@@ -1,4 +1,5 @@
-﻿$cSource = @'
+﻿param([Int32]$xAxis=500, [Int32]$yAxis=500) 
+$cSource = @'
 using System;
 using System.Drawing;
 using System.Runtime.InteropServices;
@@ -62,11 +63,15 @@ public static void LeftClickAtPoint(int x, int y)
 }
 }
 '@
+$x
+$y
+#Send a click at a specified point
+[Clicker]::LeftClickAtPoint($xAxis,$yAxis)
+[System.Windows.Forms.Cursor]::Position = New-Object System.Drawing.Point($x, $y)
+
+<#
 Add-Type -TypeDefinition $cSource -ReferencedAssemblies System.Windows.Forms,System.Drawing
-
-
 Add-Type -AssemblyName System.Windows.Forms
-
 while ($true)
 {
   $Pos = [System.Windows.Forms.Cursor]::Position
@@ -75,5 +80,4 @@ while ($true)
   #Send a click at a specified point
   [Clicker]::LeftClickAtPoint($x,$y)
   #[System.Windows.Forms.Cursor]::Position = New-Object System.Drawing.Point($x, $y)
-  Start-Sleep -Seconds 10
-}
+#>

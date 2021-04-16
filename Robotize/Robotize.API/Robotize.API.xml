@@ -65,6 +65,18 @@
             Facebook Change Visual Mode
             </summary>
         </member>
+        <member name="M:Robotize.API.Controllers.KeyboardController.#ctor(AutoMapper.IMapper,Robotize.BLL.Contracts.IServiceKeyboard)">
+            <summary>
+            Keyboard actions
+            </summary>
+            <param name="mapper"></param>
+            <param name="serviceKeyboard"></param>
+        </member>
+        <member name="M:Robotize.API.Controllers.KeyboardController.RightClick(System.Int32)">
+            <summary>
+            Keyboard left click action
+            </summary>
+        </member>
         <member name="M:Robotize.API.Controllers.TodoController.#ctor(AutoMapper.IMapper,Robotize.BLL.TodosMockProxyService)">
             <summary>
             Todos mock web proxy 

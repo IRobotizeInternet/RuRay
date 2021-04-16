@@ -15,7 +15,7 @@ namespace Robotize.BLL.Services
         {
             const string serviceName = "ScreenTools";
             if (gridVisibility == GridVisibility.OFF) ServiceTask.CloseTask(serviceName);
-            else ServiceTask.CreateTask(serviceName);
+            else ServiceTask.RunScript(serviceName);
             return Task.FromResult(true);
         }
     }

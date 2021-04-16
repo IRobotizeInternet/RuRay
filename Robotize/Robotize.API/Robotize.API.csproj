@@ -44,4 +44,10 @@
     <None Include="app.config" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="PS1\Clicker.ps1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

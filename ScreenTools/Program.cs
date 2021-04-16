@@ -12,13 +12,12 @@ namespace ScreenTools
         ///  The main entry point for the application.
         /// </summary>
         [STAThread]
-        static void Main()
+        static void Main(string[] args)
         {
-            //if (args.Any() && args[0] == "small") throw new Exception(args[0]);
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new ScreenGrid());
+            Application.Run(new ScreenGrid(args));
         }
     }
 }

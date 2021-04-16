@@ -9,17 +9,31 @@ namespace RobotizeFacebook.Services
             foreach (var process in Process.GetProcessesByName(taskName)) process.Kill();
         }
 
-        public static void CreateTask(string taskName)
+        public static void RunScript(string taskName, string arg = "")
         {
             var p = new Process
             {
                 StartInfo = new ProcessStartInfo(taskName)
                 {
                     UseShellExecute = true,
-                    Arguments = "small"
+                    Arguments = arg
                 }
             };
             p.Start();
         }
+
+        //public static void LeftClickAtSpecifiedLocation(int x, int y)
+        //{
+
+        //    var p = new Process
+        //    {
+        //        StartInfo = new ProcessStartInfo(taskName)
+        //        {
+        //            UseShellExecute = true,
+        //            Arguments = $"{x} {y}"
+        //        }
+        //    };
+        //    p.Start();
+        //}
     }
 }
