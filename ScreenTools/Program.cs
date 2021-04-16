@@ -14,6 +14,7 @@ namespace ScreenTools
         [STAThread]
         static void Main()
         {
+            //if (args.Any() && args[0] == "small") throw new Exception(args[0]);
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

@@ -9,6 +9,7 @@ using Polly;
 using Robotize.BLL;
 using Robotize.BLL.Contracts;
 using Robotize.BLL.Models;
+using Robotize.BLL.Services;
 using Robotize.DAL.MySql;
 using Robotize.DAL.MySql.Contract;
 using System;
@@ -48,7 +49,8 @@ namespace Microsoft.Extensions.DependencyInjection
             services.TryAddSingleton<ICarsRepository, CarsRepository>();
 
             services.TryAddScoped<ICarsService, CarsService>();
-            services.TryAddScoped<IServiceHomeHeader, ServiceHomeHeader>();
+            services.TryAddScoped<IServiceHomeHeader, ServiceHomeHeader>(); 
+            services.TryAddScoped<IServiceWindowsScreen, ServiceWindowsScreen>();
             services.TryAddScoped<IJwtTokenService, JwtTokenService>();
 
             services.AddHttpClient();

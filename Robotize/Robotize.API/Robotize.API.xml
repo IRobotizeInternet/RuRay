@@ -112,7 +112,7 @@
             <param name="mapper"></param>
             <param name="serviceWindowsScreen"></param>
         </member>
-        <member name="M:Robotize.API.Controllers.WindowsScreenController.CreateCarAsync(Robotize.BLL.Contracts.GridVisibility)">
+        <member name="M:Robotize.API.Controllers.WindowsScreenController.WindowGrid(Robotize.BLL.Contracts.GridVisibility)">
             <summary>
             Show or hide gird on the screen
             </summary>

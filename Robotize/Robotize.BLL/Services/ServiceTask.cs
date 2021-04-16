@@ -15,7 +15,8 @@ namespace RobotizeFacebook.Services
             {
                 StartInfo = new ProcessStartInfo(taskName)
                 {
-                    UseShellExecute = true
+                    UseShellExecute = true,
+                    Arguments = "small"
                 }
             };
             p.Start();
