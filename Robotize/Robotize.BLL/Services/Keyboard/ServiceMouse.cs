@@ -108,10 +108,13 @@ namespace Robotize.BLL.Services.Keyboard
             return Task.FromResult(true);
         }
 
+        public static Point Position { get; set; }
+
         public Task<bool> ScrollUp(int index)
         {
             //Move the mouse
             INPUT[] input = new INPUT[3];
+
             input[0].mi.dx = Coordinates[index].X * (65535 / ScreenScale.Width);
             input[0].mi.dy = Coordinates[index].Y * (65535 / ScreenScale.Height);
             input[0].mi.dwFlags = MOUSEEVENTF_MOVED | MOUSEEVENTF_ABSOLUTE;
