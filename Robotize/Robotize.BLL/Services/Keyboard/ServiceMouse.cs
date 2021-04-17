@@ -45,6 +45,18 @@ namespace Robotize.BLL.Services.Keyboard
             public IntPtr dwExtraInfo;
         }
 
+        [StructLayout(LayoutKind.Sequential)]
+        struct ScrollWindowEx {
+            IntPtr hWnd;
+            int dx;
+            int dy;
+            IntPtr prcScroll;
+            IntPtr prcClip;
+            IntPtr hrgnUpdate;
+            IntPtr prcUpdate;
+            short flags;
+        }
+
         //This covers most use cases although complex mice may have additional buttons
         //There are additional constants you can use for those cases, see the msdn page
         const int MOUSEEVENTF_MOVED = 0x0001;
@@ -64,6 +76,7 @@ namespace Robotize.BLL.Services.Keyboard
         //https://msdn.microsoft.com/en-us/library/windows/desktop/ms646310(v=vs.85).aspx
         [DllImport("user32.dll")]
         extern static uint SendInput(uint nInputs, INPUT[] pInputs, int cbSize);
+
 
         public Task<bool> LeftClickAtPoint(int index)
         {
@@ -91,6 +104,21 @@ namespace Robotize.BLL.Services.Keyboard
             input[1].mi.dwFlags = MOUSEEVENTF_RIGHTDOWN;
             //Left mouse button up
             input[2].mi.dwFlags = MOUSEEVENTF_RIGHTUP;
+            SendInput(3, input, Marshal.SizeOf(input[0]));
+            return Task.FromResult(true);
+        }
+
+        public Task<bool> ScrollUp(int index)
+        {
+            //Move the mouse
+            INPUT[] input = new INPUT[3];
+            input[0].mi.dx = Coordinates[index].X * (65535 / ScreenScale.Width);
+            input[0].mi.dy = Coordinates[index].Y * (65535 / ScreenScale.Height);
+            input[0].mi.dwFlags = MOUSEEVENTF_MOVED | MOUSEEVENTF_ABSOLUTE;
+            //Left mouse button down
+            input[1].mi.dwFlags = MOUSEEVENTF_WHEEL;
+            //Left mouse button up
+            input[2].mi.mouseData = screen_length;
             SendInput(3, input, Marshal.SizeOf(input[0]));
             return Task.FromResult(true);
         }

@@ -84,7 +84,7 @@
             <param name="mapper"></param>
             <param name="serviceMouse"></param>
         </member>
-        <member name="M:Robotize.API.Controllers.MouseController.RightClick(System.Int32)">
+        <member name="M:Robotize.API.Controllers.MouseController.LeftClick(System.Int32)">
             <summary>
             Keyboard left click action
             </summary>

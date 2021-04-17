@@ -32,18 +32,33 @@ namespace Robotize.API.Controllers
             _serviceMouse = serviceMouse ?? throw new ArgumentNullException(nameof(serviceMouse));
         }
 
+        ///// <summary>
+        ///// Keyboard right click action
+        ///// </summary>
+        //[HttpPost("{index}")]
+        //[SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
+        //[SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Unsupported right click index")]
+        //[SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
+        //public async Task<IActionResult> RightClick([FromRoute] int index)
+        //{
+        //    if (index < 1) return BadRequest();
+
+        //    await _serviceMouse.RightClickAtPoint(index);
+        //    return Ok();
+        //}
+
         /// <summary>
-        /// Keyboard right click action
+        /// Keyboard left click action
         /// </summary>
         [HttpPost("{index}")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
-        [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Unsupported location")]
+        [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Unsupported right click index")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
-        public async Task<IActionResult> RightClick([FromRoute] int index)
+        public async Task<IActionResult> LeftClick([FromRoute] int index)
         {
             if (index < 1) return BadRequest();
 
-            await _serviceMouse.RightClickAtPoint(index);
+            await _serviceMouse.LeftClickAtPoint(index);
             return Ok();
         }
     }
