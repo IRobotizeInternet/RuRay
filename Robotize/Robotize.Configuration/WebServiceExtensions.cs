@@ -10,6 +10,7 @@ using Robotize.BLL;
 using Robotize.BLL.Contracts;
 using Robotize.BLL.Models;
 using Robotize.BLL.Services;
+using Robotize.BLL.Services.Keyboard;
 using Robotize.DAL.MySql;
 using Robotize.DAL.MySql.Contract;
 using System;
@@ -53,7 +54,7 @@ namespace Microsoft.Extensions.DependencyInjection
             services.TryAddScoped<IServiceWindowsScreen, ServiceWindowsScreen>();
             services.TryAddScoped<IJwtTokenService, JwtTokenService>();
             services.TryAddScoped<IServiceKeyboard, ServiceKeyboard>();
-            
+            services.TryAddScoped<IServiceMouse, ServiceMouse>();
 
             services.AddHttpClient();
             services.AddHttpClient<TodosMockProxyService>(c =>

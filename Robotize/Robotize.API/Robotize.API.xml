@@ -77,6 +77,18 @@
             Keyboard left click action
             </summary>
         </member>
+        <member name="M:Robotize.API.Controllers.MouseController.#ctor(AutoMapper.IMapper,Robotize.BLL.Contracts.IServiceMouse)">
+            <summary>
+            Mouse actions
+            </summary>
+            <param name="mapper"></param>
+            <param name="serviceMouse"></param>
+        </member>
+        <member name="M:Robotize.API.Controllers.MouseController.RightClick(System.Int32)">
+            <summary>
+            Keyboard left click action
+            </summary>
+        </member>
         <member name="M:Robotize.API.Controllers.TodoController.#ctor(AutoMapper.IMapper,Robotize.BLL.TodosMockProxyService)">
             <summary>
             Todos mock web proxy 
