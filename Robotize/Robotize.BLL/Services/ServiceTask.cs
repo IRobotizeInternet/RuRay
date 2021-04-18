@@ -21,19 +21,5 @@ namespace RobotizeFacebook.Services
             };
             p.Start();
         }
-
-        //public static void LeftClickAtSpecifiedLocation(int x, int y)
-        //{
-
-        //    var p = new Process
-        //    {
-        //        StartInfo = new ProcessStartInfo(taskName)
-        //        {
-        //            UseShellExecute = true,
-        //            Arguments = $"{x} {y}"
-        //        }
-        //    };
-        //    p.Start();
-        //}
     }
 }

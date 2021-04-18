@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 using Robotize.BLL.Contracts;
 using RobotizeFacebook.Services;
 using RobotizeFacebook.Utilities;
+using WindowGrid.Services;
 
 namespace Robotize.BLL.Services.Keyboard
 {
@@ -95,11 +96,10 @@ namespace Robotize.BLL.Services.Keyboard
 
         public Task<bool> RightClickAtPoint(int index)
         {
+            GoToXY(index);
             //Move the mouse
             INPUT[] input = new INPUT[3];
-            input[0].mi.dx = Coordinates[index].X * (65535 / ScreenScale.Width);
-            input[0].mi.dy = Coordinates[index].Y * (65535 / ScreenScale.Height);
-            input[0].mi.dwFlags = MOUSEEVENTF_MOVED | MOUSEEVENTF_ABSOLUTE;
+            //input[0].mi.dwFlags = MOUSEEVENTF_MOVED | MOUSEEVENTF_ABSOLUTE;
             //Left mouse button down
             input[1].mi.dwFlags = MOUSEEVENTF_RIGHTDOWN;
             //Left mouse button up
@@ -110,14 +110,24 @@ namespace Robotize.BLL.Services.Keyboard
 
         public static Point Position { get; set; }
 
+        public Task<bool> GoToXY(int index)
+        {
+            var currentPostion = PSServiceMouse.GetCursorPostions();
+            INPUT[] input = new INPUT[3];
+            input[0].mi.dx = Coordinates[index].X * (65535 / ScreenScale.Width);
+            input[0].mi.dy = Coordinates[index].Y * (65535 / ScreenScale.Height);
+            return Task.FromResult(true);
+        }
+
         public Task<bool> ScrollUp(int index)
         {
+            GoToXY(index);
             //Move the mouse
             INPUT[] input = new INPUT[3];
 
-            input[0].mi.dx = Coordinates[index].X * (65535 / ScreenScale.Width);
-            input[0].mi.dy = Coordinates[index].Y * (65535 / ScreenScale.Height);
-            input[0].mi.dwFlags = MOUSEEVENTF_MOVED | MOUSEEVENTF_ABSOLUTE;
+            //input[0].mi.dx = Coordinates[index].X * (65535 / ScreenScale.Width);
+            //input[0].mi.dy = Coordinates[index].Y * (65535 / ScreenScale.Height);
+            //input[0].mi.dwFlags = MOUSEEVENTF_MOVED | MOUSEEVENTF_ABSOLUTE;
             //Left mouse button down
             input[1].mi.dwFlags = MOUSEEVENTF_WHEEL;
             //Left mouse button up

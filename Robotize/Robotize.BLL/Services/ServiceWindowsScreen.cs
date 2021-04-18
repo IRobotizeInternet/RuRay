@@ -13,7 +13,7 @@ namespace Robotize.BLL.Services
 
         public Task<bool> WindowGrid(GridVisibility gridVisibility)
         {
-            const string serviceName = "ScreenTools";
+            const string serviceName = "WindowGrid";
             if (gridVisibility == GridVisibility.OFF) ServiceTask.CloseTask(serviceName);
             else ServiceTask.RunScript(serviceName);
             return Task.FromResult(true);

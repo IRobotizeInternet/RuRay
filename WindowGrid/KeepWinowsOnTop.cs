@@ -2,12 +2,10 @@
 using System.Configuration;
 using System.Drawing;
 using System.Windows.Forms;
-using RobotizeFacebook.Services;
-using RobotizeFacebook.Utilities;
 using System.Runtime.InteropServices;
 using System;
 
-namespace ScreenTools
+namespace WindowGrid
 {
     public class KeepWinowsOnTop
     {

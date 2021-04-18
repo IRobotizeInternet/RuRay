@@ -10,5 +10,7 @@ namespace Robotize.BLL.Contracts
         public Task<bool> LeftClickAtPoint(int index);
 
         public Task<bool> RightClickAtPoint(int index);
+
+        public Task<bool> GoToXY(int index);
     }
 }

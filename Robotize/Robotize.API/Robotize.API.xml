@@ -89,6 +89,11 @@
             Keyboard left click action
             </summary>
         </member>
+        <member name="M:Robotize.API.Controllers.MouseController.GoToXY(System.Int32)">
+            <summary>
+            Move cursor to a specified x, y location
+            </summary>
+        </member>
         <member name="M:Robotize.API.Controllers.TodoController.#ctor(AutoMapper.IMapper,Robotize.BLL.TodosMockProxyService)">
             <summary>
             Todos mock web proxy 

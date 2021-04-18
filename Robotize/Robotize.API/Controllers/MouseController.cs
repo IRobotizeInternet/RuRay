@@ -61,5 +61,20 @@ namespace Robotize.API.Controllers
             await _serviceMouse.LeftClickAtPoint(index);
             return Ok();
         }
+
+        /// <summary>
+        /// Move cursor to a specified x, y location
+        /// </summary>
+        [HttpPost("~/GoToXY{index}")]
+        [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
+        [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Out of bound coordinates")]
+        [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
+        public async Task<IActionResult> GoToXY([FromRoute] int index)
+        {
+            if (index < 1) return BadRequest();
+
+            await _serviceMouse.GoToXY(index);
+            return Ok();
+        }
     }
 }
