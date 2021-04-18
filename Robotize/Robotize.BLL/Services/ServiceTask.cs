@@ -1,4 +1,6 @@
-﻿using System.Diagnostics;
+﻿using System;
+using System.Diagnostics;
+using System.IO;
 
 namespace RobotizeFacebook.Services
 {
@@ -9,17 +11,20 @@ namespace RobotizeFacebook.Services
             foreach (var process in Process.GetProcessesByName(taskName)) process.Kill();
         }
 
-        public static void RunScript(string taskName, string arg = "")
+        public static void RunScript(string fileName, string arg = "")
         {
-            var p = new Process
+            ProcessStartInfo startInfo = new ProcessStartInfo();
+            startInfo.FileName = @"powershell.exe";
+            startInfo.Arguments = $@"& '{Path.Combine(Environment.CurrentDirectory, fileName)}' '{arg}'";
+            startInfo.RedirectStandardOutput = true;
+            startInfo.RedirectStandardError = true;
+            startInfo.UseShellExecute = false;
+            startInfo.CreateNoWindow = true;
+            Process process = new Process
             {
-                StartInfo = new ProcessStartInfo(taskName)
-                {
-                    UseShellExecute = true,
-                    Arguments = arg
-                }
+                StartInfo = startInfo
             };
-            p.Start();
+            process.Start();
         }
     }
 }

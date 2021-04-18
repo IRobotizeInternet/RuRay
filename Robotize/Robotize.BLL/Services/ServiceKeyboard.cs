@@ -18,9 +18,8 @@ namespace Robotize.BLL.Services
             // TODO: Make this values avaliable in buffer for quick access.
             // This is where we keep the coordinates, so web api's can read from.
             AppSettings.EnvironmentSettingsFile = ConfigurationManager.AppSettings[nameof(AppSettings.EnvironmentSettingsFile)];
-            var coordinate = EnvironmentSettings.SettingsData.Details.ScreenCoordinates[coordinateIndex];
+            var coordinate = EnvironmentSettings.SettingsData().Details.ScreenCoordinates[coordinateIndex];
 
-            // TODO: The file location is not working, please fix it.
             var clickerScript = "PS1\\Clicker";
             ServiceTask.RunScript(clickerScript, $"{coordinate.X} {coordinate.Y}");
 

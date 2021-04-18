@@ -65,11 +65,11 @@ namespace Robotize.API.Controllers
         /// <summary>
         /// Move cursor to a specified x, y location
         /// </summary>
-        [HttpPost("~/GoToXY{index}")]
+        [HttpPost("~/GoToXY={index}")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Out of bound coordinates")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
-        public async Task<IActionResult> GoToXY([FromRoute] int index)
+        public async Task<IActionResult> GoToXY([FromQuery] int index)
         {
             if (index < 1) return BadRequest();
 

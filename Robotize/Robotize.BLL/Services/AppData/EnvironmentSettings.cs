@@ -6,14 +6,16 @@ namespace RobotizeFacebook.Services
 {
     public class EnvironmentSettings
     {
-        private string _directoryPath { get; set; }
+        public static string DirectoryPath =>
+            Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), AppSettings.RobotizeDataDirectory);
+        
         private string _fileNameWithPath { get; set; }
-        public EnvironmentSettings() 
+        public EnvironmentSettings(string fileName) 
         {
-            _directoryPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), AppSettings.RobotizeDataDirectory);
-            _fileNameWithPath = Path.Combine(_directoryPath, AppSettings.EnvironmentSettingsFile);
+            fileName = fileName ?? AppSettings.EnvironmentSettingsFile;
+            _fileNameWithPath = Path.Combine(DirectoryPath, fileName);
 
-            if (Directory.Exists(_directoryPath) == false) Directory.CreateDirectory(_directoryPath);
+            if (Directory.Exists(DirectoryPath) == false) Directory.CreateDirectory(DirectoryPath);
         }
 
         public EnvironmentSettingsDTO Details
@@ -22,7 +24,7 @@ namespace RobotizeFacebook.Services
             set => FileOperations.Serialize(_fileNameWithPath, value);
         }
 
-        public static EnvironmentSettings SettingsData => new EnvironmentSettings();
+        public static EnvironmentSettings SettingsData(string fileName = null) => new EnvironmentSettings(fileName);
     }
 
 

@@ -15,6 +15,7 @@ namespace RobotizeFacebook.Utilities
         public static string DefaultCulture { get; set; }
         public static string RobotizeDataDirectory { get; set; }
         public static string EnvironmentSettingsFile { get; set; }
+        public static string PowerShellOutputFile { get; set; }
 
         static AppSettings()
         {
@@ -29,6 +30,7 @@ namespace RobotizeFacebook.Utilities
             DefaultCulture = ConfigurationManager.AppSettings[nameof(DefaultCulture)];
             RobotizeDataDirectory = ConfigurationManager.AppSettings[nameof(RobotizeDataDirectory)];
             EnvironmentSettingsFile = ConfigurationManager.AppSettings[nameof(EnvironmentSettingsFile)];
+            PowerShellOutputFile = ConfigurationManager.AppSettings[nameof(PowerShellOutputFile)];
         }
     }
 }

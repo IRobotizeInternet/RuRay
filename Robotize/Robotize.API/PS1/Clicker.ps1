@@ -79,13 +79,10 @@ public class Clicker
 '@
 Add-Type -TypeDefinition $cSource -ReferencedAssemblies System.Windows.Forms,System.Drawing
 
-while ($true)
-{
 #Add-Type -AssemblyName System.Windows.Forms
 [Clicker]::LeftClickAtPoint($xAxis,$yAxis)
 sleep 5
 [Clicker]::RightClickAtPoint($xAxis,$yAxis)
-}
 
 #while ($true)
 #{

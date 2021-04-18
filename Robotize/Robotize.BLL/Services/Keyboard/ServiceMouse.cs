@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.Drawing;
+using System.IO;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 using Robotize.BLL.Contracts;
 using RobotizeFacebook.Services;
 using RobotizeFacebook.Utilities;
-using WindowGrid.Services;
 
 namespace Robotize.BLL.Services.Keyboard
 {
@@ -20,8 +20,8 @@ namespace Robotize.BLL.Services.Keyboard
         {
             // TODO: Make this values avaliable in buffer for quick access.
             AppSettings.EnvironmentSettingsFile = ConfigurationManager.AppSettings[nameof(AppSettings.EnvironmentSettingsFile)];
-            ScreenScale = EnvironmentSettings.SettingsData.Details.ScreenScale;
-            Coordinates = EnvironmentSettings.SettingsData.Details.ScreenCoordinates;
+            ScreenScale = EnvironmentSettings.SettingsData().Details.ScreenScale;
+            Coordinates = EnvironmentSettings.SettingsData().Details.ScreenCoordinates;
         }
 
         //https://msdn.microsoft.com/en-us/library/windows/desktop/ms646270(v=vs.85).aspx
@@ -112,7 +112,10 @@ namespace Robotize.BLL.Services.Keyboard
 
         public Task<bool> GoToXY(int index)
         {
-            var currentPostion = PSServiceMouse.GetCursorPostions();
+            const string serviceName = "PS1\\CursorPostion.ps1";
+            AppSettings.PowerShellOutputFile = ConfigurationManager.AppSettings[nameof(AppSettings.PowerShellOutputFile)];
+            ServiceTask.RunScript(serviceName, Path.Combine(EnvironmentSettings.DirectoryPath, AppSettings.PowerShellOutputFile));
+            var details = EnvironmentSettings.SettingsData(AppSettings.PowerShellOutputFile).Details;
             INPUT[] input = new INPUT[3];
             input[0].mi.dx = Coordinates[index].X * (65535 / ScreenScale.Width);
             input[0].mi.dy = Coordinates[index].Y * (65535 / ScreenScale.Height);

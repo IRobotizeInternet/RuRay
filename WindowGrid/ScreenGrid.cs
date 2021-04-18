@@ -9,17 +9,15 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using RobotizeFacebook.Services;
-using RobotizeFacebook.Utilities;
-using WindowGrid.Services;
 
 namespace WindowGrid
 {
     public partial class ScreenGrid : Form
     {
-        public ScreenGrid()
+        public ScreenGrid(string[] args = null)
         {
             InitializeComponent();
-            SetGrid();
+            SetGrid(args);
         }
 
         Dictionary<int, Point> Coordinates = new Dictionary<int, Point>();
@@ -27,7 +25,7 @@ namespace WindowGrid
         public void SetGrid(string[] args = null)
         {
             // This is where we keep the coordinates, so web api's can read from.
-            AppSettings.EnvironmentSettingsFile = ConfigurationManager.AppSettings[nameof(AppSettings.EnvironmentSettingsFile)];
+            //AppSettings.EnvironmentSettingsFile = ConfigurationManager.AppSettings[nameof(AppSettings.EnvironmentSettingsFile)];
             int index = 1;
 
             // Remove the min max top bar from window.
@@ -72,15 +70,15 @@ namespace WindowGrid
             }
 
             // Save the coordinates to the file.
-            var details = EnvironmentSettings.SettingsData.Details ?? new EnvironmentSettingsDTO();
+            var details = EnvironmentSettings.SettingsData().Details ?? new EnvironmentSettingsDTO();
             details.ScreenCoordinates = Coordinates;
             details.ScreenScale = screenScale;
-            EnvironmentSettings.SettingsData.Details = details;
+            EnvironmentSettings.SettingsData().Details = details;
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-            var a = PSServiceMouse.GetCursorPostions();
+             
         }
     }
 }
