@@ -16,38 +16,17 @@ namespace RobotizeFacebook.Services
             string shortcutAddress = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\chrome.exe - Shortcut.lnk";
 
             // If shortcut does not exist call script ChangeTarget.ps1 to generate icon
-            if (!File.Exists(shortcutAddress))
-            {
-                ProcessStartInfo startInfo = new ProcessStartInfo();
-                startInfo.FileName = @"powershell.exe";
-                startInfo.Arguments = $@"& '{Path.Combine(Environment.CurrentDirectory, "ChangeTarget.ps1")}'";
-                startInfo.RedirectStandardOutput = true;
-                startInfo.RedirectStandardError = true;
-                startInfo.UseShellExecute = false;
-                startInfo.CreateNoWindow = true;
-                Process process = new Process
-                {
-                    StartInfo = startInfo
-                };
-                process.Start();
-            }
-            
+            if (!File.Exists(shortcutAddress)) ServiceTask.RunScript("ChangeTarget.ps1");
+
             // This is a very interesting hack. Read the code carefully to understand it better.
             var envSettings = EnvironmentSettings.SettingsData();
             if (int.TryParse(envSettings.Details?.ProcessId, out var previousSessionId)
                 && Process.GetProcessesByName("chrome")
                 .Any(x => x.Id == previousSessionId)) return;
             var existingChromePIds = Process.GetProcessesByName("chrome").Select(x => x.Id);
-            _process = new Process();
-            _process.StartInfo.FileName = shortcutAddress;
-            var p = new Process
-            {
-                StartInfo = new ProcessStartInfo(shortcutAddress)
-                {
-                    UseShellExecute = true
-                }
-            };
-            p.Start();
+            
+            ServiceTask.RunScript(shortcutAddress);
+            
             envSettings.Details = new EnvironmentSettingsDTO {
                 ProcessId = Process.GetProcessesByName("chrome").Where(x => !existingChromePIds.Contains(x.Id)).First().Id.ToString() 
             };
