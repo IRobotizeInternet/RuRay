@@ -21,7 +21,7 @@ namespace WindowGrid
         }
 
         Dictionary<int, Point> Coordinates = new Dictionary<int, Point>();
-        
+
         public void SetGrid(string[] args = null)
         {
             // This is where we keep the coordinates, so web api's can read from.
@@ -34,27 +34,29 @@ namespace WindowGrid
             // Hide the icon taskbar
             ShowInTaskbar = false;
             WindowState = FormWindowState.Maximized;
-
+            TopMost = true;
+            Left = Top = 0;
             // Keep the application always on top and focused.
             KeepWinowsOnTop.SetWindowAlwaysOnTop(Handle);
 
             var screenScale = Screen.FromControl(this).Bounds;
 
-
             // Make backbroud transparent.
             TransparencyKey = BackColor;
 
             var sizeValue = args != null && args.Any() ? int.Parse(args[0]) : 100;
+            var height = (screenScale.Height) / 15;
+
             // Fill the windows screen with label. 
             for (var i = 0; i < screenScale.Width; i += sizeValue)
             {
-                for (var j = 0; j < screenScale.Height - sizeValue; j += sizeValue)
+                for (var j = 0; j < screenScale.Height; j += height)
                 {
                     Controls.Add(new Label
                     {
                         Location = new Point(i, j),
                         Text = $"{index++}",
-                        Size = new Size(sizeValue, sizeValue),
+                        Size = new Size(sizeValue, height),
                         BorderStyle = BorderStyle.FixedSingle,
                         Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point, 0)
                     });
@@ -66,7 +68,7 @@ namespace WindowGrid
             {
                 //control.Text = control.Text + " " + control.PointToScreen(Point.Empty);
                 // Find and add coordinates for each control on the window.
-                Coordinates.Add(indexx++, control.PointToScreen(Point.Empty));
+                Coordinates.Add(indexx++, new Point(control.Location.X + (sizeValue / 2), control.Location.Y + (height / 2)));
             }
 
             // Save the coordinates to the file.
@@ -74,11 +76,6 @@ namespace WindowGrid
             details.ScreenCoordinates = Coordinates;
             details.ScreenScale = screenScale;
             EnvironmentSettings.SettingsData().Details = details;
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-             
         }
     }
 }

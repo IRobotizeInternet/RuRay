@@ -15,7 +15,7 @@ namespace Robotize.BLL.Services
         {
             const string serviceName = "WindowGrid";
             if (gridVisibility == GridVisibility.OFF) ServiceTask.CloseTask(serviceName);
-            else ServiceTask.RunScript(serviceName);
+            else ServiceTask.RunScript(serviceName, copyToAppFolder: false);
             return Task.FromResult(true);
         }
     }
