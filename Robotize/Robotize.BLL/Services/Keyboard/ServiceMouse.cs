@@ -116,11 +116,30 @@ namespace Robotize.BLL.Services.Keyboard
             AppSettings.PowerShellOutputFile = ConfigurationManager.AppSettings[nameof(AppSettings.PowerShellOutputFile)];
             ServiceTask.RunScript(serviceName, Path.Combine(EnvironmentSettings.DirectoryPath, AppSettings.PowerShellOutputFile));
             var details = EnvironmentSettings.SettingsData(AppSettings.PowerShellOutputFile).Details;
+            
             INPUT[] input = new INPUT[3];
             input[0].mi.dx = Coordinates[index].X * (65535 / ScreenScale.Width);
             input[0].mi.dy = Coordinates[index].Y * (65535 / ScreenScale.Height);
             input[0].mi.dwFlags = MOUSEEVENTF_MOVED | MOUSEEVENTF_ABSOLUTE;
             SendInput(3, input, Marshal.SizeOf(input[0]));
+
+            // TODO: Complete this random moving of cursor from src to destination.
+            var xDistance = Math.Abs(Coordinates[index].X) - Math.Abs(details.xAxis);
+            var yDistance = Math.Abs(Coordinates[index].Y) - Math.Abs(details.yAxis);
+            int totalDistanceToTravel = (int) Math.Sqrt((xDistance * xDistance) + (yDistance * yDistance));
+            var random = new Random();
+            // move the cursor in steps based on the number below.
+            //var availableStep = new List<int> { 0, 1, 2, 3 };
+            //for(var i=0;i< totalDistanceToTravel;i++)
+            //{
+            //    int newxStep = random.Next(availableStep.Count);
+                
+            //    input[0].mi.dx = Coordinates[index].X * (65535 / ScreenScale.Width);
+            //    input[0].mi.dy = Coordinates[index].Y * (65535 / ScreenScale.Height);
+            //    input[0].mi.dwFlags = MOUSEEVENTF_MOVED | MOUSEEVENTF_ABSOLUTE;
+            //    SendInput(3, input, Marshal.SizeOf(input[0]));
+            //}
+
             return Task.FromResult(true);
         }
 
@@ -130,9 +149,6 @@ namespace Robotize.BLL.Services.Keyboard
             //Move the mouse
             INPUT[] input = new INPUT[3];
 
-            //input[0].mi.dx = Coordinates[index].X * (65535 / ScreenScale.Width);
-            //input[0].mi.dy = Coordinates[index].Y * (65535 / ScreenScale.Height);
-            //input[0].mi.dwFlags = MOUSEEVENTF_MOVED | MOUSEEVENTF_ABSOLUTE;
             //Left mouse button down
             input[1].mi.dwFlags = MOUSEEVENTF_WHEEL;
             //Left mouse button up

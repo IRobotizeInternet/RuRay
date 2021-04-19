@@ -32,25 +32,10 @@ namespace Robotize.API.Controllers
             _serviceMouse = serviceMouse ?? throw new ArgumentNullException(nameof(serviceMouse));
         }
 
-        ///// <summary>
-        ///// Keyboard right click action
-        ///// </summary>
-        //[HttpPost("{index}")]
-        //[SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
-        //[SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Unsupported right click index")]
-        //[SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
-        //public async Task<IActionResult> RightClick([FromRoute] int index)
-        //{
-        //    if (index < 1) return BadRequest();
-
-        //    await _serviceMouse.RightClickAtPoint(index);
-        //    return Ok();
-        //}
-
         /// <summary>
         /// Keyboard left click action
         /// </summary>
-        [HttpPost("{index}")]
+        [HttpPost("LeftClick/{index}")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Unsupported right click index")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
@@ -63,13 +48,28 @@ namespace Robotize.API.Controllers
         }
 
         /// <summary>
+        /// Keyboard right click action
+        /// </summary>
+        [HttpPost("RightClick/{index}")]
+        [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
+        [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Unsupported right click index")]
+        [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
+        public async Task<IActionResult> RightClickAtPoint([FromRoute] int index)
+        {
+            if (index < 1) return BadRequest();
+
+            await _serviceMouse.RightClickAtPoint(index);
+            return Ok();
+        }
+
+        /// <summary>
         /// Move cursor to a specified x, y location
         /// </summary>
-        [HttpPost("~/GoToXY={index}")]
+        [HttpPost("GoToXY/{index}")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Out of bound coordinates")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
-        public async Task<IActionResult> GoToXY([FromQuery] int index)
+        public async Task<IActionResult> GoToXY([FromRoute] int index)
         {
             if (index < 1) return BadRequest();
 
