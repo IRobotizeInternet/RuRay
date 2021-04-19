@@ -10,8 +10,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RobotizeToolbox", "RobotizeToolbox\RobotizeToolbox.csproj", "{CA179313-4A69-40BD-8F25-66DCC2D6D225}"
 EndProject
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "RasaEngine", "RasaEngine\RasaEngine.pyproj", "{EC42BAE7-121A-4972-9363-AB5FD7297A74}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SupportingScripts", "SupportingScripts\SupportingScripts.csproj", "{0BE8769F-B5C4-4BAF-8E26-B1407F26FD08}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Robotize.API", "Robotize\Robotize.API\Robotize.API.csproj", "{AF1E9440-561F-4567-A123-135127E7C021}"
@@ -32,8 +30,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Robotize.DbUp.MySql", "Robo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RobotizeSpeechToText", "RobotizeSpeechToText\RobotizeSpeechToText.csproj", "{3460F788-F92A-415E-B86D-DAC3ADB3A667}"
 EndProject
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "PythonApplication1", "PythonApplication1\PythonApplication1.pyproj", "{D99B33D0-E037-42FB-A497-46FC260A201B}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowGrid", "WindowGrid\WindowGrid.csproj", "{0BCA3F13-8908-4663-A45C-545CFDAF42BC}"
 EndProject
 Global
@@ -49,9 +45,6 @@ Global
 		{CA179313-4A69-40BD-8F25-66DCC2D6D225}.Dev|Any CPU.Build.0 = Debug|Any CPU
 		{CA179313-4A69-40BD-8F25-66DCC2D6D225}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CA179313-4A69-40BD-8F25-66DCC2D6D225}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EC42BAE7-121A-4972-9363-AB5FD7297A74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EC42BAE7-121A-4972-9363-AB5FD7297A74}.Dev|Any CPU.ActiveCfg = Debug|Any CPU
-		{EC42BAE7-121A-4972-9363-AB5FD7297A74}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BE8769F-B5C4-4BAF-8E26-B1407F26FD08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0BE8769F-B5C4-4BAF-8E26-B1407F26FD08}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BE8769F-B5C4-4BAF-8E26-B1407F26FD08}.Dev|Any CPU.ActiveCfg = Debug|Any CPU
@@ -100,9 +93,6 @@ Global
 		{3460F788-F92A-415E-B86D-DAC3ADB3A667}.Dev|Any CPU.Build.0 = Debug|Any CPU
 		{3460F788-F92A-415E-B86D-DAC3ADB3A667}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3460F788-F92A-415E-B86D-DAC3ADB3A667}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D99B33D0-E037-42FB-A497-46FC260A201B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D99B33D0-E037-42FB-A497-46FC260A201B}.Dev|Any CPU.ActiveCfg = Debug|Any CPU
-		{D99B33D0-E037-42FB-A497-46FC260A201B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BCA3F13-8908-4663-A45C-545CFDAF42BC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0BCA3F13-8908-4663-A45C-545CFDAF42BC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0BCA3F13-8908-4663-A45C-545CFDAF42BC}.Dev|Any CPU.ActiveCfg = Debug|Any CPU
