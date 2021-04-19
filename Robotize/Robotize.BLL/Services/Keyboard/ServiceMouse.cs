@@ -119,6 +119,8 @@ namespace Robotize.BLL.Services.Keyboard
             INPUT[] input = new INPUT[3];
             input[0].mi.dx = Coordinates[index].X * (65535 / ScreenScale.Width);
             input[0].mi.dy = Coordinates[index].Y * (65535 / ScreenScale.Height);
+            input[0].mi.dwFlags = MOUSEEVENTF_MOVED | MOUSEEVENTF_ABSOLUTE;
+            SendInput(3, input, Marshal.SizeOf(input[0]));
             return Task.FromResult(true);
         }
 
