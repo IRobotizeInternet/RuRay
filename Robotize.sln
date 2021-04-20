@@ -32,6 +32,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RobotizeSpeechToText", "Rob
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowGrid", "WindowGrid\WindowGrid.csproj", "{0BCA3F13-8908-4663-A45C-545CFDAF42BC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "RASA", "RASA", "{94C0F65C-15A8-4313-BD9F-065733B7E468}"
+EndProject
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "RASAAPI", "RASAAPI\RASAAPI.pyproj", "{2AEA9969-8532-40F3-9919-9F0C0D7B165D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +103,12 @@ Global
 		{0BCA3F13-8908-4663-A45C-545CFDAF42BC}.Dev|Any CPU.Build.0 = Debug|Any CPU
 		{0BCA3F13-8908-4663-A45C-545CFDAF42BC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0BCA3F13-8908-4663-A45C-545CFDAF42BC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AEA9969-8532-40F3-9919-9F0C0D7B165D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AEA9969-8532-40F3-9919-9F0C0D7B165D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AEA9969-8532-40F3-9919-9F0C0D7B165D}.Dev|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AEA9969-8532-40F3-9919-9F0C0D7B165D}.Dev|Any CPU.Build.0 = Debug|Any CPU
+		{2AEA9969-8532-40F3-9919-9F0C0D7B165D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AEA9969-8532-40F3-9919-9F0C0D7B165D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -106,6 +116,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{415CF374-D506-4A5B-BAB6-EC9B54469657} = {C402C72A-3431-4A1D-BEFB-B973F29CD1FC}
 		{0BA3E121-96A4-4A3E-A57A-3A4B5E848CDF} = {DA572D55-621F-4F4C-982E-ADBD68E7001D}
+		{2AEA9969-8532-40F3-9919-9F0C0D7B165D} = {94C0F65C-15A8-4313-BD9F-065733B7E468}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B16C1725-C75B-4D3F-9B5F-EA702538E231}
