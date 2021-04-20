@@ -8,6 +8,8 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - scroll_up
+  - second
 
 responses:
   utter_greet:
@@ -28,6 +30,10 @@ responses:
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
+ 
+actions:
+  - action_scroll_up
+  - action_second
 
 session_config:
   session_expiration_time: 60

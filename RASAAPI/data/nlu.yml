@@ -17,6 +17,18 @@ nlu:
     - goodevening
     - good afternoon
 
+- intent: scroll_up
+  examples: |
+    - scroll up the window
+    - scroll up
+    - scroll up facebook window
+
+- intent: second
+  examples: |
+    - second
+    - next
+    - 2
+
 - intent: goodbye
   examples: |
     - good afternoon

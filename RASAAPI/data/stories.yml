@@ -2,6 +2,16 @@ version: "2.0"
 
 stories:
 
+- story: scroll up
+  steps:
+  - intent: scroll_up
+  - action: action_scroll_up
+
+- story: second
+  steps:
+  - intent: sceond
+  - action: action_second
+
 - story: happy path
   steps:
   - intent: greet

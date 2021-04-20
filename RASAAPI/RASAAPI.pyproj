@@ -56,6 +56,7 @@
     <Content Include="domain.yml" />
     <Content Include="endpoints.yml" />
     <Content Include="logging.conf" />
+    <Content Include="ReadMe.txt" />
     <Content Include="requirements.txt" />
     <Content Include="setup.cfg" />
     <Content Include="tests\test_stories.yml" />

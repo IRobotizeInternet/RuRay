@@ -10,15 +10,31 @@ from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 
-class ActionHelloWorld(Action):
+
+class ActionScrollUp(Action):
 
     def name(self) -> Text:
-        return "action_hello_world"
+        return "action_scroll_up"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
         dispatcher.utter_message(text="Hello World!00000")
+
+        return []
+
+class ActionSecond(Action):
+
+    def name(self) -> Text:
+        return "action_second"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        
+        message = " Second action"
+
+        dispatcher.utter_message(text=message)
 
         return []
