@@ -44,7 +44,6 @@
     <Compile Include="__init__.py" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include=".gitignore" />
     <Content Include="db.sqlite" />
     <Content Include="logging.conf" />
     <Content Include="requirements.txt" />
