@@ -145,6 +145,11 @@ namespace Robotize.API
 
             app.UseStaticFiles();
             app.UseRouting();
+            
+            // Make sure you call this before calling app.UseMvc()
+            app.UseCors(
+                options => options.WithOrigins("http://localhost:5055").AllowAnyMethod()
+            );
 
             app.UseCors("AllowSpecificOrigin");
 

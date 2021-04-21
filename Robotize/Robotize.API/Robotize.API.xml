@@ -139,6 +139,28 @@
             <param name="limit">Items count</param>
             <returns></returns>
         </member>
+        <member name="M:Robotize.API.Controllers.WebhookController.#ctor(AutoMapper.IMapper,Robotize.BLL.Contracts.IServiceMouse)">
+            <summary>
+            Mouse actions
+            </summary>
+            <param name="mapper"></param>
+            <param name="serviceMouse"></param>
+        </member>
+        <member name="M:Robotize.API.Controllers.WebhookController.LeftClick(System.Int32)">
+            <summary>
+            Keyboard left click action
+            </summary>
+        </member>
+        <member name="M:Robotize.API.Controllers.WebhookController.RightClickAtPoint(System.Int32)">
+            <summary>
+            Keyboard right click action
+            </summary>
+        </member>
+        <member name="M:Robotize.API.Controllers.WebhookController.GoToXY(System.Int32)">
+            <summary>
+            Move cursor to a specified x, y location
+            </summary>
+        </member>
         <member name="M:Robotize.API.Controllers.WindowsScreenController.#ctor(AutoMapper.IMapper,Robotize.BLL.Contracts.IServiceWindowsScreen)">
             <summary>
             Windows Screen api

@@ -9,16 +9,76 @@
 from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
+import requests
 
-
-class ActionScrollUp(Action):
+class ActionShowHideGrid(Action):
 
     def name(self) -> Text:
-        return "action_scroll_up"
+        return "action_show_hide_grid"
 
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        url = 'https://localhost:5001/api/v1/WindowsScreen/1'
+        myobj = {'somekey': 'somevalue'}
+
+        x = requests.post(url, verify=False)
+
+        dispatcher.utter_message(text="Hello World!00000")
+
+        return []
+
+class ActionLeftClick(Action):
+
+    def name(self) -> Text:
+        return "action_left_click"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        url = 'https://localhost:5001/api/v1/Mouse/LeftClick/4'
+        myobj = {'somekey': 'somevalue'}
+
+        x = requests.post(url, verify=False)
+
+        dispatcher.utter_message(text="Hello World!00000")
+
+        return []
+
+class ActionRightClick(Action):
+
+    def name(self) -> Text:
+        return "action_right_click"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        url = 'https://localhost:5001/api/v1/Mouse/RightClick/4'
+        myobj = {'somekey': 'somevalue'}
+
+        x = requests.post(url, verify=False)
+
+        dispatcher.utter_message(text="Hello World!00000")
+
+        return []
+
+
+class ActionGoToXY(Action):
+
+    def name(self) -> Text:
+        return "action_goto_xy"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        url = 'https://localhost:5001/api/v1/Mouse/GoToXY/3'
+        myobj = {'somekey': 'somevalue'}
+
+        x = requests.post(url, verify=False)
 
         dispatcher.utter_message(text="Hello World!00000")
 

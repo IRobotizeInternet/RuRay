@@ -17,11 +17,12 @@ nlu:
     - goodevening
     - good afternoon
 
-- intent: scroll_up
+- intent: show_hide_grid
   examples: |
-    - scroll up the window
-    - scroll up
-    - scroll up facebook window
+    - {show} grid
+    - {Hide} grid
+    - {Show} grid on the screen
+    - {Hide} grid on the screen
 
 - intent: second
   examples: |

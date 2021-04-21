@@ -8,7 +8,7 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
-  - scroll_up
+  - show_hide_grid
   - second
 
 responses:
@@ -32,7 +32,7 @@ responses:
   - text: "I am a bot, powered by Rasa."
  
 actions:
-  - action_scroll_up
+  - action_show_hide_grid
   - action_second
 
 session_config:

@@ -48,7 +48,9 @@ namespace RobotizeFacebook.WebDrivers
                 driver = new ChromeDriver(options);
             });
 
-            SelectTab(driver);
+
+            // Temp disabling this
+            // SelectTab(driver);
 
             // If using existing window then you may not need to maximize it here.
             //driver.Manage().Window.Maximize();

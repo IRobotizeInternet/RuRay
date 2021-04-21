@@ -4,8 +4,8 @@ stories:
 
 - story: scroll up
   steps:
-  - intent: scroll_up
-  - action: action_scroll_up
+  - intent: show_hide_grid
+  - action: action_show_hide_grid
 
 - story: second
   steps:
