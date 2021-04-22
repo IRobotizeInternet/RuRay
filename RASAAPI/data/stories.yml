@@ -7,6 +7,21 @@ stories:
   - intent: show_hide_grid
   - action: action_show_hide_grid
 
+- story: left click
+  steps:
+  - intent: left_click
+  - action: action_left_click
+
+- story: right click
+  steps:
+  - intent: right_click
+  - action: action_right_click
+
+- story: go to xy coordinates
+  steps:
+  - intent: go_to_xy
+  - action: action_goto_xy
+
 - story: second
   steps:
   - intent: sceond

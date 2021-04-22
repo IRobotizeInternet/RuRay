@@ -9,6 +9,9 @@ intents:
   - mood_unhappy
   - bot_challenge
   - show_hide_grid
+  - left_click
+  - right_click
+  - go_to_xy
   - second
 
 responses:
@@ -34,6 +37,9 @@ responses:
 actions:
   - action_show_hide_grid
   - action_second
+  - action_left_click
+  - action_right_click
+  - action_goto_xy
 
 session_config:
   session_expiration_time: 60

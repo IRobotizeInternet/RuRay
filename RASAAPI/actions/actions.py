@@ -19,8 +19,10 @@ class ActionShowHideGrid(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
-        url = 'https://localhost:5001/api/v1/WindowsScreen/1'
+        
+        gridMode = tracker.latest_message['entities'][0]['value']
+        res = 1 if gridMode == "show" else 2
+        url = "https://localhost:5001/api/v1/WindowsScreen/"+str(res)
         myobj = {'somekey': 'somevalue'}
 
         x = requests.post(url, verify=False)
@@ -38,7 +40,8 @@ class ActionLeftClick(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        url = 'https://localhost:5001/api/v1/Mouse/LeftClick/4'
+        location = tracker.latest_message['entities'][0]['value']
+        url = 'https://localhost:5001/api/v1/Mouse/LeftClick/'+location
         myobj = {'somekey': 'somevalue'}
 
         x = requests.post(url, verify=False)
@@ -56,7 +59,8 @@ class ActionRightClick(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        url = 'https://localhost:5001/api/v1/Mouse/RightClick/4'
+        location = tracker.latest_message['entities'][0]['value']
+        url = 'https://localhost:5001/api/v1/Mouse/RightClick/'+location
         myobj = {'somekey': 'somevalue'}
 
         x = requests.post(url, verify=False)
@@ -75,7 +79,8 @@ class ActionGoToXY(Action):
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
 
-        url = 'https://localhost:5001/api/v1/Mouse/GoToXY/3'
+        location = tracker.latest_message['entities'][0]['value']
+        url = 'https://localhost:5001/api/v1/Mouse/GoToXY/'+location
         myobj = {'somekey': 'somevalue'}
 
         x = requests.post(url, verify=False)

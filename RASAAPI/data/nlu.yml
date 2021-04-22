@@ -19,10 +19,33 @@ nlu:
 
 - intent: show_hide_grid
   examples: |
-    - {show} grid
-    - {Hide} grid
-    - {Show} grid on the screen
-    - {Hide} grid on the screen
+    - [show](mode) grid
+    - [Hide](mode) grid
+    - [Show](mode) grid on the screen
+    - [Hide](mode) grid on the screen
+
+- intent: left_click
+  examples: |
+    - left click on [23](location)
+    - click on [13](location)
+    - left clik on the screen at [24](location)
+    - please click on [43](location) 
+
+- intent: right_click
+  examples: |
+    - right click on [23](location)
+    - right click at [13](location)
+    - right clik on the screen at [24](location)
+    - please right click on [43](location)
+    - right click [43](location)
+
+- intent: go_to_xy
+  examples: |
+    - move cursor to a point [23](location)
+    - move to [13](location)
+    - move cursor at [24](location)
+    - move [43](location)
+    - move cursor to [43](location) please.
 
 - intent: second
   examples: |
