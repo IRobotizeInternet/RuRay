@@ -10,6 +10,7 @@ from typing import Any, Text, Dict, List
 from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 import requests
+from actions import enumerations
 
 class ActionShowHideGrid(Action):
 
@@ -81,6 +82,25 @@ class ActionGoToXY(Action):
         print(tracker.latest_message)
         location = tracker.latest_message['entities'][0]['value']
         url = 'https://localhost:5001/api/v1/Mouse/GoToXY/'+location
+        myobj = {'somekey': 'somevalue'}
+
+        x = requests.post(url, verify=False)
+
+        dispatcher.utter_message(text="Hello World!00000")
+
+        return []
+
+class ActionSendkey(Action):
+
+    def name(self) -> Text:
+        return "action_send_key"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+        print(tracker.latest_message)
+        key = tracker.latest_message['entities'][0]['value']
+        url = 'https://localhost:5001/api/v1/Keyboard/SendKey/'+ enumerations.KeyStrokes(key)
         myobj = {'somekey': 'somevalue'}
 
         x = requests.post(url, verify=False)

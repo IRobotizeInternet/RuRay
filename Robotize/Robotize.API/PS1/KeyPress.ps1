@@ -1,4 +1,5 @@
-﻿Add-Type -AssemblyName System.Windows.Forms
+﻿param ($KeyToPress)
+Add-Type -AssemblyName System.Windows.Forms
 function Do-SendKeys {
     param (
         $SENDKEYS,
@@ -10,16 +11,12 @@ function Do-SendKeys {
     IF ($SENDKEYS) {$wshell.SendKeys($SENDKEYS)}
 }
 
-#[System.Windows.Forms.SendKeys]::SendWait('{TAB}{TAB}')
+[System.Windows.Forms.SendKeys]::SendWait($KeyToPress)
  Sleep 1
 #[System.Windows.Forms.SendKeys]::SendWait('{ENTER}')
-[System.Windows.Forms.SendKeys]::SendWait("Hello")
- Sleep 1
-[System.Windows.Forms.SendKeys]::SendWait('{ENTER}')
- Sleep 1
 #[System.Windows.Forms.SendKeys]::SendWait("World")
 # Select all key press
-[System.Windows.Forms.SendKeys]::SendWait("^{a}")
+<#[System.Windows.Forms.SendKeys]::SendWait("^{a}")
  Sleep 5
 [System.Windows.Forms.SendKeys]::SendWait("^{c}")
 Sleep 1
@@ -27,7 +24,7 @@ Sleep 1
 Sleep 1
 [System.Windows.Forms.SendKeys]::SendWait("^{v}")
 Sleep 1
-[System.Windows.Forms.SendKeys]::SendWait("^{v}")
+[System.Windows.Forms.SendKeys]::SendWait("^{v}")#>
 
 
 #https://docs.microsoft.com/en-us/powershell/scripting/windows-powershell/ise/keyboard-shortcuts-for-the-windows-powershell-ise?view=powershell-7.1

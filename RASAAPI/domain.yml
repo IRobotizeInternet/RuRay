@@ -12,6 +12,7 @@ intents:
   - left_click
   - right_click
   - go_to_xy
+  - send_key
   - second
 
 responses:
@@ -40,6 +41,7 @@ actions:
   - action_left_click
   - action_right_click
   - action_goto_xy
+  - action_send_key
 
 session_config:
   session_expiration_time: 60

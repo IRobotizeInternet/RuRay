@@ -49,5 +49,19 @@ namespace Robotize.API.Controllers
             await _serviceKeyboard.LeftClick(index);
             return Ok();
         }
+
+        /// <summary>
+        /// key stroke
+        /// </summary>
+        [HttpPost("SendKey/{key}")]
+        [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
+        [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Unsupported key")]
+        [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
+        public async Task<IActionResult> KeyStoke([FromRoute] KeyStrokes sendKey)
+        {
+            await _serviceKeyboard.SendKey(sendKey);
+            return Ok();
+        }
+
     }
 }

@@ -77,6 +77,11 @@
             Keyboard left click action
             </summary>
         </member>
+        <member name="M:Robotize.API.Controllers.KeyboardController.KeyStoke(Robotize.BLL.Contracts.KeyStrokes)">
+            <summary>
+            key stroke
+            </summary>
+        </member>
         <member name="M:Robotize.API.Controllers.MouseController.#ctor(AutoMapper.IMapper,Robotize.BLL.Contracts.IServiceMouse)">
             <summary>
             Mouse actions

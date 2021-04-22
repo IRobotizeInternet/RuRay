@@ -22,6 +22,11 @@ stories:
   - intent: go_to_xy
   - action: action_goto_xy
 
+- story: send key to keyboard
+  steps:
+  - intent: send_key
+  - action: action_send_key
+
 - story: second
   steps:
   - intent: sceond

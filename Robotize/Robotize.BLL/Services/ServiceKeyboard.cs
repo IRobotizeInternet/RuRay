@@ -1,5 +1,6 @@
 ﻿using System.Configuration;
 using System.Threading.Tasks;
+using EnumsNET;
 using Robotize.BLL.Contracts;
 using RobotizeFacebook.Services;
 using RobotizeFacebook.Utilities;
@@ -8,6 +9,8 @@ namespace Robotize.BLL.Services
 {
     public class ServiceKeyboard : IServiceKeyboard
     {
+        public static string keyStrokesScript = "PS1\\KeyPress";
+        public static string clickerScript = "PS1\\Clicker";
         /// <summary>
         /// Left click on the specified location.
         /// </summary>
@@ -20,9 +23,14 @@ namespace Robotize.BLL.Services
             AppSettings.EnvironmentSettingsFile = ConfigurationManager.AppSettings[nameof(AppSettings.EnvironmentSettingsFile)];
             var coordinate = EnvironmentSettings.SettingsData().Details.ScreenCoordinates[coordinateIndex];
 
-            var clickerScript = "PS1\\Clicker";
             ServiceTask.RunScript(clickerScript, $"{coordinate.X} {coordinate.Y}");
 
+            return Task.FromResult(true);
+        }
+
+        public Task<bool> SendKey(KeyStrokes sendKeys)
+        {
+            ServiceTask.RunScript(keyStrokesScript, sendKeys.AsString(EnumFormat.Description));
             return Task.FromResult(true);
         }
     }

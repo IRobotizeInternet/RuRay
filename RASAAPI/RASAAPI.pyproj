@@ -29,6 +29,10 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="actions\actions.py" />
+    <Compile Include="actions\enumerations.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="actions\enums\__init__.py" />
     <Compile Include="actions\__init__.py" />
     <Compile Include="api\blog\business.py" />
     <Compile Include="api\blog\endpoints\categories.py" />
@@ -63,6 +67,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="actions\" />
+    <Folder Include="actions\enums\" />
     <Folder Include="api\" />
     <Folder Include="api\blog\" />
     <Folder Include="api\blog\endpoints\" />

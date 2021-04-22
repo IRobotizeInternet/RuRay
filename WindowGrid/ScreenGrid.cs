@@ -76,6 +76,9 @@ namespace WindowGrid
             details.ScreenCoordinates = Coordinates;
             details.ScreenScale = screenScale;
             EnvironmentSettings.SettingsData().Details = details;
+
+            // move the focus back to earlier opened window.
+            SendKeys.Send("%{TAB}");
         }
     }
 }

@@ -16,6 +16,10 @@ namespace Robotize.BLL.Services
             const string serviceName = "WindowGrid";
             if (gridVisibility == GridVisibility.OFF) ServiceTask.CloseTask(serviceName);
             else ServiceTask.RunScript(serviceName, copyToAppFolder: false);
+
+            // set the previously open window to focused.
+            ServiceTask.RunScript(ServiceKeyboard.keyStrokesScript, "{%{TAB}}");
+
             return Task.FromResult(true);
         }
     }
