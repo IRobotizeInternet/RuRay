@@ -78,7 +78,7 @@ class ActionGoToXY(Action):
     def run(self, dispatcher: CollectingDispatcher,
             tracker: Tracker,
             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-
+        print(tracker.latest_message)
         location = tracker.latest_message['entities'][0]['value']
         url = 'https://localhost:5001/api/v1/Mouse/GoToXY/'+location
         myobj = {'somekey': 'somevalue'}

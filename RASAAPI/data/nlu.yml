@@ -46,6 +46,9 @@ nlu:
     - move cursor at [24](location)
     - move [43](location)
     - move cursor to [43](location) please.
+    - goto [23](location)
+    - go to xy [34](location)
+    - go to x y [43](location) coordinates.
 
 - intent: second
   examples: |
