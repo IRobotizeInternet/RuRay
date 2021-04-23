@@ -45,3 +45,6 @@ class KeyStrokes(object):
     Key = 41
     SHIFT = 42
     CTRL = 43
+
+def __str__(self):
+        return '%s' % self.value
