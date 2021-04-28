@@ -2,15 +2,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>4ef92866-bc1f-4699-8e2a-a03d70b2e6a9</ProjectGuid>
+    <ProjectGuid>479b7ec3-b8ec-4b8e-822a-05ad55cabdcb</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>RobotizeTTS.py</StartupFile>
+    <StartupFile>PythonApplication1.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
-    <Name>RobotizeTTS</Name>
-    <RootNamespace>RobotizeTTS</RootNamespace>
+    <Name>PythonApplication1</Name>
+    <RootNamespace>PythonApplication1</RootNamespace>
     <InterpreterId>MSBuild|env|$(MSBuildProjectFullPath)</InterpreterId>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
@@ -22,7 +22,7 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="RobotizeTTS.py" />
+    <Compile Include="PythonApplication1.py" />
   </ItemGroup>
   <ItemGroup>
     <Interpreter Include="env\">

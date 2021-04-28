@@ -62,8 +62,8 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
 
         public override void RunConformance()
         {
-            //RunConformanceReactions();
-            //RunConformanceReactionsWindow();
+            RunConformanceReactions();
+            RunConformanceReactionsWindow();
             RunConformanceShareWindow();
         }
 
