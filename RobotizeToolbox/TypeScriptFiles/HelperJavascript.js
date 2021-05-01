@@ -26,3 +26,11 @@
 //}
 
 //GetListItems();
+
+
+//for (let i = 0; i < elemts.length; i++)
+//{
+//    let t = elemts[i].innerText.split(' ').join('')
+//    let str = `public EventTriggerButton<Page${ t}> Page${ t} => new EventTriggerButton<Page${t}> (Driver, By.XPath($"{BaseXPath}//span[text()='{ResHomePageHeader.${t}}']"));`
+//    console.log(str);
+//}

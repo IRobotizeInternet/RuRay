@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using Robotize.BLL.Resources;
+using RobotizeToolbox.Controls;
 using RobotizeToolbox.Controls.TriggerControls;
 using System.Linq;
 
@@ -33,7 +34,45 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         public EventTriggerDiv<DialogCreatePost> TriggerDivCreateFundraiser =>
                     new EventTriggerDiv<DialogCreatePost>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResHomePageHeader.Fundraiser}']"));
 
-
+        public EventTriggerButton<PageCampus> PageCampus => 
+                    new EventTriggerButton<PageCampus>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResLeftNav.Campus}']"));
+        public EventTriggerButton<PageEvents> PageEvents => 
+                    new EventTriggerButton<PageEvents>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResLeftNav.Events}']"));
+        public EventTriggerButton<PageFriends> PageFriends => 
+                    new EventTriggerButton<PageFriends>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResHomePageHeader.Friends}']"));
+        public EventTriggerButton<PageGroup> PageGroups => 
+                    new EventTriggerButton<PageGroup>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResHomePageHeader.Groups}']"));
+        public EventTriggerButton<PageHome> PageNewsFeed => 
+                    new EventTriggerButton<PageHome>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResLeftNav.NewsFeed}']"));
+        public EventTriggerButton<PagePages> PagePages => 
+                    new EventTriggerButton<PagePages>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResLeftNav.Pages}']"));
+        public EventTriggerButton<PageGames> PageGames => 
+                    new EventTriggerButton<PageGames>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResLeftNav.Games}']"));
+        public EventTriggerButton<PageWatch> PageWatch => 
+                    new EventTriggerButton<PageWatch>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResHomePageHeader.Watch}']"));
+        public EventTriggerButton<PageFacebookPay> PageFacebookPay => 
+                    new EventTriggerButton<PageFacebookPay>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResLeftNav.FacebookPay}']"));
+        public EventTriggerButton<PageMarketplace> PageMarketplace => 
+                    new EventTriggerButton<PageMarketplace>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResHomePageHeader.Marketplace}']"));
+        public EventTriggerButton<PageOffers> PageOffers => 
+                    new EventTriggerButton<PageOffers>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResPageSettings.Offers}']"));
+        public EventTriggerButton<PageMemories> PageMemories => 
+                    new EventTriggerButton<PageMemories>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResLeftNav.Memories}']"));
+        public EventTriggerButton<PageSaved> PageSaved => 
+                    new EventTriggerButton<PageSaved>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResLeftNav.Saved}']"));
+        public EventTriggerButton<PageWeather> PageWeather => 
+                    new EventTriggerButton<PageWeather>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResLeftNav.Weather}']"));
+        public EventTriggerButton<PageAdCenter> PageAds => 
+                    new EventTriggerButton<PageAdCenter>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResLeftNav.Ads}']"));
+        public EventTriggerButton<PageJobs> PageJobs => 
+                    new EventTriggerButton<PageJobs>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResLeftNav.Jobs}']"));
+        public EventTriggerButton<PageFundraisers> PageFundraisers => 
+                    new EventTriggerButton<PageFundraisers>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResLeftNav.Fundraisers}']"));
+        public EventTriggerButton<PageMessages> PageMessenger => 
+                    new EventTriggerButton<PageMessages>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResHomePageHeader.Messenger}']"));
+        public EventTriggerButton<PageMessengerKids> PageMessengerKids => 
+                    new EventTriggerButton<PageMessengerKids>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResLeftNav.MessengerKids}']"));
+        
         public void RunConformanceButtonFriendsExcept()
         {
             var post = TriggerDivCreatePost.Click();
