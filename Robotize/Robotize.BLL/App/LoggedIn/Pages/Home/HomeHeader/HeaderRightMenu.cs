@@ -13,10 +13,10 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
             new Hyperlink<PageUserTimeline>(Driver, By.XPath("//a[@href='/me/']/parent::div"));
         
         public Hyperlink<PopupCreate> DialogButtonToCreate =>
-            new Hyperlink<PopupCreate>(Driver, By.XPath($"{BaseRigthXPath}//div[contains(@aria-label, '{ResHomePageHeader.Create}']"));
+            new Hyperlink<PopupCreate>(Driver, By.XPath($"{BaseRigthXPath}//div[contains(@aria-label, '{ResHomePageHeader.Create}'  or contains(@aria-label, '{ResCreatePost.Menu}'))]"));
 
         public Hyperlink<PopupMessanger> DialogButtonMessanger =>
-            new Hyperlink<PopupMessanger>(Driver, By.XPath($"{BaseRigthXPath}//div[contains(@aria-label, '{ResHomePageHeader.Messenger}'][1]"));
+            new Hyperlink<PopupMessanger>(Driver, By.XPath($"{BaseRigthXPath}//div[contains(@aria-label, '{ResHomePageHeader.Messenger}')][1]"));
 
         public Hyperlink<PopupNotifications> DialogButtonNotifications =>
             new Hyperlink<PopupNotifications>(Driver, By.XPath($"{BaseRigthXPath}//div[contains(@aria-label, '{ResHomePageHeader.Notifications}')][1]"));

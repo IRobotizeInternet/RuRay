@@ -9,10 +9,10 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
     {
         public PopupCreate()
         {
-            BaseXPath = $"//div[@aria-label='{ResHomePageHeader.Create}' and @role='dialog']";
+            BaseXPath = $"//span[text()='{ResHomePageHeader.Create}']/ancestor::div[@role='dialog']";
         }
 
-        protected override By ByForDialog => By.XPath($"//div[@aria-label='{ResHomePageHeader.Create}' and @role='dialog']");
+        protected override By ByForDialog => By.XPath($"//span[text()='{ResHomePageHeader.Create}']/ancestor::div[@role='dialog']");
 
         public EventTriggerDiv<DialogCreatePost> TriggerDivCreatePost => 
                     new EventTriggerDiv<DialogCreatePost>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResHomePageHeader.Post}']"));

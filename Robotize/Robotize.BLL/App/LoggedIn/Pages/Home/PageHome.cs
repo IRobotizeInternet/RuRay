@@ -38,7 +38,7 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
             new EventTriggerButton<DialogCreateYourRoom>(Driver, By.XPath($"//div[@role='main']//span[text()='{ResCreatePost.NewRoom}' or text()='{ResCreatePost.CreateRoom}']"));
 
         public IEnumerable<ButtonImage> AllOnlineFriends =>
-            Driver.FindElements(By.XPath($"//rdiv[@role='main']//div[contains(@aria-label,'{ResCreatePost.FriendRoomTile}')]"))?
+            Driver.FindElements(By.XPath($"//div[@role='main']//div[contains(@aria-label,'{ResCreatePost.FriendRoomTile}')]"))?
             .Select(x => new ButtonImage(Driver, By.XPath(x.Text.Substring(x.Text.IndexOf($"{ResCreatePost.FriendRoomTile}"), ResCreatePost.FriendRoomTile.Length))));
 
         public Button ButtonUndo => new Button(Driver, By.XPath($"//span[text()='{ResHomePage.Undo}']"));
