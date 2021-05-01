@@ -1,5 +1,6 @@
 ﻿using OpenQA.Selenium;
 using Robotize.BLL.Resources;
+using RobotizeToolbox.CommonControls;
 using RobotizeToolbox.Controls;
 using RobotizeToolbox.Controls.TriggerControls;
 using System.Linq;
@@ -33,6 +34,13 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
                     new EventTriggerDiv<DialogCreatePost>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResHomePageHeader.MarketPlaceListing}']"));
         public EventTriggerDiv<DialogCreatePost> TriggerDivCreateFundraiser =>
                     new EventTriggerDiv<DialogCreatePost>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResHomePageHeader.Fundraiser}']"));
+
+        public ComboboxMenu SearchboxMenu => new ComboboxMenu(Driver, null);
+
+        // TODO: This xpath '//input[@placeholder='{ResHomePage.SearchMenu}']/../../..//a' is invalid, please fix it.
+        public ScrollControl<ListItemMenuItem> ScrollControlUsers =>
+            new ScrollControl<ListItemMenuItem>(Driver, $"//input[@placeholder='{ResHomePage.SearchMenu}']/../../..//a");
+
 
         public EventTriggerButton<PageCampus> PageCampus => 
                     new EventTriggerButton<PageCampus>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResLeftNav.Campus}']"));

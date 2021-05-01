@@ -1,5 +1,4 @@
 ﻿using OpenQA.Selenium;
-using Robotize.BLL.Resources;
 using RobotizeToolbox.Controls.TriggerControls;
 
 namespace RobotizeFacebook.App.LoggedIn.Pages

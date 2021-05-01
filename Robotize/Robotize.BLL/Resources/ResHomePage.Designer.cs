@@ -988,6 +988,15 @@ namespace Robotize.BLL.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Search Menu.
+        /// </summary>
+        public static string SearchMenu {
+            get {
+                return ResourceManager.GetString("SearchMenu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to See All.
         /// </summary>
         public static string SeeAll {

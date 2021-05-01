@@ -5,13 +5,13 @@ using RobotizeToolbox.Controls;
 
 namespace RobotizeFacebook.App.LoggedIn
 {
-    public class ComboboxSearchFacebook : Combobox
+    public class ComboboxMenu : Combobox
     {
-        public ComboboxSearchFacebook(RemoteWebDriver driver, string baseXPath) : base(driver, By.XPath(baseXPath))
+        public ComboboxMenu(RemoteWebDriver driver, string baseXPath) : base(driver, By.XPath(baseXPath))
         {
-            BaseXPath = baseXPath ?? $"//input[@role='combobox'][@placeholder='{ResMiscellaneous.SearchFacebook}']/../../../../..";
-            SearchBoxXPath = $"{BaseXPath}//input[@type='search']";
-            SearchItemsXPath = $"{BaseXPath}//a[@role='presentation']//span[@dir='auto']/span";
+            BaseXPath = baseXPath ?? $"//input[@placeholder='{ResHomePage.SearchMenu}']/../../..";
+            SearchBoxXPath = $"{BaseXPath}//input[@type='text']";
+            SearchItemsXPath = $"{BaseXPath}//a[@role='link']";
         }
     }
 }
