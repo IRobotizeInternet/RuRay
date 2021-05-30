@@ -1,0 +1,259 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>RuRay.API</name>
+    </assembly>
+    <members>
+        <member name="M:RuRay.API.Controllers.CarsController.#ctor(AutoMapper.IMapper,RuRay.BLL.Contracts.ICarsService)">
+            <summary>
+            Cars db api
+            </summary>
+            <param name="mapper"></param>
+            <param name="carsService"></param>
+        </member>
+        <member name="M:RuRay.API.Controllers.CarsController.CreateCarAsync(RuRay.API.Models.Car)">
+            <summary>
+            Create a new car
+            </summary>
+            <param name="car"></param>
+            <returns>Returns created car</returns>           
+        </member>
+        <member name="M:RuRay.API.Controllers.CarsController.GetCarAsync(System.Guid)">
+            <summary>
+            Get car by id
+            </summary>
+            <param name="id">Car Id</param>
+            <returns>Returns finded car</returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.CarsController.UpdateCarAsync(System.Guid,RuRay.API.Models.Car)">
+            <summary>
+            Update existing car
+            </summary>
+            <param name="id">Car id</param>
+            <param name="car">Car parameters</param>
+            <returns></returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.CarsController.DeleteCarAsync(System.Guid)">
+            <summary>
+            Delete car
+            </summary>
+            <param name="id">Car id</param>
+            <returns></returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.CarsController.GetCarsListAsync(System.Int32,System.Int32)">
+            <summary>
+            Get cars list
+            </summary>
+            <param name="pageNumber">Page number</param>
+            <param name="pageSize">Page size</param>
+            <returns></returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.HomeHeaderController.#ctor(AutoMapper.IMapper,RuRay.BLL.Contracts.IServiceHomeHeader)">
+            <summary>
+            Cars db api
+            </summary>
+            <param name="mapper"></param>
+            <param name="serviceHomeHeader"></param>
+        </member>
+        <member name="M:RuRay.API.Controllers.HomeHeaderController.HomePageScrollDown">
+            <summary>
+            Homepage scroll down
+            </summary>
+        </member>
+        <member name="M:RuRay.API.Controllers.HomeHeaderController.FacebookChangeVisualMode(RuRay.BLL.Switch)">
+            <summary>
+            Facebook Change Visual Mode
+            </summary>
+        </member>
+        <member name="M:RuRay.API.Controllers.KeyboardController.#ctor(AutoMapper.IMapper,RuRay.BLL.Contracts.IServiceKeyboard)">
+            <summary>
+            Keyboard actions
+            </summary>
+            <param name="mapper"></param>
+            <param name="serviceKeyboard"></param>
+        </member>
+        <member name="M:RuRay.API.Controllers.KeyboardController.RightClick(System.Int32)">
+            <summary>
+            Keyboard left click action
+            </summary>
+        </member>
+        <member name="M:RuRay.API.Controllers.KeyboardController.KeyStoke(RuRay.BLL.Contracts.KeyStrokes)">
+            <summary>
+            key stroke
+            </summary>
+        </member>
+        <member name="M:RuRay.API.Controllers.MouseController.#ctor(AutoMapper.IMapper,RuRay.BLL.Contracts.IServiceMouse)">
+            <summary>
+            Mouse actions
+            </summary>
+            <param name="mapper"></param>
+            <param name="serviceMouse"></param>
+        </member>
+        <member name="M:RuRay.API.Controllers.MouseController.LeftClick(System.Int32)">
+            <summary>
+            Keyboard left click action
+            </summary>
+        </member>
+        <member name="M:RuRay.API.Controllers.MouseController.RightClickAtPoint(System.Int32)">
+            <summary>
+            Keyboard right click action
+            </summary>
+        </member>
+        <member name="M:RuRay.API.Controllers.MouseController.GoToXY(System.Int32)">
+            <summary>
+            Move cursor to a specified x, y location
+            </summary>
+        </member>
+        <member name="M:RuRay.API.Controllers.TodoController.#ctor(AutoMapper.IMapper,RuRay.BLL.TodosMockProxyService)">
+            <summary>
+            Todos mock web proxy 
+            </summary>
+            <param name="mapper"></param>
+            <param name="todosMockService"></param>
+        </member>
+        <member name="M:RuRay.API.Controllers.TodoController.GetTodoById(System.Int32)">
+            <summary>
+            Get todo by id
+            </summary>
+            <param name="id">Todo id</param>     
+            <returns></returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.TodoController.GetTodos">
+            <summary>
+            Get todos list from remote mock api
+            </summary>      
+            <returns></returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.TokenController.GenerateToken">
+            <summary>
+            Generate sample token
+            </summary>       
+            <returns>Generated token</returns>        
+        </member>
+        <member name="M:RuRay.API.Controllers.TokenController.ValidateToken(System.String)">
+            <summary>
+            Validate sample token
+            </summary>
+            <param name="token">Token for validation</param>
+            <returns>Token validation status</returns>        
+        </member>
+        <member name="M:RuRay.API.Controllers.CarsV0Controller.GetCarsV0ListAsync(System.Int32)">
+            <summary>
+            Get cars list
+            </summary>       
+            <param name="limit">Items count</param>
+            <returns></returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.WebhookController.#ctor(AutoMapper.IMapper,RuRay.BLL.Contracts.IServiceMouse)">
+            <summary>
+            Mouse actions
+            </summary>
+            <param name="mapper"></param>
+            <param name="serviceMouse"></param>
+        </member>
+        <member name="M:RuRay.API.Controllers.WebhookController.LeftClick(System.Int32)">
+            <summary>
+            Keyboard left click action
+            </summary>
+        </member>
+        <member name="M:RuRay.API.Controllers.WebhookController.RightClickAtPoint(System.Int32)">
+            <summary>
+            Keyboard right click action
+            </summary>
+        </member>
+        <member name="M:RuRay.API.Controllers.WebhookController.GoToXY(System.Int32)">
+            <summary>
+            Move cursor to a specified x, y location
+            </summary>
+        </member>
+        <member name="M:RuRay.API.Controllers.WindowsScreenController.#ctor(AutoMapper.IMapper,RuRay.BLL.Contracts.IServiceWindowsScreen)">
+            <summary>
+            Windows Screen api
+            </summary>
+            <param name="mapper"></param>
+            <param name="serviceWindowsScreen"></param>
+        </member>
+        <member name="M:RuRay.API.Controllers.WindowsScreenController.WindowGrid(RuRay.BLL.Contracts.GridVisibility)">
+            <summary>
+            Show or hide gird on the screen
+            </summary>
+            <param name="gridVisibility"></param>
+            <returns></returns>           
+        </member>
+        <member name="T:RuRay.API.Models.Car">
+            <summary>
+            Car type
+            </summary>
+        </member>
+        <member name="P:RuRay.API.Models.Car.Id">
+            <summary>
+            Car id
+            </summary>
+        </member>
+        <member name="P:RuRay.API.Models.Car.ModelName">
+            <summary>
+            Car model name
+            </summary>
+        </member>
+        <member name="P:RuRay.API.Models.Car.CarType">
+            <summary>
+            Car type
+            </summary>
+        </member>
+        <member name="P:RuRay.API.Models.Car.CreatedOn">
+            <summary>
+            CreatedOn
+            </summary>
+        </member>
+        <member name="P:RuRay.API.Models.Car.ModifiedOn">
+            <summary>
+            ModifiedOn
+            </summary>
+        </member>
+        <member name="T:RuRay.API.Models.CarType">
+            <summary>
+            Car type
+            </summary>
+        </member>
+        <member name="F:RuRay.API.Models.CarType.Hatchback">
+            <summary>
+            Hatchback
+            </summary>
+        </member>
+        <member name="F:RuRay.API.Models.CarType.Sedan">
+            <summary>
+            Sedan
+            </summary>
+        </member>
+        <member name="F:RuRay.API.Models.CarType.SUV">
+            <summary>
+            SUV
+            </summary>
+        </member>
+        <member name="F:RuRay.API.Models.CarType.Coupe">
+            <summary>
+            Coupe
+            </summary>
+        </member>
+        <member name="T:RuRay.API.Models.Todo">
+            <summary>
+            Todo item
+            </summary>
+        </member>
+        <member name="P:RuRay.API.Models.Todo.Id">
+            <summary>
+            Todo id
+            </summary>
+        </member>
+        <member name="P:RuRay.API.Models.Todo.Title">
+            <summary>
+            Todo title
+            </summary> 
+        </member>
+        <member name="P:RuRay.API.Models.Todo.Completed">
+            <summary>
+            Todo status
+            </summary>        
+        </member>
+    </members>
+</doc>

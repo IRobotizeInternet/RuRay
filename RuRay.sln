@@ -8,25 +8,25 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		.editorconfig = .editorconfig
 	EndProjectSection
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RuRayToolbox", "RobotizeToolbox\RuRayToolbox.csproj", "{CA179313-4A69-40BD-8F25-66DCC2D6D225}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RuRayToolbox", "RuRayToolbox\RuRayToolbox.csproj", "{CA179313-4A69-40BD-8F25-66DCC2D6D225}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SupportingScripts", "SupportingScripts\SupportingScripts.csproj", "{0BE8769F-B5C4-4BAF-8E26-B1407F26FD08}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RuRay.API", "Robotize\Robotize.API\RuRay.API.csproj", "{AF1E9440-561F-4567-A123-135127E7C021}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RuRay.API", "RuRay\RuRay.API\RuRay.API.csproj", "{AF1E9440-561F-4567-A123-135127E7C021}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RuRay.BLL", "Robotize\Robotize.BLL\RuRay.BLL.csproj", "{7F0C082A-AF70-4F9B-8A3B-78A6497568E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RuRay.BLL", "RuRay\RuRay.BLL\RuRay.BLL.csproj", "{7F0C082A-AF70-4F9B-8A3B-78A6497568E6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RuRay.Configuration", "Robotize\Robotize.Configuration\RuRay.Configuration.csproj", "{13A4FC34-BD8E-4285-8BC7-79D804D9CB8E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RuRay.Configuration", "RuRay\RuRay.Configuration\RuRay.Configuration.csproj", "{13A4FC34-BD8E-4285-8BC7-79D804D9CB8E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RuRay.DAL.MySql", "Robotize\Robotize.DAL.MySql\RuRay.DAL.MySql.csproj", "{548FD253-95C2-42FE-9E66-C3341B869A07}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RuRay.DAL.MySql", "RuRay\RuRay.DAL.MySql\RuRay.DAL.MySql.csproj", "{548FD253-95C2-42FE-9E66-C3341B869A07}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{C402C72A-3431-4A1D-BEFB-B973F29CD1FC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Robotize.BLL.Tests", "Robotize\Robotize.BLL.Tests\Robotize.BLL.Tests.csproj", "{415CF374-D506-4A5B-BAB6-EC9B54469657}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RuRay.BLL.Tests", "RuRay\RuRay.BLL.Tests\RuRay.BLL.Tests.csproj", "{415CF374-D506-4A5B-BAB6-EC9B54469657}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DbUp", "DbUp", "{DA572D55-621F-4F4C-982E-ADBD68E7001D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Robotize.DbUp.MySql", "Robotize\Robotize.DbUp.MySql\Robotize.DbUp.MySql.csproj", "{0BA3E121-96A4-4A3E-A57A-3A4B5E848CDF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RuRay.DbUp.MySql", "RuRay\RuRay.DbUp.MySql\RuRay.DbUp.MySql.csproj", "{0BA3E121-96A4-4A3E-A57A-3A4B5E848CDF}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowGrid", "WindowGrid\WindowGrid.csproj", "{0BCA3F13-8908-4663-A45C-545CFDAF42BC}"
 EndProject
@@ -36,7 +36,7 @@ Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "RASAAPI", "RASAAPI\RASAAPI.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Speech", "Speech", "{F20FD2D8-B822-4853-A56C-A5F6687EAB8A}"
 EndProject
-Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "RobotizeTTSAndSTT", "RobotizeTTS\RobotizeTTSAndSTT.pyproj", "{4EF92866-BC1F-4699-8E2A-A03D70B2E6A9}"
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "RuRayTTSAndSTT", "RuRayTTS\RuRayTTSAndSTT.pyproj", "{4EF92866-BC1F-4699-8E2A-A03D70B2E6A9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Temp", "Temp", "{854CA84A-360E-4C13-9C1C-40C21AD285A8}"
 EndProject

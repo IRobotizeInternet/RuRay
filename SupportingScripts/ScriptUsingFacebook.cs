@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 //using OpenQA.Selenium;
-//using RobotizeFacebook.App.LoggedIn.Pages;
+//using RuRayFacebook.App.LoggedIn.Pages;
 
 namespace SupportingScripts
 {

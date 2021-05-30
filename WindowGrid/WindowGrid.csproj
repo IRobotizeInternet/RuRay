@@ -18,7 +18,7 @@
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\Robotize\Robotize.API\bin\Debug\netcoreapp3.1\</OutputPath>
+    <OutputPath>..\RuRay\RuRay.API\bin\Debug\netcoreapp3.1\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -53,19 +53,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="..\Robotize\Robotize.BLL\Services\AppData\EnvironmentSettings.cs">
+    <Compile Include="..\RuRay\RuRay.BLL\Services\AppData\EnvironmentSettings.cs">
       <Link>EnvironmentSettings.cs</Link>
     </Compile>
-    <Compile Include="..\Robotize\Robotize.BLL\Services\AppData\EnvironmentSettingsDTO.cs">
+    <Compile Include="..\RuRay\RuRay.BLL\Services\AppData\EnvironmentSettingsDTO.cs">
       <Link>EnvironmentSettingsDTO.cs</Link>
     </Compile>
-    <Compile Include="..\Robotize\Robotize.BLL\Utilities\AppSettings.cs">
+    <Compile Include="..\RuRay\RuRay.BLL\Utilities\AppSettings.cs">
       <Link>AppSettings.cs</Link>
     </Compile>
-    <Compile Include="..\Robotize\Robotize.BLL\Utilities\ClassDefinationDTO.cs">
+    <Compile Include="..\RuRay\RuRay.BLL\Utilities\ClassDefinationDTO.cs">
       <Link>ClassDefinationDTO.cs</Link>
     </Compile>
-    <Compile Include="..\Robotize\Robotize.BLL\Utilities\FileOperations.cs">
+    <Compile Include="..\RuRay\RuRay.BLL\Utilities\FileOperations.cs">
       <Link>FileOperations.cs</Link>
     </Compile>
     <Compile Include="KeepWinowsOnTop.cs" />
@@ -89,7 +89,7 @@
     <EmbeddedResource Include="ScreenGrid.resx">
       <DependentUpon>ScreenGrid.cs</DependentUpon>
     </EmbeddedResource>
-    <None Include="..\Robotize\Robotize.API\app.config">
+    <None Include="..\RuRay\RuRay.API\app.config">
       <Link>app.config</Link>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
