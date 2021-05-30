@@ -1,6 +1,6 @@
-﻿using Robotize.BLL.Resources;
-using RobotizeToolbox.CustomAttributes;
-namespace RobotizeFacebook.App.LoggedIn
+﻿using RuRay.BLL.Resources;
+using RuRayToolbox.CustomAttributes;
+namespace RuRayFacebook.App.LoggedIn
 {
     public enum BathroomCount
     {

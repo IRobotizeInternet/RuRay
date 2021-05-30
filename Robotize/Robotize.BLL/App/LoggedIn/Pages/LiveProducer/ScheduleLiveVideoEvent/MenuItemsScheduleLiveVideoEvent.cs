@@ -1,15 +1,15 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using RobotizeFacebook.App.LoggedIn.Enum;
-using Robotize.BLL.Resources;
-using RobotizeLibrary.Extensions;
-using RobotizeToolbox.CommonControls;
-using RobotizeToolbox.Controls;
-using RobotizeToolbox.Controls.TriggerControls;
+using RuRayFacebook.App.LoggedIn.Enum;
+using RuRay.BLL.Resources;
+using RuRayLibrary.Extensions;
+using RuRayToolbox.CommonControls;
+using RuRayToolbox.Controls;
+using RuRayToolbox.Controls.TriggerControls;
 using System;
 using System.Linq;
 
-namespace RobotizeFacebook.App.LoggedIn.Pages.JobsComposer.ScheduleLiveVideoEvent
+namespace RuRayFacebook.App.LoggedIn.Pages.JobsComposer.ScheduleLiveVideoEvent
 {
     public class MenuItemsScheduleLiveVideoEvent : MenuItems
     {

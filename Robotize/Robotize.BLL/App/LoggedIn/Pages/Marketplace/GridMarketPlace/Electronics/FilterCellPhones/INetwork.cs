@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace RobotizeFacebook.App.LoggedIn
+namespace RuRayFacebook.App.LoggedIn
 {
     public interface INetwork<TNetwork> where TNetwork : struct, IConvertible
     {

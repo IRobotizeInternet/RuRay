@@ -1,10 +1,10 @@
 ﻿using OpenQA.Selenium;
-using RobotizeToolbox.Extensions;
+using RuRayToolbox.Extensions;
 using System;
 using System.Diagnostics;
 using System.Linq;
 
-namespace RobotizeFacebook.App.LoggedIn.Pages
+namespace RuRayFacebook.App.LoggedIn.Pages
 {
     public abstract class BasePopup : BaseDriver
     {

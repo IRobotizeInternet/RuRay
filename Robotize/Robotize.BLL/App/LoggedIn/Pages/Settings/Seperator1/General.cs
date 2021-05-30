@@ -1,9 +1,9 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using RobotizeFacebook.App.LoggedIn.Pages.Bas;
-using RobotizeToolbox.Controls.TriggerControls;
+using RuRayFacebook.App.LoggedIn.Pages.Bas;
+using RuRayToolbox.Controls.TriggerControls;
 
-namespace RobotizeFacebook.App.LoggedIn.Pages
+namespace RuRayFacebook.App.LoggedIn.Pages
 {
     public class General : PageSettings
     {

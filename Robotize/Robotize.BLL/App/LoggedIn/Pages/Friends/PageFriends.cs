@@ -1,8 +1,8 @@
 ﻿using OpenQA.Selenium;
-using Robotize.BLL.Resources;
+using RuRay.BLL.Resources;
 using System;
 
-namespace RobotizeFacebook.App.LoggedIn.Pages
+namespace RuRayFacebook.App.LoggedIn.Pages
 {
     public class PageFriends : BasePage
     {

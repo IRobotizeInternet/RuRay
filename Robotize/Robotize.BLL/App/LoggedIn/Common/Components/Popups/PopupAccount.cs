@@ -1,9 +1,9 @@
 ﻿using OpenQA.Selenium;
-using RobotizeFacebook.App.NotLoggedIn;
-using Robotize.BLL.Resources;
-using RobotizeToolbox.Controls;
+using RuRayFacebook.App.NotLoggedIn;
+using RuRay.BLL.Resources;
+using RuRayToolbox.Controls;
 
-namespace RobotizeFacebook.App.LoggedIn.Pages
+namespace RuRayFacebook.App.LoggedIn.Pages
 {
     public class PopupAccount : BasePopup
     {

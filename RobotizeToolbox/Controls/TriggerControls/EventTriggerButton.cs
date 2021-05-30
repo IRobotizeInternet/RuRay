@@ -1,10 +1,10 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using RobotizeToolbox.CommonControls;
+using RuRayToolbox.CommonControls;
 using System;
 using System.Threading;
 
-namespace RobotizeToolbox.Controls
+namespace RuRayToolbox.Controls
 {
     public class EventTriggerButton <EventResult> : BaseDOMObject  where EventResult: class 
     {

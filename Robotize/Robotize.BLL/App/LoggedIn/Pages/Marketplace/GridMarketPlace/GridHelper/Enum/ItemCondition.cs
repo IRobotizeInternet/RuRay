@@ -1,6 +1,6 @@
-﻿using RobotizeToolbox.CustomAttributes;
-using Robotize.BLL.Resources;
-namespace RobotizeFacebook.App.LoggedIn
+﻿using RuRayToolbox.CustomAttributes;
+using RuRay.BLL.Resources;
+namespace RuRayFacebook.App.LoggedIn
 {
     public enum ItemCondition
     {

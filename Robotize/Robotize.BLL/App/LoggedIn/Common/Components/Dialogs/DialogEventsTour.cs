@@ -1,8 +1,8 @@
 ﻿using OpenQA.Selenium;
-using Robotize.BLL.Resources;
-using RobotizeToolbox.CommonControls;
+using RuRay.BLL.Resources;
+using RuRayToolbox.CommonControls;
 
-namespace RobotizeFacebook.App.LoggedIn.Pages.Pages.ManagePage
+namespace RuRayFacebook.App.LoggedIn.Pages.Pages.ManagePage
 {
     public class DialogEventsTour : BaseDialog
     {

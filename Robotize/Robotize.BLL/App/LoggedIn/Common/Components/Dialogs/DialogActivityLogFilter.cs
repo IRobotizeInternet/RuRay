@@ -1,9 +1,9 @@
 ﻿using OpenQA.Selenium;
-using RobotizeFacebook.App.LoggedIn.Enum;
-using Robotize.BLL.Resources;
-using RobotizeLibrary.Extensions;
-using RobotizeToolbox.Controls;
-namespace RobotizeFacebook.App.LoggedIn.Pages
+using RuRayFacebook.App.LoggedIn.Enum;
+using RuRay.BLL.Resources;
+using RuRayLibrary.Extensions;
+using RuRayToolbox.Controls;
+namespace RuRayFacebook.App.LoggedIn.Pages
 {
     public class DialogActivityLogFilter : BaseDialog
     {

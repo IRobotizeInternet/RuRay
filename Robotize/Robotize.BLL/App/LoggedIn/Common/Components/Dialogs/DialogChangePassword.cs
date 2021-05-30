@@ -1,8 +1,8 @@
 ﻿using OpenQA.Selenium;
-using RobotizeToolbox.CommonControls;
-using Robotize.BLL.Resources;
+using RuRayToolbox.CommonControls;
+using RuRay.BLL.Resources;
 
-namespace RobotizeFacebook.App.LoggedIn.Pages
+namespace RuRayFacebook.App.LoggedIn.Pages
 {
     public class DialogChangePassword : BaseEditor
     {

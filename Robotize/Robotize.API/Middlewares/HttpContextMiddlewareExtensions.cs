@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Builder;
 
-namespace Robotize.API.Middleware
+namespace RuRay.API.Middleware
 {
     public static class HttpContextMiddlewareExtensions
     {

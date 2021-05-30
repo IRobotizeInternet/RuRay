@@ -1,10 +1,10 @@
 ﻿using OpenQA.Selenium;
-using RobotizeToolbox.CommonControls;
-using RobotizeToolbox.Controls;
-using RobotizeToolbox.Controls.TriggerControls;
-using Robotize.BLL.Resources;
+using RuRayToolbox.CommonControls;
+using RuRayToolbox.Controls;
+using RuRayToolbox.Controls.TriggerControls;
+using RuRay.BLL.Resources;
 
-namespace RobotizeFacebook.App.LoggedIn.Pages
+namespace RuRayFacebook.App.LoggedIn.Pages
 {
     public class Contact : BaseEditor
     {

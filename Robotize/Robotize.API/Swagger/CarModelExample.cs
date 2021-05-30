@@ -1,8 +1,8 @@
-using Robotize.API.Models;
+using RuRay.API.Models;
 using Swashbuckle.AspNetCore.Filters;
 using System;
 
-namespace Robotize.API.Swagger
+namespace RuRay.API.Swagger
 {
     public class CarModelExample : IExamplesProvider<Car>
     {

@@ -1,4 +1,4 @@
-﻿namespace RobotizeFacebook.CryptoServices
+﻿namespace RuRayFacebook.CryptoServices
 {
     public abstract class Crypto
     {

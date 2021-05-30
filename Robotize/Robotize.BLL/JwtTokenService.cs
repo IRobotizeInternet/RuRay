@@ -1,14 +1,14 @@
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using Robotize.BLL.Contracts;
-using Robotize.BLL.Models;
+using RuRay.BLL.Contracts;
+using RuRay.BLL.Models;
 using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Principal;
 using System.Text;
 
-namespace Robotize.BLL
+namespace RuRay.BLL
 {
     public class JwtTokenService : IJwtTokenService
     {

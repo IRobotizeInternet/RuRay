@@ -1,8 +1,8 @@
 ﻿using OpenQA.Selenium;
-using RobotizeToolbox.CommonControls;
-using RobotizeToolbox.Components;
+using RuRayToolbox.CommonControls;
+using RuRayToolbox.Components;
 
-namespace RobotizeFacebook.App.LoggedIn.Pages
+namespace RuRayFacebook.App.LoggedIn.Pages
 {
     public class ListItemContactGroupConversation : BaseDiv, IListItem
     {

@@ -1,4 +1,4 @@
-﻿namespace RobotizeLibrary.Components.Eidtor
+﻿namespace RuRayLibrary.Components.Eidtor
 {
     public interface IFeedContainer
     {

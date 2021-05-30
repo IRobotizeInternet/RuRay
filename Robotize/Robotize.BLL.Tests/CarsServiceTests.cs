@@ -1,12 +1,12 @@
 using AutoFixture;
-using Robotize.BLL.Tests.Helpers;
+using RuRay.BLL.Tests.Helpers;
 using Xunit;
-using Robotize.DAL.MySql.Models;
+using RuRay.DAL.MySql.Models;
 using System;
 using Newtonsoft.Json;
-using Robotize.BLL.Models;
+using RuRay.BLL.Models;
 
-namespace Robotize.BLL.Tests
+namespace RuRay.BLL.Tests
 {
     public class CarsServiceTests
     {

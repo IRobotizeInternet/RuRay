@@ -6,10 +6,10 @@ using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Robotize.BLL.Contracts;
+using RuRay.BLL.Contracts;
 using Swashbuckle.AspNetCore.Annotations;
 
-namespace Robotize.API.Controllers
+namespace RuRay.API.Controllers
 {
     [AllowAnonymous]
     [Produces("application/json")]

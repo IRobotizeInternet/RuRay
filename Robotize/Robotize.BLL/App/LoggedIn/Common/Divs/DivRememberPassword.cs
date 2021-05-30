@@ -1,9 +1,9 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using Robotize.BLL.Resources;
-using RobotizeToolbox.CommonControls;
+using RuRay.BLL.Resources;
+using RuRayToolbox.CommonControls;
 
-namespace RobotizeFacebook.App.LoggedIn.Components
+namespace RuRayFacebook.App.LoggedIn.Components
 {
     public class DivRememberPassword
     {

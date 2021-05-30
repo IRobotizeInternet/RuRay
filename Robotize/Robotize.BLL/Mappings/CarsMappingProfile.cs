@@ -1,9 +1,9 @@
 using AutoMapper;
-using Robotize.BLL.Models;
-using Robotize.DAL.MySql.Models;
+using RuRay.BLL.Models;
+using RuRay.DAL.MySql.Models;
 using System;
 
-namespace Robotize.BLL.Mappings
+namespace RuRay.BLL.Mappings
 {
     public class CarsMapping : Profile
     {

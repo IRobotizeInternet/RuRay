@@ -5,13 +5,13 @@
 System.ArgumentNullException: Value cannot be null. (Parameter 'typeName')
    at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark)
    at System.Type.GetType(String typeName)
-   at RobotizeFacebook.App.LoggedIn.Pages.BaseDriver.get_Driver() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\BaseDriver.cs:line 41
-   at RobotizeFacebook.App.LoggedIn.Pages.BaseDriver.InitializeDriverAndWait() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\BaseDriver.cs:line 29
-   at RobotizeFacebook.App.LoggedIn.Pages.BaseDriver..ctor() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\BaseDriver.cs:line 22
-   at RobotizeFacebook.App.LoggedIn.Pages.BasePage..ctor() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\BasePage.cs:line 26
-   at RobotizeFacebook.App.LoggedIn.Pages.PageHome..ctor() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\LoggedIn\Pages\Home\PageHome.cs:line 14
-   at Robotize.BLL.ServiceHomeHeader.FacebookSwitchMode(Switch mode) in D:\Dev\Robotize\Robotize\Robotize.BLL\Services\ServiceHomeHeader.cs:line 14
-   at Robotize.API.Controllers.HomeHeaderController.FacebookSwitchMode(Switch mode) in D:\Dev\Robotize\Robotize\Robotize.API\Controllers\HomeHeaderController.cs:line 54
+   at RuRayFacebook.App.LoggedIn.Pages.BaseDriver.get_Driver() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\BaseDriver.cs:line 41
+   at RuRayFacebook.App.LoggedIn.Pages.BaseDriver.InitializeDriverAndWait() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\BaseDriver.cs:line 29
+   at RuRayFacebook.App.LoggedIn.Pages.BaseDriver..ctor() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\BaseDriver.cs:line 22
+   at RuRayFacebook.App.LoggedIn.Pages.BasePage..ctor() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\BasePage.cs:line 26
+   at RuRayFacebook.App.LoggedIn.Pages.PageHome..ctor() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\LoggedIn\Pages\Home\PageHome.cs:line 14
+   at RuRay.BLL.ServiceHomeHeader.FacebookSwitchMode(Switch mode) in D:\Dev\RuRay\RuRay\RuRay.BLL\Services\ServiceHomeHeader.cs:line 14
+   at RuRay.API.Controllers.HomeHeaderController.FacebookSwitchMode(Switch mode) in D:\Dev\RuRay\RuRay\RuRay.API\Controllers\HomeHeaderController.cs:line 54
    at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
@@ -27,18 +27,18 @@ System.ArgumentNullException: Value cannot be null. (Parameter 'typeName')
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Robotize.API.Middleware.HttpContextMiddleware.Invoke(HttpContext httpContext) in D:\Dev\Robotize\Robotize\Robotize.API\Middlewares\HttpContextMiddleware.cs:line 40
+   at RuRay.API.Middleware.HttpContextMiddleware.Invoke(HttpContext httpContext) in D:\Dev\RuRay\RuRay\RuRay.API\Middlewares\HttpContextMiddleware.cs:line 40
 2021-04-12 17:16:53.355 -07:00 [Error] HTTP "POST" "/api/v1/HomeHeader" responded 500 in 28631.1734 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Headers:[("Accept": "*/*"), ("Accept-Encoding": "gzip, deflate, br"), ("Accept-Language": "en-US,en;q=0.9"), ("Connection": "keep-alive"), ("Content-Length": "0"), ("Host": "localhost:51780"), ("Referer": "http://localhost:51780/swagger/index.html"), ("User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"), ("sec-ch-ua": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""), ("sec-ch-ua-mobile": "?0"), ("Origin": "http://localhost:51780"), ("Sec-Fetch-Site": "same-origin"), ("Sec-Fetch-Mode": "cors"), ("Sec-Fetch-Dest": "empty")]]
 System.ArgumentNullException: Value cannot be null. (Parameter 'typeName')
    at System.RuntimeType.GetType(String typeName, Boolean throwOnError, Boolean ignoreCase, StackCrawlMark& stackMark)
    at System.Type.GetType(String typeName)
-   at RobotizeFacebook.App.LoggedIn.Pages.BaseDriver.get_Driver() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\BaseDriver.cs:line 41
-   at RobotizeFacebook.App.LoggedIn.Pages.BaseDriver.InitializeDriverAndWait() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\BaseDriver.cs:line 29
-   at RobotizeFacebook.App.LoggedIn.Pages.BaseDriver..ctor() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\BaseDriver.cs:line 22
-   at RobotizeFacebook.App.LoggedIn.Pages.BasePage..ctor() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\BasePage.cs:line 26
-   at RobotizeFacebook.App.LoggedIn.Pages.PageHome..ctor() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\LoggedIn\Pages\Home\PageHome.cs:line 14
-   at Robotize.BLL.ServiceHomeHeader.FacebookSwitchMode(Switch mode) in D:\Dev\Robotize\Robotize\Robotize.BLL\Services\ServiceHomeHeader.cs:line 14
-   at Robotize.API.Controllers.HomeHeaderController.FacebookSwitchMode(Switch mode) in D:\Dev\Robotize\Robotize\Robotize.API\Controllers\HomeHeaderController.cs:line 54
+   at RuRayFacebook.App.LoggedIn.Pages.BaseDriver.get_Driver() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\BaseDriver.cs:line 41
+   at RuRayFacebook.App.LoggedIn.Pages.BaseDriver.InitializeDriverAndWait() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\BaseDriver.cs:line 29
+   at RuRayFacebook.App.LoggedIn.Pages.BaseDriver..ctor() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\BaseDriver.cs:line 22
+   at RuRayFacebook.App.LoggedIn.Pages.BasePage..ctor() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\BasePage.cs:line 26
+   at RuRayFacebook.App.LoggedIn.Pages.PageHome..ctor() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\LoggedIn\Pages\Home\PageHome.cs:line 14
+   at RuRay.BLL.ServiceHomeHeader.FacebookSwitchMode(Switch mode) in D:\Dev\RuRay\RuRay\RuRay.BLL\Services\ServiceHomeHeader.cs:line 14
+   at RuRay.API.Controllers.HomeHeaderController.FacebookSwitchMode(Switch mode) in D:\Dev\RuRay\RuRay\RuRay.API\Controllers\HomeHeaderController.cs:line 54
    at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
@@ -54,7 +54,7 @@ System.ArgumentNullException: Value cannot be null. (Parameter 'typeName')
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Robotize.API.Middleware.HttpContextMiddleware.Invoke(HttpContext httpContext) in D:\Dev\Robotize\Robotize\Robotize.API\Middlewares\HttpContextMiddleware.cs:line 40
+   at RuRay.API.Middleware.HttpContextMiddleware.Invoke(HttpContext httpContext) in D:\Dev\RuRay\RuRay\RuRay.API\Middlewares\HttpContextMiddleware.cs:line 40
 2021-04-12 17:18:03.092 -07:00 [Information] web api service is started.
 2021-04-12 17:18:05.835 -07:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 877.5341 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:""][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"]
 2021-04-12 17:18:06.741 -07:00 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 383.3423 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger/index.html"][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"]
@@ -69,13 +69,13 @@ System.ArgumentNullException: Value cannot be null. (Parameter 'typeName')
 System.ArgumentNullException: Value cannot be null. (Parameter 'type')
    at System.Activator.CreateInstance(Type type, BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes)
    at System.Activator.CreateInstance(Type type, Object[] args)
-   at RobotizeFacebook.App.LoggedIn.Pages.BaseDriver.get_Driver() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\BaseDriver.cs:line 41
-   at RobotizeFacebook.App.LoggedIn.Pages.BaseDriver.InitializeDriverAndWait() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\BaseDriver.cs:line 29
-   at RobotizeFacebook.App.LoggedIn.Pages.BaseDriver..ctor() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\BaseDriver.cs:line 22
-   at RobotizeFacebook.App.LoggedIn.Pages.BasePage..ctor() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\BasePage.cs:line 26
-   at RobotizeFacebook.App.LoggedIn.Pages.PageHome..ctor() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\LoggedIn\Pages\Home\PageHome.cs:line 14
-   at Robotize.BLL.ServiceHomeHeader.FacebookSwitchMode(Switch mode) in D:\Dev\Robotize\Robotize\Robotize.BLL\Services\ServiceHomeHeader.cs:line 14
-   at Robotize.API.Controllers.HomeHeaderController.FacebookSwitchMode(Switch mode) in D:\Dev\Robotize\Robotize\Robotize.API\Controllers\HomeHeaderController.cs:line 54
+   at RuRayFacebook.App.LoggedIn.Pages.BaseDriver.get_Driver() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\BaseDriver.cs:line 41
+   at RuRayFacebook.App.LoggedIn.Pages.BaseDriver.InitializeDriverAndWait() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\BaseDriver.cs:line 29
+   at RuRayFacebook.App.LoggedIn.Pages.BaseDriver..ctor() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\BaseDriver.cs:line 22
+   at RuRayFacebook.App.LoggedIn.Pages.BasePage..ctor() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\BasePage.cs:line 26
+   at RuRayFacebook.App.LoggedIn.Pages.PageHome..ctor() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\LoggedIn\Pages\Home\PageHome.cs:line 14
+   at RuRay.BLL.ServiceHomeHeader.FacebookSwitchMode(Switch mode) in D:\Dev\RuRay\RuRay\RuRay.BLL\Services\ServiceHomeHeader.cs:line 14
+   at RuRay.API.Controllers.HomeHeaderController.FacebookSwitchMode(Switch mode) in D:\Dev\RuRay\RuRay\RuRay.API\Controllers\HomeHeaderController.cs:line 54
    at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
@@ -91,7 +91,7 @@ System.ArgumentNullException: Value cannot be null. (Parameter 'type')
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Robotize.API.Middleware.HttpContextMiddleware.Invoke(HttpContext httpContext) in D:\Dev\Robotize\Robotize\Robotize.API\Middlewares\HttpContextMiddleware.cs:line 40
+   at RuRay.API.Middleware.HttpContextMiddleware.Invoke(HttpContext httpContext) in D:\Dev\RuRay\RuRay\RuRay.API\Middlewares\HttpContextMiddleware.cs:line 40
 2021-04-12 17:26:27.612 -07:00 [Information] web api service is started.
 2021-04-12 17:26:30.455 -07:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 785.6339 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:""][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"]
 2021-04-12 17:26:31.454 -07:00 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 435.5230 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger/index.html"][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"]
@@ -99,13 +99,13 @@ System.ArgumentNullException: Value cannot be null. (Parameter 'type')
 System.ArgumentNullException: Value cannot be null. (Parameter 'type')
    at System.Activator.CreateInstance(Type type, BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes)
    at System.Activator.CreateInstance(Type type, Object[] args)
-   at RobotizeFacebook.App.LoggedIn.Pages.BaseDriver.get_Driver() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\BaseDriver.cs:line 41
-   at RobotizeFacebook.App.LoggedIn.Pages.BaseDriver.InitializeDriverAndWait() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\BaseDriver.cs:line 29
-   at RobotizeFacebook.App.LoggedIn.Pages.BaseDriver..ctor() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\BaseDriver.cs:line 22
-   at RobotizeFacebook.App.LoggedIn.Pages.BasePage..ctor() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\BasePage.cs:line 26
-   at RobotizeFacebook.App.LoggedIn.Pages.PageHome..ctor() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\LoggedIn\Pages\Home\PageHome.cs:line 14
-   at Robotize.BLL.ServiceHomeHeader.FacebookSwitchMode(Switch mode) in D:\Dev\Robotize\Robotize\Robotize.BLL\Services\ServiceHomeHeader.cs:line 14
-   at Robotize.API.Controllers.HomeHeaderController.FacebookSwitchMode(Switch mode) in D:\Dev\Robotize\Robotize\Robotize.API\Controllers\HomeHeaderController.cs:line 54
+   at RuRayFacebook.App.LoggedIn.Pages.BaseDriver.get_Driver() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\BaseDriver.cs:line 41
+   at RuRayFacebook.App.LoggedIn.Pages.BaseDriver.InitializeDriverAndWait() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\BaseDriver.cs:line 29
+   at RuRayFacebook.App.LoggedIn.Pages.BaseDriver..ctor() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\BaseDriver.cs:line 22
+   at RuRayFacebook.App.LoggedIn.Pages.BasePage..ctor() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\BasePage.cs:line 26
+   at RuRayFacebook.App.LoggedIn.Pages.PageHome..ctor() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\LoggedIn\Pages\Home\PageHome.cs:line 14
+   at RuRay.BLL.ServiceHomeHeader.FacebookSwitchMode(Switch mode) in D:\Dev\RuRay\RuRay\RuRay.BLL\Services\ServiceHomeHeader.cs:line 14
+   at RuRay.API.Controllers.HomeHeaderController.FacebookSwitchMode(Switch mode) in D:\Dev\RuRay\RuRay\RuRay.API\Controllers\HomeHeaderController.cs:line 54
    at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
@@ -121,18 +121,18 @@ System.ArgumentNullException: Value cannot be null. (Parameter 'type')
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Robotize.API.Middleware.HttpContextMiddleware.Invoke(HttpContext httpContext) in D:\Dev\Robotize\Robotize\Robotize.API\Middlewares\HttpContextMiddleware.cs:line 40
+   at RuRay.API.Middleware.HttpContextMiddleware.Invoke(HttpContext httpContext) in D:\Dev\RuRay\RuRay\RuRay.API\Middlewares\HttpContextMiddleware.cs:line 40
 2021-04-12 17:28:38.353 -07:00 [Error] HTTP "POST" "/api/v1/HomeHeader/1" responded 500 in 69278.7389 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Headers:[("Accept": "*/*"), ("Accept-Encoding": "gzip, deflate, br"), ("Accept-Language": "en-US,en;q=0.9"), ("Connection": "keep-alive"), ("Content-Length": "0"), ("Host": "localhost:51780"), ("Referer": "http://localhost:51780/swagger/index.html"), ("User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"), ("sec-ch-ua": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""), ("sec-ch-ua-mobile": "?0"), ("Origin": "http://localhost:51780"), ("Sec-Fetch-Site": "same-origin"), ("Sec-Fetch-Mode": "cors"), ("Sec-Fetch-Dest": "empty")]]
 System.ArgumentNullException: Value cannot be null. (Parameter 'type')
    at System.Activator.CreateInstance(Type type, BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes)
    at System.Activator.CreateInstance(Type type, Object[] args)
-   at RobotizeFacebook.App.LoggedIn.Pages.BaseDriver.get_Driver() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\BaseDriver.cs:line 41
-   at RobotizeFacebook.App.LoggedIn.Pages.BaseDriver.InitializeDriverAndWait() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\BaseDriver.cs:line 29
-   at RobotizeFacebook.App.LoggedIn.Pages.BaseDriver..ctor() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\BaseDriver.cs:line 22
-   at RobotizeFacebook.App.LoggedIn.Pages.BasePage..ctor() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\BasePage.cs:line 26
-   at RobotizeFacebook.App.LoggedIn.Pages.PageHome..ctor() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\LoggedIn\Pages\Home\PageHome.cs:line 14
-   at Robotize.BLL.ServiceHomeHeader.FacebookSwitchMode(Switch mode) in D:\Dev\Robotize\Robotize\Robotize.BLL\Services\ServiceHomeHeader.cs:line 14
-   at Robotize.API.Controllers.HomeHeaderController.FacebookSwitchMode(Switch mode) in D:\Dev\Robotize\Robotize\Robotize.API\Controllers\HomeHeaderController.cs:line 54
+   at RuRayFacebook.App.LoggedIn.Pages.BaseDriver.get_Driver() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\BaseDriver.cs:line 41
+   at RuRayFacebook.App.LoggedIn.Pages.BaseDriver.InitializeDriverAndWait() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\BaseDriver.cs:line 29
+   at RuRayFacebook.App.LoggedIn.Pages.BaseDriver..ctor() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\BaseDriver.cs:line 22
+   at RuRayFacebook.App.LoggedIn.Pages.BasePage..ctor() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\BasePage.cs:line 26
+   at RuRayFacebook.App.LoggedIn.Pages.PageHome..ctor() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\LoggedIn\Pages\Home\PageHome.cs:line 14
+   at RuRay.BLL.ServiceHomeHeader.FacebookSwitchMode(Switch mode) in D:\Dev\RuRay\RuRay\RuRay.BLL\Services\ServiceHomeHeader.cs:line 14
+   at RuRay.API.Controllers.HomeHeaderController.FacebookSwitchMode(Switch mode) in D:\Dev\RuRay\RuRay\RuRay.API\Controllers\HomeHeaderController.cs:line 54
    at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
@@ -148,18 +148,18 @@ System.ArgumentNullException: Value cannot be null. (Parameter 'type')
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Robotize.API.Middleware.HttpContextMiddleware.Invoke(HttpContext httpContext) in D:\Dev\Robotize\Robotize\Robotize.API\Middlewares\HttpContextMiddleware.cs:line 40
+   at RuRay.API.Middleware.HttpContextMiddleware.Invoke(HttpContext httpContext) in D:\Dev\RuRay\RuRay\RuRay.API\Middlewares\HttpContextMiddleware.cs:line 40
 2021-04-12 17:28:45.426 -07:00 [Error] HTTP "POST" "/api/v1/HomeHeader/1" responded 500 in 4028.3090 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Headers:[("Accept": "*/*"), ("Accept-Encoding": "gzip, deflate, br"), ("Accept-Language": "en-US,en;q=0.9"), ("Connection": "keep-alive"), ("Content-Length": "0"), ("Host": "localhost:51780"), ("Referer": "http://localhost:51780/swagger/index.html"), ("User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"), ("sec-ch-ua": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""), ("sec-ch-ua-mobile": "?0"), ("Origin": "http://localhost:51780"), ("Sec-Fetch-Site": "same-origin"), ("Sec-Fetch-Mode": "cors"), ("Sec-Fetch-Dest": "empty")]]
 System.ArgumentNullException: Value cannot be null. (Parameter 'type')
    at System.Activator.CreateInstance(Type type, BindingFlags bindingAttr, Binder binder, Object[] args, CultureInfo culture, Object[] activationAttributes)
    at System.Activator.CreateInstance(Type type, Object[] args)
-   at RobotizeFacebook.App.LoggedIn.Pages.BaseDriver.get_Driver() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\BaseDriver.cs:line 41
-   at RobotizeFacebook.App.LoggedIn.Pages.BaseDriver.InitializeDriverAndWait() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\BaseDriver.cs:line 29
-   at RobotizeFacebook.App.LoggedIn.Pages.BaseDriver..ctor() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\BaseDriver.cs:line 22
-   at RobotizeFacebook.App.LoggedIn.Pages.BasePage..ctor() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\BasePage.cs:line 26
-   at RobotizeFacebook.App.LoggedIn.Pages.PageHome..ctor() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\LoggedIn\Pages\Home\PageHome.cs:line 14
-   at Robotize.BLL.ServiceHomeHeader.FacebookSwitchMode(Switch mode) in D:\Dev\Robotize\Robotize\Robotize.BLL\Services\ServiceHomeHeader.cs:line 14
-   at Robotize.API.Controllers.HomeHeaderController.FacebookSwitchMode(Switch mode) in D:\Dev\Robotize\Robotize\Robotize.API\Controllers\HomeHeaderController.cs:line 54
+   at RuRayFacebook.App.LoggedIn.Pages.BaseDriver.get_Driver() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\BaseDriver.cs:line 41
+   at RuRayFacebook.App.LoggedIn.Pages.BaseDriver.InitializeDriverAndWait() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\BaseDriver.cs:line 29
+   at RuRayFacebook.App.LoggedIn.Pages.BaseDriver..ctor() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\BaseDriver.cs:line 22
+   at RuRayFacebook.App.LoggedIn.Pages.BasePage..ctor() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\BasePage.cs:line 26
+   at RuRayFacebook.App.LoggedIn.Pages.PageHome..ctor() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\LoggedIn\Pages\Home\PageHome.cs:line 14
+   at RuRay.BLL.ServiceHomeHeader.FacebookSwitchMode(Switch mode) in D:\Dev\RuRay\RuRay\RuRay.BLL\Services\ServiceHomeHeader.cs:line 14
+   at RuRay.API.Controllers.HomeHeaderController.FacebookSwitchMode(Switch mode) in D:\Dev\RuRay\RuRay\RuRay.API\Controllers\HomeHeaderController.cs:line 54
    at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
@@ -175,7 +175,7 @@ System.ArgumentNullException: Value cannot be null. (Parameter 'type')
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Robotize.API.Middleware.HttpContextMiddleware.Invoke(HttpContext httpContext) in D:\Dev\Robotize\Robotize\Robotize.API\Middlewares\HttpContextMiddleware.cs:line 40
+   at RuRay.API.Middleware.HttpContextMiddleware.Invoke(HttpContext httpContext) in D:\Dev\RuRay\RuRay\RuRay.API\Middlewares\HttpContextMiddleware.cs:line 40
 2021-04-12 17:37:03.417 -07:00 [Information] web api service is started.
 2021-04-12 17:37:05.559 -07:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 701.2517 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:""][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"]
 2021-04-12 17:37:06.251 -07:00 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 259.7975 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger/index.html"][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"]
@@ -183,15 +183,15 @@ System.ArgumentNullException: Value cannot be null. (Parameter 'type')
 System.ComponentModel.Win32Exception (193): The specified executable is not a valid application for this OS platform.
    at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo startInfo)
    at System.Diagnostics.Process.Start()
-   at RobotizeFacebook.Services.ServiceBrowser.OpenBrowser() in D:\Dev\Robotize\Robotize\Robotize.BLL\Services\ServiceBrowser.cs:line 42
-   at RobotizeFacebook.WebDrivers.Chrome.Driver(Boolean useExistingBrowser) in D:\Dev\Robotize\Robotize\Robotize.BLL\WebDrivers\Chrome.cs:line 23
-   at RobotizeFacebook.App.LoggedIn.Pages.BaseDriver.get_Driver() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\BaseDriver.cs:line 42
-   at RobotizeFacebook.App.LoggedIn.Pages.BaseDriver.InitializeDriverAndWait() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\BaseDriver.cs:line 29
-   at RobotizeFacebook.App.LoggedIn.Pages.BaseDriver..ctor() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\BaseDriver.cs:line 22
-   at RobotizeFacebook.App.LoggedIn.Pages.BasePage..ctor() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\BasePage.cs:line 26
-   at RobotizeFacebook.App.LoggedIn.Pages.PageHome..ctor() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\LoggedIn\Pages\Home\PageHome.cs:line 14
-   at Robotize.BLL.ServiceHomeHeader.FacebookSwitchMode(Switch mode) in D:\Dev\Robotize\Robotize\Robotize.BLL\Services\ServiceHomeHeader.cs:line 14
-   at Robotize.API.Controllers.HomeHeaderController.FacebookSwitchMode(Switch mode) in D:\Dev\Robotize\Robotize\Robotize.API\Controllers\HomeHeaderController.cs:line 54
+   at RuRayFacebook.Services.ServiceBrowser.OpenBrowser() in D:\Dev\RuRay\RuRay\RuRay.BLL\Services\ServiceBrowser.cs:line 42
+   at RuRayFacebook.WebDrivers.Chrome.Driver(Boolean useExistingBrowser) in D:\Dev\RuRay\RuRay\RuRay.BLL\WebDrivers\Chrome.cs:line 23
+   at RuRayFacebook.App.LoggedIn.Pages.BaseDriver.get_Driver() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\BaseDriver.cs:line 42
+   at RuRayFacebook.App.LoggedIn.Pages.BaseDriver.InitializeDriverAndWait() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\BaseDriver.cs:line 29
+   at RuRayFacebook.App.LoggedIn.Pages.BaseDriver..ctor() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\BaseDriver.cs:line 22
+   at RuRayFacebook.App.LoggedIn.Pages.BasePage..ctor() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\BasePage.cs:line 26
+   at RuRayFacebook.App.LoggedIn.Pages.PageHome..ctor() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\LoggedIn\Pages\Home\PageHome.cs:line 14
+   at RuRay.BLL.ServiceHomeHeader.FacebookSwitchMode(Switch mode) in D:\Dev\RuRay\RuRay\RuRay.BLL\Services\ServiceHomeHeader.cs:line 14
+   at RuRay.API.Controllers.HomeHeaderController.FacebookSwitchMode(Switch mode) in D:\Dev\RuRay\RuRay\RuRay.API\Controllers\HomeHeaderController.cs:line 54
    at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
@@ -207,20 +207,20 @@ System.ComponentModel.Win32Exception (193): The specified executable is not a va
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Robotize.API.Middleware.HttpContextMiddleware.Invoke(HttpContext httpContext) in D:\Dev\Robotize\Robotize\Robotize.API\Middlewares\HttpContextMiddleware.cs:line 40
+   at RuRay.API.Middleware.HttpContextMiddleware.Invoke(HttpContext httpContext) in D:\Dev\RuRay\RuRay\RuRay.API\Middlewares\HttpContextMiddleware.cs:line 40
 2021-04-12 17:39:14.216 -07:00 [Error] HTTP "POST" "/api/v1/HomeHeader/1" responded 500 in 71759.6564 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Headers:[("Accept": "*/*"), ("Accept-Encoding": "gzip, deflate, br"), ("Accept-Language": "en-US,en;q=0.9"), ("Connection": "keep-alive"), ("Content-Length": "0"), ("Host": "localhost:51780"), ("Referer": "http://localhost:51780/swagger/index.html"), ("User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"), ("sec-ch-ua": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""), ("sec-ch-ua-mobile": "?0"), ("Origin": "http://localhost:51780"), ("Sec-Fetch-Site": "same-origin"), ("Sec-Fetch-Mode": "cors"), ("Sec-Fetch-Dest": "empty")]]
 System.ComponentModel.Win32Exception (193): The specified executable is not a valid application for this OS platform.
    at System.Diagnostics.Process.StartWithCreateProcess(ProcessStartInfo startInfo)
    at System.Diagnostics.Process.Start()
-   at RobotizeFacebook.Services.ServiceBrowser.OpenBrowser() in D:\Dev\Robotize\Robotize\Robotize.BLL\Services\ServiceBrowser.cs:line 42
-   at RobotizeFacebook.WebDrivers.Chrome.Driver(Boolean useExistingBrowser) in D:\Dev\Robotize\Robotize\Robotize.BLL\WebDrivers\Chrome.cs:line 23
-   at RobotizeFacebook.App.LoggedIn.Pages.BaseDriver.get_Driver() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\BaseDriver.cs:line 42
-   at RobotizeFacebook.App.LoggedIn.Pages.BaseDriver.InitializeDriverAndWait() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\BaseDriver.cs:line 29
-   at RobotizeFacebook.App.LoggedIn.Pages.BaseDriver..ctor() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\BaseDriver.cs:line 22
-   at RobotizeFacebook.App.LoggedIn.Pages.BasePage..ctor() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\BasePage.cs:line 26
-   at RobotizeFacebook.App.LoggedIn.Pages.PageHome..ctor() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\LoggedIn\Pages\Home\PageHome.cs:line 14
-   at Robotize.BLL.ServiceHomeHeader.FacebookSwitchMode(Switch mode) in D:\Dev\Robotize\Robotize\Robotize.BLL\Services\ServiceHomeHeader.cs:line 14
-   at Robotize.API.Controllers.HomeHeaderController.FacebookSwitchMode(Switch mode) in D:\Dev\Robotize\Robotize\Robotize.API\Controllers\HomeHeaderController.cs:line 54
+   at RuRayFacebook.Services.ServiceBrowser.OpenBrowser() in D:\Dev\RuRay\RuRay\RuRay.BLL\Services\ServiceBrowser.cs:line 42
+   at RuRayFacebook.WebDrivers.Chrome.Driver(Boolean useExistingBrowser) in D:\Dev\RuRay\RuRay\RuRay.BLL\WebDrivers\Chrome.cs:line 23
+   at RuRayFacebook.App.LoggedIn.Pages.BaseDriver.get_Driver() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\BaseDriver.cs:line 42
+   at RuRayFacebook.App.LoggedIn.Pages.BaseDriver.InitializeDriverAndWait() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\BaseDriver.cs:line 29
+   at RuRayFacebook.App.LoggedIn.Pages.BaseDriver..ctor() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\BaseDriver.cs:line 22
+   at RuRayFacebook.App.LoggedIn.Pages.BasePage..ctor() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\BasePage.cs:line 26
+   at RuRayFacebook.App.LoggedIn.Pages.PageHome..ctor() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\LoggedIn\Pages\Home\PageHome.cs:line 14
+   at RuRay.BLL.ServiceHomeHeader.FacebookSwitchMode(Switch mode) in D:\Dev\RuRay\RuRay\RuRay.BLL\Services\ServiceHomeHeader.cs:line 14
+   at RuRay.API.Controllers.HomeHeaderController.FacebookSwitchMode(Switch mode) in D:\Dev\RuRay\RuRay\RuRay.API\Controllers\HomeHeaderController.cs:line 54
    at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
@@ -236,7 +236,7 @@ System.ComponentModel.Win32Exception (193): The specified executable is not a va
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Robotize.API.Middleware.HttpContextMiddleware.Invoke(HttpContext httpContext) in D:\Dev\Robotize\Robotize\Robotize.API\Middlewares\HttpContextMiddleware.cs:line 40
+   at RuRay.API.Middleware.HttpContextMiddleware.Invoke(HttpContext httpContext) in D:\Dev\RuRay\RuRay\RuRay.API\Middlewares\HttpContextMiddleware.cs:line 40
 2021-04-12 17:42:10.070 -07:00 [Information] web api service is started.
 2021-04-12 17:42:11.878 -07:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 532.6607 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:""][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"]
 2021-04-12 17:42:12.982 -07:00 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 440.0848 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger/index.html"][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"]
@@ -247,15 +247,15 @@ System.ComponentModel.Win32Exception (193): The specified executable is not a va
 System.InvalidOperationException: Sequence contains no elements
    at System.Linq.ThrowHelper.ThrowNoElementsException()
    at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
-   at RobotizeFacebook.Services.ServiceBrowser.OpenBrowser() in D:\Dev\Robotize\Robotize\Robotize.BLL\Services\ServiceBrowser.cs:line 44
-   at RobotizeFacebook.WebDrivers.Chrome.Driver(Boolean useExistingBrowser) in D:\Dev\Robotize\Robotize\Robotize.BLL\WebDrivers\Chrome.cs:line 23
-   at RobotizeFacebook.App.LoggedIn.Pages.BaseDriver.get_Driver() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\BaseDriver.cs:line 42
-   at RobotizeFacebook.App.LoggedIn.Pages.BaseDriver.InitializeDriverAndWait() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\BaseDriver.cs:line 29
-   at RobotizeFacebook.App.LoggedIn.Pages.BaseDriver..ctor() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\BaseDriver.cs:line 22
-   at RobotizeFacebook.App.LoggedIn.Pages.BasePage..ctor() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\BasePage.cs:line 26
-   at RobotizeFacebook.App.LoggedIn.Pages.PageHome..ctor() in D:\Dev\Robotize\Robotize\Robotize.BLL\App\LoggedIn\Pages\Home\PageHome.cs:line 14
-   at Robotize.BLL.ServiceHomeHeader.FacebookSwitchMode(Switch mode) in D:\Dev\Robotize\Robotize\Robotize.BLL\Services\ServiceHomeHeader.cs:line 14
-   at Robotize.API.Controllers.HomeHeaderController.FacebookSwitchMode(Switch mode) in D:\Dev\Robotize\Robotize\Robotize.API\Controllers\HomeHeaderController.cs:line 54
+   at RuRayFacebook.Services.ServiceBrowser.OpenBrowser() in D:\Dev\RuRay\RuRay\RuRay.BLL\Services\ServiceBrowser.cs:line 44
+   at RuRayFacebook.WebDrivers.Chrome.Driver(Boolean useExistingBrowser) in D:\Dev\RuRay\RuRay\RuRay.BLL\WebDrivers\Chrome.cs:line 23
+   at RuRayFacebook.App.LoggedIn.Pages.BaseDriver.get_Driver() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\BaseDriver.cs:line 42
+   at RuRayFacebook.App.LoggedIn.Pages.BaseDriver.InitializeDriverAndWait() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\BaseDriver.cs:line 29
+   at RuRayFacebook.App.LoggedIn.Pages.BaseDriver..ctor() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\BaseDriver.cs:line 22
+   at RuRayFacebook.App.LoggedIn.Pages.BasePage..ctor() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\BasePage.cs:line 26
+   at RuRayFacebook.App.LoggedIn.Pages.PageHome..ctor() in D:\Dev\RuRay\RuRay\RuRay.BLL\App\LoggedIn\Pages\Home\PageHome.cs:line 14
+   at RuRay.BLL.ServiceHomeHeader.FacebookSwitchMode(Switch mode) in D:\Dev\RuRay\RuRay\RuRay.BLL\Services\ServiceHomeHeader.cs:line 14
+   at RuRay.API.Controllers.HomeHeaderController.FacebookSwitchMode(Switch mode) in D:\Dev\RuRay\RuRay\RuRay.API\Controllers\HomeHeaderController.cs:line 54
    at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
@@ -271,7 +271,7 @@ System.InvalidOperationException: Sequence contains no elements
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Robotize.API.Middleware.HttpContextMiddleware.Invoke(HttpContext httpContext) in D:\Dev\Robotize\Robotize\Robotize.API\Middlewares\HttpContextMiddleware.cs:line 40
+   at RuRay.API.Middleware.HttpContextMiddleware.Invoke(HttpContext httpContext) in D:\Dev\RuRay\RuRay\RuRay.API\Middlewares\HttpContextMiddleware.cs:line 40
 2021-04-12 17:47:30.758 -07:00 [Information] web api service is started.
 2021-04-12 17:47:32.061 -07:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 318.6665 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:""][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"]
 2021-04-12 17:47:32.827 -07:00 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 403.9385 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger/index.html"][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"]

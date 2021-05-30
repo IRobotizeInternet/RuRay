@@ -10,7 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Robotize.BLL\Robotize.BLL.csproj" />
+    <ProjectReference Include="..\Robotize.BLL\RuRay.BLL.csproj" />
   </ItemGroup>
 
 </Project>

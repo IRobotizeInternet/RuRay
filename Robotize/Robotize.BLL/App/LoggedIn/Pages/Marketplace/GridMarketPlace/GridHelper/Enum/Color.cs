@@ -1,7 +1,7 @@
-﻿using RobotizeToolbox.CustomAttributes;
-using Robotize.BLL.Resources;
+﻿using RuRayToolbox.CustomAttributes;
+using RuRay.BLL.Resources;
 
-namespace RobotizeFacebook.App.LoggedIn
+namespace RuRayFacebook.App.LoggedIn
 {
     public enum ColorVehicleInteriorExterior
     {

@@ -1,11 +1,11 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using RobotizeToolbox.Controls;
-using RobotizeToolbox.Extensions;
+using RuRayToolbox.Controls;
+using RuRayToolbox.Extensions;
 using System;
 using System.Threading;
 
-namespace RobotizeFacebook.App.LoggedIn
+namespace RuRayFacebook.App.LoggedIn
 {
     public class ComboboxSharingWithYourFriends : Combobox
     {

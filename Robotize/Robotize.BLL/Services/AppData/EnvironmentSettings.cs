@@ -1,13 +1,13 @@
 ﻿using System;
 using System.IO;
-using RobotizeFacebook.Utilities;
+using RuRayFacebook.Utilities;
 
-namespace RobotizeFacebook.Services
+namespace RuRayFacebook.Services
 {
     public class EnvironmentSettings
     {
         public static string DirectoryPath =>
-            Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), AppSettings.RobotizeDataDirectory);
+            Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), AppSettings.RuRayDataDirectory);
         
         private string _fileNameWithPath { get; set; }
         public EnvironmentSettings(string fileName) 

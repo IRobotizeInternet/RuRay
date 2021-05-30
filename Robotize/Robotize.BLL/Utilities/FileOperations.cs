@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.IO;
 
-namespace RobotizeFacebook.Utilities
+namespace RuRayFacebook.Utilities
 {
     public class FileOperations
     {
@@ -18,7 +18,7 @@ namespace RobotizeFacebook.Utilities
         {
             var jsonString = JsonConvert.SerializeObject(obj);
             File.WriteAllText(fileName+DateTime.Now.Ticks+".json", jsonString);
-            //File.AppendAllText(@"D:\Dev\Robotize\RobotizeFacebook\Services\RobotizeAPIs\JsonClasses11637487615946264758.json", jsonString);
+            //File.AppendAllText(@"D:\Dev\RuRay\RuRayFacebook\Services\RuRayAPIs\JsonClasses11637487615946264758.json", jsonString);
             File.AppendAllText(fileName, jsonString);
         }
 

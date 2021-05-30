@@ -1,11 +1,11 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using RobotizeFacebook.App.LoggedIn.Components;
-using Robotize.BLL.Resources;
-using RobotizeToolbox.CommonControls;
-using RobotizeToolbox.Controls;
+using RuRayFacebook.App.LoggedIn.Components;
+using RuRay.BLL.Resources;
+using RuRayToolbox.CommonControls;
+using RuRayToolbox.Controls;
 
-namespace RobotizeFacebook.App.LoggedIn.Pages
+namespace RuRayFacebook.App.LoggedIn.Pages
 {
     public class MenuItemsLiveProducer : MenuItems
     {

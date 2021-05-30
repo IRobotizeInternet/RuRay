@@ -1,13 +1,13 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using RobotizeFacebook.App.LoggedIn.Enum;
-using Robotize.BLL.Resources;
-using RobotizeLibrary.Extensions;
-using RobotizeToolbox.Controls;
-using RobotizeToolbox.Extensions;
+using RuRayFacebook.App.LoggedIn.Enum;
+using RuRay.BLL.Resources;
+using RuRayLibrary.Extensions;
+using RuRayToolbox.Controls;
+using RuRayToolbox.Extensions;
 using System.Linq;
 
-namespace RobotizeFacebook.App.LoggedIn.Pages
+namespace RuRayFacebook.App.LoggedIn.Pages
 {
     public class DialogChooseIllustration : BaseDialog
     {

@@ -2,11 +2,11 @@
 using OpenQA.Selenium.Remote;
 using Polly;
 using Polly.Retry;
-using RobotizeFacebook.Services;
-using RobotizeFacebook.Utilities;
+using RuRayFacebook.Services;
+using RuRayFacebook.Utilities;
 using System;
 
-namespace RobotizeFacebook.WebDrivers
+namespace RuRayFacebook.WebDrivers
 {
     public class Chrome : WebDriver//, IDisposable
     {

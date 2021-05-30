@@ -1,10 +1,10 @@
 ﻿using OpenQA.Selenium;
-using RobotizeFacebook.App.LoggedIn.Pages;
-using RobotizeToolbox.CommonControls;
-using RobotizeToolbox.Controls;
-using RobotizeToolbox.Controls.TriggerControls;
+using RuRayFacebook.App.LoggedIn.Pages;
+using RuRayToolbox.CommonControls;
+using RuRayToolbox.Controls;
+using RuRayToolbox.Controls.TriggerControls;
 
-namespace RobotizeFacebook.App.NotLoggedIn
+namespace RuRayFacebook.App.NotLoggedIn
 {
     public class DialogCreateNewAccount : BaseDialog
     {

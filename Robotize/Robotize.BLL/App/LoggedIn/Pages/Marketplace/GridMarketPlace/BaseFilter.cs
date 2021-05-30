@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium.Remote;
 
 
-namespace RobotizeFacebook.App.LoggedIn
+namespace RuRayFacebook.App.LoggedIn
 {
     public abstract class BaseFilter : IApplyFilter
     {

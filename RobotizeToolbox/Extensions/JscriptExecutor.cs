@@ -4,7 +4,7 @@ using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 using Polly;
 
-namespace RobotizeToolbox.Extensions
+namespace RuRayToolbox.Extensions
 {
     public static class JscriptExecutor
     {

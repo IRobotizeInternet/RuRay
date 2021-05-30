@@ -1,7 +1,7 @@
 using AutoFixture;
-using Robotize.BLL.Models;
+using RuRay.BLL.Models;
 
-namespace Robotize.BLL.Tests.Helpers
+namespace RuRay.BLL.Tests.Helpers
 {
     public static class Fixtures
     {

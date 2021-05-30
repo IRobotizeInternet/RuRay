@@ -1,4 +1,4 @@
-﻿namespace RobotizeFacebook.App.LoggedIn.Settings.Tabs
+﻿namespace RuRayFacebook.App.LoggedIn.Settings.Tabs
 {
     public class Location
     {

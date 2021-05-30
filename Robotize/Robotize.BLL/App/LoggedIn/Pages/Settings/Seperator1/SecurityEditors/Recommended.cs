@@ -1,12 +1,12 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using RobotizeToolbox.CommonControls;
-using RobotizeToolbox.Controls;
-using RobotizeToolbox.Controls.TriggerControls;
-using Robotize.BLL.Resources;
+using RuRayToolbox.CommonControls;
+using RuRayToolbox.Controls;
+using RuRayToolbox.Controls.TriggerControls;
+using RuRay.BLL.Resources;
 using System.Collections.Generic;
 
-namespace RobotizeFacebook.App.LoggedIn.Pages
+namespace RuRayFacebook.App.LoggedIn.Pages
 {
     public class Recommended : BaseEditor
     {

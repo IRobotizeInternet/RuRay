@@ -1,5 +1,5 @@
 ﻿
-namespace RobotizeToolbox.Controls
+namespace RuRayToolbox.Controls
 {
     internal interface IDropdownElement
     {

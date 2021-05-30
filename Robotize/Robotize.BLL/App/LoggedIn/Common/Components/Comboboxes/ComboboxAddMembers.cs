@@ -1,12 +1,12 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using Robotize.BLL.Resources;
-using RobotizeToolbox.Controls;
-using RobotizeToolbox.Extensions;
+using RuRay.BLL.Resources;
+using RuRayToolbox.Controls;
+using RuRayToolbox.Extensions;
 using System;
 using System.Threading;
 
-namespace RobotizeFacebook.App.LoggedIn.Pages
+namespace RuRayFacebook.App.LoggedIn.Pages
 {
     public class ComboboxAddMembers : Combobox
     {

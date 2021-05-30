@@ -1,8 +1,8 @@
 ﻿using OpenQA.Selenium;
-using RobotizeLibrary.Components.Eidtor;
-using RobotizeToolbox.Extensions;
+using RuRayLibrary.Components.Eidtor;
+using RuRayToolbox.Extensions;
 
-namespace RobotizeFacebook.App.LoggedIn.Pages
+namespace RuRayFacebook.App.LoggedIn.Pages
 {
     public abstract class BasePage : BaseDriver, IPage
     {

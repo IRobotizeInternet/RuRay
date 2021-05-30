@@ -4,7 +4,7 @@ using System.Globalization;
 using System.CodeDom.Compiler;
 
 
-namespace RobotizeFacebook.Utilities
+namespace RuRayFacebook.Utilities
 {
     class DynamicCodeCompilation
     {

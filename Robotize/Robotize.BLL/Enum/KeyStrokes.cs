@@ -1,9 +1,9 @@
 ﻿using System.ComponentModel;
 
-namespace Robotize.BLL.Contracts
+namespace RuRay.BLL.Contracts
 {
 // If you add or remove keystrokes from here you 
-// must update enum in the Robotize.BLL.Contracts KeyStrokes
+// must update enum in the RuRay.BLL.Contracts KeyStrokes
     public enum KeyStrokes
     {
         [Description("{BACKSPACE},")] BACKSPACE = 1,

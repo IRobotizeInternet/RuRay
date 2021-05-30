@@ -1,8 +1,8 @@
 ﻿using OpenQA.Selenium;
-using RobotizeToolbox.CommonControls;
-using RobotizeToolbox.Controls.TriggerControls;
+using RuRayToolbox.CommonControls;
+using RuRayToolbox.Controls.TriggerControls;
 
-namespace RobotizeFacebook.App.LoggedIn.Pages
+namespace RuRayFacebook.App.LoggedIn.Pages
 {
     public class PasswordRecoveryPage : BasePage
     {

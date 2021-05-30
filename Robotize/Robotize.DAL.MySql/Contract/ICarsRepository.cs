@@ -1,9 +1,9 @@
-using Robotize.DAL.MySql.Models;
+using RuRay.DAL.MySql.Models;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Robotize.DAL.MySql.Contract
+namespace RuRay.DAL.MySql.Contract
 {
     public interface ICarsRepository
     {

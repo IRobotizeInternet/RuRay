@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Drawing;
 
-namespace RobotizeFacebook.Services
+namespace RuRayFacebook.Services
 {
     public class EnvironmentSettingsDTO
     {

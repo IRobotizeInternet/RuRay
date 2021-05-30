@@ -1,10 +1,10 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using RobotizeToolbox.CommonControls;
+using RuRayToolbox.CommonControls;
 using System;
 using System.Threading;
 
-namespace RobotizeToolbox.Controls.TriggerControls
+namespace RuRayToolbox.Controls.TriggerControls
 {
     public class Hyperlink <EventResult> where EventResult : class
     {

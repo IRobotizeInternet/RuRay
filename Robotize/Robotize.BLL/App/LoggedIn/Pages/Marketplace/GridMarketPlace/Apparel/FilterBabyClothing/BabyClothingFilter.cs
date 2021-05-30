@@ -1,6 +1,6 @@
 ﻿using OpenQA.Selenium.Remote;
 
-namespace RobotizeFacebook.App.LoggedIn
+namespace RuRayFacebook.App.LoggedIn
 {
     public class BabyClothingFilter : BaseFilter, IBabyClothingFilter, IBabyClothingFilterOptions
     {

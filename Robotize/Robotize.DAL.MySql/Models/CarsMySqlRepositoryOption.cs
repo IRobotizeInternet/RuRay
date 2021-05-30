@@ -1,4 +1,4 @@
-namespace Robotize.DAL.MySql
+namespace RuRay.DAL.MySql
 {
     public class CarsMySqlRepositoryOption
     {

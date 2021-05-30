@@ -1,10 +1,10 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
-using RobotizeToolbox.Extensions;
+using RuRayToolbox.Extensions;
 using System.Threading;
 
-namespace RobotizeToolbox.CommonControls
+namespace RuRayToolbox.CommonControls
 {
     public class Dropdown : BaseDOMObject
     {

@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 using System;
 
-namespace RobotizeFacebook.App.LoggedIn.Pages.Events.CreateEvent
+namespace RuRayFacebook.App.LoggedIn.Pages.Events.CreateEvent
 {
     public class DialogCreateEventOnline : BaseDialog
     {

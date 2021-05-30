@@ -1,4 +1,4 @@
-namespace Robotize.BLL.Models
+namespace RuRay.BLL.Models
 {
     public class CarsBLLOptions
     {

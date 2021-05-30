@@ -1,8 +1,8 @@
 ﻿using OpenQA.Selenium;
-using RobotizeToolbox.Controls;
-using Robotize.BLL.Resources;
+using RuRayToolbox.Controls;
+using RuRay.BLL.Resources;
 
-namespace RobotizeFacebook.App.LoggedIn.Pages
+namespace RuRayFacebook.App.LoggedIn.Pages
 {
     public class DialogCustomPrivacy : BaseSaveCancelDialog
     {

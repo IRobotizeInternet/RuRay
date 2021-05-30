@@ -1,6 +1,6 @@
 using AutoMapper;
 
-namespace Robotize.API.Mappings
+namespace RuRay.API.Mappings
 {
     public class CarsViewMappings : Profile
     {

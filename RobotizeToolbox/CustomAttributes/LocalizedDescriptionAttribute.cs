@@ -2,7 +2,7 @@
 using System.ComponentModel;
 using System.Resources;
 
-namespace RobotizeToolbox.CustomAttributes
+namespace RuRayToolbox.CustomAttributes
 {
     public class LocalizedDescriptionAttribute : DescriptionAttribute
     {

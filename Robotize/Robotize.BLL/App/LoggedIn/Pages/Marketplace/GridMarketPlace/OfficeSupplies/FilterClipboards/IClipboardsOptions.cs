@@ -1,4 +1,4 @@
-namespace RobotizeFacebook.App.LoggedIn
+namespace RuRayFacebook.App.LoggedIn
 {
     public interface IClipboardsOptions : IFilterOptions, IFilter<IClipboardsFilterOptions>
     {

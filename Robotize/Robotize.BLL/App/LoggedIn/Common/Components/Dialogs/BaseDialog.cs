@@ -2,10 +2,10 @@
 using System.Diagnostics;
 using System.Linq;
 using OpenQA.Selenium;
-using Robotize.BLL.Resources;
-using RobotizeToolbox.Extensions;
+using RuRay.BLL.Resources;
+using RuRayToolbox.Extensions;
 
-namespace RobotizeFacebook.App.LoggedIn.Pages
+namespace RuRayFacebook.App.LoggedIn.Pages
 {
     public abstract class BaseDialog : BaseDriver
     {

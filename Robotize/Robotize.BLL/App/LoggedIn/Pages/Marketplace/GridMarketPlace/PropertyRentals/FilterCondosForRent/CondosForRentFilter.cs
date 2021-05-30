@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium.Remote;
 using System;
 
-namespace RobotizeFacebook.App.LoggedIn
+namespace RuRayFacebook.App.LoggedIn
 {
     public class CondosForRentFilter : BaseFilter, ICondosForRentFilter, ICondosForRentFilterOptions
     {

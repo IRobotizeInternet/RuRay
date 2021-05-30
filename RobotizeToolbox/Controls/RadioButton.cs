@@ -1,8 +1,8 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using RobotizeToolbox.CommonControls;
+using RuRayToolbox.CommonControls;
 
-namespace RobotizeToolbox.Controls
+namespace RuRayToolbox.Controls
 {
     public class RadioButton : BaseDOMObject
     {

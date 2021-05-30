@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel;
 
-namespace RobotizeToolbox.Enums
+namespace RuRayToolbox.Enums
 {
     public static class EnumExt
     {

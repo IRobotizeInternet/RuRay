@@ -1,10 +1,10 @@
 ﻿using OpenQA.Selenium;
-using Robotize.BLL.Resources;
-using RobotizeLibrary.Extensions;
-using RobotizeToolbox.Controls;
+using RuRay.BLL.Resources;
+using RuRayLibrary.Extensions;
+using RuRayToolbox.Controls;
 using System;
 
-namespace RobotizeFacebook.App.LoggedIn.Pages
+namespace RuRayFacebook.App.LoggedIn.Pages
 {
     public class MenuItemsCommon : MenuItems
     {

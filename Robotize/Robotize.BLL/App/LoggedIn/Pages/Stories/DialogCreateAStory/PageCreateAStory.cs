@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
-using RobotizeToolbox.Controls.TriggerControls;
+using RuRayToolbox.Controls.TriggerControls;
 
-namespace RobotizeFacebook.App.LoggedIn.Pages
+namespace RuRayFacebook.App.LoggedIn.Pages
 {
     public class PageCreateAStory : BasePage
     {

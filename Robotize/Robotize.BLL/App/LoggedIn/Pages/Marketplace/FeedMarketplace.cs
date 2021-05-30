@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace RobotizeFacebook.App.LoggedIn.DataPageletStreamingBrowseFeed
+namespace RuRayFacebook.App.LoggedIn.DataPageletStreamingBrowseFeed
 {
     public class FeedMarketplace : Feed
     {

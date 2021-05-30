@@ -1,8 +1,8 @@
 ﻿using OpenQA.Selenium.Remote;
-using RobotizeFacebook.App.LoggedIn;
+using RuRayFacebook.App.LoggedIn;
 using System;
 
-namespace RobotizeToolbox.Controls
+namespace RuRayToolbox.Controls
 {
     public class FacebookGrid
     {

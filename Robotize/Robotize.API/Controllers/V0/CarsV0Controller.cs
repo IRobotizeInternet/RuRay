@@ -1,15 +1,15 @@
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Robotize.API.Models;
-using Robotize.BLL.Contracts;
+using RuRay.API.Models;
+using RuRay.BLL.Contracts;
 using Swashbuckle.AspNetCore.Annotations;
 using System;
 using System.Collections.Generic;
 using System.Net;
 using System.Threading.Tasks;
 
-namespace Robotize.API.Controllers
+namespace RuRay.API.Controllers
 {
     [Authorize]
     [Produces("application/json")]

@@ -1,13 +1,13 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using RobotizeToolbox.CommonControls;
-using RobotizeToolbox.Extensions;
+using RuRayToolbox.CommonControls;
+using RuRayToolbox.Extensions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
 
-namespace RobotizeToolbox.Controls
+namespace RuRayToolbox.Controls
 {
     public abstract class Combobox : BaseDOMObject, IDropdownElement
     {

@@ -1,9 +1,9 @@
 ﻿using System;
 using OpenQA.Selenium;
-using Robotize.BLL.Resources;
-using RobotizeToolbox.Controls;
+using RuRay.BLL.Resources;
+using RuRayToolbox.Controls;
 
-namespace RobotizeFacebook.App.LoggedIn.Pages
+namespace RuRayFacebook.App.LoggedIn.Pages
 {
     public class FeedUpcomingLiveVideosAndEvents : Feed
     {

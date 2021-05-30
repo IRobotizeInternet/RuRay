@@ -1,8 +1,8 @@
-using Robotize.BLL.Models;
+using RuRay.BLL.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Robotize.BLL.Contracts
+namespace RuRay.BLL.Contracts
 {
     public interface ITodosMockProxyService
     {

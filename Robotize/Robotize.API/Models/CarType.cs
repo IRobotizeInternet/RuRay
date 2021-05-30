@@ -1,4 +1,4 @@
-namespace Robotize.API.Models
+namespace RuRay.API.Models
 {
     /// <summary>
     /// Car type

@@ -1,11 +1,11 @@
 ﻿using OpenQA.Selenium;
-using RobotizeFacebook.App.LoggedIn.Pages;
-using RobotizeFacebook.App.NotLoggedIn.Login.Dialog;
-using RobotizeToolbox.CommonControls;
-using RobotizeToolbox.Controls;
-using RobotizeToolbox.Controls.TriggerControls;
+using RuRayFacebook.App.LoggedIn.Pages;
+using RuRayFacebook.App.NotLoggedIn.Login.Dialog;
+using RuRayToolbox.CommonControls;
+using RuRayToolbox.Controls;
+using RuRayToolbox.Controls.TriggerControls;
 
-namespace RobotizeFacebook.App.NotLoggedIn.Login
+namespace RuRayFacebook.App.NotLoggedIn.Login
 {
     public class PageConfirmation : BasePage
     {

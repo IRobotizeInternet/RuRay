@@ -1,6 +1,6 @@
 ﻿using OpenQA.Selenium.Remote;
 
-namespace RobotizeFacebook.App.LoggedIn.CommonComponents
+namespace RuRayFacebook.App.LoggedIn.CommonComponents
 {
     public abstract class ButtonNotificationSettings
     {

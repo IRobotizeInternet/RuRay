@@ -1,12 +1,12 @@
 using AutoFixture;
 using Moq;
-using Robotize.BLL.Contracts;
-using Robotize.BLL.Models;
-using Robotize.DAL.MySql.Contract;
-using Robotize.DAL.MySql.Models;
+using RuRay.BLL.Contracts;
+using RuRay.BLL.Models;
+using RuRay.DAL.MySql.Contract;
+using RuRay.DAL.MySql.Models;
 using System;
 
-namespace Robotize.BLL.Tests.Helpers
+namespace RuRay.BLL.Tests.Helpers
 {
     public static class Moqs
     {

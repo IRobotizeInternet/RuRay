@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Text.RegularExpressions;
 
-namespace RobotizeFacebook.Utilities
+namespace RuRayFacebook.Utilities
 {
     public class DynamicCodeGeneration
     {
@@ -19,7 +19,7 @@ namespace RobotizeFacebook.Utilities
         {
             CodeDomProvider provider = CodeDomProvider.CreateProvider(providerName);
             StringWriter sw = new StringWriter();
-            sourceFileName = $@"C:\Dev\Robotize\RobotizeFacebook\Services\RobotizeAPIs\{sourceFileName}";
+            sourceFileName = $@"C:\Dev\RuRay\RuRayFacebook\Services\RuRayAPIs\{sourceFileName}";
             Console.WriteLine("Generating code...");
             provider.GenerateCodeFromCompileUnit(cu, sw, null);
 

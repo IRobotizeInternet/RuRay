@@ -1,4 +1,4 @@
-﻿namespace RobotizeToolbox.Components
+﻿namespace RuRayToolbox.Components
 {
     public interface IListItem
     {

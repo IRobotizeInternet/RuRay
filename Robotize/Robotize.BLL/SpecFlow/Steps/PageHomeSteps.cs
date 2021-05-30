@@ -1,7 +1,7 @@
 ﻿using System;
 using TechTalk.SpecFlow;
 
-namespace Robotize.BLL.SpecFlow.Features
+namespace RuRay.BLL.SpecFlow.Features
 {
     [Binding]
     public class PageHomeSteps

@@ -4,7 +4,7 @@ using System.Drawing;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Robotize.BLL.Contracts
+namespace RuRay.BLL.Contracts
 {
     public interface IServiceKeyboard
     {

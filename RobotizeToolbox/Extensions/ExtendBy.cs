@@ -1,6 +1,6 @@
 ﻿using OpenQA.Selenium;
 
-namespace RobotizeLibrary.Extensions
+namespace RuRayLibrary.Extensions
 {
     public class ExtendBy : By
     {

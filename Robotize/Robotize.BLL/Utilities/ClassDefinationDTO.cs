@@ -1,7 +1,7 @@
 ﻿using Newtonsoft.Json;
 using System.Collections.Generic;
 
-namespace RobotizeFacebook.Utilities
+namespace RuRayFacebook.Utilities
 {
     public class ClassDefinationDTO
     {

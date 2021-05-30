@@ -2,13 +2,13 @@
 using OpenQA.Selenium.Interactions;
 using OpenQA.Selenium.Remote;
 using Polly;
-using RobotizeToolbox.Extensions;
+using RuRayToolbox.Extensions;
 using System;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace RobotizeToolbox.CommonControls
+namespace RuRayToolbox.CommonControls
 {
     public class BaseDOMObject
     {

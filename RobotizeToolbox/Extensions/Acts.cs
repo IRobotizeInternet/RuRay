@@ -5,7 +5,7 @@ using System;
 using System.Diagnostics;
 using System.Threading;
 
-namespace RobotizeToolbox.Extensions
+namespace RuRayToolbox.Extensions
 {
     public static class Acts
     {

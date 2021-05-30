@@ -18,9 +18,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\RobotizeToolbox\RobotizeToolbox.csproj" />
+    <ProjectReference Include="..\..\RobotizeToolbox\RuRayToolbox.csproj" />
     <ProjectReference Include="..\..\WindowGrid\WindowGrid.csproj" />
-    <ProjectReference Include="..\Robotize.DAL.MySql\Robotize.DAL.MySql.csproj" />
+    <ProjectReference Include="..\Robotize.DAL.MySql\RuRay.DAL.MySql.csproj" />
   </ItemGroup>
 
   <ItemGroup>

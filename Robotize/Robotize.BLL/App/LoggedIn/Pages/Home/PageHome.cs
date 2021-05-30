@@ -3,11 +3,11 @@ using System.Linq;
 using System.Threading;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using Robotize.BLL.Resources;
-using RobotizeToolbox.CommonControls;
-using RobotizeToolbox.Controls;
+using RuRay.BLL.Resources;
+using RuRayToolbox.CommonControls;
+using RuRayToolbox.Controls;
 
-namespace RobotizeFacebook.App.LoggedIn.Pages
+namespace RuRayFacebook.App.LoggedIn.Pages
 {
     public class PageHome : BasePage
     {
@@ -147,12 +147,12 @@ namespace RobotizeFacebook.App.LoggedIn.Pages
         //    Driver.FindElementByXPath("//span[text()='Marketplace']").Click();
         //    Thread.Sleep(3000);
         //    Driver.FindElementByXPath("//span[text()='Garden & Outdoor']").Click();
-        //    var rootFolderPath = @"D:\Dev\Robotize\RobotizeFacebook\Pages\LoggedIn\Components\Grid\Family\FamilyFilter\";
+        //    var rootFolderPath = @"D:\Dev\RuRay\RuRayFacebook\Pages\LoggedIn\Components\Grid\Family\FamilyFilter\";
         //    var fileBaseName = "Family";
         //    var xPath = "//a[@href='/marketplace/111906762160356/toys/']//span[text()='Toys & Games']/../../../../../../../../../..//span[contains(@class,'fjf4s8hc')]";
         //    foreach (var element in Driver.FindElements(By.XPath(xPath)))
         //    {
-        //        var destPath = $@"D:\Dev\Robotize\RobotizeFacebook\Pages\LoggedIn\Components\Grid\ToysAndGames\";
+        //        var destPath = $@"D:\Dev\RuRay\RuRayFacebook\Pages\LoggedIn\Components\Grid\ToysAndGames\";
         //        var newDirName = element.Text.Replace("&", "And");
         //        newDirName = newDirName.Replace("'", "");
         //        newDirName = newDirName.Replace(" ", "");

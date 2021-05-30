@@ -5,10 +5,10 @@ using System.Text;
 using System.Threading.Tasks;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using Robotize.BLL.Resources;
-using RobotizeToolbox.Controls;
+using RuRay.BLL.Resources;
+using RuRayToolbox.Controls;
 
-namespace RobotizeFacebook.App.LoggedIn.Common.Components.Comboboxes
+namespace RuRayFacebook.App.LoggedIn.Common.Components.Comboboxes
 {
     public class ComboboxNewMessageTo  : Combobox
     {

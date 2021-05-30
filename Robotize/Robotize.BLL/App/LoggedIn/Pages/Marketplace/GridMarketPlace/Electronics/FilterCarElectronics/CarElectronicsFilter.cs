@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace RobotizeFacebook.App.LoggedIn
+namespace RuRayFacebook.App.LoggedIn
 {
     public class CarElectronicsFilter : BaseFilter, ICarElectronicsFilter, ICarElectronicsFilterOptions
     {

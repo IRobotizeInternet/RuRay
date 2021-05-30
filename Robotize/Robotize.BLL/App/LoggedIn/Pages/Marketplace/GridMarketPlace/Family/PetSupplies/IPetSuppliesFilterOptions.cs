@@ -1,5 +1,5 @@
 ﻿
-namespace RobotizeFacebook.App.LoggedIn
+namespace RuRayFacebook.App.LoggedIn
 {
     public interface IPetSuppliesFilterOptions :
         IFilterOptions,

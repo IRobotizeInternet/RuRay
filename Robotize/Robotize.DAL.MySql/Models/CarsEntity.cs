@@ -1,6 +1,6 @@
 using System;
 
-namespace Robotize.DAL.MySql.Models
+namespace RuRay.DAL.MySql.Models
 {
     public class CarEntity
     {

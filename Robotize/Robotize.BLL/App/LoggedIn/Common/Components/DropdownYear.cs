@@ -1,9 +1,9 @@
 ﻿using OpenQA.Selenium.Remote;
-using RobotizeFacebook.App.LoggedIn.Enum;
-using RobotizeLibrary.Extensions;
-using RobotizeToolbox.Controls;
+using RuRayFacebook.App.LoggedIn.Enum;
+using RuRayLibrary.Extensions;
+using RuRayToolbox.Controls;
 
-namespace RobotizeFacebook.App.LoggedIn
+namespace RuRayFacebook.App.LoggedIn
 {
     public class DropdownYear : DropdownWithEnum<FilterYear>
     {

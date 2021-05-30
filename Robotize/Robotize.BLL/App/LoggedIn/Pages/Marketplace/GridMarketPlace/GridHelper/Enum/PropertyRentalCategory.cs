@@ -1,7 +1,7 @@
-﻿using Robotize.BLL.Resources;
-using RobotizeToolbox.CustomAttributes;
+﻿using RuRay.BLL.Resources;
+using RuRayToolbox.CustomAttributes;
 
-namespace RobotizeFacebook.App.LoggedIn.Components.Grid.PropertyRentals.Enum
+namespace RuRayFacebook.App.LoggedIn.Components.Grid.PropertyRentals.Enum
 {
     public enum PropertyRentalCategory
     {

@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium.Remote;
 using System;
 
-namespace RobotizeLibrary.Components.Eidtor
+namespace RuRayLibrary.Components.Eidtor
 {
     public class Editor<THeader, ULeftMenu, VFeed, WPage>
         where THeader : IHeaderNavigation

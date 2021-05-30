@@ -1,10 +1,10 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using Robotize.BLL.Resources;
-using RobotizeToolbox.Controls;
-using RobotizeToolbox.Extensions;
+using RuRay.BLL.Resources;
+using RuRayToolbox.Controls;
+using RuRayToolbox.Extensions;
 
-namespace RobotizeFacebook.App.LoggedIn.Pages.JobsComposer.ScheduleLiveVideoEvent
+namespace RuRayFacebook.App.LoggedIn.Pages.JobsComposer.ScheduleLiveVideoEvent
 {
     public class DialogEventSettings : BaseDialog
     {

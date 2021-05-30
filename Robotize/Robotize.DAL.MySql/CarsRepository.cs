@@ -2,15 +2,15 @@ using Dapper;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Options;
 using MySql.Data.MySqlClient;
-using Robotize.DAL.MySql.Contract;
-using Robotize.DAL.MySql.Models;
+using RuRay.DAL.MySql.Contract;
+using RuRay.DAL.MySql.Models;
 using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Robotize.DAL.MySql
+namespace RuRay.DAL.MySql
 {
     public class CarsRepository : ICarsRepository, IHealthCheck
     {

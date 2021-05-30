@@ -4,33 +4,33 @@
 2021-04-11 18:47:42.097 -07:00 [Information] web api service is started.
 2021-04-11 18:47:44.346 -07:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 644.8968 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:""][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"]
 2021-04-11 18:47:45.031 -07:00 [Error] HTTP "GET" "/swagger/v1/swagger.json" responded 500 in 234.4641 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Headers:[("Accept": "application/json,*/*"), ("Accept-Encoding": "gzip, deflate, br"), ("Accept-Language": "en-US,en;q=0.9"), ("Connection": "keep-alive"), ("Host": "localhost:51780"), ("Referer": "http://localhost:51780/swagger/index.html"), ("User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"), ("sec-ch-ua": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""), ("sec-ch-ua-mobile": "?0"), ("Sec-Fetch-Site": "same-origin"), ("Sec-Fetch-Mode": "cors"), ("Sec-Fetch-Dest": "empty")]]
-System.NotSupportedException: HTTP method "POST" & path "api/v1/cars" overloaded by actions - Robotize.API.Controllers.CarsController.CreateCarAsync (Robotize.API),Robotize.API.Controllers.HomeHeaderController.FacebookSwitchMode (Robotize.API). Actions require unique method/path combination for OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+System.NotSupportedException: HTTP method "POST" & path "api/v1/cars" overloaded by actions - RuRay.API.Controllers.CarsController.CreateCarAsync (RuRay.API),RuRay.API.Controllers.HomeHeaderController.FacebookSwitchMode (RuRay.API). Actions require unique method/path combination for OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
    at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
    at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
    at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Robotize.API.Middleware.HttpContextMiddleware.Invoke(HttpContext httpContext) in D:\Dev\Robotize\Robotize\Robotize.API\Middlewares\HttpContextMiddleware.cs:line 40
+   at RuRay.API.Middleware.HttpContextMiddleware.Invoke(HttpContext httpContext) in D:\Dev\RuRay\RuRay\RuRay.API\Middlewares\HttpContextMiddleware.cs:line 40
 2021-04-11 18:47:51.895 -07:00 [Information] HTTP "GET" "/swagger/swagger-ui-standalone-preset.js.map" responded 404 in 759.6082 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:""][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"]
 2021-04-11 18:47:51.895 -07:00 [Information] HTTP "GET" "/swagger/swagger-ui-bundle.js.map" responded 404 in 829.0876 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:""][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"]
 2021-04-11 18:47:51.895 -07:00 [Information] HTTP "GET" "/swagger/swagger-ui.css.map" responded 404 in 751.8448 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:""][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"]
 2021-04-11 18:47:58.579 -07:00 [Error] HTTP "GET" "/swagger/v1/swagger.json" responded 500 in 48.3710 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Headers:[("Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9"), ("Accept-Encoding": "gzip, deflate, br"), ("Accept-Language": "en-US,en;q=0.9"), ("Connection": "keep-alive"), ("Host": "localhost:51780"), ("User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"), ("sec-ch-ua": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""), ("sec-ch-ua-mobile": "?0"), ("Upgrade-Insecure-Requests": "1"), ("Sec-Fetch-Site": "none"), ("Sec-Fetch-Mode": "navigate"), ("Sec-Fetch-User": "?1"), ("Sec-Fetch-Dest": "document")]]
-System.NotSupportedException: HTTP method "POST" & path "api/v1/cars" overloaded by actions - Robotize.API.Controllers.CarsController.CreateCarAsync (Robotize.API),Robotize.API.Controllers.HomeHeaderController.FacebookSwitchMode (Robotize.API). Actions require unique method/path combination for OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+System.NotSupportedException: HTTP method "POST" & path "api/v1/cars" overloaded by actions - RuRay.API.Controllers.CarsController.CreateCarAsync (RuRay.API),RuRay.API.Controllers.HomeHeaderController.FacebookSwitchMode (RuRay.API). Actions require unique method/path combination for OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
    at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
    at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
    at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Robotize.API.Middleware.HttpContextMiddleware.Invoke(HttpContext httpContext) in D:\Dev\Robotize\Robotize\Robotize.API\Middlewares\HttpContextMiddleware.cs:line 40
+   at RuRay.API.Middleware.HttpContextMiddleware.Invoke(HttpContext httpContext) in D:\Dev\RuRay\RuRay\RuRay.API\Middlewares\HttpContextMiddleware.cs:line 40
 2021-04-11 18:47:58.982 -07:00 [Information] HTTP "GET" "/favicon.ico" responded 404 in 4.5849 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger/v1/swagger.json"][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"]
 2021-04-11 19:35:41.697 -07:00 [Information] web api service is started.
 2021-04-11 19:37:41.128 -07:00 [Information] web api service is started.
 2021-04-11 19:37:43.435 -07:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 681.8631 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:""][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"]
 2021-04-11 19:37:44.170 -07:00 [Error] HTTP "GET" "/swagger/v1/swagger.json" responded 500 in 164.0960 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Headers:[("Accept": "application/json,*/*"), ("Accept-Encoding": "gzip, deflate, br"), ("Accept-Language": "en-US,en;q=0.9"), ("Connection": "keep-alive"), ("Host": "localhost:51780"), ("Referer": "http://localhost:51780/swagger/index.html"), ("User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"), ("sec-ch-ua": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""), ("sec-ch-ua-mobile": "?0"), ("Sec-Fetch-Site": "same-origin"), ("Sec-Fetch-Mode": "cors"), ("Sec-Fetch-Dest": "empty")]]
-System.NotSupportedException: HTTP method "POST" & path "api/v1/cars" overloaded by actions - Robotize.API.Controllers.CarsController.CreateCarAsync (Robotize.API),Robotize.API.Controllers.HomeHeaderController.FacebookSwitchMode (Robotize.API). Actions require unique method/path combination for OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+System.NotSupportedException: HTTP method "POST" & path "api/v1/cars" overloaded by actions - RuRay.API.Controllers.CarsController.CreateCarAsync (RuRay.API),RuRay.API.Controllers.HomeHeaderController.FacebookSwitchMode (RuRay.API). Actions require unique method/path combination for OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
    at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
    at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
    at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Robotize.API.Middleware.HttpContextMiddleware.Invoke(HttpContext httpContext) in D:\Dev\Robotize\Robotize\Robotize.API\Middlewares\HttpContextMiddleware.cs:line 40
+   at RuRay.API.Middleware.HttpContextMiddleware.Invoke(HttpContext httpContext) in D:\Dev\RuRay\RuRay\RuRay.API\Middlewares\HttpContextMiddleware.cs:line 40
 2021-04-11 19:38:48.566 -07:00 [Information] web api service is started.
 2021-04-11 19:39:10.476 -07:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 563.0899 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:""][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"]
 2021-04-11 19:40:49.948 -07:00 [Information] web api service is started.
@@ -45,19 +45,19 @@ System.NotSupportedException: HTTP method "POST" & path "api/v1/cars" overloaded
 2021-04-11 19:51:56.836 -07:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 435.7901 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:""][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"]
 2021-04-11 19:51:57.508 -07:00 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 229.2963 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger/index.html"][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"]
 2021-04-11 19:54:43.215 -07:00 [Error] HTTP "POST" "/api/v1/HomeHeader" responded 500 in 32513.3007 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Headers:[("Accept": "*/*"), ("Accept-Encoding": "gzip, deflate, br"), ("Accept-Language": "en-US,en;q=0.9"), ("Connection": "keep-alive"), ("Content-Length": "0"), ("Host": "localhost:51780"), ("Referer": "http://localhost:51780/swagger/index.html"), ("User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"), ("sec-ch-ua": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""), ("sec-ch-ua-mobile": "?0"), ("Origin": "http://localhost:51780"), ("Sec-Fetch-Site": "same-origin"), ("Sec-Fetch-Mode": "cors"), ("Sec-Fetch-Dest": "empty")]]
-System.TypeInitializationException: The type initializer for 'RobotizeFacebook.Utilities.AppSettings' threw an exception.
+System.TypeInitializationException: The type initializer for 'RuRayFacebook.Utilities.AppSettings' threw an exception.
  ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Configuration.ConfigurationManager, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'. The system cannot find the file specified.
 File name: 'System.Configuration.ConfigurationManager, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'
-   at RobotizeFacebook.Utilities.AppSettings..cctor()
+   at RuRayFacebook.Utilities.AppSettings..cctor()
 
 
    --- End of inner exception stack trace ---
-   at RobotizeFacebook.Utilities.AppSettings.get_BaseURL() in D:\Dev\Robotize\RobotizeFacebook\Utilities\AppSettings.cs:line 7
-   at RobotizeFacebook.App.LoggedIn.Pages.BaseDriver..ctor() in D:\Dev\Robotize\RobotizeFacebook\App\BaseDriver.cs:line 20
-   at RobotizeFacebook.App.LoggedIn.Pages.BasePage..ctor() in D:\Dev\Robotize\RobotizeFacebook\App\BasePage.cs:line 26
-   at RobotizeFacebook.App.LoggedIn.Pages.PageHome..ctor() in D:\Dev\Robotize\RobotizeFacebook\App\LoggedIn\Pages\Home\PageHome.cs:line 14
-   at Robotize.BLL.ServiceHomeHeader.FacebookSwitchMode(Switch mode) in D:\Dev\Robotize\Robotize\Robotize.BLL\Services\ServiceHomeHeader.cs:line 14
-   at Robotize.API.Controllers.HomeHeaderController.FacebookSwitchMode(Switch mode) in D:\Dev\Robotize\Robotize\Robotize.API\Controllers\HomeHeaderController.cs:line 54
+   at RuRayFacebook.Utilities.AppSettings.get_BaseURL() in D:\Dev\RuRay\RuRayFacebook\Utilities\AppSettings.cs:line 7
+   at RuRayFacebook.App.LoggedIn.Pages.BaseDriver..ctor() in D:\Dev\RuRay\RuRayFacebook\App\BaseDriver.cs:line 20
+   at RuRayFacebook.App.LoggedIn.Pages.BasePage..ctor() in D:\Dev\RuRay\RuRayFacebook\App\BasePage.cs:line 26
+   at RuRayFacebook.App.LoggedIn.Pages.PageHome..ctor() in D:\Dev\RuRay\RuRayFacebook\App\LoggedIn\Pages\Home\PageHome.cs:line 14
+   at RuRay.BLL.ServiceHomeHeader.FacebookSwitchMode(Switch mode) in D:\Dev\RuRay\RuRay\RuRay.BLL\Services\ServiceHomeHeader.cs:line 14
+   at RuRay.API.Controllers.HomeHeaderController.FacebookSwitchMode(Switch mode) in D:\Dev\RuRay\RuRay\RuRay.API\Controllers\HomeHeaderController.cs:line 54
    at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
@@ -73,24 +73,24 @@ File name: 'System.Configuration.ConfigurationManager, Version=4.0.3.0, Culture=
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Robotize.API.Middleware.HttpContextMiddleware.Invoke(HttpContext httpContext) in D:\Dev\Robotize\Robotize\Robotize.API\Middlewares\HttpContextMiddleware.cs:line 40
+   at RuRay.API.Middleware.HttpContextMiddleware.Invoke(HttpContext httpContext) in D:\Dev\RuRay\RuRay\RuRay.API\Middlewares\HttpContextMiddleware.cs:line 40
 2021-04-11 19:56:23.842 -07:00 [Information] web api service is started.
 2021-04-11 19:56:25.484 -07:00 [Information] HTTP "GET" "/swagger/index.html" responded 200 in 463.7832 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:""][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"]
 2021-04-11 19:56:26.156 -07:00 [Information] HTTP "GET" "/swagger/v1/swagger.json" responded 200 in 258.3425 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Referer:"http://localhost:51780/swagger/index.html"][User-Agent:"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"]
 2021-04-11 19:58:28.866 -07:00 [Error] HTTP "POST" "/api/v1/HomeHeader" responded 500 in 112187.3446 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Headers:[("Accept": "*/*"), ("Accept-Encoding": "gzip, deflate, br"), ("Accept-Language": "en-US,en;q=0.9"), ("Connection": "keep-alive"), ("Content-Length": "0"), ("Host": "localhost:51780"), ("Referer": "http://localhost:51780/swagger/index.html"), ("User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"), ("sec-ch-ua": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""), ("sec-ch-ua-mobile": "?0"), ("Origin": "http://localhost:51780"), ("Sec-Fetch-Site": "same-origin"), ("Sec-Fetch-Mode": "cors"), ("Sec-Fetch-Dest": "empty")]]
-System.TypeInitializationException: The type initializer for 'RobotizeFacebook.Utilities.AppSettings' threw an exception.
+System.TypeInitializationException: The type initializer for 'RuRayFacebook.Utilities.AppSettings' threw an exception.
  ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Configuration.ConfigurationManager, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'. The system cannot find the file specified.
 File name: 'System.Configuration.ConfigurationManager, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'
-   at RobotizeFacebook.Utilities.AppSettings..cctor()
+   at RuRayFacebook.Utilities.AppSettings..cctor()
 
 
    --- End of inner exception stack trace ---
-   at RobotizeFacebook.Utilities.AppSettings.get_BaseURL() in D:\Dev\Robotize\RobotizeFacebook\Utilities\AppSettings.cs:line 7
-   at RobotizeFacebook.App.LoggedIn.Pages.BaseDriver..ctor() in D:\Dev\Robotize\RobotizeFacebook\App\BaseDriver.cs:line 20
-   at RobotizeFacebook.App.LoggedIn.Pages.BasePage..ctor() in D:\Dev\Robotize\RobotizeFacebook\App\BasePage.cs:line 26
-   at RobotizeFacebook.App.LoggedIn.Pages.PageHome..ctor() in D:\Dev\Robotize\RobotizeFacebook\App\LoggedIn\Pages\Home\PageHome.cs:line 14
-   at Robotize.BLL.ServiceHomeHeader.FacebookSwitchMode(Switch mode) in D:\Dev\Robotize\Robotize\Robotize.BLL\Services\ServiceHomeHeader.cs:line 14
-   at Robotize.API.Controllers.HomeHeaderController.FacebookSwitchMode(Switch mode) in D:\Dev\Robotize\Robotize\Robotize.API\Controllers\HomeHeaderController.cs:line 54
+   at RuRayFacebook.Utilities.AppSettings.get_BaseURL() in D:\Dev\RuRay\RuRayFacebook\Utilities\AppSettings.cs:line 7
+   at RuRayFacebook.App.LoggedIn.Pages.BaseDriver..ctor() in D:\Dev\RuRay\RuRayFacebook\App\BaseDriver.cs:line 20
+   at RuRayFacebook.App.LoggedIn.Pages.BasePage..ctor() in D:\Dev\RuRay\RuRayFacebook\App\BasePage.cs:line 26
+   at RuRayFacebook.App.LoggedIn.Pages.PageHome..ctor() in D:\Dev\RuRay\RuRayFacebook\App\LoggedIn\Pages\Home\PageHome.cs:line 14
+   at RuRay.BLL.ServiceHomeHeader.FacebookSwitchMode(Switch mode) in D:\Dev\RuRay\RuRay\RuRay.BLL\Services\ServiceHomeHeader.cs:line 14
+   at RuRay.API.Controllers.HomeHeaderController.FacebookSwitchMode(Switch mode) in D:\Dev\RuRay\RuRay\RuRay.API\Controllers\HomeHeaderController.cs:line 54
    at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
@@ -106,21 +106,21 @@ File name: 'System.Configuration.ConfigurationManager, Version=4.0.3.0, Culture=
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Robotize.API.Middleware.HttpContextMiddleware.Invoke(HttpContext httpContext) in D:\Dev\Robotize\Robotize\Robotize.API\Middlewares\HttpContextMiddleware.cs:line 40
+   at RuRay.API.Middleware.HttpContextMiddleware.Invoke(HttpContext httpContext) in D:\Dev\RuRay\RuRay\RuRay.API\Middlewares\HttpContextMiddleware.cs:line 40
 2021-04-11 19:58:53.002 -07:00 [Error] HTTP "POST" "/api/v1/HomeHeader" responded 500 in 20419.6673 ms [User:"unknown"][Protocol:"HTTP/1.1"][Host:"localhost:51780"][Headers:[("Accept": "*/*"), ("Accept-Encoding": "gzip, deflate, br"), ("Accept-Language": "en-US,en;q=0.9"), ("Connection": "keep-alive"), ("Content-Length": "0"), ("Host": "localhost:51780"), ("Referer": "http://localhost:51780/swagger/index.html"), ("User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/89.0.4389.114 Safari/537.36"), ("sec-ch-ua": "\"Google Chrome\";v=\"89\", \"Chromium\";v=\"89\", \";Not A Brand\";v=\"99\""), ("sec-ch-ua-mobile": "?0"), ("Origin": "http://localhost:51780"), ("Sec-Fetch-Site": "same-origin"), ("Sec-Fetch-Mode": "cors"), ("Sec-Fetch-Dest": "empty")]]
-System.TypeInitializationException: The type initializer for 'RobotizeFacebook.Utilities.AppSettings' threw an exception.
+System.TypeInitializationException: The type initializer for 'RuRayFacebook.Utilities.AppSettings' threw an exception.
  ---> System.IO.FileNotFoundException: Could not load file or assembly 'System.Configuration.ConfigurationManager, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'. The system cannot find the file specified.
 File name: 'System.Configuration.ConfigurationManager, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51'
-   at RobotizeFacebook.Utilities.AppSettings..cctor()
+   at RuRayFacebook.Utilities.AppSettings..cctor()
 
 
    --- End of inner exception stack trace ---
-   at RobotizeFacebook.Utilities.AppSettings.get_BaseURL() in D:\Dev\Robotize\RobotizeFacebook\Utilities\AppSettings.cs:line 7
-   at RobotizeFacebook.App.LoggedIn.Pages.BaseDriver..ctor() in D:\Dev\Robotize\RobotizeFacebook\App\BaseDriver.cs:line 20
-   at RobotizeFacebook.App.LoggedIn.Pages.BasePage..ctor() in D:\Dev\Robotize\RobotizeFacebook\App\BasePage.cs:line 26
-   at RobotizeFacebook.App.LoggedIn.Pages.PageHome..ctor() in D:\Dev\Robotize\RobotizeFacebook\App\LoggedIn\Pages\Home\PageHome.cs:line 14
-   at Robotize.BLL.ServiceHomeHeader.FacebookSwitchMode(Switch mode) in D:\Dev\Robotize\Robotize\Robotize.BLL\Services\ServiceHomeHeader.cs:line 14
-   at Robotize.API.Controllers.HomeHeaderController.FacebookSwitchMode(Switch mode) in D:\Dev\Robotize\Robotize\Robotize.API\Controllers\HomeHeaderController.cs:line 54
+   at RuRayFacebook.Utilities.AppSettings.get_BaseURL() in D:\Dev\RuRay\RuRayFacebook\Utilities\AppSettings.cs:line 7
+   at RuRayFacebook.App.LoggedIn.Pages.BaseDriver..ctor() in D:\Dev\RuRay\RuRayFacebook\App\BaseDriver.cs:line 20
+   at RuRayFacebook.App.LoggedIn.Pages.BasePage..ctor() in D:\Dev\RuRay\RuRayFacebook\App\BasePage.cs:line 26
+   at RuRayFacebook.App.LoggedIn.Pages.PageHome..ctor() in D:\Dev\RuRay\RuRayFacebook\App\LoggedIn\Pages\Home\PageHome.cs:line 14
+   at RuRay.BLL.ServiceHomeHeader.FacebookSwitchMode(Switch mode) in D:\Dev\RuRay\RuRay\RuRay.BLL\Services\ServiceHomeHeader.cs:line 14
+   at RuRay.API.Controllers.HomeHeaderController.FacebookSwitchMode(Switch mode) in D:\Dev\RuRay\RuRay\RuRay.API\Controllers\HomeHeaderController.cs:line 54
    at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
@@ -136,4 +136,4 @@ File name: 'System.Configuration.ConfigurationManager, Version=4.0.3.0, Culture=
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Robotize.API.Middleware.HttpContextMiddleware.Invoke(HttpContext httpContext) in D:\Dev\Robotize\Robotize\Robotize.API\Middlewares\HttpContextMiddleware.cs:line 40
+   at RuRay.API.Middleware.HttpContextMiddleware.Invoke(HttpContext httpContext) in D:\Dev\RuRay\RuRay\RuRay.API\Middlewares\HttpContextMiddleware.cs:line 40

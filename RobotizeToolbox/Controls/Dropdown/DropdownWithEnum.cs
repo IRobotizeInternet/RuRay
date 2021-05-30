@@ -1,9 +1,9 @@
 ﻿using OpenQA.Selenium.Remote;
-using RobotizeLibrary.Extensions;
-using RobotizeToolbox.Enums;
+using RuRayLibrary.Extensions;
+using RuRayToolbox.Enums;
 using System;
 
-namespace RobotizeToolbox.Controls
+namespace RuRayToolbox.Controls
 {
     /// <summary>
     /// Represents dropdown with elements whose values available for <typeparamref name="TEnum"/>.

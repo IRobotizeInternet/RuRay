@@ -1,12 +1,12 @@
 ﻿using OpenQA.Selenium;
-using RobotizeFacebook.Utilities;
-using RobotizeToolbox.CommonControls;
-using RobotizeToolbox.Controls.TriggerControls;
-using Robotize.BLL.Resources;
-using RobotizeToolbox.Controls;
-using RobotizeFacebook.App.LoggedIn.Pages;
+using RuRayFacebook.Utilities;
+using RuRayToolbox.CommonControls;
+using RuRayToolbox.Controls.TriggerControls;
+using RuRay.BLL.Resources;
+using RuRayToolbox.Controls;
+using RuRayFacebook.App.LoggedIn.Pages;
 
-namespace RobotizeFacebook.App.NotLoggedIn
+namespace RuRayFacebook.App.NotLoggedIn
 {
     public class PageLogin : BasePage
     {

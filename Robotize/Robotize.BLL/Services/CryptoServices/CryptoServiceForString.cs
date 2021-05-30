@@ -1,9 +1,9 @@
-﻿using RobotizeFacebook.CryptoServices;
+﻿using RuRayFacebook.CryptoServices;
 using System;
 using System.Security.Cryptography;
 using System.Text;
 
-namespace RobotizeFacebook.Security
+namespace RuRayFacebook.Security
 {
     public class CryptoServiceForString : Crypto
     {

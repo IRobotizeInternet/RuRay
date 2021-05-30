@@ -1,11 +1,11 @@
 ﻿using OpenQA.Selenium;
-using Robotize.BLL.Resources;
-using RobotizeToolbox.CommonControls;
-using RobotizeToolbox.Components;
-using RobotizeToolbox.Controls;
+using RuRay.BLL.Resources;
+using RuRayToolbox.CommonControls;
+using RuRayToolbox.Components;
+using RuRayToolbox.Controls;
 using System;
 
-namespace RobotizeFacebook.App.LoggedIn.Pages
+namespace RuRayFacebook.App.LoggedIn.Pages
 {
     public class ListItemFeedUnit : BaseDriver, IListItem
     {

@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace Robotize.BLL.Contracts
+namespace RuRay.BLL.Contracts
 {
     public interface IServiceHomeHeader
     {

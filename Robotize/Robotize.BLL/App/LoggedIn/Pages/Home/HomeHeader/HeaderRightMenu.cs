@@ -1,9 +1,9 @@
 ﻿using OpenQA.Selenium;
-using Robotize.BLL.Resources;
-using RobotizeToolbox.CommonControls;
-using RobotizeToolbox.Controls.TriggerControls;
+using RuRay.BLL.Resources;
+using RuRayToolbox.CommonControls;
+using RuRayToolbox.Controls.TriggerControls;
 
-namespace RobotizeFacebook.App.LoggedIn.Pages
+namespace RuRayFacebook.App.LoggedIn.Pages
 {
     public class HeaderRightMenu : BaseDriver
     {

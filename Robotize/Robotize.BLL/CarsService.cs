@@ -1,13 +1,13 @@
 using AutoMapper;
-using Robotize.BLL.Contracts;
-using Robotize.BLL.Models;
-using Robotize.DAL.MySql.Contract;
-using Robotize.DAL.MySql.Models;
+using RuRay.BLL.Contracts;
+using RuRay.BLL.Models;
+using RuRay.DAL.MySql.Contract;
+using RuRay.DAL.MySql.Models;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace Robotize.BLL
+namespace RuRay.BLL
 {
     public class CarsService : ICarsService
     {

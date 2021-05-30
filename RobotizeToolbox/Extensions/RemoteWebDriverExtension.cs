@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 
-namespace RobotizeToolbox.Extensions
+namespace RuRayToolbox.Extensions
 {
     public static class RemoteWebDriverExtension
     {

@@ -1,6 +1,6 @@
 ﻿using System.Configuration;
 
-namespace RobotizeFacebook.Utilities
+namespace RuRayFacebook.Utilities
 {
     public static class AppSettings
     {
@@ -13,7 +13,7 @@ namespace RobotizeFacebook.Utilities
         public static string DebuggerBrowserUrl { get; set; }
         public static string DebuggerBrowserPort { get; set; }
         public static string DefaultCulture { get; set; }
-        public static string RobotizeDataDirectory { get; set; }
+        public static string RuRayDataDirectory { get; set; }
         public static string EnvironmentSettingsFile { get; set; }
         public static string PowerShellOutputFile { get; set; }
 
@@ -28,7 +28,7 @@ namespace RobotizeFacebook.Utilities
             DebuggerBrowserUrl = ConfigurationManager.AppSettings[nameof(DebuggerBrowserUrl)];
             DebuggerBrowserPort = ConfigurationManager.AppSettings[nameof(DebuggerBrowserPort)];
             DefaultCulture = ConfigurationManager.AppSettings[nameof(DefaultCulture)];
-            RobotizeDataDirectory = ConfigurationManager.AppSettings[nameof(RobotizeDataDirectory)];
+            RuRayDataDirectory = ConfigurationManager.AppSettings[nameof(RuRayDataDirectory)];
             EnvironmentSettingsFile = ConfigurationManager.AppSettings[nameof(EnvironmentSettingsFile)];
             PowerShellOutputFile = ConfigurationManager.AppSettings[nameof(PowerShellOutputFile)];
         }

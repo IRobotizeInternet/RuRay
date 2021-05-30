@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
-using RobotizeToolbox.CommonControls;
+using RuRayToolbox.CommonControls;
 
-namespace RobotizeFacebook.App.LoggedIn.Pages.Bas
+namespace RuRayFacebook.App.LoggedIn.Pages.Bas
 {
     public class Name : BaseEditor
     {

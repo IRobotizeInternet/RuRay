@@ -1,9 +1,9 @@
 ﻿using OpenQA.Selenium;
-using RobotizeFacebook.App.LoggedIn.Pages;
-using RobotizeToolbox.CommonControls;
-using RobotizeToolbox.Controls;
+using RuRayFacebook.App.LoggedIn.Pages;
+using RuRayToolbox.CommonControls;
+using RuRayToolbox.Controls;
 
-namespace RobotizeFacebook.App.NotLoggedIn.Login.Dialog
+namespace RuRayFacebook.App.NotLoggedIn.Login.Dialog
 {
     public class DialogSendEamilAgain : BaseDialog
     {

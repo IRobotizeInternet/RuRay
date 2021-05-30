@@ -2,7 +2,7 @@
 using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 
-namespace RobotizeToolbox.CommonControls
+namespace RuRayToolbox.CommonControls
 {
     public class Button : BaseDOMObject
     {

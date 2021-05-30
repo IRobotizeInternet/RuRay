@@ -2,7 +2,7 @@
 using OpenQA.Selenium.Remote;
 using System;
 
-namespace RobotizeFacebook.WebDrivers
+namespace RuRayFacebook.WebDrivers
 {
     public class InternetExplorer : WebDriver
     {

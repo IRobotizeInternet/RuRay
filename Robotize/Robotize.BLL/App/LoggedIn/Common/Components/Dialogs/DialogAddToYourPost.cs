@@ -1,10 +1,10 @@
 ﻿using OpenQA.Selenium;
-using RobotizeFacebook.App.LoggedIn.Pages;
-using Robotize.BLL.Resources;
-using RobotizeToolbox.CommonControls;
-using RobotizeToolbox.Controls;
+using RuRayFacebook.App.LoggedIn.Pages;
+using RuRay.BLL.Resources;
+using RuRayToolbox.CommonControls;
+using RuRayToolbox.Controls;
 
-namespace RobotizeFacebook.App.LoggedIn.Components
+namespace RuRayFacebook.App.LoggedIn.Components
 {
     public class DialogAddToYourPost : BaseDialog
     {

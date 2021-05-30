@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
-using RobotizeFacebook.App.LoggedIn.Pages;
+using RuRayFacebook.App.LoggedIn.Pages;
 
-namespace RobotizeFacebook.App.NotLoggedIn.Help
+namespace RuRayFacebook.App.NotLoggedIn.Help
 {
     public class PageHelpChooseALegacyContact : BasePage
     {

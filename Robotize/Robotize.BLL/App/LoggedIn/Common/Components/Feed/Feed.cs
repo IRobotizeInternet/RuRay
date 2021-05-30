@@ -1,7 +1,7 @@
-﻿using RobotizeFacebook.App.LoggedIn.Pages;
-using RobotizeToolbox.CommonControls;
+﻿using RuRayFacebook.App.LoggedIn.Pages;
+using RuRayToolbox.CommonControls;
 
-namespace RobotizeFacebook.App.LoggedIn
+namespace RuRayFacebook.App.LoggedIn
 {
     public abstract class Feed : BaseDriver
     {

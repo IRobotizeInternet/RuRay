@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Robotize.BLL.Resources {
+namespace RuRay.BLL.Resources {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace Robotize.BLL.Resources {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Robotize.BLL.Resources.ResEmoji", typeof(ResEmoji).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("RuRay.BLL.Resources.ResEmoji", typeof(ResEmoji).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

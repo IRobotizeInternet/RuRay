@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace RobotizeFacebook.App.LoggedIn.Pages.Marketplace
+namespace RuRayFacebook.App.LoggedIn.Pages.Marketplace
 {
     public class FeedMarketplaceNotification : Feed
     {

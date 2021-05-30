@@ -1,9 +1,9 @@
 ﻿using OpenQA.Selenium;
-using Robotize.BLL.Resources;
+using RuRay.BLL.Resources;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace RobotizeFacebook.App.LoggedIn.Pages
+namespace RuRayFacebook.App.LoggedIn.Pages
 {
     public class DialogChooseHowToInteract : BaseDialog
     {

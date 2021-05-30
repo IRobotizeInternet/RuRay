@@ -1,7 +1,7 @@
 using AutoMapper;
-using Robotize.BLL.Mappings;
+using RuRay.BLL.Mappings;
 
-namespace Robotize.BLL.Tests.Helpers
+namespace RuRay.BLL.Tests.Helpers
 {
     public static class Mapper
     {

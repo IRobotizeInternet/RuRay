@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 using System.Collections.Generic;
 
-namespace RobotizeLibrary.DTO
+namespace RuRayLibrary.DTO
 {
     public class DTOFriends
     {

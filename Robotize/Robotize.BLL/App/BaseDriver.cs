@@ -1,9 +1,9 @@
 ﻿using OpenQA.Selenium.Remote;
-using RobotizeFacebook.Utilities;
-using RobotizeFacebook.WebDrivers;
+using RuRayFacebook.Utilities;
+using RuRayFacebook.WebDrivers;
 using System;
 
-namespace RobotizeFacebook.App.LoggedIn.Pages
+namespace RuRayFacebook.App.LoggedIn.Pages
 {
     public abstract class BaseDriver
     {

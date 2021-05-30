@@ -8,7 +8,7 @@ using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 
-namespace Robotize.API.Middleware
+namespace RuRay.API.Middleware
 {
     public class HttpContextMiddleware
     {

@@ -481,6 +481,6 @@ dmypy.json
 # Cython debug symbols
 cython_debug/
 /RASAAPI/models
-/RobotizeDeepSpeech/deepspeech-0.9.3-models-zh-CN.scorer
-/RobotizeDeepSpeech/deepspeech-0.9.3-models-zh-CN.pbmm
-/RobotizeTTS/env1
+/RuRayDeepSpeech/deepspeech-0.9.3-models-zh-CN.scorer
+/RuRayDeepSpeech/deepspeech-0.9.3-models-zh-CN.pbmm
+/RuRayTTS/env1

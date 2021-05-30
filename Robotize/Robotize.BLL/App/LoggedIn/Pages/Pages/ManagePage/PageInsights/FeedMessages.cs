@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace RobotizeFacebook.App.LoggedIn.Pages.Pages
+namespace RuRayFacebook.App.LoggedIn.Pages.Pages
 {
     public class FeedMessages : Feed
     {
