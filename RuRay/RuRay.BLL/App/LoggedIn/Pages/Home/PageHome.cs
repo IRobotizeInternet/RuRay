@@ -17,7 +17,14 @@ namespace RuRayFacebook.App.LoggedIn.Pages
 
         public PageHome(RemoteWebDriver driver)
         {
+            _editorHome = new EditorHome(driver);
         }
+
+        // This is work in progress, which requires more work. Read the code carefully before making use of these generics. 
+        private EditorHome _editorHome;
+        public Header SectionHeader => _editorHome.PageHeader;
+        public LeftMenuItemsHome SectionLeftMenuItems => _editorHome.LeftMenu;
+        public FeedHome SectionFeedHome => _editorHome.FeedContainer;
 
         public EventTriggerButton<PageCreateAStory> EventTriggerButtonCreateStory =>
             new EventTriggerButton<PageCreateAStory>(Driver, By.XPath($"//div[@data-pagelet='Stories']//span[text()='{ResHomePage.CreateAStory}']"));

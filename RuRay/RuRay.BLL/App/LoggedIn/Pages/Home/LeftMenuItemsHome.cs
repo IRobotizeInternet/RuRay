@@ -1,13 +1,14 @@
 ﻿using OpenQA.Selenium;
 using RuRay.BLL.Resources;
+using RuRayLibrary.Components.Eidtor;
 using RuRayToolbox.CommonControls;
 using RuRayToolbox.Controls;
 
 namespace RuRayFacebook.App.LoggedIn.Pages
 {
-    public class MenuItemsHome : MenuItems
+    public class LeftMenuItemsHome : MenuItems, ILeftNavigation
     {
-        public MenuItemsHome()
+        public LeftMenuItemsHome()
         {
             BaseXPath = "{BaseXPath}";
         }

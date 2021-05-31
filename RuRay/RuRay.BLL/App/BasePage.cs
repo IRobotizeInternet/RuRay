@@ -21,7 +21,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
         /// </summary>
         public string XPathForBaseDialogs => "//div[@data-pagelet='root']/div/div[4]/div//div[@data-pagelet='root']//div[@role='dialog']";
         public virtual Header Header => new Header();
-        public MenuItemsHome MenuItems => new MenuItemsHome();
+        public LeftMenuItemsHome MenuItems => new LeftMenuItemsHome();
 
         protected BasePage()
         {

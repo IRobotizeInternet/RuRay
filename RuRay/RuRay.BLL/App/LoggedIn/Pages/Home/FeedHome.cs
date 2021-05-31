@@ -1,6 +1,8 @@
-﻿namespace RuRayFacebook.App.LoggedIn.Pages
+﻿using RuRayLibrary.Components.Eidtor;
+
+namespace RuRayFacebook.App.LoggedIn.Pages
 {
-    public class FeedHome : Feed
+    public class FeedHome : Feed, IFeedContainer
     {
         public CreatePost SectionCreatePost => new CreatePost();
 

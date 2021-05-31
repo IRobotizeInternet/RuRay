@@ -4,9 +4,9 @@ using System;
 namespace RuRayLibrary.Components.Eidtor
 {
     public class Editor<THeader, ULeftMenu, VFeed>
-        where THeader : IHeaderNavigation
-        where ULeftMenu : ILeftNavigation
-        where VFeed : IFeedContainer
+        where THeader : class, IHeaderNavigation
+        where ULeftMenu : class, ILeftNavigation
+        where VFeed : class, IFeedContainer
     {
         private readonly Lazy<THeader> _pageHeader;
         private readonly Lazy<ULeftMenu> _leftMenu;

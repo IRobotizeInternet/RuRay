@@ -1,6 +1,8 @@
-﻿namespace RuRayFacebook.App.LoggedIn.Pages
+﻿using RuRayLibrary.Components.Eidtor;
+
+namespace RuRayFacebook.App.LoggedIn.Pages
 {
-    public class Header
+    public class Header : IHeaderNavigation
     {
         public HeaderRightMenu RightMenu { get; }
         public HeaderMiddleMenu MiddleMenu { get; }
