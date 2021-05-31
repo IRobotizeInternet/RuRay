@@ -26,9 +26,10 @@ A retry mechanism to rerun failed tests - this is especially useful for WebDrive
 Known issue
 ----
 - Often chorme driver does not connect/Dont click/click on incorrect element even after refersing the page.
-Must close all the google chrome browser before running the RuRayr (Sometime existing browser cause new browser to be opened with unknown port
+- Must close all the google chrome browser before running the RuRay (Sometime existing browser cause new browser to be opened with unknown port
 that will eventually throw up (https://stackoverflow.com/questions/56356452/selenium-chromedriver-the-http-request-to-the-remote-webdriver-server-for-url)
 Unhandled exception. System.IO.FileLoadException: Could not load file or assembly 'Microsoft.Extensions.DependencyModel, Version=2.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60'. The located assembly's manifest definition does not match the assembly reference. (0x80131040) [TO FIX: Clean and rebuild the solution]
+- Run RuRay.API.exe through executable from bin folder when running the entire application. 
 
 
 --

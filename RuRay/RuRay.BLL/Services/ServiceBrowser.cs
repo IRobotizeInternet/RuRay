@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
+using System.Threading;
 
 namespace RuRayFacebook.Services
 {
@@ -24,10 +25,15 @@ namespace RuRayFacebook.Services
             var existingChromePIds = Process.GetProcessesByName("chrome").Select(x => x.Id);
             
             ServiceTask.RunScript(shortcutAddress);
-            
-            envSettings.Details = new EnvironmentSettingsDTO {
-                ProcessId = Process.GetProcessesByName("chrome").Where(x => !existingChromePIds.Contains(x.Id)).First().Id.ToString() 
-            };
+
+            var processes = Process.GetProcessesByName("chrome").Where(x => !existingChromePIds.Contains(x.Id));
+            if (processes.Any())
+            {
+                envSettings.Details = new EnvironmentSettingsDTO
+                {
+                    ProcessId = processes.First().Id.ToString()
+                };
+            }
         }
     }
 }
