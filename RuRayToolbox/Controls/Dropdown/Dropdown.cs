@@ -1,8 +1,8 @@
-﻿using OpenQA.Selenium;
+﻿using System.Threading;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 using OpenQA.Selenium.Support.UI;
 using RuRayToolbox.Extensions;
-using System.Threading;
 
 namespace RuRayToolbox.CommonControls
 {
@@ -14,7 +14,11 @@ namespace RuRayToolbox.CommonControls
         {
             get
             {
-                if (!Driver.TryFindElement(ByForElement, out var webElement)) throw new InvalidElementStateException();
+                if (!Driver.TryFindElement(ByForElement, out var webElement))
+                {
+                    throw new InvalidElementStateException();
+                }
+
                 ScrollToElement(webElement);
                 return new SelectElement(webElement);
             }

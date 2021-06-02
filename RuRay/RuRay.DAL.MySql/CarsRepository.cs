@@ -1,14 +1,14 @@
+using System;
+using System.Collections.Generic;
+using System.Data;
+using System.Threading;
+using System.Threading.Tasks;
 using Dapper;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Microsoft.Extensions.Options;
 using MySql.Data.MySqlClient;
 using RuRay.DAL.MySql.Contract;
 using RuRay.DAL.MySql.Models;
-using System;
-using System.Collections.Generic;
-using System.Data;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace RuRay.DAL.MySql
 {

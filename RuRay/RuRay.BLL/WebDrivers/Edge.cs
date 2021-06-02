@@ -1,13 +1,13 @@
-﻿using OpenQA.Selenium.Edge;
+﻿using System;
+using OpenQA.Selenium.Edge;
 using OpenQA.Selenium.Remote;
-using System;
 
 namespace RuRayFacebook.WebDrivers
 {
-    public class Edge: WebDriver
+    public class Edge : WebDriver
     {
         public Edge(string baseUrl) : base(baseUrl) { }
-        
+
         public override RemoteWebDriver Driver(bool useExistingBrowser)
         {
             if (string.IsNullOrEmpty(BaseURL))

@@ -1,3 +1,7 @@
+using System;
+using System.Collections.Generic;
+using System.Net;
+using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -6,10 +10,6 @@ using RuRay.API.Swagger;
 using RuRay.BLL.Contracts;
 using Swashbuckle.AspNetCore.Annotations;
 using Swashbuckle.AspNetCore.Filters;
-using System;
-using System.Collections.Generic;
-using System.Net;
-using System.Threading.Tasks;
 
 namespace RuRay.API.Controllers
 {

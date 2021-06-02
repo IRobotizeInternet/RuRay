@@ -1,6 +1,6 @@
-using RuRay.BLL.Models;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using RuRay.BLL.Models;
 
 namespace RuRay.BLL.Contracts
 {

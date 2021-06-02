@@ -1,9 +1,9 @@
+using System;
+using System.Net;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using RuRay.BLL.Contracts;
 using Swashbuckle.AspNetCore.Annotations;
-using System;
-using System.Net;
 
 namespace RuRay.API.Controllers
 {

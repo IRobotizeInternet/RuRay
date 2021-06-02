@@ -1,23 +1,23 @@
-﻿using OpenQA.Selenium;
+﻿using System.Diagnostics;
+using System.Text.RegularExpressions;
+using OpenQA.Selenium;
 using RuRay.BLL.Resources;
 using RuRayToolbox.Controls;
-using System.Diagnostics;
-using System.Text.RegularExpressions;
 
 namespace RuRayFacebook.App.LoggedIn.Pages
 {
     public class HeaderMiddleMenu : BaseDriver
     {
         // Items in the middle.
-        public EventTriggerButton<PageHome> EventTriggerButtonHome => 
+        public EventTriggerButton<PageHome> EventTriggerButtonHome =>
             new EventTriggerButton<PageHome>(Driver, By.XPath($"//a[contains(@aria-label, '{ResHomePageHeader.Home}')]"));
-        public EventTriggerButton<PageFriends> EventTriggerButtonFriends => 
+        public EventTriggerButton<PageFriends> EventTriggerButtonFriends =>
             new EventTriggerButton<PageFriends>(Driver, By.XPath($"//a[contains(@aria-label, '{ResHomePageHeader.Friends}')][2]"));
-        public EventTriggerButton<PageWatch> EventTriggerButtonWatch => 
+        public EventTriggerButton<PageWatch> EventTriggerButtonWatch =>
             new EventTriggerButton<PageWatch>(Driver, By.XPath($"//a[contains(@aria-label, '{ResHomePageHeader.Watch}')]"));
-        public EventTriggerButton<PageMarketplace> EventTriggerButtonMarketPlace => 
+        public EventTriggerButton<PageMarketplace> EventTriggerButtonMarketPlace =>
             new EventTriggerButton<PageMarketplace>(Driver, By.XPath($"//a[contains(@aria-label, '{ResHomePageHeader.Marketplace}')]"));
-        public EventTriggerButton<PageGroup> EventTriggerButtonGroups => 
+        public EventTriggerButton<PageGroup> EventTriggerButtonGroups =>
             new EventTriggerButton<PageGroup>(Driver, By.XPath($"//a[contains(@aria-label, '{ResHomePageHeader.Groups}')]"));
 
         public override void RunConformance()

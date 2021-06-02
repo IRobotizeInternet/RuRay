@@ -1,13 +1,13 @@
-﻿using OpenQA.Selenium;
+﻿using System;
+using System.Linq;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using RuRayFacebook.App.LoggedIn.Enum;
 using RuRay.BLL.Resources;
+using RuRayFacebook.App.LoggedIn.Enum;
 using RuRayLibrary.Extensions;
 using RuRayToolbox.CommonControls;
 using RuRayToolbox.Controls;
 using RuRayToolbox.Controls.TriggerControls;
-using System;
-using System.Linq;
 
 namespace RuRayFacebook.App.LoggedIn.Pages.JobsComposer.ScheduleLiveVideoEvent
 {
@@ -36,7 +36,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages.JobsComposer.ScheduleLiveVideoEvent
         public EventTriggerButton<DialogEndDateAndTime> EventTriggerButtonEndDateAndTime =>
          new EventTriggerButton<DialogEndDateAndTime>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResLeftNav.Next}']"));
 
-        public DropdownSchedulePrivacy DropdownPrivacy => 
+        public DropdownSchedulePrivacy DropdownPrivacy =>
             new DropdownSchedulePrivacy(Driver, new ExtendBy($"{BaseXPath}//span[text()='{ResLeftNav.Privacy}']"));
 
         public class DropdownSchedulePrivacy : DropdownWithEnum<Privacy>
@@ -88,7 +88,11 @@ namespace RuRayFacebook.App.LoggedIn.Pages.JobsComposer.ScheduleLiveVideoEvent
         public IWebElement ButtonImageIllustration(int index)
         {
             var illustrations = Driver.FindElements(By.XPath($"//div[@aria-label='{ResLeftNav.ScheduleLiveSettings}']//img[contains(@alt,'{ResLeftNav.Seasons}') or contains(@alt,'{ResLeftNav.Holiday}') or contains(@alt,'{ResLeftNav.Family}')]"));
-            if (illustrations.Count() < index) return null;
+            if (illustrations.Count() < index)
+            {
+                return null;
+            }
+
             return illustrations[index];
         }
 

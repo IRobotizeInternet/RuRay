@@ -4,7 +4,7 @@ using RuRay.BLL.Resources;
 using RuRayToolbox.CommonControls;
 using RuRayToolbox.Controls;
 
-namespace RuRayFacebook.App.LoggedIn.Pages.GroupCall
+namespace RuRayFacebook.App.LoggedIn.Pages
 {
     public class PageGroupCall : BasePage
     {
@@ -49,9 +49,9 @@ namespace RuRayFacebook.App.LoggedIn.Pages.GroupCall
 
         public Button ButtonYourVideoMicrophoneShow => new Button(Driver, By.XPath($"//button[@aria-label='{ResCreatePost.YourVideoMicrophoneOnClickToShow}']"));
 
-        public ComboboxAddMembers ComboboxSearchForFriends => 
-            new ComboboxAddMembers(Driver, 
-                $"//div[@aria-label='{ResCreatePost.CallPeopleToJoin}']", 
+        public ComboboxAddMembers ComboboxSearchForFriends =>
+            new ComboboxAddMembers(Driver,
+                $"//div[@aria-label='{ResCreatePost.CallPeopleToJoin}']",
                 searchBoxXPath: $"//div[@aria-label='{ResCreatePost.CallPeopleToJoin}']//input[@aria-label='{ResCreatePost.SearchForPeople}']",
                 searchItemsXPath: $"//div[@aria-label='{ResCreatePost.CallPeopleToJoin}']//div[@aria-label='{ResCreatePost.CallPeopleToJoin}']//div[@role='listitem']");
 

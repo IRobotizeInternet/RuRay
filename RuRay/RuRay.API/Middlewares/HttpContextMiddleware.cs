@@ -1,12 +1,12 @@
-using Microsoft.AspNetCore.Http;
-using Newtonsoft.Json;
-using Serilog;
-using Serilog.Context;
 using System;
 using System.Diagnostics;
 using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
+using Newtonsoft.Json;
+using Serilog;
+using Serilog.Context;
 
 namespace RuRay.API.Middleware
 {
@@ -28,7 +28,10 @@ namespace RuRay.API.Middleware
 
         public async Task Invoke(HttpContext httpContext)
         {
-            if (httpContext == null) throw new ArgumentNullException(nameof(httpContext));
+            if (httpContext == null)
+            {
+                throw new ArgumentNullException(nameof(httpContext));
+            }
 
             var userName = httpContext.User.Identity.IsAuthenticated ? httpContext.User.Identity.Name : "unknown";
 

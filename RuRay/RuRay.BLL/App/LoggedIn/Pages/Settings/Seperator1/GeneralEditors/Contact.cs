@@ -1,8 +1,8 @@
 ﻿using OpenQA.Selenium;
+using RuRay.BLL.Resources;
 using RuRayToolbox.CommonControls;
 using RuRayToolbox.Controls;
 using RuRayToolbox.Controls.TriggerControls;
-using RuRay.BLL.Resources;
 
 namespace RuRayFacebook.App.LoggedIn.Pages
 {
@@ -10,7 +10,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
     {
         public Label LabelPrimaryEmail => new Label(Driver, By.XPath("(//div[@class='pbm fbSettingsEditorFields']//div/span)[2]"));
         public Checkbox CheckboxAllowFriendsToIncludeMyEmailAddressIn => new Checkbox(Driver, By.XPath("//input[@id='js_0']"));
-        public Hyperlink<AddAnotherEmailDialog> LinkAddAnotherEmailOrMobile => 
+        public Hyperlink<AddAnotherEmailDialog> LinkAddAnotherEmailOrMobile =>
             new Hyperlink<AddAnotherEmailDialog>(Driver, By.XPath($"//a[text()={ResMiscellaneous.AddAnotherEmailOrMobileNumber}]"));
     }
 }

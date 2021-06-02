@@ -8,7 +8,7 @@ namespace RuRayToolbox.Controls
     {
         public FileUploader(RemoteWebDriver driver, By byForElement) : base(driver, byForElement)
         {
-            
+
         }
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 namespace RuRayFacebook.App.LoggedIn
 {
-    public interface IVehicleFilterOptions : 
+    public interface IVehicleFilterOptions :
         IVehicleSort,
         IPrice,
         IVehicleType,

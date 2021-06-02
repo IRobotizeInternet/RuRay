@@ -1,6 +1,5 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using RuRayToolbox.CommonControls;
 
 namespace RuRayToolbox.CommonControls
 {

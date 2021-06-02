@@ -1,14 +1,14 @@
-﻿using OpenQA.Selenium;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 using RuRayToolbox.CommonControls;
 using RuRayToolbox.Extensions;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace RuRayFacebook.App.LoggedIn
 {
-    public class CheckboxFilter: BaseFilter, ICheckboxFilterOptions, ICheckboxFilter
+    public class CheckboxFilter : BaseFilter, ICheckboxFilterOptions, ICheckboxFilter
     {
         private readonly By _byFilterButton;
 
@@ -30,7 +30,11 @@ namespace RuRayFacebook.App.LoggedIn
 
         public override void ApplyFilter()
         {
-            if (FilterCriteriaList.Any()) SetFilterCriteria();
+            if (FilterCriteriaList.Any())
+            {
+                SetFilterCriteria();
+            }
+
             base.ApplyFilter();
         }
 
@@ -59,7 +63,10 @@ namespace RuRayFacebook.App.LoggedIn
             var checkboxItemToClick = labelElementsFilterPopup.First(labelElement => labelElement.Text.Trim()
                 .Equals(filterExpression));
 
-            if (checkboxItemToClick == null) throw new ElementNotVisibleException($"Unable to add filter {filterExpression}. checkbox filter not available");
+            if (checkboxItemToClick == null)
+            {
+                throw new ElementNotVisibleException($"Unable to add filter {filterExpression}. checkbox filter not available");
+            }
 
             checkboxItemToClick.Click();
         }

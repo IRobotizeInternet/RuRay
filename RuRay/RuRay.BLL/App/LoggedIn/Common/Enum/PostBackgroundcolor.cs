@@ -6,7 +6,7 @@ namespace RuRayFacebook.App.LoggedIn
     public enum PostBackgroundcolor
     {
         [LocalizedDescription(nameof(ResPostBackGroundColor.Nobackground), typeof(ResPostBackGroundColor))]
-        Nobackground =1,
+        Nobackground = 1,
         [LocalizedDescription(nameof(ResPostBackGroundColor.CloseupChevronKnit), typeof(ResPostBackGroundColor))]
         CloseupChevronKnit = 2,
         [LocalizedDescription(nameof(ResPostBackGroundColor.BlueMountains), typeof(ResPostBackGroundColor))]

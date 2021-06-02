@@ -46,16 +46,27 @@ public static class MySqlExtensions
     public static void MySqlDatabase(this SupportedDatabasesForEnsureDatabase supported, string connectionString, IUpgradeLog logger, int timeout = -1)
     {
         if (supported == null)
+        {
             throw new ArgumentNullException(nameof(supported));
+        }
+
         if (string.IsNullOrEmpty(connectionString) || connectionString.Trim() == string.Empty)
+        {
             throw new ArgumentNullException(nameof(connectionString));
+        }
+
         if (logger == null)
+        {
             throw new ArgumentNullException(nameof(logger));
+        }
 
         var connectionStringBuilder = new MySqlConnectionStringBuilder(connectionString);
         var initialCatalog = connectionStringBuilder.Database;
         if (string.IsNullOrEmpty(initialCatalog) || initialCatalog.Trim() == string.Empty)
+        {
             throw new InvalidOperationException("The connection string does not specify a database name.");
+        }
+
         connectionStringBuilder.Database = "sys";
 
         var maskedConnectionStringBuilder = new MySqlConnectionStringBuilder(connectionStringBuilder.ConnectionString)
@@ -78,7 +89,11 @@ public static class MySqlExtensions
             }
             using (var mySqlCommand = new MySqlCommand($"CREATE DATABASE IF NOT EXISTS {initialCatalog}", connection) { CommandType = CommandType.Text })
             {
-                if (timeout >= 0) mySqlCommand.CommandTimeout = timeout;
+                if (timeout >= 0)
+                {
+                    mySqlCommand.CommandTimeout = timeout;
+                }
+
                 mySqlCommand.ExecuteNonQuery();
             }
 

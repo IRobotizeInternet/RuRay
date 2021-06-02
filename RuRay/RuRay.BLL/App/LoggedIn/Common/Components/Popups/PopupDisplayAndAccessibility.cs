@@ -19,7 +19,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
         public RadioButton RButtonDarkModeOff => new RadioButton(Driver, By.XPath(string.Format(RButtonsXPath, ResAccount.DarkMode, ResAccount.Off)));
         public RadioButton RButtonCompactModeOn => new RadioButton(Driver, By.XPath(string.Format(RButtonsXPath, ResAccount.CompactMode, ResAccount.On)));
         public RadioButton RButtonCompactModeOff => new RadioButton(Driver, By.XPath(string.Format(RButtonsXPath, ResAccount.CompactMode, ResAccount.Off)));
-        
+
         public EventTriggerButton<PopupKeyBoard> ButtonKeyboard =>
             new EventTriggerButton<PopupKeyBoard>(Driver, By.XPath($"{string.Format(RButtonsXPath, ResAccount.CompactMode, ResAccount.On)}/following::span[text()='{ResAccount.Keyboard}'])"));
 

@@ -15,16 +15,16 @@ namespace RuRayFacebook.App.LoggedIn.Pages
 
         protected override By ByForDialog => By.XPath($"//div[@aria-label='{ResHomePage.SendInMessenger}']");
 
-        public TextBox TextBoxSaySomething => 
+        public TextBox TextBoxSaySomething =>
             new TextBox(Driver, By.XPath($"//div[@aria-label='{ResHomePage.SaySomethingAboutThis}']"));
 
-        public EventTriggerButton<DialogSendToGroup<DialogSendInMessenger>> EventTriggerButtonSendToGroup => 
+        public EventTriggerButton<DialogSendToGroup<DialogSendInMessenger>> EventTriggerButtonSendToGroup =>
             new EventTriggerButton<DialogSendToGroup<DialogSendInMessenger>>(
-                Driver, 
+                Driver,
                 By.XPath($"{BaseXPath}//span[text()='{ResHomePage.SendToNewGroup}']"));
 
 
-        public ComboboxSharingWithYourFriends ComboboxSearchFriends => 
+        public ComboboxSharingWithYourFriends ComboboxSearchFriends =>
             new ComboboxSharingWithYourFriends(
                 Driver,
                 BaseXPath,
@@ -32,7 +32,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
 
         public ScrollControl<ListItemSendInMessenger> ScrollSendInMessenger =>
            new ScrollControl<ListItemSendInMessenger>(
-               Driver, 
+               Driver,
                $"//form//div[@aria-label='{ResCreatePost.Friends}']/div",
                scrollXPath: $"{BaseXPath}//div[@data-visualcompletion='ignore-dynamic' and ./descendant-or-self::div//span[text()='{ResHomePage.Send}']]");
 

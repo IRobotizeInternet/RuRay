@@ -9,14 +9,14 @@ namespace RuRayFacebook.App.LoggedIn.Pages
     {
         public ScrollControl<ListItemSeeWhoReactedToThis> ScrollReactions =>
             new ScrollControl<ListItemSeeWhoReactedToThis>(
-                Driver, 
+                Driver,
                 $"//div[@aria-label='{ResHomePage.Reactions}']/div[3]//div[@data-visualcompletion='ignore-dynamic']",
                 scrollXPath: $"//div[@aria-label='{ResHomePage.Reactions}']/div[3]");
 
 
         public DialogSeeWhoReactedToThis()
         {
-            BaseXPath = "//div[@aria-label='"+ResHomePage.Reactions+"']//div[@role='tab'][@tabindex='0'][{0}]//span";
+            BaseXPath = "//div[@aria-label='" + ResHomePage.Reactions + "']//div[@role='tab'][@tabindex='0'][{0}]//span";
         }
 
         protected override By ByForDialog => By.XPath($"//div[@aria-label='{ResHomePage.Reactions}']");

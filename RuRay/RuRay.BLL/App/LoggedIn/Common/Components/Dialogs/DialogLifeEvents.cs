@@ -7,7 +7,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
     {
         public DialogLifeEvents()
         {
-            
+
         }
 
         protected override By ByForDialog => By.XPath($"//span[text()='{ResHomePage.LifeEvent}']");

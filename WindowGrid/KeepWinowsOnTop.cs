@@ -1,9 +1,5 @@
-﻿using System.Collections.Generic;
-using System.Configuration;
-using System.Drawing;
-using System.Windows.Forms;
+﻿using System;
 using System.Runtime.InteropServices;
-using System;
 
 namespace WindowGrid
 {
@@ -22,7 +18,7 @@ namespace WindowGrid
         [return: MarshalAs(UnmanagedType.Bool)]
         private static extern bool SetWindowPos(IntPtr hWnd, IntPtr hWndInsertAfter, int X, int Y, int cx, int cy, uint uFlags);
 
-        
+
         public static void SetWindowAlwaysOnTop(IntPtr handle)
         {
             SetWindowPos(handle, HWND_TOPMOST, 0, 0, 0, 0, TOPMOST_FLAGS);

@@ -1,3 +1,5 @@
+using System;
+using System.Linq;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Http;
@@ -13,8 +15,6 @@ using RuRay.BLL.Services;
 using RuRay.BLL.Services.Keyboard;
 using RuRay.DAL.MySql;
 using RuRay.DAL.MySql.Contract;
-using System;
-using System.Linq;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
@@ -50,7 +50,7 @@ namespace Microsoft.Extensions.DependencyInjection
             services.TryAddSingleton<ICarsRepository, CarsRepository>();
 
             services.TryAddScoped<ICarsService, CarsService>();
-            services.TryAddScoped<IServiceHomeHeader, ServiceHomeHeader>(); 
+            services.TryAddScoped<IServiceHomeHeader, ServiceHomeHeader>();
             services.TryAddScoped<IServiceWindowsScreen, ServiceWindowsScreen>();
             services.TryAddScoped<IJwtTokenService, JwtTokenService>();
             services.TryAddScoped<IServiceKeyboard, ServiceKeyboard>();

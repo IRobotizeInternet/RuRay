@@ -3,7 +3,7 @@ using RuRayToolbox.CommonControls;
 
 namespace RuRayFacebook.App.LoggedIn.Pages
 {
-    public class UserName: BaseEditor
+    public class UserName : BaseEditor
     {
         public Label LabelUserName => new Label(Driver, By.XPath("//div[@class='fcb']//span"));
         public TextBox TextBoxUserName => new TextBox(Driver, By.XPath("@//input[@aria-describedby='u_3_1']"));

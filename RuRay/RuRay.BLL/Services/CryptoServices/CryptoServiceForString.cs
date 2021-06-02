@@ -1,7 +1,7 @@
-﻿using RuRayFacebook.CryptoServices;
-using System;
+﻿using System;
 using System.Security.Cryptography;
 using System.Text;
+using RuRayFacebook.CryptoServices;
 
 namespace RuRayFacebook.Security
 {

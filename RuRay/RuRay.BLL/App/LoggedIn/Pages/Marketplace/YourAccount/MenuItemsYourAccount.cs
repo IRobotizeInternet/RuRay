@@ -6,7 +6,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
 {
     public class MenuItemsYourAccount : MenuItems
     {
-        public EventTriggerButton<PageMarketPlaceYourAccount> TriggerButtonYourListings => 
+        public EventTriggerButton<PageMarketPlaceYourAccount> TriggerButtonYourListings =>
             new EventTriggerButton<PageMarketPlaceYourAccount>(Driver, By.XPath($"{BaseXPath}//span[contains(text(), '{ResLeftNav.YourListings}')]"));
         public EventTriggerButton<FeedYourAccountSaved> TriggerButtonSaved =>
            new EventTriggerButton<FeedYourAccountSaved>(Driver, By.XPath($"{BaseXPath}//span[contains(text(), '{ResLeftNav.Saved}')]"));

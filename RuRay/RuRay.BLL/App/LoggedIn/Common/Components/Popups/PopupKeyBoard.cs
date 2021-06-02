@@ -13,7 +13,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
 
         protected override By ByForDialog => By.XPath($"//div[@aria-label='{ResAccount.UseSingleCharacterKeyboardShortcuts}']");
 
-        public EventTriggerButton<DialogAllKeyboardShortcuts> DialogSeeAllKeyboardShortcuts => 
+        public EventTriggerButton<DialogAllKeyboardShortcuts> DialogSeeAllKeyboardShortcuts =>
             new EventTriggerButton<DialogAllKeyboardShortcuts>(Driver, By.XPath($"//span[text()='{ResAccount.SeeAllKeyboardShortcuts}']"));
 
         public RadioButton RButtonUseSingleCharacterKeyboardShortcutsOn =>

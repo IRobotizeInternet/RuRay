@@ -8,7 +8,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
     {
         public DialogPeopleWhoSharedThis()
         {
-            
+
         }
 
         public ScrollControl<ListItemPeopleWhoSharedThis> ScrollPeopleWhoSharedThis =>

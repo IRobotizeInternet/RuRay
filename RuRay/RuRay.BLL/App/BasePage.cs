@@ -29,8 +29,14 @@ namespace RuRayFacebook.App.LoggedIn.Pages
 
         public void GoToPage(string url = null)
         {
-            if (url != null) Driver.Navigate().GoToUrl(url);
-            else Driver.Navigate().GoToUrl($"{BaseURL}{PageUrl}");
+            if (url != null)
+            {
+                Driver.Navigate().GoToUrl(url);
+            }
+            else
+            {
+                Driver.Navigate().GoToUrl($"{BaseURL}{PageUrl}");
+            }
         }
 
         protected virtual void WaitForPageToAppear()

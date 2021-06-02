@@ -1,7 +1,7 @@
-using RuRay.DAL.MySql.Models;
 using System;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using RuRay.DAL.MySql.Models;
 
 namespace RuRay.DAL.MySql.Contract
 {

@@ -8,7 +8,7 @@ namespace RuRayFacebook.App.NotLoggedIn.Login.Dialog
     {
         protected override By ByForDialog => throw new System.NotImplementedException();
 
-        public DialogChangeEmail() 
+        public DialogChangeEmail()
         {
         }
 

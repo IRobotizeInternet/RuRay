@@ -7,7 +7,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
 {
     public class DialogGIF : BaseDialog
     {
-        public DialogGIF() 
+        public DialogGIF()
         {
         }
 

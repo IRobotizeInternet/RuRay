@@ -1,13 +1,13 @@
+using System;
+using System.Collections.Generic;
+using System.Net;
+using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using RuRay.API.Models;
 using RuRay.BLL;
 using Swashbuckle.AspNetCore.Annotations;
-using System;
-using System.Collections.Generic;
-using System.Net;
-using System.Threading.Tasks;
 
 namespace RuRay.API.Controllers
 {

@@ -1,10 +1,10 @@
-﻿using OpenQA.Selenium;
+﻿using System;
+using System.Threading;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 using RuRay.BLL.Resources;
 using RuRayToolbox.Controls;
 using RuRayToolbox.Extensions;
-using System;
-using System.Threading;
 
 namespace RuRayFacebook.App.LoggedIn.Pages
 {

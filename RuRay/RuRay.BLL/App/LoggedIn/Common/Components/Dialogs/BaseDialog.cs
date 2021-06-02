@@ -14,7 +14,10 @@ namespace RuRayFacebook.App.LoggedIn.Pages
 
         protected BaseDialog()
         {
-            if (ByForDialog != null)  WaitForDialogToAppear(ByForDialog);
+            if (ByForDialog != null)
+            {
+                WaitForDialogToAppear(ByForDialog);
+            }
         }
 
         protected virtual void WaitForDialogToAppear(By byForDialog)
@@ -32,7 +35,10 @@ namespace RuRayFacebook.App.LoggedIn.Pages
             try
             {
                 var element = Driver.FindVisibleElementsWait(ByForDialog, timeoutInSeconds);
-                if (element.Count() > 1) throw new Exception("Found more than one dialog for a give xPath.");
+                if (element.Count() > 1)
+                {
+                    throw new Exception("Found more than one dialog for a give xPath.");
+                }
 
                 return true;
             }

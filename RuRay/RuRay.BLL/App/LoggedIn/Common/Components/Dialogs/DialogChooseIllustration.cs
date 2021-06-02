@@ -1,11 +1,11 @@
-﻿using OpenQA.Selenium;
+﻿using System.Linq;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using RuRayFacebook.App.LoggedIn.Enum;
 using RuRay.BLL.Resources;
+using RuRayFacebook.App.LoggedIn.Enum;
 using RuRayLibrary.Extensions;
 using RuRayToolbox.Controls;
 using RuRayToolbox.Extensions;
-using System.Linq;
 
 namespace RuRayFacebook.App.LoggedIn.Pages
 {
@@ -55,7 +55,11 @@ namespace RuRayFacebook.App.LoggedIn.Pages
         {
             var webElementsCoverPhotos = Driver.FindElements(By.XPath($"//div[@aria-label='{ResLeftNav.ChooseAnIllustration}']//div[@aria-label='{ResLeftNav.CoverPhoto}']"));
 
-            if (webElementsCoverPhotos == null || webElementsCoverPhotos.Count < index) return;
+            if (webElementsCoverPhotos == null || webElementsCoverPhotos.Count < index)
+            {
+                return;
+            }
+
             var webElementIllustration = webElementsCoverPhotos.ToList()[index];
             JscriptExecutor.ScrollToTheElement(Driver, webElementIllustration);
             webElementIllustration.Click();

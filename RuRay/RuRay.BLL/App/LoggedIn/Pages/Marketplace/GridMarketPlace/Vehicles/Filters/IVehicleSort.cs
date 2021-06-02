@@ -2,6 +2,6 @@
 {
     public interface IVehicleSort : ISortBy<VehicleSortOption>, IFilterOptions
     {
-       
+
     }
 }

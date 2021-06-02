@@ -26,8 +26,8 @@ namespace RuRayFacebook.App.LoggedIn.Pages
 
     public class AfterSaveControls
     {
-        private RemoteWebDriver _driver;
-        private By _byForAnElement;
+        private readonly RemoteWebDriver _driver;
+        private readonly By _byForAnElement;
         public AfterSaveControls(RemoteWebDriver driver, By byForElement)
         {
             _driver = driver;

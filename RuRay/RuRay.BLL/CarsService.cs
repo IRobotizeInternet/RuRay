@@ -1,11 +1,11 @@
+using System;
+using System.Collections.Generic;
+using System.Threading.Tasks;
 using AutoMapper;
 using RuRay.BLL.Contracts;
 using RuRay.BLL.Models;
 using RuRay.DAL.MySql.Contract;
 using RuRay.DAL.MySql.Models;
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace RuRay.BLL
 {

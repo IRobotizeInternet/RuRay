@@ -7,7 +7,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
 {
     public class Calendar : BaseDriver
     {
-        private string BaseXPath = $"//div[@role='dialog'][@aria-label='{ResMiscellaneous.Calendar}']";
+        private readonly string BaseXPath = $"//div[@role='dialog'][@aria-label='{ResMiscellaneous.Calendar}']";
 
         public Calendar()
         {
@@ -25,7 +25,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
              new Label(Driver, By.XPath($"{BaseXPath}//div[@role='gridcell']//span[text()='15']")).GetAttribute("class");
 
         private string Date => $"{BaseXPath}//div[@class='{CurrentMonthClass}']//span[text()='{0}']";
-        private string Month => 
+        private string Month =>
             new Label(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResMiscellaneous.PreviousMonth}']/following-sibling::span/span")).GetText().Split(' ')[0];
         private string Year =>
             new Label(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResMiscellaneous.PreviousMonth}']/following-sibling::span/span")).GetText().Split(' ')[1];

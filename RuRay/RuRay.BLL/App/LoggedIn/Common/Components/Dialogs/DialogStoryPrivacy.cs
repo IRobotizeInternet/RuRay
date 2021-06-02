@@ -12,8 +12,8 @@ namespace RuRayFacebook.App.LoggedIn.Pages
         }
 
         protected override By ByForDialog => By.XPath($"//div[@aria-label='{ResMiscellaneous.StoryPrivacy}']");
-        
-        public RadioButton RButtonPublic => 
+
+        public RadioButton RButtonPublic =>
             new RadioButton(Driver, By.XPath($"{BaseXPath}//div[@role='radio' and .//span[contains(text(), '{ResCreatePost.Public}')]] "));
         public RadioButton RButtonFriends =>
             new RadioButton(Driver, By.XPath($"{BaseXPath}//div[@role='radio' and .//span[contains(text(), '{ResCreatePost.Friends}')]] "));

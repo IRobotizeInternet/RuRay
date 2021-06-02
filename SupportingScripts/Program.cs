@@ -6,6 +6,7 @@
         {
             //var a = new ScriptUsingFacebook();
             //a.GenerateFacebookHelpApi();
+            new IterateFiles().PrintCode();
         }
     }
 }

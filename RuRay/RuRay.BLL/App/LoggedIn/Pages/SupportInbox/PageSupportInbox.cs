@@ -1,6 +1,6 @@
-﻿using OpenQA.Selenium;
+﻿using System;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using System;
 
 namespace RuRayFacebook.App.LoggedIn.Pages
 {
@@ -12,7 +12,12 @@ namespace RuRayFacebook.App.LoggedIn.Pages
 
         public PageSupportInbox(RemoteWebDriver driver)
         {
-            
+
+        }
+
+        public PageSupportInbox()
+        {
+
         }
 
         public override void RunConformance()

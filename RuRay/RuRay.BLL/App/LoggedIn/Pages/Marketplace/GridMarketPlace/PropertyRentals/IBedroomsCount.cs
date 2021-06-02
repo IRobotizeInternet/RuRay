@@ -2,7 +2,7 @@
 
 namespace RuRayFacebook.App.LoggedIn
 {
-    public interface IBedroomsCount<TBedroomCount> where TBedroomCount: struct, IConvertible
+    public interface IBedroomsCount<TBedroomCount> where TBedroomCount : struct, IConvertible
     {
         IApplyFilter Bedrooms(TBedroomCount numberOfBedrooms);
     }

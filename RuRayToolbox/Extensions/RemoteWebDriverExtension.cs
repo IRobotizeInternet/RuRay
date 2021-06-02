@@ -1,11 +1,11 @@
-﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
-using OpenQA.Selenium.Support.UI;
-using Polly;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Remote;
+using OpenQA.Selenium.Support.UI;
+using Polly;
 
 namespace RuRayToolbox.Extensions
 {
@@ -31,10 +31,16 @@ namespace RuRayToolbox.Extensions
             });
 
             // If no elements found then throw an exception.
-            if (elements == null || !elements.Any()) Trace.WriteLine($"No element found matching criteria '{by}'");
+            if (elements == null || !elements.Any())
+            {
+                Trace.WriteLine($"No element found matching criteria '{by}'");
+            }
 
             // If found more than one element then throw an exception.
-            if (elements.Count() > 1) Trace.WriteLine($"More than one element found matching criteria '{by}'");
+            if (elements.Count() > 1)
+            {
+                Trace.WriteLine($"More than one element found matching criteria '{by}'");
+            }
 
             return elements.Any() ? elements.First() : null;
         }
@@ -44,13 +50,19 @@ namespace RuRayToolbox.Extensions
         /// </summary>
         public static IWebElement FindSingleElement(this RemoteWebDriver driver, By by)
         {
-            var elements =  driver.FindElements(by);
+            var elements = driver.FindElements(by);
 
             // If no elements found then throw an exception.
-            if (!elements.Any()) Trace.WriteLine($"{nameof(NoSuchElementException)} occured, element found matching criteria '{by}' not found");
+            if (!elements.Any())
+            {
+                Trace.WriteLine($"{nameof(NoSuchElementException)} occured, element found matching criteria '{by}' not found");
+            }
 
             // If found more than one element then throw an exception.
-            if (elements.Count() > 1) Trace.WriteLine($"More than one element found matching criteria '{by}'");
+            if (elements.Count() > 1)
+            {
+                Trace.WriteLine($"More than one element found matching criteria '{by}'");
+            }
 
             return elements?.First();
         }
@@ -59,8 +71,8 @@ namespace RuRayToolbox.Extensions
         /// Return the visible web elements matching the selector.
         /// </summary>
         public static IEnumerable<IWebElement> FindVisibleElementsWait(
-            this RemoteWebDriver driver, 
-            By byForElement, 
+            this RemoteWebDriver driver,
+            By byForElement,
             int timeoutSeconds = 60)
         {
             var wait = new WebDriverWait(driver, TimeSpan.FromSeconds(timeoutSeconds));
@@ -82,7 +94,7 @@ namespace RuRayToolbox.Extensions
             this RemoteWebDriver driver,
             By byForElement,
             int timeoutSeconds = 2,
-            int numberOfTires = 3 )
+            int numberOfTires = 3)
         {
             try
             {
@@ -95,7 +107,7 @@ namespace RuRayToolbox.Extensions
                     var element = driver.FindElement(byForElement);
                 });
             }
-            catch(NoSuchElementException ex)
+            catch (NoSuchElementException ex)
             {
                 Debug.WriteLine($"Exception occured ofter trying {numberOfTires} times. Message: {ex.Message}");
             }
@@ -116,7 +128,10 @@ namespace RuRayToolbox.Extensions
             policy.Execute(() =>
             {
                 var elements = driver.FindElements(byForElement);
-                if (elements.Any()) throw new Exception();
+                if (elements.Any())
+                {
+                    throw new Exception();
+                }
             });
         }
     }

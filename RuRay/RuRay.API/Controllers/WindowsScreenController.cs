@@ -1,3 +1,6 @@
+using System;
+using System.Net;
+using System.Threading.Tasks;
 using AutoMapper;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -6,9 +9,6 @@ using RuRay.API.Swagger;
 using RuRay.BLL.Contracts;
 using Swashbuckle.AspNetCore.Annotations;
 using Swashbuckle.AspNetCore.Filters;
-using System;
-using System.Net;
-using System.Threading.Tasks;
 
 namespace RuRay.API.Controllers
 {
@@ -44,7 +44,10 @@ namespace RuRay.API.Controllers
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
         public async Task<IActionResult> WindowGrid([FromRoute] GridVisibility gridVisibility)
         {
-            if (gridVisibility == GridVisibility.INVALID) return BadRequest();
+            if (gridVisibility == GridVisibility.INVALID)
+            {
+                return BadRequest();
+            }
 
             await _serviceWindowsScreen.WindowGrid(gridVisibility);
             return Ok();

@@ -2,7 +2,6 @@
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
-using System.Threading;
 
 namespace RuRayFacebook.Services
 {
@@ -15,15 +14,22 @@ namespace RuRayFacebook.Services
             string shortcutAddress = Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + @"\chrome.exe - Shortcut.lnk";
 
             // If shortcut does not exist call script ChangeTarget.ps1 to generate icon
-            if (!File.Exists(shortcutAddress)) ServiceTask.RunScript("ChangeTarget.ps1");
+            if (!File.Exists(shortcutAddress))
+            {
+                ServiceTask.RunScript("ChangeTarget.ps1");
+            }
 
             // This is a very interesting hack. Read the code carefully to understand it better.
             var envSettings = EnvironmentSettings.SettingsData();
             if (int.TryParse(envSettings.Details?.ProcessId, out var previousSessionId)
                 && Process.GetProcessesByName("chrome")
-                .Any(x => x.Id == previousSessionId)) return;
+                .Any(x => x.Id == previousSessionId))
+            {
+                return;
+            }
+
             var existingChromePIds = Process.GetProcessesByName("chrome").Select(x => x.Id);
-            
+
             ServiceTask.RunScript(shortcutAddress);
 
             var processes = Process.GetProcessesByName("chrome").Where(x => !existingChromePIds.Contains(x.Id));

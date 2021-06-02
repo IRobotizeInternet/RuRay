@@ -1,9 +1,9 @@
-﻿using OpenQA.Selenium;
+﻿using System;
+using OpenQA.Selenium;
 using RuRay.BLL.Resources;
 using RuRayToolbox.CommonControls;
 using RuRayToolbox.Components;
 using RuRayToolbox.Controls;
-using System;
 
 namespace RuRayFacebook.App.LoggedIn.Pages
 {
@@ -17,7 +17,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
         public string FeedCommentControlsXPath => $"{string.Format(_feedUnitIndexPath, BaseXPath, XIndex, 4)}/div/div/div[1]";
         public string FeedCommentsXPath => $"{string.Format(_feedUnitIndexPath, BaseXPath, XIndex, 4)}/div/div/div[2]";
         public int XIndex { get; set; }
-        
+
         public ListItemFeedUnit(string baseXPath, int index = 1)
         {
             BaseXPath = baseXPath;
@@ -38,12 +38,12 @@ namespace RuRayFacebook.App.LoggedIn.Pages
             new EventTriggerButton<HoverOverLike>(Driver, By.XPath($"{FeedCommentControlsXPath}{Constants.LikeOptions}"));
 
         public EventTriggerButton<PopupComments> EventTriggerButtonComment =>
-           new EventTriggerButton<PopupComments>(Driver, 
+           new EventTriggerButton<PopupComments>(Driver,
                By.XPath($"{FeedCommentControlsXPath}//span[text()='{ResHomePage.Comment}']"),
                $"{FeedCommentControlsXPath}//span[text()='{ResHomePage.Comment}']");
         public EventTriggerButton<DialogShare> EventTriggerButtonShare =>
            new EventTriggerButton<DialogShare>(Driver, By.XPath($"{FeedCommentControlsXPath}//span[text()='{ResHomePage.Share}']"));
-        public EventTriggerButton<DialogChooseHowToInteract> EventTriggerButtonChooseHowToInteract => 
+        public EventTriggerButton<DialogChooseHowToInteract> EventTriggerButtonChooseHowToInteract =>
             new EventTriggerButton<DialogChooseHowToInteract>(Driver, By.XPath($"{FeedCommentControlsXPath}//button[@aria-label='{ResHomePage.VoiceSelector}']"));
 
         public int YIndex { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
@@ -73,7 +73,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
 
         public Button ButtonHidePeopleYouMayKnow =>
             new Button(Driver, By.XPath($"{BaseXPath}//span[text()='{ResHomePage.HidePeopleYouMayKnow}']"));
-        
+
         public Button ButtonNextItems =>
             new Button(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResHomePage.NextItems}']"));
 

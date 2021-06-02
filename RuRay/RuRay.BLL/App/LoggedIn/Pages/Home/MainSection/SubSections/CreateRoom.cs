@@ -8,7 +8,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
     public class CreateRoom
     {
         private readonly RemoteWebDriver _driver;
-        
+
 
         public CreateRoom(RemoteWebDriver driver)
         {
@@ -19,7 +19,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
         public EventTriggerButton<DialogCreateYourRoom> DialogCreateRoom =>
             new EventTriggerButton<DialogCreateYourRoom>(_driver, By.XPath($"//div[@data-pagelet='VideoChatHomeUnit']//span[text()='{ResMiscellaneous.CreateRoom}']"));
 
-        public EventTriggerButton<DialogLearnCreateRoom> LinkLearnHowRoomWorks => 
+        public EventTriggerButton<DialogLearnCreateRoom> LinkLearnHowRoomWorks =>
             new EventTriggerButton<DialogLearnCreateRoom>(_driver, By.XPath($"//div[@data-pagelet='VideoChatHomeUnit']//div[@aria-label='{ResMiscellaneous.LearnMore}']"));
     }
 }

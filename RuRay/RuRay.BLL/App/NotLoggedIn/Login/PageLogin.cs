@@ -1,10 +1,10 @@
 ﻿using OpenQA.Selenium;
+using RuRay.BLL.Resources;
+using RuRayFacebook.App.LoggedIn.Pages;
 using RuRayFacebook.Utilities;
 using RuRayToolbox.CommonControls;
-using RuRayToolbox.Controls.TriggerControls;
-using RuRay.BLL.Resources;
 using RuRayToolbox.Controls;
-using RuRayFacebook.App.LoggedIn.Pages;
+using RuRayToolbox.Controls.TriggerControls;
 
 namespace RuRayFacebook.App.NotLoggedIn
 {

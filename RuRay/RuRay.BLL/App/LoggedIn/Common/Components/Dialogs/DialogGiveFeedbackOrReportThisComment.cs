@@ -21,7 +21,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
         public Button ButtonUnauthorizedSales => new Button(Driver, By.XPath($"{ResHomePage.UnauthorizedSales}"));
         public Button ButtonHateSpeech => new Button(Driver, By.XPath($"{ResHomePage.HateSpeech}"));
         public Button ButtonTerrorism => new Button(Driver, By.XPath($"{ResHomePage.Terrorism}"));
-        public EventTriggerButton<DialogSearhSomethingElse> EventTriggerButtonSomethingElse => 
+        public EventTriggerButton<DialogSearhSomethingElse> EventTriggerButtonSomethingElse =>
             new EventTriggerButton<DialogSearhSomethingElse>(Driver, By.XPath($"{ResHomePage.SomethingElse}"));
         public EventTriggerButton<PageHome> EventTriggerButtonNext =>
             new EventTriggerButton<PageHome>(Driver, By.XPath($"{ResHomePage.Next}"));

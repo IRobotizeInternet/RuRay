@@ -2,7 +2,7 @@
 
 namespace RuRayFacebook.App.LoggedIn
 {
-    public interface ICheckboxOption: IFilterOptions, IFilter<ICheckboxFilterOptions>
+    public interface ICheckboxOption : IFilterOptions, IFilter<ICheckboxFilterOptions>
     {
         IApplyFilter FilterItemList(IEnumerable<string> itemsToFilter);
     }

@@ -1,5 +1,5 @@
-﻿using OpenQA.Selenium;
-using System.Diagnostics;
+﻿using System.Diagnostics;
+using OpenQA.Selenium;
 
 namespace RuRayToolbox.Extensions
 {

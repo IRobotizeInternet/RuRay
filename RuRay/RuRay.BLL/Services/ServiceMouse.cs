@@ -4,7 +4,6 @@ using System.Configuration;
 using System.Drawing;
 using System.IO;
 using System.Runtime.InteropServices;
-using System.Text;
 using System.Threading.Tasks;
 using RuRay.BLL.Contracts;
 using RuRayFacebook.Services;
@@ -15,7 +14,8 @@ namespace RuRay.BLL.Services.Keyboard
     public class ServiceMouse : IServiceMouse
     {
         static Rectangle ScreenScale { get; set; }
-        Dictionary<int, Point> Coordinates = new Dictionary<int, Point>();
+
+        readonly Dictionary<int, Point> Coordinates = new Dictionary<int, Point>();
         public ServiceMouse()
         {
             // TODO: Make this values avaliable in buffer for quick access.
@@ -47,15 +47,16 @@ namespace RuRay.BLL.Services.Keyboard
         }
 
         [StructLayout(LayoutKind.Sequential)]
-        struct ScrollWindowEx {
-            IntPtr hWnd;
-            int dx;
-            int dy;
-            IntPtr prcScroll;
-            IntPtr prcClip;
-            IntPtr hrgnUpdate;
-            IntPtr prcUpdate;
-            short flags;
+        struct ScrollWindowEx
+        {
+            readonly IntPtr hWnd;
+            readonly int dx;
+            readonly int dy;
+            readonly IntPtr prcScroll;
+            readonly IntPtr prcClip;
+            readonly IntPtr hrgnUpdate;
+            readonly IntPtr prcUpdate;
+            readonly short flags;
         }
 
         //This covers most use cases although complex mice may have additional buttons
@@ -116,7 +117,7 @@ namespace RuRay.BLL.Services.Keyboard
             AppSettings.PowerShellOutputFile = ConfigurationManager.AppSettings[nameof(AppSettings.PowerShellOutputFile)];
             ServiceTask.RunScript(serviceName, Path.Combine(EnvironmentSettings.DirectoryPath, AppSettings.PowerShellOutputFile));
             var details = EnvironmentSettings.SettingsData(AppSettings.PowerShellOutputFile).Details;
-            
+
             INPUT[] input = new INPUT[3];
             input[0].mi.dx = Coordinates[index].X * (65535 / ScreenScale.Width);
             input[0].mi.dy = Coordinates[index].Y * (65535 / ScreenScale.Height);
@@ -126,14 +127,14 @@ namespace RuRay.BLL.Services.Keyboard
             // TODO: Complete this random moving of cursor from src to destination.
             var xDistance = Math.Abs(Coordinates[index].X) - Math.Abs(details.xAxis);
             var yDistance = Math.Abs(Coordinates[index].Y) - Math.Abs(details.yAxis);
-            int totalDistanceToTravel = (int) Math.Sqrt((xDistance * xDistance) + (yDistance * yDistance));
+            int totalDistanceToTravel = (int)Math.Sqrt((xDistance * xDistance) + (yDistance * yDistance));
             var random = new Random();
             // move the cursor in steps based on the number below.
             //var availableStep = new List<int> { 0, 1, 2, 3 };
             //for(var i=0;i< totalDistanceToTravel;i++)
             //{
             //    int newxStep = random.Next(availableStep.Count);
-                
+
             //    input[0].mi.dx = Coordinates[index].X * (65535 / ScreenScale.Width);
             //    input[0].mi.dy = Coordinates[index].Y * (65535 / ScreenScale.Height);
             //    input[0].mi.dwFlags = MOUSEEVENTF_MOVED | MOUSEEVENTF_ABSOLUTE;

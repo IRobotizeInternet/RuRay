@@ -1,16 +1,16 @@
-﻿using OpenQA.Selenium.Chrome;
+﻿using System;
+using OpenQA.Selenium.Chrome;
 using OpenQA.Selenium.Remote;
 using Polly;
 using Polly.Retry;
 using RuRayFacebook.Services;
 using RuRayFacebook.Utilities;
-using System;
 
 namespace RuRayFacebook.WebDrivers
 {
     public class Chrome : WebDriver//, IDisposable
     {
-        public Chrome(string baseUrl):base(baseUrl) { }
+        public Chrome(string baseUrl) : base(baseUrl) { }
 
         public void Dispose()
         {
@@ -20,7 +20,10 @@ namespace RuRayFacebook.WebDrivers
         public override RemoteWebDriver Driver(bool useExistingBrowser = true)
         {
             // when useExistingBrowser is set open chrome
-            if (useExistingBrowser) ServiceBrowser.OpenBrowser();
+            if (useExistingBrowser)
+            {
+                ServiceBrowser.OpenBrowser();
+            }
 
             if (string.IsNullOrEmpty(BaseURL))
             {
@@ -35,7 +38,7 @@ namespace RuRayFacebook.WebDrivers
             {
                 DebuggerAddress = $"{AppSettings.DebuggerBrowserUrl}:{ AppSettings.DebuggerBrowserPort}"
             };
-            
+
             options.AddArgument("no-sandbox");
 
             //options.AddArguments(@"user-data-dir=C:\Users\amhus\AppData\Local\Google\Chrome\User Data\Default" /*Profile Path*/);
@@ -90,11 +93,15 @@ namespace RuRayFacebook.WebDrivers
 
         public void SelectTab(RemoteWebDriver driver)
         {
-            foreach(var tab in driver.WindowHandles)
+            foreach (var tab in driver.WindowHandles)
             {
                 // TODO: This code is being hit twice when it ran first time, find the cuase and fix it.
                 // This should only be called one or being called explicitly. 
-                if (driver.Url.Contains($"{AppSettings.BaseURL}")) return;
+                if (driver.Url.Contains($"{AppSettings.BaseURL}"))
+                {
+                    return;
+                }
+
                 driver.SwitchTo().Window(tab);
             }
 

@@ -1,5 +1,4 @@
 ﻿using RuRay.BLL.Resources;
-using RuRay.BLL.Resources;
 using RuRayToolbox.CustomAttributes;
 
 namespace RuRayFacebook.App

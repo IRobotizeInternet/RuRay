@@ -1,6 +1,6 @@
 ﻿using OpenQA.Selenium;
-using RuRayFacebook.App.LoggedIn.Pages;
 using RuRay.BLL.Resources;
+using RuRayFacebook.App.LoggedIn.Pages;
 using RuRayToolbox.CommonControls;
 using RuRayToolbox.Controls;
 
@@ -37,7 +37,7 @@ namespace RuRayFacebook.App.LoggedIn.Components
             new EventTriggerButton<DialogAddVideos>(Driver, By.XPath($"{BaseXPath}//span[contains(text(),'{ResCreatePost.WatchParty}')]"));
         public EventTriggerButton<DialogSelectNonprofit> ButtonRaiseMoney =>
             new EventTriggerButton<DialogSelectNonprofit>(Driver, By.XPath($"{BaseXPath}//span[contains(text(),'{ResCreatePost.RaiseMoney}')]"));
-        
+
         public Button ButtonBack =>
             new Button(Driver, By.XPath($"{BaseXPath}//span[contains(text(),'{ResCreatePost.RaiseMoney}')]"));
 

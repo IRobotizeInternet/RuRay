@@ -12,7 +12,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
 
         public ScrollControl<ListItemPeopleWhoSharedThis> ScrollPeopleWhoSharedThis =>
            new ScrollControl<ListItemPeopleWhoSharedThis>(
-               Driver, 
+               Driver,
                $"//div[@aria-label='{ResHomePage.PeopleWhoSharedThis}']/div[3]/div/div/div",
                scrollXPath: $"//div[@aria-label='{ResHomePage.PeopleWhoSharedThis}']/div[3]");
 

@@ -1,5 +1,5 @@
-﻿using OpenQA.Selenium;
-using System;
+﻿using System;
+using OpenQA.Selenium;
 
 namespace RuRayFacebook.App.LoggedIn.Pages
 {
@@ -11,7 +11,8 @@ namespace RuRayFacebook.App.LoggedIn.Pages
 
         public PageUpcomingEvent() { }
 
-        public PageUpcomingEvent(string eventUrl) {
+        public PageUpcomingEvent(string eventUrl)
+        {
             GoToPage(string.Format(PageUrl, eventUrl));
         }
 

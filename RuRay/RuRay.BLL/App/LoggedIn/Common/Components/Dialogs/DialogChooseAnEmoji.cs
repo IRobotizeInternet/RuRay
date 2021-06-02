@@ -15,8 +15,8 @@ namespace RuRayFacebook.App.LoggedIn.Pages
 
         public ScrollControl<ListItemEmojiImage> ScrollControlChooseEmoji =>
             new ScrollControl<ListItemEmojiImage>(
-                Driver, 
-                $"//div[@role='dialog' and //h3[text()='{ResHomePage.SmileysAndPeople}']]", 
+                Driver,
+                $"//div[@role='dialog' and //h3[text()='{ResHomePage.SmileysAndPeople}']]",
                 scrollXPath: "//div[@class='uiScrollableAreaWrap scrollable']");
 
         public Button ButtonRecent => new Button(Driver, By.XPath($"{BaseXPath}//a[@aria-label='{ResHomePage.Recent}']"));

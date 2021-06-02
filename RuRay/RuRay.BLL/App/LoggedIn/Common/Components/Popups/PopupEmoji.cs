@@ -7,7 +7,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
     {
         public PopupEmoji()
         {
-            
+
         }
 
         protected override By ByForDialog => By.XPath($"//div[@role='dialog']//h3[text()='{ResCreatePost.RecentlyUsed}']");

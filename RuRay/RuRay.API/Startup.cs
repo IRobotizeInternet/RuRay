@@ -1,3 +1,8 @@
+using System;
+using System.IO;
+using System.Linq;
+using System.Reflection;
+using System.Text;
 using AutoMapper;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
@@ -11,18 +16,13 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
-using Serilog;
 using RuRay.API.Middleware;
 using RuRay.API.Models;
 using RuRay.API.Swagger;
+using RuRayFacebook.App.LoggedIn.Pages;
+using Serilog;
 using Swashbuckle.AspNetCore.Filters;
 using Swashbuckle.AspNetCore.SwaggerGen;
-using System;
-using System.IO;
-using System.Linq;
-using System.Reflection;
-using System.Text;
-using RuRayFacebook.App.LoggedIn.Pages;
 
 namespace RuRay.API
 {
@@ -145,7 +145,7 @@ namespace RuRay.API
 
             app.UseStaticFiles();
             app.UseRouting();
-            
+
             // Make sure you call this before calling app.UseMvc()
             app.UseCors(
                 options => options.WithOrigins("http://localhost:5055").AllowAnyMethod()

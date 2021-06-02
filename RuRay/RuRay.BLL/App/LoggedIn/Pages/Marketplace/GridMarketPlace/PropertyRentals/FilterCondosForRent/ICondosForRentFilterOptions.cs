@@ -1,7 +1,7 @@
 ﻿
 namespace RuRayFacebook.App.LoggedIn
 {
-    public interface ICondosForRentFilterOptions : 
+    public interface ICondosForRentFilterOptions :
         IFilterOptions,
         ISortBy<PropertyRentalsSortOption>,
         IPrice

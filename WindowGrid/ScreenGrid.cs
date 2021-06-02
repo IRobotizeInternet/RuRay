@@ -1,12 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Configuration;
-using System.Data;
+﻿using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using RuRayFacebook.Services;
 
@@ -20,7 +14,7 @@ namespace WindowGrid
             SetGrid(args);
         }
 
-        Dictionary<int, Point> Coordinates = new Dictionary<int, Point>();
+        readonly Dictionary<int, Point> Coordinates = new Dictionary<int, Point>();
 
         public void SetGrid(string[] args = null)
         {

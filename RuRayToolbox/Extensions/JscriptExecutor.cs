@@ -23,7 +23,7 @@ namespace RuRayToolbox.Extensions
         public static bool IsElementOutViewport(RemoteWebDriver driver, string xpath)
         {
             var jsString = "function isElementOutViewport() {" +
-                    
+
                 // Get element by xPath
                 $"var element = document.evaluate(\"{xpath}\", " +
                 @"document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
@@ -71,7 +71,7 @@ namespace RuRayToolbox.Extensions
                 var js = (IJavaScriptExecutor)driver;
                 return (bool)js.ExecuteScript(jsString);
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Debug.WriteLine(ex.Message);
                 return false;
@@ -89,7 +89,7 @@ namespace RuRayToolbox.Extensions
                 var elementId = ((RemoteWebElement)js.ExecuteScript(jsString));
                 return true;
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Debug.WriteLine(ex.Message);
                 return false;
@@ -106,8 +106,8 @@ namespace RuRayToolbox.Extensions
         /// <param name="scrollingLengthXAxis"></param>
         /// <param name="scrollingLengthYAxis"></param>
         public static void ScrollBy(
-            RemoteWebDriver driver, 
-            string elementXPath, 
+            RemoteWebDriver driver,
+            string elementXPath,
             double scrollingLengthXAxis = 10,
             double scrollingLengthYAxis = 0)
         {
@@ -118,7 +118,7 @@ namespace RuRayToolbox.Extensions
             }
 
             // When scrolling popup/dialog list
-            var jScript = 
+            var jScript =
                 $"var element = document.evaluate(\"{elementXPath}\", " +
                  @"document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
                       element.scrollBy({0}, {1})";
@@ -129,8 +129,15 @@ namespace RuRayToolbox.Extensions
             policy.Execute(() =>
             {
                 // Using Math.Abs for negative directions.
-                for (var i = 0; i < Math.Abs(scrollingLengthXAxis); i++) driver.ExecuteScript(string.Format(jScript, i, 0)); /*scroll along x-axis*/
-                for (var i = 0; i < Math.Abs(scrollingLengthYAxis); i++) driver.ExecuteScript(string.Format(jScript, 0, i)); /*scroll along x-axis*/
+                for (var i = 0; i < Math.Abs(scrollingLengthXAxis); i++)
+                {
+                    driver.ExecuteScript(string.Format(jScript, i, 0)); /*scroll along x-axis*/
+                }
+
+                for (var i = 0; i < Math.Abs(scrollingLengthYAxis); i++)
+                {
+                    driver.ExecuteScript(string.Format(jScript, 0, i)); /*scroll along x-axis*/
+                }
             });
         }
 

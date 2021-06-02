@@ -12,7 +12,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
         }
 
         protected override By ByForDialog => By.XPath(BaseXPath);
-        
+
         public Button ButtonSavedItems => new Button(Driver, By.XPath($"//span[contains(text(),'{ResNotificationSettings.SavedItems}')]/../../../../../../..//div[@role='button']"));
         public Button ButtonRecommendationsForYou => new Button(Driver, By.XPath($"//span[contains(text(),'{ResNotificationSettings.RecommendationsForYou}')]/../../../../../../..//div[@role='button']"));
         public Button ButtonSimilarItems => new Button(Driver, By.XPath($"//span[contains(text(),'{ResNotificationSettings.SimilarItems}')]/../../../../../../..//div[@role='button']"));

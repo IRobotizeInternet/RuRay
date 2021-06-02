@@ -6,7 +6,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
 {
     public class CreatePost : BaseDriver
     {
-        public EventTriggerButton<DialogCreatePost> ButtonCreatePost => 
+        public EventTriggerButton<DialogCreatePost> ButtonCreatePost =>
             new EventTriggerButton<DialogCreatePost>(Driver, By.XPath($"//span[contains(text(),'{ResCreatePost.WhatsOnYourMind}')]"));
 
         public EventTriggerButton<PageUserTimeline> ButtonTimeline =>

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Threading.Tasks;
 using RuRay.BLL.Contracts;
 using RuRayFacebook.App.LoggedIn.Pages;
 
@@ -18,7 +15,7 @@ namespace RuRay.BLL
             //return accessibilityDialog.RButtonCompactModeOn.Click();
             pageHome.Feed.FeedScroll.ScrollDownMore();
             return Task.FromResult(true);
-            
+
         }
 
         public Task<bool> FacebookChangeVisualMode(Switch mode)
@@ -26,8 +23,15 @@ namespace RuRay.BLL
             var pageHome = new PageHome();
             var dialog = pageHome.Header.RightMenu.EventTriggerButtonAccount.Click();
             var accessibilityDialog = dialog.TriggerDisplayAndAccessibilityDialog.Click();
-            if (mode == Switch.ON) accessibilityDialog.RButtonDarkModeOn.Click();
-            else accessibilityDialog.RButtonDarkModeOff.Click();
+            if (mode == Switch.ON)
+            {
+                accessibilityDialog.RButtonDarkModeOn.Click();
+            }
+            else
+            {
+                accessibilityDialog.RButtonDarkModeOff.Click();
+            }
+
             pageHome.Header.RightMenu.EventTriggerButtonAccount.Click();
             return Task.FromResult(true);
         }

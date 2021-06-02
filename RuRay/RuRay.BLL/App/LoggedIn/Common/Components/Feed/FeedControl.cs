@@ -5,9 +5,9 @@ namespace RuRayFacebook.App.LoggedIn.Pages
 {
     public class FeedControl : BaseFeed
     {
-        
+
         public string BaseXPath { get; set; }
-        public FeedControl(RemoteWebDriver driver, 
+        public FeedControl(RemoteWebDriver driver,
             By byForElement,
             string baseXPath) : base()
         {

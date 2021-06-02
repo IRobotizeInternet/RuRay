@@ -1,11 +1,11 @@
-﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
-using RuRayToolbox.CommonControls;
-using RuRayToolbox.Extensions;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Remote;
+using RuRayToolbox.CommonControls;
+using RuRayToolbox.Extensions;
 
 namespace RuRayToolbox.Controls
 {
@@ -19,7 +19,7 @@ namespace RuRayToolbox.Controls
 
         public Combobox(RemoteWebDriver driver, By byForElement) : base(driver, byForElement)
         {
-            
+
         }
 
         protected void SearchItem(string value)
@@ -67,7 +67,10 @@ namespace RuRayToolbox.Controls
         protected IWebElement SelectSearchedItems(int itemIndex)
         {
             SearchedResultElements = Driver.FindElements(By.XPath(SearchItemsXPath));
-            if (!SearchedResultElements.Any() || SearchedResultElements.Count() < itemIndex + 1) return null;
+            if (!SearchedResultElements.Any() || SearchedResultElements.Count() < itemIndex + 1)
+            {
+                return null;
+            }
 
             return SearchedResultElements.ToArray()[itemIndex];
         }

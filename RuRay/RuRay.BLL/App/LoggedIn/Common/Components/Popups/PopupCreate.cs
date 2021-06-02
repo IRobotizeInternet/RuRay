@@ -1,9 +1,9 @@
-﻿using OpenQA.Selenium;
+﻿using System.Linq;
+using OpenQA.Selenium;
 using RuRay.BLL.Resources;
 using RuRayToolbox.CommonControls;
 using RuRayToolbox.Controls;
 using RuRayToolbox.Controls.TriggerControls;
-using System.Linq;
 
 namespace RuRayFacebook.App.LoggedIn.Pages
 {
@@ -16,7 +16,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
 
         protected override By ByForDialog => By.XPath($"//span[text()='{ResHomePageHeader.Create}']/ancestor::div[@role='dialog']");
 
-        public EventTriggerDiv<DialogCreatePost> TriggerDivCreatePost => 
+        public EventTriggerDiv<DialogCreatePost> TriggerDivCreatePost =>
                     new EventTriggerDiv<DialogCreatePost>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResHomePageHeader.Post}']"));
         public EventTriggerDiv<DialogCreatePost> TriggerDivCreateStory =>
                     new EventTriggerDiv<DialogCreatePost>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResHomePageHeader.Story}']"));
@@ -42,45 +42,45 @@ namespace RuRayFacebook.App.LoggedIn.Pages
             new ScrollControl<ListItemMenuItem>(Driver, $"//input[@placeholder='{ResHomePage.SearchMenu}']/../../..//a");
 
 
-        public EventTriggerButton<PageCampus> PageCampus => 
+        public EventTriggerButton<PageCampus> PageCampus =>
                     new EventTriggerButton<PageCampus>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResLeftNav.Campus}']"));
-        public EventTriggerButton<PageEvents> PageEvents => 
+        public EventTriggerButton<PageEvents> PageEvents =>
                     new EventTriggerButton<PageEvents>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResLeftNav.Events}']"));
-        public EventTriggerButton<PageFriends> PageFriends => 
+        public EventTriggerButton<PageFriends> PageFriends =>
                     new EventTriggerButton<PageFriends>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResHomePageHeader.Friends}']"));
-        public EventTriggerButton<PageGroup> PageGroups => 
+        public EventTriggerButton<PageGroup> PageGroups =>
                     new EventTriggerButton<PageGroup>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResHomePageHeader.Groups}']"));
-        public EventTriggerButton<PageHome> PageNewsFeed => 
+        public EventTriggerButton<PageHome> PageNewsFeed =>
                     new EventTriggerButton<PageHome>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResLeftNav.NewsFeed}']"));
-        public EventTriggerButton<PagePages> PagePages => 
+        public EventTriggerButton<PagePages> PagePages =>
                     new EventTriggerButton<PagePages>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResLeftNav.Pages}']"));
-        public EventTriggerButton<PageGames> PageGames => 
+        public EventTriggerButton<PageGames> PageGames =>
                     new EventTriggerButton<PageGames>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResLeftNav.Games}']"));
-        public EventTriggerButton<PageWatch> PageWatch => 
+        public EventTriggerButton<PageWatch> PageWatch =>
                     new EventTriggerButton<PageWatch>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResHomePageHeader.Watch}']"));
-        public EventTriggerButton<PageFacebookPay> PageFacebookPay => 
+        public EventTriggerButton<PageFacebookPay> PageFacebookPay =>
                     new EventTriggerButton<PageFacebookPay>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResLeftNav.FacebookPay}']"));
-        public EventTriggerButton<PageMarketplace> PageMarketplace => 
+        public EventTriggerButton<PageMarketplace> PageMarketplace =>
                     new EventTriggerButton<PageMarketplace>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResHomePageHeader.Marketplace}']"));
-        public EventTriggerButton<PageOffers> PageOffers => 
+        public EventTriggerButton<PageOffers> PageOffers =>
                     new EventTriggerButton<PageOffers>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResPageSettings.Offers}']"));
-        public EventTriggerButton<PageMemories> PageMemories => 
+        public EventTriggerButton<PageMemories> PageMemories =>
                     new EventTriggerButton<PageMemories>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResLeftNav.Memories}']"));
-        public EventTriggerButton<PageSaved> PageSaved => 
+        public EventTriggerButton<PageSaved> PageSaved =>
                     new EventTriggerButton<PageSaved>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResLeftNav.Saved}']"));
-        public EventTriggerButton<PageWeather> PageWeather => 
+        public EventTriggerButton<PageWeather> PageWeather =>
                     new EventTriggerButton<PageWeather>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResLeftNav.Weather}']"));
-        public EventTriggerButton<PageAdCenter> PageAds => 
+        public EventTriggerButton<PageAdCenter> PageAds =>
                     new EventTriggerButton<PageAdCenter>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResLeftNav.Ads}']"));
-        public EventTriggerButton<PageJobs> PageJobs => 
+        public EventTriggerButton<PageJobs> PageJobs =>
                     new EventTriggerButton<PageJobs>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResLeftNav.Jobs}']"));
-        public EventTriggerButton<PageFundraisers> PageFundraisers => 
+        public EventTriggerButton<PageFundraisers> PageFundraisers =>
                     new EventTriggerButton<PageFundraisers>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResLeftNav.Fundraisers}']"));
-        public EventTriggerButton<PageMessages> PageMessenger => 
+        public EventTriggerButton<PageMessages> PageMessenger =>
                     new EventTriggerButton<PageMessages>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResHomePageHeader.Messenger}']"));
-        public EventTriggerButton<PageMessengerKids> PageMessengerKids => 
+        public EventTriggerButton<PageMessengerKids> PageMessengerKids =>
                     new EventTriggerButton<PageMessengerKids>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResLeftNav.MessengerKids}']"));
-        
+
         public void RunConformanceButtonFriendsExcept()
         {
             var post = TriggerDivCreatePost.Click();

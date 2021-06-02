@@ -1,6 +1,6 @@
-﻿using OpenQA.Selenium.Remote;
+﻿using System;
+using OpenQA.Selenium.Remote;
 using RuRayFacebook.App.LoggedIn;
-using System;
 
 namespace RuRayToolbox.Controls
 {
@@ -8,7 +8,7 @@ namespace RuRayToolbox.Controls
     {
         private readonly RemoteWebDriver _driver;
 
-        public FacebookGrid(RemoteWebDriver driver) 
+        public FacebookGrid(RemoteWebDriver driver)
         {
             _driver = driver;
         }

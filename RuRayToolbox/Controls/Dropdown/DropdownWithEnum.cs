@@ -1,7 +1,7 @@
-﻿using OpenQA.Selenium.Remote;
+﻿using System;
+using OpenQA.Selenium.Remote;
 using RuRayLibrary.Extensions;
 using RuRayToolbox.Enums;
-using System;
 
 namespace RuRayToolbox.Controls
 {
@@ -10,7 +10,7 @@ namespace RuRayToolbox.Controls
     /// </summary>
     public abstract class DropdownWithEnum<TEnum> : Combobox where TEnum : Enum
     {
-        protected DropdownWithEnum(RemoteWebDriver driver, ExtendBy byForDropdown): base(driver, byForDropdown)
+        protected DropdownWithEnum(RemoteWebDriver driver, ExtendBy byForDropdown) : base(driver, byForDropdown)
         {
         }
 

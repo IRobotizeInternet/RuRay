@@ -1,7 +1,6 @@
 ﻿using OpenQA.Selenium;
 using RuRayToolbox.CommonControls;
 using RuRayToolbox.Components;
-using RuRayToolbox.Controls;
 
 namespace RuRayFacebook.App.LoggedIn.Pages
 {

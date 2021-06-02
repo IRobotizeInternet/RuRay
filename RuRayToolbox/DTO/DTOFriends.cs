@@ -1,5 +1,5 @@
-﻿using OpenQA.Selenium;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using OpenQA.Selenium;
 
 namespace RuRayLibrary.DTO
 {

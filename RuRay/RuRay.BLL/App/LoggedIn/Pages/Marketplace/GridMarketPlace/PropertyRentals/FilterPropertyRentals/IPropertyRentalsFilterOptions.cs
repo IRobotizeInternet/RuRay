@@ -1,7 +1,7 @@
 ﻿
 namespace RuRayFacebook.App.LoggedIn
 {
-    public interface IPropertyRentalsFilterOptions : 
+    public interface IPropertyRentalsFilterOptions :
         IFilterOptions,
         ISortBy<VehicleSortOption>,
         IPrice,

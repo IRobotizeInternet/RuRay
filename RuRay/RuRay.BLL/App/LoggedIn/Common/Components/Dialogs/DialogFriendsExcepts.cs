@@ -1,8 +1,8 @@
-﻿using OpenQA.Selenium;
+﻿using System.Collections.Generic;
+using OpenQA.Selenium;
 using RuRay.BLL.Resources;
-using System.Collections.Generic;
-using RuRayToolbox.Controls;
 using RuRayToolbox.CommonControls;
+using RuRayToolbox.Controls;
 
 namespace RuRayFacebook.App.LoggedIn.Pages
 {
@@ -14,17 +14,17 @@ namespace RuRayFacebook.App.LoggedIn.Pages
             BaseXPath = baseXPath ?? $"//form[@method='POST']/div[.//h2/descendant-or-self::span[text()='{ResCreatePost.FriendsExcept}']]";
         }
 
-        public ScrollControl<ListItemFriendsExcept> ScrollFriendsExcepts => 
+        public ScrollControl<ListItemFriendsExcept> ScrollFriendsExcepts =>
             new ScrollControl<ListItemFriendsExcept>(Driver, $"//form//div[@aria-label='{ResCreatePost.Friends}']/div");
 
         protected override By ByForDialog => By.XPath($"//form[@method='POST']//span[text()='{ResCreatePost.FriendsExcept}']");
 
         public ComboboxSharingWithYourFriends ComboboxSearchFriends => new ComboboxSharingWithYourFriends(Driver, BaseXPath);
 
-        public IEnumerable<IWebElement> FriendsWhoWontSeeYourPost => 
+        public IEnumerable<IWebElement> FriendsWhoWontSeeYourPost =>
              Driver.FindElements(By.XPath($"//form[@method='POST']//div[@role='grid'][contains(@aria-label, '{ResCreatePost.FriendsWhoWontSeeYourPost}')]//div[@role='button']"));
 
-        public EventTriggerButton<DialogCreatePost> TriggerSaveChangesButton => 
+        public EventTriggerButton<DialogCreatePost> TriggerSaveChangesButton =>
             new EventTriggerButton<DialogCreatePost>(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.SaveChanges}']"));
 
         public EventTriggerButton<DialogCreatePost> TriggerCancelChangesButton =>

@@ -14,11 +14,11 @@ namespace RuRayFacebook.App.LoggedIn.Pages
         {
             get
             {
-                return new EventTriggerButton<UpcomingLiveVideosAndEvent>(Driver, By.XPath($"//div[@role='main']//span[text()='{ResLeftNav.ViewPost}']"), 
+                return new EventTriggerButton<UpcomingLiveVideosAndEvent>(Driver, By.XPath($"//div[@role='main']//span[text()='{ResLeftNav.ViewPost}']"),
                     $"//div[@role='main']//div[contains(@style,'border-radius')  and //div[@role='main']//span[contains(text(), '{PostXPath}')]]");
             }
         }
-           
+
         public UpcomingLiveVideosAndEvent ViewMyPost(string postName)
         {
             PostXPath = postName;

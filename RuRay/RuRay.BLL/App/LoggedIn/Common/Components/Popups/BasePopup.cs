@@ -1,8 +1,8 @@
-﻿using OpenQA.Selenium;
-using RuRayToolbox.Extensions;
-using System;
+﻿using System;
 using System.Diagnostics;
 using System.Linq;
+using OpenQA.Selenium;
+using RuRayToolbox.Extensions;
 
 namespace RuRayFacebook.App.LoggedIn.Pages
 {
@@ -13,7 +13,10 @@ namespace RuRayFacebook.App.LoggedIn.Pages
 
         protected BasePopup()
         {
-            if (ByForDialog != null) WaitForDialogToAppear();
+            if (ByForDialog != null)
+            {
+                WaitForDialogToAppear();
+            }
         }
 
         protected virtual void WaitForDialogToAppear()
@@ -31,7 +34,10 @@ namespace RuRayFacebook.App.LoggedIn.Pages
             try
             {
                 var element = Driver.FindVisibleElementsWait(ByForDialog, timeoutInSeconds);
-                if (element.Count() > 1) throw new Exception("Found more than one dialog for a give xPath.");
+                if (element.Count() > 1)
+                {
+                    throw new Exception("Found more than one dialog for a give xPath.");
+                }
 
                 return true;
             }

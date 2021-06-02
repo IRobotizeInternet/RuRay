@@ -14,6 +14,11 @@ namespace RuRayFacebook.App.LoggedIn.Pages
 
         }
 
+        public PagePrivacyCheckup()
+        {
+
+        }
+
         public override void RunConformance()
         {
             throw new System.NotImplementedException();

@@ -1,8 +1,8 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
+using RuRay.BLL.Resources;
 using RuRayFacebook.App.LoggedIn.Pages;
 using RuRayToolbox.CommonControls;
-using RuRay.BLL.Resources;
 
 namespace RuRayFacebook.App.LoggedIn.Settings.Tabs
 {

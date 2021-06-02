@@ -14,40 +14,40 @@ namespace RuRayFacebook.App.LoggedIn.Pages
             BaseXPath = $"//div[@data-pagelet='ChatTab']/following::div[@role='menu']";
         }
 
-        public EventTriggerButton<PageMessages> ButtonOpeninMessenger => 
+        public EventTriggerButton<PageMessages> ButtonOpeninMessenger =>
             new EventTriggerButton<PageMessages>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResHomePage.OpeninMessenger}'"));
 
         public Button ButtonNewMessengerAppforWindows => new Button(Driver, By.XPath($"{BaseXPath}//span[text()='{ResHomePage.NewMessengerAppforWindows}'"));
 
-        public EventTriggerButton<PageHome> ButtonViewProfile => 
+        public EventTriggerButton<PageHome> ButtonViewProfile =>
             new EventTriggerButton<PageHome>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResHomePage.ViewProfile}'"));
 
-        public EventTriggerButton<DialogColor> ButtonColor => 
+        public EventTriggerButton<DialogColor> ButtonColor =>
             new EventTriggerButton<DialogColor>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResHomePage.Color}'"));
 
-        public EventTriggerButton<DialogChooseAnEmoji> ButtonEmoji => 
+        public EventTriggerButton<DialogChooseAnEmoji> ButtonEmoji =>
             new EventTriggerButton<DialogChooseAnEmoji>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResHomePage.Emoji}'"));
 
-        public EventTriggerButton<DialogNickNames> ButtonNicknames => 
+        public EventTriggerButton<DialogNickNames> ButtonNicknames =>
             new EventTriggerButton<DialogNickNames>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResHomePage.Nicknames}'"));
 
         public Button ButtonCreategroup => new Button(Driver, By.XPath($"{BaseXPath}//span[text()='{ResHomePage.Creategroup}'"));
 
-        public EventTriggerButton<DialogMuteConversation> ButtonMuteconversation => 
+        public EventTriggerButton<DialogMuteConversation> ButtonMuteconversation =>
             new EventTriggerButton<DialogMuteConversation>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResHomePage.Muteconversation}'"));
 
-        public EventTriggerButton<DialogIgnoreThisConversation> ButtonIgnoremessages => 
+        public EventTriggerButton<DialogIgnoreThisConversation> ButtonIgnoremessages =>
             new EventTriggerButton<DialogIgnoreThisConversation>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResHomePage.Ignoremessages}'"));
 
-        public EventTriggerButton<DialogBlockUser> ButtonBlock => 
+        public EventTriggerButton<DialogBlockUser> ButtonBlock =>
             new EventTriggerButton<DialogBlockUser>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResHomePage.Block}'"));
 
-        public EventTriggerButton<DialogDeleteConverstion> ButtonDeleteconversation => 
+        public EventTriggerButton<DialogDeleteConverstion> ButtonDeleteconversation =>
             new EventTriggerButton<DialogDeleteConverstion>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResHomePage.Deleteconversation}'"));
 
-        public EventTriggerButton<DialogReport> ButtonSomethingSwrong => 
+        public EventTriggerButton<DialogReport> ButtonSomethingSwrong =>
             new EventTriggerButton<DialogReport>(Driver, By.XPath($"{BaseXPath}//span[text()=\"{ResHomePage.SomethingsWrong}\""));
-        
+
         public Button ButtonGivefeedbackandreporttheconversation => new Button(Driver, By.XPath($"{BaseXPath}//span[text()='{ResHomePage.Givefeedbackandreporttheconversation}'"));
     }
 

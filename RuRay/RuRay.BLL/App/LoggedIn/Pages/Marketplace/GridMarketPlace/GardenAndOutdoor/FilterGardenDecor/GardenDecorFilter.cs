@@ -1,5 +1,5 @@
-using OpenQA.Selenium.Remote;
 using System;
+using OpenQA.Selenium.Remote;
 
 namespace RuRayFacebook.App.LoggedIn
 {
@@ -10,7 +10,7 @@ namespace RuRayFacebook.App.LoggedIn
         }
 
         public IGardenDecorFilterOptions FilterBy => throw new NotImplementedException();
-        
+
         public IFilterOptions ItemCondition(ItemCondition condition)
         {
             throw new NotImplementedException();

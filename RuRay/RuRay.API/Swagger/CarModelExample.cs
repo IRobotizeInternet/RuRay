@@ -1,6 +1,6 @@
+using System;
 using RuRay.API.Models;
 using Swashbuckle.AspNetCore.Filters;
-using System;
 
 namespace RuRay.API.Swagger
 {

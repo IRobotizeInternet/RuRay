@@ -15,7 +15,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
             BaseXPath = $"//div[@aria-label='{ResHomePage.CreateGroup1}'][@role='dialog']";
         }
 
-        public ComboboxAddMembers ComboboxAddMembers => 
+        public ComboboxAddMembers ComboboxAddMembers =>
             new ComboboxAddMembers(Driver, $"//div[@aria-label='{ResCreatePost.CreateGroup}']");
 
         public ScrollControl<ListItemButton> ScrollControlUsers =>

@@ -21,7 +21,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
         }
 
         // This is work in progress, which requires more work. Read the code carefully before making use of these generics. 
-        private EditorHome _editorHome;
+        private readonly EditorHome _editorHome;
         public Header SectionHeader => _editorHome.PageHeader;
         public LeftMenuItemsHome SectionLeftMenuItems => _editorHome.LeftMenu;
         public FeedHome SectionFeedHome => _editorHome.FeedContainer;
@@ -50,7 +50,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
 
         public Button ButtonUndo => new Button(Driver, By.XPath($"//span[text()='{ResHomePage.Undo}']"));
 
-        public EventTriggerButton<PopupNewMessage> EventTriggerButtonNewMessage => 
+        public EventTriggerButton<PopupNewMessage> EventTriggerButtonNewMessage =>
             new EventTriggerButton<PopupNewMessage>(Driver, By.XPath($"//div[@aria-label='{ResCreatePost.NewMessage}']"));
 
         public FeedHome _feed;
@@ -58,7 +58,11 @@ namespace RuRayFacebook.App.LoggedIn.Pages
         {
             get
             {
-                if (_feed == null) _feed = new FeedHome();
+                if (_feed == null)
+                {
+                    _feed = new FeedHome();
+                }
+
                 return _feed;
             }
         }
@@ -76,7 +80,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
 
         public void RunConformanceReactions()
         {
-           // Verify all the reaction buttons.
+            // Verify all the reaction buttons.
             Feed.FeedScroll.ScrollingDownWithAGivenInterval(3, scrollFromCurrentLocation: true);
             var likeButton = Feed.FeedScroll.ListITem.ButtonLike;
             likeButton.Hoverover().ButtonReactionLike.Click();

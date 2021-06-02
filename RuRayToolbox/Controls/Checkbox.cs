@@ -12,7 +12,10 @@ namespace RuRayToolbox.Controls
         public void SetCheckbox(bool booleanValueToSet)
         {
             var checkBoxElement = ByForElement.FindElement(Driver);
-            if (checkBoxElement.Selected != booleanValueToSet) Click();
+            if (checkBoxElement.Selected != booleanValueToSet)
+            {
+                Click();
+            }
         }
     }
 }

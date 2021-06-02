@@ -12,13 +12,13 @@ namespace RuRayFacebook.App.LoggedIn.Pages
 
         public TextBox TextBoxAddMember => new TextBox(Driver, By.XPath($"{BaseXPath}//input"));
 
-        public EventTriggerButton<TGroup> EventTriggerButtonSendToGroup => 
+        public EventTriggerButton<TGroup> EventTriggerButtonSendToGroup =>
             new EventTriggerButton<TGroup>(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResHomePage.SendToGroup}']"));
 
         public ScrollControl<ListItemSendToGroup> ScrollControlSendToGroup =>
             new ScrollControl<ListItemSendToGroup>(
-                Driver, 
-                BaseXPath, 
+                Driver,
+                BaseXPath,
                 scrollXPath: $"//div[*/h2/span/span[text()='{ResHomePage.SendToGroup}']]//" + "ul[{0}]");
 
         public EventTriggerButton<TGroup> EventTriggerButtonBackArrow =>

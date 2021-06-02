@@ -1,6 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Net;
 using System.Threading.Tasks;
 using AutoMapper;
@@ -41,7 +39,10 @@ namespace RuRay.API.Controllers
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
         public async Task<IActionResult> LeftClick([FromBody] int index)
         {
-            if (index < 1) return BadRequest();
+            if (index < 1)
+            {
+                return BadRequest();
+            }
 
             await _serviceMouse.LeftClickAtPoint(index);
             return Ok();
@@ -56,7 +57,10 @@ namespace RuRay.API.Controllers
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
         public async Task<IActionResult> RightClickAtPoint([FromRoute] int index)
         {
-            if (index < 1) return BadRequest();
+            if (index < 1)
+            {
+                return BadRequest();
+            }
 
             await _serviceMouse.RightClickAtPoint(index);
             return Ok();
@@ -71,7 +75,10 @@ namespace RuRay.API.Controllers
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
         public async Task<IActionResult> GoToXY([FromRoute] int index)
         {
-            if (index < 1) return BadRequest();
+            if (index < 1)
+            {
+                return BadRequest();
+            }
 
             await _serviceMouse.GoToXY(index);
             return Ok();

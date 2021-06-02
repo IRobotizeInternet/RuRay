@@ -1,9 +1,9 @@
-﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
-using Polly;
-using System;
+﻿using System;
 using System.Diagnostics;
 using System.Threading;
+using OpenQA.Selenium;
+using OpenQA.Selenium.Remote;
+using Polly;
 
 namespace RuRayToolbox.Extensions
 {
@@ -16,7 +16,7 @@ namespace RuRayToolbox.Extensions
         }
 
         // TODO:
-        public static  void DrapAndDrop()
+        public static void DrapAndDrop()
         {
 
         }
@@ -53,14 +53,17 @@ namespace RuRayToolbox.Extensions
             var policy = Policy
               .Handle<InvalidOperationException>()
               .WaitAndRetry(10, timespan => TimeSpan.FromSeconds(maxWaitTimeInSeconds));
-            
+
             policy.Execute(() =>
             {
                 try
                 {
                     // TODO: This is incorrect fix this 
                     var xPathLoadIndicitor = string.Empty;
-                    if (!driver.FindElement(By.XPath(xPathLoadIndicitor)).Displayed) return true;
+                    if (!driver.FindElement(By.XPath(xPathLoadIndicitor)).Displayed)
+                    {
+                        return true;
+                    }
                     else
                     {
                         Thread.Sleep(TimeSpan.FromMilliseconds(200));

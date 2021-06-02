@@ -1,8 +1,8 @@
 ﻿using OpenQA.Selenium;
+using RuRay.BLL.Resources;
 using RuRayToolbox.CommonControls;
 using RuRayToolbox.Controls;
 using RuRayToolbox.Controls.TriggerControls;
-using RuRay.BLL.Resources;
 
 namespace RuRayFacebook.App.LoggedIn.Pages
 {
@@ -17,7 +17,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
         public TextBox TextBoxEnterNewTextbox => new TextBox(Driver, By.XPath($"//input[@aria-label={ResMiscellaneous.EnterNewEmail}]"));
         public Button ButtonAdd => new Button(Driver, By.XPath("//button[text()='Add']"));
         public Button ButtonCancel => new Button(Driver, By.XPath($"//a[text()={ResMiscellaneous.Cancel}]"));
-        public Hyperlink<AddPhoneNumberDialog> LinkAddYourPhoneNumber => 
+        public Hyperlink<AddPhoneNumberDialog> LinkAddYourPhoneNumber =>
             new Hyperlink<AddPhoneNumberDialog>(Driver, By.XPath($"//a[text()={ResMiscellaneous.AddYourPhoneNumber}]"));
 
         public override void RunConformance()

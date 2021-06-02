@@ -1,7 +1,7 @@
 ﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using RuRayFacebook.App.LoggedIn.Components;
 using RuRay.BLL.Resources;
+using RuRayFacebook.App.LoggedIn.Components;
 using RuRayToolbox.CommonControls;
 using RuRayToolbox.Controls;
 

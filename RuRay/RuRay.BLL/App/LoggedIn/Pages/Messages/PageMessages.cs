@@ -1,5 +1,5 @@
-﻿using OpenQA.Selenium;
-using System;
+﻿using System;
+using OpenQA.Selenium;
 
 namespace RuRayFacebook.App.LoggedIn.Pages
 {
@@ -11,7 +11,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
 
         public PageMessages()
         {
-            
+
         }
 
         public override void RunConformance()

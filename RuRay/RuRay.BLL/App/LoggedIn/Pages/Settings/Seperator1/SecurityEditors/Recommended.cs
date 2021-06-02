@@ -1,10 +1,10 @@
-﻿using OpenQA.Selenium;
+﻿using System.Collections.Generic;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
+using RuRay.BLL.Resources;
 using RuRayToolbox.CommonControls;
 using RuRayToolbox.Controls;
 using RuRayToolbox.Controls.TriggerControls;
-using RuRay.BLL.Resources;
-using System.Collections.Generic;
 
 namespace RuRayFacebook.App.LoggedIn.Pages
 {
@@ -21,23 +21,30 @@ namespace RuRayFacebook.App.LoggedIn.Pages
         public RadioButton ButtonMessengerGetNotification => new RadioButton(Driver, By.XPath("//input[@id='u_e_3']"));
         public RadioButton ButtonMessengerDontGetNotifications => new RadioButton(Driver, By.XPath("//input[@id='u_e_4']"));
         public Label LabelDefaultEmail => new Label(Driver, By.XPath("//label[@for='u_e_5']//span[1]"));
-        public Hyperlink<DialogAddEmailAddress> LinkAddEmailAddress => 
+        public Hyperlink<DialogAddEmailAddress> LinkAddEmailAddress =>
             new Hyperlink<DialogAddEmailAddress>(Driver, By.XPath($"//form[@id='u_e_7']//a[text()={ResMiscellaneous.AddEmailAddress}]"));
         public Button ButtonSaveChanges => new Button(Driver, By.XPath("//form[@id='u_e_7']//input[@type='submit']"));
         public Checkbox CheckboxGetEmailAlert(string email = null)
         {
-            if (email == null) email = LabelDefaultEmail.GetText();
+            if (email == null)
+            {
+                email = LabelDefaultEmail.GetText();
+            }
+
             return new Checkbox(Driver, By.XPath($"//input[@value='{email}']"));
         }
 
         public void SetEmailsToGetAlert(IEnumerable<(string, bool)> emails)
         {
-            foreach(var email in emails) CheckboxGetEmailAlert(email.Item1).SetCheckbox(email.Item2);
+            foreach (var email in emails)
+            {
+                CheckboxGetEmailAlert(email.Item1).SetCheckbox(email.Item2);
+            }
         }
 
         public void GetAllEmailsToGetAlert()
         {
-            
+
         }
 
     }

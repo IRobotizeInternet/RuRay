@@ -1,10 +1,10 @@
-using Microsoft.Extensions.Diagnostics.HealthChecks;
-using RuRay.BLL.Contracts;
-using RuRay.BLL.Models;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
+using RuRay.BLL.Contracts;
+using RuRay.BLL.Models;
 
 namespace RuRay.BLL
 {

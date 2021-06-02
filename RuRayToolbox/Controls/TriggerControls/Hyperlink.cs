@@ -1,12 +1,12 @@
-﻿using OpenQA.Selenium;
+﻿using System;
+using System.Threading;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
 using RuRayToolbox.CommonControls;
-using System;
-using System.Threading;
 
 namespace RuRayToolbox.Controls.TriggerControls
 {
-    public class Hyperlink <EventResult> where EventResult : class
+    public class Hyperlink<EventResult> where EventResult : class
     {
         private readonly RemoteWebDriver _driver;
         private readonly BaseDOMObject _element;

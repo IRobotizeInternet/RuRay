@@ -1,7 +1,7 @@
-﻿using OpenQA.Selenium;
+﻿using System.Collections.Generic;
+using OpenQA.Selenium;
 using RuRay.BLL.Resources;
 using RuRayToolbox.CommonControls;
-using System.Collections.Generic;
 
 namespace RuRayFacebook.App.LoggedIn.Pages
 {
@@ -12,7 +12,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
             var list = new List<List<string>>();
             var webElements = Driver.FindElements(By.XPath("//div[@class='oh7imozk idiwt2bm'][1]//div[contains(@aria-label,'background')]"));
             var list1 = new List<string>();
-            foreach(var webElement in webElements)
+            foreach (var webElement in webElements)
             {
                 list1.Add(webElement.GetAttribute("aria-label"));
             }

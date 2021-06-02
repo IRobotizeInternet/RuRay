@@ -1,14 +1,14 @@
 ﻿using OpenQA.Selenium;
+using RuRay.BLL.Resources;
 using RuRayFacebook.App.NotLoggedIn.Help;
 using RuRayToolbox.CommonControls;
 using RuRayToolbox.Controls.TriggerControls;
-using RuRay.BLL.Resources;
 
 namespace RuRayFacebook.App.LoggedIn.Pages
 {
-    public class Memorialization: BaseEditor
+    public class Memorialization : BaseEditor
     {
-        public ComboboxSharingWithYourFriends ComboboxChooseAFriend => 
+        public ComboboxSharingWithYourFriends ComboboxChooseAFriend =>
             new ComboboxSharingWithYourFriends(Driver, string.Empty);
         public Button ButtonAdd => new Button(Driver, By.XPath($"//button[text()={ResMiscellaneous.Add}]"));
         public Hyperlink<DialogDeleteYourAccountInFuture> Link =>
@@ -25,7 +25,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
 
         public Button ButtonDeleteAfterDeath => new Button(Driver, By.XPath("//button[text()='Delete After Death']"));
         public Button ButtonCancel => new Button(Driver, By.XPath("//a[text()='Cancel']"));
-        public Hyperlink<PageHelpChooseALegacyContact> LinkLearnMore => 
+        public Hyperlink<PageHelpChooseALegacyContact> LinkLearnMore =>
             new Hyperlink<PageHelpChooseALegacyContact>(Driver, By.XPath("//div[@role='dialog']//a[text()='Learn More']"));
 
         public override void RunConformance()

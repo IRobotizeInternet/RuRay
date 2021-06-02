@@ -2,8 +2,8 @@
 
 namespace RuRay.BLL.Contracts
 {
-// If you add or remove keystrokes from here you 
-// must update enum in the RuRay.BLL.Contracts KeyStrokes
+    // If you add or remove keystrokes from here you 
+    // must update enum in the RuRay.BLL.Contracts KeyStrokes
     public enum KeyStrokes
     {
         [Description("{BACKSPACE},")] BACKSPACE = 1,

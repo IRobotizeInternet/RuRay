@@ -32,7 +32,7 @@ namespace RuRayFacebook.App.LoggedIn
         [LocalizedDescription(nameof(ResCategory.MedicineCabinets), typeof(ResCategory))] MedicineCabinets = 2,
         [LocalizedDescription(nameof(ResCategory.ShowerHeads), typeof(ResCategory))] ShowerHeads = 3,
     }
-    
+
     public enum BicyclesCategory
     {
         [LocalizedDescription(nameof(ResCategory.BicycleAccessories), typeof(ResCategory))] BicycleAccessories = 0,

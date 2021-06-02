@@ -14,7 +14,7 @@ namespace RuRayFacebook.WebDrivers
             BaseURL = baseUrl;
         }
 
-        public virtual RemoteWebDriver Driver(bool useExistingBrowser = true) 
+        public virtual RemoteWebDriver Driver(bool useExistingBrowser = true)
         {
             throw new NotImplementedException("Driving class has not implemeted this function.");
         }

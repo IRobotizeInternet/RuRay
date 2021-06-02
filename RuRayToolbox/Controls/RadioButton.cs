@@ -6,7 +6,7 @@ namespace RuRayToolbox.Controls
 {
     public class RadioButton : BaseDOMObject
     {
-        public RadioButton(RemoteWebDriver driver, By byForElement) : base(driver, byForElement) 
+        public RadioButton(RemoteWebDriver driver, By byForElement) : base(driver, byForElement)
         {
         }
     }

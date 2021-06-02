@@ -1,10 +1,10 @@
-using AutoFixture;
-using RuRay.BLL.Tests.Helpers;
-using Xunit;
-using RuRay.DAL.MySql.Models;
 using System;
+using AutoFixture;
 using Newtonsoft.Json;
 using RuRay.BLL.Models;
+using RuRay.BLL.Tests.Helpers;
+using RuRay.DAL.MySql.Models;
+using Xunit;
 
 namespace RuRay.BLL.Tests
 {

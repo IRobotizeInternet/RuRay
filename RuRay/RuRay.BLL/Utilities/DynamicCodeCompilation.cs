@@ -1,7 +1,7 @@
 ﻿using System;
-using System.IO;
-using System.Globalization;
 using System.CodeDom.Compiler;
+using System.Globalization;
+using System.IO;
 
 
 namespace RuRayFacebook.Utilities
@@ -11,7 +11,10 @@ namespace RuRayFacebook.Utilities
         [STAThread]
         public void CompleCode(string filePath)
         {
-            if (string.IsNullOrEmpty(filePath) || File.Exists(filePath)) return;
+            if (string.IsNullOrEmpty(filePath) || File.Exists(filePath))
+            {
+                return;
+            }
 
             CompileExecutable(filePath);
         }
@@ -43,20 +46,22 @@ namespace RuRayFacebook.Utilities
                     System.Environment.CurrentDirectory,
                     sourceFile.Name.Replace(".", "_"));
 
-                CompilerParameters cp = new CompilerParameters();
+                CompilerParameters cp = new CompilerParameters
+                {
 
-                // Generate an executable instead of
-                // a class library.
-                cp.GenerateExecutable = true;
+                    // Generate an executable instead of
+                    // a class library.
+                    GenerateExecutable = true,
 
-                // Specify the assembly file name to generate.
-                cp.OutputAssembly = exeName;
+                    // Specify the assembly file name to generate.
+                    OutputAssembly = exeName,
 
-                // Save the assembly as a physical file.
-                cp.GenerateInMemory = true;
+                    // Save the assembly as a physical file.
+                    GenerateInMemory = true,
 
-                // Set whether to treat all warnings as errors.
-                cp.TreatWarningsAsErrors = false;
+                    // Set whether to treat all warnings as errors.
+                    TreatWarningsAsErrors = false
+                };
 
                 // Invoke compilation of the source file.
                 var cr = provider.CompileAssemblyFromFile(cp, sourceName);

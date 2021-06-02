@@ -1,6 +1,6 @@
 ﻿namespace RuRayFacebook.App.LoggedIn
 {
-    public interface IMileage: IFilterOptions
+    public interface IMileage : IFilterOptions
     {
         IApplyFilter Milage(double? min = null, double? max = null);
     }

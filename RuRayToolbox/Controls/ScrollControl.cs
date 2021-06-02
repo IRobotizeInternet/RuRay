@@ -2,13 +2,12 @@
 using System.Threading;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using RuRayToolbox.CommonControls;
 using RuRayToolbox.Components;
 using RuRayToolbox.Extensions;
 
 namespace RuRayToolbox.CommonControls
 {
-    public class ScrollControl<TListItem> : BaseDOMObject 
+    public class ScrollControl<TListItem> : BaseDOMObject
         where TListItem : IListItem
     {
         // div[@ data-pagelet="MainFeed"]/div/div/div/div 
@@ -27,10 +26,11 @@ namespace RuRayToolbox.CommonControls
         public static int CurrentRowIndex { get; set; }
         public int RowCount => Driver.FindElements(By.XPath($"{BaseXPath}")).Count;//div[contains(@data-pagelet,'Feed')]")).Count;
         public string ScrollXPath { get; set; }
-        public string GetRowXPath(int positionInSet) {
-            return PositionXPath == null 
+        public string GetRowXPath(int positionInSet)
+        {
+            return PositionXPath == null
                 ? $"{BaseXPath}[{positionInSet}]"
-                : $"{BaseXPath}{string.Format(PositionXPath, positionInSet)}";    
+                : $"{BaseXPath}{string.Format(PositionXPath, positionInSet)}";
         }
 
         public string BaseXPath { get; set; }
@@ -40,8 +40,11 @@ namespace RuRayToolbox.CommonControls
         {
             get
             {
-                if(_listItem == null)
+                if (_listItem == null)
+                {
                     _listItem = (TListItem)Activator.CreateInstance(typeof(TListItem), BaseXPath, CurrentRowIndex == 0 ? 1 : CurrentRowIndex);
+                }
+
                 return _listItem;
             }
         }
@@ -49,7 +52,7 @@ namespace RuRayToolbox.CommonControls
         public ScrollControl(RemoteWebDriver driver,
             string baseXPath = null,
             string positionXPath = null,
-            int currentRowIndex = 1, 
+            int currentRowIndex = 1,
             string scrollXPath = null) : base(driver, By.XPath(baseXPath))
         {
             BaseXPath = baseXPath;
@@ -63,19 +66,30 @@ namespace RuRayToolbox.CommonControls
         /// </summary>
         public void ScrollingDownWithAGivenInterval(
             int numberOfUnitToScroll = 3,
-            bool scrollFromCurrentLocation = true, 
+            bool scrollFromCurrentLocation = true,
             int scrollingDelay = 3000)
         {
-            if (scrollFromCurrentLocation) SetIndexOfElementInViewPort();
+            if (scrollFromCurrentLocation)
+            {
+                SetIndexOfElementInViewPort();
+            }
+
             var counter = 0;
             while (true)
             {
                 var rowCountBeforeScroll = RowCount;
                 ScrollItem(CurrentRowIndex++, true);
                 var rowCountAfterScroll = RowCount;
-                if (CurrentRowIndex >= RowCount && rowCountBeforeScroll == rowCountAfterScroll) break;
+                if (CurrentRowIndex >= RowCount && rowCountBeforeScroll == rowCountAfterScroll)
+                {
+                    break;
+                }
+
                 Thread.Sleep(scrollingDelay);
-                if (++counter >= numberOfUnitToScroll) break;
+                if (++counter >= numberOfUnitToScroll)
+                {
+                    break;
+                }
             }
             Thread.Sleep(3000);
         }
@@ -85,17 +99,29 @@ namespace RuRayToolbox.CommonControls
         /// </summary>
         public void ScrollingUpWithAGivenInterval(
             int numberOfUnitToScroll = 3,
-            bool scrollFromCurrentLocation = true, 
+            bool scrollFromCurrentLocation = true,
             int scrollingDelay = 3000)
         {
-            if (scrollFromCurrentLocation) SetIndexOfElementInViewPort();
+            if (scrollFromCurrentLocation)
+            {
+                SetIndexOfElementInViewPort();
+            }
+
             var counter = 0;
             while (true)
             {
-                if (CurrentRowIndex <= 0) break;
+                if (CurrentRowIndex <= 0)
+                {
+                    break;
+                }
+
                 ScrollItem(CurrentRowIndex, false);
                 Thread.Sleep(scrollingDelay);
-                if (++counter >= numberOfUnitToScroll) break;
+                if (++counter >= numberOfUnitToScroll)
+                {
+                    break;
+                }
+
                 CurrentRowIndex--;
             }
             Thread.Sleep(3000);
@@ -113,7 +139,7 @@ namespace RuRayToolbox.CommonControls
         /// </summary>
         public void ScrollingRight(int scrollingDelay = 3000)
         {
-           
+
         }
 
         /// <summary>
@@ -153,7 +179,11 @@ namespace RuRayToolbox.CommonControls
             for (; index < elementsCount; index++)
             {
                 // If element not in visible view port continue searching.
-                if(!JscriptExecutor.IsElementOutViewport(Driver, GetRowXPath(index))) continue;
+                if (!JscriptExecutor.IsElementOutViewport(Driver, GetRowXPath(index)))
+                {
+                    continue;
+                }
+
                 CurrentRowIndex = index;
                 return;
             }

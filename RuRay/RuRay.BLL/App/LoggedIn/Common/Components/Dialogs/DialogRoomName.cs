@@ -1,8 +1,8 @@
 ﻿using OpenQA.Selenium;
 using RuRay.BLL.Resources;
 using RuRayToolbox.CommonControls;
-using RuRayToolbox.Enums;
 using RuRayToolbox.Controls;
+using RuRayToolbox.Enums;
 
 namespace RuRayFacebook.App.LoggedIn.Pages
 {
@@ -16,7 +16,11 @@ namespace RuRayFacebook.App.LoggedIn.Pages
 
         public Button ButtonRoomName(EnumRoomName roomName)
         {
-            if (roomName.GetDescription() == ResMiscellaneous.New) return null;
+            if (roomName.GetDescription() == ResMiscellaneous.New)
+            {
+                return null;
+            }
+
             return new Button(Driver, By.XPath($"//div[@role='dialog']//span[text()='{roomName.GetDescription()}']"));
         }
 

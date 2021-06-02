@@ -1,15 +1,15 @@
-﻿using OpenQA.Selenium;
-using System;
+﻿using System;
+using OpenQA.Selenium;
 
 namespace RuRayFacebook.App.LoggedIn.Pages
 {
-    public class PageGames : BasePage
+    public class PageChats : BasePage
     {
-        public override string PageUrl => "/games";
+        public override string PageUrl => "/messages";
 
         public override By ByForPage => throw new NotImplementedException();
 
-        public PageGames()
+        public PageChats()
         {
         }
 

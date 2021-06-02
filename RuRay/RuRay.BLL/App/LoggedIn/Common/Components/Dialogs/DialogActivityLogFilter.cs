@@ -1,6 +1,6 @@
 ﻿using OpenQA.Selenium;
-using RuRayFacebook.App.LoggedIn.Enum;
 using RuRay.BLL.Resources;
+using RuRayFacebook.App.LoggedIn.Enum;
 using RuRayLibrary.Extensions;
 using RuRayToolbox.Controls;
 namespace RuRayFacebook.App.LoggedIn.Pages
@@ -30,7 +30,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
             throw new System.NotImplementedException();
         }
 
-        public EventTriggerButton<PageActivityLog> ButtonActivityLog => 
+        public EventTriggerButton<PageActivityLog> ButtonActivityLog =>
             new EventTriggerButton<PageActivityLog>(Driver, By.XPath($"{BaseXPath}//span[contains(text(), '{ResMiscellaneous.ClearAll}')]"));
     }
 }

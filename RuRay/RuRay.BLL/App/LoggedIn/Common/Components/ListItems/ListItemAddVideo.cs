@@ -8,7 +8,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
 {
     public class ListItemAddVideo : BaseDiv, IListItem
     {
-        public Label LabelMovieTitle => 
+        public Label LabelMovieTitle =>
             new Label(Driver, By.XPath($"{BaseXPath}//img/parent::div/following-sibling::div/div/span/span"));
 
         public Label LabelMovieViews =>
@@ -16,7 +16,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
 
         public Checkbox CheckboxSelectThisCheckbox =>
             new Checkbox(Driver, By.XPath($"{BaseXPath}//div[@aria-label='{ResCreatePost.SelectThisCheckbox}']"));
-        
+
         public int XIndex { get; set; }
         public int YIndex { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
 

@@ -18,6 +18,10 @@ namespace RuRayFacebook.App.LoggedIn.Pages
         {
         }
 
+        public PageActivityLog()
+        {
+        }
+
         public override void RunConformance()
         {
             throw new System.NotImplementedException();

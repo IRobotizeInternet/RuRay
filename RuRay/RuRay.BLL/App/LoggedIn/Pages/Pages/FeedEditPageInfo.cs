@@ -1,15 +1,15 @@
-﻿using OpenQA.Selenium;
+﻿using System;
+using OpenQA.Selenium;
 using RuRay.BLL.Resources;
 using RuRayToolbox.CommonControls;
 using RuRayToolbox.Controls;
-using System;
 
 namespace RuRayFacebook.App.LoggedIn.Pages
 {
     public class FeedEditPageInfo : Feed
     {
         public override string FeedUrl => throw new NotImplementedException();
-        
+
         public FeedEditPageInfo()
         {
             BaseXPath = "//div[@role='main']";

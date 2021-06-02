@@ -1,8 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 using RuRay.BLL.Resources;
 using RuRayToolbox.CommonControls;
 using RuRayToolbox.Controls;
@@ -13,7 +9,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
     {
         public DivContacts()
         {
-            
+
         }
 
         public ScrollControl<ListItemContact> ScrollControlContacts =>

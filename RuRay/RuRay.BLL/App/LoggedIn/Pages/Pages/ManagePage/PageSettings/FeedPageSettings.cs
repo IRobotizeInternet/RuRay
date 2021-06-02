@@ -1,6 +1,6 @@
-﻿using OpenQA.Selenium;
+﻿using System;
+using OpenQA.Selenium;
 using RuRayToolbox.Controls;
-using System;
 
 namespace RuRayFacebook.App.LoggedIn.Pages
 {

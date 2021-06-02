@@ -1,16 +1,11 @@
-﻿using AutoMapper;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Mvc;
-using RuRay.API.Models;
-using RuRay.API.Swagger;
-using RuRay.BLL;
-using RuRay.BLL.Contracts;
-using Swashbuckle.AspNetCore.Annotations;
-using Swashbuckle.AspNetCore.Filters;
-using System;
-using System.Collections.Generic;
+﻿using System;
 using System.Net;
 using System.Threading.Tasks;
+using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using RuRay.BLL.Contracts;
+using Swashbuckle.AspNetCore.Annotations;
 
 namespace RuRay.API.Controllers
 {
@@ -44,7 +39,10 @@ namespace RuRay.API.Controllers
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
         public async Task<IActionResult> RightClick([FromRoute] int index)
         {
-            if (index < 1) return BadRequest();
+            if (index < 1)
+            {
+                return BadRequest();
+            }
 
             await _serviceKeyboard.LeftClick(index);
             return Ok();

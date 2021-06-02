@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using OpenQA.Selenium.Remote;
+﻿using OpenQA.Selenium.Remote;
 using RuRayLibrary.Components.Eidtor;
 
 namespace RuRayFacebook.App.LoggedIn.Pages

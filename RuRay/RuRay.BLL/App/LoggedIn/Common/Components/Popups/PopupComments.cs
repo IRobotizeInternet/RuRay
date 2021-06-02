@@ -1,9 +1,8 @@
-﻿using OpenQA.Selenium;
-using OpenQA.Selenium.Remote;
+﻿using System;
+using OpenQA.Selenium;
 using RuRay.BLL.Resources;
 using RuRayToolbox.CommonControls;
 using RuRayToolbox.Controls;
-using System;
 
 namespace RuRayFacebook.App.LoggedIn.Pages
 {
@@ -42,7 +41,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
 
         public DivUserComment UsersComments(string userName)
         {
-           return new DivUserComment($"{BaseXPath}/span/following-sibling::ul/li//div[contains(@aria-label,'{userName}')]");
+            return new DivUserComment($"{BaseXPath}/span/following-sibling::ul/li//div[contains(@aria-label,'{userName}')]");
         }
 
         public override void RunConformance()

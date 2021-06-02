@@ -9,10 +9,10 @@ namespace RuRayFacebook.App.LoggedIn.Pages
         public override string FeedUrl => "/";
         public int FeedIndex = 1;
 
-        public FeedHome() : 
+        public FeedHome() :
             base(baseXPath: "//div[contains(@data-pagelet,'Feed')]", positionXPath: "//div[@aria-posinset='{0}']")
         {
-           
+
         }
 
         public override void RunConformance()

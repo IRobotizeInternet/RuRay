@@ -7,7 +7,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
         public string BaseXPath = "//div[@data-pagelet='VideoChatHomeUnit']";
         public DivVideoChatHomeUnit()
         {
-            
+
         }
 
         public override void RunConformance()

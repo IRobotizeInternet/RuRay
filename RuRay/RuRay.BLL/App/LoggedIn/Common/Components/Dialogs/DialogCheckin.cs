@@ -10,7 +10,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
         public DialogCheckin()
         {
         }
-        
+
         protected override By ByForDialog => By.XPath($"//form[@method='POST']/parent::div[@role='dialog']//span[text()='{ResCreatePost.SearchForLocation}']");
 
         public override void RunConformance()

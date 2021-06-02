@@ -1,6 +1,6 @@
 ﻿using OpenQA.Selenium;
-using RuRayFacebook.App.NotLoggedIn;
 using RuRay.BLL.Resources;
+using RuRayFacebook.App.NotLoggedIn;
 using RuRayToolbox.Controls;
 
 namespace RuRayFacebook.App.LoggedIn.Pages
@@ -14,13 +14,13 @@ namespace RuRayFacebook.App.LoggedIn.Pages
 
         protected override By ByForDialog => By.XPath($"//div[@aria-label='{ResAccount.Account}'][@role='dialog']");
 
-        public EventTriggerButton<PageUserTimeline> TriggerSeeYourProfile => 
+        public EventTriggerButton<PageUserTimeline> TriggerSeeYourProfile =>
             new EventTriggerButton<PageUserTimeline>(Driver, By.XPath($"{BaseXPath}//a[@href='/me/']"));
 
         public EventTriggerButton<DialogGiveFeedbackToFacebook> TriggerGiveFeedbackToFBDialog =>
             new EventTriggerButton<DialogGiveFeedbackToFacebook>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResAccount.GiveFeedback}']"));
 
-        public EventTriggerButton<PopupSettingAndPrivacy> TriggerSettingAndPrivacyDialog => 
+        public EventTriggerButton<PopupSettingAndPrivacy> TriggerSettingAndPrivacyDialog =>
             new EventTriggerButton<PopupSettingAndPrivacy>(Driver, By.XPath($"{BaseXPath}//span[text()='{ResAccount.SettingsAndPrivacy}']"));
 
         public EventTriggerButton<PopupHelpAndSupport> TriggerHelpAndSupportDialog =>

@@ -13,7 +13,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
         public Button ButtonSend =>
             new Button(Driver, By.XPath($"//form//div[@aria-label=\"{ResCreatePost.RemoveFromFriendsWhoWillSeeYourPost}\"]"));
 
-         public int XIndex { get; set; }
+        public int XIndex { get; set; }
         public int YIndex { get => throw new System.NotImplementedException(); set => throw new System.NotImplementedException(); }
 
         public ListItemSendInMessenger(string baseXPath, int index = 1)

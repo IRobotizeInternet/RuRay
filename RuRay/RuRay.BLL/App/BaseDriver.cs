@@ -1,7 +1,7 @@
-﻿using OpenQA.Selenium.Remote;
+﻿using System;
+using OpenQA.Selenium.Remote;
 using RuRayFacebook.Utilities;
 using RuRayFacebook.WebDrivers;
-using System;
 
 namespace RuRayFacebook.App.LoggedIn.Pages
 {
@@ -24,10 +24,13 @@ namespace RuRayFacebook.App.LoggedIn.Pages
 
         private void InitializeDriverAndWait()
         {
-            if (_remoteDriver != null) return;
-         
+            if (_remoteDriver != null)
+            {
+                return;
+            }
+
             _remoteDriver = Driver;
-            
+
             // Enable this if you wish to delete the cookies each time you start new session.
             // _remoteDriver.Manage().Cookies.DeleteAllCookies();
         }
@@ -37,7 +40,11 @@ namespace RuRayFacebook.App.LoggedIn.Pages
         {
             get
             {
-                if (_driver != null) return _driver;
+                if (_driver != null)
+                {
+                    return _driver;
+                }
+
                 var webDriver = (WebDriver)Activator.CreateInstance(Type.GetType(WebBrowser), BaseURL);
                 return _driver = webDriver.Driver();
             }

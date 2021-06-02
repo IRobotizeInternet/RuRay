@@ -6,7 +6,7 @@ namespace RuRayFacebook.App.LoggedIn
     public abstract class BaseFilter : IApplyFilter
     {
         protected readonly RemoteWebDriver Driver;
-       
+
         public BaseFilter(RemoteWebDriver driver)
         {
             Driver = driver;

@@ -1,7 +1,7 @@
+using System;
 using AutoMapper;
 using RuRay.BLL.Models;
 using RuRay.DAL.MySql.Models;
-using System;
 
 namespace RuRay.BLL.Mappings
 {

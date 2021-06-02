@@ -1,9 +1,9 @@
-using DbUp;
-using Microsoft.Extensions.Configuration;
 using System;
 using System.IO;
 using System.Linq;
 using System.Reflection;
+using DbUp;
+using Microsoft.Extensions.Configuration;
 
 namespace RuRay.DbUpConsole
 {

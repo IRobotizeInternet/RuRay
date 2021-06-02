@@ -196,5 +196,5 @@ namespace RuRayFacebook.App.LoggedIn
         [LocalizedDescription(nameof(ResBrand.VIZIO), typeof(ResBrand))]
         VIZIO = 15
     }
-    
+
 }

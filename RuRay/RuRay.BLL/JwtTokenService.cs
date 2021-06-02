@@ -1,12 +1,12 @@
-using Microsoft.Extensions.Options;
-using Microsoft.IdentityModel.Tokens;
-using RuRay.BLL.Contracts;
-using RuRay.BLL.Models;
 using System;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Security.Principal;
 using System.Text;
+using Microsoft.Extensions.Options;
+using Microsoft.IdentityModel.Tokens;
+using RuRay.BLL.Contracts;
+using RuRay.BLL.Models;
 
 namespace RuRay.BLL
 {

@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using OpenQA.Selenium;
+﻿using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
-using RuRay.BLL.Resources;
 using RuRayToolbox.Controls;
 
 namespace RuRayFacebook.App.LoggedIn.Common.Components.Comboboxes
 {
-    public class ComboboxNewMessageTo  : Combobox
+    public class ComboboxNewMessageTo : Combobox
     {
         public ComboboxNewMessageTo(
            RemoteWebDriver driver,

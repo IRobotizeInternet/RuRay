@@ -1,10 +1,10 @@
+using System;
 using AutoFixture;
 using Moq;
 using RuRay.BLL.Contracts;
 using RuRay.BLL.Models;
 using RuRay.DAL.MySql.Contract;
 using RuRay.DAL.MySql.Models;
-using System;
 
 namespace RuRay.BLL.Tests.Helpers
 {

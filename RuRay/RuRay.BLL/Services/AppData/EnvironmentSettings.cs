@@ -8,14 +8,17 @@ namespace RuRayFacebook.Services
     {
         public static string DirectoryPath =>
             Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), AppSettings.RuRayDataDirectory);
-        
+
         private string _fileNameWithPath { get; set; }
-        public EnvironmentSettings(string fileName) 
+        public EnvironmentSettings(string fileName)
         {
             fileName = fileName ?? AppSettings.EnvironmentSettingsFile;
             _fileNameWithPath = Path.Combine(DirectoryPath, fileName);
 
-            if (Directory.Exists(DirectoryPath) == false) Directory.CreateDirectory(DirectoryPath);
+            if (Directory.Exists(DirectoryPath) == false)
+            {
+                Directory.CreateDirectory(DirectoryPath);
+            }
         }
 
         public EnvironmentSettingsDTO Details

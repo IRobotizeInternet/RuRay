@@ -1,6 +1,6 @@
-﻿using OpenQA.Selenium.IE;
+﻿using System;
+using OpenQA.Selenium.IE;
 using OpenQA.Selenium.Remote;
-using System;
 
 namespace RuRayFacebook.WebDrivers
 {
@@ -8,7 +8,7 @@ namespace RuRayFacebook.WebDrivers
     {
         public InternetExplorer(string baseUrl) : base(baseUrl) { }
 
-        public override RemoteWebDriver Driver(bool useExistingBrowser= true)
+        public override RemoteWebDriver Driver(bool useExistingBrowser = true)
         {
             if (string.IsNullOrEmpty(BaseURL))
             {
@@ -16,8 +16,10 @@ namespace RuRayFacebook.WebDrivers
             }
 
             //set an option to disable 'Save Password' prompt in the browser
-            var options = new InternetExplorerOptions();
-            options.AcceptInsecureCertificates = true;
+            var options = new InternetExplorerOptions
+            {
+                AcceptInsecureCertificates = true
+            };
             var driver = new InternetExplorerDriver(DriverLocation, options, TimeSpan.FromSeconds(WebDriverTimeoutInSeconds))
             {
                 Url = BaseURL

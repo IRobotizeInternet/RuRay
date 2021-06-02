@@ -1,7 +1,7 @@
-﻿using OpenQA.Selenium;
-using RuRay.BLL.Resources;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Linq;
+using OpenQA.Selenium;
+using RuRay.BLL.Resources;
 
 namespace RuRayFacebook.App.LoggedIn.Pages
 {
@@ -18,7 +18,11 @@ namespace RuRayFacebook.App.LoggedIn.Pages
         public void SetHowToInteract(int index)
         {
             var options = AllAvailableOptiosOfHowToInteract;
-            if (index > options.Count) return;
+            if (index > options.Count)
+            {
+                return;
+            }
+
             AllAvailableOptiosOfHowToInteract[index].Click();
         }
 

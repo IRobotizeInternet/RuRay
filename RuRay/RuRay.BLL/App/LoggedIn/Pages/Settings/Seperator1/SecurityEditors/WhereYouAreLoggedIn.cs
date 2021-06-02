@@ -1,10 +1,10 @@
 ﻿
+using System;
 using OpenQA.Selenium;
 using OpenQA.Selenium.Remote;
+using RuRay.BLL.Resources;
 using RuRayToolbox.CommonControls;
 using RuRayToolbox.Controls.TriggerControls;
-using RuRay.BLL.Resources;
-using System;
 
 namespace RuRayFacebook.App.LoggedIn.Pages.SecurityEditors
 {
@@ -12,7 +12,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages.SecurityEditors
     {
         public WhereYouAreLoggedIn(RemoteWebDriver driver) : base()
         {
-            
+
         }
 
         public Hyperlink<DialogSeeMore> LinkSeeMore => new Hyperlink<DialogSeeMore>(Driver, By.XPath($"//span[text()={ResMiscellaneous.SeeMore}]"));

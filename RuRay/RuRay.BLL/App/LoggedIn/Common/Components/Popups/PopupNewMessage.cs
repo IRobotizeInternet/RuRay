@@ -16,7 +16,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
 
         public ScrollControl<ListItemMessangerChat> ScrollPeopleWhoSharedThis =>
             new ScrollControl<ListItemMessangerChat>(
-                   Driver, 
+                   Driver,
                    $"//div[@data-pagelet='ChatTab']//div[@aria-label='{ResHomePage.Messages}']",
                    scrollXPath: $"//div[@data-pagelet='ChatTab']//div[@aria-label='{ResHomePage.Messages}']/../..");
 

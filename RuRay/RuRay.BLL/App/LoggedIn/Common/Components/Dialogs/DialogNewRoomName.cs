@@ -24,7 +24,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
         public TextBox TextBoxRoomName => new TextBox(Driver, By.XPath($"{BaseXPath}//input"));
 
         public Button ButtonChooseAnImageByIndex(int index)
-            =>new Button(Driver, By.XPath($"{BaseXPath}/div/div/div[{index}]//img"));
+            => new Button(Driver, By.XPath($"{BaseXPath}/div/div/div[{index}]//img"));
 
         public override void RunConformance()
         {
