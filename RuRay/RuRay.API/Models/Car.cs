@@ -4,31 +4,40 @@ using System.ComponentModel.DataAnnotations;
 namespace RuRay.API.Models
 {
     /// <summary>
-    /// Car type
+    /// Car type.
     /// </summary>
     public class Car
     {
         /// <summary>
-        /// Car id
+        /// Gets or sets the Id
+        /// Car id.
         /// </summary>
         public Guid Id { get; set; }
+
         /// <summary>
-        /// Car model name
+        /// Gets or sets the ModelName
+        /// Car model name.
         /// </summary>
         [Required]
         [StringLength(45, MinimumLength = 1)]
         public string ModelName { get; set; }
+
         /// <summary>
-        /// Car type
+        /// Gets or sets the CarType
+        /// Car type.
         /// </summary>
         [Required]
         public CarType CarType { get; set; }
+
         /// <summary>
-        /// CreatedOn
+        /// Gets or sets the CreatedOn
+        /// CreatedOn.
         /// </summary>
         public DateTime CreatedOn { get; set; }
+
         /// <summary>
-        /// ModifiedOn
+        /// Gets or sets the ModifiedOn
+        /// ModifiedOn.
         /// </summary>
         public DateTime ModifiedOn { get; set; }
     }

@@ -1,6 +1,8 @@
-﻿
-namespace RuRayFacebook.App.LoggedIn
+﻿namespace RuRayFacebook.App.LoggedIn
 {
+    /// <summary>
+    /// Defines the <see cref="IHomeAudioAndVideoSystemsFilterOptions" />.
+    /// </summary>
     public interface IHomeAudioAndVideoSystemsFilterOptions :
         IFilterOptions,
         IPrice,

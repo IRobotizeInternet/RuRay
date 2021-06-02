@@ -5,8 +5,14 @@ using RuRayToolbox.CommonControls;
 
 namespace RuRayFacebook.App.LoggedIn.Pages
 {
+    /// <summary>
+    /// Defines the <see cref="DialogMoreBackgroundOptions" />.
+    /// </summary>
     public class DialogMoreBackgroundOptions : BaseDialog
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="DialogMoreBackgroundOptions"/> class.
+        /// </summary>
         public DialogMoreBackgroundOptions()
         {
             var list = new List<List<string>>();
@@ -30,15 +36,41 @@ namespace RuRayFacebook.App.LoggedIn.Pages
             }
         }
 
+        /// <summary>
+        /// Defines the Basepath.
+        /// </summary>
         private readonly string Basepath = $"//span[text()='{ResPostBackGroundColor.ChooseBackground}']";
+
+        /// <summary>
+        /// Gets the ByForDialog.
+        /// </summary>
         protected override By ByForDialog => By.XPath(Basepath);
 
-
         // TODO: Add Popular, New and More background colors to the enums.
+        /// <summary>
+        /// The GetPopularBackground.
+        /// </summary>
+        /// <param name="background">The background<see cref="PostBackgroundcolor"/>.</param>
+        /// <returns>The <see cref="Button"/>.</returns>
         public Button GetPopularBackground(PostBackgroundcolor background) => new Button(Driver, By.XPath($"{Basepath}//div[@aria-label='{background}']"));
+
+        /// <summary>
+        /// The GetNewBackground.
+        /// </summary>
+        /// <param name="background">The background<see cref="PostBackgroundcolor"/>.</param>
+        /// <returns>The <see cref="Button"/>.</returns>
         public Button GetNewBackground(PostBackgroundcolor background) => new Button(Driver, By.XPath($"{Basepath}//div[@aria-label='{background}']"));
+
+        /// <summary>
+        /// The GetMoreBackground.
+        /// </summary>
+        /// <param name="background">The background<see cref="PostBackgroundcolor"/>.</param>
+        /// <returns>The <see cref="Button"/>.</returns>
         public Button GetMoreBackground(PostBackgroundcolor background) => new Button(Driver, By.XPath($"{Basepath}//div[@aria-label='{background}']"));
 
+        /// <summary>
+        /// The RunConformance.
+        /// </summary>
         public override void RunConformance()
         {
             throw new System.NotImplementedException();

@@ -8,26 +8,51 @@ using RuRayToolbox.Extensions;
 
 namespace RuRayFacebook.App.LoggedIn
 {
+    /// <summary>
+    /// Defines the <see cref="CheckboxFilter" />.
+    /// </summary>
     public class CheckboxFilter : BaseFilter, ICheckboxFilterOptions, ICheckboxFilter
     {
+        /// <summary>
+        /// Defines the _byFilterButton.
+        /// </summary>
         private readonly By _byFilterButton;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CheckboxFilter"/> class.
+        /// </summary>
+        /// <param name="driver">The driver<see cref="RemoteWebDriver"/>.</param>
+        /// <param name="byFilterButton">The byFilterButton<see cref="By"/>.</param>
         public CheckboxFilter(RemoteWebDriver driver, By byFilterButton)
             : base(driver)
         {
             _byFilterButton = byFilterButton;
         }
 
+        /// <summary>
+        /// Gets the FilterCriteriaList.
+        /// </summary>
         public IEnumerable<string> FilterCriteriaList { get; private set; }
 
+        /// <summary>
+        /// Gets the FilterBy.
+        /// </summary>
         public ICheckboxFilterOptions FilterBy => throw new NotImplementedException();
 
+        /// <summary>
+        /// The FilterItemList.
+        /// </summary>
+        /// <param name="itemsToFilter">The itemsToFilter<see cref="IEnumerable{string}"/>.</param>
+        /// <returns>The <see cref="IApplyFilter"/>.</returns>
         public IApplyFilter FilterItemList(IEnumerable<string> itemsToFilter)
         {
             FilterCriteriaList = itemsToFilter;
             return this;
         }
 
+        /// <summary>
+        /// The ApplyFilter.
+        /// </summary>
         public override void ApplyFilter()
         {
             if (FilterCriteriaList.Any())
@@ -38,12 +63,18 @@ namespace RuRayFacebook.App.LoggedIn
             base.ApplyFilter();
         }
 
+        /// <summary>
+        /// The ClickFilterButton.
+        /// </summary>
         protected override void ClickFilterButton()
         {
             var button = new Button(Driver, _byFilterButton);
             button.Click();
         }
 
+        /// <summary>
+        /// The SetFilterCriteria.
+        /// </summary>
         protected override void SetFilterCriteria()
         {
             UnSelectAll();
@@ -53,6 +84,10 @@ namespace RuRayFacebook.App.LoggedIn
             }
         }
 
+        /// <summary>
+        /// The SetFilterElementLabel.
+        /// </summary>
+        /// <param name="filterExpression">The filterExpression<see cref="string"/>.</param>
         private void SetFilterElementLabel(string filterExpression)
         {
             const string xpathForLabelsFilterPopup =
@@ -71,6 +106,9 @@ namespace RuRayFacebook.App.LoggedIn
             checkboxItemToClick.Click();
         }
 
+        /// <summary>
+        /// The UnSelectAll.
+        /// </summary>
         private void UnSelectAll()
         {
             const string xpathForCheckboxesFilterPopup =
@@ -84,15 +122,21 @@ namespace RuRayFacebook.App.LoggedIn
             }
         }
 
+        /// <summary>
+        /// The SelectAll.
+        /// </summary>
         private void SelectAll()
         {
-
         }
 
+        /// <summary>
+        /// The InteriorColor.
+        /// </summary>
+        /// <param name="interiorColor">The interiorColor<see cref="string"/>.</param>
+        /// <returns>The <see cref="IApplyFilter"/>.</returns>
         public IApplyFilter InteriorColor(string interiorColor)
         {
             throw new NotImplementedException();
         }
-
     }
 }

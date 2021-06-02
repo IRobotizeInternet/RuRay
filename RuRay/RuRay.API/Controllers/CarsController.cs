@@ -13,6 +13,9 @@ using Swashbuckle.AspNetCore.Filters;
 
 namespace RuRay.API.Controllers
 {
+    /// <summary>
+    /// Defines the <see cref="CarsController" />.
+    /// </summary>
     [Authorize]
     [Produces("application/json")]
     [Route("api/v{version:apiVersion}/cars")]
@@ -20,14 +23,21 @@ namespace RuRay.API.Controllers
     [ApiController]
     public class CarsController : ControllerBase
     {
+        /// <summary>
+        /// Defines the _mapper.
+        /// </summary>
         private readonly IMapper _mapper;
+
+        /// <summary>
+        /// Defines the _carsService.
+        /// </summary>
         private readonly ICarsService _carsService;
 
         /// <summary>
-        /// Cars db api
+        /// Initializes a new instance of the <see cref="CarsController"/> class.
         /// </summary>
-        /// <param name="mapper"></param>
-        /// <param name="carsService"></param>
+        /// <param name="mapper">.</param>
+        /// <param name="carsService">.</param>
         public CarsController(IMapper mapper, ICarsService carsService)
         {
             _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
@@ -35,10 +45,10 @@ namespace RuRay.API.Controllers
         }
 
         /// <summary>
-        /// Create a new car
+        /// Create a new car.
         /// </summary>
-        /// <param name="car"></param>
-        /// <returns>Returns created car</returns>           
+        /// <param name="car">.</param>
+        /// <returns>Returns created car.</returns>
         [HttpPost("")]
         [SwaggerResponseExample((int)HttpStatusCode.Created, typeof(CarModelExample))]
         [SwaggerResponse((int)HttpStatusCode.Created, Type = typeof(Car), Description = "Returns created car")]
@@ -55,10 +65,10 @@ namespace RuRay.API.Controllers
         }
 
         /// <summary>
-        /// Get car by id
+        /// Get car by id.
         /// </summary>
-        /// <param name="id">Car Id</param>
-        /// <returns>Returns finded car</returns>
+        /// <param name="id">Car Id.</param>
+        /// <returns>Returns finded car.</returns>
         [HttpGet("{id}")]
         [SwaggerResponse((int)HttpStatusCode.OK, Type = typeof(Car), Description = "Returns finded car")]
         [SwaggerResponseExample((int)HttpStatusCode.OK, typeof(CarModelExample))]
@@ -81,11 +91,11 @@ namespace RuRay.API.Controllers
         }
 
         /// <summary>
-        /// Update existing car
+        /// Update existing car.
         /// </summary>
-        /// <param name="id">Car id</param>
-        /// <param name="car">Car parameters</param>
-        /// <returns></returns>
+        /// <param name="id">Car id.</param>
+        /// <param name="car">Car parameters.</param>
+        /// <returns>.</returns>
         [HttpPut("{id}")]
         [SwaggerRequestExample(typeof(Car), typeof(CarModelExample))]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
@@ -104,10 +114,10 @@ namespace RuRay.API.Controllers
         }
 
         /// <summary>
-        /// Delete car
+        /// Delete car.
         /// </summary>
-        /// <param name="id">Car id</param>
-        /// <returns></returns>
+        /// <param name="id">Car id.</param>
+        /// <returns>.</returns>
         [HttpDelete("{id}")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Missing or invalid car id")]
@@ -124,11 +134,11 @@ namespace RuRay.API.Controllers
         }
 
         /// <summary>
-        /// Get cars list
+        /// Get cars list.
         /// </summary>
-        /// <param name="pageNumber">Page number</param>
-        /// <param name="pageSize">Page size</param>
-        /// <returns></returns>
+        /// <param name="pageNumber">Page number.</param>
+        /// <param name="pageSize">Page size.</param>
+        /// <returns>.</returns>
         [HttpGet("")]
         [SwaggerResponse((int)HttpStatusCode.OK, Type = typeof(IEnumerable<Car>), Description = "Returns finded cars array")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Missing or invalid pageNumber or pageSize")]

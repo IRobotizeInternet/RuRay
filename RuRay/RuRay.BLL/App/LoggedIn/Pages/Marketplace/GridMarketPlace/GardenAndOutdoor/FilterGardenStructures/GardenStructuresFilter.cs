@@ -4,39 +4,74 @@ using OpenQA.Selenium.Remote;
 
 namespace RuRayFacebook.App.LoggedIn
 {
+    /// <summary>
+    /// Defines the <see cref="GardenStructuresFilter" />.
+    /// </summary>
     public class GardenStructuresFilter : BaseFilter, IGardenStructuresFilter, IGardenStructuresFilterOptions
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="GardenStructuresFilter"/> class.
+        /// </summary>
+        /// <param name="driver">The driver<see cref="RemoteWebDriver"/>.</param>
         public GardenStructuresFilter(RemoteWebDriver driver) : base(driver)
         {
         }
 
+        /// <summary>
+        /// Gets the FilterBy.
+        /// </summary>
         public IGardenStructuresFilterOptions FilterBy => throw new NotImplementedException();
 
+        /// <summary>
+        /// The Category.
+        /// </summary>
+        /// <param name="category">The category<see cref="GardenStructuresCategory"/>.</param>
         public void Category(GardenStructuresCategory category)
         {
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// The GetAllCategories.
+        /// </summary>
+        /// <returns>The <see cref="IEnumerable{string}"/>.</returns>
         public IEnumerable<string> GetAllCategories()
         {
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// The ItemCondition.
+        /// </summary>
+        /// <param name="condition">The condition<see cref="ItemCondition"/>.</param>
+        /// <returns>The <see cref="IFilterOptions"/>.</returns>
         public IFilterOptions ItemCondition(ItemCondition condition)
         {
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// The Price.
+        /// </summary>
+        /// <param name="min">The min<see cref="double?"/>.</param>
+        /// <param name="max">The max<see cref="double?"/>.</param>
+        /// <returns>The <see cref="IApplyFilter"/>.</returns>
         public IApplyFilter Price(double? min = null, double? max = null)
         {
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// The ClickFilterButton.
+        /// </summary>
         protected override void ClickFilterButton()
         {
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// The SetFilterCriteria.
+        /// </summary>
         protected override void SetFilterCriteria()
         {
             throw new NotImplementedException();

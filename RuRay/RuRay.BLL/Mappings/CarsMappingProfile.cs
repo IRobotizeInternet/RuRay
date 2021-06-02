@@ -5,8 +5,14 @@ using RuRay.DAL.MySql.Models;
 
 namespace RuRay.BLL.Mappings
 {
+    /// <summary>
+    /// Defines the <see cref="CarsMapping" />.
+    /// </summary>
     public class CarsMapping : Profile
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CarsMapping"/> class.
+        /// </summary>
         public CarsMapping()
         {
             CreateMap<Car, CarEntity>()

@@ -5,16 +5,36 @@ using RuRayFacebook.WebDrivers;
 
 namespace RuRayFacebook.App.LoggedIn.Pages
 {
+    /// <summary>
+    /// Defines the <see cref="BaseDriver" />.
+    /// </summary>
     public abstract class BaseDriver
     {
+        /// <summary>
+        /// The RunConformance.
+        /// </summary>
         public abstract void RunConformance();
-        // Private 
+
+        // Private
+        /// <summary>
+        /// Gets the BaseURL.
+        /// </summary>
         protected string BaseURL { get; }
+
+        /// <summary>
+        /// Gets the WebBrowser.
+        /// </summary>
         private string WebBrowser { get; }
 
+        /// <summary>
+        /// Defines the _remoteDriver.
+        /// </summary>
         [ThreadStatic]
         private static RemoteWebDriver _remoteDriver = null;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="BaseDriver"/> class.
+        /// </summary>
         protected BaseDriver()
         {
             BaseURL = AppSettings.BaseURL;
@@ -22,6 +42,9 @@ namespace RuRayFacebook.App.LoggedIn.Pages
             InitializeDriverAndWait();
         }
 
+        /// <summary>
+        /// The InitializeDriverAndWait.
+        /// </summary>
         private void InitializeDriverAndWait()
         {
             if (_remoteDriver != null)
@@ -30,12 +53,16 @@ namespace RuRayFacebook.App.LoggedIn.Pages
             }
 
             _remoteDriver = Driver;
-
-            // Enable this if you wish to delete the cookies each time you start new session.
-            // _remoteDriver.Manage().Cookies.DeleteAllCookies();
         }
 
+        /// <summary>
+        /// Defines the _driver.
+        /// </summary>
         private static RemoteWebDriver _driver;
+
+        /// <summary>
+        /// Gets the Driver.
+        /// </summary>
         public RemoteWebDriver Driver
         {
             get

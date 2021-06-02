@@ -4,8 +4,15 @@ using Swashbuckle.AspNetCore.Filters;
 
 namespace RuRay.API.Swagger
 {
+    /// <summary>
+    /// Defines the <see cref="CarModelExample" />.
+    /// </summary>
     public class CarModelExample : IExamplesProvider<Car>
     {
+        /// <summary>
+        /// The GetExamples.
+        /// </summary>
+        /// <returns>The <see cref="Car"/>.</returns>
         public Car GetExamples()
         {
             var dnow = DateTime.UtcNow;

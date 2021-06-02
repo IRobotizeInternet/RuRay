@@ -11,6 +11,9 @@ using Swashbuckle.AspNetCore.Annotations;
 
 namespace RuRay.API.Controllers
 {
+    /// <summary>
+    /// Defines the <see cref="TodoController" />.
+    /// </summary>
     [Authorize]
     [Produces("application/json")]
     [Route("api/v{version:apiVersion}/todos")]
@@ -18,14 +21,21 @@ namespace RuRay.API.Controllers
     [ApiController]
     public class TodoController : ControllerBase
     {
+        /// <summary>
+        /// Defines the _mapper.
+        /// </summary>
         private readonly IMapper _mapper;
+
+        /// <summary>
+        /// Defines the _todosMockService.
+        /// </summary>
         private readonly TodosMockProxyService _todosMockService;
 
         /// <summary>
-        /// Todos mock web proxy 
+        /// Initializes a new instance of the <see cref="TodoController"/> class.
         /// </summary>
-        /// <param name="mapper"></param>
-        /// <param name="todosMockService"></param>
+        /// <param name="mapper">.</param>
+        /// <param name="todosMockService">.</param>
         public TodoController(IMapper mapper, TodosMockProxyService todosMockService)
         {
             _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
@@ -33,10 +43,10 @@ namespace RuRay.API.Controllers
         }
 
         /// <summary>
-        /// Get todo by id
+        /// Get todo by id.
         /// </summary>
-        /// <param name="id">Todo id</param>     
-        /// <returns></returns>
+        /// <param name="id">Todo id.</param>
+        /// <returns>.</returns>
         [HttpGet("{id}")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.NotFound, Description = "Missing todo object")]
@@ -52,9 +62,9 @@ namespace RuRay.API.Controllers
         }
 
         /// <summary>
-        /// Get todos list from remote mock api
-        /// </summary>      
-        /// <returns></returns>
+        /// Get todos list from remote mock api.
+        /// </summary>
+        /// <returns>.</returns>
         [HttpGet("")]
         [SwaggerResponse((int)HttpStatusCode.OK, Type = typeof(IEnumerable<Todo>), Description = "Returns todos array")]
         [SwaggerResponse((int)HttpStatusCode.NoContent, Description = "Missing todos array")]

@@ -7,8 +7,18 @@ using RuRayToolbox.Extensions;
 
 namespace RuRayFacebook.App.LoggedIn
 {
+    /// <summary>
+    /// Defines the <see cref="ComboboxSharingWithYourFriends" />.
+    /// </summary>
     public class ComboboxSharingWithYourFriends : Combobox
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ComboboxSharingWithYourFriends"/> class.
+        /// </summary>
+        /// <param name="driver">The driver<see cref="RemoteWebDriver"/>.</param>
+        /// <param name="baseXPath">The baseXPath<see cref="string"/>.</param>
+        /// <param name="searchBoxXPath">The searchBoxXPath<see cref="string"/>.</param>
+        /// <param name="searchItemsXPath">The searchItemsXPath<see cref="string"/>.</param>
         public ComboboxSharingWithYourFriends(
             RemoteWebDriver driver,
             string baseXPath,
@@ -20,6 +30,10 @@ namespace RuRayFacebook.App.LoggedIn
             SearchItemsXPath = searchItemsXPath ?? $"{BaseXPath}//div[contains(@role, 'grid')]//div[@role='row']//div[@role='button']";
         }
 
+        /// <summary>
+        /// The Select.
+        /// </summary>
+        /// <param name="itemToSearch">The itemToSearch<see cref="string"/>.</param>
         public override void Select(string itemToSearch)
         {
             SearchItem(itemToSearch);
@@ -28,6 +42,9 @@ namespace RuRayFacebook.App.LoggedIn
             targetItem?.Click();
         }
 
+        /// <summary>
+        /// The WaitUntilSearchedItemsRetrieved.
+        /// </summary>
         private void WaitUntilSearchedItemsRetrieved()
         {
             var byForLoadingSvg = $"//*[name()='svg']//*[name()='circle'][@stroke='var(--progress-ring-disabled-foreground)']";

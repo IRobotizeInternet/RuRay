@@ -3,8 +3,14 @@ using System.IO;
 
 namespace SupportingScripts
 {
+    /// <summary>
+    /// Defines the <see cref="IterateFiles" />.
+    /// </summary>
     public class IterateFiles
     {
+        /// <summary>
+        /// The PrintCode.
+        /// </summary>
         public void PrintCode()
         {
             var directories = Directory.GetDirectories(@"D:\Dev\NgCore\CryptoFake\RuRay\RuRay\RuRay.BLL\App\LoggedIn\Pages\");

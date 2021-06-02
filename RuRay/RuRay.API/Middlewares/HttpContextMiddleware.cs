@@ -10,22 +10,42 @@ using Serilog.Context;
 
 namespace RuRay.API.Middleware
 {
+    /// <summary>
+    /// Defines the <see cref="HttpContextMiddleware" />.
+    /// </summary>
     public class HttpContextMiddleware
     {
-        const string MessageTemplate =
+        /// <summary>
+        /// Defines the MessageTemplate.
+        /// </summary>
+        internal const string MessageTemplate =
             "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms [User:{User}][Protocol:{RequestProtocol}][Host:{RequestHost}][Referer:{Referer}][User-Agent:{UserAgent}]";
 
-        const string ErrorMessageTemplate =
+        /// <summary>
+        /// Defines the ErrorMessageTemplate.
+        /// </summary>
+        internal const string ErrorMessageTemplate =
            "HTTP {RequestMethod} {RequestPath} responded {StatusCode} in {Elapsed:0.0000} ms [User:{User}][Protocol:{RequestProtocol}][Host:{RequestHost}][Headers:{RequestHeaders}]";
 
+        /// <summary>
+        /// Defines the _next.
+        /// </summary>
+        internal readonly RequestDelegate _next;
 
-        readonly RequestDelegate _next;
-
+        /// <summary>
+        /// Initializes a new instance of the <see cref="HttpContextMiddleware"/> class.
+        /// </summary>
+        /// <param name="next">The next<see cref="RequestDelegate"/>.</param>
         public HttpContextMiddleware(RequestDelegate next)
         {
             _next = next ?? throw new ArgumentNullException(nameof(next));
         }
 
+        /// <summary>
+        /// The Invoke.
+        /// </summary>
+        /// <param name="httpContext">The httpContext<see cref="HttpContext"/>.</param>
+        /// <returns>The <see cref="Task"/>.</returns>
         public async Task Invoke(HttpContext httpContext)
         {
             if (httpContext == null)
@@ -59,6 +79,12 @@ namespace RuRay.API.Middleware
             }
         }
 
+        /// <summary>
+        /// The PushProperties.
+        /// </summary>
+        /// <param name="elapsed">The elapsed<see cref="double"/>.</param>
+        /// <param name="httpContext">The httpContext<see cref="HttpContext"/>.</param>
+        /// <param name="errorId">The errorId<see cref="Guid?"/>.</param>
         private static void PushProperties(double elapsed, HttpContext httpContext, Guid? errorId = null)
         {
             var requestHeader = httpContext.Request.Headers.ToDictionary(h => h.Key, h => h.Value.ToString());
@@ -76,5 +102,3 @@ namespace RuRay.API.Middleware
         }
     }
 }
-
-

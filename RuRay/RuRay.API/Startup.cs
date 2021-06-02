@@ -26,16 +26,30 @@ using Swashbuckle.AspNetCore.SwaggerGen;
 
 namespace RuRay.API
 {
+    /// <summary>
+    /// Defines the <see cref="Startup" />.
+    /// </summary>
     public class Startup
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Startup"/> class.
+        /// </summary>
+        /// <param name="configuration">The configuration<see cref="IConfiguration"/>.</param>
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
         }
 
+        /// <summary>
+        /// Gets the Configuration.
+        /// </summary>
         public IConfiguration Configuration { get; }
 
         // This method gets called by the runtime. Use this method to add services to the container.
+        /// <summary>
+        /// The ConfigureServices.
+        /// </summary>
+        /// <param name="services">The services<see cref="IServiceCollection"/>.</param>
         public void ConfigureServices(IServiceCollection services)
         {
             var appSettingsSection = Configuration.GetSection("AppSettings");
@@ -132,6 +146,12 @@ namespace RuRay.API
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
+        /// <summary>
+        /// The Configure.
+        /// </summary>
+        /// <param name="app">The app<see cref="IApplicationBuilder"/>.</param>
+        /// <param name="env">The env<see cref="IWebHostEnvironment"/>.</param>
+        /// <param name="provider">The provider<see cref="IApiVersionDescriptionProvider"/>.</param>
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env, IApiVersionDescriptionProvider provider)
         {
             if (env.IsDevelopment())
@@ -178,8 +198,10 @@ namespace RuRay.API
             });
         }
 
-        #region internal
-
+        /// <summary>
+        /// The GetXmlDataAnnotationFilePath.
+        /// </summary>
+        /// <returns>The <see cref="string"/>.</returns>
         private string GetXmlDataAnnotationFilePath()
         {
             var xmlFile = $"{Assembly.GetExecutingAssembly().GetName().Name}.xml";
@@ -191,7 +213,5 @@ namespace RuRay.API
 
             return xmlPath;
         }
-
-        #endregion
     }
 }

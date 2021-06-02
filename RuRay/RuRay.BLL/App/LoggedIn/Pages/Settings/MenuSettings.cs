@@ -1,6 +1,9 @@
 ﻿namespace RuRayFacebook.App.LoggedIn.Pages
 {
-    class MenuSettings
+    /// <summary>
+    /// Defines the <see cref="MenuSettings" />.
+    /// </summary>
+    internal class MenuSettings
     {
     }
 }

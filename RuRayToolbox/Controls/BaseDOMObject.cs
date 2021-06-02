@@ -9,31 +9,53 @@ using RuRayToolbox.Extensions;
 
 namespace RuRayToolbox.CommonControls
 {
+    /// <summary>
+    /// Defines the <see cref="BaseDOMObject" />.
+    /// </summary>
     public class BaseDOMObject
     {
+        /// <summary>
+        /// Defines the ByForElement.
+        /// </summary>
         protected By ByForElement;
+
+        /// <summary>
+        /// Defines the Driver.
+        /// </summary>
         protected RemoteWebDriver Driver;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="BaseDOMObject"/> class.
+        /// </summary>
+        /// <param name="driver">The driver<see cref="RemoteWebDriver"/>.</param>
+        /// <param name="byForElement">The byForElement<see cref="By"/>.</param>
         public BaseDOMObject(RemoteWebDriver driver, By byForElement)
         {
             ByForElement = byForElement;
             Driver = driver;
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="BaseDOMObject"/> class.
+        /// </summary>
+        /// <param name="driver">The driver<see cref="RemoteWebDriver"/>.</param>
         public BaseDOMObject(RemoteWebDriver driver)
         {
             Driver = driver;
         }
 
         /// <summary>
-        /// Check whether or not the element exists
+        /// Gets a value indicating whether IsDOMObjectExist
+        /// Check whether or not the element exists.
         /// </summary>
         public bool IsDOMObjectExist => Driver.TryFindElement(ByForElement, out _);
 
         /// <summary>
         /// This method will try to click on the element atleast three times.
-        /// Known issue <see cref="https://stackoverflow.com/questions/11908249/debugging-element-is-not-clickable-at-point-error?page=1&tab=votes#tab-top"/>
+        /// Known issue <see cref="https://stackoverflow.com/questions/11908249/debugging-element-is-not-clickable-at-point-error?page=1&tab=votes#tab-top"/>.
         /// </summary>
+        /// <param name="numberOfTries">The numberOfTries<see cref="int"/>.</param>
+        /// <returns>The <see cref="bool"/>.</returns>
         public virtual bool Click(int numberOfTries = 3)
         {
             // Using Polly library: https://github.com/App-vNext/Polly
@@ -62,9 +84,9 @@ namespace RuRayToolbox.CommonControls
             return true;
         }
 
-        /// <summary>/
+        /// <summary>
         /// Clear value.
-        /// Select All + Backspace
+        /// Select All + Backspace.
         /// </summary>
         public void Clear()
         {
@@ -74,6 +96,11 @@ namespace RuRayToolbox.CommonControls
             elementToClear.Clear();
         }
 
+        /// <summary>
+        /// The GetAttribute.
+        /// </summary>
+        /// <param name="attributeName">The attributeName<see cref="string"/>.</param>
+        /// <returns>The <see cref="string"/>.</returns>
         public string GetAttribute(string attributeName)
         {
             var element = Driver.FindElementWithTimeSpan(ByForElement);
@@ -82,8 +109,10 @@ namespace RuRayToolbox.CommonControls
 
         /// <summary>
         /// Set value into an elements like a textbox for textarea. It also takes a 
-        /// boolean flag to replace or append to the current value. 
+        /// boolean flag to replace or append to the current value.
         /// </summary>
+        /// <param name="valueToEnter">The valueToEnter<see cref="string"/>.</param>
+        /// <param name="overwrite">The overwrite<see cref="bool"/>.</param>
         public void SetData(string valueToEnter, bool overwrite = true)
         {
             var startTime = DateTime.Now;
@@ -118,8 +147,9 @@ namespace RuRayToolbox.CommonControls
         }
 
         /// <summary>
-        /// Gets text property of an element
+        /// Gets text property of an element.
         /// </summary>
+        /// <returns>The <see cref="string"/>.</returns>
         public string GetText()
         {
             var gettingElementText = true;
@@ -161,6 +191,11 @@ namespace RuRayToolbox.CommonControls
             return elementText;
         }
 
+        /// <summary>
+        /// The ScrollToElement.
+        /// </summary>
+        /// <param name="xPathTargetElement">The xPathTargetElement<see cref="string"/>.</param>
+        /// <param name="scrollUp">The scrollUp<see cref="bool"/>.</param>
         protected void ScrollToElement(
             string xPathTargetElement,
             bool scrollUp = true)
@@ -184,7 +219,11 @@ namespace RuRayToolbox.CommonControls
         }
 
         // Used this type of sloppy loops to mimic scrolling with finger.
-        // How did I came up with these numbers, just tried bunch of things to see if it is smooth. 
+        // How did I came up with these numbers, just tried bunch of things to see if it is smooth.
+        /// <summary>
+        /// The JScrollSmoothUp.
+        /// </summary>
+        /// <param name="xPathDestElement">The xPathDestElement<see cref="string"/>.</param>
         protected void JScrollSmoothUp(
             string xPathDestElement)
         {
@@ -226,7 +265,11 @@ namespace RuRayToolbox.CommonControls
         }
 
         // Used this type of sloppy loops to mimic scrolling with finger.
-        // How did I came up with these numbers, just tried bunch of things to see if it is smooth. 
+        // How did I came up with these numbers, just tried bunch of things to see if it is smooth.
+        /// <summary>
+        /// The JScrollSmoothDown.
+        /// </summary>
+        /// <param name="xPathDestElement">The xPathDestElement<see cref="string"/>.</param>
         protected void JScrollSmoothDown(
             string xPathDestElement)
         {
@@ -269,10 +312,12 @@ namespace RuRayToolbox.CommonControls
         }
 
         /// <summary>
-        /// Use this method to scroll up/down for a give hieght
+        /// Use this method to scroll up/down for a give hieght.
         /// </summary>
-        /// <param name="scrollingLength"></param>
-        /// <param name="scrollDown"> -1 scrolling down and 1 for scrolling up</param>
+        /// <param name="elementXPath">The elementXPath<see cref="string"/>.</param>
+        /// <param name="scrollingLengthXAxis">The scrollingLengthXAxis<see cref="double"/>.</param>
+        /// <param name="scrollingLengthYAxis">The scrollingLengthYAxis<see cref="double"/>.</param>
+        /// <param name="scrollDown"> -1 scrolling down and 1 for scrolling up.</param>
         protected void ScrollMore(
             string elementXPath,
             double scrollingLengthXAxis = 0,
@@ -286,11 +331,20 @@ namespace RuRayToolbox.CommonControls
                 scrollDown * scrollingLengthYAxis * 2 /*Adding some random offset*/);
         }
 
+        /// <summary>
+        /// The JClickElement.
+        /// </summary>
+        /// <param name="webElement">The webElement<see cref="IWebElement"/>.</param>
         protected void JClickElement(IWebElement webElement = null)
         {
             Driver.ExecuteScript("argument[0]", webElement);
         }
 
+        /// <summary>
+        /// The GetScrollableElement.
+        /// </summary>
+        /// <param name="element">The element<see cref="IWebElement"/>.</param>
+        /// <returns>The <see cref="IWebElement"/>.</returns>
         private IWebElement GetScrollableElement(IWebElement element)
         {
             var numberOfTries = 10;
@@ -317,18 +371,30 @@ namespace RuRayToolbox.CommonControls
             return scrollableElement;
         }
 
+        /// <summary>
+        /// The ScrollToElement.
+        /// </summary>
+        /// <param name="element">The element<see cref="IWebElement"/>.</param>
         public void ScrollToElement(IWebElement element)
         {
             var elementToScrollTo = GetScrollableElement(element);
             new Actions(Driver).MoveToElement(elementToScrollTo).Build().Perform();
         }
 
+        /// <summary>
+        /// The ActionsDoubleClick.
+        /// </summary>
+        /// <param name="element">The element<see cref="IWebElement"/>.</param>
         public void ActionsDoubleClick(IWebElement element)
         {
             var elementToScrollTo = GetScrollableElement(element);
             new Actions(Driver).DoubleClick(elementToScrollTo).Perform();
         }
 
+        /// <summary>
+        /// The ActionsRightClick.
+        /// </summary>
+        /// <param name="element">The element<see cref="IWebElement"/>.</param>
         public void ActionsRightClick(IWebElement element)
         {
             var elementToScrollTo = GetScrollableElement(element);
@@ -336,10 +402,10 @@ namespace RuRayToolbox.CommonControls
         }
 
         /// <summary>
-        ///  Clicking on the element twice will require the cursor to be moved frist, before 
+        /// Clicking on the element twice will require the cursor to be moved frist, before 
         ///  we act on the same element; otherwise, it will throwup.
         /// </summary>
-        /// <param name="element"> Web element</param>
+        /// <param name="element"> Web element.</param>
         public void MoveCursorToElement(IWebElement element = null)
         {
             var action = new Actions(Driver);
@@ -349,12 +415,23 @@ namespace RuRayToolbox.CommonControls
             }
         }
 
+        /// <summary>
+        /// The ActionsDragAndDrop.
+        /// </summary>
+        /// <param name="srourceElement">The srourceElement<see cref="IWebElement"/>.</param>
+        /// <param name="targetElement">The targetElement<see cref="IWebElement"/>.</param>
         public void ActionsDragAndDrop(IWebElement srourceElement, IWebElement targetElement)
         {
             var action = new Actions(Driver);
             action.DragAndDrop(srourceElement, targetElement).Build().Perform();
         }
 
+        /// <summary>
+        /// The LocateScrollableElement.
+        /// </summary>
+        /// <param name="driver">The driver<see cref="RemoteWebDriver"/>.</param>
+        /// <param name="firstElement">The firstElement<see cref="IWebElement"/>.</param>
+        /// <returns>The <see cref="IWebElement"/>.</returns>
         private static IWebElement LocateScrollableElement(RemoteWebDriver driver, IWebElement firstElement)
         {
             var ancestors = firstElement.FindElements(By.XPath("./ancestor-or-self::*")).Reverse();
@@ -366,8 +443,9 @@ namespace RuRayToolbox.CommonControls
         /// By setting the file detector, the SendKeys method will first upload the 
         /// file from the local system to the remote machine on which the code is 
         /// actually running. Then SendKeys will set the file in the<input> element, 
-        /// using the local file path on the remote machine. 
+        /// using the local file path on the remote machine.
         /// </summary>
+        /// <param name="filePath">The filePath<see cref="string"/>.</param>
         public void FileUpload(string filePath)
         {
             var fileDetectionDriver = Driver as IAllowsFileDetection;

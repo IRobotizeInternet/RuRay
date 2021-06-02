@@ -6,8 +6,16 @@ using Polly;
 
 namespace RuRayToolbox.Extensions
 {
+    /// <summary>
+    /// Defines the <see cref="JscriptExecutor" />.
+    /// </summary>
     public static class JscriptExecutor
     {
+        /// <summary>
+        /// The ScrollInToView.
+        /// </summary>
+        /// <param name="driver">The driver<see cref="RemoteWebDriver"/>.</param>
+        /// <param name="element">The element<see cref="IWebElement"/>.</param>
         public static void ScrollInToView(RemoteWebDriver driver, IWebElement element)
         {
             var js = (IJavaScriptExecutor)driver;
@@ -17,9 +25,9 @@ namespace RuRayToolbox.Extensions
         /// <summary>
         /// This extension will help determine if the element is in visible view port of the window.
         /// </summary>
-        /// <param name="driver">RemoteWebDriver</param>
-        /// <param name="xpath">xpath of an element, ex: //div[contains(@data-pagelet,'Feed')]//div[@aria-posinset='{1}']</param>
-        /// <returns>true if element is in viewport, otherwise false</returns>
+        /// <param name="driver">RemoteWebDriver.</param>
+        /// <param name="xpath">xpath of an element, ex: //div[contains(@data-pagelet,'Feed')]//div[@aria-posinset='{1}'].</param>
+        /// <returns>true if element is in viewport, otherwise false.</returns>
         public static bool IsElementOutViewport(RemoteWebDriver driver, string xpath)
         {
             var jsString = "function isElementOutViewport() {" +
@@ -78,6 +86,11 @@ namespace RuRayToolbox.Extensions
             }
         }
 
+        /// <summary>
+        /// The GetElementFromMiddleOfViewPoint.
+        /// </summary>
+        /// <param name="driver">The driver<see cref="RemoteWebDriver"/>.</param>
+        /// <returns>The <see cref="bool"/>.</returns>
         public static bool GetElementFromMiddleOfViewPoint(RemoteWebDriver driver)
         {
             var jsString = @"return document.elementFromPoint(window.innerWidth/2, window.innerHeight/2);";
@@ -99,12 +112,12 @@ namespace RuRayToolbox.Extensions
         /// <summary>
         /// When scrolling pop/dialog list compare to scrolling window we need to 
         /// pass element xpath inorder to identify the parent containig the scroll bar.
-        /// window.scrollBy will on work on the Feed Windows. 
+        /// window.scrollBy will on work on the Feed Windows.
         /// </summary>
-        /// <param name="driver"></param>
+        /// <param name="driver">.</param>
         /// <param name="elementXPath">When xpath is null the code will try to scroll feed window.</param>
-        /// <param name="scrollingLengthXAxis"></param>
-        /// <param name="scrollingLengthYAxis"></param>
+        /// <param name="scrollingLengthXAxis">.</param>
+        /// <param name="scrollingLengthYAxis">.</param>
         public static void ScrollBy(
             RemoteWebDriver driver,
             string elementXPath,
@@ -141,12 +154,22 @@ namespace RuRayToolbox.Extensions
             });
         }
 
+        /// <summary>
+        /// The GetViewPortHieght.
+        /// </summary>
+        /// <param name="driver">The driver<see cref="RemoteWebDriver"/>.</param>
+        /// <returns>The <see cref="int"/>.</returns>
         public static int GetViewPortHieght(RemoteWebDriver driver)
         {
             var js = (IJavaScriptExecutor)driver;
             return int.Parse(js.ExecuteScript("return window.innerHeight").ToString());
         }
 
+        /// <summary>
+        /// The ScrollToTheElement.
+        /// </summary>
+        /// <param name="driver">The driver<see cref="RemoteWebDriver"/>.</param>
+        /// <param name="element">The element<see cref="IWebElement"/>.</param>
         public static void ScrollToTheElement(RemoteWebDriver driver, IWebElement element)
         {
             var jScript = "arguments[0].scrollIntoView(false);" +

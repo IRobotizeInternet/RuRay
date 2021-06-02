@@ -9,6 +9,9 @@ using Swashbuckle.AspNetCore.Annotations;
 
 namespace RuRay.API.Controllers
 {
+    /// <summary>
+    /// Defines the <see cref="MouseController" />.
+    /// </summary>
     [AllowAnonymous]
     [Produces("application/json")]
     [Route("api/v{version:apiVersion}/Mouse")]
@@ -16,14 +19,21 @@ namespace RuRay.API.Controllers
     [ApiController]
     public class MouseController : ControllerBase
     {
+        /// <summary>
+        /// Defines the _mapper.
+        /// </summary>
         private readonly IMapper _mapper;
+
+        /// <summary>
+        /// Defines the _serviceMouse.
+        /// </summary>
         private readonly IServiceMouse _serviceMouse;
 
         /// <summary>
-        /// Mouse actions
+        /// Initializes a new instance of the <see cref="MouseController"/> class.
         /// </summary>
-        /// <param name="mapper"></param>
-        /// <param name="serviceMouse"></param>
+        /// <param name="mapper">.</param>
+        /// <param name="serviceMouse">.</param>
         public MouseController(IMapper mapper, IServiceMouse serviceMouse)
         {
             _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
@@ -31,8 +41,10 @@ namespace RuRay.API.Controllers
         }
 
         /// <summary>
-        /// Keyboard left click action
+        /// Keyboard left click action.
         /// </summary>
+        /// <param name="index">The index<see cref="int"/>.</param>
+        /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
         [HttpPost("LeftClick/{index}")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Unsupported right click index")]
@@ -49,8 +61,10 @@ namespace RuRay.API.Controllers
         }
 
         /// <summary>
-        /// Keyboard right click action
+        /// Keyboard right click action.
         /// </summary>
+        /// <param name="index">The index<see cref="int"/>.</param>
+        /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
         [HttpPost("RightClick/{index}")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Unsupported right click index")]
@@ -67,8 +81,10 @@ namespace RuRay.API.Controllers
         }
 
         /// <summary>
-        /// Move cursor to a specified x, y location
+        /// Move cursor to a specified x, y location.
         /// </summary>
+        /// <param name="index">The index<see cref="int"/>.</param>
+        /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
         [HttpPost("GoToXY/{index}")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Out of bound coordinates")]

@@ -12,6 +12,9 @@ using Swashbuckle.AspNetCore.Filters;
 
 namespace RuRay.API.Controllers
 {
+    /// <summary>
+    /// Defines the <see cref="WindowsScreenController" />.
+    /// </summary>
     [AllowAnonymous]
     [Produces("application/json")]
     [Route("api/v{version:apiVersion}/WindowsScreen")]
@@ -19,14 +22,21 @@ namespace RuRay.API.Controllers
     [ApiController]
     public class WindowsScreenController : ControllerBase
     {
+        /// <summary>
+        /// Defines the _mapper.
+        /// </summary>
         private readonly IMapper _mapper;
+
+        /// <summary>
+        /// Defines the _serviceWindowsScreen.
+        /// </summary>
         private readonly IServiceWindowsScreen _serviceWindowsScreen;
 
         /// <summary>
-        /// Windows Screen api
+        /// Initializes a new instance of the <see cref="WindowsScreenController"/> class.
         /// </summary>
-        /// <param name="mapper"></param>
-        /// <param name="serviceWindowsScreen"></param>
+        /// <param name="mapper">.</param>
+        /// <param name="serviceWindowsScreen">.</param>
         public WindowsScreenController(IMapper mapper, IServiceWindowsScreen serviceWindowsScreen)
         {
             _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
@@ -34,10 +44,10 @@ namespace RuRay.API.Controllers
         }
 
         /// <summary>
-        /// Show or hide gird on the screen
+        /// Show or hide gird on the screen.
         /// </summary>
-        /// <param name="gridVisibility"></param>
-        /// <returns></returns>           
+        /// <param name="gridVisibility">.</param>
+        /// <returns>.</returns>
         [HttpPost("{gridVisibility}")]
         [SwaggerResponseExample((int)HttpStatusCode.Created, typeof(CarModelExample))]
         [SwaggerResponse((int)HttpStatusCode.Created, Type = typeof(Car), Description = "Returns created car")]

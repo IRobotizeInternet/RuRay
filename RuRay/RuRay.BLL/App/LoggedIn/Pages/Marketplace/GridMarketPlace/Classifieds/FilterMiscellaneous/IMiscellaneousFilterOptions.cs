@@ -1,6 +1,8 @@
-﻿
-namespace RuRayFacebook.App.LoggedIn
+﻿namespace RuRayFacebook.App.LoggedIn
 {
+    /// <summary>
+    /// Defines the <see cref="IMiscellaneousFilterOptions" />.
+    /// </summary>
     public interface IMiscellaneousFilterOptions :
         IFilterOptions,
         IPrice,

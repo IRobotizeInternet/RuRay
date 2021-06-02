@@ -9,51 +9,110 @@ using RuRayToolbox.Controls;
 
 namespace RuRayFacebook.App.LoggedIn.Pages
 {
+    /// <summary>
+    /// Defines the <see cref="PageHome" />.
+    /// </summary>
     public class PageHome : BasePage
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="PageHome"/> class.
+        /// </summary>
         public PageHome()
         {
         }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="PageHome"/> class.
+        /// </summary>
+        /// <param name="driver">The driver<see cref="RemoteWebDriver"/>.</param>
         public PageHome(RemoteWebDriver driver)
         {
             _editorHome = new EditorHome(driver);
         }
 
-        // This is work in progress, which requires more work. Read the code carefully before making use of these generics. 
+        // This is work in progress, which requires more work. Read the code carefully before making use of these generics.
+        /// <summary>
+        /// Defines the _editorHome.
+        /// </summary>
         private readonly EditorHome _editorHome;
+
+        /// <summary>
+        /// Gets the SectionHeader.
+        /// </summary>
         public Header SectionHeader => _editorHome.PageHeader;
+
+        /// <summary>
+        /// Gets the SectionLeftMenuItems.
+        /// </summary>
         public LeftMenuItemsHome SectionLeftMenuItems => _editorHome.LeftMenu;
+
+        /// <summary>
+        /// Gets the SectionFeedHome.
+        /// </summary>
         public FeedHome SectionFeedHome => _editorHome.FeedContainer;
 
+        /// <summary>
+        /// Gets the EventTriggerButtonCreateStory.
+        /// </summary>
         public EventTriggerButton<PageCreateAStory> EventTriggerButtonCreateStory =>
             new EventTriggerButton<PageCreateAStory>(Driver, By.XPath($"//div[@data-pagelet='Stories']//span[text()='{ResHomePage.CreateAStory}']"));
 
+        /// <summary>
+        /// Gets the EventTriggerButtonSeeAllStories.
+        /// </summary>
         public EventTriggerButton<PageStories> EventTriggerButtonSeeAllStories =>
             new EventTriggerButton<PageStories>(Driver, By.XPath($"//div[@data-pagelet='Stories']//span[text()='{ResHomePage.SeeAllStories}']"));
 
+        /// <summary>
+        /// Gets the EventTriggerButtonLiveVideo.
+        /// </summary>
         public EventTriggerButton<PageLiveProducer> EventTriggerButtonLiveVideo =>
             new EventTriggerButton<PageLiveProducer>(Driver, By.XPath($"//div[@role='main']//span[text()='{ResCreatePost.LiveVideo}']"));
 
+        /// <summary>
+        /// Gets the EventTriggerButtonPhotoOrVideo.
+        /// </summary>
         public EventTriggerButton<DialogCreatePost> EventTriggerButtonPhotoOrVideo =>
             new EventTriggerButton<DialogCreatePost>(Driver, By.XPath($"//div[@role='main']//span[text()='{ResCreatePost.PhotoOrVideo}']"));
 
+        /// <summary>
+        /// Gets the EventTriggerButtonFeelingOrActivity.
+        /// </summary>
         public EventTriggerButton<DialogCreatePost> EventTriggerButtonFeelingOrActivity =>
             new EventTriggerButton<DialogCreatePost>(Driver, By.XPath($"//div[@role='main']//span[text()='{ResCreatePost.FeelingOrActivity}']"));
 
+        /// <summary>
+        /// Gets the EventTriggerButtonCreateNewRoom.
+        /// </summary>
         public EventTriggerButton<DialogCreateYourRoom> EventTriggerButtonCreateNewRoom =>
             new EventTriggerButton<DialogCreateYourRoom>(Driver, By.XPath($"//div[@role='main']//span[text()='{ResCreatePost.NewRoom}' or text()='{ResCreatePost.CreateRoom}']"));
 
+        /// <summary>
+        /// Gets the AllOnlineFriends.
+        /// </summary>
         public IEnumerable<ButtonImage> AllOnlineFriends =>
             Driver.FindElements(By.XPath($"//div[@role='main']//div[contains(@aria-label,'{ResCreatePost.FriendRoomTile}')]"))?
             .Select(x => new ButtonImage(Driver, By.XPath(x.Text.Substring(x.Text.IndexOf($"{ResCreatePost.FriendRoomTile}"), ResCreatePost.FriendRoomTile.Length))));
 
+        /// <summary>
+        /// Gets the ButtonUndo.
+        /// </summary>
         public Button ButtonUndo => new Button(Driver, By.XPath($"//span[text()='{ResHomePage.Undo}']"));
 
+        /// <summary>
+        /// Gets the EventTriggerButtonNewMessage.
+        /// </summary>
         public EventTriggerButton<PopupNewMessage> EventTriggerButtonNewMessage =>
             new EventTriggerButton<PopupNewMessage>(Driver, By.XPath($"//div[@aria-label='{ResCreatePost.NewMessage}']"));
 
+        /// <summary>
+        /// Defines the _feed.
+        /// </summary>
         public FeedHome _feed;
+
+        /// <summary>
+        /// Gets the Feed.
+        /// </summary>
         public FeedHome Feed
         {
             get
@@ -67,10 +126,19 @@ namespace RuRayFacebook.App.LoggedIn.Pages
             }
         }
 
+        /// <summary>
+        /// Gets the PageUrl.
+        /// </summary>
         public override string PageUrl => "/";
 
+        /// <summary>
+        /// Gets the ByForPage.
+        /// </summary>
         public override By ByForPage => throw new System.NotImplementedException();
 
+        /// <summary>
+        /// The RunConformance.
+        /// </summary>
         public override void RunConformance()
         {
             RunConformanceReactions();
@@ -78,6 +146,9 @@ namespace RuRayFacebook.App.LoggedIn.Pages
             RunConformanceShareWindow();
         }
 
+        /// <summary>
+        /// The RunConformanceReactions.
+        /// </summary>
         public void RunConformanceReactions()
         {
             // Verify all the reaction buttons.
@@ -109,6 +180,10 @@ namespace RuRayFacebook.App.LoggedIn.Pages
             Thread.Sleep(2000);
             likeButton.Click();
         }
+
+        /// <summary>
+        /// The RunConformanceReactionsWindow.
+        /// </summary>
         public void RunConformanceReactionsWindow()
         {
             Feed.FeedScroll.ScrollingUpWithAGivenInterval(1, scrollFromCurrentLocation: true);
@@ -127,6 +202,10 @@ namespace RuRayFacebook.App.LoggedIn.Pages
             reactionsWindow.ScrollReactions.ScrollUpMore();
             Thread.Sleep(5000);
         }
+
+        /// <summary>
+        /// The RunConformanceShareWindow.
+        /// </summary>
         public void RunConformanceShareWindow()
         {
             Feed.FeedScroll.ScrollingUpWithAGivenInterval(1, scrollFromCurrentLocation: true);
@@ -152,32 +231,5 @@ namespace RuRayFacebook.App.LoggedIn.Pages
             dialogSendInMessanger.ComboboxSearchFriends.Select("Wei");
             dialogSendInMessanger.ScrollSendInMessenger.ListITem.ButtonSend.Click();
         }
-
-        //public void GenerateAllElements()
-        //{
-        //    Driver.FindElementByXPath("//span[text()='Marketplace']").Click();
-        //    Thread.Sleep(3000);
-        //    Driver.FindElementByXPath("//span[text()='Garden & Outdoor']").Click();
-        //    var rootFolderPath = @"D:\Dev\RuRay\RuRayFacebook\Pages\LoggedIn\Components\Grid\Family\FamilyFilter\";
-        //    var fileBaseName = "Family";
-        //    var xPath = "//a[@href='/marketplace/111906762160356/toys/']//span[text()='Toys & Games']/../../../../../../../../../..//span[contains(@class,'fjf4s8hc')]";
-        //    foreach (var element in Driver.FindElements(By.XPath(xPath)))
-        //    {
-        //        var destPath = $@"D:\Dev\RuRay\RuRayFacebook\Pages\LoggedIn\Components\Grid\ToysAndGames\";
-        //        var newDirName = element.Text.Replace("&", "And");
-        //        newDirName = newDirName.Replace("'", "");
-        //        newDirName = newDirName.Replace(" ", "");
-        //        var newDir = $"{destPath}{newDirName}";
-        //        Directory.CreateDirectory(newDir);
-        //        foreach (var file in Directory.GetFiles(rootFolderPath))
-        //        {
-        //            var fi = Path.GetFileName(file).Replace(fileBaseName, newDirName);
-        //            var destFile = Path.Combine(newDir, fi);
-        //            File.Copy(file, destFile, true);
-        //            var text = File.ReadAllText(destFile);
-        //            File.WriteAllText(destFile, text.Replace(fileBaseName, newDirName));
-        //        }
-        //    }
-        //}
     }
 }

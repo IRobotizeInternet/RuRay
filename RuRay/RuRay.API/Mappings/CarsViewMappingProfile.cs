@@ -2,8 +2,14 @@ using AutoMapper;
 
 namespace RuRay.API.Mappings
 {
+    /// <summary>
+    /// Defines the <see cref="CarsViewMappings" />.
+    /// </summary>
     public class CarsViewMappings : Profile
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CarsViewMappings"/> class.
+        /// </summary>
         public CarsViewMappings()
         {
             CreateMap<BLL.Models.Car, Models.Car>()

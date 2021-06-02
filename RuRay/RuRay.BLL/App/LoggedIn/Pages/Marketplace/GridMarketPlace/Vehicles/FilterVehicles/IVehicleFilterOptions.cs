@@ -1,6 +1,8 @@
-﻿
-namespace RuRayFacebook.App.LoggedIn
+﻿namespace RuRayFacebook.App.LoggedIn
 {
+    /// <summary>
+    /// Defines the <see cref="IVehicleFilterOptions" />.
+    /// </summary>
     public interface IVehicleFilterOptions :
         IVehicleSort,
         IPrice,

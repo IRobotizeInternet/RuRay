@@ -7,20 +7,32 @@ using Polly;
 
 namespace RuRayToolbox.Extensions
 {
+    /// <summary>
+    /// Defines the <see cref="Acts" />.
+    /// </summary>
     public static class Acts
     {
         // TODO:
+        /// <summary>
+        /// The ClickAndHold.
+        /// </summary>
         public static void ClickAndHold()
         {
-
         }
 
         // TODO:
+        /// <summary>
+        /// The DrapAndDrop.
+        /// </summary>
         public static void DrapAndDrop()
         {
-
         }
 
+        /// <summary>
+        /// The WaitForObjectToLoad.
+        /// </summary>
+        /// <param name="driver">The driver<see cref="RemoteWebDriver"/>.</param>
+        /// <param name="waitThreshold">The waitThreshold<see cref="int"/>.</param>
         public static void WaitForObjectToLoad(RemoteWebDriver driver, int waitThreshold = 300)
         {
             var startTime = DateTime.Now;
@@ -47,6 +59,8 @@ namespace RuRayToolbox.Extensions
         /// <summary>
         /// This method will wait for DOM objects to load for 60 second timeout.
         /// </summary>
+        /// <param name="driver">The driver<see cref="RemoteWebDriver"/>.</param>
+        /// <param name="maxWaitTimeInSeconds">The maxWaitTimeInSeconds<see cref="double"/>.</param>
         public static void WaitForObjectToLoadForTimeSpan(RemoteWebDriver driver, double maxWaitTimeInSeconds = 60)
         {
             // Using Polly library: https://github.com/App-vNext/Polly

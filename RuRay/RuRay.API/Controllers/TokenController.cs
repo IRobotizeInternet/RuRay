@@ -7,6 +7,9 @@ using Swashbuckle.AspNetCore.Annotations;
 
 namespace RuRay.API.Controllers
 {
+    /// <summary>
+    /// Defines the <see cref="TokenController" />.
+    /// </summary>
     [Authorize]
     [Produces("application/json")]
     [Route("api/token")]
@@ -14,17 +17,24 @@ namespace RuRay.API.Controllers
     [ApiController]
     public class TokenController : ControllerBase
     {
+        /// <summary>
+        /// Defines the _jwtTokenService.
+        /// </summary>
         private readonly IJwtTokenService _jwtTokenService;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="TokenController"/> class.
+        /// </summary>
+        /// <param name="jwtTokenService">The jwtTokenService<see cref="IJwtTokenService"/>.</param>
         public TokenController(IJwtTokenService jwtTokenService)
         {
             _jwtTokenService = jwtTokenService ?? throw new ArgumentNullException(nameof(jwtTokenService));
         }
 
         /// <summary>
-        /// Generate sample token
-        /// </summary>       
-        /// <returns>Generated token</returns>        
+        /// Generate sample token.
+        /// </summary>
+        /// <returns>Generated token.</returns>
         [AllowAnonymous]
         [HttpGet("generate")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Generated token")]
@@ -36,10 +46,10 @@ namespace RuRay.API.Controllers
         }
 
         /// <summary>
-        /// Validate sample token
+        /// Validate sample token.
         /// </summary>
-        /// <param name="token">Token for validation</param>
-        /// <returns>Token validation status</returns>        
+        /// <param name="token">Token for validation.</param>
+        /// <returns>Token validation status.</returns>
         [HttpPost("validate")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Token validation status")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Bad request for missing or invalid parameter")]

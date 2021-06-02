@@ -1,14 +1,14 @@
-﻿namespace RuRay.API.Controllers
-{
-    using System;
-    using System.Net;
-    using System.Threading.Tasks;
-    using AutoMapper;
-    using Microsoft.AspNetCore.Authorization;
-    using Microsoft.AspNetCore.Mvc;
-    using RuRay.BLL.Contracts;
-    using Swashbuckle.AspNetCore.Annotations;
+﻿using System;
+using System.Net;
+using System.Threading.Tasks;
+using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using RuRay.BLL.Contracts;
+using Swashbuckle.AspNetCore.Annotations;
 
+namespace RuRay.API.Controllers
+{
     /// <summary>
     /// Defines the <see cref="NavigationController" />.
     /// </summary>

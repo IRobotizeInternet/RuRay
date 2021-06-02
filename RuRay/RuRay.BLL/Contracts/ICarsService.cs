@@ -5,42 +5,45 @@ using RuRay.BLL.Models;
 
 namespace RuRay.BLL.Contracts
 {
+    /// <summary>
+    /// Defines the <see cref="ICarsService" />.
+    /// </summary>
     public interface ICarsService
     {
         /// <summary>
-        /// Create a new car
+        /// Create a new car.
         /// </summary>
-        /// <param name="car"></param>
-        /// <returns></returns>
+        /// <param name="car">.</param>
+        /// <returns>.</returns>
         Task<Car> CreateCarAsync(Car car);
 
         /// <summary>
-        /// Get car by id
+        /// Get car by id.
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="id">.</param>
+        /// <returns>.</returns>
         Task<Car> GetCarAsync(Guid id);
 
         /// <summary>
-        /// Update car parameters
+        /// Update car parameters.
         /// </summary>
-        /// <param name="car"></param>
-        /// <returns></returns>
+        /// <param name="car">.</param>
+        /// <returns>.</returns>
         Task<bool> UpdateCarAsync(Car car);
 
         /// <summary>
-        /// Delete car by id
+        /// Delete car by id.
         /// </summary>
-        /// <param name="id"></param>
-        /// <returns></returns>
+        /// <param name="id">.</param>
+        /// <returns>.</returns>
         Task<bool> DeleteCarAsync(Guid id);
 
         /// <summary>
-        /// Get cars list 
+        /// Get cars list.
         /// </summary>
-        /// <param name="pageNumber"></param>
-        /// <param name="pageSize"></param>
-        /// <returns></returns>
+        /// <param name="pageNumber">.</param>
+        /// <param name="pageSize">.</param>
+        /// <returns>.</returns>
         Task<IEnumerable<Car>> GetCarsListAsync(int pageNumber, int pageSize);
     }
 }

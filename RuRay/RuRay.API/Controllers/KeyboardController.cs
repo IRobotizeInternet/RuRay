@@ -9,6 +9,9 @@ using Swashbuckle.AspNetCore.Annotations;
 
 namespace RuRay.API.Controllers
 {
+    /// <summary>
+    /// Defines the <see cref="KeyboardController" />.
+    /// </summary>
     [AllowAnonymous]
     [Produces("application/json")]
     [Route("api/v{version:apiVersion}/Keyboard")]
@@ -16,14 +19,21 @@ namespace RuRay.API.Controllers
     [ApiController]
     public class KeyboardController : ControllerBase
     {
+        /// <summary>
+        /// Defines the _mapper.
+        /// </summary>
         private readonly IMapper _mapper;
+
+        /// <summary>
+        /// Defines the _serviceKeyboard.
+        /// </summary>
         private readonly IServiceKeyboard _serviceKeyboard;
 
         /// <summary>
-        /// Keyboard actions
+        /// Initializes a new instance of the <see cref="KeyboardController"/> class.
         /// </summary>
-        /// <param name="mapper"></param>
-        /// <param name="serviceKeyboard"></param>
+        /// <param name="mapper">.</param>
+        /// <param name="serviceKeyboard">.</param>
         public KeyboardController(IMapper mapper, IServiceKeyboard serviceKeyboard)
         {
             _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
@@ -31,8 +41,10 @@ namespace RuRay.API.Controllers
         }
 
         /// <summary>
-        /// Keyboard left click action
+        /// Keyboard left click action.
         /// </summary>
+        /// <param name="index">The index<see cref="int"/>.</param>
+        /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
         [HttpPost("{index}")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Unsupported location")]
@@ -49,8 +61,10 @@ namespace RuRay.API.Controllers
         }
 
         /// <summary>
-        /// key stroke
+        /// key stroke.
         /// </summary>
+        /// <param name="sendKey">The sendKey<see cref="KeyStrokes"/>.</param>
+        /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
         [HttpPost("SendKey/{key}")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Unsupported key")]
@@ -60,6 +74,5 @@ namespace RuRay.API.Controllers
             await _serviceKeyboard.SendKey(sendKey);
             return Ok();
         }
-
     }
 }

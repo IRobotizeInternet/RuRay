@@ -10,6 +10,9 @@ using Swashbuckle.AspNetCore.Annotations;
 
 namespace RuRay.API.Controllers
 {
+    /// <summary>
+    /// Defines the <see cref="HomeHeaderController" />.
+    /// </summary>
     [AllowAnonymous]
     [Produces("application/json")]
     [Route("api/v{version:apiVersion}/HomeHeader")]
@@ -17,14 +20,21 @@ namespace RuRay.API.Controllers
     [ApiController]
     public class HomeHeaderController : ControllerBase
     {
+        /// <summary>
+        /// Defines the _mapper.
+        /// </summary>
         private readonly IMapper _mapper;
+
+        /// <summary>
+        /// Defines the _serviceHomeHeader.
+        /// </summary>
         private readonly IServiceHomeHeader _serviceHomeHeader;
 
         /// <summary>
-        /// Cars db api
+        /// Initializes a new instance of the <see cref="HomeHeaderController"/> class.
         /// </summary>
-        /// <param name="mapper"></param>
-        /// <param name="serviceHomeHeader"></param>
+        /// <param name="mapper">.</param>
+        /// <param name="serviceHomeHeader">.</param>
         public HomeHeaderController(IMapper mapper, IServiceHomeHeader serviceHomeHeader)
         {
             _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
@@ -32,8 +42,9 @@ namespace RuRay.API.Controllers
         }
 
         /// <summary>
-        /// Homepage scroll down
+        /// Homepage scroll down.
         /// </summary>
+        /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
         [HttpPost("")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Unsupported visual action")]
@@ -45,8 +56,10 @@ namespace RuRay.API.Controllers
         }
 
         /// <summary>
-        /// Facebook Change Visual Mode
+        /// Facebook Change Visual Mode.
         /// </summary>
+        /// <param name="mode">The mode<see cref="Switch"/>.</param>
+        /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
         [HttpPost("{mode}")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Unsupported visual mode")]

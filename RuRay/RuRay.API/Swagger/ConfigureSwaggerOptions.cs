@@ -6,12 +6,26 @@ using Swashbuckle.AspNetCore.SwaggerGen;
 
 namespace RuRay.API.Swagger
 {
+    /// <summary>
+    /// Defines the <see cref="ConfigureSwaggerOptions" />.
+    /// </summary>
     public class ConfigureSwaggerOptions : IConfigureOptions<SwaggerGenOptions>
     {
-        readonly IApiVersionDescriptionProvider _apiVerProvider;
+        /// <summary>
+        /// Defines the _apiVerProvider.
+        /// </summary>
+        internal readonly IApiVersionDescriptionProvider _apiVerProvider;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ConfigureSwaggerOptions"/> class.
+        /// </summary>
+        /// <param name="apiVerProvider">The apiVerProvider<see cref="IApiVersionDescriptionProvider"/>.</param>
         public ConfigureSwaggerOptions(IApiVersionDescriptionProvider apiVerProvider) => _apiVerProvider = apiVerProvider;
 
+        /// <summary>
+        /// The Configure.
+        /// </summary>
+        /// <param name="options">The options<see cref="SwaggerGenOptions"/>.</param>
         public void Configure(SwaggerGenOptions options)
         {
             foreach (var description in _apiVerProvider.ApiVersionDescriptions)
@@ -20,7 +34,12 @@ namespace RuRay.API.Swagger
             }
         }
 
-        static OpenApiInfo GetSwaggerDocInfo(ApiVersionDescription description)
+        /// <summary>
+        /// The GetSwaggerDocInfo.
+        /// </summary>
+        /// <param name="description">The description<see cref="ApiVersionDescription"/>.</param>
+        /// <returns>The <see cref="OpenApiInfo"/>.</returns>
+        internal static OpenApiInfo GetSwaggerDocInfo(ApiVersionDescription description)
         {
             var info = new OpenApiInfo
             {

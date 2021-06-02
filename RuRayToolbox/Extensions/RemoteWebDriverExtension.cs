@@ -9,11 +9,18 @@ using Polly;
 
 namespace RuRayToolbox.Extensions
 {
+    /// <summary>
+    /// Defines the <see cref="RemoteWebDriverExtension" />.
+    /// </summary>
     public static class RemoteWebDriverExtension
     {
         /// <summary>
         /// Return the web element matching the selector.
         /// </summary>
+        /// <param name="driver">The driver<see cref="RemoteWebDriver"/>.</param>
+        /// <param name="by">The by<see cref="By"/>.</param>
+        /// <param name="timeSpanInSeconds">The timeSpanInSeconds<see cref="int"/>.</param>
+        /// <returns>The <see cref="IWebElement"/>.</returns>
         public static IWebElement FindElementWithTimeSpan(this RemoteWebDriver driver, By by, int timeSpanInSeconds = 5)
         {
             ICollection<IWebElement> elements = null;
@@ -48,6 +55,9 @@ namespace RuRayToolbox.Extensions
         /// <summary>
         /// Return the web element matching the selector.
         /// </summary>
+        /// <param name="driver">The driver<see cref="RemoteWebDriver"/>.</param>
+        /// <param name="by">The by<see cref="By"/>.</param>
+        /// <returns>The <see cref="IWebElement"/>.</returns>
         public static IWebElement FindSingleElement(this RemoteWebDriver driver, By by)
         {
             var elements = driver.FindElements(by);
@@ -70,6 +80,10 @@ namespace RuRayToolbox.Extensions
         /// <summary>
         /// Return the visible web elements matching the selector.
         /// </summary>
+        /// <param name="driver">The driver<see cref="RemoteWebDriver"/>.</param>
+        /// <param name="byForElement">The byForElement<see cref="By"/>.</param>
+        /// <param name="timeoutSeconds">The timeoutSeconds<see cref="int"/>.</param>
+        /// <returns>The <see cref="IEnumerable{IWebElement}"/>.</returns>
         public static IEnumerable<IWebElement> FindVisibleElementsWait(
             this RemoteWebDriver driver,
             By byForElement,
@@ -90,6 +104,10 @@ namespace RuRayToolbox.Extensions
         /// <summary>
         /// Wait until element is appear.
         /// </summary>
+        /// <param name="driver">The driver<see cref="RemoteWebDriver"/>.</param>
+        /// <param name="byForElement">The byForElement<see cref="By"/>.</param>
+        /// <param name="timeoutSeconds">The timeoutSeconds<see cref="int"/>.</param>
+        /// <param name="numberOfTires">The numberOfTires<see cref="int"/>.</param>
         public static void WaitUntilElementAppears(
             this RemoteWebDriver driver,
             By byForElement,
@@ -116,6 +134,9 @@ namespace RuRayToolbox.Extensions
         /// <summary>
         /// Wait if the element is visible.
         /// </summary>
+        /// <param name="driver">The driver<see cref="RemoteWebDriver"/>.</param>
+        /// <param name="byForElement">The byForElement<see cref="By"/>.</param>
+        /// <param name="timeoutSeconds">The timeoutSeconds<see cref="int"/>.</param>
         public static void WaitUntilElementDisappears(
             this RemoteWebDriver driver,
             By byForElement,

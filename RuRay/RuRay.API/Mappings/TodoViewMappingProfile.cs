@@ -2,8 +2,14 @@ using AutoMapper;
 
 namespace RuRay.API.Mappings
 {
+    /// <summary>
+    /// Defines the <see cref="TodoViewMappings" />.
+    /// </summary>
     public class TodoViewMappings : Profile
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="TodoViewMappings"/> class.
+        /// </summary>
         public TodoViewMappings()
         {
             CreateMap<BLL.Models.Todo, Models.Todo>()

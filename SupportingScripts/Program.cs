@@ -1,8 +1,15 @@
 ﻿namespace SupportingScripts
 {
-    class Program
+    /// <summary>
+    /// Defines the <see cref="Program" />.
+    /// </summary>
+    internal class Program
     {
-        static void Main(string[] args)
+        /// <summary>
+        /// The Main.
+        /// </summary>
+        /// <param name="args">The args<see cref="string[]"/>.</param>
+        internal static void Main(string[] args)
         {
             //var a = new ScriptUsingFacebook();
             //a.GenerateFacebookHelpApi();

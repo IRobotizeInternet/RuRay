@@ -1,22 +1,26 @@
 namespace RuRay.API.Models
 {
     /// <summary>
-    /// Todo item
+    /// Todo item.
     /// </summary>
     public class Todo
     {
         /// <summary>
-        /// Todo id
+        /// Gets or sets the Id
+        /// Todo id.
         /// </summary>
         public int Id { get; set; }
-        /// <summary>
-        /// Todo title
-        /// </summary> 
-        public string Title { get; set; }
-        /// <summary>
-        /// Todo status
-        /// </summary>        
-        public bool Completed { get; set; }
 
+        /// <summary>
+        /// Gets or sets the Title
+        /// Todo title.
+        /// </summary>
+        public string Title { get; set; }
+
+        /// <summary>
+        /// Gets or sets a value indicating whether Completed
+        /// Todo status.
+        /// </summary>
+        public bool Completed { get; set; }
     }
 }
