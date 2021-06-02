@@ -9,8 +9,14 @@ using RuRayToolbox.CommonControls;
 
 namespace RuRayFacebook.Utilities
 {
+    /// <summary>
+    /// Defines the <see cref="ScriptUsingFacebook" />.
+    /// </summary>
     public class ScriptUsingFacebook
     {
+        /// <summary>
+        /// The GenerateFacebookHelpApi.
+        /// </summary>
         public void GenerateFacebookHelpApi()
         {
             var page = new PageHelp();
@@ -124,11 +130,20 @@ namespace RuRayFacebook.Utilities
             }
         }
 
+        /// <summary>
+        /// The CloseClass.
+        /// </summary>
+        /// <param name="className">The className<see cref="string"/>.</param>
         private void CloseClass(string className)
         {
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// The CreateClass.
+        /// </summary>
+        /// <param name="v">The v<see cref="string"/>.</param>
+        /// <returns>The <see cref="string"/>.</returns>
         private string CreateClass(string v)
         {
             throw new NotImplementedException();
@@ -136,49 +151,120 @@ namespace RuRayFacebook.Utilities
 
         // Get Ul and click on it.
         // if there are li iterater over
-        // remove spaces 
-        class PageHelp : BasePage
+        // remove spaces
+        /// <summary>
+        /// Defines the <see cref="PageHelp" />.
+        /// </summary>
+        internal class PageHelp : BasePage
         {
+            /// <summary>
+            /// Initializes a new instance of the <see cref="PageHelp"/> class.
+            /// </summary>
             public PageHelp()
             {
-                //Driver.FindElement(By.XPath("//div[@aria-label='Using Facebook']//span[text()='Friending']/parent::span/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::a/parent::div")).Click(); 
             }
 
+            /// <summary>
+            /// The ClickElement.
+            /// </summary>
+            /// <param name="webElement">The webElement<see cref="IWebElement"/>.</param>
             public void ClickElement(IWebElement webElement)
             {
                 Driver.ExecuteScript("arguments[0].click();", webElement);
             }
+
+            /// <summary>
+            /// Gets the PageUrl.
+            /// </summary>
             public override string PageUrl => "https://www.facebook.com/help/";
 
+            /// <summary>
+            /// Gets the ByForPage.
+            /// </summary>
             public override By ByForPage => By.XPath("//div");
 
+            /// <summary>
+            /// The GetMenuItemHyperlink.
+            /// </summary>
+            /// <param name="name">The name<see cref="string"/>.</param>
+            /// <returns>The <see cref="Button"/>.</returns>
             public Button GetMenuItemHyperlink(string name) =>
                 new Button(Driver, By.XPath($"//div[@aria-label='Using Facebook']//span[text()='{name}']/parent::span/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::a"));
+
+            /// <summary>
+            /// The GetSubMenuItemHyperlink.
+            /// </summary>
+            /// <param name="parent">The parent<see cref="string"/>.</param>
+            /// <param name="child">The child<see cref="string"/>.</param>
+            /// <returns>The <see cref="IList{IWebElement}"/>.</returns>
             public IList<IWebElement> GetSubMenuItemHyperlink(string parent, string child) =>
                 Driver.FindElements(By.XPath($"//div[@aria-label='Using Facebook']//div[@aria-label='{parent}']//a//span/div/span['{child}']/parent::div/parent::span/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::a"));
+
+            /// <summary>
+            /// The GetMenuItemsNames.
+            /// </summary>
+            /// <param name="name">The name<see cref="string"/>.</param>
+            /// <returns>The <see cref="IEnumerable{IWebElement}"/>.</returns>
             public IEnumerable<IWebElement> GetMenuItemsNames(string name) =>
                 Driver.FindElements(By.XPath($"//a[@aria-labelledby='{name}']"));
+
+            /// <summary>
+            /// The GetSubMenuItemsName.
+            /// </summary>
+            /// <param name="name">The name<see cref="string"/>.</param>
+            /// <returns>The <see cref="IList{string}"/>.</returns>
             public IList<string> GetSubMenuItemsName(string name) =>
                 Driver.FindElements(By.XPath($"//div[@aria-label='Using Facebook']//div[@aria-label='{name}']//a//span/div/span")).Select(x => x.Text).ToList();
 
+            /// <summary>
+            /// Gets the GetFunctionNames.
+            /// </summary>
             public IList<IWebElement> GetFunctionNames =>
                 Driver.FindElements(By.XPath("//div[@role='main']/div//div[2]//div[@role='button']//span"));
+
+            /// <summary>
+            /// The GetFunctionDiv.
+            /// </summary>
+            /// <param name="functionName">The functionName<see cref="string"/>.</param>
+            /// <returns>The <see cref="IWebElement"/>.</returns>
             public IWebElement GetFunctionDiv(string functionName) =>
                 Driver.FindElement(By.XPath($"//div[@role='main']/div//div[2]//span[text()='{functionName}']"));
+
+            /// <summary>
+            /// The GetFirstItem.
+            /// </summary>
+            /// <param name="name">The name<see cref="string"/>.</param>
+            /// <returns>The <see cref="IWebElement"/>.</returns>
             public IWebElement GetFirstItem(string name) =>
                 Driver.FindElement(By.XPath($"//div[@aria-haspopup='menu']/div[@id='{name}']/span"));
 
+            /// <summary>
+            /// Gets the GetMainMenuItems.
+            /// </summary>
             public IList<string> GetMainMenuItems =>
                 Driver.FindElements(By.XPath("//div[@aria-haspopup='menu']/div/span")).Select(x => x.Text).ToList();
 
+            /// <summary>
+            /// The RunConformance.
+            /// </summary>
             public override void RunConformance()
             {
                 throw new NotImplementedException();
             }
 
+            /// <summary>
+            /// The GetDescriptionHeader.
+            /// </summary>
+            /// <param name="name">The name<see cref="string"/>.</param>
+            /// <returns>The <see cref="IWebElement"/>.</returns>
             public IWebElement GetDescriptionHeader(string name) =>
                 Driver.FindElement(By.XPath($"//div[@role='main']//h3//span[text()='{name}/**How do I find and add friends on Facebook?**/']/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::div/parent::h3/parent::div/div[1]//h2[1]"));
 
+            /// <summary>
+            /// The GetAllActions.
+            /// </summary>
+            /// <param name="name">The name<see cref="string"/>.</param>
+            /// <returns>The <see cref="IEnumerable{IWebElement}"/>.</returns>
             public IEnumerable<IWebElement> GetAllActions(string name) =>
                 Driver.FindElements(By.XPath("//div[@role='main']//div[@role='button']"));
         }

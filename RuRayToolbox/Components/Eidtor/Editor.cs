@@ -42,19 +42,19 @@ namespace RuRayLibrary.Components.Eidtor
 
         /// <summary>
         /// Gets the PageHeader
-        /// Page header..
+        /// Page header...
         /// </summary>
         public THeader PageHeader => _pageHeader.Value;
 
         /// <summary>
         /// Gets the LeftMenu
-        /// Left menu of the page..
+        /// Left menu of the page...
         /// </summary>
         public ULeftMenu LeftMenu => _leftMenu.Value;
 
         /// <summary>
         /// Gets the FeedContainer
-        /// Feed container of the page..
+        /// Feed container of the page...
         /// </summary>
         public VFeed FeedContainer => _feedContainer.Value;
 

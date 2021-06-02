@@ -12,16 +12,30 @@ using RuRay.DAL.MySql.Models;
 
 namespace RuRay.DAL.MySql
 {
+    /// <summary>
+    /// Defines the <see cref="CarsRepository" />.
+    /// </summary>
     public class CarsRepository : ICarsRepository, IHealthCheck
     {
-
+        /// <summary>
+        /// Defines the _options.
+        /// </summary>
         private readonly IOptionsMonitor<CarsMySqlRepositoryOption> _options;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="CarsRepository"/> class.
+        /// </summary>
+        /// <param name="options">The options<see cref="IOptionsMonitor{CarsMySqlRepositoryOption}"/>.</param>
         public CarsRepository(IOptionsMonitor<CarsMySqlRepositoryOption> options)
         {
             _options = options;
         }
 
+        /// <summary>
+        /// The CreateCarAsync.
+        /// </summary>
+        /// <param name="newCar">The newCar<see cref="CarEntity"/>.</param>
+        /// <returns>The <see cref="Task{CarEntity}"/>.</returns>
         public async Task<CarEntity> CreateCarAsync(CarEntity newCar)
         {
             if (newCar.Id == Guid.Empty.ToString())
@@ -53,6 +67,11 @@ namespace RuRay.DAL.MySql
             }
         }
 
+        /// <summary>
+        /// The GetCarAsync.
+        /// </summary>
+        /// <param name="id">The id<see cref="Guid"/>.</param>
+        /// <returns>The <see cref="Task{CarEntity}"/>.</returns>
         public async Task<CarEntity> GetCarAsync(Guid id)
         {
             using (var db = new MySqlConnection(_options.CurrentValue.CarsDbConnectionString))
@@ -69,6 +88,11 @@ namespace RuRay.DAL.MySql
             }
         }
 
+        /// <summary>
+        /// The UpdateCarAsync.
+        /// </summary>
+        /// <param name="car">The car<see cref="CarEntity"/>.</param>
+        /// <returns>The <see cref="Task{bool}"/>.</returns>
         public async Task<bool> UpdateCarAsync(CarEntity car)
         {
             car.ModifiedOn = DateTime.UtcNow;
@@ -87,6 +111,11 @@ namespace RuRay.DAL.MySql
             }
         }
 
+        /// <summary>
+        /// The DeleteCarAsync.
+        /// </summary>
+        /// <param name="id">The id<see cref="Guid"/>.</param>
+        /// <returns>The <see cref="Task{bool}"/>.</returns>
         public async Task<bool> DeleteCarAsync(Guid id)
         {
             const string sqlQuery = @"DELETE FROM cars WHERE id = @id;";
@@ -97,6 +126,12 @@ namespace RuRay.DAL.MySql
             }
         }
 
+        /// <summary>
+        /// The GetCarsListAsync.
+        /// </summary>
+        /// <param name="pageNumber">The pageNumber<see cref="int"/>.</param>
+        /// <param name="pageSize">The pageSize<see cref="int"/>.</param>
+        /// <returns>The <see cref="Task{IEnumerable{CarEntity}}"/>.</returns>
         public async Task<IEnumerable<CarEntity>> GetCarsListAsync(int pageNumber, int pageSize)
         {
             using (var db = new MySqlConnection(_options.CurrentValue.CarsDbConnectionString))
@@ -114,6 +149,12 @@ namespace RuRay.DAL.MySql
             }
         }
 
+        /// <summary>
+        /// The CheckHealthAsync.
+        /// </summary>
+        /// <param name="context">The context<see cref="HealthCheckContext"/>.</param>
+        /// <param name="cancellationToken">The cancellationToken<see cref="CancellationToken"/>.</param>
+        /// <returns>The <see cref="Task{HealthCheckResult}"/>.</returns>
         public Task<HealthCheckResult> CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken = new CancellationToken())
         {
             using (var db = new MySqlConnection(_options.CurrentValue.CarsDbConnectionString))

@@ -8,15 +8,29 @@ using RuRay.BLL.Models;
 
 namespace RuRay.BLL
 {
+    /// <summary>
+    /// Defines the <see cref="TodosMockProxyService" />.
+    /// </summary>
     public class TodosMockProxyService : ITodosMockProxyService, IHealthCheck
     {
+        /// <summary>
+        /// Gets the _client.
+        /// </summary>
         private HttpClient _client { get; }
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="TodosMockProxyService"/> class.
+        /// </summary>
+        /// <param name="client">The client<see cref="HttpClient"/>.</param>
         public TodosMockProxyService(HttpClient client)
         {
             _client = client;
         }
 
+        /// <summary>
+        /// The GetTodos.
+        /// </summary>
+        /// <returns>The <see cref="Task{IEnumerable{Todo}}"/>.</returns>
         public async Task<IEnumerable<Todo>> GetTodos()
         {
             var response = await _client.GetAsync("");
@@ -28,6 +42,11 @@ namespace RuRay.BLL
             return result;
         }
 
+        /// <summary>
+        /// The GetTodoById.
+        /// </summary>
+        /// <param name="id">The id<see cref="int"/>.</param>
+        /// <returns>The <see cref="Task{Todo}"/>.</returns>
         public async Task<Todo> GetTodoById(int id)
         {
             var response = await _client.GetAsync($"{id}");
@@ -39,6 +58,12 @@ namespace RuRay.BLL
             return result;
         }
 
+        /// <summary>
+        /// The CheckHealthAsync.
+        /// </summary>
+        /// <param name="context">The context<see cref="HealthCheckContext"/>.</param>
+        /// <param name="cancellationToken">The cancellationToken<see cref="CancellationToken"/>.</param>
+        /// <returns>The <see cref="Task{HealthCheckResult}"/>.</returns>
         public async Task<HealthCheckResult> CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken = new CancellationToken())
         {
             try

@@ -18,7 +18,6 @@ namespace RuRayToolbox.Controls
         {
         }
 
-        /// Use this method to set the checkbox.
         /// <summary>
         /// The SetCheckbox.
         /// </summary>

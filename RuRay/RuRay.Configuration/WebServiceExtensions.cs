@@ -18,8 +18,18 @@ using RuRay.DAL.MySql.Contract;
 
 namespace Microsoft.Extensions.DependencyInjection
 {
+    /// <summary>
+    /// Defines the <see cref="WebServiceExtensions" />.
+    /// </summary>
     public static class WebServiceExtensions
     {
+        /// <summary>
+        /// The AddWebServices.
+        /// </summary>
+        /// <param name="services">The services<see cref="IServiceCollection"/>.</param>
+        /// <param name="BLLOptionsSection">The BLLOptionsSection<see cref="IConfigurationSection"/>.</param>
+        /// <param name="DALOptionSection">The DALOptionSection<see cref="IConfigurationSection"/>.</param>
+        /// <returns>The <see cref="IServiceCollection"/>.</returns>
         public static IServiceCollection AddWebServices(
             this IServiceCollection services,
             IConfigurationSection BLLOptionsSection,
@@ -71,6 +81,11 @@ namespace Microsoft.Extensions.DependencyInjection
             return services;
         }
 
+        /// <summary>
+        /// The UseWebServices.
+        /// </summary>
+        /// <param name="app">The app<see cref="IApplicationBuilder"/>.</param>
+        /// <returns>The <see cref="IApplicationBuilder"/>.</returns>
         public static IApplicationBuilder UseWebServices(this IApplicationBuilder app)
         {
             app.UseHealthChecks("/api/health", new HealthCheckOptions()

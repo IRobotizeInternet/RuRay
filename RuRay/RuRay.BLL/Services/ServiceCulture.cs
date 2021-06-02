@@ -5,8 +5,16 @@ using System.Threading;
 
 namespace RuRayFacebook.Services
 {
+    /// <summary>
+    /// Defines the <see cref="ServiceCulture" />.
+    /// </summary>
     public static class ServiceCulture
     {
+        /// <summary>
+        /// The SetDefaultCulture.
+        /// </summary>
+        /// <param name="defaultCulture">The defaultCulture<see cref="string"/>.</param>
+        /// <returns>The <see cref="CultureInfo"/>.</returns>
         public static CultureInfo SetDefaultCulture(string defaultCulture)
         {
             try
@@ -31,6 +39,11 @@ namespace RuRayFacebook.Services
             }
         }
 
+        /// <summary>
+        /// The GetCulture.
+        /// </summary>
+        /// <param name="newCulture">The newCulture<see cref="string"/>.</param>
+        /// <returns>The <see cref="CultureInfo"/>.</returns>
         private static CultureInfo GetCulture(string newCulture)
         {
             // Get culture info based on the EnglishName.

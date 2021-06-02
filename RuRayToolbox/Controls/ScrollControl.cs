@@ -14,19 +14,6 @@ namespace RuRayToolbox.CommonControls
     public class ScrollControl<TListItem> : BaseDOMObject
         where TListItem : IListItem
     {
-        // div[@ data-pagelet="MainFeed"]/div/div/div/div 
-        // Feed Row Path --         //div[contains(@data-pagelet,'feed')]
-        // Marketplace categories --//div[contains(@data-pagelet,'BrowseFeedUpsell')]
-        // Group feed --            //div[contains(@data-pagelet,"GroupsFeed")]
-        // Activity Log --          //div[@data-pagelet="page"]//*[name()='svg']
-        // Friends Row Path --      //div[@role="gridcell"]
-        // Discover events --       //div[@role="main"]//article
-        // Watch feed --            //div[@role='main' ]//video
-        // Watch shows --           //div[@role='main']//a[contains(@href,'/watch/')]/img
-        // Play Games --            //div[@role="main"]//img
-        // Game Video Browse --     //div[@role="main"]//img
-        // Choose GIF --            //input/parent::label/parent::div/parent::div/parent::div//img
-        // Add Videos --            //input/parent::label/parent::div/parent::div//img
         /// <summary>
         /// Gets or sets the CurrentRowIndex.
         /// </summary>

@@ -7,14 +7,27 @@ using System.Text.RegularExpressions;
 
 namespace RuRayFacebook.Utilities
 {
+    /// <summary>
+    /// Defines the <see cref="DynamicCodeGeneration" />.
+    /// </summary>
     public class DynamicCodeGeneration
     {
+        /// <summary>
+        /// The GenerateClassCode.
+        /// </summary>
+        /// <param name="classDefination">The classDefination<see cref="ClassDefinationDTO"/>.</param>
         public void GenerateClassCode(ClassDefinationDTO classDefination)
         {
             var compileUnit = CreateClassGraph(classDefination);
             GenerateClassFile(compileUnit, "cs", $"{classDefination.ClassDefination.Name}.cs");
         }
 
+        /// <summary>
+        /// The GenerateClassFile.
+        /// </summary>
+        /// <param name="cu">The cu<see cref="CodeCompileUnit"/>.</param>
+        /// <param name="providerName">The providerName<see cref="string"/>.</param>
+        /// <param name="sourceFileName">The sourceFileName<see cref="string"/>.</param>
         public void GenerateClassFile(CodeCompileUnit cu, string providerName, string sourceFileName)
         {
             CodeDomProvider provider = CodeDomProvider.CreateProvider(providerName);
@@ -38,6 +51,11 @@ namespace RuRayFacebook.Utilities
         }
 
         // Create a CodeDOM graph.
+        /// <summary>
+        /// The CreateClassGraph.
+        /// </summary>
+        /// <param name="classDefination">The classDefination<see cref="ClassDefinationDTO"/>.</param>
+        /// <returns>The <see cref="CodeCompileUnit"/>.</returns>
         public CodeCompileUnit CreateClassGraph(ClassDefinationDTO classDefination)
         {
             CodeCompileUnit cu = new CodeCompileUnit();
@@ -68,6 +86,11 @@ namespace RuRayFacebook.Utilities
             return cu;
         }
 
+        /// <summary>
+        /// The AddComment.
+        /// </summary>
+        /// <param name="codeCommentStatementCollection">The codeCommentStatementCollection<see cref="CodeCommentStatementCollection"/>.</param>
+        /// <param name="comments">The comments<see cref="IEnumerable{string}"/>.</param>
         public void AddComment(CodeCommentStatementCollection codeCommentStatementCollection, IEnumerable<string> comments)
         {
             codeCommentStatementCollection.Add(new CodeCommentStatement("<summary>", true));
@@ -79,6 +102,11 @@ namespace RuRayFacebook.Utilities
             codeCommentStatementCollection.Add(new CodeCommentStatement("</summary>", true));
         }
 
+        /// <summary>
+        /// The AddMethods.
+        /// </summary>
+        /// <param name="cd">The cd<see cref="CodeTypeDeclaration"/>.</param>
+        /// <param name="methods">The methods<see cref="IEnumerable{Defiantion}"/>.</param>
         public void AddMethods(CodeTypeDeclaration cd, IEnumerable<Defiantion> methods)
         {
             foreach (var method in methods)
@@ -104,11 +132,17 @@ namespace RuRayFacebook.Utilities
             }
         }
 
+        /// <summary>
+        /// The AddCodeMembers.
+        /// </summary>
         public void AddCodeMembers()
         {
-
         }
 
+        /// <summary>
+        /// The AddProperty.
+        /// </summary>
+        /// <param name="targetClass">The targetClass<see cref="CodeTypeDeclaration"/>.</param>
         public void AddProperty(CodeTypeDeclaration targetClass)
         {
             CodeMemberField field1 = new CodeMemberField(typeof(string), "field1");

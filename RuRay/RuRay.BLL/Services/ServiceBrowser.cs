@@ -5,8 +5,14 @@ using System.Linq;
 
 namespace RuRayFacebook.Services
 {
+    /// <summary>
+    /// Defines the <see cref="ServiceBrowser" />.
+    /// </summary>
     public class ServiceBrowser
     {
+        /// <summary>
+        /// The OpenBrowser.
+        /// </summary>
         public static void OpenBrowser()
         {
             // The shortcut path is taken from ChangeTarget.ps1 file, if you wish to 

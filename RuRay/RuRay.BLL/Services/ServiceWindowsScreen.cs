@@ -4,13 +4,26 @@ using RuRayFacebook.Services;
 
 namespace RuRay.BLL.Services
 {
+    /// <summary>
+    /// Defines the <see cref="ServiceWindowsScreen" />.
+    /// </summary>
     public class ServiceWindowsScreen : IServiceWindowsScreen
     {
+        /// <summary>
+        /// The WindowClick.
+        /// </summary>
+        /// <param name="gridCoordinates">The gridCoordinates<see cref="int"/>.</param>
+        /// <returns>The <see cref="Task{bool}"/>.</returns>
         public Task<bool> WindowClick(int gridCoordinates)
         {
             return Task.FromResult(true);
         }
 
+        /// <summary>
+        /// The WindowGrid.
+        /// </summary>
+        /// <param name="gridVisibility">The gridVisibility<see cref="GridVisibility"/>.</param>
+        /// <returns>The <see cref="Task{bool}"/>.</returns>
         public Task<bool> WindowGrid(GridVisibility gridVisibility)
         {
             const string serviceName = "WindowGrid";

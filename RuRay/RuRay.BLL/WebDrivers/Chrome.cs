@@ -8,15 +8,32 @@ using RuRayFacebook.Utilities;
 
 namespace RuRayFacebook.WebDrivers
 {
+    /// <summary>
+    /// Defines the <see cref="Chrome" />.
+    /// </summary>
     public class Chrome : WebDriver//, IDisposable
     {
-        public Chrome(string baseUrl) : base(baseUrl) { }
+        /// <summary>
+        /// Initializes a new instance of the <see cref="Chrome"/> class.
+        /// </summary>
+        /// <param name="baseUrl">The baseUrl<see cref="string"/>.</param>
+        public Chrome(string baseUrl) : base(baseUrl)
+        {
+        }
 
+        /// <summary>
+        /// The Dispose.
+        /// </summary>
         public void Dispose()
         {
             throw new NotImplementedException();
         }
 
+        /// <summary>
+        /// The Driver.
+        /// </summary>
+        /// <param name="useExistingBrowser">The useExistingBrowser<see cref="bool"/>.</param>
+        /// <returns>The <see cref="RemoteWebDriver"/>.</returns>
         public override RemoteWebDriver Driver(bool useExistingBrowser = true)
         {
             // when useExistingBrowser is set open chrome
@@ -64,6 +81,10 @@ namespace RuRayFacebook.WebDrivers
             return driver;
         }
 
+        /// <summary>
+        /// The GetRemoteWebDriver.
+        /// </summary>
+        /// <returns>The <see cref="RemoteWebDriver"/>.</returns>
         private RemoteWebDriver GetRemoteWebDriver()
         {
             var options = new ChromeOptions();
@@ -91,6 +112,10 @@ namespace RuRayFacebook.WebDrivers
             return driver;
         }
 
+        /// <summary>
+        /// The SelectTab.
+        /// </summary>
+        /// <param name="driver">The driver<see cref="RemoteWebDriver"/>.</param>
         public void SelectTab(RemoteWebDriver driver)
         {
             foreach (var tab in driver.WindowHandles)
@@ -111,6 +136,11 @@ namespace RuRayFacebook.WebDrivers
             });
         }
 
+        /// <summary>
+        /// The RetryPolicy.
+        /// </summary>
+        /// <param name="retryCount">The retryCount<see cref="int"/>.</param>
+        /// <returns>The <see cref="RetryPolicy"/>.</returns>
         private RetryPolicy RetryPolicy(int retryCount = 10)
         {
             return Policy
@@ -118,6 +148,10 @@ namespace RuRayFacebook.WebDrivers
               .WaitAndRetry(retryCount, t => TimeSpan.FromSeconds(10));
         }
 
+        /// <summary>
+        /// The CommandLineTextFromChrome.
+        /// </summary>
+        /// <param name="driver">The driver<see cref="RemoteWebDriver"/>.</param>
         private void CommandLineTextFromChrome(RemoteWebDriver driver)
         {
             // Below code is used to verify the remote debugging and the port used.

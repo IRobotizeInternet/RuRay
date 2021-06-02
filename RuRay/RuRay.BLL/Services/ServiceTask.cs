@@ -4,8 +4,15 @@ using System.IO;
 
 namespace RuRayFacebook.Services
 {
+    /// <summary>
+    /// Defines the <see cref="ServiceTask" />.
+    /// </summary>
     public class ServiceTask
     {
+        /// <summary>
+        /// The CloseTask.
+        /// </summary>
+        /// <param name="taskName">The taskName<see cref="string"/>.</param>
         public static void CloseTask(string taskName)
         {
             foreach (var process in Process.GetProcessesByName(taskName))
@@ -14,6 +21,12 @@ namespace RuRayFacebook.Services
             }
         }
 
+        /// <summary>
+        /// The RunScript.
+        /// </summary>
+        /// <param name="fileName">The fileName<see cref="string"/>.</param>
+        /// <param name="arg">The arg<see cref="string"/>.</param>
+        /// <param name="copyToAppFolder">The copyToAppFolder<see cref="bool"/>.</param>
         public static void RunScript(string fileName, string arg = "", bool copyToAppFolder = true)
         {
             // copy the script to a location where it can be run.

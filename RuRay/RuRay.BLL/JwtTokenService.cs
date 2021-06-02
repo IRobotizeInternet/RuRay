@@ -10,15 +10,29 @@ using RuRay.BLL.Models;
 
 namespace RuRay.BLL
 {
+    /// <summary>
+    /// Defines the <see cref="JwtTokenService" />.
+    /// </summary>
     public class JwtTokenService : IJwtTokenService
     {
+        /// <summary>
+        /// Defines the _options.
+        /// </summary>
         private readonly IOptionsMonitor<CarsBLLOptions> _options;
 
+        /// <summary>
+        /// Initializes a new instance of the <see cref="JwtTokenService"/> class.
+        /// </summary>
+        /// <param name="options">The options<see cref="IOptionsMonitor{CarsBLLOptions}"/>.</param>
         public JwtTokenService(IOptionsMonitor<CarsBLLOptions> options)
         {
             _options = options ?? throw new ArgumentNullException(nameof(options));
         }
 
+        /// <summary>
+        /// The GenerateToken.
+        /// </summary>
+        /// <returns>The <see cref="string"/>.</returns>
         public string GenerateToken()
         {
             var nowDT = DateTime.UtcNow;
@@ -40,6 +54,11 @@ namespace RuRay.BLL
             return finalToken;
         }
 
+        /// <summary>
+        /// The ValidateToken.
+        /// </summary>
+        /// <param name="token">The token<see cref="string"/>.</param>
+        /// <returns>The <see cref="bool"/>.</returns>
         public bool ValidateToken(string token)
         {
             var tokenHandler = new JwtSecurityTokenHandler();

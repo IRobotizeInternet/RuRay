@@ -11,11 +11,24 @@ using RuRayFacebook.Utilities;
 
 namespace RuRay.BLL.Services.Keyboard
 {
+    /// <summary>
+    /// Defines the <see cref="ServiceMouse" />.
+    /// </summary>
     public class ServiceMouse : IServiceMouse
     {
-        static Rectangle ScreenScale { get; set; }
+        /// <summary>
+        /// Gets or sets the ScreenScale.
+        /// </summary>
+        internal static Rectangle ScreenScale { get; set; }
 
-        readonly Dictionary<int, Point> Coordinates = new Dictionary<int, Point>();
+        /// <summary>
+        /// Defines the Coordinates.
+        /// </summary>
+        internal readonly Dictionary<int, Point> Coordinates = new Dictionary<int, Point>();
+
+        /// <summary>
+        /// Initializes a new instance of the <see cref="ServiceMouse"/> class.
+        /// </summary>
         public ServiceMouse()
         {
             // TODO: Make this values avaliable in buffer for quick access.
@@ -25,61 +38,188 @@ namespace RuRay.BLL.Services.Keyboard
         }
 
         //https://msdn.microsoft.com/en-us/library/windows/desktop/ms646270(v=vs.85).aspx
+        /// <summary>
+        /// Defines the <see cref="INPUT" />.
+        /// </summary>
         [StructLayout(LayoutKind.Sequential)]
         struct INPUT
         {
-            public int type; // 0 = INPUT_MOUSE,
-                             // 1 = INPUT_KEYBOARD
-                             // 2 = INPUT_HARDWARE
+            /// <summary>
+            /// Defines the type.
+            /// </summary>
+            public int type;// 0 = INPUT_MOUSE,
+
+            // 1 = INPUT_KEYBOARD
+            // 2 = INPUT_HARDWARE
+            /// <summary>
+            /// Defines the mi.
+            /// </summary>
             public MOUSEINPUT mi;
         }
 
         //https://msdn.microsoft.com/en-us/library/windows/desktop/ms646273(v=vs.85).aspx
+        /// <summary>
+        /// Defines the <see cref="MOUSEINPUT" />.
+        /// </summary>
         [StructLayout(LayoutKind.Sequential)]
         struct MOUSEINPUT
         {
+            /// <summary>
+            /// Defines the dx.
+            /// </summary>
             public int dx;
+
+            /// <summary>
+            /// Defines the dy.
+            /// </summary>
             public int dy;
+
+            /// <summary>
+            /// Defines the mouseData.
+            /// </summary>
             public int mouseData;
+
+            /// <summary>
+            /// Defines the dwFlags.
+            /// </summary>
             public int dwFlags;
+
+            /// <summary>
+            /// Defines the time.
+            /// </summary>
             public int time;
+
+            /// <summary>
+            /// Defines the dwExtraInfo.
+            /// </summary>
             public IntPtr dwExtraInfo;
         }
 
+        /// <summary>
+        /// Defines the <see cref="ScrollWindowEx" />.
+        /// </summary>
         [StructLayout(LayoutKind.Sequential)]
         struct ScrollWindowEx
         {
-            readonly IntPtr hWnd;
-            readonly int dx;
-            readonly int dy;
-            readonly IntPtr prcScroll;
-            readonly IntPtr prcClip;
-            readonly IntPtr hrgnUpdate;
-            readonly IntPtr prcUpdate;
-            readonly short flags;
+            /// <summary>
+            /// Defines the hWnd.
+            /// </summary>
+            internal readonly IntPtr hWnd;
+
+            /// <summary>
+            /// Defines the dx.
+            /// </summary>
+            internal readonly int dx;
+
+            /// <summary>
+            /// Defines the dy.
+            /// </summary>
+            internal readonly int dy;
+
+            /// <summary>
+            /// Defines the prcScroll.
+            /// </summary>
+            internal readonly IntPtr prcScroll;
+
+            /// <summary>
+            /// Defines the prcClip.
+            /// </summary>
+            internal readonly IntPtr prcClip;
+
+            /// <summary>
+            /// Defines the hrgnUpdate.
+            /// </summary>
+            internal readonly IntPtr hrgnUpdate;
+
+            /// <summary>
+            /// Defines the prcUpdate.
+            /// </summary>
+            internal readonly IntPtr prcUpdate;
+
+            /// <summary>
+            /// Defines the flags.
+            /// </summary>
+            internal readonly short flags;
         }
 
         //This covers most use cases although complex mice may have additional buttons
         //There are additional constants you can use for those cases, see the msdn page
-        const int MOUSEEVENTF_MOVED = 0x0001;
-        const int MOUSEEVENTF_LEFTDOWN = 0x0002;
-        const int MOUSEEVENTF_LEFTUP = 0x0004;
-        const int MOUSEEVENTF_RIGHTDOWN = 0x0008;
-        const int MOUSEEVENTF_RIGHTUP = 0x0010;
-        const int MOUSEEVENTF_MIDDLEDOWN = 0x0020;
-        const int MOUSEEVENTF_MIDDLEUP = 0x0040;
-        const int MOUSEEVENTF_WHEEL = 0x0080;
-        const int MOUSEEVENTF_XDOWN = 0x0100;
-        const int MOUSEEVENTF_XUP = 0x0200;
-        const int MOUSEEVENTF_ABSOLUTE = 0x8000;
+        /// <summary>
+        /// Defines the MOUSEEVENTF_MOVED.
+        /// </summary>
+        internal const int MOUSEEVENTF_MOVED = 0x0001;
 
-        const int screen_length = 0x10000;
+        /// <summary>
+        /// Defines the MOUSEEVENTF_LEFTDOWN.
+        /// </summary>
+        internal const int MOUSEEVENTF_LEFTDOWN = 0x0002;
+
+        /// <summary>
+        /// Defines the MOUSEEVENTF_LEFTUP.
+        /// </summary>
+        internal const int MOUSEEVENTF_LEFTUP = 0x0004;
+
+        /// <summary>
+        /// Defines the MOUSEEVENTF_RIGHTDOWN.
+        /// </summary>
+        internal const int MOUSEEVENTF_RIGHTDOWN = 0x0008;
+
+        /// <summary>
+        /// Defines the MOUSEEVENTF_RIGHTUP.
+        /// </summary>
+        internal const int MOUSEEVENTF_RIGHTUP = 0x0010;
+
+        /// <summary>
+        /// Defines the MOUSEEVENTF_MIDDLEDOWN.
+        /// </summary>
+        internal const int MOUSEEVENTF_MIDDLEDOWN = 0x0020;
+
+        /// <summary>
+        /// Defines the MOUSEEVENTF_MIDDLEUP.
+        /// </summary>
+        internal const int MOUSEEVENTF_MIDDLEUP = 0x0040;
+
+        /// <summary>
+        /// Defines the MOUSEEVENTF_WHEEL.
+        /// </summary>
+        internal const int MOUSEEVENTF_WHEEL = 0x0080;
+
+        /// <summary>
+        /// Defines the MOUSEEVENTF_XDOWN.
+        /// </summary>
+        internal const int MOUSEEVENTF_XDOWN = 0x0100;
+
+        /// <summary>
+        /// Defines the MOUSEEVENTF_XUP.
+        /// </summary>
+        internal const int MOUSEEVENTF_XUP = 0x0200;
+
+        /// <summary>
+        /// Defines the MOUSEEVENTF_ABSOLUTE.
+        /// </summary>
+        internal const int MOUSEEVENTF_ABSOLUTE = 0x8000;
+
+        /// <summary>
+        /// Defines the screen_length.
+        /// </summary>
+        internal const int screen_length = 0x10000;
 
         //https://msdn.microsoft.com/en-us/library/windows/desktop/ms646310(v=vs.85).aspx
+        /// <summary>
+        /// The SendInput.
+        /// </summary>
+        /// <param name="nInputs">The nInputs<see cref="uint"/>.</param>
+        /// <param name="pInputs">The pInputs<see cref="INPUT[]"/>.</param>
+        /// <param name="cbSize">The cbSize<see cref="int"/>.</param>
+        /// <returns>The <see cref="uint"/>.</returns>
         [DllImport("user32.dll")]
-        extern static uint SendInput(uint nInputs, INPUT[] pInputs, int cbSize);
+        internal extern static uint SendInput(uint nInputs, INPUT[] pInputs, int cbSize);
 
-
+        /// <summary>
+        /// The LeftClickAtPoint.
+        /// </summary>
+        /// <param name="index">The index<see cref="int"/>.</param>
+        /// <returns>The <see cref="Task{bool}"/>.</returns>
         public Task<bool> LeftClickAtPoint(int index)
         {
             //Move the mouse
@@ -95,6 +235,11 @@ namespace RuRay.BLL.Services.Keyboard
             return Task.FromResult(true);
         }
 
+        /// <summary>
+        /// The RightClickAtPoint.
+        /// </summary>
+        /// <param name="index">The index<see cref="int"/>.</param>
+        /// <returns>The <see cref="Task{bool}"/>.</returns>
         public Task<bool> RightClickAtPoint(int index)
         {
             GoToXY(index);
@@ -109,8 +254,16 @@ namespace RuRay.BLL.Services.Keyboard
             return Task.FromResult(true);
         }
 
+        /// <summary>
+        /// Gets or sets the Position.
+        /// </summary>
         public static Point Position { get; set; }
 
+        /// <summary>
+        /// The GoToXY.
+        /// </summary>
+        /// <param name="index">The index<see cref="int"/>.</param>
+        /// <returns>The <see cref="Task{bool}"/>.</returns>
         public Task<bool> GoToXY(int index)
         {
             const string serviceName = "PS1\\CursorPostion.ps1";
@@ -144,6 +297,11 @@ namespace RuRay.BLL.Services.Keyboard
             return Task.FromResult(true);
         }
 
+        /// <summary>
+        /// The ScrollUp.
+        /// </summary>
+        /// <param name="index">The index<see cref="int"/>.</param>
+        /// <returns>The <see cref="Task{bool}"/>.</returns>
         public Task<bool> ScrollUp(int index)
         {
             GoToXY(index);

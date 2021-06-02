@@ -3,11 +3,17 @@ using System.CodeDom.Compiler;
 using System.Globalization;
 using System.IO;
 
-
 namespace RuRayFacebook.Utilities
 {
-    class DynamicCodeCompilation
+    /// <summary>
+    /// Defines the <see cref="DynamicCodeCompilation" />.
+    /// </summary>
+    internal class DynamicCodeCompilation
     {
+        /// <summary>
+        /// The CompleCode.
+        /// </summary>
+        /// <param name="filePath">The filePath<see cref="string"/>.</param>
         [STAThread]
         public void CompleCode(string filePath)
         {
@@ -19,6 +25,11 @@ namespace RuRayFacebook.Utilities
             CompileExecutable(filePath);
         }
 
+        /// <summary>
+        /// The CompileExecutable.
+        /// </summary>
+        /// <param name="sourceName">The sourceName<see cref="string"/>.</param>
+        /// <returns>The <see cref="bool"/>.</returns>
         public static bool CompileExecutable(string sourceName)
         {
             FileInfo sourceFile = new FileInfo(sourceName);

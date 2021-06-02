@@ -46,7 +46,7 @@ namespace RuRayToolbox.CommonControls
 
         /// <summary>
         /// Gets a value indicating whether IsDOMObjectExist
-        /// Check whether or not the element exists.
+        /// Check whether or not the element exists..
         /// </summary>
         public bool IsDOMObjectExist => Driver.TryFindElement(ByForElement, out _);
 
@@ -218,8 +218,6 @@ namespace RuRayToolbox.CommonControls
             }
         }
 
-        // Used this type of sloppy loops to mimic scrolling with finger.
-        // How did I came up with these numbers, just tried bunch of things to see if it is smooth.
         /// <summary>
         /// The JScrollSmoothUp.
         /// </summary>
@@ -264,8 +262,6 @@ namespace RuRayToolbox.CommonControls
             }
         }
 
-        // Used this type of sloppy loops to mimic scrolling with finger.
-        // How did I came up with these numbers, just tried bunch of things to see if it is smooth.
         /// <summary>
         /// The JScrollSmoothDown.
         /// </summary>

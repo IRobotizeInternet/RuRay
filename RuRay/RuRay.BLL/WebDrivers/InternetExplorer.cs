@@ -4,10 +4,24 @@ using OpenQA.Selenium.Remote;
 
 namespace RuRayFacebook.WebDrivers
 {
+    /// <summary>
+    /// Defines the <see cref="InternetExplorer" />.
+    /// </summary>
     public class InternetExplorer : WebDriver
     {
-        public InternetExplorer(string baseUrl) : base(baseUrl) { }
+        /// <summary>
+        /// Initializes a new instance of the <see cref="InternetExplorer"/> class.
+        /// </summary>
+        /// <param name="baseUrl">The baseUrl<see cref="string"/>.</param>
+        public InternetExplorer(string baseUrl) : base(baseUrl)
+        {
+        }
 
+        /// <summary>
+        /// The Driver.
+        /// </summary>
+        /// <param name="useExistingBrowser">The useExistingBrowser<see cref="bool"/>.</param>
+        /// <returns>The <see cref="RemoteWebDriver"/>.</returns>
         public override RemoteWebDriver Driver(bool useExistingBrowser = true)
         {
             if (string.IsNullOrEmpty(BaseURL))
