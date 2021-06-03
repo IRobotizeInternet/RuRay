@@ -26,7 +26,7 @@ namespace SupportingScripts
                 //var service = $"Task<bool> Navigate{name}();";
 
                 var service =
-                " [HttpPost(\"\")]"
+                $" [HttpPost(\"{name}\")]" 
                + "[SwaggerResponse((int)HttpStatusCode.OK, Description = \"Returns 200\")]"
                + "[SwaggerResponse((int)HttpStatusCode.BadRequest, Description = \"Page Not Found\")]"
                + "[SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = \"Unexpected error\")]"

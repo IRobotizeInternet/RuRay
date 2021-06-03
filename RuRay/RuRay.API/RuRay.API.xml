@@ -4,210 +4,707 @@
         <name>RuRay.API</name>
     </assembly>
     <members>
+        <member name="T:RuRay.API.Controllers.CarsController">
+            <summary>
+            Defines the <see cref="T:RuRay.API.Controllers.CarsController" />.
+            </summary>
+        </member>
+        <member name="F:RuRay.API.Controllers.CarsController._mapper">
+            <summary>
+            Defines the _mapper.
+            </summary>
+        </member>
+        <member name="F:RuRay.API.Controllers.CarsController._carsService">
+            <summary>
+            Defines the _carsService.
+            </summary>
+        </member>
         <member name="M:RuRay.API.Controllers.CarsController.#ctor(AutoMapper.IMapper,RuRay.BLL.Contracts.ICarsService)">
             <summary>
-            Cars db api
+            Initializes a new instance of the <see cref="T:RuRay.API.Controllers.CarsController"/> class.
             </summary>
-            <param name="mapper"></param>
-            <param name="carsService"></param>
+            <param name="mapper">.</param>
+            <param name="carsService">.</param>
         </member>
         <member name="M:RuRay.API.Controllers.CarsController.CreateCarAsync(RuRay.API.Models.Car)">
             <summary>
-            Create a new car
+            Create a new car.
             </summary>
-            <param name="car"></param>
-            <returns>Returns created car</returns>           
+            <param name="car">.</param>
+            <returns>Returns created car.</returns>
         </member>
         <member name="M:RuRay.API.Controllers.CarsController.GetCarAsync(System.Guid)">
             <summary>
-            Get car by id
+            Get car by id.
             </summary>
-            <param name="id">Car Id</param>
-            <returns>Returns finded car</returns>
+            <param name="id">Car Id.</param>
+            <returns>Returns finded car.</returns>
         </member>
         <member name="M:RuRay.API.Controllers.CarsController.UpdateCarAsync(System.Guid,RuRay.API.Models.Car)">
             <summary>
-            Update existing car
+            Update existing car.
             </summary>
-            <param name="id">Car id</param>
-            <param name="car">Car parameters</param>
-            <returns></returns>
+            <param name="id">Car id.</param>
+            <param name="car">Car parameters.</param>
+            <returns>.</returns>
         </member>
         <member name="M:RuRay.API.Controllers.CarsController.DeleteCarAsync(System.Guid)">
             <summary>
-            Delete car
+            Delete car.
             </summary>
-            <param name="id">Car id</param>
-            <returns></returns>
+            <param name="id">Car id.</param>
+            <returns>.</returns>
         </member>
         <member name="M:RuRay.API.Controllers.CarsController.GetCarsListAsync(System.Int32,System.Int32)">
             <summary>
-            Get cars list
+            Get cars list.
             </summary>
-            <param name="pageNumber">Page number</param>
-            <param name="pageSize">Page size</param>
-            <returns></returns>
+            <param name="pageNumber">Page number.</param>
+            <param name="pageSize">Page size.</param>
+            <returns>.</returns>
+        </member>
+        <member name="T:RuRay.API.Controllers.HomeHeaderController">
+            <summary>
+            Defines the <see cref="T:RuRay.API.Controllers.HomeHeaderController" />.
+            </summary>
+        </member>
+        <member name="F:RuRay.API.Controllers.HomeHeaderController._mapper">
+            <summary>
+            Defines the _mapper.
+            </summary>
+        </member>
+        <member name="F:RuRay.API.Controllers.HomeHeaderController._serviceHomeHeader">
+            <summary>
+            Defines the _serviceHomeHeader.
+            </summary>
         </member>
         <member name="M:RuRay.API.Controllers.HomeHeaderController.#ctor(AutoMapper.IMapper,RuRay.BLL.Contracts.IServiceHomeHeader)">
             <summary>
-            Cars db api
+            Initializes a new instance of the <see cref="T:RuRay.API.Controllers.HomeHeaderController"/> class.
             </summary>
-            <param name="mapper"></param>
-            <param name="serviceHomeHeader"></param>
+            <param name="mapper">.</param>
+            <param name="serviceHomeHeader">.</param>
         </member>
         <member name="M:RuRay.API.Controllers.HomeHeaderController.HomePageScrollDown">
             <summary>
-            Homepage scroll down
+            Homepage scroll down.
             </summary>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
         </member>
         <member name="M:RuRay.API.Controllers.HomeHeaderController.FacebookChangeVisualMode(RuRay.BLL.Switch)">
             <summary>
-            Facebook Change Visual Mode
+            Facebook Change Visual Mode.
+            </summary>
+            <param name="mode">The mode<see cref="T:RuRay.BLL.Switch"/>.</param>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="T:RuRay.API.Controllers.KeyboardController">
+            <summary>
+            Defines the <see cref="T:RuRay.API.Controllers.KeyboardController" />.
+            </summary>
+        </member>
+        <member name="F:RuRay.API.Controllers.KeyboardController._mapper">
+            <summary>
+            Defines the _mapper.
+            </summary>
+        </member>
+        <member name="F:RuRay.API.Controllers.KeyboardController._serviceKeyboard">
+            <summary>
+            Defines the _serviceKeyboard.
             </summary>
         </member>
         <member name="M:RuRay.API.Controllers.KeyboardController.#ctor(AutoMapper.IMapper,RuRay.BLL.Contracts.IServiceKeyboard)">
             <summary>
-            Keyboard actions
+            Initializes a new instance of the <see cref="T:RuRay.API.Controllers.KeyboardController"/> class.
             </summary>
-            <param name="mapper"></param>
-            <param name="serviceKeyboard"></param>
+            <param name="mapper">.</param>
+            <param name="serviceKeyboard">.</param>
         </member>
         <member name="M:RuRay.API.Controllers.KeyboardController.RightClick(System.Int32)">
             <summary>
-            Keyboard left click action
+            Keyboard left click action.
             </summary>
+            <param name="index">The index<see cref="T:System.Int32"/>.</param>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
         </member>
         <member name="M:RuRay.API.Controllers.KeyboardController.KeyStoke(RuRay.BLL.Contracts.KeyStrokes)">
             <summary>
-            key stroke
+            key stroke.
+            </summary>
+            <param name="sendKey">The sendKey<see cref="T:RuRay.BLL.Contracts.KeyStrokes"/>.</param>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="T:RuRay.API.Controllers.MouseController">
+            <summary>
+            Defines the <see cref="T:RuRay.API.Controllers.MouseController" />.
+            </summary>
+        </member>
+        <member name="F:RuRay.API.Controllers.MouseController._mapper">
+            <summary>
+            Defines the _mapper.
+            </summary>
+        </member>
+        <member name="F:RuRay.API.Controllers.MouseController._serviceMouse">
+            <summary>
+            Defines the _serviceMouse.
             </summary>
         </member>
         <member name="M:RuRay.API.Controllers.MouseController.#ctor(AutoMapper.IMapper,RuRay.BLL.Contracts.IServiceMouse)">
             <summary>
-            Mouse actions
+            Initializes a new instance of the <see cref="T:RuRay.API.Controllers.MouseController"/> class.
             </summary>
-            <param name="mapper"></param>
-            <param name="serviceMouse"></param>
+            <param name="mapper">.</param>
+            <param name="serviceMouse">.</param>
         </member>
         <member name="M:RuRay.API.Controllers.MouseController.LeftClick(System.Int32)">
             <summary>
-            Keyboard left click action
+            Keyboard left click action.
             </summary>
+            <param name="index">The index<see cref="T:System.Int32"/>.</param>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
         </member>
         <member name="M:RuRay.API.Controllers.MouseController.RightClickAtPoint(System.Int32)">
             <summary>
-            Keyboard right click action
+            Keyboard right click action.
             </summary>
+            <param name="index">The index<see cref="T:System.Int32"/>.</param>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
         </member>
         <member name="M:RuRay.API.Controllers.MouseController.GoToXY(System.Int32)">
             <summary>
-            Move cursor to a specified x, y location
+            Move cursor to a specified x, y location.
+            </summary>
+            <param name="index">The index<see cref="T:System.Int32"/>.</param>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="T:RuRay.API.Controllers.NavigationController">
+            <summary>
+            Defines the <see cref="T:RuRay.API.Controllers.NavigationController" />.
+            </summary>
+        </member>
+        <member name="F:RuRay.API.Controllers.NavigationController._mapper">
+            <summary>
+            Defines the _mapper.
+            </summary>
+        </member>
+        <member name="F:RuRay.API.Controllers.NavigationController._serviceNavigation">
+            <summary>
+            Defines the _serviceNavigation.
+            </summary>
+        </member>
+        <member name="M:RuRay.API.Controllers.NavigationController.#ctor(AutoMapper.IMapper,RuRay.BLL.Contracts.IServiceNavigation)">
+            <summary>
+            Initializes a new instance of the <see cref="T:RuRay.API.Controllers.NavigationController"/> class.
+            </summary>
+            <param name="mapper">The mapper<see cref="T:AutoMapper.IMapper"/>.</param>
+            <param name="serviceNavigation">The serviceNavigation<see cref="T:RuRay.BLL.Contracts.IServiceNavigation"/>.</param>
+        </member>
+        <member name="M:RuRay.API.Controllers.NavigationController.NavigateActivityLog">
+            <summary>
+            The NavigateActivityLog.
+            </summary>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.NavigationController.NavigateAdCenter">
+            <summary>
+            The NavigateAdCenter.
+            </summary>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.NavigationController.NavigateAdPreferences">
+            <summary>
+            The NavigateAdPreferences.
+            </summary>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.NavigationController.NavigateArchived">
+            <summary>
+            The NavigateArchived.
+            </summary>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.NavigationController.NavigateCampus">
+            <summary>
+            The NavigateCampus.
+            </summary>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.NavigationController.NavigateChats">
+            <summary>
+            The NavigateChats.
+            </summary>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.NavigationController.NavigateEvents">
+            <summary>
+            The NavigateEvents.
+            </summary>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.NavigationController.NavigateFacebookPay">
+            <summary>
+            The NavigateFacebookPay.
+            </summary>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.NavigationController.NavigateFriends">
+            <summary>
+            The NavigateFriends.
+            </summary>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.NavigationController.NavigateFundraisers">
+            <summary>
+            The NavigateFundraisers.
+            </summary>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.NavigationController.NavigateGames">
+            <summary>
+            The NavigateGames.
+            </summary>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.NavigationController.NavigateGroup">
+            <summary>
+            The NavigateGroup.
+            </summary>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.NavigationController.NavigateGroupCall">
+            <summary>
+            The NavigateGroupCall.
+            </summary>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.NavigationController.NavigateHome">
+            <summary>
+            The NavigateHome.
+            </summary>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.NavigationController.NavigateJobs">
+            <summary>
+            The NavigateJobs.
+            </summary>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.NavigationController.NavigateLiveProducer">
+            <summary>
+            The NavigateLiveProducer.
+            </summary>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.NavigationController.NavigateMarketplace">
+            <summary>
+            The NavigateMarketplace.
+            </summary>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.NavigationController.NavigateMemories">
+            <summary>
+            The NavigateMemories.
+            </summary>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.NavigationController.NavigateMessages">
+            <summary>
+            The NavigateMessages.
+            </summary>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.NavigationController.NavigateMessengerKids">
+            <summary>
+            The NavigateMessengerKids.
+            </summary>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.NavigationController.NavigateMovies">
+            <summary>
+            The NavigateMovies.
+            </summary>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.NavigationController.NavigateNotifications">
+            <summary>
+            The NavigateNotifications.
+            </summary>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.NavigationController.NavigateOffers">
+            <summary>
+            The NavigateOffers.
+            </summary>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.NavigationController.NavigatePages">
+            <summary>
+            The NavigatePages.
+            </summary>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.NavigationController.NavigatePrivacyCheckup">
+            <summary>
+            The NavigatePrivacyCheckup.
+            </summary>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.NavigationController.NavigatePromote">
+            <summary>
+            The NavigatePromote.
+            </summary>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.NavigationController.NavigateSaved">
+            <summary>
+            The NavigateSaved.
+            </summary>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.NavigationController.NavigateSettings">
+            <summary>
+            The NavigateSettings.
+            </summary>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.NavigationController.NavigateStories">
+            <summary>
+            The NavigateStories.
+            </summary>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.NavigationController.NavigateSupportInbox">
+            <summary>
+            The NavigateSupportInbox.
+            </summary>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.NavigationController.NavigateTrash">
+            <summary>
+            The NavigateTrash.
+            </summary>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.NavigationController.NavigateUserTimeline">
+            <summary>
+            The NavigateUserTimeline.
+            </summary>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.NavigationController.NavigateViewPage">
+            <summary>
+            The NavigateViewPage.
+            </summary>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.NavigationController.NavigateWatch">
+            <summary>
+            The NavigateWatch.
+            </summary>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.NavigationController.NavigateWeather">
+            <summary>
+            The NavigateWeather.
+            </summary>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="T:RuRay.API.Controllers.TodoController">
+            <summary>
+            Defines the <see cref="T:RuRay.API.Controllers.TodoController" />.
+            </summary>
+        </member>
+        <member name="F:RuRay.API.Controllers.TodoController._mapper">
+            <summary>
+            Defines the _mapper.
+            </summary>
+        </member>
+        <member name="F:RuRay.API.Controllers.TodoController._todosMockService">
+            <summary>
+            Defines the _todosMockService.
             </summary>
         </member>
         <member name="M:RuRay.API.Controllers.TodoController.#ctor(AutoMapper.IMapper,RuRay.BLL.TodosMockProxyService)">
             <summary>
-            Todos mock web proxy 
+            Initializes a new instance of the <see cref="T:RuRay.API.Controllers.TodoController"/> class.
             </summary>
-            <param name="mapper"></param>
-            <param name="todosMockService"></param>
+            <param name="mapper">.</param>
+            <param name="todosMockService">.</param>
         </member>
         <member name="M:RuRay.API.Controllers.TodoController.GetTodoById(System.Int32)">
             <summary>
-            Get todo by id
+            Get todo by id.
             </summary>
-            <param name="id">Todo id</param>     
-            <returns></returns>
+            <param name="id">Todo id.</param>
+            <returns>.</returns>
         </member>
         <member name="M:RuRay.API.Controllers.TodoController.GetTodos">
             <summary>
-            Get todos list from remote mock api
-            </summary>      
-            <returns></returns>
+            Get todos list from remote mock api.
+            </summary>
+            <returns>.</returns>
+        </member>
+        <member name="T:RuRay.API.Controllers.TokenController">
+            <summary>
+            Defines the <see cref="T:RuRay.API.Controllers.TokenController" />.
+            </summary>
+        </member>
+        <member name="F:RuRay.API.Controllers.TokenController._jwtTokenService">
+            <summary>
+            Defines the _jwtTokenService.
+            </summary>
+        </member>
+        <member name="M:RuRay.API.Controllers.TokenController.#ctor(RuRay.BLL.Contracts.IJwtTokenService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:RuRay.API.Controllers.TokenController"/> class.
+            </summary>
+            <param name="jwtTokenService">The jwtTokenService<see cref="T:RuRay.BLL.Contracts.IJwtTokenService"/>.</param>
         </member>
         <member name="M:RuRay.API.Controllers.TokenController.GenerateToken">
             <summary>
-            Generate sample token
-            </summary>       
-            <returns>Generated token</returns>        
+            Generate sample token.
+            </summary>
+            <returns>Generated token.</returns>
         </member>
         <member name="M:RuRay.API.Controllers.TokenController.ValidateToken(System.String)">
             <summary>
-            Validate sample token
+            Validate sample token.
             </summary>
-            <param name="token">Token for validation</param>
-            <returns>Token validation status</returns>        
+            <param name="token">Token for validation.</param>
+            <returns>Token validation status.</returns>
+        </member>
+        <member name="T:RuRay.API.Controllers.CarsV0Controller">
+            <summary>
+            Defines the <see cref="T:RuRay.API.Controllers.CarsV0Controller" />.
+            </summary>
+        </member>
+        <member name="F:RuRay.API.Controllers.CarsV0Controller._mapper">
+            <summary>
+            Defines the _mapper.
+            </summary>
+        </member>
+        <member name="F:RuRay.API.Controllers.CarsV0Controller._carsService">
+            <summary>
+            Defines the _carsService.
+            </summary>
+        </member>
+        <member name="M:RuRay.API.Controllers.CarsV0Controller.#ctor(AutoMapper.IMapper,RuRay.BLL.Contracts.ICarsService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:RuRay.API.Controllers.CarsV0Controller"/> class.
+            </summary>
+            <param name="mapper">The mapper<see cref="T:AutoMapper.IMapper"/>.</param>
+            <param name="carsService">The carsService<see cref="T:RuRay.BLL.Contracts.ICarsService"/>.</param>
         </member>
         <member name="M:RuRay.API.Controllers.CarsV0Controller.GetCarsV0ListAsync(System.Int32)">
             <summary>
-            Get cars list
-            </summary>       
-            <param name="limit">Items count</param>
-            <returns></returns>
+            Get cars list.
+            </summary>
+            <param name="limit">Items count.</param>
+            <returns>.</returns>
+        </member>
+        <member name="T:RuRay.API.Controllers.WebhookController">
+            <summary>
+            Defines the <see cref="T:RuRay.API.Controllers.WebhookController" />.
+            </summary>
+        </member>
+        <member name="F:RuRay.API.Controllers.WebhookController._mapper">
+            <summary>
+            Defines the _mapper.
+            </summary>
+        </member>
+        <member name="F:RuRay.API.Controllers.WebhookController._serviceMouse">
+            <summary>
+            Defines the _serviceMouse.
+            </summary>
         </member>
         <member name="M:RuRay.API.Controllers.WebhookController.#ctor(AutoMapper.IMapper,RuRay.BLL.Contracts.IServiceMouse)">
             <summary>
-            Mouse actions
+            Initializes a new instance of the <see cref="T:RuRay.API.Controllers.WebhookController"/> class.
             </summary>
-            <param name="mapper"></param>
-            <param name="serviceMouse"></param>
+            <param name="mapper">.</param>
+            <param name="serviceMouse">.</param>
         </member>
         <member name="M:RuRay.API.Controllers.WebhookController.LeftClick(System.Int32)">
             <summary>
-            Keyboard left click action
+            Keyboard left click action.
             </summary>
+            <param name="index">The index<see cref="T:System.Int32"/>.</param>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
         </member>
         <member name="M:RuRay.API.Controllers.WebhookController.RightClickAtPoint(System.Int32)">
             <summary>
-            Keyboard right click action
+            Keyboard right click action.
             </summary>
+            <param name="index">The index<see cref="T:System.Int32"/>.</param>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
         </member>
         <member name="M:RuRay.API.Controllers.WebhookController.GoToXY(System.Int32)">
             <summary>
-            Move cursor to a specified x, y location
+            Move cursor to a specified x, y location.
+            </summary>
+            <param name="index">The index<see cref="T:System.Int32"/>.</param>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="T:RuRay.API.Controllers.WindowsScreenController">
+            <summary>
+            Defines the <see cref="T:RuRay.API.Controllers.WindowsScreenController" />.
+            </summary>
+        </member>
+        <member name="F:RuRay.API.Controllers.WindowsScreenController._mapper">
+            <summary>
+            Defines the _mapper.
+            </summary>
+        </member>
+        <member name="F:RuRay.API.Controllers.WindowsScreenController._serviceWindowsScreen">
+            <summary>
+            Defines the _serviceWindowsScreen.
             </summary>
         </member>
         <member name="M:RuRay.API.Controllers.WindowsScreenController.#ctor(AutoMapper.IMapper,RuRay.BLL.Contracts.IServiceWindowsScreen)">
             <summary>
-            Windows Screen api
+            Initializes a new instance of the <see cref="T:RuRay.API.Controllers.WindowsScreenController"/> class.
             </summary>
-            <param name="mapper"></param>
-            <param name="serviceWindowsScreen"></param>
+            <param name="mapper">.</param>
+            <param name="serviceWindowsScreen">.</param>
         </member>
         <member name="M:RuRay.API.Controllers.WindowsScreenController.WindowGrid(RuRay.BLL.Contracts.GridVisibility)">
             <summary>
-            Show or hide gird on the screen
+            Show or hide gird on the screen.
             </summary>
-            <param name="gridVisibility"></param>
-            <returns></returns>           
+            <param name="gridVisibility">.</param>
+            <returns>.</returns>
+        </member>
+        <member name="T:RuRay.API.Mappings.CarsViewMappings">
+            <summary>
+            Defines the <see cref="T:RuRay.API.Mappings.CarsViewMappings" />.
+            </summary>
+        </member>
+        <member name="M:RuRay.API.Mappings.CarsViewMappings.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:RuRay.API.Mappings.CarsViewMappings"/> class.
+            </summary>
+        </member>
+        <member name="T:RuRay.API.Mappings.TodoViewMappings">
+            <summary>
+            Defines the <see cref="T:RuRay.API.Mappings.TodoViewMappings" />.
+            </summary>
+        </member>
+        <member name="M:RuRay.API.Mappings.TodoViewMappings.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:RuRay.API.Mappings.TodoViewMappings"/> class.
+            </summary>
+        </member>
+        <member name="T:RuRay.API.Middleware.HttpContextMiddleware">
+            <summary>
+            Defines the <see cref="T:RuRay.API.Middleware.HttpContextMiddleware" />.
+            </summary>
+        </member>
+        <member name="F:RuRay.API.Middleware.HttpContextMiddleware.MessageTemplate">
+            <summary>
+            Defines the MessageTemplate.
+            </summary>
+        </member>
+        <member name="F:RuRay.API.Middleware.HttpContextMiddleware.ErrorMessageTemplate">
+            <summary>
+            Defines the ErrorMessageTemplate.
+            </summary>
+        </member>
+        <member name="F:RuRay.API.Middleware.HttpContextMiddleware._next">
+            <summary>
+            Defines the _next.
+            </summary>
+        </member>
+        <member name="M:RuRay.API.Middleware.HttpContextMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate)">
+            <summary>
+            Initializes a new instance of the <see cref="T:RuRay.API.Middleware.HttpContextMiddleware"/> class.
+            </summary>
+            <param name="next">The next<see cref="T:Microsoft.AspNetCore.Http.RequestDelegate"/>.</param>
+        </member>
+        <member name="M:RuRay.API.Middleware.HttpContextMiddleware.Invoke(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            The Invoke.
+            </summary>
+            <param name="httpContext">The httpContext<see cref="T:Microsoft.AspNetCore.Http.HttpContext"/>.</param>
+            <returns>The <see cref="T:System.Threading.Tasks.Task"/>.</returns>
+        </member>
+        <member name="M:RuRay.API.Middleware.HttpContextMiddleware.PushProperties(System.Double,Microsoft.AspNetCore.Http.HttpContext,System.Nullable{System.Guid})">
+            <summary>
+            The PushProperties.
+            </summary>
+            <param name="elapsed">The elapsed<see cref="T:System.Double"/>.</param>
+            <param name="httpContext">The httpContext<see cref="T:Microsoft.AspNetCore.Http.HttpContext"/>.</param>
+            <param name="errorId">The errorId<see cref="!:Guid?"/>.</param>
+        </member>
+        <member name="T:RuRay.API.Middleware.HttpContextMiddlewareExtensions">
+            <summary>
+            Defines the <see cref="T:RuRay.API.Middleware.HttpContextMiddlewareExtensions" />.
+            </summary>
+        </member>
+        <member name="M:RuRay.API.Middleware.HttpContextMiddlewareExtensions.UseHttpContextMiddleware(Microsoft.AspNetCore.Builder.IApplicationBuilder)">
+            <summary>
+            The UseHttpContextMiddleware.
+            </summary>
+            <param name="builder">The builder<see cref="T:Microsoft.AspNetCore.Builder.IApplicationBuilder"/>.</param>
+            <returns>The <see cref="T:Microsoft.AspNetCore.Builder.IApplicationBuilder"/>.</returns>
+        </member>
+        <member name="T:RuRay.API.Models.AppSettings">
+            <summary>
+            Defines the <see cref="T:RuRay.API.Models.AppSettings" />.
+            </summary>
+        </member>
+        <member name="P:RuRay.API.Models.AppSettings.AppPrefixPath">
+            <summary>
+            Gets or sets the AppPrefixPath.
+            </summary>
+        </member>
+        <member name="P:RuRay.API.Models.AppSettings.JwtSecretKey">
+            <summary>
+            Gets or sets the JwtSecretKey.
+            </summary>
+        </member>
+        <member name="P:RuRay.API.Models.AppSettings.WebApiUrl">
+            <summary>
+            Gets or sets the WebApiUrl.
+            </summary>
+        </member>
+        <member name="P:RuRay.API.Models.AppSettings.AllowedOrigins">
+            <summary>
+            Gets or sets the AllowedOrigins.
+            </summary>
         </member>
         <member name="T:RuRay.API.Models.Car">
             <summary>
-            Car type
+            Car type.
             </summary>
         </member>
         <member name="P:RuRay.API.Models.Car.Id">
             <summary>
-            Car id
+            Gets or sets the Id
+            Car id.
             </summary>
         </member>
         <member name="P:RuRay.API.Models.Car.ModelName">
             <summary>
-            Car model name
+            Gets or sets the ModelName
+            Car model name.
             </summary>
         </member>
         <member name="P:RuRay.API.Models.Car.CarType">
             <summary>
-            Car type
+            Gets or sets the CarType
+            Car type.
             </summary>
         </member>
         <member name="P:RuRay.API.Models.Car.CreatedOn">
             <summary>
-            CreatedOn
+            Gets or sets the CreatedOn
+            CreatedOn.
             </summary>
         </member>
         <member name="P:RuRay.API.Models.Car.ModifiedOn">
             <summary>
-            ModifiedOn
+            Gets or sets the ModifiedOn
+            ModifiedOn.
             </summary>
         </member>
         <member name="T:RuRay.API.Models.CarType">
@@ -237,23 +734,120 @@
         </member>
         <member name="T:RuRay.API.Models.Todo">
             <summary>
-            Todo item
+            Todo item.
             </summary>
         </member>
         <member name="P:RuRay.API.Models.Todo.Id">
             <summary>
-            Todo id
+            Gets or sets the Id
+            Todo id.
             </summary>
         </member>
         <member name="P:RuRay.API.Models.Todo.Title">
             <summary>
-            Todo title
-            </summary> 
+            Gets or sets the Title
+            Todo title.
+            </summary>
         </member>
         <member name="P:RuRay.API.Models.Todo.Completed">
             <summary>
-            Todo status
-            </summary>        
+            Gets or sets a value indicating whether Completed
+            Todo status.
+            </summary>
+        </member>
+        <member name="T:RuRay.API.Program">
+            <summary>
+            Defines the <see cref="T:RuRay.API.Program" />.
+            </summary>
+        </member>
+        <member name="M:RuRay.API.Program.Main(System.String[])">
+            <summary>
+            The Main.
+            </summary>
+            <param name="args">The args<see cref="!:string[]"/>.</param>
+        </member>
+        <member name="M:RuRay.API.Program.CreateWebHostBuilder(System.String[])">
+            <summary>
+            The CreateWebHostBuilder.
+            </summary>
+            <param name="args">The args<see cref="!:string[]"/>.</param>
+            <returns>The <see cref="T:Microsoft.AspNetCore.Hosting.IWebHostBuilder"/>.</returns>
+        </member>
+        <member name="T:RuRay.API.Startup">
+            <summary>
+            Defines the <see cref="T:RuRay.API.Startup" />.
+            </summary>
+        </member>
+        <member name="M:RuRay.API.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            Initializes a new instance of the <see cref="T:RuRay.API.Startup"/> class.
+            </summary>
+            <param name="configuration">The configuration<see cref="T:Microsoft.Extensions.Configuration.IConfiguration"/>.</param>
+        </member>
+        <member name="P:RuRay.API.Startup.Configuration">
+            <summary>
+            Gets the Configuration.
+            </summary>
+        </member>
+        <member name="M:RuRay.API.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            The ConfigureServices.
+            </summary>
+            <param name="services">The services<see cref="T:Microsoft.Extensions.DependencyInjection.IServiceCollection"/>.</param>
+        </member>
+        <member name="M:RuRay.API.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IWebHostEnvironment,Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)">
+            <summary>
+            The Configure.
+            </summary>
+            <param name="app">The app<see cref="T:Microsoft.AspNetCore.Builder.IApplicationBuilder"/>.</param>
+            <param name="env">The env<see cref="T:Microsoft.AspNetCore.Hosting.IWebHostEnvironment"/>.</param>
+            <param name="provider">The provider<see cref="T:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider"/>.</param>
+        </member>
+        <member name="M:RuRay.API.Startup.GetXmlDataAnnotationFilePath">
+            <summary>
+            The GetXmlDataAnnotationFilePath.
+            </summary>
+            <returns>The <see cref="T:System.String"/>.</returns>
+        </member>
+        <member name="T:RuRay.API.Swagger.CarModelExample">
+            <summary>
+            Defines the <see cref="T:RuRay.API.Swagger.CarModelExample" />.
+            </summary>
+        </member>
+        <member name="M:RuRay.API.Swagger.CarModelExample.GetExamples">
+            <summary>
+            The GetExamples.
+            </summary>
+            <returns>The <see cref="T:RuRay.API.Models.Car"/>.</returns>
+        </member>
+        <member name="T:RuRay.API.Swagger.ConfigureSwaggerOptions">
+            <summary>
+            Defines the <see cref="T:RuRay.API.Swagger.ConfigureSwaggerOptions" />.
+            </summary>
+        </member>
+        <member name="F:RuRay.API.Swagger.ConfigureSwaggerOptions._apiVerProvider">
+            <summary>
+            Defines the _apiVerProvider.
+            </summary>
+        </member>
+        <member name="M:RuRay.API.Swagger.ConfigureSwaggerOptions.#ctor(Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider)">
+            <summary>
+            Initializes a new instance of the <see cref="T:RuRay.API.Swagger.ConfigureSwaggerOptions"/> class.
+            </summary>
+            <param name="apiVerProvider">The apiVerProvider<see cref="T:Microsoft.AspNetCore.Mvc.ApiExplorer.IApiVersionDescriptionProvider"/>.</param>
+        </member>
+        <member name="M:RuRay.API.Swagger.ConfigureSwaggerOptions.Configure(Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions)">
+            <summary>
+            The Configure.
+            </summary>
+            <param name="options">The options<see cref="T:Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenOptions"/>.</param>
+        </member>
+        <member name="M:RuRay.API.Swagger.ConfigureSwaggerOptions.GetSwaggerDocInfo(Microsoft.AspNetCore.Mvc.ApiExplorer.ApiVersionDescription)">
+            <summary>
+            The GetSwaggerDocInfo.
+            </summary>
+            <param name="description">The description<see cref="T:Microsoft.AspNetCore.Mvc.ApiExplorer.ApiVersionDescription"/>.</param>
+            <returns>The <see cref="T:Microsoft.OpenApi.Models.OpenApiInfo"/>.</returns>
         </member>
     </members>
 </doc>

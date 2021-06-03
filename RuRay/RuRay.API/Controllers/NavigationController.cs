@@ -31,8 +31,8 @@ namespace RuRay.API.Controllers
         /// <summary>
         /// Initializes a new instance of the <see cref="NavigationController"/> class.
         /// </summary>
-        /// <param name="mapper">.</param>
-        /// <param name="serviceNavigation">.</param>
+        /// <param name="mapper">The mapper<see cref="IMapper"/>.</param>
+        /// <param name="serviceNavigation">The serviceNavigation<see cref="IServiceNavigation"/>.</param>
         public NavigationController(IMapper mapper, IServiceNavigation serviceNavigation)
         {
             _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
@@ -43,7 +43,7 @@ namespace RuRay.API.Controllers
         /// The NavigateActivityLog.
         /// </summary>
         /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
-        [HttpPost("")]
+        [HttpPost("ActivityLog")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Page Not Found")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
@@ -56,7 +56,7 @@ namespace RuRay.API.Controllers
         /// The NavigateAdCenter.
         /// </summary>
         /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
-        [HttpPost("")]
+        [HttpPost("AdCenter")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Page Not Found")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
@@ -69,7 +69,7 @@ namespace RuRay.API.Controllers
         /// The NavigateAdPreferences.
         /// </summary>
         /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
-        [HttpPost("")]
+        [HttpPost("AdPreferences")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Page Not Found")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
@@ -82,7 +82,7 @@ namespace RuRay.API.Controllers
         /// The NavigateArchived.
         /// </summary>
         /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
-        [HttpPost("")]
+        [HttpPost("Archived")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Page Not Found")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
@@ -95,7 +95,7 @@ namespace RuRay.API.Controllers
         /// The NavigateCampus.
         /// </summary>
         /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
-        [HttpPost("")]
+        [HttpPost("Campus")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Page Not Found")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
@@ -108,7 +108,7 @@ namespace RuRay.API.Controllers
         /// The NavigateChats.
         /// </summary>
         /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
-        [HttpPost("")]
+        [HttpPost("Chats")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Page Not Found")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
@@ -121,7 +121,7 @@ namespace RuRay.API.Controllers
         /// The NavigateEvents.
         /// </summary>
         /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
-        [HttpPost("")]
+        [HttpPost("Events")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Page Not Found")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
@@ -134,7 +134,7 @@ namespace RuRay.API.Controllers
         /// The NavigateFacebookPay.
         /// </summary>
         /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
-        [HttpPost("")]
+        [HttpPost("FacebookPay")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Page Not Found")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
@@ -147,7 +147,7 @@ namespace RuRay.API.Controllers
         /// The NavigateFriends.
         /// </summary>
         /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
-        [HttpPost("")]
+        [HttpPost("Friends")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Page Not Found")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
@@ -160,7 +160,7 @@ namespace RuRay.API.Controllers
         /// The NavigateFundraisers.
         /// </summary>
         /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
-        [HttpPost("")]
+        [HttpPost("Fundraisers")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Page Not Found")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
@@ -173,7 +173,7 @@ namespace RuRay.API.Controllers
         /// The NavigateGames.
         /// </summary>
         /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
-        [HttpPost("")]
+        [HttpPost("Games")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Page Not Found")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
@@ -186,7 +186,7 @@ namespace RuRay.API.Controllers
         /// The NavigateGroup.
         /// </summary>
         /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
-        [HttpPost("")]
+        [HttpPost("Group")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Page Not Found")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
@@ -199,7 +199,7 @@ namespace RuRay.API.Controllers
         /// The NavigateGroupCall.
         /// </summary>
         /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
-        [HttpPost("")]
+        [HttpPost("GroupCall")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Page Not Found")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
@@ -212,7 +212,7 @@ namespace RuRay.API.Controllers
         /// The NavigateHome.
         /// </summary>
         /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
-        [HttpPost("")]
+        [HttpPost("Home")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Page Not Found")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
@@ -225,7 +225,7 @@ namespace RuRay.API.Controllers
         /// The NavigateJobs.
         /// </summary>
         /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
-        [HttpPost("")]
+        [HttpPost("Jobs")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Page Not Found")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
@@ -238,7 +238,7 @@ namespace RuRay.API.Controllers
         /// The NavigateLiveProducer.
         /// </summary>
         /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
-        [HttpPost("")]
+        [HttpPost("LiveProducer")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Page Not Found")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
@@ -251,7 +251,7 @@ namespace RuRay.API.Controllers
         /// The NavigateMarketplace.
         /// </summary>
         /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
-        [HttpPost("")]
+        [HttpPost("Marketplace")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Page Not Found")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
@@ -264,7 +264,7 @@ namespace RuRay.API.Controllers
         /// The NavigateMemories.
         /// </summary>
         /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
-        [HttpPost("")]
+        [HttpPost("Memories")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Page Not Found")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
@@ -277,7 +277,7 @@ namespace RuRay.API.Controllers
         /// The NavigateMessages.
         /// </summary>
         /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
-        [HttpPost("")]
+        [HttpPost("Messages")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Page Not Found")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
@@ -290,7 +290,7 @@ namespace RuRay.API.Controllers
         /// The NavigateMessengerKids.
         /// </summary>
         /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
-        [HttpPost("")]
+        [HttpPost("MessengerKids")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Page Not Found")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
@@ -303,7 +303,7 @@ namespace RuRay.API.Controllers
         /// The NavigateMovies.
         /// </summary>
         /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
-        [HttpPost("")]
+        [HttpPost("Movies")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Page Not Found")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
@@ -316,7 +316,7 @@ namespace RuRay.API.Controllers
         /// The NavigateNotifications.
         /// </summary>
         /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
-        [HttpPost("")]
+        [HttpPost("Notifications")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Page Not Found")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
@@ -329,7 +329,7 @@ namespace RuRay.API.Controllers
         /// The NavigateOffers.
         /// </summary>
         /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
-        [HttpPost("")]
+        [HttpPost("Offers")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Page Not Found")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
@@ -342,7 +342,7 @@ namespace RuRay.API.Controllers
         /// The NavigatePages.
         /// </summary>
         /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
-        [HttpPost("")]
+        [HttpPost("Pages")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Page Not Found")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
@@ -355,7 +355,7 @@ namespace RuRay.API.Controllers
         /// The NavigatePrivacyCheckup.
         /// </summary>
         /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
-        [HttpPost("")]
+        [HttpPost("PrivacyCheckup")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Page Not Found")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
@@ -368,7 +368,7 @@ namespace RuRay.API.Controllers
         /// The NavigatePromote.
         /// </summary>
         /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
-        [HttpPost("")]
+        [HttpPost("Promote")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Page Not Found")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
@@ -381,7 +381,7 @@ namespace RuRay.API.Controllers
         /// The NavigateSaved.
         /// </summary>
         /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
-        [HttpPost("")]
+        [HttpPost("Saved")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Page Not Found")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
@@ -394,7 +394,7 @@ namespace RuRay.API.Controllers
         /// The NavigateSettings.
         /// </summary>
         /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
-        [HttpPost("")]
+        [HttpPost("Settings")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Page Not Found")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
@@ -407,7 +407,7 @@ namespace RuRay.API.Controllers
         /// The NavigateStories.
         /// </summary>
         /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
-        [HttpPost("")]
+        [HttpPost("Stories")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Page Not Found")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
@@ -420,7 +420,7 @@ namespace RuRay.API.Controllers
         /// The NavigateSupportInbox.
         /// </summary>
         /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
-        [HttpPost("")]
+        [HttpPost("SupportInbox")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Page Not Found")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
@@ -433,7 +433,7 @@ namespace RuRay.API.Controllers
         /// The NavigateTrash.
         /// </summary>
         /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
-        [HttpPost("")]
+        [HttpPost("Trash")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Page Not Found")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
@@ -446,7 +446,7 @@ namespace RuRay.API.Controllers
         /// The NavigateUserTimeline.
         /// </summary>
         /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
-        [HttpPost("")]
+        [HttpPost("UserTimeline")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Page Not Found")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
@@ -459,7 +459,7 @@ namespace RuRay.API.Controllers
         /// The NavigateViewPage.
         /// </summary>
         /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
-        [HttpPost("")]
+        [HttpPost("ViewPage")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Page Not Found")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
@@ -472,7 +472,7 @@ namespace RuRay.API.Controllers
         /// The NavigateWatch.
         /// </summary>
         /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
-        [HttpPost("")]
+        [HttpPost("Watch")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Page Not Found")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
@@ -485,7 +485,7 @@ namespace RuRay.API.Controllers
         /// The NavigateWeather.
         /// </summary>
         /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
-        [HttpPost("")]
+        [HttpPost("Weather")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Page Not Found")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]

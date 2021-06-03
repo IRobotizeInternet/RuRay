@@ -18,7 +18,7 @@ namespace RuRayFacebook.App.LoggedIn.Pages
         /// <summary>
         /// Defines the PostXPath.
         /// </summary>
-        private readonly string PostXPath = string.Empty;
+        private string PostXPath { get; set; }
 
         /// <summary>
         /// Gets the EventTriggerButtonViewPost.

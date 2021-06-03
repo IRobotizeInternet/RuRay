@@ -213,7 +213,7 @@ namespace RuRay.BLL.Services.Keyboard
         /// <param name="cbSize">The cbSize<see cref="int"/>.</param>
         /// <returns>The <see cref="uint"/>.</returns>
         [DllImport("user32.dll")]
-        internal extern static uint SendInput(uint nInputs, INPUT[] pInputs, int cbSize);
+        private extern static uint SendInput(uint nInputs, INPUT[] pInputs, int cbSize);
 
         /// <summary>
         /// The LeftClickAtPoint.
