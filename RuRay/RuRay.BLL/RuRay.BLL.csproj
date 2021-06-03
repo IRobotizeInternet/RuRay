@@ -5,6 +5,57 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="App\LoggedIn\Pages\FacebookPay\MenuItemsYourEvent.cs" />
+    <Compile Remove="App\LoggedIn\Pages\FacebookPay\PageCampus.cs" />
+    <Compile Remove="App\LoggedIn\Pages\FacebookPay\PageChats.cs" />
+    <Compile Remove="App\LoggedIn\Pages\FacebookPay\PageCreateEvent.cs" />
+    <Compile Remove="App\LoggedIn\Pages\FacebookPay\PageEvents.cs" />
+    <Compile Remove="App\LoggedIn\Pages\FacebookPay\PageFacebookPay - Copy.cs" />
+    <Compile Remove="App\LoggedIn\Pages\GroupCall\FeedGaming.cs" />
+    <Compile Remove="App\LoggedIn\Pages\GroupCall\FeedGroups.cs" />
+    <Compile Remove="App\LoggedIn\Pages\GroupCall\MenuItemsFriends.cs" />
+    <Compile Remove="App\LoggedIn\Pages\GroupCall\MenuItemsFundraisers.cs" />
+    <Compile Remove="App\LoggedIn\Pages\GroupCall\MenuItemsGaming.cs" />
+    <Compile Remove="App\LoggedIn\Pages\Marketplace\GridMarketPlace\Apparel\FilterShoes\ApparelFilter.cs" />
+    <Compile Remove="App\LoggedIn\Pages\Marketplace\GridMarketPlace\Apparel\FilterShoes\BabyClothingFilter.cs" />
+    <Compile Remove="App\LoggedIn\Pages\Marketplace\GridMarketPlace\Apparel\FilterShoes\BagsAndLuggageFilter.cs" />
+    <Compile Remove="App\LoggedIn\Pages\Marketplace\GridMarketPlace\Apparel\FilterShoes\CreatePost.cs" />
+    <Compile Remove="App\LoggedIn\Pages\Marketplace\GridMarketPlace\Apparel\FilterShoes\CreateRoom.cs" />
+    <Compile Remove="App\LoggedIn\Pages\Marketplace\GridMarketPlace\Apparel\FilterShoes\EditorHome.cs" />
+    <Compile Remove="App\LoggedIn\Pages\Marketplace\GridMarketPlace\Apparel\FilterShoes\EnumRoomName.cs" />
+    <Compile Remove="App\LoggedIn\Pages\Marketplace\GridMarketPlace\Apparel\FilterShoes\FeedContainerCreateNewListing.cs" />
+    <Compile Remove="App\LoggedIn\Pages\Marketplace\GridMarketPlace\Apparel\FilterShoes\FeedHome.cs" />
+    <Compile Remove="App\LoggedIn\Pages\Marketplace\GridMarketPlace\Apparel\FilterShoes\FeedLiveProducer.cs" />
+    <Compile Remove="App\LoggedIn\Pages\Marketplace\GridMarketPlace\Apparel\FilterShoes\FeedScheduleLiveVideoEvent.cs" />
+    <Compile Remove="App\LoggedIn\Pages\Marketplace\GridMarketPlace\Apparel\FilterShoes\FeedUpcomingLiveVideosAndEvents.cs" />
+    <Compile Remove="App\LoggedIn\Pages\Marketplace\GridMarketPlace\Apparel\FilterShoes\HalloweenAndKidsCostumesFilter.cs" />
+    <Compile Remove="App\LoggedIn\Pages\Marketplace\GridMarketPlace\Apparel\FilterShoes\Header.cs" />
+    <Compile Remove="App\LoggedIn\Pages\Marketplace\GridMarketPlace\Apparel\FilterShoes\HeaderLeftMenu.cs" />
+    <Compile Remove="App\LoggedIn\Pages\Marketplace\GridMarketPlace\Apparel\FilterShoes\HeaderMiddleMenu.cs" />
+    <Compile Remove="App\LoggedIn\Pages\Marketplace\GridMarketPlace\Apparel\FilterShoes\HeaderRightMenu.cs" />
+    <Compile Remove="App\LoggedIn\Pages\Marketplace\GridMarketPlace\Apparel\FilterShoes\IApparelFilter.cs" />
+    <Compile Remove="App\LoggedIn\Pages\Marketplace\GridMarketPlace\Apparel\FilterShoes\IApparelFilterOptions.cs" />
+    <Compile Remove="App\LoggedIn\Pages\Marketplace\GridMarketPlace\Apparel\FilterShoes\IApparelOptions.cs" />
+    <Compile Remove="App\LoggedIn\Pages\Marketplace\GridMarketPlace\Apparel\FilterShoes\IBabyClothingFilter.cs" />
+    <Compile Remove="App\LoggedIn\Pages\Marketplace\GridMarketPlace\Apparel\FilterShoes\IBabyClothingFilterOptions.cs" />
+    <Compile Remove="App\LoggedIn\Pages\Marketplace\GridMarketPlace\Apparel\FilterShoes\IBabyClothingOptions.cs" />
+    <Compile Remove="App\LoggedIn\Pages\Marketplace\GridMarketPlace\Apparel\FilterShoes\IBagsAndLuggageFilter.cs" />
+    <Compile Remove="App\LoggedIn\Pages\Marketplace\GridMarketPlace\Apparel\FilterShoes\IBagsAndLuggageFilterOptions.cs" />
+    <Compile Remove="App\LoggedIn\Pages\Marketplace\GridMarketPlace\Apparel\FilterShoes\IBagsAndLuggageOptions.cs" />
+    <Compile Remove="App\LoggedIn\Pages\Marketplace\GridMarketPlace\Apparel\FilterShoes\IHalloweenAndKidsCostumesFilter.cs" />
+    <Compile Remove="App\LoggedIn\Pages\Marketplace\GridMarketPlace\Apparel\FilterShoes\IHalloweenAndKidsCostumesFilterOptions.cs" />
+    <Compile Remove="App\LoggedIn\Pages\Marketplace\GridMarketPlace\Apparel\FilterShoes\IHalloweenAndKidsCostumesOptions.cs" />
+    <Compile Remove="App\LoggedIn\Pages\Marketplace\GridMarketPlace\Apparel\FilterShoes\IJewelryAndAccessoriesFilter.cs" />
+    <Compile Remove="App\LoggedIn\Pages\Marketplace\GridMarketPlace\Apparel\FilterShoes\IJewelryAndAccessoriesFilterOptions.cs" />
+    <Compile Remove="App\LoggedIn\Pages\Marketplace\GridMarketPlace\Apparel\FilterShoes\IJewelryAndAccessoriesOptions.cs" />
+    <Compile Remove="App\LoggedIn\Pages\Marketplace\GridMarketPlace\Apparel\FilterShoes\IKidsClothingFilter.cs" />
+    <Compile Remove="App\LoggedIn\Pages\Marketplace\GridMarketPlace\Apparel\FilterShoes\IKidsClothingFilterOptions.cs" />
+    <Compile Remove="App\LoggedIn\Pages\Marketplace\GridMarketPlace\Apparel\FilterShoes\IKidsClothingOptions.cs" />
+    <Compile Remove="App\LoggedIn\Pages\Marketplace\GridMarketPlace\Apparel\FilterShoes\IMensFilter.cs" />
+    <Compile Remove="App\LoggedIn\Pages\Marketplace\GridMarketPlace\Apparel\FilterShoes\IMensFilterOptions.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="AutoMapper" Version="9.0.0" />
     <PackageReference Include="Enums.NET" Version="4.0.0" />
     <PackageReference Include="Microsoft.AspNet.WebApi.Client" Version="5.2.7" />
