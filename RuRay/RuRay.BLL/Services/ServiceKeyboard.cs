@@ -1,4 +1,5 @@
-﻿using System.Configuration;
+﻿using System;
+using System.Configuration;
 using System.Threading.Tasks;
 using EnumsNET;
 using RuRay.BLL.Contracts;
@@ -32,9 +33,13 @@ namespace RuRay.BLL.Services
             // TODO: Make this values avaliable in buffer for quick access.
             // This is where we keep the coordinates, so web api's can read from.
             AppSettings.EnvironmentSettingsFile = ConfigurationManager.AppSettings[nameof(AppSettings.EnvironmentSettingsFile)];
-            var coordinate = EnvironmentSettings.SettingsData().Details.ScreenCoordinates[coordinateIndex];
 
-            ServiceTask.RunScript(clickerScript, $"{coordinate.X} {coordinate.Y}");
+            if (!EnvironmentSettings.SettingsData().Details.ScreenCoordinates.TryGetValue(coordinateIndex, out var coordinates))
+            {
+                throw new ApplicationException($"Provided coordinate index: {coordinateIndex} is invalid.");
+            }
+
+            ServiceTask.RunScript(clickerScript, $"{coordinates.X} {coordinates.Y}");
 
             return Task.FromResult(true);
         }
