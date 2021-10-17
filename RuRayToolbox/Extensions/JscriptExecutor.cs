@@ -149,7 +149,7 @@ namespace RuRayToolbox.Extensions
 
                 for (var i = 0; i < Math.Abs(scrollingLengthYAxis); i++)
                 {
-                    driver.ExecuteScript(string.Format(jScript, 0, i)); /*scroll along x-axis*/
+                    driver.ExecuteScript(string.Format(jScript, 0, i)); /*scroll along y-axis*/
                 }
             });
         }
