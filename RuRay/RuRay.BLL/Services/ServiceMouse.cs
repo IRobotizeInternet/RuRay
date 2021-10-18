@@ -271,6 +271,7 @@ namespace RuRay.BLL.Services.Keyboard
             ServiceTask.RunScript(serviceName, Path.Combine(EnvironmentSettings.DirectoryPath, AppSettings.PowerShellOutputFile));
             var details = EnvironmentSettings.SettingsData(AppSettings.PowerShellOutputFile).Details;
 
+            if (details == null) throw new ApplicationException("Grid might have been not initialized");
             INPUT[] input = new INPUT[3];
             input[0].mi.dx = Coordinates[index].X * (65535 / ScreenScale.Width);
             input[0].mi.dy = Coordinates[index].Y * (65535 / ScreenScale.Height);

@@ -16,12 +16,12 @@ namespace RuRay.BLL.Services
         /// <summary>
         /// Defines the keyStrokesScript.
         /// </summary>
-        public static string keyStrokesScript = "PS1\\KeyPress";
+        public static string keyStrokesScript = "PS1\\KeyPress.ps1";
 
         /// <summary>
         /// Defines the clickerScript.
         /// </summary>
-        public static string clickerScript = "PS1\\Clicker";
+        public static string clickerScript = "PS1\\Clicker.ps1";
 
         /// <summary>
         /// Left click on the specified location.

@@ -38,13 +38,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <None Include="..\..\packages\Selenium.WebDriver.ChromeDriver.89.0.4389.2300\driver\win32\chromedriver.exe" Link="chromedriver.exe">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
     <None Include="app.config" />
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="chromedriver.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="PS1\Clicker.ps1">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

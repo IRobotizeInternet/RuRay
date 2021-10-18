@@ -45,7 +45,7 @@ namespace RuRay.API.Controllers
         /// </summary>
         /// <param name="index">The index<see cref="int"/>.</param>
         /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
-        [HttpPost("action_scroll_up")]
+        [HttpPost("LeftClick/{index}")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Unsupported right click index")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
