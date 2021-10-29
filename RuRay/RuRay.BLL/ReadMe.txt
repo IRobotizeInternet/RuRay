@@ -4,7 +4,7 @@
 To ensure that automated web application testing in Google Chrome runs properly, please set command shown below.**
 
 * Close all chrome browsers if any opened, and terminate all running Chrome-related background processes from task manager.
-* [This is not automatically done through bash script] Right-click the Chrome icon on the desktop, and click Properties.
+* [This is now automatically done through bash script] Right-click the Chrome icon on the desktop, and click Properties.
 On the Shortcut tab in the Google Chrome Properties window, edit the contents of the Target text box. 
 Append a white space to the existing command, followed by the following flags: 
 –remote-debugging-port=9222 –no-first-run –disable-web-security –allow-file-access-from-file –enable-views-textfield –force-renderer-accessibility.
