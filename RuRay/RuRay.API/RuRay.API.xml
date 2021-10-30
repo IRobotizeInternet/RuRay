@@ -4,65 +4,6 @@
         <name>RuRay.API</name>
     </assembly>
     <members>
-        <member name="T:RuRay.API.Controllers.CarsController">
-            <summary>
-            Defines the <see cref="T:RuRay.API.Controllers.CarsController" />.
-            </summary>
-        </member>
-        <member name="F:RuRay.API.Controllers.CarsController._mapper">
-            <summary>
-            Defines the _mapper.
-            </summary>
-        </member>
-        <member name="F:RuRay.API.Controllers.CarsController._carsService">
-            <summary>
-            Defines the _carsService.
-            </summary>
-        </member>
-        <member name="M:RuRay.API.Controllers.CarsController.#ctor(AutoMapper.IMapper,RuRay.BLL.Contracts.ICarsService)">
-            <summary>
-            Initializes a new instance of the <see cref="T:RuRay.API.Controllers.CarsController"/> class.
-            </summary>
-            <param name="mapper">.</param>
-            <param name="carsService">.</param>
-        </member>
-        <member name="M:RuRay.API.Controllers.CarsController.CreateCarAsync(RuRay.API.Models.Car)">
-            <summary>
-            Create a new car.
-            </summary>
-            <param name="car">.</param>
-            <returns>Returns created car.</returns>
-        </member>
-        <member name="M:RuRay.API.Controllers.CarsController.GetCarAsync(System.Guid)">
-            <summary>
-            Get car by id.
-            </summary>
-            <param name="id">Car Id.</param>
-            <returns>Returns finded car.</returns>
-        </member>
-        <member name="M:RuRay.API.Controllers.CarsController.UpdateCarAsync(System.Guid,RuRay.API.Models.Car)">
-            <summary>
-            Update existing car.
-            </summary>
-            <param name="id">Car id.</param>
-            <param name="car">Car parameters.</param>
-            <returns>.</returns>
-        </member>
-        <member name="M:RuRay.API.Controllers.CarsController.DeleteCarAsync(System.Guid)">
-            <summary>
-            Delete car.
-            </summary>
-            <param name="id">Car id.</param>
-            <returns>.</returns>
-        </member>
-        <member name="M:RuRay.API.Controllers.CarsController.GetCarsListAsync(System.Int32,System.Int32)">
-            <summary>
-            Get cars list.
-            </summary>
-            <param name="pageNumber">Page number.</param>
-            <param name="pageSize">Page size.</param>
-            <returns>.</returns>
-        </member>
         <member name="T:RuRay.API.Controllers.HomeHeaderController">
             <summary>
             Defines the <see cref="T:RuRay.API.Controllers.HomeHeaderController" />.
@@ -409,41 +350,6 @@
             </summary>
             <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
         </member>
-        <member name="T:RuRay.API.Controllers.TodoController">
-            <summary>
-            Defines the <see cref="T:RuRay.API.Controllers.TodoController" />.
-            </summary>
-        </member>
-        <member name="F:RuRay.API.Controllers.TodoController._mapper">
-            <summary>
-            Defines the _mapper.
-            </summary>
-        </member>
-        <member name="F:RuRay.API.Controllers.TodoController._todosMockService">
-            <summary>
-            Defines the _todosMockService.
-            </summary>
-        </member>
-        <member name="M:RuRay.API.Controllers.TodoController.#ctor(AutoMapper.IMapper,RuRay.BLL.TodosMockProxyService)">
-            <summary>
-            Initializes a new instance of the <see cref="T:RuRay.API.Controllers.TodoController"/> class.
-            </summary>
-            <param name="mapper">.</param>
-            <param name="todosMockService">.</param>
-        </member>
-        <member name="M:RuRay.API.Controllers.TodoController.GetTodoById(System.Int32)">
-            <summary>
-            Get todo by id.
-            </summary>
-            <param name="id">Todo id.</param>
-            <returns>.</returns>
-        </member>
-        <member name="M:RuRay.API.Controllers.TodoController.GetTodos">
-            <summary>
-            Get todos list from remote mock api.
-            </summary>
-            <returns>.</returns>
-        </member>
         <member name="T:RuRay.API.Controllers.TokenController">
             <summary>
             Defines the <see cref="T:RuRay.API.Controllers.TokenController" />.
@@ -473,34 +379,27 @@
             <param name="token">Token for validation.</param>
             <returns>Token validation status.</returns>
         </member>
-        <member name="T:RuRay.API.Controllers.CarsV0Controller">
+        <member name="T:RuRay.API.Controllers.V0HomeHeaderController">
             <summary>
-            Defines the <see cref="T:RuRay.API.Controllers.CarsV0Controller" />.
+            Defines the <see cref="T:RuRay.API.Controllers.V0HomeHeaderController" />.
             </summary>
         </member>
-        <member name="F:RuRay.API.Controllers.CarsV0Controller._mapper">
+        <member name="F:RuRay.API.Controllers.V0HomeHeaderController._mapper">
             <summary>
             Defines the _mapper.
             </summary>
         </member>
-        <member name="F:RuRay.API.Controllers.CarsV0Controller._carsService">
+        <member name="F:RuRay.API.Controllers.V0HomeHeaderController._serviceHomeHeader">
             <summary>
-            Defines the _carsService.
+            Defines the _serviceHomeHeader.
             </summary>
         </member>
-        <member name="M:RuRay.API.Controllers.CarsV0Controller.#ctor(AutoMapper.IMapper,RuRay.BLL.Contracts.ICarsService)">
+        <member name="M:RuRay.API.Controllers.V0HomeHeaderController.#ctor(AutoMapper.IMapper,RuRay.BLL.Contracts.IServiceHomeHeader)">
             <summary>
-            Initializes a new instance of the <see cref="T:RuRay.API.Controllers.CarsV0Controller"/> class.
+            Initializes a new instance of the <see cref="T:RuRay.API.Controllers.V0HomeHeaderController"/> class.
             </summary>
-            <param name="mapper">The mapper<see cref="T:AutoMapper.IMapper"/>.</param>
-            <param name="carsService">The carsService<see cref="T:RuRay.BLL.Contracts.ICarsService"/>.</param>
-        </member>
-        <member name="M:RuRay.API.Controllers.CarsV0Controller.GetCarsV0ListAsync(System.Int32)">
-            <summary>
-            Get cars list.
-            </summary>
-            <param name="limit">Items count.</param>
-            <returns>.</returns>
+            <param name="mapper">.</param>
+            <param name="serviceHomeHeader">.</param>
         </member>
         <member name="T:RuRay.API.Controllers.WebhookController">
             <summary>
@@ -573,26 +472,6 @@
             </summary>
             <param name="gridVisibility">.</param>
             <returns>.</returns>
-        </member>
-        <member name="T:RuRay.API.Mappings.CarsViewMappings">
-            <summary>
-            Defines the <see cref="T:RuRay.API.Mappings.CarsViewMappings" />.
-            </summary>
-        </member>
-        <member name="M:RuRay.API.Mappings.CarsViewMappings.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:RuRay.API.Mappings.CarsViewMappings"/> class.
-            </summary>
-        </member>
-        <member name="T:RuRay.API.Mappings.TodoViewMappings">
-            <summary>
-            Defines the <see cref="T:RuRay.API.Mappings.TodoViewMappings" />.
-            </summary>
-        </member>
-        <member name="M:RuRay.API.Mappings.TodoViewMappings.#ctor">
-            <summary>
-            Initializes a new instance of the <see cref="T:RuRay.API.Mappings.TodoViewMappings"/> class.
-            </summary>
         </member>
         <member name="T:RuRay.API.Middleware.HttpContextMiddleware">
             <summary>
@@ -672,89 +551,6 @@
             Gets or sets the AllowedOrigins.
             </summary>
         </member>
-        <member name="T:RuRay.API.Models.Car">
-            <summary>
-            Car type.
-            </summary>
-        </member>
-        <member name="P:RuRay.API.Models.Car.Id">
-            <summary>
-            Gets or sets the Id
-            Car id.
-            </summary>
-        </member>
-        <member name="P:RuRay.API.Models.Car.ModelName">
-            <summary>
-            Gets or sets the ModelName
-            Car model name.
-            </summary>
-        </member>
-        <member name="P:RuRay.API.Models.Car.CarType">
-            <summary>
-            Gets or sets the CarType
-            Car type.
-            </summary>
-        </member>
-        <member name="P:RuRay.API.Models.Car.CreatedOn">
-            <summary>
-            Gets or sets the CreatedOn
-            CreatedOn.
-            </summary>
-        </member>
-        <member name="P:RuRay.API.Models.Car.ModifiedOn">
-            <summary>
-            Gets or sets the ModifiedOn
-            ModifiedOn.
-            </summary>
-        </member>
-        <member name="T:RuRay.API.Models.CarType">
-            <summary>
-            Car type
-            </summary>
-        </member>
-        <member name="F:RuRay.API.Models.CarType.Hatchback">
-            <summary>
-            Hatchback
-            </summary>
-        </member>
-        <member name="F:RuRay.API.Models.CarType.Sedan">
-            <summary>
-            Sedan
-            </summary>
-        </member>
-        <member name="F:RuRay.API.Models.CarType.SUV">
-            <summary>
-            SUV
-            </summary>
-        </member>
-        <member name="F:RuRay.API.Models.CarType.Coupe">
-            <summary>
-            Coupe
-            </summary>
-        </member>
-        <member name="T:RuRay.API.Models.Todo">
-            <summary>
-            Todo item.
-            </summary>
-        </member>
-        <member name="P:RuRay.API.Models.Todo.Id">
-            <summary>
-            Gets or sets the Id
-            Todo id.
-            </summary>
-        </member>
-        <member name="P:RuRay.API.Models.Todo.Title">
-            <summary>
-            Gets or sets the Title
-            Todo title.
-            </summary>
-        </member>
-        <member name="P:RuRay.API.Models.Todo.Completed">
-            <summary>
-            Gets or sets a value indicating whether Completed
-            Todo status.
-            </summary>
-        </member>
         <member name="T:RuRay.API.Program">
             <summary>
             Defines the <see cref="T:RuRay.API.Program" />.
@@ -808,17 +604,6 @@
             The GetXmlDataAnnotationFilePath.
             </summary>
             <returns>The <see cref="T:System.String"/>.</returns>
-        </member>
-        <member name="T:RuRay.API.Swagger.CarModelExample">
-            <summary>
-            Defines the <see cref="T:RuRay.API.Swagger.CarModelExample" />.
-            </summary>
-        </member>
-        <member name="M:RuRay.API.Swagger.CarModelExample.GetExamples">
-            <summary>
-            The GetExamples.
-            </summary>
-            <returns>The <see cref="T:RuRay.API.Models.Car"/>.</returns>
         </member>
         <member name="T:RuRay.API.Swagger.ConfigureSwaggerOptions">
             <summary>

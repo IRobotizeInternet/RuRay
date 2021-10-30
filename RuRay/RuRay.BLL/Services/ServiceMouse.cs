@@ -268,7 +268,7 @@ namespace RuRay.BLL.Services.Keyboard
         {
             const string serviceName = "PS1\\CursorPostion.ps1";
             AppSettings.PowerShellOutputFile = ConfigurationManager.AppSettings[nameof(AppSettings.PowerShellOutputFile)];
-            ServiceTask.RunScript(serviceName, Path.Combine(EnvironmentSettings.DirectoryPath, AppSettings.PowerShellOutputFile));
+            ServiceTask.RunScript(serviceName, args: Path.Combine(EnvironmentSettings.DirectoryPath, AppSettings.PowerShellOutputFile));
             var details = EnvironmentSettings.SettingsData(AppSettings.PowerShellOutputFile).Details;
 
             if (details == null) throw new ApplicationException("Grid might have been not initialized");

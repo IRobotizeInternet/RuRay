@@ -39,7 +39,7 @@ namespace RuRay.BLL.Services
                 throw new ApplicationException($"Provided coordinate index: {coordinateIndex} is invalid.");
             }
 
-            ServiceTask.RunScript(clickerScript, $"{coordinates.X} {coordinates.Y}");
+            ServiceTask.RunScript(clickerScript, args: $"{coordinates.X} {coordinates.Y}");
 
             return Task.FromResult(true);
         }
@@ -51,7 +51,7 @@ namespace RuRay.BLL.Services
         /// <returns>The <see cref="Task{bool}"/>.</returns>
         public Task<bool> SendKey(KeyStrokes sendKeys)
         {
-            ServiceTask.RunScript(keyStrokesScript, sendKeys.AsString(EnumFormat.Description));
+            ServiceTask.RunScript(keyStrokesScript, args: sendKeys.AsString(EnumFormat.Description));
             return Task.FromResult(true);
         }
     }

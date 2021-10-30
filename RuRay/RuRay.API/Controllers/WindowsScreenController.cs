@@ -49,8 +49,8 @@ namespace RuRay.API.Controllers
         /// <param name="gridVisibility">.</param>
         /// <returns>.</returns>
         [HttpPost("{gridVisibility}")]
-        [SwaggerResponseExample((int)HttpStatusCode.Created, typeof(CarModelExample))]
-        [SwaggerResponse((int)HttpStatusCode.Created, Type = typeof(Car), Description = "Returns created car")]
+        //[SwaggerResponseExample((int)HttpStatusCode.Created, typeof(CarModelExample))]
+        //[SwaggerResponse((int)HttpStatusCode.Created, Type = typeof(Car), Description = "Returns created car")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
         public async Task<IActionResult> WindowGrid([FromRoute] GridVisibility gridVisibility)
         {

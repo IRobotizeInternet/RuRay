@@ -36,7 +36,7 @@ namespace RuRayFacebook.Services
 
             var existingChromePIds = Process.GetProcessesByName("chrome").Select(x => x.Id);
 
-            ServiceTask.RunScript(shortcutAddress);
+            ServiceTask.RunScript(shortcutAddress, copyToAppFolder: false);
 
             var processes = Process.GetProcessesByName("chrome").Where(x => !existingChromePIds.Contains(x.Id));
             if (processes.Any())

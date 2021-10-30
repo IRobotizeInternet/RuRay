@@ -34,6 +34,7 @@
 
   <ItemGroup>
     <Folder Include="Logs\" />
+    <Folder Include="Mappings\" />
     <Folder Include="Properties\PublishProfiles\" />
   </ItemGroup>
 
@@ -42,10 +43,16 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Update="ChangeTarget.ps1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="chromedriver.exe">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="PS1\Clicker.ps1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="PS1\CreateBox.ps1">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="PS1\CursorPostion.ps1">
@@ -53,6 +60,15 @@
     </None>
     <None Update="PS1\CursorPostions.ps1">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="PS1\Dragger.ps1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="PS1\KeyPress.ps1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="PS1\MoveCursor.ps1">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
 

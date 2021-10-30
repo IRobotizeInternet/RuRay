@@ -26,18 +26,18 @@ namespace RuRay.BLL.Services
         /// <returns>The <see cref="Task{bool}"/>.</returns>
         public Task<bool> WindowGrid(GridVisibility gridVisibility)
         {
-            const string serviceName = "WindowGrid";
+            const string serviceName = "WindowGrid.exe";
             if (gridVisibility == GridVisibility.OFF)
             {
-                ServiceTask.CloseTask(serviceName);
+                ServiceTask.CloseTask(serviceName.Substring(0, serviceName.Length-4));
             }
             else
             {
-                ServiceTask.RunScript(serviceName, copyToAppFolder: false);
+                ServiceTask.RunScript(serviceName, runFromBinFolder: true, copyToAppFolder: false);
             }
 
             // set the previously open window to focused.
-            ServiceTask.RunScript(ServiceKeyboard.keyStrokesScript, "{%{TAB}}");
+            ServiceTask.RunScript(ServiceKeyboard.keyStrokesScript, args: "{%{TAB}}");
 
             return Task.FromResult(true);
         }
