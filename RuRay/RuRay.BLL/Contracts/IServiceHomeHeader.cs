@@ -11,13 +11,13 @@ namespace RuRay.BLL.Contracts
         /// Homepage Scroll Down.
         /// </summary>
         /// <returns>.</returns>
-        Task<bool> HomePageScrollDown();
+        Task<bool> ScrollDown();
 
         /// <summary>
         /// Homepage Scroll Up
-        ///// </summary>
-        ///// <returns></returns>
-        //Task<bool> HomePageScrollUp();
+        /// </summary>
+        /// <returns></returns>
+        Task<bool> ScrollUp();
 
         /// <summary>
         /// Change Facebook visual mode.

@@ -13,7 +13,7 @@ namespace RuRay.BLL
         /// The HomePageScrollDown.
         /// </summary>
         /// <returns>The <see cref="Task{bool}"/>.</returns>
-        public Task<bool> HomePageScrollDown()
+        public Task<bool> ScrollDown()
         {
             var pageHome = new PageHome();
             //var dialog = pageHome.Header.RightMenu.EventTriggerButtonAccount.Click();
@@ -48,10 +48,10 @@ namespace RuRay.BLL
         }
 
         /// <summary>
-        /// The HomePageScrollUp.
+        /// Scroll Up.
         /// </summary>
         /// <returns>The <see cref="Task{bool}"/>.</returns>
-        public Task<bool> HomePageScrollUp()
+        public Task<bool> ScrollUp()
         {
             var pageHome = new PageHome();
             pageHome.Feed.FeedScroll.ScrollUpMore();

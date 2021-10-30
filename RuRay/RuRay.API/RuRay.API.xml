@@ -26,9 +26,15 @@
             <param name="mapper">.</param>
             <param name="serviceHomeHeader">.</param>
         </member>
-        <member name="M:RuRay.API.Controllers.HomeHeaderController.HomePageScrollDown">
+        <member name="M:RuRay.API.Controllers.HomeHeaderController.ScrollDown">
             <summary>
-            Homepage scroll down.
+            Scroll down.
+            </summary>
+            <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="M:RuRay.API.Controllers.HomeHeaderController.ScrollUp">
+            <summary>
+            Scroll up.
             </summary>
             <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
         </member>
@@ -349,6 +355,28 @@
             The NavigateWeather.
             </summary>
             <returns>The <see cref="T:System.Threading.Tasks.Task`1"/>.</returns>
+        </member>
+        <member name="T:RuRay.API.Controllers.Pages.HomePageController">
+            <summary>
+            Defines the <see cref="T:RuRay.API.Controllers.Pages.HomePageController" />.
+            </summary>
+        </member>
+        <member name="F:RuRay.API.Controllers.Pages.HomePageController._mapper">
+            <summary>
+            Defines the _mapper.
+            </summary>
+        </member>
+        <member name="F:RuRay.API.Controllers.Pages.HomePageController._serviceHomePage">
+            <summary>
+            Defines the _serviceHomePage.
+            </summary>
+        </member>
+        <member name="M:RuRay.API.Controllers.Pages.HomePageController.#ctor(AutoMapper.IMapper,RuRay.BLL.Contracts.IServiceHomePage)">
+            <summary>
+            Initializes a new instance of the <see cref="T:RuRay.API.Controllers.Pages.HomePageController"/> class.
+            </summary>
+            <param name="mapper">.</param>
+            <param name="serviceHomePage">.</param>
         </member>
         <member name="T:RuRay.API.Controllers.TokenController">
             <summary>

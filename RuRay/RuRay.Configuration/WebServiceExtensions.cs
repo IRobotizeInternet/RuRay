@@ -57,10 +57,8 @@ namespace Microsoft.Extensions.DependencyInjection
                 opt.CarsDbConnectionString = DALOptionSection.GetValue<string>("CarsDbConnectionString");
             });
 
-            services.TryAddSingleton<ICarsRepository, CarsRepository>();
-
-            services.TryAddScoped<ICarsService, CarsService>();
             services.TryAddScoped<IServiceHomeHeader, ServiceHomeHeader>();
+            services.TryAddScoped<IServiceHomePage, ServiceHomePage>();
             services.TryAddScoped<IServiceWindowsScreen, ServiceWindowsScreen>();
             services.TryAddScoped<IJwtTokenService, JwtTokenService>();
             services.TryAddScoped<IServiceKeyboard, ServiceKeyboard>();

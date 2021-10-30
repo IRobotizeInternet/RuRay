@@ -42,16 +42,30 @@ namespace RuRay.API.Controllers
         }
 
         /// <summary>
-        /// Homepage scroll down.
+        /// Scroll down.
         /// </summary>
         /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
-        [HttpPost("")]
+        [HttpPost("ScrollDown")]
         [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
         [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Unsupported visual action")]
         [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
-        public async Task<IActionResult> HomePageScrollDown()
+        public async Task<IActionResult> ScrollDown()
         {
-            await _serviceHomeHeader.HomePageScrollDown();
+            await _serviceHomeHeader.ScrollDown();
+            return Ok();
+        }
+
+        /// <summary>
+        /// Scroll up.
+        /// </summary>
+        /// <returns>The <see cref="Task{IActionResult}"/>.</returns>
+        [HttpPost("ScrollUp")]
+        [SwaggerResponse((int)HttpStatusCode.OK, Description = "Returns 200")]
+        [SwaggerResponse((int)HttpStatusCode.BadRequest, Description = "Unsupported visual action")]
+        [SwaggerResponse((int)HttpStatusCode.InternalServerError, Description = "Unexpected error")]
+        public async Task<IActionResult> ScrollUp()
+        {
+            await _serviceHomeHeader.ScrollUp();
             return Ok();
         }
 
