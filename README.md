@@ -1,7 +1,7 @@
 # What is RuRay
 * Control Facebook actions (Navigation, click, posting and everything else) through voice commands.
 * Design to support with multiple languages of Facebook.
-* Add custom macros to automate certain task through voice command.
+* Add custom macros to automate certain tasks through voice command.
 * All the services are designed in small managable micro services (Toolbox, Business Logic, Rest API, Automated text conversation using RASA, Voice to text using Google)
 
 ![RuRay](https://user-images.githubusercontent.com/83523058/126584597-1935350a-e52f-4cd0-b38d-7737083f0213.png)
@@ -39,4 +39,8 @@ Using UI text is bit tricky when identifying the elements when language changes 
 It listens to the api requrests from [RuRay.API](https://github.com/IRobotizeInternet/RuRay/tree/master/RuRay/RuRay.API) and uses the [Facebook UI mapping](https://github.com/IRobotizeInternet/RuRay/tree/master/RuRay/RuRay.BLL/App) to execute the actions, such as adding a new post, Display & Accessibility setting change or anything that user can do through Facebook UI.  
 
 ### [RuRay.API](https://github.com/IRobotizeInternet/RuRay/tree/master/RuRay/RuRay.API)
-This contains consumable public apis that run code on the servier for each request. These servies are used by [RASA](www.rasa.com) when user request certain action in natural language. Swagger is used describing RESTful APIs
+This contains consumable public apis that run code on the servier for each request. These servies are used by [RASA](www.rasa.com) when user request certain action in natural language. Swagger is used describing RESTful APIs ![image](https://user-images.githubusercontent.com/83523058/139604809-3b89a5f2-2e80-4ff7-bec7-3b8ad4cc7a82.png)
+
+### [WindowGrid](https://github.com/IRobotizeInternet/RuRay/tree/master/WindowGrid) 
+This is a windows desktop application which is helpful when user need to click on certain location of the screen, they can request to show/hide grid. The grid appear with indexes, where user can command to click on a given index. This can be tested in through API as shown below.
+
