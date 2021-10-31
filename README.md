@@ -22,8 +22,9 @@ The base class [BaseDOMObject.cs](https://github.com/IRobotizeInternet/RuRay/blo
 ## 2. [RuRay.BLL (Core)](https://github.com/IRobotizeInternet/RuRay/tree/master/RuRay/RuRay.BLL)
 Business logic layer contains two parts 
 
-  I. Facebook UI mapping (Pages, dialogs, popups, etc). 
-  II. API serives backend. 
+  i. Facebook UI mapping (Pages, dialogs, popups, etc). 
+  
+  ii. API serives backend. 
   
  ### i. [Facebook UI mapping](https://github.com/IRobotizeInternet/RuRay/tree/master/RuRay/RuRay.BLL/App)
 The entire facebook website (excluding some pages) have been mapped using [Meet Me In the Middle](https://github.com/IRobotizeInternet/Meet-me-In-the-Middle) methodology. Which means all the pages are broken down in to managable sections and then coded distributed in multiple classes in a more object oriented way. Mapping is done through UI text, since Facebook encrypt all possible DOM identifiers. So I decided to use UI text to identify each element while mapping the website.
