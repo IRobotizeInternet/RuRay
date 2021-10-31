@@ -22,7 +22,7 @@ The base class [BaseDOMObject.cs](https://github.com/IRobotizeInternet/RuRay/blo
 ## 2. [RuRay.BLL (Core)](https://github.com/IRobotizeInternet/RuRay/tree/master/RuRay/RuRay.BLL)
 Business logic layer contains two parts 
 
-  i. Facebook UI mapping (Pages, dialogs, popups, etc). 
+  i. Facebook UI mapping (Pages, dialogs, popups, etc).                                                                                                    
   ii. API serives backend. 
   
  ### i. [Facebook UI mapping](https://github.com/IRobotizeInternet/RuRay/tree/master/RuRay/RuRay.BLL/App)
