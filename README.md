@@ -23,7 +23,6 @@ The base class [BaseDOMObject.cs](https://github.com/IRobotizeInternet/RuRay/blo
 Business logic layer contains two parts 
 
   i. Facebook UI mapping (Pages, dialogs, popups, etc). 
-  
   ii. API serives backend. 
   
  ### i. [Facebook UI mapping](https://github.com/IRobotizeInternet/RuRay/tree/master/RuRay/RuRay.BLL/App)
@@ -32,5 +31,5 @@ The entire facebook website (excluding some pages) have been mapped using [Meet 
 
 Using UI text is bit tricky when identifying the elements when language changes on the Facebook. To overcome this problem, all the UI text on the website is converted into resource strings. This will help us to run our code with just adding equivalent resource string in different language, without needing to add/update code.
 
-### i. [API serives backend](https://github.com/IRobotizeInternet/RuRay/tree/master/RuRay/RuRay.BLL/Services)
+### ii. [API serives backend](https://github.com/IRobotizeInternet/RuRay/tree/master/RuRay/RuRay.BLL/Services)
 It listens to the api requrests from [RuRay.API](https://github.com/IRobotizeInternet/RuRay/tree/master/RuRay/RuRay.API) and uses the [Facebook UI mapping](https://github.com/IRobotizeInternet/RuRay/tree/master/RuRay/RuRay.BLL/App) to execute the actions, such as adding a new post, Display & Accessibility setting change or anything that user can do through Facebook UI.  
