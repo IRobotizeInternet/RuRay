@@ -35,6 +35,8 @@ Using UI text is bit tricky when identifying the elements when language changes 
 * Bash scripts to get around with Selenium limitations ex: Creating chrome shortcut on desktop with automation support args, getting cursors location and sending keys, etc.
 * Since most of the mapping is separated with action usage, changes in the Facebook UI will minimum effort to fix the broken mapping. 
 
-
 ### ii. [API serives backend](https://github.com/IRobotizeInternet/RuRay/tree/master/RuRay/RuRay.BLL/Services)
 It listens to the api requrests from [RuRay.API](https://github.com/IRobotizeInternet/RuRay/tree/master/RuRay/RuRay.API) and uses the [Facebook UI mapping](https://github.com/IRobotizeInternet/RuRay/tree/master/RuRay/RuRay.BLL/App) to execute the actions, such as adding a new post, Display & Accessibility setting change or anything that user can do through Facebook UI.  
+
+### [RuRay.API](https://github.com/IRobotizeInternet/RuRay/tree/master/RuRay/RuRay.API)
+This contains consumable public apis that run code on the servier for each request. These servies are used by [RASA](www.rasa.com) when user request certain action in natural language. Swagger is used describing RESTful APIs
