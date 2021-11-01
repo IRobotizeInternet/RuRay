@@ -4,13 +4,13 @@
 * Add custom macros to automate certain tasks through voice command.
 * All the services are designed in small managable micro services (Toolbox, Business Logic, Rest API, Automated text conversation using RASA, Voice to text using Google)
 
-![RuRay](https://user-images.githubusercontent.com/83523058/126584597-1935350a-e52f-4cd0-b38d-7737083f0213.png)
-
 # How it works. 
 * Listen to the users request through microphone and convert it to text using google apis.
 * The converted text then fed into Rasa to understand the meaning and call appropriate api.
 * Once request is received through api, it will make a call to api server with the users request.
 * At the server the request is executed using Selenium, JavaScript, bash, c#, etc.
+
+![RuRay](https://user-images.githubusercontent.com/83523058/126584597-1935350a-e52f-4cd0-b38d-7737083f0213.png)
 
 # Core projects in solution:
 1. RuRayToolbox
