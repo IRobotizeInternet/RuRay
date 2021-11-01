@@ -69,7 +69,8 @@ This is a windows desktop application which is helpful when user need to click o
 ## 5. [RASAAPI](https://github.com/IRobotizeInternet/RuRay/tree/master/RASAAPI)
 
 Now that you know how we mapped entire Facebook UI, and how we can call apis to execute certain actions. Since we have apis to do just anything on Facebook, we just need to teach machine learning program Rasa to learn what api to call when a user request something. I would encourage you to go to www.rasa.com and learn how Rasa works. It is not just string to string matching, instead it understand the meaning of the text and call appropriate api.
-Here are some example how we provide training data to Rasa
+Here are some examples how we provide training data to Rasa.
+
 ![image](https://user-images.githubusercontent.com/83523058/139623164-1e8864a0-9888-4e9b-8413-c181304e80fb.png)
 
 ## 6. [RobotizeTTSAndSTT](https://github.com/IRobotizeInternet/RuRay/tree/master/RuRayTTS) ( Incomplete )
