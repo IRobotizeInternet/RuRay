@@ -50,7 +50,7 @@ Using UI text is bit tricky when identifying the elements when language changes 
 It listens to the api requrests from [RuRay.API](https://github.com/IRobotizeInternet/RuRay/tree/master/RuRay/RuRay.API) and uses the [Facebook UI mapping](https://github.com/IRobotizeInternet/RuRay/tree/master/RuRay/RuRay.BLL/App) to execute the actions, such as adding a new post, Display & Accessibility setting change or anything that user can do through Facebook UI.  
 
 ## 3. [RuRay.API](https://github.com/IRobotizeInternet/RuRay/tree/master/RuRay/RuRay.API)
-This contains consumable public apis that run code on the servier for each request. These servies are used by [RASA](www.rasa.com) when user request certain action in natural language. Swagger is used to describe all RESTful APIs to access mapping and executing actions.
+This contains consumable public apis that run code on the server for each request. These servies are used by [RASA](www.rasa.com) when user request certain action in natural language. Swagger is used to describe all RESTful APIs to access mapping and executing actions.
 
 Lets call few apis from one browser and see live changes into another. There aren't many apis added to the services; however, adding new api is very easy. Lets tests these apis.
 
