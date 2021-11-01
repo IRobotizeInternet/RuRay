@@ -40,6 +40,11 @@ It listens to the api requrests from [RuRay.API](https://github.com/IRobotizeInt
 
 ### [RuRay.API](https://github.com/IRobotizeInternet/RuRay/tree/master/RuRay/RuRay.API)
 This contains consumable public apis that run code on the servier for each request. These servies are used by [RASA](www.rasa.com) when user request certain action in natural language. Swagger is used to describe all RESTful APIs to access mapping and executing actions.
+Eample below shows tests three apis, remember there are very few api's are implemented. Adding new api's is very easy:
+    * Navigate to home page
+    * Scroll up
+    * Changing display to dark mode. 
+![Animation](https://user-images.githubusercontent.com/83523058/139616831-613e795b-4853-4f71-8ec8-292abed97ea2.gif)
 
 
 ### [WindowGrid](https://github.com/IRobotizeInternet/RuRay/tree/master/WindowGrid) 
