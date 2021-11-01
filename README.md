@@ -45,10 +45,18 @@ Eample below shows tests three apis, remember there are very few api's are imple
     * Navigate to home page.
     * Scroll up few times.
     * Changing display to dark mode. 
-    
+
 ![Animation](https://user-images.githubusercontent.com/83523058/139616831-613e795b-4853-4f71-8ec8-292abed97ea2.gif)
 
 
 ### [WindowGrid](https://github.com/IRobotizeInternet/RuRay/tree/master/WindowGrid) 
-This is a windows desktop application which is helpful when user need to click on certain location of the screen, they can request to show/hide grid. The grid appear with indexes, where user can command to click on a given index. This can be tested in through API as shown below.
+This is a windows desktop application which is helpful when user need to click on certain location of the screen, they can request to show/hide grid. The grid appear with indexes, where user can command to click on a given index. Please note everything is controlled through apis. This is demonstrated below:
+ 
+ * Call grid API to identify the location.
+ * Right click on the given index, identified through grid earlier.
+ * Removing the grid. 
+
+  ![Animation1](https://user-images.githubusercontent.com/83523058/139618333-02485928-6345-4a44-a4fd-17dbe4c10dcb.gif)
+
+
 
