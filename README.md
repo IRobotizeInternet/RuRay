@@ -39,7 +39,8 @@ Using UI text is bit tricky when identifying the elements when language changes 
 It listens to the api requrests from [RuRay.API](https://github.com/IRobotizeInternet/RuRay/tree/master/RuRay/RuRay.API) and uses the [Facebook UI mapping](https://github.com/IRobotizeInternet/RuRay/tree/master/RuRay/RuRay.BLL/App) to execute the actions, such as adding a new post, Display & Accessibility setting change or anything that user can do through Facebook UI.  
 
 ### [RuRay.API](https://github.com/IRobotizeInternet/RuRay/tree/master/RuRay/RuRay.API)
-This contains consumable public apis that run code on the servier for each request. These servies are used by [RASA](www.rasa.com) when user request certain action in natural language. Swagger is used describing RESTful APIs ![image](https://user-images.githubusercontent.com/83523058/139604809-3b89a5f2-2e80-4ff7-bec7-3b8ad4cc7a82.png)
+This contains consumable public apis that run code on the servier for each request. These servies are used by [RASA](www.rasa.com) when user request certain action in natural language. Swagger is used to describe all RESTful APIs to access mapping and executing actions.
+
 
 ### [WindowGrid](https://github.com/IRobotizeInternet/RuRay/tree/master/WindowGrid) 
 This is a windows desktop application which is helpful when user need to click on certain location of the screen, they can request to show/hide grid. The grid appear with indexes, where user can command to click on a given index. This can be tested in through API as shown below.
