@@ -1,3 +1,8 @@
+If you have any questions on how to setup/contribue to the project please let me know here irobotize@gmail.com
+I will add details on how to setup/contribute later to this README.md
+
+______________
+
 # What is RuRay
 * Control Facebook actions (Navigation, click, posting and everything else) through voice commands.
 * Design to support with multiple languages of Facebook.
