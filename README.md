@@ -26,7 +26,7 @@ ______________
 6. RobotizeTTSAndSTT
 
 ## 1. [RuRayToolbox](https://github.com/IRobotizeInternet/RuRay/tree/master/RuRayToolbox)
-Toolbox contains all common components that can be found in any website such as textbox, label, radio button, dropdown, etc. Each component class comes with common functionality. For example consider dropdown, it provides scrolling up/down, click, getting or setting list item and more. All the components inherit from a base class called [BaseDOMObject.cs](https://github.com/IRobotizeInternet/RuRay/blob/master/RuRayToolbox/Controls/BaseDOMObject.cs).
+Toolbox contains all common components that can be found in any website such as textbox, label, radio button, dropdown, etc. Each component class comes with common functionality. For example consider dropdown, it provides scrolling up/down, click, getting or setting list item and more. All components inherit from a base class called [BaseDOMObject.cs](https://github.com/IRobotizeInternet/RuRay/blob/master/RuRayToolbox/Controls/BaseDOMObject.cs).
 
 The base class [BaseDOMObject.cs](https://github.com/IRobotizeInternet/RuRay/blob/master/RuRayToolbox/Controls/BaseDOMObject.cs) implements and/or override _OpenQA.Selenium.IWebElement interface_. It also contains core functionality of DOM object manipulation through Javascript. 
 
@@ -37,7 +37,7 @@ Business logic layer contains two parts
   ii. API serives backend. 
   
  ### i. [Facebook UI mapping](https://github.com/IRobotizeInternet/RuRay/tree/master/RuRay/RuRay.BLL/App)
-The entire facebook website (excluding some pages) have been mapped using [Meet Me In the Middle](https://github.com/IRobotizeInternet/Meet-me-In-the-Middle) methodology. Which means all the pages are broken down in to managable sections and then coded distributed in multiple classes in a more object oriented way. Mapping is done through UI text, since Facebook encrypt all possible DOM identifiers. So I decided to use UI text to identify each element while mapping the website.
+The entire facebook website (excluding some pages) have been mapped using [Meet Me In the Middle](https://github.com/IRobotizeInternet/Meet-me-In-the-Middle) methodology. Which means all the pages are broken down in to managable sections and then coded in multiple classes in a more object oriented way. Mapping is done through UI text, since Facebook encrypt all possible DOM identifiers. So I decided to use UI text to identify each element while mapping the website.
 
 Using UI text is bit tricky when identifying the elements when language changes on the Facebook. To overcome this problem, all the UI text on the website is converted into resource strings. This will help us to run our code with just adding equivalent resource string in different language, without needing to add/update code. [Home page is good starting point](https://github.com/IRobotizeInternet/RuRay/blob/master/RuRay/RuRay.BLL/App/LoggedIn/Pages/Home/PageHome.cs) 
 
