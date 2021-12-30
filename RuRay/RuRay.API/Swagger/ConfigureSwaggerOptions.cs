@@ -43,7 +43,7 @@ namespace RuRay.API.Swagger
         {
             var info = new OpenApiInfo
             {
-                Title = $"WebAPI {description.ApiVersion}",
+                Title = $"RuRay WebAPI {description.ApiVersion}",
                 Version = description.GroupName,
                 Description = "Web API Template",
                 Contact = new OpenApiContact()
