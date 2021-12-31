@@ -8,7 +8,7 @@ do
     readarray -d , -t strarr <<<"$hashAndCommit"
     hash=${strarr[0]}
     commitDate=${strarr[1]}
-    
+    echo hello
     if [ ! -z "$previousCommit" ]; then
         echo $previousCommit-kl
         removed=$(git diff --word-diff=porcelain --pretty="%H" $previousCommit..$hash | grep -e '^-[^-]' | wc -m)
