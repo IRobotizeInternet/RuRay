@@ -1,15 +1,21 @@
 previousCommit=""
 removed=0
 added=0
-for commit in $(git rev-list master)
+totalCount=0
+for commit in $(git rev-list --reverse master --pretty='format:%as' | sed -z 's/\n/,/g;s/,$/\n/')
 do
-
+    hashAndCommit=`echo ${commit} | sed 's/,commit//g'`
+    readarray -d , -t strarr <<<"$hashAndCommit"
+    hash=${strarr[0]}
+    commitDate=${strarr[1]}
+    
     if [ ! -z "$previousCommit" ]; then
-	removed=$(git diff --word-diff=porcelain --pretty="%H" $previousCommit..$commit | grep -e '^-[^-]' | wc -m)
-	added=$(git diff --word-diff=porcelain --pretty="%H" $previousCommit..$commit | grep -e '^+[^+]' | wc -m)
-	echo $added-$removed
-	
+        echo $previousCommit-kl
+        removed=$(git diff --word-diff=porcelain --pretty="%H" $previousCommit..$hash | grep -e '^-[^-]' | wc -m)
+        added=$(git diff --word-diff=porcelain --pretty="%H" $previousCommit..$hash | grep -e '^+[^+]' | wc -m)
+        ((totalCount = total + removed - added))
+        echo $totalCount
     fi
 
-    previousCommit=$commit
+    previousCommit=$hash
 done
