@@ -2,7 +2,7 @@ previousCommit=""
 removed=0
 added=0
 totalCount=0
-for commit in $(git rev-list  master --pretty='format:%as' | sed -z 's/\n/,/g;s/,$/\n/')
+for commit in $(git rev-list --reverse master --pretty='format:%as' | sed -z 's/\n/,/g;s/,$/\n/')
 do
     hashAndCommit=`echo ${commit} | sed 's/,commit//g'`
     readarray -d , -t strarr <<<"$hashAndCommit"
@@ -13,7 +13,7 @@ do
         removed=$(git diff --word-diff=porcelain --pretty="%H" $previousCommit..$hash | grep -e '^-[^-]' | wc -m)
     fi
     added=$(git diff --word-diff=porcelain --pretty="%H" $previousCommit..$hash | grep -e '^+[^+]' | wc -m)
-    ((totalCount = total + removed - added))
+    ((totalCount = totalCount + removed - added))
     echo $totalCount
 
     previousCommit=$hash
